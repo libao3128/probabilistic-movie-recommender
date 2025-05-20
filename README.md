@@ -16,8 +16,19 @@ Evaluation is conducted using both **rating prediction** (RMSE, MAE) and **top-K
 
 ## ⚙️ Prerequisites
 
+### Data
+
+MovieLens offers datasets of various sizes. For faster iteration during development, use a smaller dataset; for final experiments, use the full dataset.
+
+#### Final Results
+
 1. Download the MovieLens 32M dataset from the [GroupLens website](https://grouplens.org/datasets/movielens/).
-2. Extract the contents to the `data/ml-32m` directory in your project folder.
+2. Extract it to `data/ml-32m` in your project directory.
+
+#### Development
+
+1. Download the MovieLens "latest small" dataset from the [GroupLens website](https://grouplens.org/datasets/movielens/).
+2. Extract it to `data/ml-latest-small` in your project directory.
 
 ## 📝 Tasks
 
