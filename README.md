@@ -32,8 +32,8 @@ MovieLens offers datasets of various sizes. For faster iteration during developm
 
 ## 📝 Tasks
 
-- [ ] Set up the pipeline for training and evaluating different models **[Leo]**
-- [ ] Implement Probabilistic Matrix Factorization **[Leo]**
+- [x] Set up the pipeline for training and evaluating different models **[Leo]**
+- [x] Implement Probabilistic Matrix Factorization **[Leo]**
 - [ ] Develop Sum-Product Networks (SPN) **[Angela]**
 - [ ] Explore Probabilistic Programming approaches **[SSC]**
 - [ ] 5/27 Project Check-in **[ALL]**
