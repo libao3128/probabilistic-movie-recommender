@@ -1,0 +1,1910 @@
+Western:17
+Western	Romance:8
+Western	Romance	Drama:8
+Western	Crime:9
+Western	Crime	Comedy:7
+Western	Crime	Comedy	Drama:7
+Western	Crime	Comedy	Action:7
+Drama	Western	Crime	Comedy	Action:7
+Western	Crime	Thriller:8
+Drama	Western	Crime	Thriller:8
+Action	Western	Crime	Thriller:8
+Drama	Action	Western	Crime	Thriller:8
+Western	Crime	Drama:9
+Western	Crime	Action:9
+Drama	Western	Crime	Action:9
+Western	Adventure:10
+Western	Adventure	Action:7
+Drama	Western	Adventure	Action:7
+Western	Adventure	Thriller:7
+Western	Adventure	Thriller	Drama:7
+Western	Adventure	Drama:10
+Western	Comedy:11
+Western	Comedy	Thriller:7
+Drama	Western	Comedy	Thriller:7
+Action	Western	Comedy	Thriller:7
+Drama	Action	Western	Comedy	Thriller:7
+Western	Comedy	Action:9
+Drama	Western	Comedy	Action:9
+Western	Comedy	Drama:11
+Western	Thriller:12
+Western	Thriller	Action:11
+Drama	Western	Thriller	Action:11
+Western	Thriller	Drama:12
+Western	Action:13
+Drama	Western	Action:13
+Western	Drama:17
+Musical:20
+Musical	Animation:7
+Musical	Animation	Drama:7
+Musical	Animation	Comedy:7
+Drama	Musical	Animation	Comedy:7
+Musical	Animation	Children:7
+Drama	Musical	Animation	Children:7
+Comedy	Musical	Animation	Children:7
+Drama	Comedy	Musical	Animation	Children:7
+Musical	Thriller:8
+Musical	Thriller	Drama:8
+Musical	Thriller	Comedy:8
+Drama	Musical	Thriller	Comedy:8
+Musical	Adventure:10
+Musical	Adventure	Children:8
+Musical	Adventure	Children	Romance:7
+Drama	Musical	Adventure	Children	Romance:7
+Comedy	Musical	Adventure	Children	Romance:7
+Drama	Comedy	Musical	Adventure	Children	Romance:7
+Musical	Adventure	Children	Drama:8
+Musical	Adventure	Children	Comedy:8
+Drama	Musical	Adventure	Children	Comedy:8
+Musical	Adventure	Romance:9
+Drama	Musical	Adventure	Romance:9
+Comedy	Musical	Adventure	Romance:9
+Drama	Comedy	Musical	Adventure	Romance:9
+Musical	Adventure	Drama:10
+Musical	Adventure	Comedy:10
+Drama	Musical	Adventure	Comedy:10
+Musical	Children:13
+Musical	Children	Romance:11
+Drama	Musical	Children	Romance:11
+Comedy	Musical	Children	Romance:11
+Drama	Comedy	Musical	Children	Romance:11
+Musical	Children	Drama:13
+Musical	Children	Comedy:13
+Drama	Musical	Children	Comedy:13
+Musical	Romance:16
+Drama	Musical	Romance:16
+Comedy	Musical	Romance:16
+Drama	Comedy	Musical	Romance:16
+Musical	Drama:20
+Musical	Comedy:20
+Drama	Musical	Comedy:20
+IMAX:23
+IMAX	Crime:9
+IMAX	Crime	Comedy:7
+IMAX	Crime	Comedy	Drama:7
+IMAX	Crime	Comedy	Adventure:7
+Drama	IMAX	Crime	Comedy	Adventure:7
+IMAX	Crime	Adventure:8
+Drama	IMAX	Crime	Adventure:8
+IMAX	Crime	Action:8
+IMAX	Crime	Action	Adventure:7
+Drama	IMAX	Crime	Action	Adventure:7
+IMAX	Crime	Action	Drama:8
+IMAX	Crime	Sci-Fi:8
+IMAX	Crime	Sci-Fi	Adventure:7
+Drama	IMAX	Crime	Sci-Fi	Adventure:7
+Action	IMAX	Crime	Sci-Fi	Adventure:7
+Drama	Action	IMAX	Crime	Sci-Fi	Adventure:7
+IMAX	Crime	Sci-Fi	Drama:8
+IMAX	Crime	Sci-Fi	Action:8
+Drama	IMAX	Crime	Sci-Fi	Action:8
+IMAX	Crime	Drama:9
+IMAX	Thriller:11
+IMAX	Thriller	Comedy:8
+Drama	IMAX	Thriller	Comedy:8
+Action	IMAX	Thriller	Comedy:8
+Sci-Fi	IMAX	Thriller	Comedy:8
+Adventure	IMAX	Thriller	Comedy:8
+Drama	Action	IMAX	Thriller	Comedy:8
+Drama	Sci-Fi	IMAX	Thriller	Comedy:8
+Drama	Adventure	IMAX	Thriller	Comedy:8
+Action	Sci-Fi	IMAX	Thriller	Comedy:8
+Action	Adventure	IMAX	Thriller	Comedy:8
+Sci-Fi	Adventure	IMAX	Thriller	Comedy:8
+Drama	Action	Sci-Fi	IMAX	Thriller	Comedy:8
+Drama	Action	Adventure	IMAX	Thriller	Comedy:8
+Drama	Sci-Fi	Adventure	IMAX	Thriller	Comedy:8
+Action	Sci-Fi	Adventure	IMAX	Thriller	Comedy:8
+Drama	Action	Sci-Fi	Adventure	IMAX	Thriller	Comedy:8
+IMAX	Thriller	Adventure:10
+Drama	IMAX	Thriller	Adventure:10
+Action	IMAX	Thriller	Adventure:10
+Sci-Fi	IMAX	Thriller	Adventure:10
+Drama	Action	IMAX	Thriller	Adventure:10
+Drama	Sci-Fi	IMAX	Thriller	Adventure:10
+Action	Sci-Fi	IMAX	Thriller	Adventure:10
+Drama	Action	Sci-Fi	IMAX	Thriller	Adventure:10
+IMAX	Thriller	Drama:11
+IMAX	Thriller	Action:11
+Drama	IMAX	Thriller	Action:11
+IMAX	Thriller	Sci-Fi:11
+Drama	IMAX	Thriller	Sci-Fi:11
+Action	IMAX	Thriller	Sci-Fi:11
+Drama	Action	IMAX	Thriller	Sci-Fi:11
+IMAX	Comedy:15
+IMAX	Comedy	Fantasy:11
+IMAX	Comedy	Fantasy	Sci-Fi:9
+IMAX	Comedy	Fantasy	Sci-Fi	Action:8
+Adventure	IMAX	Comedy	Fantasy	Sci-Fi	Action:8
+Drama	IMAX	Comedy	Fantasy	Sci-Fi	Action:8
+Adventure	Drama	IMAX	Comedy	Fantasy	Sci-Fi	Action:8
+IMAX	Comedy	Fantasy	Sci-Fi	Adventure:9
+IMAX	Comedy	Fantasy	Sci-Fi	Drama:9
+Adventure	IMAX	Comedy	Fantasy	Sci-Fi	Drama:9
+IMAX	Comedy	Fantasy	Action:9
+Adventure	IMAX	Comedy	Fantasy	Action:9
+Drama	IMAX	Comedy	Fantasy	Action:9
+Adventure	Drama	IMAX	Comedy	Fantasy	Action:9
+IMAX	Comedy	Fantasy	Adventure:11
+IMAX	Comedy	Fantasy	Drama:11
+Adventure	IMAX	Comedy	Fantasy	Drama:11
+IMAX	Comedy	Sci-Fi:13
+IMAX	Comedy	Sci-Fi	Drama:12
+Adventure	IMAX	Comedy	Sci-Fi	Drama:12
+IMAX	Comedy	Sci-Fi	Action:12
+IMAX	Comedy	Sci-Fi	Action	Drama:11
+Adventure	IMAX	Comedy	Sci-Fi	Action	Drama:11
+IMAX	Comedy	Sci-Fi	Action	Adventure:12
+IMAX	Comedy	Sci-Fi	Adventure:13
+IMAX	Comedy	Action:13
+IMAX	Comedy	Action	Drama:12
+Adventure	IMAX	Comedy	Action	Drama:12
+IMAX	Comedy	Action	Adventure:13
+IMAX	Comedy	Drama:14
+Adventure	IMAX	Comedy	Drama:14
+IMAX	Comedy	Adventure:15
+IMAX	Fantasy:16
+IMAX	Fantasy	Sci-Fi:13
+IMAX	Fantasy	Sci-Fi	Action:12
+Adventure	IMAX	Fantasy	Sci-Fi	Action:12
+Drama	IMAX	Fantasy	Sci-Fi	Action:12
+Adventure	Drama	IMAX	Fantasy	Sci-Fi	Action:12
+IMAX	Fantasy	Sci-Fi	Adventure:13
+IMAX	Fantasy	Sci-Fi	Drama:13
+Adventure	IMAX	Fantasy	Sci-Fi	Drama:13
+IMAX	Fantasy	Action:14
+IMAX	Fantasy	Action	Drama:13
+Adventure	IMAX	Fantasy	Action	Drama:13
+IMAX	Fantasy	Action	Adventure:14
+IMAX	Fantasy	Drama:15
+Adventure	IMAX	Fantasy	Drama:15
+IMAX	Fantasy	Adventure:16
+IMAX	Sci-Fi:20
+IMAX	Sci-Fi	Adventure:19
+IMAX	Sci-Fi	Drama:19
+IMAX	Sci-Fi	Drama	Adventure:18
+IMAX	Sci-Fi	Action:19
+IMAX	Sci-Fi	Action	Drama:18
+IMAX	Sci-Fi	Action	Drama	Adventure:17
+IMAX	Sci-Fi	Action	Adventure:18
+IMAX	Action:21
+IMAX	Action	Drama:19
+IMAX	Action	Drama	Adventure:18
+IMAX	Action	Adventure:20
+IMAX	Drama:21
+IMAX	Drama	Adventure:20
+IMAX	Adventure:22
+Documentary:37
+Documentary	War:7
+Documentary	War	Drama:7
+Documentary	War	Thriller:7
+Drama	Documentary	War	Thriller:7
+Documentary	Fantasy:8
+Documentary	Fantasy	Drama:7
+Comedy	Documentary	Fantasy	Drama:7
+Documentary	Fantasy	Comedy:8
+Documentary	Sci-Fi:11
+Documentary	Sci-Fi	Thriller:7
+Documentary	Sci-Fi	Thriller	Comedy:7
+Documentary	Sci-Fi	Thriller	Drama:7
+Comedy	Documentary	Sci-Fi	Thriller	Drama:7
+Documentary	Sci-Fi	Thriller	Action:7
+Comedy	Documentary	Sci-Fi	Thriller	Action:7
+Drama	Documentary	Sci-Fi	Thriller	Action:7
+Comedy	Drama	Documentary	Sci-Fi	Thriller	Action:7
+Documentary	Sci-Fi	Action:8
+Documentary	Sci-Fi	Action	Drama:7
+Comedy	Documentary	Sci-Fi	Action	Drama:7
+Documentary	Sci-Fi	Action	Comedy:8
+Documentary	Sci-Fi	Adventure:8
+Documentary	Sci-Fi	Adventure	Drama:7
+Comedy	Documentary	Sci-Fi	Adventure	Drama:7
+Documentary	Sci-Fi	Adventure	Action:7
+Documentary	Sci-Fi	Adventure	Action	Comedy:7
+Documentary	Sci-Fi	Adventure	Comedy:8
+Documentary	Sci-Fi	Drama:10
+Comedy	Documentary	Sci-Fi	Drama:10
+Documentary	Sci-Fi	Comedy:11
+Documentary	Adventure:18
+Documentary	Adventure	Crime:8
+Documentary	Adventure	Crime	Comedy:8
+Documentary	Adventure	Crime	Drama:8
+Comedy	Documentary	Adventure	Crime	Drama:8
+Documentary	Adventure	Thriller:11
+Comedy	Documentary	Adventure	Thriller:11
+Drama	Documentary	Adventure	Thriller:11
+Action	Documentary	Adventure	Thriller:11
+Comedy	Drama	Documentary	Adventure	Thriller:11
+Comedy	Action	Documentary	Adventure	Thriller:11
+Drama	Action	Documentary	Adventure	Thriller:11
+Comedy	Drama	Action	Documentary	Adventure	Thriller:11
+Documentary	Adventure	Action:12
+Documentary	Adventure	Action	Drama:11
+Comedy	Documentary	Adventure	Action	Drama:11
+Documentary	Adventure	Action	Comedy:12
+Documentary	Adventure	Drama:16
+Comedy	Documentary	Adventure	Drama:16
+Documentary	Adventure	Comedy:18
+Documentary	Romance:18
+Documentary	Romance	Adventure:8
+Documentary	Romance	Adventure	Comedy:8
+Documentary	Romance	Adventure	Drama:8
+Comedy	Documentary	Romance	Adventure	Drama:8
+Documentary	Romance	Crime:9
+Documentary	Romance	Crime	Comedy:9
+Documentary	Romance	Crime	Drama:9
+Comedy	Documentary	Romance	Crime	Drama:9
+Documentary	Romance	Thriller:10
+Comedy	Documentary	Romance	Thriller:10
+Drama	Documentary	Romance	Thriller:10
+Comedy	Drama	Documentary	Romance	Thriller:10
+Documentary	Romance	Comedy:18
+Documentary	Romance	Drama:18
+Comedy	Documentary	Romance	Drama:18
+Documentary	Action:21
+Documentary	Action	Crime:15
+Documentary	Action	Crime	Comedy:14
+Drama	Documentary	Action	Crime	Comedy:14
+Thriller	Documentary	Action	Crime	Comedy:14
+Drama	Thriller	Documentary	Action	Crime	Comedy:14
+Documentary	Action	Crime	Drama:15
+Documentary	Action	Crime	Thriller:15
+Drama	Documentary	Action	Crime	Thriller:15
+Documentary	Action	Comedy:20
+Documentary	Action	Drama:20
+Documentary	Action	Drama	Comedy:19
+Documentary	Action	Thriller:20
+Documentary	Action	Thriller	Comedy:19
+Drama	Documentary	Action	Thriller	Comedy:19
+Documentary	Action	Thriller	Drama:20
+Documentary	Crime:23
+Documentary	Crime	Thriller:19
+Documentary	Crime	Thriller	Comedy:18
+Drama	Documentary	Crime	Thriller	Comedy:18
+Documentary	Crime	Thriller	Drama:19
+Documentary	Crime	Comedy:22
+Drama	Documentary	Crime	Comedy:22
+Documentary	Crime	Drama:23
+Documentary	Thriller:26
+Documentary	Thriller	Comedy:25
+Drama	Documentary	Thriller	Comedy:25
+Documentary	Thriller	Drama:26
+Documentary	Drama:35
+Documentary	Drama	Comedy:34
+Documentary	Comedy:36
+Animation:44
+Animation	Crime:9
+Animation	Crime	Comedy:7
+Drama	Animation	Crime	Comedy:7
+Adventure	Animation	Crime	Comedy:7
+Drama	Adventure	Animation	Crime	Comedy:7
+Animation	Crime	Action:7
+Animation	Crime	Action	Drama:7
+Animation	Crime	Adventure:8
+Drama	Animation	Crime	Adventure:8
+Animation	Crime	Drama:9
+Animation	Thriller:15
+Animation	Thriller	Romance:7
+Animation	Thriller	Romance	Drama:7
+Animation	Thriller	Children:8
+Animation	Thriller	Children	Drama:8
+Animation	Thriller	Children	Comedy:8
+Drama	Animation	Thriller	Children	Comedy:8
+Animation	Thriller	Sci-Fi:10
+Animation	Thriller	Sci-Fi	Adventure:8
+Animation	Thriller	Sci-Fi	Adventure	Comedy:7
+Drama	Animation	Thriller	Sci-Fi	Adventure	Comedy:7
+Action	Animation	Thriller	Sci-Fi	Adventure	Comedy:7
+Drama	Action	Animation	Thriller	Sci-Fi	Adventure	Comedy:7
+Animation	Thriller	Sci-Fi	Adventure	Drama:8
+Animation	Thriller	Sci-Fi	Adventure	Action:8
+Drama	Animation	Thriller	Sci-Fi	Adventure	Action:8
+Animation	Thriller	Sci-Fi	Comedy:9
+Drama	Animation	Thriller	Sci-Fi	Comedy:9
+Action	Animation	Thriller	Sci-Fi	Comedy:9
+Drama	Action	Animation	Thriller	Sci-Fi	Comedy:9
+Animation	Thriller	Sci-Fi	Drama:10
+Animation	Thriller	Sci-Fi	Action:10
+Drama	Animation	Thriller	Sci-Fi	Action:10
+Animation	Thriller	Adventure:12
+Animation	Thriller	Adventure	Action:10
+Animation	Thriller	Adventure	Action	Comedy:9
+Drama	Animation	Thriller	Adventure	Action	Comedy:9
+Animation	Thriller	Adventure	Action	Drama:10
+Animation	Thriller	Adventure	Comedy:11
+Drama	Animation	Thriller	Adventure	Comedy:11
+Animation	Thriller	Adventure	Drama:12
+Animation	Thriller	Comedy:13
+Drama	Animation	Thriller	Comedy:13
+Animation	Thriller	Action:13
+Animation	Thriller	Action	Comedy:11
+Drama	Animation	Thriller	Action	Comedy:11
+Animation	Thriller	Action	Drama:13
+Animation	Thriller	Drama:15
+Animation	Sci-Fi:21
+Animation	Sci-Fi	Romance:10
+Animation	Sci-Fi	Romance	Fantasy:7
+Animation	Sci-Fi	Romance	Fantasy	Drama:7
+Animation	Sci-Fi	Romance	Fantasy	Adventure:7
+Drama	Animation	Sci-Fi	Romance	Fantasy	Adventure:7
+Animation	Sci-Fi	Romance	Children:8
+Animation	Sci-Fi	Romance	Children	Drama:8
+Animation	Sci-Fi	Romance	Children	Adventure:8
+Drama	Animation	Sci-Fi	Romance	Children	Adventure:8
+Animation	Sci-Fi	Romance	Children	Comedy:8
+Drama	Animation	Sci-Fi	Romance	Children	Comedy:8
+Adventure	Animation	Sci-Fi	Romance	Children	Comedy:8
+Drama	Adventure	Animation	Sci-Fi	Romance	Children	Comedy:8
+Animation	Sci-Fi	Romance	Action:8
+Animation	Sci-Fi	Romance	Action	Comedy:7
+Drama	Animation	Sci-Fi	Romance	Action	Comedy:7
+Adventure	Animation	Sci-Fi	Romance	Action	Comedy:7
+Drama	Adventure	Animation	Sci-Fi	Romance	Action	Comedy:7
+Animation	Sci-Fi	Romance	Action	Drama:8
+Animation	Sci-Fi	Romance	Action	Adventure:8
+Drama	Animation	Sci-Fi	Romance	Action	Adventure:8
+Animation	Sci-Fi	Romance	Comedy:9
+Drama	Animation	Sci-Fi	Romance	Comedy:9
+Adventure	Animation	Sci-Fi	Romance	Comedy:9
+Drama	Adventure	Animation	Sci-Fi	Romance	Comedy:9
+Animation	Sci-Fi	Romance	Drama:10
+Animation	Sci-Fi	Romance	Adventure:10
+Drama	Animation	Sci-Fi	Romance	Adventure:10
+Animation	Sci-Fi	Children:14
+Animation	Sci-Fi	Children	Fantasy:10
+Animation	Sci-Fi	Children	Fantasy	Action:8
+Animation	Sci-Fi	Children	Fantasy	Action	Comedy:7
+Drama	Animation	Sci-Fi	Children	Fantasy	Action	Comedy:7
+Animation	Sci-Fi	Children	Fantasy	Action	Adventure:7
+Animation	Sci-Fi	Children	Fantasy	Action	Adventure	Drama:7
+Animation	Sci-Fi	Children	Fantasy	Action	Drama:8
+Animation	Sci-Fi	Children	Fantasy	Adventure:9
+Animation	Sci-Fi	Children	Fantasy	Adventure	Comedy:8
+Drama	Animation	Sci-Fi	Children	Fantasy	Adventure	Comedy:8
+Animation	Sci-Fi	Children	Fantasy	Adventure	Drama:9
+Animation	Sci-Fi	Children	Fantasy	Comedy:9
+Drama	Animation	Sci-Fi	Children	Fantasy	Comedy:9
+Animation	Sci-Fi	Children	Fantasy	Drama:10
+Animation	Sci-Fi	Children	Action:11
+Animation	Sci-Fi	Children	Action	Adventure:9
+Animation	Sci-Fi	Children	Action	Adventure	Comedy:8
+Drama	Animation	Sci-Fi	Children	Action	Adventure	Comedy:8
+Animation	Sci-Fi	Children	Action	Adventure	Drama:9
+Animation	Sci-Fi	Children	Action	Comedy:10
+Drama	Animation	Sci-Fi	Children	Action	Comedy:10
+Animation	Sci-Fi	Children	Action	Drama:11
+Animation	Sci-Fi	Children	Adventure:12
+Animation	Sci-Fi	Children	Adventure	Comedy:11
+Drama	Animation	Sci-Fi	Children	Adventure	Comedy:11
+Animation	Sci-Fi	Children	Adventure	Drama:12
+Animation	Sci-Fi	Children	Comedy:13
+Drama	Animation	Sci-Fi	Children	Comedy:13
+Animation	Sci-Fi	Children	Drama:14
+Animation	Sci-Fi	Fantasy:15
+Animation	Sci-Fi	Fantasy	Comedy:13
+Animation	Sci-Fi	Fantasy	Comedy	Adventure:12
+Drama	Animation	Sci-Fi	Fantasy	Comedy	Adventure:12
+Animation	Sci-Fi	Fantasy	Comedy	Drama:13
+Animation	Sci-Fi	Fantasy	Action:13
+Animation	Sci-Fi	Fantasy	Action	Comedy:11
+Animation	Sci-Fi	Fantasy	Action	Comedy	Adventure:10
+Drama	Animation	Sci-Fi	Fantasy	Action	Comedy	Adventure:10
+Animation	Sci-Fi	Fantasy	Action	Comedy	Drama:11
+Animation	Sci-Fi	Fantasy	Action	Adventure:12
+Drama	Animation	Sci-Fi	Fantasy	Action	Adventure:12
+Animation	Sci-Fi	Fantasy	Action	Drama:13
+Animation	Sci-Fi	Fantasy	Adventure:14
+Drama	Animation	Sci-Fi	Fantasy	Adventure:14
+Animation	Sci-Fi	Fantasy	Drama:15
+Animation	Sci-Fi	Action:18
+Animation	Sci-Fi	Action	Comedy:16
+Drama	Animation	Sci-Fi	Action	Comedy:16
+Animation	Sci-Fi	Action	Adventure:16
+Animation	Sci-Fi	Action	Adventure	Comedy:14
+Drama	Animation	Sci-Fi	Action	Adventure	Comedy:14
+Animation	Sci-Fi	Action	Adventure	Drama:16
+Animation	Sci-Fi	Action	Drama:18
+Animation	Sci-Fi	Comedy:19
+Drama	Animation	Sci-Fi	Comedy:19
+Animation	Sci-Fi	Adventure:19
+Animation	Sci-Fi	Adventure	Comedy:17
+Drama	Animation	Sci-Fi	Adventure	Comedy:17
+Animation	Sci-Fi	Adventure	Drama:19
+Animation	Sci-Fi	Drama:21
+Animation	Fantasy:26
+Animation	Fantasy	Romance:13
+Animation	Fantasy	Romance	Action:8
+Animation	Fantasy	Romance	Action	Comedy:7
+Adventure	Animation	Fantasy	Romance	Action	Comedy:7
+Drama	Animation	Fantasy	Romance	Action	Comedy:7
+Adventure	Drama	Animation	Fantasy	Romance	Action	Comedy:7
+Animation	Fantasy	Romance	Action	Adventure:8
+Animation	Fantasy	Romance	Action	Drama:8
+Adventure	Animation	Fantasy	Romance	Action	Drama:8
+Animation	Fantasy	Romance	Children:8
+Adventure	Animation	Fantasy	Romance	Children:8
+Drama	Animation	Fantasy	Romance	Children:8
+Comedy	Animation	Fantasy	Romance	Children:8
+Adventure	Drama	Animation	Fantasy	Romance	Children:8
+Adventure	Comedy	Animation	Fantasy	Romance	Children:8
+Drama	Comedy	Animation	Fantasy	Romance	Children:8
+Adventure	Drama	Comedy	Animation	Fantasy	Romance	Children:8
+Animation	Fantasy	Romance	Comedy:12
+Adventure	Animation	Fantasy	Romance	Comedy:12
+Drama	Animation	Fantasy	Romance	Comedy:12
+Adventure	Drama	Animation	Fantasy	Romance	Comedy:12
+Animation	Fantasy	Romance	Adventure:13
+Animation	Fantasy	Romance	Drama:13
+Adventure	Animation	Fantasy	Romance	Drama:13
+Animation	Fantasy	Action:17
+Animation	Fantasy	Action	Children:11
+Animation	Fantasy	Action	Children	Adventure:10
+Drama	Animation	Fantasy	Action	Children	Adventure:10
+Animation	Fantasy	Action	Children	Comedy:10
+Animation	Fantasy	Action	Children	Comedy	Adventure:9
+Drama	Animation	Fantasy	Action	Children	Comedy	Adventure:9
+Animation	Fantasy	Action	Children	Comedy	Drama:10
+Animation	Fantasy	Action	Children	Drama:11
+Animation	Fantasy	Action	Comedy:15
+Animation	Fantasy	Action	Comedy	Adventure:14
+Drama	Animation	Fantasy	Action	Comedy	Adventure:14
+Animation	Fantasy	Action	Comedy	Drama:15
+Animation	Fantasy	Action	Adventure:16
+Drama	Animation	Fantasy	Action	Adventure:16
+Animation	Fantasy	Action	Drama:17
+Animation	Fantasy	Children:18
+Animation	Fantasy	Children	Drama:16
+Animation	Fantasy	Children	Drama	Comedy:15
+Animation	Fantasy	Children	Drama	Comedy	Adventure:14
+Animation	Fantasy	Children	Drama	Adventure:15
+Animation	Fantasy	Children	Adventure:17
+Animation	Fantasy	Children	Comedy:17
+Animation	Fantasy	Children	Comedy	Adventure:16
+Animation	Fantasy	Drama:24
+Animation	Fantasy	Drama	Adventure:23
+Animation	Fantasy	Comedy:24
+Animation	Fantasy	Comedy	Drama:22
+Animation	Fantasy	Comedy	Drama	Adventure:21
+Animation	Fantasy	Comedy	Adventure:23
+Animation	Fantasy	Adventure:25
+Animation	Action:27
+Animation	Action	Children:16
+Animation	Action	Children	Adventure:14
+Animation	Action	Children	Adventure	Comedy:13
+Drama	Animation	Action	Children	Adventure	Comedy:13
+Animation	Action	Children	Adventure	Drama:14
+Animation	Action	Children	Comedy:15
+Drama	Animation	Action	Children	Comedy:15
+Animation	Action	Children	Drama:16
+Animation	Action	Comedy:24
+Drama	Animation	Action	Comedy:24
+Animation	Action	Adventure:24
+Animation	Action	Adventure	Comedy:22
+Drama	Animation	Action	Adventure	Comedy:22
+Animation	Action	Adventure	Drama:24
+Animation	Action	Drama:27
+Animation	Romance:27
+Animation	Romance	Action:15
+Animation	Romance	Action	Children:9
+Drama	Animation	Romance	Action	Children:9
+Adventure	Animation	Romance	Action	Children:9
+Comedy	Animation	Romance	Action	Children:9
+Drama	Adventure	Animation	Romance	Action	Children:9
+Drama	Comedy	Animation	Romance	Action	Children:9
+Adventure	Comedy	Animation	Romance	Action	Children:9
+Drama	Adventure	Comedy	Animation	Romance	Action	Children:9
+Animation	Romance	Action	Comedy:13
+Drama	Animation	Romance	Action	Comedy:13
+Adventure	Animation	Romance	Action	Comedy:13
+Drama	Adventure	Animation	Romance	Action	Comedy:13
+Animation	Romance	Action	Adventure:14
+Drama	Animation	Romance	Action	Adventure:14
+Animation	Romance	Action	Drama:15
+Animation	Romance	Children:18
+Animation	Romance	Children	Adventure:17
+Drama	Animation	Romance	Children	Adventure:17
+Comedy	Animation	Romance	Children	Adventure:17
+Drama	Comedy	Animation	Romance	Children	Adventure:17
+Animation	Romance	Children	Drama:18
+Animation	Romance	Children	Comedy:18
+Drama	Animation	Romance	Children	Comedy:18
+Animation	Romance	Comedy:25
+Drama	Animation	Romance	Comedy:25
+Animation	Romance	Adventure:25
+Animation	Romance	Adventure	Comedy:24
+Drama	Animation	Romance	Adventure	Comedy:24
+Animation	Romance	Adventure	Drama:25
+Animation	Romance	Drama:27
+Animation	Children:30
+Animation	Children	Adventure:27
+Animation	Children	Adventure	Drama:25
+Animation	Children	Adventure	Drama	Comedy:24
+Animation	Children	Adventure	Comedy:26
+Animation	Children	Drama:28
+Animation	Children	Drama	Comedy:27
+Animation	Children	Comedy:29
+Animation	Adventure:40
+Animation	Adventure	Drama:38
+Animation	Adventure	Comedy:38
+Animation	Adventure	Comedy	Drama:36
+Animation	Comedy:41
+Animation	Comedy	Drama:39
+Animation	Drama:42
+Horror:60
+Horror	War:8
+Horror	War	Thriller:7
+Drama	Horror	War	Thriller:7
+Horror	War	Drama:8
+Horror	Fantasy:9
+Horror	Fantasy	Thriller:7
+Horror	Fantasy	Thriller	Sci-Fi:7
+Horror	Fantasy	Comedy:7
+Horror	Fantasy	Comedy	Drama:7
+Horror	Fantasy	Action:7
+Horror	Fantasy	Action	Sci-Fi:7
+Horror	Fantasy	Adventure:7
+Horror	Fantasy	Drama:8
+Horror	Fantasy	Sci-Fi:8
+Horror	Fantasy	Sci-Fi	Drama:7
+Horror	Mystery:12
+Horror	Mystery	Sci-Fi:7
+Horror	Mystery	Sci-Fi	Drama:7
+Horror	Mystery	Sci-Fi	Thriller:7
+Drama	Horror	Mystery	Sci-Fi	Thriller:7
+Horror	Mystery	Comedy:8
+Horror	Mystery	Comedy	Drama:8
+Horror	Mystery	Comedy	Thriller:8
+Drama	Horror	Mystery	Comedy	Thriller:8
+Horror	Mystery	Action:8
+Horror	Mystery	Action	Drama:8
+Horror	Mystery	Action	Thriller:8
+Drama	Horror	Mystery	Action	Thriller:8
+Horror	Mystery	Crime:9
+Drama	Horror	Mystery	Crime:9
+Thriller	Horror	Mystery	Crime:9
+Drama	Thriller	Horror	Mystery	Crime:9
+Horror	Mystery	Drama:12
+Horror	Mystery	Thriller:12
+Drama	Horror	Mystery	Thriller:12
+Horror	Romance:15
+Horror	Romance	Crime:8
+Horror	Romance	Crime	Comedy:7
+Drama	Horror	Romance	Crime	Comedy:7
+Horror	Romance	Crime	Thriller:7
+Horror	Romance	Crime	Thriller	Drama:7
+Horror	Romance	Crime	Drama:8
+Horror	Romance	Action:8
+Horror	Romance	Action	Thriller:7
+Drama	Horror	Romance	Action	Thriller:7
+Horror	Romance	Action	Adventure:7
+Horror	Romance	Action	Adventure	Drama:7
+Horror	Romance	Action	Sci-Fi:7
+Horror	Romance	Action	Sci-Fi	Drama:7
+Horror	Romance	Action	Sci-Fi	Adventure:7
+Drama	Horror	Romance	Action	Sci-Fi	Adventure:7
+Horror	Romance	Action	Drama:8
+Horror	Romance	Sci-Fi:9
+Horror	Romance	Sci-Fi	Comedy:7
+Horror	Romance	Sci-Fi	Comedy	Drama:7
+Horror	Romance	Sci-Fi	Thriller:8
+Drama	Horror	Romance	Sci-Fi	Thriller:8
+Horror	Romance	Sci-Fi	Adventure:8
+Horror	Romance	Sci-Fi	Adventure	Thriller:7
+Drama	Horror	Romance	Sci-Fi	Adventure	Thriller:7
+Horror	Romance	Sci-Fi	Adventure	Drama:8
+Horror	Romance	Sci-Fi	Drama:9
+Horror	Romance	Adventure:10
+Horror	Romance	Adventure	Thriller:7
+Horror	Romance	Adventure	Thriller	Drama:7
+Horror	Romance	Adventure	Comedy:8
+Drama	Horror	Romance	Adventure	Comedy:8
+Horror	Romance	Adventure	Drama:10
+Horror	Romance	Thriller:12
+Horror	Romance	Thriller	Comedy:10
+Drama	Horror	Romance	Thriller	Comedy:10
+Horror	Romance	Thriller	Drama:12
+Horror	Romance	Comedy:13
+Drama	Horror	Romance	Comedy:13
+Horror	Romance	Drama:15
+Horror	Crime:37
+Horror	Crime	Sci-Fi:22
+Horror	Crime	Sci-Fi	Comedy:14
+Horror	Crime	Sci-Fi	Comedy	Adventure:11
+Horror	Crime	Sci-Fi	Comedy	Adventure	Thriller:9
+Drama	Horror	Crime	Sci-Fi	Comedy	Adventure	Thriller:9
+Action	Horror	Crime	Sci-Fi	Comedy	Adventure	Thriller:9
+Drama	Action	Horror	Crime	Sci-Fi	Comedy	Adventure	Thriller:9
+Horror	Crime	Sci-Fi	Comedy	Adventure	Drama:11
+Horror	Crime	Sci-Fi	Comedy	Adventure	Action:11
+Drama	Horror	Crime	Sci-Fi	Comedy	Adventure	Action:11
+Horror	Crime	Sci-Fi	Comedy	Thriller:12
+Horror	Crime	Sci-Fi	Comedy	Thriller	Action:11
+Drama	Horror	Crime	Sci-Fi	Comedy	Thriller	Action:11
+Horror	Crime	Sci-Fi	Comedy	Thriller	Drama:12
+Horror	Crime	Sci-Fi	Comedy	Action:13
+Drama	Horror	Crime	Sci-Fi	Comedy	Action:13
+Horror	Crime	Sci-Fi	Comedy	Drama:14
+Horror	Crime	Sci-Fi	Adventure:18
+Horror	Crime	Sci-Fi	Adventure	Thriller:15
+Horror	Crime	Sci-Fi	Adventure	Thriller	Action:14
+Drama	Horror	Crime	Sci-Fi	Adventure	Thriller	Action:14
+Horror	Crime	Sci-Fi	Adventure	Thriller	Drama:15
+Horror	Crime	Sci-Fi	Adventure	Action:17
+Drama	Horror	Crime	Sci-Fi	Adventure	Action:17
+Horror	Crime	Sci-Fi	Adventure	Drama:18
+Horror	Crime	Sci-Fi	Thriller:19
+Horror	Crime	Sci-Fi	Thriller	Action:17
+Drama	Horror	Crime	Sci-Fi	Thriller	Action:17
+Horror	Crime	Sci-Fi	Thriller	Drama:19
+Horror	Crime	Sci-Fi	Action:20
+Drama	Horror	Crime	Sci-Fi	Action:20
+Horror	Crime	Sci-Fi	Drama:22
+Horror	Crime	Adventure:23
+Horror	Crime	Adventure	Comedy:16
+Horror	Crime	Adventure	Comedy	Thriller:14
+Horror	Crime	Adventure	Comedy	Thriller	Action:13
+Drama	Horror	Crime	Adventure	Comedy	Thriller	Action:13
+Horror	Crime	Adventure	Comedy	Thriller	Drama:14
+Horror	Crime	Adventure	Comedy	Action:15
+Drama	Horror	Crime	Adventure	Comedy	Action:15
+Horror	Crime	Adventure	Comedy	Drama:16
+Horror	Crime	Adventure	Thriller:20
+Horror	Crime	Adventure	Thriller	Action:18
+Drama	Horror	Crime	Adventure	Thriller	Action:18
+Horror	Crime	Adventure	Thriller	Drama:20
+Horror	Crime	Adventure	Action:21
+Drama	Horror	Crime	Adventure	Action:21
+Horror	Crime	Adventure	Drama:23
+Horror	Crime	Action:28
+Horror	Crime	Action	Comedy:21
+Horror	Crime	Action	Comedy	Thriller:19
+Drama	Horror	Crime	Action	Comedy	Thriller:19
+Horror	Crime	Action	Comedy	Drama:21
+Horror	Crime	Action	Thriller:25
+Drama	Horror	Crime	Action	Thriller:25
+Horror	Crime	Action	Drama:28
+Horror	Crime	Comedy:29
+Horror	Crime	Comedy	Thriller:27
+Drama	Horror	Crime	Comedy	Thriller:27
+Horror	Crime	Comedy	Drama:29
+Horror	Crime	Thriller:34
+Drama	Horror	Crime	Thriller:34
+Horror	Crime	Drama:37
+Horror	Sci-Fi:41
+Horror	Sci-Fi	Comedy:30
+Horror	Sci-Fi	Comedy	Adventure:23
+Horror	Sci-Fi	Comedy	Adventure	Thriller:20
+Horror	Sci-Fi	Comedy	Adventure	Thriller	Action:18
+Horror	Sci-Fi	Comedy	Adventure	Thriller	Action	Drama:17
+Horror	Sci-Fi	Comedy	Adventure	Thriller	Drama:19
+Horror	Sci-Fi	Comedy	Adventure	Drama:21
+Horror	Sci-Fi	Comedy	Adventure	Action:21
+Horror	Sci-Fi	Comedy	Adventure	Action	Drama:19
+Horror	Sci-Fi	Comedy	Action:25
+Horror	Sci-Fi	Comedy	Action	Thriller:22
+Horror	Sci-Fi	Comedy	Action	Thriller	Drama:21
+Horror	Sci-Fi	Comedy	Action	Drama:23
+Horror	Sci-Fi	Comedy	Thriller:27
+Horror	Sci-Fi	Comedy	Thriller	Drama:26
+Horror	Sci-Fi	Comedy	Drama:28
+Horror	Sci-Fi	Adventure:33
+Horror	Sci-Fi	Adventure	Thriller:29
+Horror	Sci-Fi	Adventure	Thriller	Action:26
+Horror	Sci-Fi	Adventure	Thriller	Action	Drama:24
+Horror	Sci-Fi	Adventure	Thriller	Drama:27
+Horror	Sci-Fi	Adventure	Drama:30
+Horror	Sci-Fi	Adventure	Action:30
+Horror	Sci-Fi	Adventure	Action	Drama:27
+Horror	Sci-Fi	Action:35
+Horror	Sci-Fi	Action	Thriller:31
+Horror	Sci-Fi	Action	Thriller	Drama:29
+Horror	Sci-Fi	Action	Drama:32
+Horror	Sci-Fi	Thriller:37
+Horror	Sci-Fi	Thriller	Drama:35
+Horror	Sci-Fi	Drama:38
+Horror	Adventure:41
+Horror	Adventure	Comedy:30
+Horror	Adventure	Comedy	Thriller:25
+Horror	Adventure	Comedy	Thriller	Drama:24
+Horror	Adventure	Comedy	Action:25
+Horror	Adventure	Comedy	Action	Thriller:22
+Horror	Adventure	Comedy	Action	Thriller	Drama:21
+Horror	Adventure	Comedy	Action	Drama:23
+Horror	Adventure	Comedy	Drama:28
+Horror	Adventure	Thriller:35
+Horror	Adventure	Thriller	Drama:33
+Horror	Adventure	Action:35
+Horror	Adventure	Action	Thriller:31
+Horror	Adventure	Action	Thriller	Drama:29
+Horror	Adventure	Action	Drama:32
+Horror	Adventure	Drama:38
+Horror	Action:45
+Horror	Action	Comedy:34
+Horror	Action	Comedy	Thriller:31
+Horror	Action	Comedy	Thriller	Drama:30
+Horror	Action	Comedy	Drama:32
+Horror	Action	Thriller:41
+Horror	Action	Thriller	Drama:39
+Horror	Action	Drama:42
+Horror	Comedy:48
+Horror	Comedy	Thriller:43
+Horror	Comedy	Thriller	Drama:42
+Horror	Comedy	Drama:46
+Horror	Thriller:54
+Horror	Thriller	Drama:52
+Horror	Drama:57
+Children:67
+Children	Crime:19
+Children	Crime	Sci-Fi:7
+Children	Crime	Sci-Fi	Drama:7
+Children	Crime	Sci-Fi	Comedy:7
+Drama	Children	Crime	Sci-Fi	Comedy:7
+Children	Crime	Sci-Fi	Adventure:7
+Drama	Children	Crime	Sci-Fi	Adventure:7
+Comedy	Children	Crime	Sci-Fi	Adventure:7
+Drama	Comedy	Children	Crime	Sci-Fi	Adventure:7
+Children	Crime	Sci-Fi	Action:7
+Drama	Children	Crime	Sci-Fi	Action:7
+Comedy	Children	Crime	Sci-Fi	Action:7
+Adventure	Children	Crime	Sci-Fi	Action:7
+Drama	Comedy	Children	Crime	Sci-Fi	Action:7
+Drama	Adventure	Children	Crime	Sci-Fi	Action:7
+Comedy	Adventure	Children	Crime	Sci-Fi	Action:7
+Drama	Comedy	Adventure	Children	Crime	Sci-Fi	Action:7
+Children	Crime	Romance:9
+Children	Crime	Romance	Comedy:8
+Drama	Children	Crime	Romance	Comedy:8
+Children	Crime	Romance	Adventure:8
+Children	Crime	Romance	Adventure	Comedy:7
+Drama	Children	Crime	Romance	Adventure	Comedy:7
+Children	Crime	Romance	Adventure	Drama:8
+Children	Crime	Romance	Drama:9
+Children	Crime	Action:13
+Children	Crime	Action	Adventure:10
+Children	Crime	Action	Adventure	Thriller:8
+Drama	Children	Crime	Action	Adventure	Thriller:8
+Comedy	Children	Crime	Action	Adventure	Thriller:8
+Drama	Comedy	Children	Crime	Action	Adventure	Thriller:8
+Children	Crime	Action	Adventure	Drama:10
+Children	Crime	Action	Adventure	Comedy:10
+Drama	Children	Crime	Action	Adventure	Comedy:10
+Children	Crime	Action	Thriller:11
+Drama	Children	Crime	Action	Thriller:11
+Comedy	Children	Crime	Action	Thriller:11
+Drama	Comedy	Children	Crime	Action	Thriller:11
+Children	Crime	Action	Drama:13
+Children	Crime	Action	Comedy:13
+Drama	Children	Crime	Action	Comedy:13
+Children	Crime	Thriller:14
+Children	Crime	Thriller	Adventure:11
+Children	Crime	Thriller	Adventure	Comedy:10
+Drama	Children	Crime	Thriller	Adventure	Comedy:10
+Children	Crime	Thriller	Adventure	Drama:11
+Children	Crime	Thriller	Comedy:13
+Drama	Children	Crime	Thriller	Comedy:13
+Children	Crime	Thriller	Drama:14
+Children	Crime	Adventure:15
+Children	Crime	Adventure	Comedy:14
+Drama	Children	Crime	Adventure	Comedy:14
+Children	Crime	Adventure	Drama:15
+Children	Crime	Comedy:18
+Drama	Children	Crime	Comedy:18
+Children	Crime	Drama:19
+Children	Sci-Fi:26
+Children	Sci-Fi	Romance:13
+Children	Sci-Fi	Romance	Action:10
+Drama	Children	Sci-Fi	Romance	Action:10
+Comedy	Children	Sci-Fi	Romance	Action:10
+Adventure	Children	Sci-Fi	Romance	Action:10
+Drama	Comedy	Children	Sci-Fi	Romance	Action:10
+Drama	Adventure	Children	Sci-Fi	Romance	Action:10
+Comedy	Adventure	Children	Sci-Fi	Romance	Action:10
+Drama	Comedy	Adventure	Children	Sci-Fi	Romance	Action:10
+Children	Sci-Fi	Romance	Adventure:12
+Drama	Children	Sci-Fi	Romance	Adventure:12
+Comedy	Children	Sci-Fi	Romance	Adventure:12
+Drama	Comedy	Children	Sci-Fi	Romance	Adventure:12
+Children	Sci-Fi	Romance	Drama:13
+Children	Sci-Fi	Romance	Comedy:13
+Drama	Children	Sci-Fi	Romance	Comedy:13
+Children	Sci-Fi	Thriller:13
+Children	Sci-Fi	Thriller	Adventure:10
+Drama	Children	Sci-Fi	Thriller	Adventure:10
+Comedy	Children	Sci-Fi	Thriller	Adventure:10
+Action	Children	Sci-Fi	Thriller	Adventure:10
+Drama	Comedy	Children	Sci-Fi	Thriller	Adventure:10
+Drama	Action	Children	Sci-Fi	Thriller	Adventure:10
+Comedy	Action	Children	Sci-Fi	Thriller	Adventure:10
+Drama	Comedy	Action	Children	Sci-Fi	Thriller	Adventure:10
+Children	Sci-Fi	Thriller	Action:12
+Drama	Children	Sci-Fi	Thriller	Action:12
+Comedy	Children	Sci-Fi	Thriller	Action:12
+Drama	Comedy	Children	Sci-Fi	Thriller	Action:12
+Children	Sci-Fi	Thriller	Drama:13
+Children	Sci-Fi	Thriller	Comedy:13
+Drama	Children	Sci-Fi	Thriller	Comedy:13
+Children	Sci-Fi	Fantasy:14
+Children	Sci-Fi	Fantasy	Comedy:12
+Children	Sci-Fi	Fantasy	Comedy	Adventure:11
+Drama	Children	Sci-Fi	Fantasy	Comedy	Adventure:11
+Children	Sci-Fi	Fantasy	Comedy	Drama:12
+Children	Sci-Fi	Fantasy	Action:12
+Children	Sci-Fi	Fantasy	Action	Comedy:10
+Children	Sci-Fi	Fantasy	Action	Comedy	Adventure:9
+Drama	Children	Sci-Fi	Fantasy	Action	Comedy	Adventure:9
+Children	Sci-Fi	Fantasy	Action	Comedy	Drama:10
+Children	Sci-Fi	Fantasy	Action	Adventure:11
+Drama	Children	Sci-Fi	Fantasy	Action	Adventure:11
+Children	Sci-Fi	Fantasy	Action	Drama:12
+Children	Sci-Fi	Fantasy	Adventure:13
+Drama	Children	Sci-Fi	Fantasy	Adventure:13
+Children	Sci-Fi	Fantasy	Drama:14
+Children	Sci-Fi	Action:22
+Children	Sci-Fi	Action	Adventure:20
+Children	Sci-Fi	Action	Adventure	Comedy:18
+Drama	Children	Sci-Fi	Action	Adventure	Comedy:18
+Children	Sci-Fi	Action	Adventure	Drama:20
+Children	Sci-Fi	Action	Comedy:20
+Drama	Children	Sci-Fi	Action	Comedy:20
+Children	Sci-Fi	Action	Drama:22
+Children	Sci-Fi	Adventure:23
+Children	Sci-Fi	Adventure	Comedy:21
+Drama	Children	Sci-Fi	Adventure	Comedy:21
+Children	Sci-Fi	Adventure	Drama:23
+Children	Sci-Fi	Comedy:24
+Drama	Children	Sci-Fi	Comedy:24
+Children	Sci-Fi	Drama:26
+Children	Fantasy:28
+Children	Fantasy	Romance:13
+Children	Fantasy	Romance	Action:7
+Drama	Children	Fantasy	Romance	Action:7
+Comedy	Children	Fantasy	Romance	Action:7
+Adventure	Children	Fantasy	Romance	Action:7
+Drama	Comedy	Children	Fantasy	Romance	Action:7
+Drama	Adventure	Children	Fantasy	Romance	Action:7
+Comedy	Adventure	Children	Fantasy	Romance	Action:7
+Drama	Comedy	Adventure	Children	Fantasy	Romance	Action:7
+Children	Fantasy	Romance	Adventure:12
+Drama	Children	Fantasy	Romance	Adventure:12
+Comedy	Children	Fantasy	Romance	Adventure:12
+Drama	Comedy	Children	Fantasy	Romance	Adventure:12
+Children	Fantasy	Romance	Drama:13
+Children	Fantasy	Romance	Comedy:13
+Drama	Children	Fantasy	Romance	Comedy:13
+Children	Fantasy	Action:17
+Children	Fantasy	Action	Comedy:15
+Children	Fantasy	Action	Comedy	Adventure:14
+Drama	Children	Fantasy	Action	Comedy	Adventure:14
+Children	Fantasy	Action	Comedy	Drama:15
+Children	Fantasy	Action	Adventure:16
+Drama	Children	Fantasy	Action	Adventure:16
+Children	Fantasy	Action	Drama:17
+Children	Fantasy	Drama:26
+Children	Fantasy	Adventure:26
+Children	Fantasy	Adventure	Comedy:24
+Children	Fantasy	Adventure	Comedy	Drama:22
+Children	Fantasy	Adventure	Drama:24
+Children	Fantasy	Comedy:26
+Children	Fantasy	Comedy	Drama:24
+Children	Thriller:32
+Children	Thriller	Romance:17
+Children	Thriller	Romance	Action:13
+Children	Thriller	Romance	Action	Adventure:12
+Drama	Children	Thriller	Romance	Action	Adventure:12
+Comedy	Children	Thriller	Romance	Action	Adventure:12
+Drama	Comedy	Children	Thriller	Romance	Action	Adventure:12
+Children	Thriller	Romance	Action	Drama:13
+Children	Thriller	Romance	Action	Comedy:13
+Drama	Children	Thriller	Romance	Action	Comedy:13
+Children	Thriller	Romance	Adventure:14
+Children	Thriller	Romance	Adventure	Comedy:13
+Drama	Children	Thriller	Romance	Adventure	Comedy:13
+Children	Thriller	Romance	Adventure	Drama:14
+Children	Thriller	Romance	Comedy:16
+Drama	Children	Thriller	Romance	Comedy:16
+Children	Thriller	Romance	Drama:17
+Children	Thriller	Adventure:24
+Children	Thriller	Adventure	Action:19
+Drama	Children	Thriller	Adventure	Action:19
+Comedy	Children	Thriller	Adventure	Action:19
+Drama	Comedy	Children	Thriller	Adventure	Action:19
+Children	Thriller	Adventure	Comedy:23
+Drama	Children	Thriller	Adventure	Comedy:23
+Children	Thriller	Adventure	Drama:24
+Children	Thriller	Action:25
+Drama	Children	Thriller	Action:25
+Comedy	Children	Thriller	Action:25
+Drama	Comedy	Children	Thriller	Action:25
+Children	Thriller	Comedy:31
+Drama	Children	Thriller	Comedy:31
+Children	Thriller	Drama:32
+Children	Action:40
+Children	Action	Romance:21
+Children	Action	Romance	Adventure:20
+Drama	Children	Action	Romance	Adventure:20
+Comedy	Children	Action	Romance	Adventure:20
+Drama	Comedy	Children	Action	Romance	Adventure:20
+Children	Action	Romance	Drama:21
+Children	Action	Romance	Comedy:21
+Drama	Children	Action	Romance	Comedy:21
+Children	Action	Adventure:34
+Children	Action	Adventure	Comedy:32
+Drama	Children	Action	Adventure	Comedy:32
+Children	Action	Adventure	Drama:34
+Children	Action	Comedy:38
+Drama	Children	Action	Comedy:38
+Children	Action	Drama:40
+Children	Romance:41
+Children	Romance	Adventure:33
+Children	Romance	Adventure	Comedy:32
+Drama	Children	Romance	Adventure	Comedy:32
+Children	Romance	Adventure	Drama:33
+Children	Romance	Comedy:40
+Drama	Children	Romance	Comedy:40
+Children	Romance	Drama:41
+Children	Adventure:54
+Children	Adventure	Comedy:51
+Children	Adventure	Comedy	Drama:49
+Children	Adventure	Drama:52
+Children	Comedy:64
+Children	Comedy	Drama:62
+Children	Drama:65
+Mystery:70
+Mystery	Fantasy:8
+Mystery	Fantasy	Drama:7
+Comedy	Mystery	Fantasy	Drama:7
+Mystery	Fantasy	Thriller:7
+Mystery	Fantasy	Thriller	Comedy:7
+Mystery	Fantasy	Comedy:8
+Mystery	War:10
+Mystery	War	Action:7
+Mystery	War	Action	Drama:7
+Mystery	War	Action	Thriller:7
+Drama	Mystery	War	Action	Thriller:7
+Mystery	War	Romance:7
+Mystery	War	Romance	Drama:7
+Mystery	War	Romance	Thriller:7
+Drama	Mystery	War	Romance	Thriller:7
+Mystery	War	Crime:8
+Mystery	War	Crime	Thriller:7
+Drama	Mystery	War	Crime	Thriller:7
+Mystery	War	Crime	Drama:8
+Mystery	War	Comedy:8
+Mystery	War	Comedy	Thriller:7
+Drama	Mystery	War	Comedy	Thriller:7
+Mystery	War	Comedy	Drama:8
+Mystery	War	Thriller:9
+Drama	Mystery	War	Thriller:9
+Mystery	War	Drama:10
+Mystery	Adventure:29
+Mystery	Adventure	Romance:15
+Mystery	Adventure	Romance	Action:11
+Mystery	Adventure	Romance	Action	Comedy:10
+Drama	Mystery	Adventure	Romance	Action	Comedy:10
+Thriller	Mystery	Adventure	Romance	Action	Comedy:10
+Drama	Thriller	Mystery	Adventure	Romance	Action	Comedy:10
+Mystery	Adventure	Romance	Action	Drama:11
+Mystery	Adventure	Romance	Action	Thriller:11
+Drama	Mystery	Adventure	Romance	Action	Thriller:11
+Mystery	Adventure	Romance	Crime:11
+Mystery	Adventure	Romance	Crime	Action:9
+Drama	Mystery	Adventure	Romance	Crime	Action:9
+Thriller	Mystery	Adventure	Romance	Crime	Action:9
+Comedy	Mystery	Adventure	Romance	Crime	Action:9
+Drama	Thriller	Mystery	Adventure	Romance	Crime	Action:9
+Drama	Comedy	Mystery	Adventure	Romance	Crime	Action:9
+Thriller	Comedy	Mystery	Adventure	Romance	Crime	Action:9
+Drama	Thriller	Comedy	Mystery	Adventure	Romance	Crime	Action:9
+Mystery	Adventure	Romance	Crime	Thriller:10
+Drama	Mystery	Adventure	Romance	Crime	Thriller:10
+Mystery	Adventure	Romance	Crime	Comedy:10
+Mystery	Adventure	Romance	Crime	Comedy	Thriller:9
+Drama	Mystery	Adventure	Romance	Crime	Comedy	Thriller:9
+Mystery	Adventure	Romance	Crime	Comedy	Drama:10
+Mystery	Adventure	Romance	Crime	Drama:11
+Mystery	Adventure	Romance	Comedy:12
+Mystery	Adventure	Romance	Comedy	Thriller:11
+Drama	Mystery	Adventure	Romance	Comedy	Thriller:11
+Mystery	Adventure	Romance	Comedy	Drama:12
+Mystery	Adventure	Romance	Thriller:14
+Drama	Mystery	Adventure	Romance	Thriller:14
+Mystery	Adventure	Romance	Drama:15
+Mystery	Adventure	Sci-Fi:17
+Mystery	Adventure	Sci-Fi	Crime:9
+Mystery	Adventure	Sci-Fi	Crime	Comedy:7
+Drama	Mystery	Adventure	Sci-Fi	Crime	Comedy:7
+Thriller	Mystery	Adventure	Sci-Fi	Crime	Comedy:7
+Action	Mystery	Adventure	Sci-Fi	Crime	Comedy:7
+Drama	Thriller	Mystery	Adventure	Sci-Fi	Crime	Comedy:7
+Drama	Action	Mystery	Adventure	Sci-Fi	Crime	Comedy:7
+Thriller	Action	Mystery	Adventure	Sci-Fi	Crime	Comedy:7
+Drama	Thriller	Action	Mystery	Adventure	Sci-Fi	Crime	Comedy:7
+Mystery	Adventure	Sci-Fi	Crime	Drama:9
+Mystery	Adventure	Sci-Fi	Crime	Thriller:9
+Drama	Mystery	Adventure	Sci-Fi	Crime	Thriller:9
+Mystery	Adventure	Sci-Fi	Crime	Action:9
+Drama	Mystery	Adventure	Sci-Fi	Crime	Action:9
+Thriller	Mystery	Adventure	Sci-Fi	Crime	Action:9
+Drama	Thriller	Mystery	Adventure	Sci-Fi	Crime	Action:9
+Mystery	Adventure	Sci-Fi	Comedy:11
+Mystery	Adventure	Sci-Fi	Comedy	Drama:10
+Action	Mystery	Adventure	Sci-Fi	Comedy	Drama:10
+Mystery	Adventure	Sci-Fi	Comedy	Thriller:10
+Mystery	Adventure	Sci-Fi	Comedy	Thriller	Drama:9
+Action	Mystery	Adventure	Sci-Fi	Comedy	Thriller	Drama:9
+Mystery	Adventure	Sci-Fi	Comedy	Thriller	Action:10
+Mystery	Adventure	Sci-Fi	Comedy	Action:11
+Mystery	Adventure	Sci-Fi	Drama:16
+Mystery	Adventure	Sci-Fi	Thriller:16
+Mystery	Adventure	Sci-Fi	Thriller	Drama:15
+Mystery	Adventure	Sci-Fi	Action:16
+Mystery	Adventure	Sci-Fi	Action	Drama:15
+Mystery	Adventure	Sci-Fi	Action	Thriller:15
+Mystery	Adventure	Sci-Fi	Action	Thriller	Drama:14
+Mystery	Adventure	Crime:20
+Mystery	Adventure	Crime	Action:18
+Drama	Mystery	Adventure	Crime	Action:18
+Thriller	Mystery	Adventure	Crime	Action:18
+Drama	Thriller	Mystery	Adventure	Crime	Action:18
+Mystery	Adventure	Crime	Thriller:19
+Drama	Mystery	Adventure	Crime	Thriller:19
+Mystery	Adventure	Crime	Drama:20
+Mystery	Adventure	Comedy:20
+Mystery	Adventure	Comedy	Crime:15
+Mystery	Adventure	Comedy	Crime	Thriller:14
+Drama	Mystery	Adventure	Comedy	Crime	Thriller:14
+Mystery	Adventure	Comedy	Crime	Action:14
+Drama	Mystery	Adventure	Comedy	Crime	Action:14
+Thriller	Mystery	Adventure	Comedy	Crime	Action:14
+Drama	Thriller	Mystery	Adventure	Comedy	Crime	Action:14
+Mystery	Adventure	Comedy	Crime	Drama:15
+Mystery	Adventure	Comedy	Action:18
+Mystery	Adventure	Comedy	Action	Drama:17
+Mystery	Adventure	Comedy	Action	Thriller:17
+Mystery	Adventure	Comedy	Action	Thriller	Drama:16
+Mystery	Adventure	Comedy	Thriller:18
+Mystery	Adventure	Comedy	Thriller	Drama:17
+Mystery	Adventure	Comedy	Drama:19
+Mystery	Adventure	Action:25
+Mystery	Adventure	Action	Thriller:24
+Mystery	Adventure	Action	Thriller	Drama:23
+Mystery	Adventure	Action	Drama:24
+Mystery	Adventure	Thriller:27
+Mystery	Adventure	Thriller	Drama:26
+Mystery	Adventure	Drama:28
+Mystery	Sci-Fi:31
+Mystery	Sci-Fi	Romance:10
+Mystery	Sci-Fi	Romance	Comedy:8
+Mystery	Sci-Fi	Romance	Comedy	Thriller:7
+Drama	Mystery	Sci-Fi	Romance	Comedy	Thriller:7
+Mystery	Sci-Fi	Romance	Comedy	Drama:8
+Mystery	Sci-Fi	Romance	Thriller:9
+Drama	Mystery	Sci-Fi	Romance	Thriller:9
+Mystery	Sci-Fi	Romance	Drama:10
+Mystery	Sci-Fi	Crime:19
+Mystery	Sci-Fi	Crime	Comedy:13
+Mystery	Sci-Fi	Crime	Comedy	Action:11
+Drama	Mystery	Sci-Fi	Crime	Comedy	Action:11
+Thriller	Mystery	Sci-Fi	Crime	Comedy	Action:11
+Drama	Thriller	Mystery	Sci-Fi	Crime	Comedy	Action:11
+Mystery	Sci-Fi	Crime	Comedy	Drama:13
+Mystery	Sci-Fi	Crime	Comedy	Thriller:13
+Drama	Mystery	Sci-Fi	Crime	Comedy	Thriller:13
+Mystery	Sci-Fi	Crime	Action:17
+Drama	Mystery	Sci-Fi	Crime	Action:17
+Thriller	Mystery	Sci-Fi	Crime	Action:17
+Drama	Thriller	Mystery	Sci-Fi	Crime	Action:17
+Mystery	Sci-Fi	Crime	Drama:19
+Mystery	Sci-Fi	Crime	Thriller:19
+Drama	Mystery	Sci-Fi	Crime	Thriller:19
+Mystery	Sci-Fi	Comedy:21
+Mystery	Sci-Fi	Comedy	Action:17
+Mystery	Sci-Fi	Comedy	Action	Thriller:16
+Mystery	Sci-Fi	Comedy	Action	Thriller	Drama:15
+Mystery	Sci-Fi	Comedy	Action	Drama:16
+Mystery	Sci-Fi	Comedy	Thriller:19
+Mystery	Sci-Fi	Comedy	Thriller	Drama:18
+Mystery	Sci-Fi	Comedy	Drama:20
+Mystery	Sci-Fi	Action:26
+Mystery	Sci-Fi	Action	Thriller:25
+Mystery	Sci-Fi	Action	Thriller	Drama:24
+Mystery	Sci-Fi	Action	Drama:25
+Mystery	Sci-Fi	Thriller:29
+Mystery	Sci-Fi	Thriller	Drama:28
+Mystery	Sci-Fi	Drama:30
+Mystery	Romance:32
+Mystery	Romance	Action:17
+Mystery	Romance	Action	Crime:14
+Drama	Mystery	Romance	Action	Crime:14
+Thriller	Mystery	Romance	Action	Crime:14
+Comedy	Mystery	Romance	Action	Crime:14
+Drama	Thriller	Mystery	Romance	Action	Crime:14
+Drama	Comedy	Mystery	Romance	Action	Crime:14
+Thriller	Comedy	Mystery	Romance	Action	Crime:14
+Drama	Thriller	Comedy	Mystery	Romance	Action	Crime:14
+Mystery	Romance	Action	Comedy:16
+Drama	Mystery	Romance	Action	Comedy:16
+Thriller	Mystery	Romance	Action	Comedy:16
+Drama	Thriller	Mystery	Romance	Action	Comedy:16
+Mystery	Romance	Action	Drama:17
+Mystery	Romance	Action	Thriller:17
+Drama	Mystery	Romance	Action	Thriller:17
+Mystery	Romance	Crime:22
+Mystery	Romance	Crime	Thriller:19
+Mystery	Romance	Crime	Thriller	Comedy:17
+Drama	Mystery	Romance	Crime	Thriller	Comedy:17
+Mystery	Romance	Crime	Thriller	Drama:19
+Mystery	Romance	Crime	Comedy:20
+Drama	Mystery	Romance	Crime	Comedy:20
+Mystery	Romance	Crime	Drama:22
+Mystery	Romance	Thriller:28
+Drama	Mystery	Romance	Thriller:28
+Mystery	Romance	Comedy:28
+Mystery	Romance	Comedy	Thriller:24
+Drama	Mystery	Romance	Comedy	Thriller:24
+Mystery	Romance	Comedy	Drama:28
+Mystery	Romance	Drama:32
+Mystery	Action:49
+Mystery	Action	Comedy:35
+Mystery	Action	Comedy	Crime:29
+Drama	Mystery	Action	Comedy	Crime:29
+Thriller	Mystery	Action	Comedy	Crime:29
+Drama	Thriller	Mystery	Action	Comedy	Crime:29
+Mystery	Action	Comedy	Drama:34
+Mystery	Action	Comedy	Thriller:34
+Mystery	Action	Comedy	Thriller	Drama:33
+Mystery	Action	Crime:40
+Drama	Mystery	Action	Crime:40
+Thriller	Mystery	Action	Crime:40
+Drama	Thriller	Mystery	Action	Crime:40
+Mystery	Action	Drama:48
+Mystery	Action	Thriller:48
+Mystery	Action	Thriller	Drama:47
+Mystery	Comedy:53
+Mystery	Comedy	Crime:41
+Mystery	Comedy	Crime	Thriller:37
+Drama	Mystery	Comedy	Crime	Thriller:37
+Mystery	Comedy	Crime	Drama:41
+Mystery	Comedy	Thriller:47
+Mystery	Comedy	Thriller	Drama:46
+Mystery	Comedy	Drama:52
+Mystery	Crime:54
+Mystery	Crime	Thriller:50
+Drama	Mystery	Crime	Thriller:50
+Mystery	Crime	Drama:54
+Mystery	Thriller:64
+Mystery	Thriller	Drama:63
+Mystery	Drama:69
+War:83
+War	Fantasy:12
+War	Fantasy	Thriller:7
+War	Fantasy	Thriller	Drama:7
+War	Fantasy	Comedy:8
+War	Fantasy	Comedy	Adventure:7
+Drama	War	Fantasy	Comedy	Adventure:7
+War	Fantasy	Comedy	Drama:8
+War	Fantasy	Action:9
+Drama	War	Fantasy	Action:9
+Adventure	War	Fantasy	Action:9
+Drama	Adventure	War	Fantasy	Action:9
+War	Fantasy	Adventure:11
+Drama	War	Fantasy	Adventure:11
+War	Fantasy	Drama:12
+War	Sci-Fi:32
+War	Sci-Fi	Romance:11
+War	Sci-Fi	Romance	Thriller:8
+War	Sci-Fi	Romance	Thriller	Comedy:7
+Drama	War	Sci-Fi	Romance	Thriller	Comedy:7
+Action	War	Sci-Fi	Romance	Thriller	Comedy:7
+Drama	Action	War	Sci-Fi	Romance	Thriller	Comedy:7
+War	Sci-Fi	Romance	Thriller	Drama:8
+War	Sci-Fi	Romance	Thriller	Action:8
+Drama	War	Sci-Fi	Romance	Thriller	Action:8
+War	Sci-Fi	Romance	Adventure:9
+War	Sci-Fi	Romance	Adventure	Action:8
+Drama	War	Sci-Fi	Romance	Adventure	Action:8
+War	Sci-Fi	Romance	Adventure	Drama:9
+War	Sci-Fi	Romance	Comedy:9
+War	Sci-Fi	Romance	Comedy	Adventure:7
+Drama	War	Sci-Fi	Romance	Comedy	Adventure:7
+Action	War	Sci-Fi	Romance	Comedy	Adventure:7
+Drama	Action	War	Sci-Fi	Romance	Comedy	Adventure:7
+War	Sci-Fi	Romance	Comedy	Drama:9
+War	Sci-Fi	Romance	Comedy	Action:9
+Drama	War	Sci-Fi	Romance	Comedy	Action:9
+War	Sci-Fi	Romance	Action:10
+Drama	War	Sci-Fi	Romance	Action:10
+War	Sci-Fi	Romance	Drama:11
+War	Sci-Fi	Crime:17
+War	Sci-Fi	Crime	Comedy:11
+War	Sci-Fi	Crime	Comedy	Adventure:8
+War	Sci-Fi	Crime	Comedy	Adventure	Thriller:7
+Drama	War	Sci-Fi	Crime	Comedy	Adventure	Thriller:7
+Action	War	Sci-Fi	Crime	Comedy	Adventure	Thriller:7
+Drama	Action	War	Sci-Fi	Crime	Comedy	Adventure	Thriller:7
+War	Sci-Fi	Crime	Comedy	Adventure	Drama:8
+War	Sci-Fi	Crime	Comedy	Adventure	Action:8
+Drama	War	Sci-Fi	Crime	Comedy	Adventure	Action:8
+War	Sci-Fi	Crime	Comedy	Thriller:10
+Drama	War	Sci-Fi	Crime	Comedy	Thriller:10
+Action	War	Sci-Fi	Crime	Comedy	Thriller:10
+Drama	Action	War	Sci-Fi	Crime	Comedy	Thriller:10
+War	Sci-Fi	Crime	Comedy	Drama:11
+War	Sci-Fi	Crime	Comedy	Action:11
+Drama	War	Sci-Fi	Crime	Comedy	Action:11
+War	Sci-Fi	Crime	Adventure:14
+War	Sci-Fi	Crime	Adventure	Thriller:12
+Drama	War	Sci-Fi	Crime	Adventure	Thriller:12
+Action	War	Sci-Fi	Crime	Adventure	Thriller:12
+Drama	Action	War	Sci-Fi	Crime	Adventure	Thriller:12
+War	Sci-Fi	Crime	Adventure	Drama:14
+War	Sci-Fi	Crime	Adventure	Action:14
+Drama	War	Sci-Fi	Crime	Adventure	Action:14
+War	Sci-Fi	Crime	Thriller:15
+Drama	War	Sci-Fi	Crime	Thriller:15
+Action	War	Sci-Fi	Crime	Thriller:15
+Drama	Action	War	Sci-Fi	Crime	Thriller:15
+War	Sci-Fi	Crime	Drama:17
+War	Sci-Fi	Crime	Action:17
+Drama	War	Sci-Fi	Crime	Action:17
+War	Sci-Fi	Comedy:21
+War	Sci-Fi	Comedy	Adventure:15
+War	Sci-Fi	Comedy	Adventure	Thriller:11
+Drama	War	Sci-Fi	Comedy	Adventure	Thriller:11
+Action	War	Sci-Fi	Comedy	Adventure	Thriller:11
+Drama	Action	War	Sci-Fi	Comedy	Adventure	Thriller:11
+War	Sci-Fi	Comedy	Adventure	Action:14
+Drama	War	Sci-Fi	Comedy	Adventure	Action:14
+War	Sci-Fi	Comedy	Adventure	Drama:15
+War	Sci-Fi	Comedy	Thriller:16
+Drama	War	Sci-Fi	Comedy	Thriller:16
+Action	War	Sci-Fi	Comedy	Thriller:16
+Drama	Action	War	Sci-Fi	Comedy	Thriller:16
+War	Sci-Fi	Comedy	Drama:20
+War	Sci-Fi	Comedy	Action:20
+War	Sci-Fi	Comedy	Action	Drama:19
+War	Sci-Fi	Thriller:24
+War	Sci-Fi	Thriller	Adventure:19
+Drama	War	Sci-Fi	Thriller	Adventure:19
+Action	War	Sci-Fi	Thriller	Adventure:19
+Drama	Action	War	Sci-Fi	Thriller	Adventure:19
+War	Sci-Fi	Thriller	Drama:24
+War	Sci-Fi	Thriller	Action:24
+Drama	War	Sci-Fi	Thriller	Action:24
+War	Sci-Fi	Adventure:26
+War	Sci-Fi	Adventure	Action:24
+Drama	War	Sci-Fi	Adventure	Action:24
+War	Sci-Fi	Adventure	Drama:26
+War	Sci-Fi	Action:30
+War	Sci-Fi	Action	Drama:29
+War	Sci-Fi	Drama:31
+War	Romance:45
+War	Romance	Adventure:21
+War	Romance	Adventure	Crime:12
+War	Romance	Adventure	Crime	Comedy:9
+Drama	War	Romance	Adventure	Crime	Comedy:9
+Thriller	War	Romance	Adventure	Crime	Comedy:9
+Action	War	Romance	Adventure	Crime	Comedy:9
+Drama	Thriller	War	Romance	Adventure	Crime	Comedy:9
+Drama	Action	War	Romance	Adventure	Crime	Comedy:9
+Thriller	Action	War	Romance	Adventure	Crime	Comedy:9
+Drama	Thriller	Action	War	Romance	Adventure	Crime	Comedy:9
+War	Romance	Adventure	Crime	Action:10
+Drama	War	Romance	Adventure	Crime	Action:10
+Thriller	War	Romance	Adventure	Crime	Action:10
+Drama	Thriller	War	Romance	Adventure	Crime	Action:10
+War	Romance	Adventure	Crime	Drama:12
+War	Romance	Adventure	Crime	Thriller:12
+Drama	War	Romance	Adventure	Crime	Thriller:12
+War	Romance	Adventure	Comedy:16
+War	Romance	Adventure	Comedy	Thriller:13
+Drama	War	Romance	Adventure	Comedy	Thriller:13
+Action	War	Romance	Adventure	Comedy	Thriller:13
+Drama	Action	War	Romance	Adventure	Comedy	Thriller:13
+War	Romance	Adventure	Comedy	Action:15
+Drama	War	Romance	Adventure	Comedy	Action:15
+War	Romance	Adventure	Comedy	Drama:16
+War	Romance	Adventure	Thriller:17
+Drama	War	Romance	Adventure	Thriller:17
+War	Romance	Adventure	Action:17
+War	Romance	Adventure	Action	Thriller:15
+Drama	War	Romance	Adventure	Action	Thriller:15
+War	Romance	Adventure	Action	Drama:17
+War	Romance	Adventure	Drama:21
+War	Romance	Crime:27
+War	Romance	Crime	Comedy:22
+War	Romance	Crime	Comedy	Action:20
+War	Romance	Crime	Comedy	Action	Thriller:19
+Drama	War	Romance	Crime	Comedy	Action	Thriller:19
+War	Romance	Crime	Comedy	Action	Drama:20
+War	Romance	Crime	Comedy	Thriller:21
+Drama	War	Romance	Crime	Comedy	Thriller:21
+War	Romance	Crime	Comedy	Drama:22
+War	Romance	Crime	Action:23
+War	Romance	Crime	Action	Thriller:22
+Drama	War	Romance	Crime	Action	Thriller:22
+War	Romance	Crime	Action	Drama:23
+War	Romance	Crime	Thriller:26
+Drama	War	Romance	Crime	Thriller:26
+War	Romance	Crime	Drama:27
+War	Romance	Action:34
+War	Romance	Action	Thriller:29
+War	Romance	Action	Thriller	Comedy:25
+Drama	War	Romance	Action	Thriller	Comedy:25
+War	Romance	Action	Thriller	Drama:29
+War	Romance	Action	Comedy:30
+Drama	War	Romance	Action	Comedy:30
+War	Romance	Action	Drama:34
+War	Romance	Thriller:35
+War	Romance	Thriller	Comedy:29
+Drama	War	Romance	Thriller	Comedy:29
+War	Romance	Thriller	Drama:35
+War	Romance	Comedy:38
+Drama	War	Romance	Comedy:38
+War	Romance	Drama:45
+War	Adventure:45
+War	Adventure	Comedy:29
+War	Adventure	Comedy	Crime:20
+War	Adventure	Comedy	Crime	Action:19
+Drama	War	Adventure	Comedy	Crime	Action:19
+War	Adventure	Comedy	Crime	Thriller:19
+War	Adventure	Comedy	Crime	Thriller	Action:18
+Drama	War	Adventure	Comedy	Crime	Thriller	Action:18
+War	Adventure	Comedy	Crime	Thriller	Drama:19
+War	Adventure	Comedy	Crime	Drama:20
+War	Adventure	Comedy	Thriller:24
+War	Adventure	Comedy	Thriller	Action:23
+Drama	War	Adventure	Comedy	Thriller	Action:23
+War	Adventure	Comedy	Thriller	Drama:24
+War	Adventure	Comedy	Action:26
+Drama	War	Adventure	Comedy	Action:26
+War	Adventure	Comedy	Drama:29
+War	Adventure	Crime:30
+War	Adventure	Crime	Action:27
+War	Adventure	Crime	Action	Thriller:25
+Drama	War	Adventure	Crime	Action	Thriller:25
+War	Adventure	Crime	Action	Drama:27
+War	Adventure	Crime	Thriller:28
+Drama	War	Adventure	Crime	Thriller:28
+War	Adventure	Crime	Drama:30
+War	Adventure	Thriller:37
+War	Adventure	Thriller	Action:34
+Drama	War	Adventure	Thriller	Action:34
+War	Adventure	Thriller	Drama:37
+War	Adventure	Action:39
+Drama	War	Adventure	Action:39
+War	Adventure	Drama:45
+War	Crime:56
+War	Crime	Comedy:42
+War	Crime	Comedy	Action:36
+War	Crime	Comedy	Action	Thriller:34
+Drama	War	Crime	Comedy	Action	Thriller:34
+War	Crime	Comedy	Action	Drama:36
+War	Crime	Comedy	Thriller:39
+Drama	War	Crime	Comedy	Thriller:39
+War	Crime	Comedy	Drama:42
+War	Crime	Action:48
+War	Crime	Action	Thriller:45
+Drama	War	Crime	Action	Thriller:45
+War	Crime	Action	Drama:48
+War	Crime	Thriller:52
+Drama	War	Crime	Thriller:52
+War	Crime	Drama:56
+War	Comedy:63
+War	Comedy	Thriller:50
+Drama	War	Comedy	Thriller:50
+War	Comedy	Action:50
+War	Comedy	Action	Thriller:43
+Drama	War	Comedy	Action	Thriller:43
+War	Comedy	Action	Drama:49
+War	Comedy	Drama:62
+War	Thriller:67
+Drama	War	Thriller:67
+War	Action:67
+War	Action	Thriller:58
+Drama	War	Action	Thriller:58
+War	Action	Drama:66
+War	Drama:82
+Fantasy:121
+Fantasy	Crime:53
+Fantasy	Crime	Romance:23
+Fantasy	Crime	Romance	Sci-Fi:8
+Fantasy	Crime	Romance	Sci-Fi	Drama:7
+Fantasy	Crime	Romance	Sci-Fi	Comedy:7
+Fantasy	Crime	Romance	Sci-Fi	Thriller:7
+Fantasy	Crime	Romance	Thriller:16
+Fantasy	Crime	Romance	Thriller	Adventure:14
+Fantasy	Crime	Romance	Thriller	Adventure	Drama:13
+Fantasy	Crime	Romance	Thriller	Adventure	Comedy:13
+Fantasy	Crime	Romance	Thriller	Adventure	Comedy	Drama:12
+Fantasy	Crime	Romance	Thriller	Action:14
+Fantasy	Crime	Romance	Thriller	Action	Comedy:13
+Fantasy	Crime	Romance	Thriller	Action	Comedy	Drama:12
+Fantasy	Crime	Romance	Thriller	Action	Adventure:13
+Fantasy	Crime	Romance	Thriller	Action	Adventure	Drama:12
+Fantasy	Crime	Romance	Thriller	Action	Adventure	Comedy:12
+Fantasy	Crime	Romance	Thriller	Action	Adventure	Comedy	Drama:11
+Fantasy	Crime	Romance	Thriller	Action	Drama:13
+Fantasy	Crime	Romance	Thriller	Drama:15
+Fantasy	Crime	Romance	Thriller	Comedy:15
+Fantasy	Crime	Romance	Thriller	Comedy	Drama:14
+Fantasy	Crime	Romance	Action:17
+Fantasy	Crime	Romance	Action	Comedy:15
+Fantasy	Crime	Romance	Action	Comedy	Drama:14
+Fantasy	Crime	Romance	Action	Comedy	Adventure:14
+Fantasy	Crime	Romance	Action	Comedy	Adventure	Drama:13
+Fantasy	Crime	Romance	Action	Adventure:16
+Fantasy	Crime	Romance	Action	Adventure	Drama:15
+Fantasy	Crime	Romance	Action	Drama:16
+Fantasy	Crime	Romance	Adventure:20
+Fantasy	Crime	Romance	Adventure	Comedy:18
+Fantasy	Crime	Romance	Adventure	Comedy	Drama:17
+Fantasy	Crime	Romance	Adventure	Drama:19
+Fantasy	Crime	Romance	Comedy:21
+Fantasy	Crime	Romance	Comedy	Drama:20
+Fantasy	Crime	Romance	Drama:22
+Fantasy	Crime	Sci-Fi:28
+Fantasy	Crime	Sci-Fi	Thriller:23
+Fantasy	Crime	Sci-Fi	Thriller	Comedy:19
+Fantasy	Crime	Sci-Fi	Thriller	Comedy	Adventure:17
+Fantasy	Crime	Sci-Fi	Thriller	Comedy	Adventure	Drama:16
+Fantasy	Crime	Sci-Fi	Thriller	Comedy	Action:17
+Fantasy	Crime	Sci-Fi	Thriller	Comedy	Action	Drama:16
+Fantasy	Crime	Sci-Fi	Thriller	Comedy	Action	Adventure:16
+Fantasy	Crime	Sci-Fi	Thriller	Comedy	Action	Adventure	Drama:15
+Fantasy	Crime	Sci-Fi	Thriller	Comedy	Drama:18
+Fantasy	Crime	Sci-Fi	Thriller	Action:20
+Fantasy	Crime	Sci-Fi	Thriller	Action	Adventure:19
+Fantasy	Crime	Sci-Fi	Thriller	Action	Adventure	Drama:18
+Fantasy	Crime	Sci-Fi	Thriller	Action	Drama:19
+Fantasy	Crime	Sci-Fi	Thriller	Adventure:21
+Fantasy	Crime	Sci-Fi	Thriller	Adventure	Drama:20
+Fantasy	Crime	Sci-Fi	Thriller	Drama:22
+Fantasy	Crime	Sci-Fi	Comedy:24
+Fantasy	Crime	Sci-Fi	Comedy	Adventure:21
+Fantasy	Crime	Sci-Fi	Comedy	Adventure	Drama:20
+Fantasy	Crime	Sci-Fi	Comedy	Drama:23
+Fantasy	Crime	Sci-Fi	Action:24
+Fantasy	Crime	Sci-Fi	Action	Comedy:21
+Fantasy	Crime	Sci-Fi	Action	Comedy	Adventure:20
+Fantasy	Crime	Sci-Fi	Action	Comedy	Adventure	Drama:19
+Fantasy	Crime	Sci-Fi	Action	Comedy	Drama:20
+Fantasy	Crime	Sci-Fi	Action	Drama:23
+Fantasy	Crime	Sci-Fi	Action	Adventure:23
+Fantasy	Crime	Sci-Fi	Action	Adventure	Drama:22
+Fantasy	Crime	Sci-Fi	Adventure:25
+Fantasy	Crime	Sci-Fi	Adventure	Drama:24
+Fantasy	Crime	Sci-Fi	Drama:27
+Fantasy	Crime	Thriller:41
+Fantasy	Crime	Thriller	Adventure:35
+Fantasy	Crime	Thriller	Adventure	Comedy:30
+Fantasy	Crime	Thriller	Adventure	Comedy	Drama:29
+Fantasy	Crime	Thriller	Adventure	Comedy	Action:29
+Fantasy	Crime	Thriller	Adventure	Comedy	Action	Drama:28
+Fantasy	Crime	Thriller	Adventure	Action:33
+Fantasy	Crime	Thriller	Adventure	Action	Drama:32
+Fantasy	Crime	Thriller	Adventure	Drama:34
+Fantasy	Crime	Thriller	Comedy:36
+Fantasy	Crime	Thriller	Comedy	Drama:35
+Fantasy	Crime	Thriller	Action:36
+Fantasy	Crime	Thriller	Action	Comedy:32
+Fantasy	Crime	Thriller	Action	Comedy	Drama:31
+Fantasy	Crime	Thriller	Action	Drama:35
+Fantasy	Crime	Thriller	Drama:40
+Fantasy	Crime	Action:43
+Fantasy	Crime	Action	Comedy:38
+Fantasy	Crime	Action	Comedy	Adventure:35
+Fantasy	Crime	Action	Comedy	Adventure	Drama:34
+Fantasy	Crime	Action	Comedy	Drama:37
+Fantasy	Crime	Action	Adventure:40
+Fantasy	Crime	Action	Adventure	Drama:39
+Fantasy	Crime	Action	Drama:42
+Fantasy	Crime	Adventure:46
+Fantasy	Crime	Adventure	Comedy:40
+Fantasy	Crime	Adventure	Comedy	Drama:39
+Fantasy	Crime	Adventure	Drama:45
+Fantasy	Crime	Comedy:47
+Fantasy	Crime	Comedy	Drama:46
+Fantasy	Crime	Drama:52
+Fantasy	Romance:59
+Fantasy	Romance	Sci-Fi:26
+Fantasy	Romance	Sci-Fi	Thriller:17
+Fantasy	Romance	Sci-Fi	Thriller	Action:14
+Fantasy	Romance	Sci-Fi	Thriller	Action	Comedy:13
+Fantasy	Romance	Sci-Fi	Thriller	Action	Comedy	Drama:12
+Adventure	Fantasy	Romance	Sci-Fi	Thriller	Action	Comedy	Drama:12
+Fantasy	Romance	Sci-Fi	Thriller	Action	Comedy	Adventure:13
+Fantasy	Romance	Sci-Fi	Thriller	Action	Drama:13
+Adventure	Fantasy	Romance	Sci-Fi	Thriller	Action	Drama:13
+Fantasy	Romance	Sci-Fi	Thriller	Action	Adventure:14
+Fantasy	Romance	Sci-Fi	Thriller	Adventure:15
+Fantasy	Romance	Sci-Fi	Thriller	Adventure	Comedy:14
+Fantasy	Romance	Sci-Fi	Thriller	Adventure	Comedy	Drama:13
+Fantasy	Romance	Sci-Fi	Thriller	Adventure	Drama:14
+Fantasy	Romance	Sci-Fi	Thriller	Drama:16
+Fantasy	Romance	Sci-Fi	Thriller	Comedy:16
+Fantasy	Romance	Sci-Fi	Thriller	Comedy	Drama:15
+Fantasy	Romance	Sci-Fi	Action:19
+Fantasy	Romance	Sci-Fi	Action	Drama:18
+Adventure	Fantasy	Romance	Sci-Fi	Action	Drama:18
+Fantasy	Romance	Sci-Fi	Action	Comedy:18
+Fantasy	Romance	Sci-Fi	Action	Comedy	Drama:17
+Adventure	Fantasy	Romance	Sci-Fi	Action	Comedy	Drama:17
+Fantasy	Romance	Sci-Fi	Action	Comedy	Adventure:18
+Fantasy	Romance	Sci-Fi	Action	Adventure:19
+Fantasy	Romance	Sci-Fi	Adventure:22
+Fantasy	Romance	Sci-Fi	Adventure	Comedy:20
+Fantasy	Romance	Sci-Fi	Adventure	Comedy	Drama:19
+Fantasy	Romance	Sci-Fi	Adventure	Drama:21
+Fantasy	Romance	Sci-Fi	Comedy:24
+Fantasy	Romance	Sci-Fi	Comedy	Drama:23
+Fantasy	Romance	Sci-Fi	Drama:25
+Fantasy	Romance	Thriller:29
+Fantasy	Romance	Thriller	Action:26
+Fantasy	Romance	Thriller	Action	Drama:25
+Fantasy	Romance	Thriller	Action	Adventure:25
+Fantasy	Romance	Thriller	Action	Adventure	Drama:24
+Fantasy	Romance	Thriller	Action	Adventure	Comedy:24
+Fantasy	Romance	Thriller	Action	Adventure	Comedy	Drama:23
+Fantasy	Romance	Thriller	Action	Comedy:25
+Fantasy	Romance	Thriller	Action	Comedy	Drama:24
+Fantasy	Romance	Thriller	Adventure:26
+Fantasy	Romance	Thriller	Adventure	Drama:25
+Fantasy	Romance	Thriller	Adventure	Comedy:25
+Fantasy	Romance	Thriller	Adventure	Comedy	Drama:24
+Fantasy	Romance	Thriller	Drama:28
+Fantasy	Romance	Thriller	Comedy:28
+Fantasy	Romance	Thriller	Comedy	Drama:27
+Fantasy	Romance	Action:36
+Fantasy	Romance	Action	Comedy:34
+Fantasy	Romance	Action	Comedy	Adventure:33
+Fantasy	Romance	Action	Comedy	Adventure	Drama:32
+Fantasy	Romance	Action	Comedy	Drama:33
+Fantasy	Romance	Action	Drama:35
+Fantasy	Romance	Action	Adventure:35
+Fantasy	Romance	Action	Adventure	Drama:34
+Fantasy	Romance	Adventure:50
+Fantasy	Romance	Adventure	Comedy:47
+Fantasy	Romance	Adventure	Comedy	Drama:46
+Fantasy	Romance	Adventure	Drama:49
+Fantasy	Romance	Comedy:55
+Fantasy	Romance	Comedy	Drama:54
+Fantasy	Romance	Drama:58
+Fantasy	Thriller:70
+Fantasy	Thriller	Adventure:62
+Fantasy	Thriller	Adventure	Comedy:55
+Fantasy	Thriller	Adventure	Comedy	Drama:53
+Fantasy	Thriller	Adventure	Comedy	Action:53
+Fantasy	Thriller	Adventure	Comedy	Action	Drama:51
+Fantasy	Thriller	Adventure	Action:59
+Fantasy	Thriller	Adventure	Action	Drama:56
+Fantasy	Thriller	Adventure	Drama:59
+Fantasy	Thriller	Comedy:63
+Fantasy	Thriller	Comedy	Drama:61
+Fantasy	Thriller	Action:63
+Fantasy	Thriller	Action	Comedy:57
+Fantasy	Thriller	Action	Comedy	Drama:55
+Fantasy	Thriller	Action	Drama:60
+Fantasy	Thriller	Drama:67
+Fantasy	Sci-Fi:70
+Fantasy	Sci-Fi	Thriller:47
+Fantasy	Sci-Fi	Thriller	Comedy:41
+Fantasy	Sci-Fi	Thriller	Comedy	Adventure:37
+Fantasy	Sci-Fi	Thriller	Comedy	Adventure	Drama:35
+Fantasy	Sci-Fi	Thriller	Comedy	Adventure	Drama	Action:34
+Fantasy	Sci-Fi	Thriller	Comedy	Adventure	Action:36
+Fantasy	Sci-Fi	Thriller	Comedy	Action:38
+Fantasy	Sci-Fi	Thriller	Comedy	Action	Drama:36
+Fantasy	Sci-Fi	Thriller	Comedy	Drama:39
+Fantasy	Sci-Fi	Thriller	Adventure:43
+Fantasy	Sci-Fi	Thriller	Adventure	Drama:40
+Fantasy	Sci-Fi	Thriller	Action:43
+Fantasy	Sci-Fi	Thriller	Action	Drama:40
+Fantasy	Sci-Fi	Thriller	Action	Drama	Adventure:38
+Fantasy	Sci-Fi	Thriller	Action	Adventure:41
+Fantasy	Sci-Fi	Thriller	Drama:44
+Fantasy	Sci-Fi	Comedy:58
+Fantasy	Sci-Fi	Comedy	Action:51
+Fantasy	Sci-Fi	Comedy	Action	Drama:49
+Fantasy	Sci-Fi	Comedy	Action	Adventure:49
+Fantasy	Sci-Fi	Comedy	Action	Adventure	Drama:47
+Fantasy	Sci-Fi	Comedy	Adventure:52
+Fantasy	Sci-Fi	Comedy	Adventure	Drama:50
+Fantasy	Sci-Fi	Comedy	Drama:56
+Fantasy	Sci-Fi	Action:61
+Fantasy	Sci-Fi	Action	Drama:58
+Fantasy	Sci-Fi	Action	Drama	Adventure:56
+Fantasy	Sci-Fi	Action	Adventure:59
+Fantasy	Sci-Fi	Adventure:64
+Fantasy	Sci-Fi	Adventure	Drama:61
+Fantasy	Sci-Fi	Drama:67
+Fantasy	Action:90
+Fantasy	Action	Comedy:77
+Fantasy	Action	Comedy	Adventure:73
+Fantasy	Action	Comedy	Adventure	Drama:71
+Fantasy	Action	Comedy	Drama:75
+Fantasy	Action	Drama:86
+Fantasy	Action	Adventure:86
+Fantasy	Action	Adventure	Drama:82
+Fantasy	Comedy:105
+Fantasy	Comedy	Adventure:92
+Fantasy	Comedy	Adventure	Drama:88
+Fantasy	Comedy	Drama:101
+Fantasy	Adventure:107
+Fantasy	Adventure	Drama:101
+Fantasy	Drama:115
+Sci-Fi:284
+Sci-Fi	Romance:115
+Sci-Fi	Romance	Crime:61
+Sci-Fi	Romance	Crime	Adventure:53
+Sci-Fi	Romance	Crime	Adventure	Comedy:46
+Sci-Fi	Romance	Crime	Adventure	Comedy	Thriller:42
+Sci-Fi	Romance	Crime	Adventure	Comedy	Thriller	Action:40
+Sci-Fi	Romance	Crime	Adventure	Comedy	Thriller	Action	Drama:39
+Sci-Fi	Romance	Crime	Adventure	Comedy	Thriller	Drama:41
+Sci-Fi	Romance	Crime	Adventure	Comedy	Action:44
+Sci-Fi	Romance	Crime	Adventure	Comedy	Action	Drama:42
+Sci-Fi	Romance	Crime	Adventure	Comedy	Drama:44
+Sci-Fi	Romance	Crime	Adventure	Thriller:49
+Sci-Fi	Romance	Crime	Adventure	Thriller	Action:47
+Sci-Fi	Romance	Crime	Adventure	Thriller	Action	Drama:46
+Sci-Fi	Romance	Crime	Adventure	Thriller	Drama:48
+Sci-Fi	Romance	Crime	Adventure	Action:51
+Sci-Fi	Romance	Crime	Adventure	Action	Drama:49
+Sci-Fi	Romance	Crime	Adventure	Drama:51
+Sci-Fi	Romance	Crime	Comedy:54
+Sci-Fi	Romance	Crime	Comedy	Thriller:48
+Sci-Fi	Romance	Crime	Comedy	Thriller	Action:44
+Sci-Fi	Romance	Crime	Comedy	Thriller	Action	Drama:43
+Sci-Fi	Romance	Crime	Comedy	Thriller	Drama:47
+Sci-Fi	Romance	Crime	Comedy	Action:49
+Sci-Fi	Romance	Crime	Comedy	Action	Drama:47
+Sci-Fi	Romance	Crime	Comedy	Drama:52
+Sci-Fi	Romance	Crime	Thriller:55
+Sci-Fi	Romance	Crime	Thriller	Action:51
+Sci-Fi	Romance	Crime	Thriller	Action	Drama:50
+Sci-Fi	Romance	Crime	Thriller	Drama:54
+Sci-Fi	Romance	Crime	Action:56
+Sci-Fi	Romance	Crime	Action	Drama:54
+Sci-Fi	Romance	Crime	Drama:59
+Sci-Fi	Romance	Thriller:97
+Sci-Fi	Romance	Thriller	Adventure:86
+Sci-Fi	Romance	Thriller	Adventure	Comedy:77
+Sci-Fi	Romance	Thriller	Adventure	Comedy	Drama:75
+Sci-Fi	Romance	Thriller	Adventure	Drama:84
+Sci-Fi	Romance	Thriller	Action:86
+Sci-Fi	Romance	Thriller	Action	Comedy:78
+Sci-Fi	Romance	Thriller	Action	Comedy	Adventure:73
+Sci-Fi	Romance	Thriller	Action	Comedy	Adventure	Drama:71
+Sci-Fi	Romance	Thriller	Action	Comedy	Drama:76
+Sci-Fi	Romance	Thriller	Action	Adventure:81
+Sci-Fi	Romance	Thriller	Action	Adventure	Drama:79
+Sci-Fi	Romance	Thriller	Action	Drama:84
+Sci-Fi	Romance	Thriller	Comedy:88
+Sci-Fi	Romance	Thriller	Comedy	Drama:86
+Sci-Fi	Romance	Thriller	Drama:95
+Sci-Fi	Romance	Action:97
+Sci-Fi	Romance	Action	Comedy:89
+Sci-Fi	Romance	Action	Comedy	Adventure:83
+Sci-Fi	Romance	Action	Comedy	Adventure	Drama:80
+Sci-Fi	Romance	Action	Comedy	Drama:86
+Sci-Fi	Romance	Action	Adventure:91
+Sci-Fi	Romance	Action	Adventure	Drama:88
+Sci-Fi	Romance	Action	Drama:94
+Sci-Fi	Romance	Adventure:100
+Sci-Fi	Romance	Adventure	Comedy:90
+Sci-Fi	Romance	Adventure	Comedy	Drama:87
+Sci-Fi	Romance	Adventure	Drama:97
+Sci-Fi	Romance	Comedy:105
+Sci-Fi	Romance	Comedy	Drama:102
+Sci-Fi	Romance	Drama:112
+Sci-Fi	Crime:172
+Sci-Fi	Crime	Comedy:142
+Sci-Fi	Crime	Comedy	Adventure:123
+Sci-Fi	Crime	Comedy	Adventure	Thriller:111
+Sci-Fi	Crime	Comedy	Adventure	Thriller	Action:108
+Sci-Fi	Crime	Comedy	Adventure	Thriller	Action	Drama:107
+Sci-Fi	Crime	Comedy	Adventure	Thriller	Drama:110
+Sci-Fi	Crime	Comedy	Adventure	Action:120
+Sci-Fi	Crime	Comedy	Adventure	Action	Drama:118
+Sci-Fi	Crime	Comedy	Adventure	Drama:121
+Sci-Fi	Crime	Comedy	Thriller:128
+Sci-Fi	Crime	Comedy	Thriller	Action:121
+Sci-Fi	Crime	Comedy	Thriller	Action	Drama:120
+Sci-Fi	Crime	Comedy	Thriller	Drama:127
+Sci-Fi	Crime	Comedy	Action:134
+Sci-Fi	Crime	Comedy	Action	Drama:132
+Sci-Fi	Crime	Comedy	Drama:140
+Sci-Fi	Crime	Adventure:148
+Sci-Fi	Crime	Adventure	Thriller:135
+Sci-Fi	Crime	Adventure	Thriller	Action:131
+Sci-Fi	Crime	Adventure	Thriller	Action	Drama:130
+Sci-Fi	Crime	Adventure	Thriller	Drama:134
+Sci-Fi	Crime	Adventure	Action:144
+Sci-Fi	Crime	Adventure	Action	Drama:142
+Sci-Fi	Crime	Adventure	Drama:146
+Sci-Fi	Crime	Thriller:156
+Sci-Fi	Crime	Thriller	Action:148
+Sci-Fi	Crime	Thriller	Action	Drama:147
+Sci-Fi	Crime	Thriller	Drama:155
+Sci-Fi	Crime	Action:162
+Sci-Fi	Crime	Action	Drama:160
+Sci-Fi	Crime	Drama:170
+Sci-Fi	Comedy:238
+Sci-Fi	Comedy	Thriller:202
+Sci-Fi	Comedy	Thriller	Adventure:176
+Sci-Fi	Comedy	Thriller	Adventure	Drama:169
+Sci-Fi	Comedy	Thriller	Adventure	Drama	Action:163
+Sci-Fi	Comedy	Thriller	Adventure	Action:170
+Sci-Fi	Comedy	Thriller	Action:187
+Sci-Fi	Comedy	Thriller	Action	Drama:180
+Sci-Fi	Comedy	Thriller	Drama:195
+Sci-Fi	Comedy	Adventure:207
+Sci-Fi	Comedy	Adventure	Action:196
+Sci-Fi	Comedy	Adventure	Action	Drama:187
+Sci-Fi	Comedy	Adventure	Drama:198
+Sci-Fi	Comedy	Action:215
+Sci-Fi	Comedy	Action	Drama:205
+Sci-Fi	Comedy	Drama:228
+Sci-Fi	Thriller:240
+Sci-Fi	Thriller	Adventure:210
+Sci-Fi	Thriller	Adventure	Drama:202
+Sci-Fi	Thriller	Adventure	Action:202
+Sci-Fi	Thriller	Adventure	Action	Drama:194
+Sci-Fi	Thriller	Action:223
+Sci-Fi	Thriller	Action	Drama:215
+Sci-Fi	Thriller	Drama:232
+Sci-Fi	Adventure:248
+Sci-Fi	Adventure	Action:234
+Sci-Fi	Adventure	Action	Drama:224
+Sci-Fi	Adventure	Drama:238
+Sci-Fi	Action:257
+Sci-Fi	Action	Drama:246
+Sci-Fi	Drama:273
+Romance:349
+Romance	Crime:215
+Romance	Crime	Adventure:128
+Romance	Crime	Adventure	Thriller:112
+Romance	Crime	Adventure	Thriller	Action:102
+Romance	Crime	Adventure	Thriller	Action	Comedy:95
+Romance	Crime	Adventure	Thriller	Action	Comedy	Drama:94
+Romance	Crime	Adventure	Thriller	Action	Drama:101
+Romance	Crime	Adventure	Thriller	Comedy:103
+Romance	Crime	Adventure	Thriller	Comedy	Drama:102
+Romance	Crime	Adventure	Thriller	Drama:111
+Romance	Crime	Adventure	Action:113
+Romance	Crime	Adventure	Action	Comedy:105
+Romance	Crime	Adventure	Action	Comedy	Drama:103
+Romance	Crime	Adventure	Action	Drama:111
+Romance	Crime	Adventure	Comedy:118
+Romance	Crime	Adventure	Comedy	Drama:116
+Romance	Crime	Adventure	Drama:126
+Romance	Crime	Action:160
+Romance	Crime	Action	Thriller:145
+Romance	Crime	Action	Thriller	Comedy:134
+Romance	Crime	Action	Thriller	Comedy	Drama:133
+Romance	Crime	Action	Thriller	Drama:144
+Romance	Crime	Action	Comedy:148
+Romance	Crime	Action	Comedy	Drama:146
+Romance	Crime	Action	Drama:158
+Romance	Crime	Thriller:183
+Romance	Crime	Thriller	Comedy:168
+Romance	Crime	Thriller	Comedy	Drama:167
+Romance	Crime	Thriller	Drama:182
+Romance	Crime	Comedy:199
+Romance	Crime	Comedy	Drama:197
+Romance	Crime	Drama:213
+Romance	Adventure:215
+Romance	Adventure	Thriller:166
+Romance	Adventure	Thriller	Action:150
+Romance	Adventure	Thriller	Action	Comedy:141
+Romance	Adventure	Thriller	Action	Comedy	Drama:139
+Romance	Adventure	Thriller	Action	Drama:148
+Romance	Adventure	Thriller	Comedy:154
+Romance	Adventure	Thriller	Comedy	Drama:152
+Romance	Adventure	Thriller	Drama:164
+Romance	Adventure	Action:173
+Romance	Adventure	Action	Comedy:163
+Romance	Adventure	Action	Comedy	Drama:160
+Romance	Adventure	Action	Drama:170
+Romance	Adventure	Comedy:201
+Romance	Adventure	Comedy	Drama:198
+Romance	Adventure	Drama:212
+Romance	Action:229
+Romance	Action	Thriller:198
+Romance	Action	Thriller	Comedy:185
+Romance	Action	Thriller	Comedy	Drama:183
+Romance	Action	Thriller	Drama:196
+Romance	Action	Comedy:215
+Romance	Action	Comedy	Drama:212
+Romance	Action	Drama:226
+Romance	Thriller:258
+Romance	Thriller	Comedy:240
+Romance	Thriller	Comedy	Drama:238
+Romance	Thriller	Drama:256
+Romance	Comedy:327
+Romance	Comedy	Drama:324
+Romance	Drama:346
+Crime:404
+Crime	Adventure:258
+Crime	Adventure	Comedy:226
+Crime	Adventure	Comedy	Thriller:202
+Crime	Adventure	Comedy	Thriller	Action:189
+Crime	Adventure	Comedy	Thriller	Action	Drama:188
+Crime	Adventure	Comedy	Thriller	Drama:201
+Crime	Adventure	Comedy	Action:207
+Crime	Adventure	Comedy	Action	Drama:205
+Crime	Adventure	Comedy	Drama:224
+Crime	Adventure	Thriller:232
+Crime	Adventure	Thriller	Action:216
+Crime	Adventure	Thriller	Action	Drama:215
+Crime	Adventure	Thriller	Drama:231
+Crime	Adventure	Action:236
+Crime	Adventure	Action	Drama:234
+Crime	Adventure	Drama:256
+Crime	Action:328
+Crime	Action	Comedy:286
+Crime	Action	Comedy	Thriller:264
+Crime	Action	Comedy	Thriller	Drama:263
+Crime	Action	Comedy	Drama:284
+Crime	Action	Thriller:304
+Crime	Action	Thriller	Drama:303
+Crime	Action	Drama:326
+Crime	Comedy:356
+Crime	Comedy	Thriller:314
+Crime	Comedy	Thriller	Drama:313
+Crime	Comedy	Drama:354
+Crime	Thriller:359
+Crime	Thriller	Drama:358
+Crime	Drama:402
+Adventure:410
+Adventure	Thriller:329
+Adventure	Thriller	Comedy:287
+Adventure	Thriller	Comedy	Action:267
+Adventure	Thriller	Comedy	Action	Drama:260
+Adventure	Thriller	Comedy	Drama:280
+Adventure	Thriller	Action:305
+Adventure	Thriller	Action	Drama:297
+Adventure	Thriller	Drama:321
+Adventure	Action:355
+Adventure	Action	Comedy:309
+Adventure	Action	Comedy	Drama:300
+Adventure	Action	Drama:344
+Adventure	Comedy:359
+Adventure	Comedy	Drama:348
+Adventure	Drama:397
+Action:461
+Action	Thriller:402
+Action	Thriller	Comedy:351
+Action	Thriller	Comedy	Drama:344
+Action	Thriller	Drama:394
+Action	Comedy:402
+Action	Comedy	Drama:392
+Action	Drama:449
+Thriller:482
+Thriller	Comedy:425
+Thriller	Comedy	Drama:418
+Thriller	Drama:474
+Comedy:540
+Comedy	Drama:528
+Drama:595
