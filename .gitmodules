@@ -1,6 +1,3 @@
 [submodule "PMF"]
 	path = PMF
 	url = https://github.com/libao3128/Probabilistic-Matrix-Factorization.git
-[submodule "pracmln"]
-	path = pracmln
-	url = https://github.com/libao3128/pracmln.git
