@@ -1,4 +1,9 @@
-0.5::likes(U, M) :- prefers(U, G), has_genre(M, G).
+0.9::likes(U, M):- prefers(U, G), has_genre(M, G), has_1_genre(M).
+0.45::likes(U, M):- prefers(U, G), has_genre(M, G), has_2_genre(M).
+0.3::likes(U, M):- prefers(U, G), has_genre(M, G), has_3_genre(M).
+0.225::likes(U, M):- prefers(U, G), has_genre(M, G), has_4_genre(M).
+0.18::likes(U, M):- prefers(U, G), has_genre(M, G), has_5_genre(M).
+0.15::likes(U, M):- prefers(U, G), has_genre(M, G), has_more_than_5_genre(M).
 prefers(user326, action).
 prefers(user326, adventure).
 prefers(user326, crime).
@@ -4067,3084 +4072,4475 @@ prefers(user545, romance).
 prefers(user545, sci-fi).
 prefers(user545, thriller).
 prefers(user545, war).
+has_5_genre(movie1).
 has_genre(movie1, adventure).
 has_genre(movie1, animation).
 has_genre(movie1, children).
 has_genre(movie1, comedy).
 has_genre(movie1, fantasy).
+has_3_genre(movie2).
 has_genre(movie2, adventure).
 has_genre(movie2, children).
 has_genre(movie2, fantasy).
+has_2_genre(movie3).
 has_genre(movie3, comedy).
 has_genre(movie3, romance).
+has_3_genre(movie4).
 has_genre(movie4, comedy).
 has_genre(movie4, drama).
 has_genre(movie4, romance).
+has_1_genre(movie5).
 has_genre(movie5, comedy).
+has_3_genre(movie6).
 has_genre(movie6, action).
 has_genre(movie6, crime).
 has_genre(movie6, thriller).
+has_2_genre(movie7).
 has_genre(movie7, comedy).
 has_genre(movie7, romance).
+has_2_genre(movie8).
 has_genre(movie8, adventure).
 has_genre(movie8, children).
+has_1_genre(movie9).
 has_genre(movie9, action).
+has_3_genre(movie10).
 has_genre(movie10, action).
 has_genre(movie10, adventure).
 has_genre(movie10, thriller).
+has_3_genre(movie11).
 has_genre(movie11, comedy).
 has_genre(movie11, drama).
 has_genre(movie11, romance).
+has_2_genre(movie12).
 has_genre(movie12, comedy).
 has_genre(movie12, horror).
+has_3_genre(movie13).
 has_genre(movie13, adventure).
 has_genre(movie13, animation).
 has_genre(movie13, children).
+has_1_genre(movie14).
 has_genre(movie14, drama).
+has_3_genre(movie15).
 has_genre(movie15, action).
 has_genre(movie15, adventure).
 has_genre(movie15, romance).
+has_2_genre(movie16).
 has_genre(movie16, crime).
 has_genre(movie16, drama).
+has_2_genre(movie17).
 has_genre(movie17, drama).
 has_genre(movie17, romance).
+has_1_genre(movie18).
 has_genre(movie18, comedy).
+has_1_genre(movie19).
 has_genre(movie19, comedy).
+has_5_genre(movie20).
 has_genre(movie20, action).
 has_genre(movie20, comedy).
 has_genre(movie20, crime).
 has_genre(movie20, drama).
 has_genre(movie20, thriller).
+has_3_genre(movie21).
 has_genre(movie21, comedy).
 has_genre(movie21, crime).
 has_genre(movie21, thriller).
+has_5_genre(movie22).
 has_genre(movie22, crime).
 has_genre(movie22, drama).
 has_genre(movie22, horror).
 has_genre(movie22, mystery).
 has_genre(movie22, thriller).
+has_3_genre(movie23).
 has_genre(movie23, action).
 has_genre(movie23, crime).
 has_genre(movie23, thriller).
+has_2_genre(movie24).
 has_genre(movie24, drama).
 has_genre(movie24, sci-fi).
+has_2_genre(movie25).
 has_genre(movie25, drama).
 has_genre(movie25, romance).
+has_1_genre(movie26).
 has_genre(movie26, drama).
+has_2_genre(movie27).
 has_genre(movie27, children).
 has_genre(movie27, drama).
+has_2_genre(movie28).
 has_genre(movie28, drama).
 has_genre(movie28, romance).
+has_5_genre(movie29).
 has_genre(movie29, adventure).
 has_genre(movie29, drama).
 has_genre(movie29, fantasy).
 has_genre(movie29, mystery).
 has_genre(movie29, sci-fi).
+has_2_genre(movie30).
 has_genre(movie30, crime).
 has_genre(movie30, drama).
+has_1_genre(movie31).
 has_genre(movie31, drama).
+has_3_genre(movie32).
 has_genre(movie32, mystery).
 has_genre(movie32, sci-fi).
 has_genre(movie32, thriller).
+has_2_genre(movie34).
 has_genre(movie34, children).
 has_genre(movie34, drama).
+has_2_genre(movie36).
 has_genre(movie36, crime).
 has_genre(movie36, drama).
+has_2_genre(movie38).
 has_genre(movie38, children).
 has_genre(movie38, comedy).
+has_2_genre(movie39).
 has_genre(movie39, comedy).
 has_genre(movie39, romance).
+has_1_genre(movie40).
 has_genre(movie40, drama).
+has_2_genre(movie41).
 has_genre(movie41, drama).
 has_genre(movie41, war).
+has_3_genre(movie42).
 has_genre(movie42, action).
 has_genre(movie42, crime).
 has_genre(movie42, drama).
+has_1_genre(movie43).
 has_genre(movie43, drama).
+has_3_genre(movie44).
 has_genre(movie44, action).
 has_genre(movie44, adventure).
 has_genre(movie44, fantasy).
+has_3_genre(movie45).
 has_genre(movie45, comedy).
 has_genre(movie45, drama).
 has_genre(movie45, thriller).
+has_2_genre(movie46).
 has_genre(movie46, drama).
 has_genre(movie46, romance).
+has_2_genre(movie47).
 has_genre(movie47, mystery).
 has_genre(movie47, thriller).
+has_5_genre(movie48).
 has_genre(movie48, animation).
 has_genre(movie48, children).
 has_genre(movie48, drama).
 has_genre(movie48, musical).
 has_genre(movie48, romance).
+has_2_genre(movie49).
 has_genre(movie49, drama).
 has_genre(movie49, romance).
+has_3_genre(movie50).
 has_genre(movie50, crime).
 has_genre(movie50, mystery).
 has_genre(movie50, thriller).
+has_3_genre(movie52).
 has_genre(movie52, comedy).
 has_genre(movie52, drama).
 has_genre(movie52, romance).
+has_2_genre(movie53).
 has_genre(movie53, adventure).
 has_genre(movie53, drama).
+has_2_genre(movie54).
 has_genre(movie54, children).
 has_genre(movie54, comedy).
+has_1_genre(movie55).
 has_genre(movie55, drama).
+has_1_genre(movie57).
 has_genre(movie57, drama).
+has_3_genre(movie58).
 has_genre(movie58, comedy).
 has_genre(movie58, drama).
 has_genre(movie58, romance).
+has_3_genre(movie60).
 has_genre(movie60, adventure).
 has_genre(movie60, children).
 has_genre(movie60, fantasy).
+has_2_genre(movie61).
 has_genre(movie61, drama).
 has_genre(movie61, thriller).
+has_1_genre(movie62).
 has_genre(movie62, drama).
+has_2_genre(movie63).
 has_genre(movie63, comedy).
 has_genre(movie63, crime).
+has_2_genre(movie64).
 has_genre(movie64, comedy).
 has_genre(movie64, romance).
+has_1_genre(movie65).
 has_genre(movie65, comedy).
+has_3_genre(movie66).
 has_genre(movie66, action).
 has_genre(movie66, sci-fi).
 has_genre(movie66, thriller).
+has_2_genre(movie68).
 has_genre(movie68, comedy).
 has_genre(movie68, romance).
+has_1_genre(movie69).
 has_genre(movie69, comedy).
+has_4_genre(movie70).
 has_genre(movie70, action).
 has_genre(movie70, comedy).
 has_genre(movie70, horror).
 has_genre(movie70, thriller).
+has_1_genre(movie71).
 has_genre(movie71, action).
+has_2_genre(movie72).
 has_genre(movie72, comedy).
 has_genre(movie72, drama).
+has_2_genre(movie73).
 has_genre(movie73, drama).
 has_genre(movie73, war).
+has_2_genre(movie74).
 has_genre(movie74, drama).
 has_genre(movie74, romance).
+has_2_genre(movie75).
 has_genre(movie75, comedy).
 has_genre(movie75, drama).
+has_3_genre(movie76).
 has_genre(movie76, action).
 has_genre(movie76, sci-fi).
 has_genre(movie76, thriller).
+has_1_genre(movie77).
 has_genre(movie77, documentary).
+has_4_genre(movie78).
 has_genre(movie78, action).
 has_genre(movie78, crime).
 has_genre(movie78, drama).
 has_genre(movie78, thriller).
+has_2_genre(movie79).
 has_genre(movie79, drama).
 has_genre(movie79, thriller).
+has_2_genre(movie80).
 has_genre(movie80, children).
 has_genre(movie80, drama).
+has_3_genre(movie81).
 has_genre(movie81, crime).
 has_genre(movie81, drama).
 has_genre(movie81, romance).
+has_2_genre(movie82).
 has_genre(movie82, comedy).
 has_genre(movie82, drama).
+has_2_genre(movie83).
 has_genre(movie83, drama).
 has_genre(movie83, romance).
+has_2_genre(movie85).
 has_genre(movie85, drama).
 has_genre(movie85, romance).
+has_3_genre(movie86).
 has_genre(movie86, action).
 has_genre(movie86, adventure).
 has_genre(movie86, drama).
+has_2_genre(movie87).
 has_genre(movie87, children).
 has_genre(movie87, comedy).
+has_1_genre(movie88).
 has_genre(movie88, comedy).
+has_2_genre(movie89).
 has_genre(movie89, action).
 has_genre(movie89, thriller).
+has_3_genre(movie92).
 has_genre(movie92, drama).
 has_genre(movie92, horror).
 has_genre(movie92, thriller).
+has_3_genre(movie93).
 has_genre(movie93, comedy).
 has_genre(movie93, horror).
 has_genre(movie93, romance).
+has_3_genre(movie94).
 has_genre(movie94, comedy).
 has_genre(movie94, drama).
 has_genre(movie94, romance).
+has_3_genre(movie95).
 has_genre(movie95, action).
 has_genre(movie95, adventure).
 has_genre(movie95, thriller).
+has_2_genre(movie96).
 has_genre(movie96, comedy).
 has_genre(movie96, drama).
+has_2_genre(movie97).
 has_genre(movie97, crime).
 has_genre(movie97, drama).
+has_1_genre(movie99).
 has_genre(movie99, documentary).
+has_2_genre(movie100).
 has_genre(movie100, drama).
 has_genre(movie100, thriller).
+has_4_genre(movie101).
 has_genre(movie101, adventure).
 has_genre(movie101, comedy).
 has_genre(movie101, crime).
 has_genre(movie101, romance).
+has_1_genre(movie102).
 has_genre(movie102, comedy).
+has_3_genre(movie103).
 has_genre(movie103, mystery).
 has_genre(movie103, sci-fi).
 has_genre(movie103, thriller).
+has_1_genre(movie104).
 has_genre(movie104, comedy).
+has_2_genre(movie105).
 has_genre(movie105, drama).
 has_genre(movie105, romance).
+has_2_genre(movie106).
 has_genre(movie106, comedy).
 has_genre(movie106, drama).
+has_4_genre(movie107).
 has_genre(movie107, adventure).
 has_genre(movie107, children).
 has_genre(movie107, comedy).
 has_genre(movie107, musical).
+has_1_genre(movie108).
 has_genre(movie108, documentary).
+has_3_genre(movie110).
 has_genre(movie110, action).
 has_genre(movie110, drama).
 has_genre(movie110, war).
+has_3_genre(movie111).
 has_genre(movie111, crime).
 has_genre(movie111, drama).
 has_genre(movie111, thriller).
+has_4_genre(movie112).
 has_genre(movie112, action).
 has_genre(movie112, adventure).
 has_genre(movie112, comedy).
 has_genre(movie112, crime).
+has_2_genre(movie113).
 has_genre(movie113, drama).
 has_genre(movie113, mystery).
+has_1_genre(movie116).
 has_genre(movie116, documentary).
+has_2_genre(movie117).
 has_genre(movie117, crime).
 has_genre(movie117, drama).
+has_2_genre(movie118).
 has_genre(movie118, comedy).
 has_genre(movie118, romance).
+has_1_genre(movie119).
 has_genre(movie119, comedy).
+has_1_genre(movie121).
 has_genre(movie121, drama).
+has_2_genre(movie122).
 has_genre(movie122, comedy).
 has_genre(movie122, romance).
+has_3_genre(movie123).
 has_genre(movie123, drama).
 has_genre(movie123, mystery).
 has_genre(movie123, romance).
+has_1_genre(movie125).
 has_genre(movie125, comedy).
+has_3_genre(movie126).
 has_genre(movie126, adventure).
 has_genre(movie126, children).
 has_genre(movie126, fantasy).
+has_1_genre(movie128).
 has_genre(movie128, documentary).
+has_2_genre(movie129).
 has_genre(movie129, comedy).
 has_genre(movie129, romance).
+has_1_genre(movie132).
 has_genre(movie132, thriller).
+has_1_genre(movie135).
 has_genre(movie135, comedy).
+has_1_genre(movie137).
 has_genre(movie137, documentary).
+has_2_genre(movie140).
 has_genre(movie140, drama).
 has_genre(movie140, romance).
+has_1_genre(movie141).
 has_genre(movie141, comedy).
+has_1_genre(movie144).
 has_genre(movie144, comedy).
+has_5_genre(movie145).
 has_genre(movie145, action).
 has_genre(movie145, comedy).
 has_genre(movie145, crime).
 has_genre(movie145, drama).
 has_genre(movie145, thriller).
+has_2_genre(movie146).
 has_genre(movie146, adventure).
 has_genre(movie146, children).
+has_1_genre(movie147).
 has_genre(movie147, drama).
+has_1_genre(movie148).
 has_genre(movie148, drama).
+has_3_genre(movie149).
 has_genre(movie149, crime).
 has_genre(movie149, drama).
 has_genre(movie149, thriller).
+has_3_genre(movie150).
 has_genre(movie150, adventure).
 has_genre(movie150, drama).
 has_genre(movie150, imax).
+has_4_genre(movie151).
 has_genre(movie151, action).
 has_genre(movie151, drama).
 has_genre(movie151, romance).
 has_genre(movie151, war).
+has_2_genre(movie152).
 has_genre(movie152, drama).
 has_genre(movie152, horror).
+has_4_genre(movie153).
 has_genre(movie153, action).
 has_genre(movie153, adventure).
 has_genre(movie153, comedy).
 has_genre(movie153, crime).
+has_1_genre(movie154).
 has_genre(movie154, drama).
+has_3_genre(movie155).
 has_genre(movie155, adventure).
 has_genre(movie155, drama).
 has_genre(movie155, war).
+has_2_genre(movie156).
 has_genre(movie156, comedy).
 has_genre(movie156, drama).
+has_2_genre(movie157).
 has_genre(movie157, comedy).
 has_genre(movie157, war).
+has_2_genre(movie158).
 has_genre(movie158, adventure).
 has_genre(movie158, children).
+has_3_genre(movie159).
 has_genre(movie159, crime).
 has_genre(movie159, drama).
 has_genre(movie159, mystery).
+has_4_genre(movie160).
 has_genre(movie160, action).
 has_genre(movie160, adventure).
 has_genre(movie160, mystery).
 has_genre(movie160, sci-fi).
+has_3_genre(movie161).
 has_genre(movie161, drama).
 has_genre(movie161, thriller).
 has_genre(movie161, war).
+has_1_genre(movie162).
 has_genre(movie162, documentary).
+has_3_genre(movie163).
 has_genre(movie163, action).
 has_genre(movie163, romance).
 has_genre(movie163, western).
+has_4_genre(movie164).
 has_genre(movie164, crime).
 has_genre(movie164, film-noir).
 has_genre(movie164, mystery).
 has_genre(movie164, thriller).
+has_3_genre(movie165).
 has_genre(movie165, action).
 has_genre(movie165, crime).
 has_genre(movie165, thriller).
+has_3_genre(movie166).
 has_genre(movie166, comedy).
 has_genre(movie166, crime).
 has_genre(movie166, drama).
+has_3_genre(movie168).
 has_genre(movie168, action).
 has_genre(movie168, drama).
 has_genre(movie168, romance).
+has_3_genre(movie169).
 has_genre(movie169, adventure).
 has_genre(movie169, children).
 has_genre(movie169, drama).
+has_4_genre(movie170).
 has_genre(movie170, action).
 has_genre(movie170, adventure).
 has_genre(movie170, crime).
 has_genre(movie170, thriller).
+has_2_genre(movie171).
 has_genre(movie171, comedy).
 has_genre(movie171, drama).
+has_3_genre(movie172).
 has_genre(movie172, action).
 has_genre(movie172, sci-fi).
 has_genre(movie172, thriller).
+has_3_genre(movie173).
 has_genre(movie173, action).
 has_genre(movie173, crime).
 has_genre(movie173, sci-fi).
+has_1_genre(movie174).
 has_genre(movie174, comedy).
+has_1_genre(movie175).
 has_genre(movie175, drama).
+has_1_genre(movie176).
 has_genre(movie176, comedy).
+has_1_genre(movie177).
 has_genre(movie177, horror).
+has_2_genre(movie178).
 has_genre(movie178, comedy).
 has_genre(movie178, drama).
+has_2_genre(movie179).
 has_genre(movie179, drama).
 has_genre(movie179, romance).
+has_2_genre(movie180).
 has_genre(movie180, comedy).
 has_genre(movie180, romance).
+has_2_genre(movie181).
 has_genre(movie181, action).
 has_genre(movie181, children).
+has_3_genre(movie183).
 has_genre(movie183, comedy).
 has_genre(movie183, horror).
 has_genre(movie183, thriller).
+has_1_genre(movie184).
 has_genre(movie184, drama).
+has_3_genre(movie185).
 has_genre(movie185, action).
 has_genre(movie185, crime).
 has_genre(movie185, thriller).
+has_2_genre(movie186).
 has_genre(movie186, comedy).
 has_genre(movie186, romance).
+has_1_genre(movie187).
 has_genre(movie187, comedy).
+has_3_genre(movie188).
 has_genre(movie188, fantasy).
 has_genre(movie188, horror).
 has_genre(movie188, mystery).
+has_2_genre(movie189).
 has_genre(movie189, comedy).
 has_genre(movie189, fantasy).
+has_1_genre(movie190).
 has_genre(movie190, thriller).
+has_2_genre(movie191).
 has_genre(movie191, drama).
 has_genre(movie191, romance).
+has_1_genre(movie193).
 has_genre(movie193, drama).
+has_2_genre(movie194).
 has_genre(movie194, comedy).
 has_genre(movie194, drama).
+has_3_genre(movie195).
 has_genre(movie195, comedy).
 has_genre(movie195, drama).
 has_genre(movie195, romance).
+has_2_genre(movie196).
 has_genre(movie196, horror).
 has_genre(movie196, sci-fi).
+has_more_than_5_genre(movie198).
 has_genre(movie198, action).
 has_genre(movie198, crime).
 has_genre(movie198, drama).
 has_genre(movie198, mystery).
 has_genre(movie198, sci-fi).
 has_genre(movie198, thriller).
+has_3_genre(movie199).
 has_genre(movie199, drama).
 has_genre(movie199, musical).
 has_genre(movie199, romance).
+has_2_genre(movie201).
 has_genre(movie201, drama).
 has_genre(movie201, fantasy).
+has_2_genre(movie202).
 has_genre(movie202, drama).
 has_genre(movie202, romance).
+has_1_genre(movie203).
 has_genre(movie203, comedy).
+has_1_genre(movie204).
 has_genre(movie204, action).
+has_2_genre(movie205).
 has_genre(movie205, comedy).
 has_genre(movie205, drama).
+has_1_genre(movie206).
 has_genre(movie206, documentary).
+has_2_genre(movie207).
 has_genre(movie207, drama).
 has_genre(movie207, romance).
+has_3_genre(movie208).
 has_genre(movie208, action).
 has_genre(movie208, adventure).
 has_genre(movie208, sci-fi).
+has_1_genre(movie209).
 has_genre(movie209, drama).
+has_1_genre(movie210).
 has_genre(movie210, western).
+has_1_genre(movie211).
 has_genre(movie211, drama).
+has_4_genre(movie212).
 has_genre(movie212, adventure).
 has_genre(movie212, comedy).
 has_genre(movie212, crime).
 has_genre(movie212, mystery).
+has_1_genre(movie213).
 has_genre(movie213, drama).
+has_2_genre(movie214).
 has_genre(movie214, drama).
 has_genre(movie214, war).
+has_2_genre(movie215).
 has_genre(movie215, drama).
 has_genre(movie215, romance).
+has_1_genre(movie216).
 has_genre(movie216, comedy).
+has_2_genre(movie217).
 has_genre(movie217, drama).
 has_genre(movie217, thriller).
+has_2_genre(movie218).
 has_genre(movie218, comedy).
 has_genre(movie218, drama).
+has_1_genre(movie219).
 has_genre(movie219, drama).
+has_1_genre(movie220).
 has_genre(movie220, horror).
+has_2_genre(movie222).
 has_genre(movie222, drama).
 has_genre(movie222, romance).
+has_1_genre(movie223).
 has_genre(movie223, comedy).
+has_3_genre(movie224).
 has_genre(movie224, comedy).
 has_genre(movie224, drama).
 has_genre(movie224, romance).
+has_2_genre(movie225).
 has_genre(movie225, drama).
 has_genre(movie225, thriller).
+has_2_genre(movie227).
 has_genre(movie227, action).
 has_genre(movie227, thriller).
+has_1_genre(movie228).
 has_genre(movie228, comedy).
+has_2_genre(movie229).
 has_genre(movie229, drama).
 has_genre(movie229, thriller).
+has_2_genre(movie230).
 has_genre(movie230, drama).
 has_genre(movie230, thriller).
+has_2_genre(movie231).
 has_genre(movie231, adventure).
 has_genre(movie231, comedy).
+has_3_genre(movie232).
 has_genre(movie232, comedy).
 has_genre(movie232, drama).
 has_genre(movie232, romance).
+has_1_genre(movie233).
 has_genre(movie233, drama).
+has_1_genre(movie234).
 has_genre(movie234, comedy).
+has_2_genre(movie235).
 has_genre(movie235, comedy).
 has_genre(movie235, drama).
+has_3_genre(movie236).
 has_genre(movie236, action).
 has_genre(movie236, comedy).
 has_genre(movie236, romance).
+has_2_genre(movie237).
 has_genre(movie237, comedy).
 has_genre(movie237, romance).
+has_2_genre(movie238).
 has_genre(movie238, adventure).
 has_genre(movie238, children).
+has_4_genre(movie239).
 has_genre(movie239, animation).
 has_genre(movie239, children).
 has_genre(movie239, comedy).
 has_genre(movie239, romance).
+has_1_genre(movie240).
 has_genre(movie240, thriller).
+has_2_genre(movie241).
 has_genre(movie241, children).
 has_genre(movie241, drama).
+has_2_genre(movie242).
 has_genre(movie242, drama).
 has_genre(movie242, musical).
+has_3_genre(movie243).
 has_genre(movie243, children).
 has_genre(movie243, comedy).
 has_genre(movie243, fantasy).
+has_1_genre(movie246).
 has_genre(movie246, documentary).
+has_2_genre(movie247).
 has_genre(movie247, crime).
 has_genre(movie247, drama).
+has_1_genre(movie248).
 has_genre(movie248, comedy).
+has_2_genre(movie249).
 has_genre(movie249, drama).
 has_genre(movie249, romance).
+has_2_genre(movie250).
 has_genre(movie250, children).
 has_genre(movie250, comedy).
+has_1_genre(movie251).
 has_genre(movie251, action).
+has_2_genre(movie252).
 has_genre(movie252, comedy).
 has_genre(movie252, romance).
+has_2_genre(movie253).
 has_genre(movie253, drama).
 has_genre(movie253, horror).
+has_1_genre(movie254).
 has_genre(movie254, drama).
+has_1_genre(movie255).
 has_genre(movie255, comedy).
+has_2_genre(movie256).
 has_genre(movie256, comedy).
 has_genre(movie256, sci-fi).
+has_2_genre(movie257).
 has_genre(movie257, mystery).
 has_genre(movie257, thriller).
+has_5_genre(movie258).
 has_genre(movie258, adventure).
 has_genre(movie258, children).
 has_genre(movie258, comedy).
 has_genre(movie258, fantasy).
 has_genre(movie258, romance).
+has_3_genre(movie259).
 has_genre(movie259, crime).
 has_genre(movie259, drama).
 has_genre(movie259, thriller).
+has_3_genre(movie260).
 has_genre(movie260, action).
 has_genre(movie260, adventure).
 has_genre(movie260, sci-fi).
+has_1_genre(movie261).
 has_genre(movie261, drama).
+has_2_genre(movie262).
 has_genre(movie262, children).
 has_genre(movie262, drama).
+has_1_genre(movie263).
 has_genre(movie263, drama).
+has_3_genre(movie265).
 has_genre(movie265, drama).
 has_genre(movie265, fantasy).
 has_genre(movie265, romance).
+has_4_genre(movie266).
 has_genre(movie266, drama).
 has_genre(movie266, romance).
 has_genre(movie266, war).
 has_genre(movie266, western).
+has_1_genre(movie267).
 has_genre(movie267, comedy).
+has_1_genre(movie269).
 has_genre(movie269, drama).
+has_2_genre(movie270).
 has_genre(movie270, drama).
 has_genre(movie270, romance).
+has_1_genre(movie271).
 has_genre(movie271, drama).
+has_2_genre(movie272).
 has_genre(movie272, comedy).
 has_genre(movie272, drama).
+has_3_genre(movie273).
 has_genre(movie273, drama).
 has_genre(movie273, horror).
 has_genre(movie273, sci-fi).
+has_1_genre(movie274).
 has_genre(movie274, comedy).
+has_1_genre(movie275).
 has_genre(movie275, comedy).
+has_2_genre(movie276).
 has_genre(movie276, comedy).
 has_genre(movie276, romance).
+has_1_genre(movie277).
 has_genre(movie277, drama).
+has_1_genre(movie278).
 has_genre(movie278, comedy).
+has_1_genre(movie279).
 has_genre(movie279, drama).
+has_2_genre(movie280).
 has_genre(movie280, drama).
 has_genre(movie280, thriller).
+has_3_genre(movie281).
 has_genre(movie281, comedy).
 has_genre(movie281, drama).
 has_genre(movie281, romance).
+has_1_genre(movie282).
 has_genre(movie282, drama).
+has_2_genre(movie283).
 has_genre(movie283, crime).
 has_genre(movie283, drama).
+has_2_genre(movie284).
 has_genre(movie284, action).
 has_genre(movie284, crime).
+has_2_genre(movie285).
 has_genre(movie285, drama).
 has_genre(movie285, horror).
+has_2_genre(movie287).
 has_genre(movie287, comedy).
 has_genre(movie287, romance).
+has_3_genre(movie288).
 has_genre(movie288, action).
 has_genre(movie288, crime).
 has_genre(movie288, thriller).
+has_2_genre(movie289).
 has_genre(movie289, comedy).
 has_genre(movie289, romance).
+has_2_genre(movie290).
 has_genre(movie290, crime).
 has_genre(movie290, drama).
+has_2_genre(movie291).
 has_genre(movie291, drama).
 has_genre(movie291, thriller).
+has_4_genre(movie292).
 has_genre(movie292, action).
 has_genre(movie292, drama).
 has_genre(movie292, sci-fi).
 has_genre(movie292, thriller).
+has_4_genre(movie293).
 has_genre(movie293, action).
 has_genre(movie293, crime).
 has_genre(movie293, drama).
 has_genre(movie293, thriller).
+has_2_genre(movie294).
 has_genre(movie294, comedy).
 has_genre(movie294, romance).
+has_2_genre(movie295).
 has_genre(movie295, comedy).
 has_genre(movie295, romance).
+has_4_genre(movie296).
 has_genre(movie296, comedy).
 has_genre(movie296, crime).
 has_genre(movie296, drama).
 has_genre(movie296, thriller).
+has_1_genre(movie298).
 has_genre(movie298, drama).
+has_1_genre(movie299).
 has_genre(movie299, drama).
+has_1_genre(movie300).
 has_genre(movie300, drama).
+has_2_genre(movie301).
 has_genre(movie301, drama).
 has_genre(movie301, romance).
+has_2_genre(movie302).
 has_genre(movie302, drama).
 has_genre(movie302, romance).
+has_3_genre(movie303).
 has_genre(movie303, action).
 has_genre(movie303, thriller).
 has_genre(movie303, western).
+has_2_genre(movie304).
 has_genre(movie304, comedy).
 has_genre(movie304, drama).
+has_1_genre(movie305).
 has_genre(movie305, comedy).
+has_1_genre(movie306).
 has_genre(movie306, drama).
+has_1_genre(movie307).
 has_genre(movie307, drama).
+has_2_genre(movie308).
 has_genre(movie308, comedy).
 has_genre(movie308, drama).
+has_1_genre(movie310).
 has_genre(movie310, comedy).
+has_2_genre(movie311).
 has_genre(movie311, horror).
 has_genre(movie311, thriller).
+has_1_genre(movie312).
 has_genre(movie312, comedy).
+has_2_genre(movie313).
 has_genre(movie313, animation).
 has_genre(movie313, children).
+has_4_genre(movie314).
 has_genre(movie314, children).
 has_genre(movie314, drama).
 has_genre(movie314, fantasy).
 has_genre(movie314, mystery).
+has_3_genre(movie315).
 has_genre(movie315, action).
 has_genre(movie315, drama).
 has_genre(movie315, thriller).
+has_3_genre(movie316).
 has_genre(movie316, action).
 has_genre(movie316, adventure).
 has_genre(movie316, sci-fi).
+has_3_genre(movie317).
 has_genre(movie317, comedy).
 has_genre(movie317, drama).
 has_genre(movie317, fantasy).
+has_2_genre(movie318).
 has_genre(movie318, crime).
 has_genre(movie318, drama).
+has_3_genre(movie319).
 has_genre(movie319, comedy).
 has_genre(movie319, drama).
 has_genre(movie319, thriller).
+has_2_genre(movie320).
 has_genre(movie320, film-noir).
 has_genre(movie320, thriller).
+has_1_genre(movie321).
 has_genre(movie321, drama).
+has_2_genre(movie322).
 has_genre(movie322, comedy).
 has_genre(movie322, drama).
+has_2_genre(movie324).
 has_genre(movie324, comedy).
 has_genre(movie324, drama).
+has_1_genre(movie325).
 has_genre(movie325, comedy).
+has_1_genre(movie326).
 has_genre(movie326, drama).
+has_3_genre(movie327).
 has_genre(movie327, action).
 has_genre(movie327, comedy).
 has_genre(movie327, sci-fi).
+has_2_genre(movie328).
 has_genre(movie328, horror).
 has_genre(movie328, thriller).
+has_3_genre(movie329).
 has_genre(movie329, adventure).
 has_genre(movie329, drama).
 has_genre(movie329, sci-fi).
+has_3_genre(movie330).
 has_genre(movie330, action).
 has_genre(movie330, crime).
 has_genre(movie330, horror).
+has_1_genre(movie331).
 has_genre(movie331, drama).
+has_2_genre(movie332).
 has_genre(movie332, horror).
 has_genre(movie332, sci-fi).
+has_1_genre(movie333).
 has_genre(movie333, comedy).
+has_1_genre(movie334).
 has_genre(movie334, drama).
+has_2_genre(movie335).
 has_genre(movie335, mystery).
 has_genre(movie335, thriller).
+has_2_genre(movie336).
 has_genre(movie336, drama).
 has_genre(movie336, war).
+has_1_genre(movie337).
 has_genre(movie337, drama).
+has_3_genre(movie338).
 has_genre(movie338, action).
 has_genre(movie338, sci-fi).
 has_genre(movie338, thriller).
+has_2_genre(movie339).
 has_genre(movie339, comedy).
 has_genre(movie339, romance).
+has_3_genre(movie340).
 has_genre(movie340, adventure).
 has_genre(movie340, drama).
 has_genre(movie340, war).
+has_1_genre(movie341).
 has_genre(movie341, drama).
+has_1_genre(movie342).
 has_genre(movie342, comedy).
+has_1_genre(movie343).
 has_genre(movie343, children).
+has_1_genre(movie344).
 has_genre(movie344, comedy).
+has_2_genre(movie345).
 has_genre(movie345, comedy).
 has_genre(movie345, drama).
+has_2_genre(movie346).
 has_genre(movie346, drama).
 has_genre(movie346, musical).
+has_3_genre(movie347).
 has_genre(movie347, drama).
 has_genre(movie347, film-noir).
 has_genre(movie347, romance).
+has_1_genre(movie348).
 has_genre(movie348, comedy).
+has_4_genre(movie349).
 has_genre(movie349, action).
 has_genre(movie349, crime).
 has_genre(movie349, drama).
 has_genre(movie349, thriller).
+has_3_genre(movie350).
 has_genre(movie350, drama).
 has_genre(movie350, mystery).
 has_genre(movie350, thriller).
+has_3_genre(movie351).
 has_genre(movie351, comedy).
 has_genre(movie351, drama).
 has_genre(movie351, romance).
+has_2_genre(movie352).
 has_genre(movie352, comedy).
 has_genre(movie352, drama).
+has_4_genre(movie353).
 has_genre(movie353, action).
 has_genre(movie353, crime).
 has_genre(movie353, fantasy).
 has_genre(movie353, thriller).
+has_1_genre(movie354).
 has_genre(movie354, drama).
+has_3_genre(movie355).
 has_genre(movie355, children).
 has_genre(movie355, comedy).
 has_genre(movie355, fantasy).
+has_4_genre(movie356).
 has_genre(movie356, comedy).
 has_genre(movie356, drama).
 has_genre(movie356, romance).
 has_genre(movie356, war).
+has_2_genre(movie357).
 has_genre(movie357, comedy).
 has_genre(movie357, romance).
+has_1_genre(movie358).
 has_genre(movie358, drama).
+has_3_genre(movie359).
 has_genre(movie359, comedy).
 has_genre(movie359, drama).
 has_genre(movie359, romance).
+has_2_genre(movie360).
 has_genre(movie360, action).
 has_genre(movie360, comedy).
+has_3_genre(movie361).
 has_genre(movie361, comedy).
 has_genre(movie361, drama).
 has_genre(movie361, romance).
+has_3_genre(movie362).
 has_genre(movie362, adventure).
 has_genre(movie362, children).
 has_genre(movie362, romance).
+has_1_genre(movie363).
 has_genre(movie363, documentary).
+has_more_than_5_genre(movie364).
 has_genre(movie364, adventure).
 has_genre(movie364, animation).
 has_genre(movie364, children).
 has_genre(movie364, drama).
 has_genre(movie364, musical).
 has_genre(movie364, imax).
+has_1_genre(movie365).
 has_genre(movie365, drama).
+has_4_genre(movie366).
 has_genre(movie366, drama).
 has_genre(movie366, horror).
 has_genre(movie366, mystery).
 has_genre(movie366, thriller).
+has_4_genre(movie367).
 has_genre(movie367, action).
 has_genre(movie367, comedy).
 has_genre(movie367, crime).
 has_genre(movie367, fantasy).
+has_3_genre(movie368).
 has_genre(movie368, adventure).
 has_genre(movie368, comedy).
 has_genre(movie368, western).
+has_1_genre(movie369).
 has_genre(movie369, drama).
+has_2_genre(movie370).
 has_genre(movie370, action).
 has_genre(movie370, comedy).
+has_2_genre(movie371).
 has_genre(movie371, comedy).
 has_genre(movie371, drama).
+has_3_genre(movie372).
 has_genre(movie372, comedy).
 has_genre(movie372, drama).
 has_genre(movie372, romance).
+has_1_genre(movie373).
 has_genre(movie373, thriller).
+has_2_genre(movie374).
 has_genre(movie374, children).
 has_genre(movie374, comedy).
+has_2_genre(movie376).
 has_genre(movie376, action).
 has_genre(movie376, thriller).
+has_3_genre(movie377).
 has_genre(movie377, action).
 has_genre(movie377, romance).
 has_genre(movie377, thriller).
+has_2_genre(movie378).
 has_genre(movie378, comedy).
 has_genre(movie378, romance).
+has_3_genre(movie379).
 has_genre(movie379, action).
 has_genre(movie379, sci-fi).
 has_genre(movie379, thriller).
+has_5_genre(movie380).
 has_genre(movie380, action).
 has_genre(movie380, adventure).
 has_genre(movie380, comedy).
 has_genre(movie380, romance).
 has_genre(movie380, thriller).
+has_2_genre(movie381).
 has_genre(movie381, drama).
 has_genre(movie381, romance).
+has_4_genre(movie382).
 has_genre(movie382, drama).
 has_genre(movie382, horror).
 has_genre(movie382, romance).
 has_genre(movie382, thriller).
+has_1_genre(movie383).
 has_genre(movie383, western).
+has_3_genre(movie384).
 has_genre(movie384, action).
 has_genre(movie384, crime).
 has_genre(movie384, drama).
+has_1_genre(movie385).
 has_genre(movie385, drama).
+has_1_genre(movie386).
 has_genre(movie386, drama).
+has_2_genre(movie387).
 has_genre(movie387, action).
 has_genre(movie387, comedy).
+has_1_genre(movie388).
 has_genre(movie388, drama).
+has_3_genre(movie389).
 has_genre(movie389, drama).
 has_genre(movie389, romance).
 has_genre(movie389, war).
+has_3_genre(movie390).
 has_genre(movie390, action).
 has_genre(movie390, crime).
 has_genre(movie390, drama).
+has_2_genre(movie391).
 has_genre(movie391, crime).
 has_genre(movie391, drama).
+has_3_genre(movie393).
 has_genre(movie393, action).
 has_genre(movie393, adventure).
 has_genre(movie393, fantasy).
+has_2_genre(movie405).
 has_genre(movie405, action).
 has_genre(movie405, fantasy).
+has_1_genre(movie406).
 has_genre(movie406, drama).
+has_2_genre(movie407).
 has_genre(movie407, horror).
 has_genre(movie407, thriller).
+has_1_genre(movie408).
 has_genre(movie408, drama).
+has_2_genre(movie409).
 has_genre(movie409, crime).
 has_genre(movie409, drama).
+has_3_genre(movie410).
 has_genre(movie410, children).
 has_genre(movie410, comedy).
 has_genre(movie410, fantasy).
+has_1_genre(movie412).
 has_genre(movie412, drama).
+has_1_genre(movie413).
 has_genre(movie413, comedy).
+has_1_genre(movie414).
 has_genre(movie414, comedy).
+has_2_genre(movie415).
 has_genre(movie415, comedy).
 has_genre(movie415, thriller).
+has_1_genre(movie416).
 has_genre(movie416, western).
+has_2_genre(movie417).
 has_genre(movie417, comedy).
 has_genre(movie417, romance).
+has_1_genre(movie418).
 has_genre(movie418, drama).
+has_1_genre(movie419).
 has_genre(movie419, comedy).
+has_4_genre(movie420).
 has_genre(movie420, action).
 has_genre(movie420, comedy).
 has_genre(movie420, crime).
 has_genre(movie420, thriller).
+has_3_genre(movie421).
 has_genre(movie421, adventure).
 has_genre(movie421, children).
 has_genre(movie421, drama).
+has_1_genre(movie422).
 has_genre(movie422, thriller).
+has_2_genre(movie423).
 has_genre(movie423, action).
 has_genre(movie423, thriller).
+has_1_genre(movie424).
 has_genre(movie424, drama).
+has_2_genre(movie425).
 has_genre(movie425, drama).
 has_genre(movie425, romance).
+has_3_genre(movie426).
 has_genre(movie426, horror).
 has_genre(movie426, sci-fi).
 has_genre(movie426, thriller).
+has_4_genre(movie427).
 has_genre(movie427, drama).
 has_genre(movie427, mystery).
 has_genre(movie427, romance).
 has_genre(movie427, thriller).
+has_1_genre(movie428).
 has_genre(movie428, drama).
+has_1_genre(movie429).
 has_genre(movie429, comedy).
+has_2_genre(movie430).
 has_genre(movie430, comedy).
 has_genre(movie430, drama).
+has_2_genre(movie431).
 has_genre(movie431, crime).
 has_genre(movie431, drama).
+has_3_genre(movie432).
 has_genre(movie432, adventure).
 has_genre(movie432, comedy).
 has_genre(movie432, western).
+has_1_genre(movie433).
 has_genre(movie433, comedy).
+has_3_genre(movie434).
 has_genre(movie434, action).
 has_genre(movie434, adventure).
 has_genre(movie434, thriller).
+has_2_genre(movie435).
 has_genre(movie435, comedy).
 has_genre(movie435, sci-fi).
+has_2_genre(movie436).
 has_genre(movie436, drama).
 has_genre(movie436, thriller).
+has_1_genre(movie437).
 has_genre(movie437, comedy).
+has_3_genre(movie438).
 has_genre(movie438, action).
 has_genre(movie438, comedy).
 has_genre(movie438, drama).
+has_2_genre(movie440).
 has_genre(movie440, comedy).
 has_genre(movie440, romance).
+has_1_genre(movie441).
 has_genre(movie441, comedy).
+has_3_genre(movie442).
 has_genre(movie442, action).
 has_genre(movie442, adventure).
 has_genre(movie442, sci-fi).
+has_2_genre(movie444).
 has_genre(movie444, comedy).
 has_genre(movie444, romance).
+has_1_genre(movie445).
 has_genre(movie445, comedy).
+has_2_genre(movie446).
 has_genre(movie446, drama).
 has_genre(movie446, romance).
+has_1_genre(movie448).
 has_genre(movie448, drama).
+has_1_genre(movie449).
 has_genre(movie449, comedy).
+has_2_genre(movie450).
 has_genre(movie450, comedy).
 has_genre(movie450, drama).
+has_3_genre(movie451).
 has_genre(movie451, drama).
 has_genre(movie451, mystery).
 has_genre(movie451, romance).
+has_1_genre(movie452).
 has_genre(movie452, drama).
+has_2_genre(movie453).
 has_genre(movie453, comedy).
 has_genre(movie453, romance).
+has_2_genre(movie454).
 has_genre(movie454, drama).
 has_genre(movie454, thriller).
+has_3_genre(movie455).
 has_genre(movie455, adventure).
 has_genre(movie455, children).
 has_genre(movie455, drama).
+has_3_genre(movie456).
 has_genre(movie456, crime).
 has_genre(movie456, drama).
 has_genre(movie456, thriller).
+has_1_genre(movie457).
 has_genre(movie457, thriller).
+has_2_genre(movie458).
 has_genre(movie458, drama).
 has_genre(movie458, western).
+has_more_than_5_genre(movie459).
 has_genre(movie459, action).
 has_genre(movie459, adventure).
 has_genre(movie459, crime).
 has_genre(movie459, drama).
 has_genre(movie459, romance).
 has_genre(movie459, thriller).
+has_1_genre(movie460).
 has_genre(movie460, comedy).
+has_2_genre(movie461).
 has_genre(movie461, drama).
 has_genre(movie461, romance).
+has_4_genre(movie464).
 has_genre(movie464, action).
 has_genre(movie464, adventure).
 has_genre(movie464, crime).
 has_genre(movie464, thriller).
+has_3_genre(movie466).
 has_genre(movie466, action).
 has_genre(movie466, comedy).
 has_genre(movie466, war).
+has_1_genre(movie467).
 has_genre(movie467, comedy).
+has_2_genre(movie468).
 has_genre(movie468, comedy).
 has_genre(movie468, romance).
+has_2_genre(movie469).
 has_genre(movie469, drama).
 has_genre(movie469, romance).
+has_1_genre(movie470).
 has_genre(movie470, comedy).
+has_1_genre(movie471).
 has_genre(movie471, comedy).
+has_2_genre(movie472).
 has_genre(movie472, comedy).
 has_genre(movie472, drama).
+has_2_genre(movie473).
 has_genre(movie473, comedy).
 has_genre(movie473, war).
+has_2_genre(movie474).
 has_genre(movie474, action).
 has_genre(movie474, thriller).
+has_1_genre(movie475).
 has_genre(movie475, drama).
+has_2_genre(movie476).
 has_genre(movie476, comedy).
 has_genre(movie476, drama).
+has_2_genre(movie477).
 has_genre(movie477, drama).
 has_genre(movie477, musical).
+has_3_genre(movie478).
 has_genre(movie478, comedy).
 has_genre(movie478, crime).
 has_genre(movie478, drama).
+has_3_genre(movie479).
 has_genre(movie479, action).
 has_genre(movie479, crime).
 has_genre(movie479, thriller).
+has_4_genre(movie480).
 has_genre(movie480, action).
 has_genre(movie480, adventure).
 has_genre(movie480, sci-fi).
 has_genre(movie480, thriller).
+has_2_genre(movie481).
 has_genre(movie481, drama).
 has_genre(movie481, thriller).
+has_3_genre(movie482).
 has_genre(movie482, crime).
 has_genre(movie482, drama).
 has_genre(movie482, thriller).
+has_2_genre(movie484).
 has_genre(movie484, adventure).
 has_genre(movie484, children).
+has_4_genre(movie485).
 has_genre(movie485, action).
 has_genre(movie485, adventure).
 has_genre(movie485, comedy).
 has_genre(movie485, fantasy).
+has_1_genre(movie486).
 has_genre(movie486, comedy).
+has_2_genre(movie487).
 has_genre(movie487, comedy).
 has_genre(movie487, western).
+has_2_genre(movie488).
 has_genre(movie488, drama).
 has_genre(movie488, romance).
+has_1_genre(movie489).
 has_genre(movie489, comedy).
+has_1_genre(movie490).
 has_genre(movie490, thriller).
+has_1_genre(movie491).
 has_genre(movie491, drama).
+has_2_genre(movie492).
 has_genre(movie492, comedy).
 has_genre(movie492, mystery).
+has_3_genre(movie493).
 has_genre(movie493, action).
 has_genre(movie493, crime).
 has_genre(movie493, drama).
+has_3_genre(movie494).
 has_genre(movie494, action).
 has_genre(movie494, adventure).
 has_genre(movie494, thriller).
+has_1_genre(movie495).
 has_genre(movie495, drama).
+has_4_genre(movie496).
 has_genre(movie496, comedy).
 has_genre(movie496, drama).
 has_genre(movie496, romance).
 has_genre(movie496, thriller).
+has_2_genre(movie497).
 has_genre(movie497, comedy).
 has_genre(movie497, romance).
+has_2_genre(movie499).
 has_genre(movie499, comedy).
 has_genre(movie499, romance).
+has_2_genre(movie500).
 has_genre(movie500, comedy).
 has_genre(movie500, drama).
+has_1_genre(movie501).
 has_genre(movie501, drama).
+has_3_genre(movie502).
 has_genre(movie502, action).
 has_genre(movie502, children).
 has_genre(movie502, romance).
+has_3_genre(movie504).
 has_genre(movie504, action).
 has_genre(movie504, drama).
 has_genre(movie504, sci-fi).
+has_1_genre(movie505).
 has_genre(movie505, comedy).
+has_3_genre(movie506).
 has_genre(movie506, drama).
 has_genre(movie506, fantasy).
 has_genre(movie506, romance).
+has_3_genre(movie507).
 has_genre(movie507, crime).
 has_genre(movie507, drama).
 has_genre(movie507, thriller).
+has_1_genre(movie508).
 has_genre(movie508, drama).
+has_2_genre(movie509).
 has_genre(movie509, drama).
 has_genre(movie509, romance).
+has_1_genre(movie510).
 has_genre(movie510, drama).
+has_2_genre(movie511).
 has_genre(movie511, action).
 has_genre(movie511, drama).
+has_2_genre(movie512).
 has_genre(movie512, horror).
 has_genre(movie512, sci-fi).
+has_3_genre(movie513).
 has_genre(movie513, comedy).
 has_genre(movie513, mystery).
 has_genre(movie513, romance).
+has_1_genre(movie514).
 has_genre(movie514, comedy).
+has_2_genre(movie515).
 has_genre(movie515, drama).
 has_genre(movie515, romance).
+has_2_genre(movie516).
 has_genre(movie516, comedy).
 has_genre(movie516, drama).
+has_3_genre(movie517).
 has_genre(movie517, action).
 has_genre(movie517, drama).
 has_genre(movie517, mystery).
+has_1_genre(movie518).
 has_genre(movie518, comedy).
+has_5_genre(movie519).
 has_genre(movie519, action).
 has_genre(movie519, crime).
 has_genre(movie519, drama).
 has_genre(movie519, sci-fi).
 has_genre(movie519, thriller).
+has_1_genre(movie520).
 has_genre(movie520, comedy).
+has_2_genre(movie521).
 has_genre(movie521, crime).
 has_genre(movie521, thriller).
+has_2_genre(movie522).
 has_genre(movie522, action).
 has_genre(movie522, drama).
+has_1_genre(movie523).
 has_genre(movie523, drama).
+has_1_genre(movie524).
 has_genre(movie524, drama).
+has_1_genre(movie526).
 has_genre(movie526, drama).
+has_2_genre(movie527).
 has_genre(movie527, drama).
 has_genre(movie527, war).
+has_2_genre(movie528).
 has_genre(movie528, comedy).
 has_genre(movie528, drama).
+has_1_genre(movie529).
 has_genre(movie529, drama).
+has_2_genre(movie531).
 has_genre(movie531, children).
 has_genre(movie531, drama).
+has_3_genre(movie532).
 has_genre(movie532, comedy).
 has_genre(movie532, crime).
 has_genre(movie532, horror).
+has_4_genre(movie533).
 has_genre(movie533, action).
 has_genre(movie533, adventure).
 has_genre(movie533, fantasy).
 has_genre(movie533, mystery).
+has_2_genre(movie534).
 has_genre(movie534, drama).
 has_genre(movie534, romance).
+has_1_genre(movie535).
 has_genre(movie535, drama).
+has_1_genre(movie536).
 has_genre(movie536, drama).
+has_1_genre(movie537).
 has_genre(movie537, drama).
+has_1_genre(movie538).
 has_genre(movie538, drama).
+has_3_genre(movie539).
 has_genre(movie539, comedy).
 has_genre(movie539, drama).
 has_genre(movie539, romance).
+has_1_genre(movie540).
 has_genre(movie540, thriller).
+has_3_genre(movie541).
 has_genre(movie541, action).
 has_genre(movie541, sci-fi).
 has_genre(movie541, thriller).
+has_3_genre(movie542).
 has_genre(movie542, comedy).
 has_genre(movie542, drama).
 has_genre(movie542, romance).
+has_3_genre(movie543).
 has_genre(movie543, comedy).
 has_genre(movie543, romance).
 has_genre(movie543, thriller).
+has_2_genre(movie544).
 has_genre(movie544, action).
 has_genre(movie544, crime).
+has_more_than_5_genre(movie546).
 has_genre(movie546, action).
 has_genre(movie546, adventure).
 has_genre(movie546, children).
 has_genre(movie546, comedy).
 has_genre(movie546, fantasy).
 has_genre(movie546, sci-fi).
+has_3_genre(movie547).
 has_genre(movie547, action).
 has_genre(movie547, adventure).
 has_genre(movie547, thriller).
+has_3_genre(movie548).
 has_genre(movie548, action).
 has_genre(movie548, mystery).
 has_genre(movie548, thriller).
+has_2_genre(movie549).
 has_genre(movie549, drama).
 has_genre(movie549, musical).
+has_2_genre(movie550).
 has_genre(movie550, comedy).
 has_genre(movie550, romance).
+has_4_genre(movie551).
 has_genre(movie551, animation).
 has_genre(movie551, children).
 has_genre(movie551, fantasy).
 has_genre(movie551, musical).
+has_4_genre(movie552).
 has_genre(movie552, action).
 has_genre(movie552, adventure).
 has_genre(movie552, comedy).
 has_genre(movie552, romance).
+has_3_genre(movie553).
 has_genre(movie553, action).
 has_genre(movie553, drama).
 has_genre(movie553, western).
+has_2_genre(movie555).
 has_genre(movie555, crime).
 has_genre(movie555, thriller).
+has_1_genre(movie556).
 has_genre(movie556, documentary).
+has_5_genre(movie558).
 has_genre(movie558, action).
 has_genre(movie558, adventure).
 has_genre(movie558, animation).
 has_genre(movie558, children).
 has_genre(movie558, fantasy).
+has_2_genre(movie562).
 has_genre(movie562, comedy).
 has_genre(movie562, drama).
+has_2_genre(movie563).
 has_genre(movie563, drama).
 has_genre(movie563, romance).
+has_1_genre(movie564).
 has_genre(movie564, comedy).
+has_2_genre(movie567).
 has_genre(movie567, comedy).
 has_genre(movie567, drama).
+has_2_genre(movie568).
 has_genre(movie568, comedy).
 has_genre(movie568, drama).
+has_2_genre(movie569).
 has_genre(movie569, comedy).
 has_genre(movie569, drama).
+has_1_genre(movie573).
 has_genre(movie573, drama).
+has_2_genre(movie574).
 has_genre(movie574, comedy).
 has_genre(movie574, drama).
+has_2_genre(movie575).
 has_genre(movie575, children).
 has_genre(movie575, comedy).
+has_3_genre(movie577).
 has_genre(movie577, adventure).
 has_genre(movie577, children).
 has_genre(movie577, drama).
+has_2_genre(movie579).
 has_genre(movie579, crime).
 has_genre(movie579, thriller).
+has_1_genre(movie580).
 has_genre(movie580, drama).
+has_1_genre(movie581).
 has_genre(movie581, documentary).
+has_2_genre(movie583).
 has_genre(movie583, comedy).
 has_genre(movie583, drama).
+has_1_genre(movie585).
 has_genre(movie585, comedy).
+has_2_genre(movie586).
 has_genre(movie586, children).
 has_genre(movie586, comedy).
+has_5_genre(movie587).
 has_genre(movie587, comedy).
 has_genre(movie587, drama).
 has_genre(movie587, fantasy).
 has_genre(movie587, romance).
 has_genre(movie587, thriller).
+has_5_genre(movie588).
 has_genre(movie588, adventure).
 has_genre(movie588, animation).
 has_genre(movie588, children).
 has_genre(movie588, comedy).
 has_genre(movie588, musical).
+has_2_genre(movie589).
 has_genre(movie589, action).
 has_genre(movie589, sci-fi).
+has_3_genre(movie590).
 has_genre(movie590, adventure).
 has_genre(movie590, drama).
 has_genre(movie590, western).
+has_3_genre(movie592).
 has_genre(movie592, action).
 has_genre(movie592, crime).
 has_genre(movie592, thriller).
+has_3_genre(movie593).
 has_genre(movie593, crime).
 has_genre(movie593, horror).
 has_genre(movie593, thriller).
+has_5_genre(movie594).
 has_genre(movie594, animation).
 has_genre(movie594, children).
 has_genre(movie594, drama).
 has_genre(movie594, fantasy).
 has_genre(movie594, musical).
+has_more_than_5_genre(movie595).
 has_genre(movie595, animation).
 has_genre(movie595, children).
 has_genre(movie595, fantasy).
 has_genre(movie595, musical).
 has_genre(movie595, romance).
 has_genre(movie595, imax).
+has_4_genre(movie596).
 has_genre(movie596, animation).
 has_genre(movie596, children).
 has_genre(movie596, fantasy).
 has_genre(movie596, musical).
+has_2_genre(movie597).
 has_genre(movie597, comedy).
 has_genre(movie597, romance).
+has_2_genre(movie599).
 has_genre(movie599, adventure).
 has_genre(movie599, western).
+has_3_genre(movie600).
 has_genre(movie600, action).
 has_genre(movie600, comedy).
 has_genre(movie600, crime).
+has_1_genre(movie602).
 has_genre(movie602, documentary).
+has_2_genre(movie605).
 has_genre(movie605, drama).
 has_genre(movie605, romance).
+has_2_genre(movie606).
 has_genre(movie606, fantasy).
 has_genre(movie606, horror).
+has_4_genre(movie608).
 has_genre(movie608, comedy).
 has_genre(movie608, crime).
 has_genre(movie608, drama).
 has_genre(movie608, thriller).
+has_2_genre(movie609).
 has_genre(movie609, adventure).
 has_genre(movie609, children).
+has_5_genre(movie610).
 has_genre(movie610, action).
 has_genre(movie610, adventure).
 has_genre(movie610, animation).
 has_genre(movie610, horror).
 has_genre(movie610, sci-fi).
+has_3_genre(movie611).
 has_genre(movie611, action).
 has_genre(movie611, horror).
 has_genre(movie611, sci-fi).
+has_1_genre(movie612).
 has_genre(movie612, comedy).
+has_2_genre(movie613).
 has_genre(movie613, drama).
 has_genre(movie613, romance).
+has_2_genre(movie615).
 has_genre(movie615, comedy).
 has_genre(movie615, drama).
+has_2_genre(movie616).
 has_genre(movie616, animation).
 has_genre(movie616, children).
+has_2_genre(movie617).
 has_genre(movie617, comedy).
 has_genre(movie617, drama).
+has_2_genre(movie618).
 has_genre(movie618, comedy).
 has_genre(movie618, romance).
+has_1_genre(movie619).
 has_genre(movie619, comedy).
+has_1_genre(movie626).
 has_genre(movie626, comedy).
+has_2_genre(movie627).
 has_genre(movie627, drama).
 has_genre(movie627, thriller).
+has_4_genre(movie628).
 has_genre(movie628, crime).
 has_genre(movie628, drama).
 has_genre(movie628, mystery).
 has_genre(movie628, thriller).
+has_more_than_5_genre(movie631).
 has_genre(movie631, adventure).
 has_genre(movie631, animation).
 has_genre(movie631, children).
 has_genre(movie631, fantasy).
 has_genre(movie631, musical).
 has_genre(movie631, romance).
+has_2_genre(movie632).
 has_genre(movie632, drama).
 has_genre(movie632, war).
+has_1_genre(movie633).
 has_genre(movie633, comedy).
+has_1_genre(movie634).
 has_genre(movie634, comedy).
+has_2_genre(movie635).
 has_genre(movie635, comedy).
 has_genre(movie635, drama).
+has_1_genre(movie636).
 has_genre(movie636, drama).
+has_1_genre(movie637).
 has_genre(movie637, comedy).
+has_1_genre(movie638).
 has_genre(movie638, romance).
+has_2_genre(movie639).
 has_genre(movie639, comedy).
 has_genre(movie639, drama).
+has_2_genre(movie640).
 has_genre(movie640, drama).
 has_genre(movie640, thriller).
+has_1_genre(movie645).
 has_genre(movie645, drama).
+has_4_genre(movie647).
 has_genre(movie647, action).
 has_genre(movie647, crime).
 has_genre(movie647, drama).
 has_genre(movie647, war).
+has_4_genre(movie648).
 has_genre(movie648, action).
 has_genre(movie648, adventure).
 has_genre(movie648, mystery).
 has_genre(movie648, thriller).
+has_2_genre(movie649).
 has_genre(movie649, comedy).
 has_genre(movie649, drama).
+has_1_genre(movie650).
 has_genre(movie650, drama).
+has_3_genre(movie653).
 has_genre(movie653, action).
 has_genre(movie653, adventure).
 has_genre(movie653, fantasy).
+has_1_genre(movie656).
 has_genre(movie656, comedy).
+has_5_genre(movie661).
 has_genre(movie661, adventure).
 has_genre(movie661, animation).
 has_genre(movie661, children).
 has_genre(movie661, fantasy).
 has_genre(movie661, musical).
+has_1_genre(movie662).
 has_genre(movie662, thriller).
+has_1_genre(movie663).
 has_genre(movie663, comedy).
+has_3_genre(movie665).
 has_genre(movie665, comedy).
 has_genre(movie665, drama).
 has_genre(movie665, war).
+has_1_genre(movie667).
 has_genre(movie667, action).
+has_1_genre(movie668).
 has_genre(movie668, drama).
+has_1_genre(movie670).
 has_genre(movie670, drama).
+has_2_genre(movie671).
 has_genre(movie671, comedy).
 has_genre(movie671, sci-fi).
+has_more_than_5_genre(movie673).
 has_genre(movie673, adventure).
 has_genre(movie673, animation).
 has_genre(movie673, children).
 has_genre(movie673, comedy).
 has_genre(movie673, fantasy).
 has_genre(movie673, sci-fi).
+has_3_genre(movie674).
 has_genre(movie674, adventure).
 has_genre(movie674, comedy).
 has_genre(movie674, sci-fi).
+has_2_genre(movie678).
 has_genre(movie678, drama).
 has_genre(movie678, thriller).
+has_1_genre(movie679).
 has_genre(movie679, drama).
+has_5_genre(movie680).
 has_genre(movie680, drama).
 has_genre(movie680, mystery).
 has_genre(movie680, romance).
 has_genre(movie680, sci-fi).
 has_genre(movie680, thriller).
+has_1_genre(movie685).
 has_genre(movie685, drama).
+has_4_genre(movie688).
 has_genre(movie688, action).
 has_genre(movie688, adventure).
 has_genre(movie688, comedy).
 has_genre(movie688, war).
+has_2_genre(movie691).
 has_genre(movie691, comedy).
 has_genre(movie691, romance).
+has_3_genre(movie692).
 has_genre(movie692, action).
 has_genre(movie692, sci-fi).
 has_genre(movie692, thriller).
+has_3_genre(movie694).
 has_genre(movie694, action).
 has_genre(movie694, crime).
 has_genre(movie694, drama).
+has_2_genre(movie695).
 has_genre(movie695, mystery).
 has_genre(movie695, thriller).
+has_2_genre(movie697).
 has_genre(movie697, drama).
 has_genre(movie697, romance).
+has_1_genre(movie698).
 has_genre(movie698, drama).
+has_1_genre(movie700).
 has_genre(movie700, comedy).
+has_1_genre(movie703).
 has_genre(movie703, drama).
+has_2_genre(movie704).
 has_genre(movie704, action).
 has_genre(movie704, adventure).
+has_1_genre(movie706).
 has_genre(movie706, drama).
+has_3_genre(movie707).
 has_genre(movie707, crime).
 has_genre(movie707, drama).
 has_genre(movie707, thriller).
+has_2_genre(movie708).
 has_genre(movie708, comedy).
 has_genre(movie708, romance).
+has_5_genre(movie709).
 has_genre(movie709, adventure).
 has_genre(movie709, animation).
 has_genre(movie709, children).
 has_genre(movie709, comedy).
 has_genre(movie709, musical).
+has_1_genre(movie710).
 has_genre(movie710, comedy).
+has_2_genre(movie711).
 has_genre(movie711, adventure).
 has_genre(movie711, children).
+has_3_genre(movie714).
 has_genre(movie714, drama).
 has_genre(movie714, mystery).
 has_genre(movie714, western).
+has_2_genre(movie715).
 has_genre(movie715, drama).
 has_genre(movie715, romance).
+has_3_genre(movie718).
 has_genre(movie718, comedy).
 has_genre(movie718, fantasy).
 has_genre(movie718, sci-fi).
+has_1_genre(movie719).
 has_genre(movie719, comedy).
+has_3_genre(movie720).
 has_genre(movie720, adventure).
 has_genre(movie720, animation).
 has_genre(movie720, comedy).
+has_1_genre(movie722).
 has_genre(movie722, documentary).
+has_4_genre(movie724).
 has_genre(movie724, drama).
 has_genre(movie724, fantasy).
 has_genre(movie724, horror).
 has_genre(movie724, thriller).
+has_1_genre(movie725).
 has_genre(movie725, comedy).
+has_1_genre(movie726).
 has_genre(movie726, drama).
+has_1_genre(movie728).
 has_genre(movie728, comedy).
+has_2_genre(movie731).
 has_genre(movie731, crime).
 has_genre(movie731, thriller).
+has_3_genre(movie733).
 has_genre(movie733, action).
 has_genre(movie733, adventure).
 has_genre(movie733, thriller).
+has_1_genre(movie735).
 has_genre(movie735, horror).
+has_4_genre(movie736).
 has_genre(movie736, action).
 has_genre(movie736, adventure).
 has_genre(movie736, romance).
 has_genre(movie736, thriller).
+has_2_genre(movie737).
 has_genre(movie737, action).
 has_genre(movie737, sci-fi).
+has_2_genre(movie741).
 has_genre(movie741, animation).
 has_genre(movie741, sci-fi).
+has_2_genre(movie742).
 has_genre(movie742, horror).
 has_genre(movie742, thriller).
+has_1_genre(movie743).
 has_genre(movie743, comedy).
+has_3_genre(movie745).
 has_genre(movie745, animation).
 has_genre(movie745, children).
 has_genre(movie745, comedy).
+has_1_genre(movie747).
 has_genre(movie747, comedy).
+has_3_genre(movie748).
 has_genre(movie748, action).
 has_genre(movie748, sci-fi).
 has_genre(movie748, thriller).
+has_2_genre(movie750).
 has_genre(movie750, comedy).
 has_genre(movie750, war).
+has_1_genre(movie757).
 has_genre(movie757, drama).
+has_1_genre(movie759).
 has_genre(movie759, documentary).
+has_2_genre(movie760).
 has_genre(movie760, drama).
 has_genre(movie760, war).
+has_2_genre(movie761).
 has_genre(movie761, action).
 has_genre(movie761, adventure).
+has_2_genre(movie762).
 has_genre(movie762, comedy).
 has_genre(movie762, crime).
+has_2_genre(movie764).
 has_genre(movie764, drama).
 has_genre(movie764, romance).
+has_2_genre(movie765).
 has_genre(movie765, comedy).
 has_genre(movie765, drama).
+has_1_genre(movie766).
 has_genre(movie766, drama).
+has_1_genre(movie773).
 has_genre(movie773, drama).
+has_2_genre(movie775).
 has_genre(movie775, horror).
 has_genre(movie775, mystery).
+has_3_genre(movie778).
 has_genre(movie778, comedy).
 has_genre(movie778, crime).
 has_genre(movie778, drama).
+has_2_genre(movie779).
 has_genre(movie779, drama).
 has_genre(movie779, romance).
+has_4_genre(movie780).
 has_genre(movie780, action).
 has_genre(movie780, adventure).
 has_genre(movie780, sci-fi).
 has_genre(movie780, thriller).
+has_1_genre(movie781).
 has_genre(movie781, drama).
+has_2_genre(movie782).
 has_genre(movie782, drama).
 has_genre(movie782, thriller).
+has_5_genre(movie783).
 has_genre(movie783, animation).
 has_genre(movie783, children).
 has_genre(movie783, drama).
 has_genre(movie783, musical).
 has_genre(movie783, romance).
+has_2_genre(movie784).
 has_genre(movie784, comedy).
 has_genre(movie784, thriller).
+has_1_genre(movie785).
 has_genre(movie785, comedy).
+has_3_genre(movie786).
 has_genre(movie786, action).
 has_genre(movie786, drama).
 has_genre(movie786, thriller).
+has_4_genre(movie788).
 has_genre(movie788, comedy).
 has_genre(movie788, fantasy).
 has_genre(movie788, romance).
 has_genre(movie788, sci-fi).
+has_1_genre(movie790).
 has_genre(movie790, drama).
+has_1_genre(movie791).
 has_genre(movie791, documentary).
+has_1_genre(movie795).
 has_genre(movie795, drama).
+has_4_genre(movie798).
 has_genre(movie798, action).
 has_genre(movie798, adventure).
 has_genre(movie798, drama).
 has_genre(movie798, thriller).
+has_3_genre(movie799).
 has_genre(movie799, comedy).
 has_genre(movie799, horror).
 has_genre(movie799, thriller).
+has_3_genre(movie800).
 has_genre(movie800, drama).
 has_genre(movie800, mystery).
 has_genre(movie800, western).
+has_2_genre(movie801).
 has_genre(movie801, children).
 has_genre(movie801, comedy).
+has_2_genre(movie802).
 has_genre(movie802, drama).
 has_genre(movie802, romance).
+has_3_genre(movie803).
 has_genre(movie803, comedy).
 has_genre(movie803, drama).
 has_genre(movie803, romance).
+has_2_genre(movie804).
 has_genre(movie804, comedy).
 has_genre(movie804, romance).
+has_2_genre(movie805).
 has_genre(movie805, drama).
 has_genre(movie805, thriller).
+has_2_genre(movie806).
 has_genre(movie806, crime).
 has_genre(movie806, drama).
+has_2_genre(movie808).
 has_genre(movie808, adventure).
 has_genre(movie808, children).
+has_2_genre(movie809).
 has_genre(movie809, action).
 has_genre(movie809, adventure).
+has_3_genre(movie810).
 has_genre(movie810, children).
 has_genre(movie810, comedy).
 has_genre(movie810, fantasy).
+has_1_genre(movie813).
 has_genre(movie813, comedy).
+has_1_genre(movie818).
 has_genre(movie818, comedy).
+has_1_genre(movie823).
 has_genre(movie823, drama).
+has_2_genre(movie824).
 has_genre(movie824, drama).
 has_genre(movie824, mystery).
+has_2_genre(movie828).
 has_genre(movie828, adventure).
 has_genre(movie828, children).
+has_3_genre(movie829).
 has_genre(movie829, comedy).
 has_genre(movie829, fantasy).
 has_genre(movie829, musical).
+has_1_genre(movie830).
 has_genre(movie830, comedy).
+has_2_genre(movie832).
 has_genre(movie832, crime).
 has_genre(movie832, thriller).
+has_1_genre(movie833).
 has_genre(movie833, comedy).
+has_1_genre(movie835).
 has_genre(movie835, drama).
+has_3_genre(movie836).
 has_genre(movie836, action).
 has_genre(movie836, adventure).
 has_genre(movie836, thriller).
+has_3_genre(movie837).
 has_genre(movie837, children).
 has_genre(movie837, comedy).
 has_genre(movie837, fantasy).
+has_3_genre(movie838).
 has_genre(movie838, comedy).
 has_genre(movie838, drama).
 has_genre(movie838, romance).
+has_2_genre(movie839).
 has_genre(movie839, action).
 has_genre(movie839, thriller).
+has_2_genre(movie840).
 has_genre(movie840, children).
 has_genre(movie840, comedy).
+has_1_genre(movie841).
 has_genre(movie841, horror).
+has_2_genre(movie842).
 has_genre(movie842, comedy).
 has_genre(movie842, horror).
+has_1_genre(movie848).
 has_genre(movie848, drama).
+has_4_genre(movie849).
 has_genre(movie849, action).
 has_genre(movie849, adventure).
 has_genre(movie849, sci-fi).
 has_genre(movie849, thriller).
+has_1_genre(movie851).
 has_genre(movie851, drama).
+has_3_genre(movie852).
 has_genre(movie852, comedy).
 has_genre(movie852, drama).
 has_genre(movie852, romance).
+has_2_genre(movie858).
 has_genre(movie858, crime).
 has_genre(movie858, drama).
+has_4_genre(movie861).
 has_genre(movie861, action).
 has_genre(movie861, comedy).
 has_genre(movie861, crime).
 has_genre(movie861, thriller).
+has_4_genre(movie866).
 has_genre(movie866, crime).
 has_genre(movie866, drama).
 has_genre(movie866, romance).
 has_genre(movie866, thriller).
+has_2_genre(movie867).
 has_genre(movie867, comedy).
 has_genre(movie867, crime).
+has_4_genre(movie869).
 has_genre(movie869, crime).
 has_genre(movie869, drama).
 has_genre(movie869, musical).
 has_genre(movie869, thriller).
+has_1_genre(movie870).
 has_genre(movie870, comedy).
+has_3_genre(movie875).
 has_genre(movie875, action).
 has_genre(movie875, crime).
 has_genre(movie875, drama).
+has_4_genre(movie876).
 has_genre(movie876, action).
 has_genre(movie876, comedy).
 has_genre(movie876, crime).
 has_genre(movie876, thriller).
+has_2_genre(movie879).
 has_genre(movie879, horror).
 has_genre(movie879, thriller).
+has_2_genre(movie880).
 has_genre(movie880, sci-fi).
 has_genre(movie880, thriller).
+has_2_genre(movie881).
 has_genre(movie881, children).
 has_genre(movie881, comedy).
+has_2_genre(movie882).
 has_genre(movie882, drama).
 has_genre(movie882, thriller).
+has_3_genre(movie885).
 has_genre(movie885, children).
 has_genre(movie885, drama).
 has_genre(movie885, fantasy).
+has_3_genre(movie886).
 has_genre(movie886, action).
 has_genre(movie886, comedy).
 has_genre(movie886, crime).
+has_4_genre(movie888).
 has_genre(movie888, adventure).
 has_genre(movie888, animation).
 has_genre(movie888, children).
 has_genre(movie888, musical).
+has_2_genre(movie889).
 has_genre(movie889, drama).
 has_genre(movie889, romance).
+has_2_genre(movie891).
 has_genre(movie891, horror).
 has_genre(movie891, thriller).
+has_3_genre(movie892).
 has_genre(movie892, comedy).
 has_genre(movie892, drama).
 has_genre(movie892, romance).
+has_1_genre(movie893).
 has_genre(movie893, drama).
+has_1_genre(movie896).
 has_genre(movie896, drama).
+has_4_genre(movie897).
 has_genre(movie897, adventure).
 has_genre(movie897, drama).
 has_genre(movie897, romance).
 has_genre(movie897, war).
+has_3_genre(movie898).
 has_genre(movie898, comedy).
 has_genre(movie898, drama).
 has_genre(movie898, romance).
+has_3_genre(movie899).
 has_genre(movie899, comedy).
 has_genre(movie899, musical).
 has_genre(movie899, romance).
+has_2_genre(movie900).
 has_genre(movie900, musical).
 has_genre(movie900, romance).
+has_2_genre(movie901).
 has_genre(movie901, comedy).
 has_genre(movie901, musical).
+has_2_genre(movie902).
 has_genre(movie902, drama).
 has_genre(movie902, romance).
+has_4_genre(movie903).
 has_genre(movie903, drama).
 has_genre(movie903, mystery).
 has_genre(movie903, romance).
 has_genre(movie903, thriller).
+has_2_genre(movie904).
 has_genre(movie904, mystery).
 has_genre(movie904, thriller).
+has_2_genre(movie905).
 has_genre(movie905, comedy).
 has_genre(movie905, romance).
+has_2_genre(movie906).
 has_genre(movie906, drama).
 has_genre(movie906, thriller).
+has_3_genre(movie907).
 has_genre(movie907, comedy).
 has_genre(movie907, musical).
 has_genre(movie907, romance).
+has_5_genre(movie908).
 has_genre(movie908, action).
 has_genre(movie908, adventure).
 has_genre(movie908, mystery).
 has_genre(movie908, romance).
 has_genre(movie908, thriller).
+has_3_genre(movie909).
 has_genre(movie909, comedy).
 has_genre(movie909, drama).
 has_genre(movie909, romance).
+has_2_genre(movie910).
 has_genre(movie910, comedy).
 has_genre(movie910, crime).
+has_5_genre(movie911).
 has_genre(movie911, comedy).
 has_genre(movie911, crime).
 has_genre(movie911, mystery).
 has_genre(movie911, romance).
 has_genre(movie911, thriller).
+has_2_genre(movie912).
 has_genre(movie912, drama).
 has_genre(movie912, romance).
+has_2_genre(movie913).
 has_genre(movie913, film-noir).
 has_genre(movie913, mystery).
+has_4_genre(movie914).
 has_genre(movie914, comedy).
 has_genre(movie914, drama).
 has_genre(movie914, musical).
 has_genre(movie914, romance).
+has_2_genre(movie915).
 has_genre(movie915, comedy).
 has_genre(movie915, romance).
+has_3_genre(movie916).
 has_genre(movie916, comedy).
 has_genre(movie916, drama).
 has_genre(movie916, romance).
+has_2_genre(movie917).
 has_genre(movie917, children).
 has_genre(movie917, drama).
+has_1_genre(movie918).
 has_genre(movie918, musical).
+has_4_genre(movie919).
 has_genre(movie919, adventure).
 has_genre(movie919, children).
 has_genre(movie919, fantasy).
 has_genre(movie919, musical).
+has_3_genre(movie920).
 has_genre(movie920, drama).
 has_genre(movie920, romance).
 has_genre(movie920, war).
+has_1_genre(movie921).
 has_genre(movie921, comedy).
+has_3_genre(movie922).
 has_genre(movie922, drama).
 has_genre(movie922, film-noir).
 has_genre(movie922, romance).
+has_2_genre(movie923).
 has_genre(movie923, drama).
 has_genre(movie923, mystery).
+has_3_genre(movie924).
 has_genre(movie924, adventure).
 has_genre(movie924, drama).
 has_genre(movie924, sci-fi).
+has_1_genre(movie926).
 has_genre(movie926, drama).
+has_1_genre(movie927).
 has_genre(movie927, comedy).
+has_4_genre(movie928).
 has_genre(movie928, drama).
 has_genre(movie928, mystery).
 has_genre(movie928, romance).
 has_genre(movie928, thriller).
+has_4_genre(movie929).
 has_genre(movie929, drama).
 has_genre(movie929, film-noir).
 has_genre(movie929, mystery).
 has_genre(movie929, thriller).
+has_3_genre(movie930).
 has_genre(movie930, film-noir).
 has_genre(movie930, romance).
 has_genre(movie930, thriller).
+has_3_genre(movie931).
 has_genre(movie931, mystery).
 has_genre(movie931, romance).
 has_genre(movie931, thriller).
+has_2_genre(movie932).
 has_genre(movie932, drama).
 has_genre(movie932, romance).
+has_4_genre(movie933).
 has_genre(movie933, crime).
 has_genre(movie933, mystery).
 has_genre(movie933, romance).
 has_genre(movie933, thriller).
+has_1_genre(movie934).
 has_genre(movie934, comedy).
+has_2_genre(movie935).
 has_genre(movie935, comedy).
 has_genre(movie935, musical).
+has_2_genre(movie936).
 has_genre(movie936, comedy).
 has_genre(movie936, romance).
+has_2_genre(movie937).
 has_genre(movie937, comedy).
 has_genre(movie937, romance).
+has_1_genre(movie938).
 has_genre(movie938, musical).
+has_3_genre(movie940).
 has_genre(movie940, action).
 has_genre(movie940, adventure).
 has_genre(movie940, romance).
+has_1_genre(movie941).
 has_genre(movie941, adventure).
+has_3_genre(movie942).
 has_genre(movie942, crime).
 has_genre(movie942, film-noir).
 has_genre(movie942, mystery).
+has_3_genre(movie943).
 has_genre(movie943, drama).
 has_genre(movie943, fantasy).
 has_genre(movie943, romance).
+has_1_genre(movie944).
 has_genre(movie944, drama).
+has_3_genre(movie945).
 has_genre(movie945, comedy).
 has_genre(movie945, musical).
 has_genre(movie945, romance).
+has_3_genre(movie946).
 has_genre(movie946, comedy).
 has_genre(movie946, drama).
 has_genre(movie946, war).
+has_2_genre(movie947).
 has_genre(movie947, comedy).
 has_genre(movie947, romance).
+has_3_genre(movie948).
 has_genre(movie948, drama).
 has_genre(movie948, romance).
 has_genre(movie948, western).
+has_1_genre(movie949).
 has_genre(movie949, drama).
+has_2_genre(movie950).
 has_genre(movie950, comedy).
 has_genre(movie950, crime).
+has_2_genre(movie951).
 has_genre(movie951, comedy).
 has_genre(movie951, romance).
+has_2_genre(movie952).
 has_genre(movie952, adventure).
 has_genre(movie952, comedy).
+has_4_genre(movie953).
 has_genre(movie953, children).
 has_genre(movie953, drama).
 has_genre(movie953, fantasy).
 has_genre(movie953, romance).
+has_1_genre(movie954).
 has_genre(movie954, drama).
+has_2_genre(movie955).
 has_genre(movie955, comedy).
 has_genre(movie955, romance).
+has_2_genre(movie956).
 has_genre(movie956, drama).
 has_genre(movie956, romance).
+has_1_genre(movie959).
 has_genre(movie959, drama).
+has_1_genre(movie961).
 has_genre(movie961, drama).
+has_1_genre(movie963).
 has_genre(movie963, musical).
+has_3_genre(movie965).
 has_genre(movie965, drama).
 has_genre(movie965, mystery).
 has_genre(movie965, thriller).
+has_3_genre(movie968).
 has_genre(movie968, horror).
 has_genre(movie968, sci-fi).
 has_genre(movie968, thriller).
+has_4_genre(movie969).
 has_genre(movie969, adventure).
 has_genre(movie969, comedy).
 has_genre(movie969, romance).
 has_genre(movie969, war).
+has_5_genre(movie970).
 has_genre(movie970, adventure).
 has_genre(movie970, comedy).
 has_genre(movie970, crime).
 has_genre(movie970, drama).
 has_genre(movie970, romance).
+has_1_genre(movie971).
 has_genre(movie971, drama).
+has_2_genre(movie973).
 has_genre(movie973, comedy).
 has_genre(movie973, drama).
+has_2_genre(movie976).
 has_genre(movie976, romance).
 has_genre(movie976, war).
+has_2_genre(movie979).
 has_genre(movie979, drama).
 has_genre(movie979, war).
+has_1_genre(movie981).
 has_genre(movie981, drama).
+has_1_genre(movie982).
 has_genre(movie982, drama).
+has_2_genre(movie984).
 has_genre(movie984, comedy).
 has_genre(movie984, drama).
+has_2_genre(movie986).
 has_genre(movie986, adventure).
 has_genre(movie986, children).
+has_2_genre(movie987).
 has_genre(movie987, drama).
 has_genre(movie987, romance).
+has_2_genre(movie988).
 has_genre(movie988, comedy).
 has_genre(movie988, drama).
+has_3_genre(movie990).
 has_genre(movie990, action).
 has_genre(movie990, adventure).
 has_genre(movie990, thriller).
+has_1_genre(movie991).
 has_genre(movie991, drama).
+has_1_genre(movie993).
 has_genre(movie993, drama).
+has_2_genre(movie994).
 has_genre(movie994, comedy).
 has_genre(movie994, drama).
+has_4_genre(movie996).
 has_genre(movie996, action).
 has_genre(movie996, crime).
 has_genre(movie996, drama).
 has_genre(movie996, thriller).
+has_2_genre(movie998).
 has_genre(movie998, action).
 has_genre(movie998, crime).
+has_2_genre(movie999).
 has_genre(movie999, crime).
 has_genre(movie999, film-noir).
+has_2_genre(movie1003).
 has_genre(movie1003, drama).
 has_genre(movie1003, thriller).
+has_2_genre(movie1004).
 has_genre(movie1004, action).
 has_genre(movie1004, thriller).
+has_2_genre(movie1005).
 has_genre(movie1005, children).
 has_genre(movie1005, comedy).
+has_1_genre(movie1006).
 has_genre(movie1006, drama).
+has_3_genre(movie1007).
 has_genre(movie1007, children).
 has_genre(movie1007, comedy).
 has_genre(movie1007, western).
+has_2_genre(movie1008).
 has_genre(movie1008, adventure).
 has_genre(movie1008, western).
+has_3_genre(movie1009).
 has_genre(movie1009, adventure).
 has_genre(movie1009, children).
 has_genre(movie1009, fantasy).
+has_2_genre(movie1010).
 has_genre(movie1010, children).
 has_genre(movie1010, comedy).
+has_4_genre(movie1011).
 has_genre(movie1011, children).
 has_genre(movie1011, comedy).
 has_genre(movie1011, fantasy).
 has_genre(movie1011, romance).
+has_2_genre(movie1012).
 has_genre(movie1012, children).
 has_genre(movie1012, drama).
+has_3_genre(movie1013).
 has_genre(movie1013, children).
 has_genre(movie1013, comedy).
 has_genre(movie1013, romance).
+has_3_genre(movie1014).
 has_genre(movie1014, children).
 has_genre(movie1014, comedy).
 has_genre(movie1014, drama).
+has_3_genre(movie1015).
 has_genre(movie1015, adventure).
 has_genre(movie1015, children).
 has_genre(movie1015, drama).
+has_2_genre(movie1016).
 has_genre(movie1016, children).
 has_genre(movie1016, comedy).
+has_2_genre(movie1017).
 has_genre(movie1017, adventure).
 has_genre(movie1017, children).
+has_3_genre(movie1018).
 has_genre(movie1018, children).
 has_genre(movie1018, comedy).
 has_genre(movie1018, mystery).
+has_3_genre(movie1019).
 has_genre(movie1019, adventure).
 has_genre(movie1019, drama).
 has_genre(movie1019, sci-fi).
+has_1_genre(movie1020).
 has_genre(movie1020, comedy).
+has_2_genre(movie1021).
 has_genre(movie1021, children).
 has_genre(movie1021, comedy).
+has_5_genre(movie1022).
 has_genre(movie1022, animation).
 has_genre(movie1022, children).
 has_genre(movie1022, fantasy).
 has_genre(movie1022, musical).
 has_genre(movie1022, romance).
+has_3_genre(movie1023).
 has_genre(movie1023, animation).
 has_genre(movie1023, children).
 has_genre(movie1023, musical).
+has_3_genre(movie1024).
 has_genre(movie1024, animation).
 has_genre(movie1024, children).
 has_genre(movie1024, musical).
+has_4_genre(movie1025).
 has_genre(movie1025, animation).
 has_genre(movie1025, children).
 has_genre(movie1025, fantasy).
 has_genre(movie1025, musical).
+has_2_genre(movie1027).
 has_genre(movie1027, adventure).
 has_genre(movie1027, drama).
+has_4_genre(movie1028).
 has_genre(movie1028, children).
 has_genre(movie1028, comedy).
 has_genre(movie1028, fantasy).
 has_genre(movie1028, musical).
+has_4_genre(movie1029).
 has_genre(movie1029, animation).
 has_genre(movie1029, children).
 has_genre(movie1029, drama).
 has_genre(movie1029, musical).
+has_4_genre(movie1030).
 has_genre(movie1030, adventure).
 has_genre(movie1030, animation).
 has_genre(movie1030, children).
 has_genre(movie1030, musical).
+has_3_genre(movie1031).
 has_genre(movie1031, adventure).
 has_genre(movie1031, children).
 has_genre(movie1031, musical).
+has_5_genre(movie1032).
 has_genre(movie1032, adventure).
 has_genre(movie1032, animation).
 has_genre(movie1032, children).
 has_genre(movie1032, fantasy).
 has_genre(movie1032, musical).
+has_3_genre(movie1033).
 has_genre(movie1033, animation).
 has_genre(movie1033, children).
 has_genre(movie1033, drama).
+has_4_genre(movie1034).
 has_genre(movie1034, comedy).
 has_genre(movie1034, crime).
 has_genre(movie1034, drama).
 has_genre(movie1034, thriller).
+has_2_genre(movie1035).
 has_genre(movie1035, musical).
 has_genre(movie1035, romance).
+has_3_genre(movie1036).
 has_genre(movie1036, action).
 has_genre(movie1036, crime).
 has_genre(movie1036, thriller).
+has_4_genre(movie1037).
 has_genre(movie1037, action).
 has_genre(movie1037, horror).
 has_genre(movie1037, sci-fi).
 has_genre(movie1037, thriller).
+has_1_genre(movie1040).
 has_genre(movie1040, drama).
+has_1_genre(movie1041).
 has_genre(movie1041, drama).
+has_2_genre(movie1042).
 has_genre(movie1042, comedy).
 has_genre(movie1042, drama).
+has_2_genre(movie1043).
 has_genre(movie1043, drama).
 has_genre(movie1043, romance).
+has_2_genre(movie1046).
 has_genre(movie1046, drama).
 has_genre(movie1046, romance).
+has_3_genre(movie1047).
 has_genre(movie1047, action).
 has_genre(movie1047, drama).
 has_genre(movie1047, thriller).
+has_2_genre(movie1049).
 has_genre(movie1049, action).
 has_genre(movie1049, adventure).
+has_2_genre(movie1050).
 has_genre(movie1050, documentary).
 has_genre(movie1050, drama).
+has_1_genre(movie1051).
 has_genre(movie1051, drama).
+has_3_genre(movie1053).
 has_genre(movie1053, crime).
 has_genre(movie1053, drama).
 has_genre(movie1053, romance).
+has_1_genre(movie1054).
 has_genre(movie1054, drama).
+has_1_genre(movie1055).
 has_genre(movie1055, thriller).
+has_1_genre(movie1056).
 has_genre(movie1056, drama).
+has_3_genre(movie1057).
 has_genre(movie1057, comedy).
 has_genre(movie1057, musical).
 has_genre(movie1057, romance).
+has_2_genre(movie1059).
 has_genre(movie1059, drama).
 has_genre(movie1059, romance).
+has_2_genre(movie1060).
 has_genre(movie1060, comedy).
 has_genre(movie1060, drama).
+has_1_genre(movie1061).
 has_genre(movie1061, thriller).
+has_more_than_5_genre(movie1064).
 has_genre(movie1064, animation).
 has_genre(movie1064, children).
 has_genre(movie1064, comedy).
 has_genre(movie1064, fantasy).
 has_genre(movie1064, musical).
 has_genre(movie1064, romance).
+has_3_genre(movie1066).
 has_genre(movie1066, comedy).
 has_genre(movie1066, musical).
 has_genre(movie1066, romance).
+has_2_genre(movie1068).
 has_genre(movie1068, crime).
 has_genre(movie1068, film-noir).
+has_4_genre(movie1073).
 has_genre(movie1073, children).
 has_genre(movie1073, comedy).
 has_genre(movie1073, fantasy).
 has_genre(movie1073, musical).
+has_3_genre(movie1076).
 has_genre(movie1076, drama).
 has_genre(movie1076, horror).
 has_genre(movie1076, thriller).
+has_2_genre(movie1077).
 has_genre(movie1077, comedy).
 has_genre(movie1077, sci-fi).
+has_2_genre(movie1078).
 has_genre(movie1078, comedy).
 has_genre(movie1078, war).
+has_2_genre(movie1079).
 has_genre(movie1079, comedy).
 has_genre(movie1079, crime).
+has_1_genre(movie1080).
 has_genre(movie1080, comedy).
+has_3_genre(movie1081).
 has_genre(movie1081, comedy).
 has_genre(movie1081, musical).
 has_genre(movie1081, romance).
+has_1_genre(movie1082).
 has_genre(movie1082, drama).
+has_2_genre(movie1083).
 has_genre(movie1083, comedy).
 has_genre(movie1083, musical).
+has_2_genre(movie1084).
 has_genre(movie1084, crime).
 has_genre(movie1084, drama).
+has_2_genre(movie1085).
 has_genre(movie1085, adventure).
 has_genre(movie1085, drama).
+has_3_genre(movie1086).
 has_genre(movie1086, crime).
 has_genre(movie1086, mystery).
 has_genre(movie1086, thriller).
+has_3_genre(movie1088).
 has_genre(movie1088, drama).
 has_genre(movie1088, musical).
 has_genre(movie1088, romance).
+has_3_genre(movie1089).
 has_genre(movie1089, crime).
 has_genre(movie1089, mystery).
 has_genre(movie1089, thriller).
+has_2_genre(movie1090).
 has_genre(movie1090, drama).
 has_genre(movie1090, war).
+has_1_genre(movie1091).
 has_genre(movie1091, comedy).
+has_3_genre(movie1092).
 has_genre(movie1092, crime).
 has_genre(movie1092, mystery).
 has_genre(movie1092, thriller).
+has_1_genre(movie1093).
 has_genre(movie1093, drama).
+has_3_genre(movie1094).
 has_genre(movie1094, drama).
 has_genre(movie1094, romance).
 has_genre(movie1094, thriller).
+has_1_genre(movie1095).
 has_genre(movie1095, drama).
+has_1_genre(movie1096).
 has_genre(movie1096, drama).
+has_3_genre(movie1097).
 has_genre(movie1097, children).
 has_genre(movie1097, drama).
 has_genre(movie1097, sci-fi).
+has_3_genre(movie1099).
 has_genre(movie1099, children).
 has_genre(movie1099, drama).
 has_genre(movie1099, fantasy).
+has_3_genre(movie1100).
 has_genre(movie1100, action).
 has_genre(movie1100, drama).
 has_genre(movie1100, romance).
+has_2_genre(movie1101).
 has_genre(movie1101, action).
 has_genre(movie1101, romance).
+has_1_genre(movie1103).
 has_genre(movie1103, drama).
+has_1_genre(movie1104).
 has_genre(movie1104, drama).
+has_1_genre(movie1105).
 has_genre(movie1105, horror).
+has_1_genre(movie1107).
 has_genre(movie1107, comedy).
+has_1_genre(movie1111).
 has_genre(movie1111, documentary).
+has_3_genre(movie1112).
 has_genre(movie1112, action).
 has_genre(movie1112, comedy).
 has_genre(movie1112, drama).
+has_2_genre(movie1114).
 has_genre(movie1114, crime).
 has_genre(movie1114, drama).
+has_1_genre(movie1116).
 has_genre(movie1116, drama).
+has_1_genre(movie1117).
 has_genre(movie1117, drama).
+has_1_genre(movie1119).
 has_genre(movie1119, drama).
+has_2_genre(movie1120).
 has_genre(movie1120, comedy).
 has_genre(movie1120, drama).
+has_1_genre(movie1121).
 has_genre(movie1121, drama).
+has_1_genre(movie1123).
 has_genre(movie1123, documentary).
+has_1_genre(movie1124).
 has_genre(movie1124, drama).
+has_2_genre(movie1125).
 has_genre(movie1125, comedy).
 has_genre(movie1125, crime).
+has_2_genre(movie1126).
 has_genre(movie1126, comedy).
 has_genre(movie1126, fantasy).
+has_4_genre(movie1127).
 has_genre(movie1127, action).
 has_genre(movie1127, adventure).
 has_genre(movie1127, sci-fi).
 has_genre(movie1127, thriller).
+has_1_genre(movie1128).
 has_genre(movie1128, horror).
+has_4_genre(movie1129).
 has_genre(movie1129, action).
 has_genre(movie1129, adventure).
 has_genre(movie1129, sci-fi).
 has_genre(movie1129, thriller).
+has_2_genre(movie1130).
 has_genre(movie1130, horror).
 has_genre(movie1130, mystery).
+has_2_genre(movie1131).
 has_genre(movie1131, drama).
 has_genre(movie1131, mystery).
+has_1_genre(movie1132).
 has_genre(movie1132, drama).
+has_1_genre(movie1135).
 has_genre(movie1135, comedy).
+has_3_genre(movie1136).
 has_genre(movie1136, adventure).
 has_genre(movie1136, comedy).
 has_genre(movie1136, fantasy).
+has_1_genre(movie1137).
 has_genre(movie1137, romance).
+has_1_genre(movie1140).
 has_genre(movie1140, drama).
+has_1_genre(movie1144).
 has_genre(movie1144, documentary).
+has_1_genre(movie1147).
 has_genre(movie1147, documentary).
+has_4_genre(movie1148).
 has_genre(movie1148, animation).
 has_genre(movie1148, children).
 has_genre(movie1148, comedy).
 has_genre(movie1148, crime).
+has_1_genre(movie1150).
 has_genre(movie1150, drama).
+has_4_genre(movie1151).
 has_genre(movie1151, animation).
 has_genre(movie1151, comedy).
 has_genre(movie1151, drama).
 has_genre(movie1151, fantasy).
+has_1_genre(movie1156).
 has_genre(movie1156, drama).
+has_2_genre(movie1161).
 has_genre(movie1161, drama).
 has_genre(movie1161, war).
+has_2_genre(movie1162).
 has_genre(movie1162, comedy).
 has_genre(movie1162, drama).
+has_1_genre(movie1163).
 has_genre(movie1163, drama).
+has_1_genre(movie1167).
 has_genre(movie1167, comedy).
+has_1_genre(movie1170).
 has_genre(movie1170, action).
+has_1_genre(movie1171).
 has_genre(movie1171, comedy).
+has_1_genre(movie1172).
 has_genre(movie1172, drama).
+has_2_genre(movie1173).
 has_genre(movie1173, comedy).
 has_genre(movie1173, drama).
+has_3_genre(movie1175).
 has_genre(movie1175, comedy).
 has_genre(movie1175, drama).
 has_genre(movie1175, romance).
+has_3_genre(movie1176).
 has_genre(movie1176, drama).
 has_genre(movie1176, fantasy).
 has_genre(movie1176, romance).
+has_2_genre(movie1177).
 has_genre(movie1177, drama).
 has_genre(movie1177, romance).
+has_2_genre(movie1178).
 has_genre(movie1178, drama).
 has_genre(movie1178, war).
+has_3_genre(movie1179).
 has_genre(movie1179, crime).
 has_genre(movie1179, drama).
 has_genre(movie1179, film-noir).
+has_1_genre(movie1180).
 has_genre(movie1180, comedy).
+has_3_genre(movie1183).
 has_genre(movie1183, drama).
 has_genre(movie1183, romance).
 has_genre(movie1183, war).
+has_2_genre(movie1184).
 has_genre(movie1184, comedy).
 has_genre(movie1184, drama).
+has_1_genre(movie1185).
 has_genre(movie1185, drama).
+has_1_genre(movie1186).
 has_genre(movie1186, drama).
+has_1_genre(movie1187).
 has_genre(movie1187, drama).
+has_2_genre(movie1188).
 has_genre(movie1188, comedy).
 has_genre(movie1188, romance).
+has_1_genre(movie1189).
 has_genre(movie1189, documentary).
+has_3_genre(movie1190).
 has_genre(movie1190, crime).
 has_genre(movie1190, drama).
 has_genre(movie1190, romance).
+has_2_genre(movie1191).
 has_genre(movie1191, documentary).
 has_genre(movie1191, musical).
+has_1_genre(movie1192).
 has_genre(movie1192, documentary).
+has_1_genre(movie1193).
 has_genre(movie1193, drama).
+has_1_genre(movie1194).
 has_genre(movie1194, comedy).
+has_3_genre(movie1196).
 has_genre(movie1196, action).
 has_genre(movie1196, adventure).
 has_genre(movie1196, sci-fi).
+has_5_genre(movie1197).
 has_genre(movie1197, action).
 has_genre(movie1197, adventure).
 has_genre(movie1197, comedy).
 has_genre(movie1197, fantasy).
 has_genre(movie1197, romance).
+has_2_genre(movie1198).
 has_genre(movie1198, action).
 has_genre(movie1198, adventure).
+has_2_genre(movie1199).
 has_genre(movie1199, fantasy).
 has_genre(movie1199, sci-fi).
+has_4_genre(movie1200).
 has_genre(movie1200, action).
 has_genre(movie1200, adventure).
 has_genre(movie1200, horror).
 has_genre(movie1200, sci-fi).
+has_3_genre(movie1201).
 has_genre(movie1201, action).
 has_genre(movie1201, adventure).
 has_genre(movie1201, western).
+has_1_genre(movie1202).
 has_genre(movie1202, comedy).
+has_1_genre(movie1203).
 has_genre(movie1203, drama).
+has_3_genre(movie1204).
 has_genre(movie1204, adventure).
 has_genre(movie1204, drama).
 has_genre(movie1204, war).
+has_4_genre(movie1206).
 has_genre(movie1206, crime).
 has_genre(movie1206, drama).
 has_genre(movie1206, sci-fi).
 has_genre(movie1206, thriller).
+has_1_genre(movie1207).
 has_genre(movie1207, drama).
+has_3_genre(movie1208).
 has_genre(movie1208, action).
 has_genre(movie1208, drama).
 has_genre(movie1208, war).
+has_3_genre(movie1209).
 has_genre(movie1209, action).
 has_genre(movie1209, drama).
 has_genre(movie1209, western).
+has_3_genre(movie1210).
 has_genre(movie1210, action).
 has_genre(movie1210, adventure).
 has_genre(movie1210, sci-fi).
+has_3_genre(movie1211).
 has_genre(movie1211, drama).
 has_genre(movie1211, fantasy).
 has_genre(movie1211, romance).
+has_3_genre(movie1212).
 has_genre(movie1212, film-noir).
 has_genre(movie1212, mystery).
 has_genre(movie1212, thriller).
+has_2_genre(movie1213).
 has_genre(movie1213, crime).
 has_genre(movie1213, drama).
+has_2_genre(movie1214).
 has_genre(movie1214, horror).
 has_genre(movie1214, sci-fi).
+has_5_genre(movie1215).
 has_genre(movie1215, action).
 has_genre(movie1215, adventure).
 has_genre(movie1215, comedy).
 has_genre(movie1215, fantasy).
 has_genre(movie1215, horror).
+has_3_genre(movie1216).
 has_genre(movie1216, adventure).
 has_genre(movie1216, drama).
 has_genre(movie1216, romance).
+has_2_genre(movie1217).
 has_genre(movie1217, drama).
 has_genre(movie1217, war).
+has_4_genre(movie1218).
 has_genre(movie1218, action).
 has_genre(movie1218, crime).
 has_genre(movie1218, drama).
 has_genre(movie1218, thriller).
+has_2_genre(movie1219).
 has_genre(movie1219, crime).
 has_genre(movie1219, horror).
+has_3_genre(movie1220).
 has_genre(movie1220, action).
 has_genre(movie1220, comedy).
 has_genre(movie1220, musical).
+has_2_genre(movie1221).
 has_genre(movie1221, crime).
 has_genre(movie1221, drama).
+has_2_genre(movie1222).
 has_genre(movie1222, drama).
 has_genre(movie1222, war).
+has_5_genre(movie1223).
 has_genre(movie1223, adventure).
 has_genre(movie1223, animation).
 has_genre(movie1223, children).
 has_genre(movie1223, comedy).
 has_genre(movie1223, sci-fi).
+has_4_genre(movie1224).
 has_genre(movie1224, action).
 has_genre(movie1224, drama).
 has_genre(movie1224, romance).
 has_genre(movie1224, war).
+has_1_genre(movie1225).
 has_genre(movie1225, drama).
+has_2_genre(movie1226).
 has_genre(movie1226, drama).
 has_genre(movie1226, romance).
+has_2_genre(movie1227).
 has_genre(movie1227, crime).
 has_genre(movie1227, drama).
+has_1_genre(movie1228).
 has_genre(movie1228, drama).
+has_2_genre(movie1230).
 has_genre(movie1230, comedy).
 has_genre(movie1230, romance).
+has_1_genre(movie1231).
 has_genre(movie1231, drama).
+has_3_genre(movie1232).
 has_genre(movie1232, drama).
 has_genre(movie1232, mystery).
 has_genre(movie1232, sci-fi).
+has_3_genre(movie1233).
 has_genre(movie1233, action).
 has_genre(movie1233, drama).
 has_genre(movie1233, war).
+has_2_genre(movie1234).
 has_genre(movie1234, comedy).
 has_genre(movie1234, crime).
+has_3_genre(movie1235).
 has_genre(movie1235, comedy).
 has_genre(movie1235, drama).
 has_genre(movie1235, romance).
+has_3_genre(movie1236).
 has_genre(movie1236, comedy).
 has_genre(movie1236, drama).
 has_genre(movie1236, romance).
+has_1_genre(movie1237).
 has_genre(movie1237, drama).
+has_1_genre(movie1238).
 has_genre(movie1238, comedy).
+has_3_genre(movie1240).
 has_genre(movie1240, action).
 has_genre(movie1240, sci-fi).
 has_genre(movie1240, thriller).
+has_3_genre(movie1241).
 has_genre(movie1241, comedy).
 has_genre(movie1241, fantasy).
 has_genre(movie1241, horror).
+has_2_genre(movie1242).
 has_genre(movie1242, drama).
 has_genre(movie1242, war).
+has_2_genre(movie1243).
 has_genre(movie1243, comedy).
 has_genre(movie1243, drama).
+has_3_genre(movie1244).
 has_genre(movie1244, comedy).
 has_genre(movie1244, drama).
 has_genre(movie1244, romance).
+has_4_genre(movie1245).
 has_genre(movie1245, crime).
 has_genre(movie1245, drama).
 has_genre(movie1245, film-noir).
 has_genre(movie1245, thriller).
+has_1_genre(movie1246).
 has_genre(movie1246, drama).
+has_3_genre(movie1247).
 has_genre(movie1247, comedy).
 has_genre(movie1247, drama).
 has_genre(movie1247, romance).
+has_3_genre(movie1248).
 has_genre(movie1248, crime).
 has_genre(movie1248, film-noir).
 has_genre(movie1248, thriller).
+has_4_genre(movie1249).
 has_genre(movie1249, action).
 has_genre(movie1249, crime).
 has_genre(movie1249, romance).
 has_genre(movie1249, thriller).
+has_3_genre(movie1250).
 has_genre(movie1250, adventure).
 has_genre(movie1250, drama).
 has_genre(movie1250, war).
+has_2_genre(movie1251).
 has_genre(movie1251, drama).
 has_genre(movie1251, fantasy).
+has_4_genre(movie1252).
 has_genre(movie1252, crime).
 has_genre(movie1252, film-noir).
 has_genre(movie1252, mystery).
 has_genre(movie1252, thriller).
+has_3_genre(movie1253).
 has_genre(movie1253, drama).
 has_genre(movie1253, sci-fi).
 has_genre(movie1253, thriller).
+has_4_genre(movie1254).
 has_genre(movie1254, action).
 has_genre(movie1254, adventure).
 has_genre(movie1254, drama).
 has_genre(movie1254, western).
+has_3_genre(movie1255).
 has_genre(movie1255, comedy).
 has_genre(movie1255, horror).
 has_genre(movie1255, sci-fi).
+has_3_genre(movie1256).
 has_genre(movie1256, comedy).
 has_genre(movie1256, musical).
 has_genre(movie1256, war).
+has_2_genre(movie1257).
 has_genre(movie1257, comedy).
 has_genre(movie1257, romance).
+has_1_genre(movie1258).
 has_genre(movie1258, horror).
+has_2_genre(movie1259).
 has_genre(movie1259, adventure).
 has_genre(movie1259, drama).
+has_3_genre(movie1260).
 has_genre(movie1260, crime).
 has_genre(movie1260, film-noir).
 has_genre(movie1260, thriller).
+has_4_genre(movie1261).
 has_genre(movie1261, action).
 has_genre(movie1261, comedy).
 has_genre(movie1261, fantasy).
 has_genre(movie1261, horror).
+has_4_genre(movie1262).
 has_genre(movie1262, action).
 has_genre(movie1262, adventure).
 has_genre(movie1262, drama).
 has_genre(movie1262, war).
+has_2_genre(movie1263).
 has_genre(movie1263, drama).
 has_genre(movie1263, war).
+has_5_genre(movie1264).
 has_genre(movie1264, action).
 has_genre(movie1264, drama).
 has_genre(movie1264, mystery).
 has_genre(movie1264, romance).
 has_genre(movie1264, thriller).
+has_3_genre(movie1265).
 has_genre(movie1265, comedy).
 has_genre(movie1265, fantasy).
 has_genre(movie1265, romance).
+has_2_genre(movie1266).
 has_genre(movie1266, drama).
 has_genre(movie1266, western).
+has_3_genre(movie1267).
 has_genre(movie1267, crime).
 has_genre(movie1267, thriller).
 has_genre(movie1267, war).
+has_2_genre(movie1268).
 has_genre(movie1268, comedy).
 has_genre(movie1268, drama).
+has_3_genre(movie1269).
 has_genre(movie1269, comedy).
 has_genre(movie1269, mystery).
 has_genre(movie1269, thriller).
+has_3_genre(movie1270).
 has_genre(movie1270, adventure).
 has_genre(movie1270, comedy).
 has_genre(movie1270, sci-fi).
+has_3_genre(movie1271).
 has_genre(movie1271, comedy).
 has_genre(movie1271, crime).
 has_genre(movie1271, drama).
+has_2_genre(movie1272).
 has_genre(movie1272, drama).
 has_genre(movie1272, war).
+has_3_genre(movie1273).
 has_genre(movie1273, comedy).
 has_genre(movie1273, drama).
 has_genre(movie1273, film-noir).
+has_4_genre(movie1274).
 has_genre(movie1274, action).
 has_genre(movie1274, adventure).
 has_genre(movie1274, animation).
 has_genre(movie1274, sci-fi).
+has_3_genre(movie1275).
 has_genre(movie1275, action).
 has_genre(movie1275, adventure).
 has_genre(movie1275, fantasy).
+has_1_genre(movie1276).
 has_genre(movie1276, drama).
+has_3_genre(movie1277).
 has_genre(movie1277, comedy).
 has_genre(movie1277, drama).
 has_genre(movie1277, romance).
+has_2_genre(movie1278).
 has_genre(movie1278, comedy).
 has_genre(movie1278, fantasy).
+has_2_genre(movie1279).
 has_genre(movie1279, comedy).
 has_genre(movie1279, drama).
+has_1_genre(movie1280).
 has_genre(movie1280, drama).
+has_3_genre(movie1281).
 has_genre(movie1281, comedy).
 has_genre(movie1281, drama).
 has_genre(movie1281, war).
+has_4_genre(movie1282).
 has_genre(movie1282, animation).
 has_genre(movie1282, children).
 has_genre(movie1282, fantasy).
 has_genre(movie1282, musical).
+has_2_genre(movie1283).
 has_genre(movie1283, drama).
 has_genre(movie1283, western).
+has_3_genre(movie1284).
 has_genre(movie1284, crime).
 has_genre(movie1284, film-noir).
 has_genre(movie1284, mystery).
+has_1_genre(movie1285).
 has_genre(movie1285, comedy).
+has_2_genre(movie1286).
 has_genre(movie1286, drama).
 has_genre(movie1286, romance).
+has_3_genre(movie1287).
 has_genre(movie1287, action).
 has_genre(movie1287, adventure).
 has_genre(movie1287, drama).
+has_1_genre(movie1288).
 has_genre(movie1288, comedy).
+has_1_genre(movie1289).
 has_genre(movie1289, documentary).
+has_2_genre(movie1290).
 has_genre(movie1290, drama).
 has_genre(movie1290, romance).
+has_2_genre(movie1291).
 has_genre(movie1291, action).
 has_genre(movie1291, adventure).
+has_2_genre(movie1292).
 has_genre(movie1292, comedy).
 has_genre(movie1292, drama).
+has_1_genre(movie1293).
 has_genre(movie1293, drama).
+has_1_genre(movie1295).
 has_genre(movie1295, drama).
+has_2_genre(movie1296).
 has_genre(movie1296, drama).
 has_genre(movie1296, romance).
+has_1_genre(movie1297).
 has_genre(movie1297, comedy).
+has_2_genre(movie1298).
 has_genre(movie1298, drama).
 has_genre(movie1298, musical).
+has_2_genre(movie1299).
 has_genre(movie1299, drama).
 has_genre(movie1299, war).
+has_2_genre(movie1300).
 has_genre(movie1300, comedy).
 has_genre(movie1300, drama).
+has_2_genre(movie1301).
 has_genre(movie1301, drama).
 has_genre(movie1301, sci-fi).
+has_3_genre(movie1302).
 has_genre(movie1302, children).
 has_genre(movie1302, drama).
 has_genre(movie1302, fantasy).
+has_2_genre(movie1303).
 has_genre(movie1303, adventure).
 has_genre(movie1303, drama).
+has_2_genre(movie1304).
 has_genre(movie1304, action).
 has_genre(movie1304, western).
+has_2_genre(movie1305).
 has_genre(movie1305, drama).
 has_genre(movie1305, romance).
+has_3_genre(movie1306).
 has_genre(movie1306, adventure).
 has_genre(movie1306, drama).
 has_genre(movie1306, sci-fi).
+has_2_genre(movie1307).
 has_genre(movie1307, comedy).
 has_genre(movie1307, romance).
+has_1_genre(movie1310).
 has_genre(movie1310, documentary).
+has_1_genre(movie1312).
 has_genre(movie1312, drama).
+has_2_genre(movie1318).
 has_genre(movie1318, comedy).
 has_genre(movie1318, drama).
+has_4_genre(movie1320).
 has_genre(movie1320, action).
 has_genre(movie1320, horror).
 has_genre(movie1320, sci-fi).
 has_genre(movie1320, thriller).
+has_3_genre(movie1321).
 has_genre(movie1321, comedy).
 has_genre(movie1321, horror).
 has_genre(movie1321, thriller).
+has_1_genre(movie1322).
 has_genre(movie1322, horror).
+has_1_genre(movie1323).
 has_genre(movie1323, horror).
+has_1_genre(movie1324).
 has_genre(movie1324, horror).
+has_1_genre(movie1325).
 has_genre(movie1325, horror).
+has_1_genre(movie1326).
 has_genre(movie1326, horror).
+has_4_genre(movie1327).
 has_genre(movie1327, drama).
 has_genre(movie1327, horror).
 has_genre(movie1327, mystery).
 has_genre(movie1327, thriller).
+has_1_genre(movie1328).
 has_genre(movie1328, horror).
+has_1_genre(movie1329).
 has_genre(movie1329, horror).
+has_1_genre(movie1330).
 has_genre(movie1330, horror).
+has_1_genre(movie1331).
 has_genre(movie1331, horror).
+has_2_genre(movie1332).
 has_genre(movie1332, horror).
 has_genre(movie1332, thriller).
+has_2_genre(movie1333).
 has_genre(movie1333, horror).
 has_genre(movie1333, thriller).
+has_2_genre(movie1334).
 has_genre(movie1334, horror).
 has_genre(movie1334, sci-fi).
+has_2_genre(movie1335).
 has_genre(movie1335, horror).
 has_genre(movie1335, mystery).
+has_2_genre(movie1336).
 has_genre(movie1336, horror).
 has_genre(movie1336, thriller).
+has_3_genre(movie1337).
 has_genre(movie1337, drama).
 has_genre(movie1337, horror).
 has_genre(movie1337, thriller).
+has_4_genre(movie1339).
 has_genre(movie1339, fantasy).
 has_genre(movie1339, horror).
 has_genre(movie1339, romance).
 has_genre(movie1339, thriller).
+has_3_genre(movie1340).
 has_genre(movie1340, drama).
 has_genre(movie1340, horror).
 has_genre(movie1340, sci-fi).
+has_1_genre(movie1341).
 has_genre(movie1341, horror).
+has_2_genre(movie1342).
 has_genre(movie1342, horror).
 has_genre(movie1342, thriller).
+has_1_genre(movie1343).
 has_genre(movie1343, thriller).
+has_3_genre(movie1344).
 has_genre(movie1344, crime).
 has_genre(movie1344, drama).
 has_genre(movie1344, thriller).
+has_4_genre(movie1345).
 has_genre(movie1345, drama).
 has_genre(movie1345, fantasy).
 has_genre(movie1345, horror).
 has_genre(movie1345, thriller).
+has_3_genre(movie1346).
 has_genre(movie1346, drama).
 has_genre(movie1346, fantasy).
 has_genre(movie1346, horror).
+has_2_genre(movie1347).
 has_genre(movie1347, horror).
 has_genre(movie1347, thriller).
+has_1_genre(movie1348).
 has_genre(movie1348, horror).
+has_1_genre(movie1349).
 has_genre(movie1349, horror).
+has_3_genre(movie1350).
 has_genre(movie1350, horror).
 has_genre(movie1350, mystery).
 has_genre(movie1350, thriller).
+has_3_genre(movie1351).
 has_genre(movie1351, crime).
 has_genre(movie1351, drama).
 has_genre(movie1351, thriller).
+has_2_genre(movie1352).
 has_genre(movie1352, crime).
 has_genre(movie1352, thriller).
+has_3_genre(movie1353).
 has_genre(movie1353, comedy).
 has_genre(movie1353, drama).
 has_genre(movie1353, romance).
+has_2_genre(movie1354).
 has_genre(movie1354, drama).
 has_genre(movie1354, mystery).
+has_2_genre(movie1355).
 has_genre(movie1355, horror).
 has_genre(movie1355, thriller).
+has_4_genre(movie1356).
 has_genre(movie1356, action).
 has_genre(movie1356, adventure).
 has_genre(movie1356, sci-fi).
 has_genre(movie1356, thriller).
+has_2_genre(movie1357).
 has_genre(movie1357, drama).
 has_genre(movie1357, romance).
+has_1_genre(movie1358).
 has_genre(movie1358, drama).
+has_2_genre(movie1359).
 has_genre(movie1359, children).
 has_genre(movie1359, comedy).
+has_1_genre(movie1361).
 has_genre(movie1361, documentary).
+has_1_genre(movie1363).
 has_genre(movie1363, drama).
+has_1_genre(movie1365).
 has_genre(movie1365, drama).
+has_1_genre(movie1366).
 has_genre(movie1366, drama).
+has_3_genre(movie1367).
 has_genre(movie1367, adventure).
 has_genre(movie1367, children).
 has_genre(movie1367, comedy).
+has_3_genre(movie1370).
 has_genre(movie1370, action).
 has_genre(movie1370, adventure).
 has_genre(movie1370, thriller).
+has_2_genre(movie1371).
 has_genre(movie1371, adventure).
 has_genre(movie1371, sci-fi).
+has_3_genre(movie1372).
 has_genre(movie1372, action).
 has_genre(movie1372, mystery).
 has_genre(movie1372, sci-fi).
+has_2_genre(movie1373).
 has_genre(movie1373, action).
 has_genre(movie1373, sci-fi).
+has_4_genre(movie1374).
 has_genre(movie1374, action).
 has_genre(movie1374, adventure).
 has_genre(movie1374, sci-fi).
 has_genre(movie1374, thriller).
+has_3_genre(movie1375).
 has_genre(movie1375, action).
 has_genre(movie1375, adventure).
 has_genre(movie1375, sci-fi).
+has_3_genre(movie1376).
 has_genre(movie1376, adventure).
 has_genre(movie1376, comedy).
 has_genre(movie1376, sci-fi).
+has_2_genre(movie1377).
 has_genre(movie1377, action).
 has_genre(movie1377, crime).
+has_3_genre(movie1378).
 has_genre(movie1378, action).
 has_genre(movie1378, comedy).
 has_genre(movie1378, western).
+has_2_genre(movie1379).
 has_genre(movie1379, action).
 has_genre(movie1379, western).
+has_3_genre(movie1380).
 has_genre(movie1380, comedy).
 has_genre(movie1380, musical).
 has_genre(movie1380, romance).
+has_3_genre(movie1381).
 has_genre(movie1381, comedy).
 has_genre(movie1381, musical).
 has_genre(movie1381, romance).
+has_2_genre(movie1382).
 has_genre(movie1382, action).
 has_genre(movie1382, drama).
+has_3_genre(movie1385).
 has_genre(movie1385, action).
 has_genre(movie1385, drama).
 has_genre(movie1385, thriller).
+has_2_genre(movie1387).
 has_genre(movie1387, action).
 has_genre(movie1387, horror).
+has_2_genre(movie1388).
 has_genre(movie1388, horror).
 has_genre(movie1388, thriller).
+has_2_genre(movie1389).
 has_genre(movie1389, action).
 has_genre(movie1389, horror).
+has_1_genre(movie1390).
 has_genre(movie1390, comedy).
+has_3_genre(movie1391).
 has_genre(movie1391, action).
 has_genre(movie1391, comedy).
 has_genre(movie1391, sci-fi).
+has_2_genre(movie1392).
 has_genre(movie1392, comedy).
 has_genre(movie1392, drama).
+has_2_genre(movie1393).
 has_genre(movie1393, drama).
 has_genre(movie1393, romance).
+has_1_genre(movie1394).
 has_genre(movie1394, comedy).
+has_2_genre(movie1395).
 has_genre(movie1395, comedy).
 has_genre(movie1395, drama).
+has_5_genre(movie1396).
 has_genre(movie1396, action).
 has_genre(movie1396, comedy).
 has_genre(movie1396, crime).
 has_genre(movie1396, drama).
 has_genre(movie1396, sci-fi).
+has_1_genre(movie1397).
 has_genre(movie1397, drama).
+has_2_genre(movie1398).
 has_genre(movie1398, romance).
 has_genre(movie1398, war).
+has_1_genre(movie1399).
 has_genre(movie1399, drama).
+has_1_genre(movie1401).
 has_genre(movie1401, drama).
+has_4_genre(movie1405).
 has_genre(movie1405, adventure).
 has_genre(movie1405, animation).
 has_genre(movie1405, comedy).
 has_genre(movie1405, crime).
+has_4_genre(movie1406).
 has_genre(movie1406, crime).
 has_genre(movie1406, drama).
 has_genre(movie1406, mystery).
 has_genre(movie1406, thriller).
+has_4_genre(movie1407).
 has_genre(movie1407, comedy).
 has_genre(movie1407, horror).
 has_genre(movie1407, mystery).
 has_genre(movie1407, thriller).
+has_4_genre(movie1408).
 has_genre(movie1408, action).
 has_genre(movie1408, romance).
 has_genre(movie1408, war).
 has_genre(movie1408, western).
+has_4_genre(movie1409).
 has_genre(movie1409, comedy).
 has_genre(movie1409, drama).
 has_genre(movie1409, fantasy).
 has_genre(movie1409, romance).
+has_3_genre(movie1411).
 has_genre(movie1411, crime).
 has_genre(movie1411, drama).
 has_genre(movie1411, romance).
+has_1_genre(movie1412).
 has_genre(movie1412, drama).
+has_1_genre(movie1413).
 has_genre(movie1413, drama).
+has_1_genre(movie1414).
 has_genre(movie1414, comedy).
+has_3_genre(movie1415).
 has_genre(movie1415, crime).
 has_genre(movie1415, drama).
 has_genre(movie1415, romance).
+has_2_genre(movie1416).
 has_genre(movie1416, drama).
 has_genre(movie1416, musical).
+has_1_genre(movie1417).
 has_genre(movie1417, drama).
+has_2_genre(movie1419).
 has_genre(movie1419, adventure).
 has_genre(movie1419, drama).
+has_4_genre(movie1422).
 has_genre(movie1422, crime).
 has_genre(movie1422, drama).
 has_genre(movie1422, mystery).
 has_genre(movie1422, thriller).
+has_1_genre(movie1423).
 has_genre(movie1423, drama).
+has_1_genre(movie1425).
 has_genre(movie1425, comedy).
+has_1_genre(movie1426).
 has_genre(movie1426, children).
+has_2_genre(movie1427).
 has_genre(movie1427, action).
 has_genre(movie1427, thriller).
+has_1_genre(movie1428).
 has_genre(movie1428, drama).
+has_4_genre(movie1429).
 has_genre(movie1429, action).
 has_genre(movie1429, adventure).
 has_genre(movie1429, comedy).
 has_genre(movie1429, thriller).
+has_2_genre(movie1430).
 has_genre(movie1430, comedy).
 has_genre(movie1430, thriller).
+has_2_genre(movie1431).
 has_genre(movie1431, action).
 has_genre(movie1431, comedy).
+has_5_genre(movie1432).
 has_genre(movie1432, action).
 has_genre(movie1432, comedy).
 has_genre(movie1432, crime).
 has_genre(movie1432, drama).
 has_genre(movie1432, thriller).
+has_1_genre(movie1437).
 has_genre(movie1437, drama).
+has_2_genre(movie1438).
 has_genre(movie1438, action).
 has_genre(movie1438, thriller).
+has_1_genre(movie1439).
 has_genre(movie1439, comedy).
+has_1_genre(movie1440).
 has_genre(movie1440, comedy).
+has_2_genre(movie1441).
 has_genre(movie1441, comedy).
 has_genre(movie1441, romance).
+has_1_genre(movie1442).
 has_genre(movie1442, drama).
+has_2_genre(movie1445).
 has_genre(movie1445, comedy).
 has_genre(movie1445, war).
+has_2_genre(movie1446).
 has_genre(movie1446, comedy).
 has_genre(movie1446, drama).
+has_1_genre(movie1447).
 has_genre(movie1447, crime).
+has_1_genre(movie1449).
 has_genre(movie1449, comedy).
+has_2_genre(movie1453).
 has_genre(movie1453, comedy).
 has_genre(movie1453, romance).
+has_2_genre(movie1454).
 has_genre(movie1454, comedy).
 has_genre(movie1454, drama).
+has_1_genre(movie1456).
 has_genre(movie1456, comedy).
+has_3_genre(movie1457).
 has_genre(movie1457, comedy).
 has_genre(movie1457, drama).
 has_genre(movie1457, romance).
+has_3_genre(movie1458).
 has_genre(movie1458, drama).
 has_genre(movie1458, fantasy).
 has_genre(movie1458, romance).
+has_2_genre(movie1459).
 has_genre(movie1459, mystery).
 has_genre(movie1459, thriller).
+has_3_genre(movie1460).
 has_genre(movie1460, children).
 has_genre(movie1460, comedy).
 has_genre(movie1460, mystery).
+has_1_genre(movie1461).
 has_genre(movie1461, comedy).
+has_more_than_5_genre(movie1464).
 has_genre(movie1464, crime).
 has_genre(movie1464, drama).
 has_genre(movie1464, fantasy).
 has_genre(movie1464, film-noir).
 has_genre(movie1464, mystery).
 has_genre(movie1464, romance).
+has_2_genre(movie1465).
 has_genre(movie1465, action).
 has_genre(movie1465, drama).
+has_2_genre(movie1466).
 has_genre(movie1466, crime).
 has_genre(movie1466, drama).
+has_2_genre(movie1468).
 has_genre(movie1468, comedy).
 has_genre(movie1468, romance).
+has_4_genre(movie1473).
 has_genre(movie1473, action).
 has_genre(movie1473, comedy).
 has_genre(movie1473, crime).
 has_genre(movie1473, drama).
+has_2_genre(movie1474).
 has_genre(movie1474, children).
 has_genre(movie1474, comedy).
+has_1_genre(movie1475).
 has_genre(movie1475, romance).
+has_2_genre(movie1476).
 has_genre(movie1476, comedy).
 has_genre(movie1476, drama).
+has_1_genre(movie1477).
 has_genre(movie1477, romance).
+has_4_genre(movie1479).
 has_genre(movie1479, action).
 has_genre(movie1479, romance).
 has_genre(movie1479, sci-fi).
 has_genre(movie1479, thriller).
+has_2_genre(movie1480).
 has_genre(movie1480, drama).
 has_genre(movie1480, thriller).
+has_2_genre(movie1483).
 has_genre(movie1483, drama).
 has_genre(movie1483, thriller).
+has_4_genre(movie1484).
 has_genre(movie1484, comedy).
 has_genre(movie1484, drama).
 has_genre(movie1484, mystery).
 has_genre(movie1484, romance).
+has_1_genre(movie1485).
 has_genre(movie1485, comedy).
+has_2_genre(movie1487).
 has_genre(movie1487, drama).
 has_genre(movie1487, musical).
+has_3_genre(movie1488).
 has_genre(movie1488, action).
 has_genre(movie1488, drama).
 has_genre(movie1488, thriller).
+has_3_genre(movie1489).
 has_genre(movie1489, animation).
 has_genre(movie1489, children).
 has_genre(movie1489, musical).
+has_1_genre(movie1490).
 has_genre(movie1490, comedy).
+has_1_genre(movie1493).
 has_genre(movie1493, romance).
+has_3_genre(movie1495).
 has_genre(movie1495, action).
 has_genre(movie1495, adventure).
 has_genre(movie1495, children).
+has_2_genre(movie1496).
 has_genre(movie1496, drama).
 has_genre(movie1496, romance).
+has_1_genre(movie1497).
 has_genre(movie1497, action).
+has_2_genre(movie1498).
 has_genre(movie1498, drama).
 has_genre(movie1498, romance).
+has_3_genre(movie1499).
 has_genre(movie1499, action).
 has_genre(movie1499, adventure).
 has_genre(movie1499, thriller).
+has_3_genre(movie1500).
 has_genre(movie1500, comedy).
 has_genre(movie1500, crime).
 has_genre(movie1500, romance).
+has_2_genre(movie1502).
 has_genre(movie1502, drama).
 has_genre(movie1502, romance).
+has_1_genre(movie1503).
 has_genre(movie1503, comedy).
+has_2_genre(movie1507).
 has_genre(movie1507, drama).
 has_genre(movie1507, war).
+has_1_genre(movie1513).
 has_genre(movie1513, comedy).
+has_1_genre(movie1514).
 has_genre(movie1514, romance).
+has_3_genre(movie1515).
 has_genre(movie1515, action).
 has_genre(movie1515, drama).
 has_genre(movie1515, thriller).
+has_1_genre(movie1516).
 has_genre(movie1516, comedy).
+has_3_genre(movie1517).
 has_genre(movie1517, action).
 has_genre(movie1517, adventure).
 has_genre(movie1517, comedy).
+has_2_genre(movie1518).
 has_genre(movie1518, action).
 has_genre(movie1518, thriller).
+has_1_genre(movie1519).
 has_genre(movie1519, drama).
+has_1_genre(movie1526).
 has_genre(movie1526, comedy).
+has_4_genre(movie1527).
 has_genre(movie1527, action).
 has_genre(movie1527, adventure).
 has_genre(movie1527, comedy).
 has_genre(movie1527, sci-fi).
+has_2_genre(movie1529).
 has_genre(movie1529, comedy).
 has_genre(movie1529, drama).
+has_1_genre(movie1533).
 has_genre(movie1533, drama).
+has_3_genre(movie1537).
 has_genre(movie1537, comedy).
 has_genre(movie1537, drama).
 has_genre(movie1537, romance).
+has_2_genre(movie1541).
 has_genre(movie1541, comedy).
 has_genre(movie1541, romance).
+has_3_genre(movie1542).
 has_genre(movie1542, comedy).
 has_genre(movie1542, drama).
 has_genre(movie1542, romance).
+has_4_genre(movie1544).
 has_genre(movie1544, action).
 has_genre(movie1544, adventure).
 has_genre(movie1544, sci-fi).
 has_genre(movie1544, thriller).
+has_1_genre(movie1545).
 has_genre(movie1545, drama).
+has_1_genre(movie1546).
 has_genre(movie1546, comedy).
+has_2_genre(movie1547).
 has_genre(movie1547, children).
 has_genre(movie1547, drama).
+has_2_genre(movie1549).
 has_genre(movie1549, drama).
 has_genre(movie1549, romance).
+has_2_genre(movie1550).
 has_genre(movie1550, comedy).
 has_genre(movie1550, romance).
+has_3_genre(movie1551).
 has_genre(movie1551, adventure).
 has_genre(movie1551, children).
 has_genre(movie1551, drama).
+has_3_genre(movie1552).
 has_genre(movie1552, action).
 has_genre(movie1552, adventure).
 has_genre(movie1552, thriller).
+has_2_genre(movie1554).
 has_genre(movie1554, drama).
 has_genre(movie1554, romance).
+has_3_genre(movie1556).
 has_genre(movie1556, action).
 has_genre(movie1556, romance).
 has_genre(movie1556, thriller).
+has_4_genre(movie1562).
 has_genre(movie1562, action).
 has_genre(movie1562, adventure).
 has_genre(movie1562, fantasy).
 has_genre(movie1562, thriller).
+has_3_genre(movie1564).
 has_genre(movie1564, comedy).
 has_genre(movie1564, drama).
 has_genre(movie1564, romance).
+has_2_genre(movie1565).
 has_genre(movie1565, comedy).
 has_genre(movie1565, thriller).
+has_5_genre(movie1566).
 has_genre(movie1566, adventure).
 has_genre(movie1566, animation).
 has_genre(movie1566, children).
 has_genre(movie1566, comedy).
 has_genre(movie1566, musical).
+has_2_genre(movie1569).
 has_genre(movie1569, comedy).
 has_genre(movie1569, romance).
+has_2_genre(movie1571).
 has_genre(movie1571, comedy).
 has_genre(movie1571, romance).
+has_1_genre(movie1572).
 has_genre(movie1572, drama).
+has_4_genre(movie1573).
 has_genre(movie1573, action).
 has_genre(movie1573, crime).
 has_genre(movie1573, drama).
 has_genre(movie1573, thriller).
+has_1_genre(movie1574).
 has_genre(movie1574, romance).
+has_3_genre(movie1580).
 has_genre(movie1580, action).
 has_genre(movie1580, comedy).
 has_genre(movie1580, sci-fi).
+has_1_genre(movie1581).
 has_genre(movie1581, comedy).
+has_2_genre(movie1582).
 has_genre(movie1582, adventure).
 has_genre(movie1582, children).
+has_2_genre(movie1583).
 has_genre(movie1583, children).
 has_genre(movie1583, fantasy).
+has_2_genre(movie1584).
 has_genre(movie1584, drama).
 has_genre(movie1584, sci-fi).
+has_1_genre(movie1585).
 has_genre(movie1585, comedy).
+has_2_genre(movie1586).
 has_genre(movie1586, action).
 has_genre(movie1586, drama).
+has_3_genre(movie1587).
 has_genre(movie1587, action).
 has_genre(movie1587, adventure).
 has_genre(movie1587, fantasy).
+has_2_genre(movie1588).
 has_genre(movie1588, children).
 has_genre(movie1588, comedy).
+has_4_genre(movie1589).
 has_genre(movie1589, action).
 has_genre(movie1589, crime).
 has_genre(movie1589, drama).
 has_genre(movie1589, thriller).
+has_3_genre(movie1590).
 has_genre(movie1590, horror).
 has_genre(movie1590, sci-fi).
 has_genre(movie1590, thriller).
+has_4_genre(movie1591).
 has_genre(movie1591, action).
 has_genre(movie1591, adventure).
 has_genre(movie1591, sci-fi).
 has_genre(movie1591, thriller).
+has_2_genre(movie1592).
 has_genre(movie1592, children).
 has_genre(movie1592, comedy).
+has_2_genre(movie1593).
 has_genre(movie1593, comedy).
 has_genre(movie1593, romance).
+has_2_genre(movie1594).
 has_genre(movie1594, comedy).
 has_genre(movie1594, drama).
+has_1_genre(movie1596).
 has_genre(movie1596, drama).
+has_4_genre(movie1597).
 has_genre(movie1597, drama).
 has_genre(movie1597, mystery).
 has_genre(movie1597, romance).
 has_genre(movie1597, thriller).
+has_3_genre(movie1598).
 has_genre(movie1598, crime).
 has_genre(movie1598, drama).
 has_genre(movie1598, thriller).
+has_1_genre(movie1599).
 has_genre(movie1599, action).
+has_2_genre(movie1600).
 has_genre(movie1600, drama).
 has_genre(movie1600, romance).
+has_3_genre(movie1601).
 has_genre(movie1601, crime).
 has_genre(movie1601, drama).
 has_genre(movie1601, film-noir).
+has_1_genre(movie1602).
 has_genre(movie1602, comedy).
+has_3_genre(movie1603).
 has_genre(movie1603, horror).
 has_genre(movie1603, sci-fi).
 has_genre(movie1603, thriller).
+has_2_genre(movie1604).
 has_genre(movie1604, action).
 has_genre(movie1604, comedy).
+has_2_genre(movie1605).
 has_genre(movie1605, adventure).
 has_genre(movie1605, romance).
+has_2_genre(movie1606).
 has_genre(movie1606, action).
 has_genre(movie1606, adventure).
+has_2_genre(movie1608).
 has_genre(movie1608, action).
 has_genre(movie1608, thriller).
+has_2_genre(movie1609).
 has_genre(movie1609, drama).
 has_genre(movie1609, thriller).
+has_3_genre(movie1610).
 has_genre(movie1610, action).
 has_genre(movie1610, adventure).
 has_genre(movie1610, thriller).
+has_2_genre(movie1611).
 has_genre(movie1611, drama).
 has_genre(movie1611, romance).
+has_1_genre(movie1612).
 has_genre(movie1612, comedy).
+has_1_genre(movie1613).
 has_genre(movie1613, drama).
+has_1_genre(movie1614).
 has_genre(movie1614, comedy).
+has_2_genre(movie1615).
 has_genre(movie1615, adventure).
 has_genre(movie1615, drama).
+has_3_genre(movie1616).
 has_genre(movie1616, action).
 has_genre(movie1616, thriller).
 has_genre(movie1616, war).
+has_4_genre(movie1617).
 has_genre(movie1617, crime).
 has_genre(movie1617, film-noir).
 has_genre(movie1617, mystery).
 has_genre(movie1617, thriller).
+has_3_genre(movie1619).
 has_genre(movie1619, adventure).
 has_genre(movie1619, drama).
 has_genre(movie1619, war).
+has_4_genre(movie1620).
 has_genre(movie1620, crime).
 has_genre(movie1620, drama).
 has_genre(movie1620, mystery).
 has_genre(movie1620, thriller).
+has_1_genre(movie1621).
 has_genre(movie1621, drama).
+has_1_genre(movie1623).
 has_genre(movie1623, horror).
+has_1_genre(movie1624).
 has_genre(movie1624, drama).
+has_3_genre(movie1625).
 has_genre(movie1625, drama).
 has_genre(movie1625, mystery).
 has_genre(movie1625, thriller).
+has_3_genre(movie1626).
 has_genre(movie1626, action).
 has_genre(movie1626, drama).
 has_genre(movie1626, thriller).
+has_3_genre(movie1627).
 has_genre(movie1627, crime).
 has_genre(movie1627, drama).
 has_genre(movie1627, mystery).
+has_2_genre(movie1629).
 has_genre(movie1629, comedy).
 has_genre(movie1629, romance).
+has_2_genre(movie1631).
 has_genre(movie1631, action).
 has_genre(movie1631, thriller).
+has_1_genre(movie1633).
 has_genre(movie1633, drama).
+has_1_genre(movie1635).
 has_genre(movie1635, drama).
+has_3_genre(movie1639).
 has_genre(movie1639, comedy).
 has_genre(movie1639, drama).
 has_genre(movie1639, romance).
+has_2_genre(movie1641).
 has_genre(movie1641, comedy).
 has_genre(movie1641, drama).
+has_2_genre(movie1642).
 has_genre(movie1642, comedy).
 has_genre(movie1642, drama).
+has_2_genre(movie1643).
 has_genre(movie1643, drama).
 has_genre(movie1643, romance).
+has_3_genre(movie1644).
 has_genre(movie1644, horror).
 has_genre(movie1644, mystery).
 has_genre(movie1644, thriller).
+has_3_genre(movie1645).
 has_genre(movie1645, drama).
 has_genre(movie1645, mystery).
 has_genre(movie1645, thriller).
+has_4_genre(movie1646).
 has_genre(movie1646, children).
 has_genre(movie1646, comedy).
 has_genre(movie1646, romance).
 has_genre(movie1646, sci-fi).
+has_3_genre(movie1647).
 has_genre(movie1647, crime).
 has_genre(movie1647, drama).
 has_genre(movie1647, thriller).
+has_2_genre(movie1648).
 has_genre(movie1648, comedy).
 has_genre(movie1648, drama).
+has_1_genre(movie1649).
 has_genre(movie1649, documentary).
+has_1_genre(movie1650).
 has_genre(movie1650, drama).
+has_1_genre(movie1652).
 has_genre(movie1652, documentary).
+has_3_genre(movie1653).
 has_genre(movie1653, drama).
 has_genre(movie1653, sci-fi).
 has_genre(movie1653, thriller).
+has_3_genre(movie1654).
 has_genre(movie1654, children).
 has_genre(movie1654, drama).
 has_genre(movie1654, fantasy).
+has_3_genre(movie1655).
 has_genre(movie1655, drama).
 has_genre(movie1655, horror).
 has_genre(movie1655, thriller).
+has_2_genre(movie1656).
 has_genre(movie1656, drama).
 has_genre(movie1656, romance).
+has_2_genre(movie1658).
 has_genre(movie1658, romance).
 has_genre(movie1658, thriller).
+has_1_genre(movie1659).
 has_genre(movie1659, drama).
+has_1_genre(movie1660).
 has_genre(movie1660, drama).
+has_3_genre(movie1661).
 has_genre(movie1661, crime).
 has_genre(movie1661, mystery).
 has_genre(movie1661, thriller).
+has_1_genre(movie1662).
 has_genre(movie1662, crime).
+has_2_genre(movie1663).
 has_genre(movie1663, comedy).
 has_genre(movie1663, war).
+has_1_genre(movie1665).
 has_genre(movie1665, comedy).
+has_2_genre(movie1667).
 has_genre(movie1667, action).
 has_genre(movie1667, drama).
+has_2_genre(movie1670).
 has_genre(movie1670, drama).
 has_genre(movie1670, war).
+has_3_genre(movie1671).
 has_genre(movie1671, crime).
 has_genre(movie1671, drama).
 has_genre(movie1671, thriller).
+has_1_genre(movie1672).
 has_genre(movie1672, drama).
+has_1_genre(movie1673).
 has_genre(movie1673, drama).
+has_3_genre(movie1674).
 has_genre(movie1674, drama).
 has_genre(movie1674, romance).
 has_genre(movie1674, thriller).
+has_2_genre(movie1675).
 has_genre(movie1675, crime).
 has_genre(movie1675, thriller).
+has_2_genre(movie1676).
 has_genre(movie1676, action).
 has_genre(movie1676, sci-fi).
+has_2_genre(movie1677).
 has_genre(movie1677, comedy).
 has_genre(movie1677, drama).
+has_2_genre(movie1678).
 has_genre(movie1678, drama).
 has_genre(movie1678, romance).
+has_1_genre(movie1679).
 has_genre(movie1679, comedy).
+has_2_genre(movie1680).
 has_genre(movie1680, drama).
 has_genre(movie1680, romance).
+has_3_genre(movie1681).
 has_genre(movie1681, action).
 has_genre(movie1681, adventure).
 has_genre(movie1681, fantasy).
+has_3_genre(movie1682).
 has_genre(movie1682, comedy).
 has_genre(movie1682, drama).
 has_genre(movie1682, sci-fi).
+has_2_genre(movie1683).
 has_genre(movie1683, drama).
 has_genre(movie1683, romance).
+has_2_genre(movie1684).
 has_genre(movie1684, drama).
 has_genre(movie1684, romance).
+has_2_genre(movie1685).
 has_genre(movie1685, drama).
 has_genre(movie1685, romance).
+has_2_genre(movie1686).
 has_genre(movie1686, crime).
 has_genre(movie1686, thriller).
+has_2_genre(movie1687).
 has_genre(movie1687, action).
 has_genre(movie1687, thriller).
+has_5_genre(movie1688).
 has_genre(movie1688, adventure).
 has_genre(movie1688, animation).
 has_genre(movie1688, children).
 has_genre(movie1688, drama).
 has_genre(movie1688, musical).
+has_3_genre(movie1689).
 has_genre(movie1689, comedy).
 has_genre(movie1689, crime).
 has_genre(movie1689, thriller).
+has_3_genre(movie1690).
 has_genre(movie1690, action).
 has_genre(movie1690, horror).
 has_genre(movie1690, sci-fi).
+has_2_genre(movie1693).
 has_genre(movie1693, drama).
 has_genre(movie1693, mystery).
+has_1_genre(movie1694).
 has_genre(movie1694, drama).
+has_1_genre(movie1695).
 has_genre(movie1695, drama).
+has_2_genre(movie1696).
 has_genre(movie1696, drama).
 has_genre(movie1696, war).
+has_2_genre(movie1699).
 has_genre(movie1699, comedy).
 has_genre(movie1699, drama).
+has_2_genre(movie1701).
 has_genre(movie1701, comedy).
 has_genre(movie1701, drama).
+has_3_genre(movie1702).
 has_genre(movie1702, children).
 has_genre(movie1702, comedy).
 has_genre(movie1702, fantasy).
+has_1_genre(movie1703).
 has_genre(movie1703, comedy).
+has_2_genre(movie1704).
 has_genre(movie1704, drama).
 has_genre(movie1704, romance).
+has_2_genre(movie1707).
 has_genre(movie1707, children).
 has_genre(movie1707, comedy).
+has_3_genre(movie1711).
 has_genre(movie1711, crime).
 has_genre(movie1711, drama).
 has_genre(movie1711, mystery).
+has_2_genre(movie1713).
 has_genre(movie1713, children).
 has_genre(movie1713, comedy).
+has_4_genre(movie1717).
 has_genre(movie1717, comedy).
 has_genre(movie1717, horror).
 has_genre(movie1717, mystery).
 has_genre(movie1717, thriller).
+has_1_genre(movie1718).
 has_genre(movie1718, thriller).
+has_1_genre(movie1719).
 has_genre(movie1719, drama).
+has_2_genre(movie1721).
 has_genre(movie1721, drama).
 has_genre(movie1721, romance).
+has_3_genre(movie1722).
 has_genre(movie1722, action).
 has_genre(movie1722, adventure).
 has_genre(movie1722, thriller).
+has_4_genre(movie1726).
 has_genre(movie1726, action).
 has_genre(movie1726, adventure).
 has_genre(movie1726, drama).
 has_genre(movie1726, sci-fi).
+has_2_genre(movie1727).
 has_genre(movie1727, drama).
 has_genre(movie1727, romance).
+has_3_genre(movie1729).
 has_genre(movie1729, crime).
 has_genre(movie1729, drama).
 has_genre(movie1729, thriller).
+has_1_genre(movie1730).
 has_genre(movie1730, drama).
+has_1_genre(movie1731).
 has_genre(movie1731, comedy).
+has_2_genre(movie1732).
 has_genre(movie1732, comedy).
 has_genre(movie1732, crime).
+has_2_genre(movie1733).
 has_genre(movie1733, drama).
 has_genre(movie1733, romance).
+has_2_genre(movie1734).
 has_genre(movie1734, comedy).
 has_genre(movie1734, drama).
+has_2_genre(movie1735).
 has_genre(movie1735, drama).
 has_genre(movie1735, romance).
+has_3_genre(movie1739).
 has_genre(movie1739, action).
 has_genre(movie1739, children).
 has_genre(movie1739, comedy).
+has_1_genre(movie1746).
 has_genre(movie1746, comedy).
+has_1_genre(movie1747).
 has_genre(movie1747, comedy).
+has_4_genre(movie1748).
 has_genre(movie1748, adventure).
 has_genre(movie1748, film-noir).
 has_genre(movie1748, sci-fi).
 has_genre(movie1748, thriller).
+has_3_genre(movie1752).
 has_genre(movie1752, action).
 has_genre(movie1752, crime).
 has_genre(movie1752, thriller).
+has_1_genre(movie1753).
 has_genre(movie1753, comedy).
+has_4_genre(movie1754).
 has_genre(movie1754, crime).
 has_genre(movie1754, drama).
 has_genre(movie1754, fantasy).
 has_genre(movie1754, thriller).
+has_2_genre(movie1755).
 has_genre(movie1755, comedy).
 has_genre(movie1755, romance).
+has_2_genre(movie1757).
 has_genre(movie1757, drama).
 has_genre(movie1757, romance).
+has_1_genre(movie1759).
 has_genre(movie1759, drama).
+has_1_genre(movie1760).
 has_genre(movie1760, comedy).
+has_3_genre(movie1762).
 has_genre(movie1762, action).
 has_genre(movie1762, horror).
 has_genre(movie1762, sci-fi).
+has_2_genre(movie1767).
 has_genre(movie1767, drama).
 has_genre(movie1767, romance).
+has_3_genre(movie1769).
 has_genre(movie1769, action).
 has_genre(movie1769, crime).
 has_genre(movie1769, thriller).
+has_3_genre(movie1770).
 has_genre(movie1770, crime).
 has_genre(movie1770, romance).
 has_genre(movie1770, thriller).
+has_1_genre(movie1771).
 has_genre(movie1771, horror).
+has_3_genre(movie1772).
 has_genre(movie1772, action).
 has_genre(movie1772, comedy).
 has_genre(movie1772, musical).
+has_2_genre(movie1777).
 has_genre(movie1777, comedy).
 has_genre(movie1777, romance).
+has_2_genre(movie1779).
 has_genre(movie1779, sci-fi).
 has_genre(movie1779, thriller).
+has_5_genre(movie1783).
 has_genre(movie1783, crime).
 has_genre(movie1783, drama).
 has_genre(movie1783, mystery).
 has_genre(movie1783, romance).
 has_genre(movie1783, thriller).
+has_3_genre(movie1784).
 has_genre(movie1784, comedy).
 has_genre(movie1784, drama).
 has_genre(movie1784, romance).
+has_2_genre(movie1785).
 has_genre(movie1785, crime).
 has_genre(movie1785, thriller).
+has_3_genre(movie1791).
 has_genre(movie1791, crime).
 has_genre(movie1791, drama).
 has_genre(movie1791, thriller).
+has_3_genre(movie1792).
 has_genre(movie1792, action).
 has_genre(movie1792, crime).
 has_genre(movie1792, thriller).
+has_1_genre(movie1793).
 has_genre(movie1793, comedy).
+has_2_genre(movie1794).
 has_genre(movie1794, comedy).
 has_genre(movie1794, drama).
+has_2_genre(movie1797).
 has_genre(movie1797, documentary).
 has_genre(movie1797, imax).
+has_1_genre(movie1798).
 has_genre(movie1798, thriller).
+has_5_genre(movie1799).
 has_genre(movie1799, comedy).
 has_genre(movie1799, crime).
 has_genre(movie1799, drama).
 has_genre(movie1799, mystery).
 has_genre(movie1799, thriller).
+has_3_genre(movie1801).
 has_genre(movie1801, action).
 has_genre(movie1801, adventure).
 has_genre(movie1801, drama).
+has_2_genre(movie1804).
 has_genre(movie1804, crime).
 has_genre(movie1804, drama).
+has_4_genre(movie1805).
 has_genre(movie1805, crime).
 has_genre(movie1805, drama).
 has_genre(movie1805, mystery).
 has_genre(movie1805, thriller).
+has_3_genre(movie1806).
 has_genre(movie1806, adventure).
 has_genre(movie1806, children).
 has_genre(movie1806, comedy).
+has_1_genre(movie1807).
 has_genre(movie1807, drama).
+has_2_genre(movie1809).
 has_genre(movie1809, crime).
 has_genre(movie1809, drama).
+has_2_genre(movie1810).
 has_genre(movie1810, comedy).
 has_genre(movie1810, drama).
+has_3_genre(movie1812).
 has_genre(movie1812, children).
 has_genre(movie1812, comedy).
 has_genre(movie1812, drama).
+has_2_genre(movie1816).
 has_genre(movie1816, comedy).
 has_genre(movie1816, drama).
+has_2_genre(movie1821).
 has_genre(movie1821, comedy).
 has_genre(movie1821, romance).
+has_2_genre(movie1824).
 has_genre(movie1824, comedy).
 has_genre(movie1824, thriller).
+has_2_genre(movie1825).
 has_genre(movie1825, comedy).
 has_genre(movie1825, drama).
+has_2_genre(movie1826).
 has_genre(movie1826, adventure).
 has_genre(movie1826, children).
+has_2_genre(movie1827).
 has_genre(movie1827, comedy).
 has_genre(movie1827, documentary).
+has_2_genre(movie1829).
 has_genre(movie1829, drama).
 has_genre(movie1829, romance).
+has_3_genre(movie1831).
 has_genre(movie1831, action).
 has_genre(movie1831, adventure).
 has_genre(movie1831, sci-fi).
+has_3_genre(movie1833).
 has_genre(movie1833, action).
 has_genre(movie1833, drama).
 has_genre(movie1833, thriller).
+has_4_genre(movie1834).
 has_genre(movie1834, crime).
 has_genre(movie1834, drama).
 has_genre(movie1834, mystery).
 has_genre(movie1834, thriller).
+has_3_genre(movie1835).
 has_genre(movie1835, drama).
 has_genre(movie1835, fantasy).
 has_genre(movie1835, romance).
+has_2_genre(movie1836).
 has_genre(movie1836, comedy).
 has_genre(movie1836, drama).
+has_1_genre(movie1837).
 has_genre(movie1837, comedy).
+has_1_genre(movie1839).
 has_genre(movie1839, comedy).
+has_1_genre(movie1840).
 has_genre(movie1840, drama).
+has_2_genre(movie1841).
 has_genre(movie1841, drama).
 has_genre(movie1841, thriller).
+has_2_genre(movie1844).
 has_genre(movie1844, drama).
 has_genre(movie1844, romance).
+has_3_genre(movie1845).
 has_genre(movie1845, comedy).
 has_genre(movie1845, mystery).
 has_genre(movie1845, thriller).
+has_4_genre(movie1848).
 has_genre(movie1848, adventure).
 has_genre(movie1848, children).
 has_genre(movie1848, comedy).
 has_genre(movie1848, fantasy).
+has_1_genre(movie1855).
 has_genre(movie1855, comedy).
+has_1_genre(movie1856).
 has_genre(movie1856, documentary).
+has_1_genre(movie1857).
 has_genre(movie1857, comedy).
+has_2_genre(movie1858).
 has_genre(movie1858, action).
 has_genre(movie1858, comedy).
+has_1_genre(movie1859).
 has_genre(movie1859, drama).
+has_1_genre(movie1860).
 has_genre(movie1860, drama).
+has_2_genre(movie1862).
 has_genre(movie1862, horror).
 has_genre(movie1862, sci-fi).
+has_1_genre(movie1863).
 has_genre(movie1863, comedy).
+has_3_genre(movie1866).
 has_genre(movie1866, action).
 has_genre(movie1866, comedy).
 has_genre(movie1866, crime).
+has_2_genre(movie1867).
 has_genre(movie1867, action).
 has_genre(movie1867, adventure).
+has_2_genre(movie1870).
 has_genre(movie1870, comedy).
 has_genre(movie1870, drama).
+has_4_genre(movie1873).
 has_genre(movie1873, crime).
 has_genre(movie1873, drama).
 has_genre(movie1873, romance).
 has_genre(movie1873, war).
+has_1_genre(movie1875).
 has_genre(movie1875, comedy).
+has_3_genre(movie1876).
 has_genre(movie1876, drama).
 has_genre(movie1876, sci-fi).
 has_genre(movie1876, thriller).
+has_5_genre(movie1881).
 has_genre(movie1881, adventure).
 has_genre(movie1881, animation).
 has_genre(movie1881, children).
 has_genre(movie1881, fantasy).
 has_genre(movie1881, musical).
+has_3_genre(movie1882).
 has_genre(movie1882, action).
 has_genre(movie1882, sci-fi).
 has_genre(movie1882, thriller).
+has_3_genre(movie1883).
 has_genre(movie1883, comedy).
 has_genre(movie1883, drama).
 has_genre(movie1883, romance).
+has_3_genre(movie1884).
 has_genre(movie1884, adventure).
 has_genre(movie1884, comedy).
 has_genre(movie1884, drama).
+has_3_genre(movie1885).
 has_genre(movie1885, comedy).
 has_genre(movie1885, drama).
 has_genre(movie1885, romance).
+has_3_genre(movie1887).
 has_genre(movie1887, adventure).
 has_genre(movie1887, comedy).
 has_genre(movie1887, western).
+has_3_genre(movie1888).
 has_genre(movie1888, comedy).
 has_genre(movie1888, drama).
 has_genre(movie1888, romance).
+has_3_genre(movie1889).
 has_genre(movie1889, drama).
 has_genre(movie1889, mystery).
 has_genre(movie1889, thriller).
+has_2_genre(movie1891).
 has_genre(movie1891, horror).
 has_genre(movie1891, thriller).
+has_1_genre(movie1892).
 has_genre(movie1892, thriller).
+has_1_genre(movie1893).
 has_genre(movie1893, drama).
+has_3_genre(movie1894).
 has_genre(movie1894, adventure).
 has_genre(movie1894, comedy).
 has_genre(movie1894, romance).
+has_3_genre(movie1895).
 has_genre(movie1895, comedy).
 has_genre(movie1895, drama).
 has_genre(movie1895, romance).
+has_2_genre(movie1897).
 has_genre(movie1897, drama).
 has_genre(movie1897, romance).
+has_2_genre(movie1900).
 has_genre(movie1900, comedy).
 has_genre(movie1900, drama).
+has_2_genre(movie1902).
 has_genre(movie1902, drama).
 has_genre(movie1902, romance).
+has_2_genre(movie1904).
 has_genre(movie1904, comedy).
 has_genre(movie1904, drama).
+has_2_genre(movie1906).
 has_genre(movie1906, comedy).
 has_genre(movie1906, romance).
+has_more_than_5_genre(movie1907).
 has_genre(movie1907, adventure).
 has_genre(movie1907, animation).
 has_genre(movie1907, children).
@@ -7152,1893 +8548,2753 @@ has_genre(movie1907, comedy).
 has_genre(movie1907, drama).
 has_genre(movie1907, musical).
 has_genre(movie1907, romance).
+has_5_genre(movie1909).
 has_genre(movie1909, action).
 has_genre(movie1909, crime).
 has_genre(movie1909, mystery).
 has_genre(movie1909, sci-fi).
 has_genre(movie1909, thriller).
+has_3_genre(movie1910).
 has_genre(movie1910, comedy).
 has_genre(movie1910, crime).
 has_genre(movie1910, drama).
+has_1_genre(movie1911).
 has_genre(movie1911, comedy).
+has_5_genre(movie1912).
 has_genre(movie1912, comedy).
 has_genre(movie1912, crime).
 has_genre(movie1912, drama).
 has_genre(movie1912, romance).
 has_genre(movie1912, thriller).
+has_2_genre(movie1913).
 has_genre(movie1913, drama).
 has_genre(movie1913, mystery).
+has_2_genre(movie1914).
 has_genre(movie1914, comedy).
 has_genre(movie1914, drama).
+has_2_genre(movie1916).
 has_genre(movie1916, drama).
 has_genre(movie1916, romance).
+has_4_genre(movie1917).
 has_genre(movie1917, action).
 has_genre(movie1917, romance).
 has_genre(movie1917, sci-fi).
 has_genre(movie1917, thriller).
+has_4_genre(movie1918).
 has_genre(movie1918, action).
 has_genre(movie1918, comedy).
 has_genre(movie1918, crime).
 has_genre(movie1918, thriller).
+has_2_genre(movie1919).
 has_genre(movie1919, children).
 has_genre(movie1919, comedy).
+has_4_genre(movie1920).
 has_genre(movie1920, animation).
 has_genre(movie1920, children).
 has_genre(movie1920, fantasy).
 has_genre(movie1920, war).
+has_3_genre(movie1921).
 has_genre(movie1921, drama).
 has_genre(movie1921, sci-fi).
 has_genre(movie1921, thriller).
+has_1_genre(movie1922).
 has_genre(movie1922, drama).
+has_2_genre(movie1923).
 has_genre(movie1923, comedy).
 has_genre(movie1923, romance).
+has_2_genre(movie1924).
 has_genre(movie1924, horror).
 has_genre(movie1924, sci-fi).
+has_1_genre(movie1926).
 has_genre(movie1926, musical).
+has_3_genre(movie1927).
 has_genre(movie1927, action).
 has_genre(movie1927, drama).
 has_genre(movie1927, war).
+has_2_genre(movie1928).
 has_genre(movie1928, drama).
 has_genre(movie1928, western).
+has_2_genre(movie1929).
 has_genre(movie1929, drama).
 has_genre(movie1929, romance).
+has_2_genre(movie1931).
 has_genre(movie1931, adventure).
 has_genre(movie1931, drama).
+has_2_genre(movie1932).
 has_genre(movie1932, drama).
 has_genre(movie1932, musical).
+has_1_genre(movie1933).
 has_genre(movie1933, drama).
+has_2_genre(movie1934).
 has_genre(movie1934, comedy).
 has_genre(movie1934, romance).
+has_2_genre(movie1936).
 has_genre(movie1936, drama).
 has_genre(movie1936, war).
+has_3_genre(movie1937).
 has_genre(movie1937, comedy).
 has_genre(movie1937, drama).
 has_genre(movie1937, musical).
+has_1_genre(movie1938).
 has_genre(movie1938, drama).
+has_2_genre(movie1939).
 has_genre(movie1939, drama).
 has_genre(movie1939, war).
+has_1_genre(movie1940).
 has_genre(movie1940, drama).
+has_1_genre(movie1941).
 has_genre(movie1941, drama).
+has_1_genre(movie1942).
 has_genre(movie1942, drama).
+has_3_genre(movie1944).
 has_genre(movie1944, drama).
 has_genre(movie1944, romance).
 has_genre(movie1944, war).
+has_2_genre(movie1945).
 has_genre(movie1945, crime).
 has_genre(movie1945, drama).
+has_2_genre(movie1946).
 has_genre(movie1946, drama).
 has_genre(movie1946, romance).
+has_3_genre(movie1947).
 has_genre(movie1947, drama).
 has_genre(movie1947, musical).
 has_genre(movie1947, romance).
+has_3_genre(movie1948).
 has_genre(movie1948, adventure).
 has_genre(movie1948, comedy).
 has_genre(movie1948, romance).
+has_1_genre(movie1949).
 has_genre(movie1949, drama).
+has_2_genre(movie1950).
 has_genre(movie1950, drama).
 has_genre(movie1950, mystery).
+has_2_genre(movie1951).
 has_genre(movie1951, drama).
 has_genre(movie1951, musical).
+has_1_genre(movie1952).
 has_genre(movie1952, drama).
+has_3_genre(movie1953).
 has_genre(movie1953, action).
 has_genre(movie1953, crime).
 has_genre(movie1953, thriller).
+has_1_genre(movie1954).
 has_genre(movie1954, drama).
+has_1_genre(movie1955).
 has_genre(movie1955, drama).
+has_1_genre(movie1956).
 has_genre(movie1956, drama).
+has_1_genre(movie1957).
 has_genre(movie1957, drama).
+has_2_genre(movie1958).
 has_genre(movie1958, comedy).
 has_genre(movie1958, drama).
+has_2_genre(movie1959).
 has_genre(movie1959, drama).
 has_genre(movie1959, romance).
+has_1_genre(movie1960).
 has_genre(movie1960, drama).
+has_1_genre(movie1961).
 has_genre(movie1961, drama).
+has_1_genre(movie1962).
 has_genre(movie1962, drama).
+has_2_genre(movie1963).
 has_genre(movie1963, comedy).
 has_genre(movie1963, crime).
+has_2_genre(movie1964).
 has_genre(movie1964, drama).
 has_genre(movie1964, mystery).
+has_2_genre(movie1965).
 has_genre(movie1965, comedy).
 has_genre(movie1965, sci-fi).
+has_1_genre(movie1966).
 has_genre(movie1966, comedy).
+has_3_genre(movie1967).
 has_genre(movie1967, adventure).
 has_genre(movie1967, fantasy).
 has_genre(movie1967, musical).
+has_2_genre(movie1968).
 has_genre(movie1968, comedy).
 has_genre(movie1968, drama).
+has_1_genre(movie1969).
 has_genre(movie1969, horror).
+has_2_genre(movie1970).
 has_genre(movie1970, horror).
 has_genre(movie1970, thriller).
+has_2_genre(movie1971).
 has_genre(movie1971, horror).
 has_genre(movie1971, thriller).
+has_1_genre(movie1972).
 has_genre(movie1972, horror).
+has_1_genre(movie1973).
 has_genre(movie1973, horror).
+has_3_genre(movie1974).
 has_genre(movie1974, horror).
 has_genre(movie1974, mystery).
 has_genre(movie1974, thriller).
+has_1_genre(movie1975).
 has_genre(movie1975, horror).
+has_1_genre(movie1976).
 has_genre(movie1976, horror).
+has_1_genre(movie1977).
 has_genre(movie1977, horror).
+has_1_genre(movie1978).
 has_genre(movie1978, horror).
+has_1_genre(movie1979).
 has_genre(movie1979, horror).
+has_1_genre(movie1980).
 has_genre(movie1980, horror).
+has_1_genre(movie1981).
 has_genre(movie1981, horror).
+has_1_genre(movie1982).
 has_genre(movie1982, horror).
+has_1_genre(movie1983).
 has_genre(movie1983, horror).
+has_1_genre(movie1984).
 has_genre(movie1984, horror).
+has_1_genre(movie1985).
 has_genre(movie1985, horror).
+has_1_genre(movie1986).
 has_genre(movie1986, horror).
+has_1_genre(movie1987).
 has_genre(movie1987, horror).
+has_1_genre(movie1990).
 has_genre(movie1990, horror).
+has_2_genre(movie1991).
 has_genre(movie1991, horror).
 has_genre(movie1991, thriller).
+has_2_genre(movie1992).
 has_genre(movie1992, horror).
 has_genre(movie1992, thriller).
+has_3_genre(movie1993).
 has_genre(movie1993, comedy).
 has_genre(movie1993, horror).
 has_genre(movie1993, thriller).
+has_2_genre(movie1994).
 has_genre(movie1994, horror).
 has_genre(movie1994, thriller).
+has_2_genre(movie1995).
 has_genre(movie1995, horror).
 has_genre(movie1995, thriller).
+has_2_genre(movie1996).
 has_genre(movie1996, horror).
 has_genre(movie1996, thriller).
+has_2_genre(movie1997).
 has_genre(movie1997, horror).
 has_genre(movie1997, mystery).
+has_1_genre(movie1998).
 has_genre(movie1998, horror).
+has_1_genre(movie1999).
 has_genre(movie1999, horror).
+has_4_genre(movie2000).
 has_genre(movie2000, action).
 has_genre(movie2000, comedy).
 has_genre(movie2000, crime).
 has_genre(movie2000, drama).
+has_4_genre(movie2001).
 has_genre(movie2001, action).
 has_genre(movie2001, comedy).
 has_genre(movie2001, crime).
 has_genre(movie2001, drama).
+has_4_genre(movie2002).
 has_genre(movie2002, action).
 has_genre(movie2002, comedy).
 has_genre(movie2002, crime).
 has_genre(movie2002, drama).
+has_2_genre(movie2003).
 has_genre(movie2003, comedy).
 has_genre(movie2003, horror).
+has_2_genre(movie2004).
 has_genre(movie2004, comedy).
 has_genre(movie2004, horror).
+has_5_genre(movie2005).
 has_genre(movie2005, action).
 has_genre(movie2005, adventure).
 has_genre(movie2005, children).
 has_genre(movie2005, comedy).
 has_genre(movie2005, fantasy).
+has_3_genre(movie2006).
 has_genre(movie2006, action).
 has_genre(movie2006, comedy).
 has_genre(movie2006, romance).
+has_1_genre(movie2007).
 has_genre(movie2007, comedy).
+has_3_genre(movie2008).
 has_genre(movie2008, crime).
 has_genre(movie2008, drama).
 has_genre(movie2008, film-noir).
+has_4_genre(movie2009).
 has_genre(movie2009, drama).
 has_genre(movie2009, mystery).
 has_genre(movie2009, sci-fi).
 has_genre(movie2009, thriller).
+has_2_genre(movie2010).
 has_genre(movie2010, drama).
 has_genre(movie2010, sci-fi).
+has_3_genre(movie2011).
 has_genre(movie2011, adventure).
 has_genre(movie2011, comedy).
 has_genre(movie2011, sci-fi).
+has_4_genre(movie2012).
 has_genre(movie2012, adventure).
 has_genre(movie2012, comedy).
 has_genre(movie2012, sci-fi).
 has_genre(movie2012, western).
+has_3_genre(movie2013).
 has_genre(movie2013, action).
 has_genre(movie2013, adventure).
 has_genre(movie2013, drama).
+has_3_genre(movie2014).
 has_genre(movie2014, children).
 has_genre(movie2014, comedy).
 has_genre(movie2014, fantasy).
+has_3_genre(movie2015).
 has_genre(movie2015, children).
 has_genre(movie2015, comedy).
 has_genre(movie2015, fantasy).
+has_3_genre(movie2016).
 has_genre(movie2016, children).
 has_genre(movie2016, comedy).
 has_genre(movie2016, western).
+has_3_genre(movie2017).
 has_genre(movie2017, children).
 has_genre(movie2017, fantasy).
 has_genre(movie2017, musical).
+has_3_genre(movie2018).
 has_genre(movie2018, animation).
 has_genre(movie2018, children).
 has_genre(movie2018, drama).
+has_3_genre(movie2019).
 has_genre(movie2019, action).
 has_genre(movie2019, adventure).
 has_genre(movie2019, drama).
+has_2_genre(movie2020).
 has_genre(movie2020, drama).
 has_genre(movie2020, romance).
+has_2_genre(movie2021).
 has_genre(movie2021, adventure).
 has_genre(movie2021, sci-fi).
+has_1_genre(movie2022).
 has_genre(movie2022, drama).
+has_4_genre(movie2023).
 has_genre(movie2023, crime).
 has_genre(movie2023, drama).
 has_genre(movie2023, mystery).
 has_genre(movie2023, thriller).
+has_2_genre(movie2024).
 has_genre(movie2024, drama).
 has_genre(movie2024, mystery).
+has_2_genre(movie2025).
 has_genre(movie2025, drama).
 has_genre(movie2025, romance).
+has_2_genre(movie2026).
 has_genre(movie2026, horror).
 has_genre(movie2026, thriller).
+has_2_genre(movie2027).
 has_genre(movie2027, comedy).
 has_genre(movie2027, crime).
+has_3_genre(movie2028).
 has_genre(movie2028, action).
 has_genre(movie2028, drama).
 has_genre(movie2028, war).
+has_2_genre(movie2032).
 has_genre(movie2032, children).
 has_genre(movie2032, comedy).
+has_4_genre(movie2033).
 has_genre(movie2033, adventure).
 has_genre(movie2033, animation).
 has_genre(movie2033, children).
 has_genre(movie2033, fantasy).
+has_2_genre(movie2034).
 has_genre(movie2034, children).
 has_genre(movie2034, sci-fi).
+has_2_genre(movie2035).
 has_genre(movie2035, children).
 has_genre(movie2035, comedy).
+has_2_genre(movie2036).
 has_genre(movie2036, children).
 has_genre(movie2036, comedy).
+has_3_genre(movie2037).
 has_genre(movie2037, adventure).
 has_genre(movie2037, children).
 has_genre(movie2037, comedy).
+has_3_genre(movie2038).
 has_genre(movie2038, children).
 has_genre(movie2038, comedy).
 has_genre(movie2038, sci-fi).
+has_2_genre(movie2040).
 has_genre(movie2040, children).
 has_genre(movie2040, comedy).
+has_4_genre(movie2041).
 has_genre(movie2041, action).
 has_genre(movie2041, adventure).
 has_genre(movie2041, children).
 has_genre(movie2041, comedy).
+has_2_genre(movie2042).
 has_genre(movie2042, children).
 has_genre(movie2042, comedy).
+has_3_genre(movie2043).
 has_genre(movie2043, adventure).
 has_genre(movie2043, children).
 has_genre(movie2043, fantasy).
+has_2_genre(movie2044).
 has_genre(movie2044, comedy).
 has_genre(movie2044, fantasy).
+has_3_genre(movie2046).
 has_genre(movie2046, adventure).
 has_genre(movie2046, children).
 has_genre(movie2046, sci-fi).
+has_4_genre(movie2048).
 has_genre(movie2048, action).
 has_genre(movie2048, animation).
 has_genre(movie2048, children).
 has_genre(movie2048, crime).
+has_3_genre(movie2050).
 has_genre(movie2050, adventure).
 has_genre(movie2050, children).
 has_genre(movie2050, comedy).
+has_3_genre(movie2051).
 has_genre(movie2051, adventure).
 has_genre(movie2051, children).
 has_genre(movie2051, comedy).
+has_4_genre(movie2052).
 has_genre(movie2052, children).
 has_genre(movie2052, comedy).
 has_genre(movie2052, fantasy).
 has_genre(movie2052, horror).
+has_3_genre(movie2053).
 has_genre(movie2053, children).
 has_genre(movie2053, comedy).
 has_genre(movie2053, sci-fi).
+has_5_genre(movie2054).
 has_genre(movie2054, adventure).
 has_genre(movie2054, children).
 has_genre(movie2054, comedy).
 has_genre(movie2054, fantasy).
 has_genre(movie2054, sci-fi).
+has_3_genre(movie2055).
 has_genre(movie2055, action).
 has_genre(movie2055, comedy).
 has_genre(movie2055, western).
+has_2_genre(movie2056).
 has_genre(movie2056, adventure).
 has_genre(movie2056, children).
+has_2_genre(movie2057).
 has_genre(movie2057, adventure).
 has_genre(movie2057, children).
+has_5_genre(movie2058).
 has_genre(movie2058, action).
 has_genre(movie2058, crime).
 has_genre(movie2058, drama).
 has_genre(movie2058, mystery).
 has_genre(movie2058, thriller).
+has_3_genre(movie2059).
 has_genre(movie2059, children).
 has_genre(movie2059, comedy).
 has_genre(movie2059, romance).
+has_1_genre(movie2060).
 has_genre(movie2060, comedy).
+has_1_genre(movie2064).
 has_genre(movie2064, documentary).
+has_4_genre(movie2065).
 has_genre(movie2065, comedy).
 has_genre(movie2065, drama).
 has_genre(movie2065, fantasy).
 has_genre(movie2065, romance).
+has_1_genre(movie2066).
 has_genre(movie2066, film-noir).
+has_3_genre(movie2067).
 has_genre(movie2067, drama).
 has_genre(movie2067, romance).
 has_genre(movie2067, war).
+has_3_genre(movie2068).
 has_genre(movie2068, drama).
 has_genre(movie2068, fantasy).
 has_genre(movie2068, mystery).
+has_1_genre(movie2069).
 has_genre(movie2069, drama).
+has_3_genre(movie2070).
 has_genre(movie2070, drama).
 has_genre(movie2070, romance).
 has_genre(movie2070, western).
+has_1_genre(movie2071).
 has_genre(movie2071, drama).
+has_1_genre(movie2072).
 has_genre(movie2072, comedy).
+has_1_genre(movie2073).
 has_genre(movie2073, comedy).
+has_3_genre(movie2074).
 has_genre(movie2074, crime).
 has_genre(movie2074, drama).
 has_genre(movie2074, romance).
+has_2_genre(movie2075).
 has_genre(movie2075, drama).
 has_genre(movie2075, war).
+has_3_genre(movie2076).
 has_genre(movie2076, drama).
 has_genre(movie2076, mystery).
 has_genre(movie2076, thriller).
+has_2_genre(movie2077).
 has_genre(movie2077, adventure).
 has_genre(movie2077, children).
+has_4_genre(movie2078).
 has_genre(movie2078, animation).
 has_genre(movie2078, children).
 has_genre(movie2078, comedy).
 has_genre(movie2078, musical).
+has_4_genre(movie2080).
 has_genre(movie2080, animation).
 has_genre(movie2080, children).
 has_genre(movie2080, comedy).
 has_genre(movie2080, romance).
+has_5_genre(movie2081).
 has_genre(movie2081, animation).
 has_genre(movie2081, children).
 has_genre(movie2081, comedy).
 has_genre(movie2081, musical).
 has_genre(movie2081, romance).
+has_2_genre(movie2082).
 has_genre(movie2082, children).
 has_genre(movie2082, comedy).
+has_3_genre(movie2083).
 has_genre(movie2083, children).
 has_genre(movie2083, comedy).
 has_genre(movie2083, musical).
+has_2_genre(movie2084).
 has_genre(movie2084, children).
 has_genre(movie2084, musical).
+has_3_genre(movie2085).
 has_genre(movie2085, adventure).
 has_genre(movie2085, animation).
 has_genre(movie2085, children).
+has_4_genre(movie2087).
 has_genre(movie2087, animation).
 has_genre(movie2087, children).
 has_genre(movie2087, fantasy).
 has_genre(movie2087, musical).
+has_3_genre(movie2088).
 has_genre(movie2088, adventure).
 has_genre(movie2088, comedy).
 has_genre(movie2088, musical).
+has_3_genre(movie2089).
 has_genre(movie2089, adventure).
 has_genre(movie2089, animation).
 has_genre(movie2089, children).
+has_5_genre(movie2090).
 has_genre(movie2090, adventure).
 has_genre(movie2090, animation).
 has_genre(movie2090, children).
 has_genre(movie2090, crime).
 has_genre(movie2090, drama).
+has_2_genre(movie2091).
 has_genre(movie2091, children).
 has_genre(movie2091, sci-fi).
+has_more_than_5_genre(movie2092).
 has_genre(movie2092, adventure).
 has_genre(movie2092, animation).
 has_genre(movie2092, children).
 has_genre(movie2092, fantasy).
 has_genre(movie2092, musical).
 has_genre(movie2092, romance).
+has_3_genre(movie2093).
 has_genre(movie2093, adventure).
 has_genre(movie2093, children).
 has_genre(movie2093, fantasy).
+has_3_genre(movie2094).
 has_genre(movie2094, action).
 has_genre(movie2094, adventure).
 has_genre(movie2094, sci-fi).
+has_2_genre(movie2095).
 has_genre(movie2095, children).
 has_genre(movie2095, comedy).
+has_3_genre(movie2096).
 has_genre(movie2096, animation).
 has_genre(movie2096, children).
 has_genre(movie2096, musical).
+has_5_genre(movie2097).
 has_genre(movie2097, children).
 has_genre(movie2097, drama).
 has_genre(movie2097, fantasy).
 has_genre(movie2097, mystery).
 has_genre(movie2097, thriller).
+has_2_genre(movie2098).
 has_genre(movie2098, children).
 has_genre(movie2098, comedy).
+has_4_genre(movie2099).
 has_genre(movie2099, adventure).
 has_genre(movie2099, animation).
 has_genre(movie2099, children).
 has_genre(movie2099, musical).
+has_3_genre(movie2100).
 has_genre(movie2100, comedy).
 has_genre(movie2100, fantasy).
 has_genre(movie2100, romance).
+has_4_genre(movie2102).
 has_genre(movie2102, animation).
 has_genre(movie2102, children).
 has_genre(movie2102, comedy).
 has_genre(movie2102, musical).
+has_4_genre(movie2103).
 has_genre(movie2103, adventure).
 has_genre(movie2103, children).
 has_genre(movie2103, fantasy).
 has_genre(movie2103, western).
+has_1_genre(movie2104).
 has_genre(movie2104, drama).
+has_3_genre(movie2105).
 has_genre(movie2105, action).
 has_genre(movie2105, adventure).
 has_genre(movie2105, sci-fi).
+has_2_genre(movie2106).
 has_genre(movie2106, drama).
 has_genre(movie2106, war).
+has_2_genre(movie2107).
 has_genre(movie2107, horror).
 has_genre(movie2107, thriller).
+has_2_genre(movie2108).
 has_genre(movie2108, comedy).
 has_genre(movie2108, romance).
+has_1_genre(movie2109).
 has_genre(movie2109, comedy).
+has_3_genre(movie2110).
 has_genre(movie2110, comedy).
 has_genre(movie2110, crime).
 has_genre(movie2110, thriller).
+has_1_genre(movie2111).
 has_genre(movie2111, comedy).
+has_2_genre(movie2112).
 has_genre(movie2112, crime).
 has_genre(movie2112, drama).
+has_1_genre(movie2114).
 has_genre(movie2114, drama).
+has_3_genre(movie2115).
 has_genre(movie2115, action).
 has_genre(movie2115, adventure).
 has_genre(movie2115, fantasy).
+has_4_genre(movie2116).
 has_genre(movie2116, adventure).
 has_genre(movie2116, animation).
 has_genre(movie2116, children).
 has_genre(movie2116, fantasy).
+has_2_genre(movie2117).
 has_genre(movie2117, drama).
 has_genre(movie2117, sci-fi).
+has_1_genre(movie2118).
 has_genre(movie2118, thriller).
+has_1_genre(movie2119).
 has_genre(movie2119, horror).
+has_2_genre(movie2120).
 has_genre(movie2120, drama).
 has_genre(movie2120, horror).
+has_2_genre(movie2121).
 has_genre(movie2121, horror).
 has_genre(movie2121, thriller).
+has_2_genre(movie2122).
 has_genre(movie2122, horror).
 has_genre(movie2122, thriller).
+has_5_genre(movie2123).
 has_genre(movie2123, animation).
 has_genre(movie2123, children).
 has_genre(movie2123, comedy).
 has_genre(movie2123, drama).
 has_genre(movie2123, fantasy).
+has_3_genre(movie2124).
 has_genre(movie2124, children).
 has_genre(movie2124, comedy).
 has_genre(movie2124, fantasy).
+has_3_genre(movie2125).
 has_genre(movie2125, comedy).
 has_genre(movie2125, drama).
 has_genre(movie2125, romance).
+has_4_genre(movie2126).
 has_genre(movie2126, action).
 has_genre(movie2126, crime).
 has_genre(movie2126, mystery).
 has_genre(movie2126, thriller).
+has_3_genre(movie2130).
 has_genre(movie2130, crime).
 has_genre(movie2130, drama).
 has_genre(movie2130, romance).
+has_1_genre(movie2131).
 has_genre(movie2131, drama).
+has_1_genre(movie2132).
 has_genre(movie2132, drama).
+has_2_genre(movie2133).
 has_genre(movie2133, adventure).
 has_genre(movie2133, comedy).
+has_3_genre(movie2134).
 has_genre(movie2134, comedy).
 has_genre(movie2134, fantasy).
 has_genre(movie2134, sci-fi).
+has_3_genre(movie2135).
 has_genre(movie2135, adventure).
 has_genre(movie2135, children).
 has_genre(movie2135, musical).
+has_2_genre(movie2136).
 has_genre(movie2136, comedy).
 has_genre(movie2136, sci-fi).
+has_2_genre(movie2137).
 has_genre(movie2137, animation).
 has_genre(movie2137, children).
+has_5_genre(movie2138).
 has_genre(movie2138, adventure).
 has_genre(movie2138, animation).
 has_genre(movie2138, children).
 has_genre(movie2138, drama).
 has_genre(movie2138, fantasy).
+has_4_genre(movie2139).
 has_genre(movie2139, adventure).
 has_genre(movie2139, animation).
 has_genre(movie2139, children).
 has_genre(movie2139, drama).
+has_2_genre(movie2140).
 has_genre(movie2140, adventure).
 has_genre(movie2140, fantasy).
+has_4_genre(movie2141).
 has_genre(movie2141, adventure).
 has_genre(movie2141, animation).
 has_genre(movie2141, children).
 has_genre(movie2141, comedy).
+has_5_genre(movie2142).
 has_genre(movie2142, adventure).
 has_genre(movie2142, animation).
 has_genre(movie2142, children).
 has_genre(movie2142, musical).
 has_genre(movie2142, western).
+has_3_genre(movie2143).
 has_genre(movie2143, adventure).
 has_genre(movie2143, fantasy).
 has_genre(movie2143, romance).
+has_2_genre(movie2144).
 has_genre(movie2144, comedy).
 has_genre(movie2144, romance).
+has_3_genre(movie2145).
 has_genre(movie2145, comedy).
 has_genre(movie2145, drama).
 has_genre(movie2145, romance).
+has_2_genre(movie2146).
 has_genre(movie2146, drama).
 has_genre(movie2146, romance).
+has_3_genre(movie2147).
 has_genre(movie2147, adventure).
 has_genre(movie2147, drama).
 has_genre(movie2147, fantasy).
+has_3_genre(movie2148).
 has_genre(movie2148, comedy).
 has_genre(movie2148, fantasy).
 has_genre(movie2148, horror).
+has_3_genre(movie2149).
 has_genre(movie2149, comedy).
 has_genre(movie2149, fantasy).
 has_genre(movie2149, horror).
+has_2_genre(movie2150).
 has_genre(movie2150, adventure).
 has_genre(movie2150, comedy).
+has_1_genre(movie2151).
 has_genre(movie2151, comedy).
+has_2_genre(movie2152).
 has_genre(movie2152, children).
 has_genre(movie2152, comedy).
+has_2_genre(movie2153).
 has_genre(movie2153, action).
 has_genre(movie2153, adventure).
+has_2_genre(movie2154).
 has_genre(movie2154, drama).
 has_genre(movie2154, romance).
+has_2_genre(movie2155).
 has_genre(movie2155, comedy).
 has_genre(movie2155, drama).
+has_3_genre(movie2156).
 has_genre(movie2156, comedy).
 has_genre(movie2156, drama).
 has_genre(movie2156, romance).
+has_3_genre(movie2159).
 has_genre(movie2159, crime).
 has_genre(movie2159, horror).
 has_genre(movie2159, thriller).
+has_3_genre(movie2160).
 has_genre(movie2160, drama).
 has_genre(movie2160, horror).
 has_genre(movie2160, thriller).
+has_3_genre(movie2161).
 has_genre(movie2161, adventure).
 has_genre(movie2161, children).
 has_genre(movie2161, fantasy).
+has_3_genre(movie2162).
 has_genre(movie2162, adventure).
 has_genre(movie2162, children).
 has_genre(movie2162, fantasy).
+has_2_genre(movie2163).
 has_genre(movie2163, comedy).
 has_genre(movie2163, horror).
+has_4_genre(movie2164).
 has_genre(movie2164, action).
 has_genre(movie2164, comedy).
 has_genre(movie2164, drama).
 has_genre(movie2164, horror).
+has_2_genre(movie2165).
 has_genre(movie2165, comedy).
 has_genre(movie2165, drama).
+has_4_genre(movie2166).
 has_genre(movie2166, crime).
 has_genre(movie2166, drama).
 has_genre(movie2166, romance).
 has_genre(movie2166, thriller).
+has_3_genre(movie2167).
 has_genre(movie2167, action).
 has_genre(movie2167, horror).
 has_genre(movie2167, thriller).
+has_1_genre(movie2169).
 has_genre(movie2169, comedy).
+has_2_genre(movie2170).
 has_genre(movie2170, action).
 has_genre(movie2170, comedy).
+has_3_genre(movie2171).
 has_genre(movie2171, comedy).
 has_genre(movie2171, drama).
 has_genre(movie2171, romance).
+has_2_genre(movie2172).
 has_genre(movie2172, comedy).
 has_genre(movie2172, drama).
+has_2_genre(movie2174).
 has_genre(movie2174, comedy).
 has_genre(movie2174, fantasy).
+has_2_genre(movie2175).
 has_genre(movie2175, drama).
 has_genre(movie2175, romance).
+has_3_genre(movie2176).
 has_genre(movie2176, crime).
 has_genre(movie2176, drama).
 has_genre(movie2176, thriller).
+has_2_genre(movie2177).
 has_genre(movie2177, comedy).
 has_genre(movie2177, thriller).
+has_1_genre(movie2178).
 has_genre(movie2178, thriller).
+has_1_genre(movie2179).
 has_genre(movie2179, thriller).
+has_1_genre(movie2180).
 has_genre(movie2180, thriller).
+has_4_genre(movie2181).
 has_genre(movie2181, drama).
 has_genre(movie2181, mystery).
 has_genre(movie2181, romance).
 has_genre(movie2181, thriller).
+has_3_genre(movie2182).
 has_genre(movie2182, drama).
 has_genre(movie2182, film-noir).
 has_genre(movie2182, thriller).
+has_4_genre(movie2183).
 has_genre(movie2183, adventure).
 has_genre(movie2183, drama).
 has_genre(movie2183, mystery).
 has_genre(movie2183, thriller).
+has_2_genre(movie2184).
 has_genre(movie2184, comedy).
 has_genre(movie2184, mystery).
+has_1_genre(movie2185).
 has_genre(movie2185, thriller).
+has_4_genre(movie2186).
 has_genre(movie2186, crime).
 has_genre(movie2186, drama).
 has_genre(movie2186, film-noir).
 has_genre(movie2186, thriller).
+has_3_genre(movie2187).
 has_genre(movie2187, mystery).
 has_genre(movie2187, romance).
 has_genre(movie2187, thriller).
+has_1_genre(movie2188).
 has_genre(movie2188, drama).
+has_1_genre(movie2190).
 has_genre(movie2190, drama).
+has_3_genre(movie2193).
 has_genre(movie2193, action).
 has_genre(movie2193, adventure).
 has_genre(movie2193, fantasy).
+has_3_genre(movie2194).
 has_genre(movie2194, action).
 has_genre(movie2194, crime).
 has_genre(movie2194, drama).
+has_1_genre(movie2195).
 has_genre(movie2195, comedy).
+has_1_genre(movie2196).
 has_genre(movie2196, action).
+has_1_genre(movie2201).
 has_genre(movie2201, drama).
+has_2_genre(movie2202).
 has_genre(movie2202, drama).
 has_genre(movie2202, war).
+has_3_genre(movie2203).
 has_genre(movie2203, crime).
 has_genre(movie2203, drama).
 has_genre(movie2203, thriller).
+has_2_genre(movie2204).
 has_genre(movie2204, mystery).
 has_genre(movie2204, thriller).
+has_2_genre(movie2205).
 has_genre(movie2205, comedy).
 has_genre(movie2205, romance).
+has_3_genre(movie2206).
 has_genre(movie2206, film-noir).
 has_genre(movie2206, mystery).
 has_genre(movie2206, thriller).
+has_1_genre(movie2207).
 has_genre(movie2207, drama).
+has_3_genre(movie2208).
 has_genre(movie2208, drama).
 has_genre(movie2208, mystery).
 has_genre(movie2208, thriller).
+has_1_genre(movie2210).
 has_genre(movie2210, thriller).
+has_1_genre(movie2211).
 has_genre(movie2211, thriller).
+has_2_genre(movie2212).
 has_genre(movie2212, drama).
 has_genre(movie2212, thriller).
+has_1_genre(movie2226).
 has_genre(movie2226, drama).
+has_3_genre(movie2227).
 has_genre(movie2227, crime).
 has_genre(movie2227, drama).
 has_genre(movie2227, thriller).
+has_1_genre(movie2231).
 has_genre(movie2231, drama).
+has_4_genre(movie2232).
 has_genre(movie2232, horror).
 has_genre(movie2232, mystery).
 has_genre(movie2232, sci-fi).
 has_genre(movie2232, thriller).
+has_1_genre(movie2236).
 has_genre(movie2236, drama).
+has_2_genre(movie2239).
 has_genre(movie2239, comedy).
 has_genre(movie2239, drama).
+has_1_genre(movie2240).
 has_genre(movie2240, drama).
+has_1_genre(movie2241).
 has_genre(movie2241, comedy).
+has_3_genre(movie2243).
 has_genre(movie2243, comedy).
 has_genre(movie2243, drama).
 has_genre(movie2243, romance).
+has_2_genre(movie2244).
 has_genre(movie2244, comedy).
 has_genre(movie2244, romance).
+has_3_genre(movie2245).
 has_genre(movie2245, comedy).
 has_genre(movie2245, drama).
 has_genre(movie2245, romance).
+has_1_genre(movie2247).
 has_genre(movie2247, comedy).
+has_3_genre(movie2248).
 has_genre(movie2248, comedy).
 has_genre(movie2248, drama).
 has_genre(movie2248, romance).
+has_1_genre(movie2249).
 has_genre(movie2249, comedy).
+has_2_genre(movie2252).
 has_genre(movie2252, comedy).
 has_genre(movie2252, drama).
+has_2_genre(movie2253).
 has_genre(movie2253, comedy).
 has_genre(movie2253, fantasy).
+has_1_genre(movie2255).
 has_genre(movie2255, comedy).
+has_2_genre(movie2256).
 has_genre(movie2256, horror).
 has_genre(movie2256, sci-fi).
+has_2_genre(movie2257).
 has_genre(movie2257, comedy).
 has_genre(movie2257, romance).
+has_2_genre(movie2259).
 has_genre(movie2259, comedy).
 has_genre(movie2259, romance).
+has_2_genre(movie2260).
 has_genre(movie2260, crime).
 has_genre(movie2260, drama).
+has_1_genre(movie2261).
 has_genre(movie2261, comedy).
+has_3_genre(movie2262).
 has_genre(movie2262, comedy).
 has_genre(movie2262, drama).
 has_genre(movie2262, romance).
+has_3_genre(movie2263).
 has_genre(movie2263, drama).
 has_genre(movie2263, fantasy).
 has_genre(movie2263, thriller).
+has_2_genre(movie2264).
 has_genre(movie2264, comedy).
 has_genre(movie2264, crime).
+has_2_genre(movie2265).
 has_genre(movie2265, adventure).
 has_genre(movie2265, comedy).
+has_2_genre(movie2266).
 has_genre(movie2266, comedy).
 has_genre(movie2266, romance).
+has_2_genre(movie2267).
 has_genre(movie2267, mystery).
 has_genre(movie2267, thriller).
+has_3_genre(movie2268).
 has_genre(movie2268, crime).
 has_genre(movie2268, drama).
 has_genre(movie2268, thriller).
+has_2_genre(movie2269).
 has_genre(movie2269, drama).
 has_genre(movie2269, romance).
+has_1_genre(movie2271).
 has_genre(movie2271, drama).
+has_1_genre(movie2272).
 has_genre(movie2272, drama).
+has_4_genre(movie2273).
 has_genre(movie2273, action).
 has_genre(movie2273, comedy).
 has_genre(movie2273, crime).
 has_genre(movie2273, thriller).
+has_3_genre(movie2275).
 has_genre(movie2275, action).
 has_genre(movie2275, adventure).
 has_genre(movie2275, sci-fi).
+has_3_genre(movie2278).
 has_genre(movie2278, action).
 has_genre(movie2278, crime).
 has_genre(movie2278, thriller).
+has_2_genre(movie2279).
 has_genre(movie2279, horror).
 has_genre(movie2279, thriller).
+has_1_genre(movie2280).
 has_genre(movie2280, crime).
+has_3_genre(movie2281).
 has_genre(movie2281, action).
 has_genre(movie2281, crime).
 has_genre(movie2281, drama).
+has_2_genre(movie2282).
 has_genre(movie2282, comedy).
 has_genre(movie2282, drama).
+has_1_genre(movie2283).
 has_genre(movie2283, drama).
+has_1_genre(movie2286).
 has_genre(movie2286, comedy).
+has_3_genre(movie2287).
 has_genre(movie2287, horror).
 has_genre(movie2287, sci-fi).
 has_genre(movie2287, thriller).
+has_4_genre(movie2288).
 has_genre(movie2288, action).
 has_genre(movie2288, horror).
 has_genre(movie2288, sci-fi).
 has_genre(movie2288, thriller).
+has_3_genre(movie2289).
 has_genre(movie2289, comedy).
 has_genre(movie2289, crime).
 has_genre(movie2289, drama).
+has_2_genre(movie2290).
 has_genre(movie2290, comedy).
 has_genre(movie2290, drama).
+has_3_genre(movie2291).
 has_genre(movie2291, drama).
 has_genre(movie2291, fantasy).
 has_genre(movie2291, romance).
+has_2_genre(movie2292).
 has_genre(movie2292, comedy).
 has_genre(movie2292, romance).
+has_5_genre(movie2294).
 has_genre(movie2294, adventure).
 has_genre(movie2294, animation).
 has_genre(movie2294, children).
 has_genre(movie2294, comedy).
 has_genre(movie2294, fantasy).
+has_1_genre(movie2295).
 has_genre(movie2295, comedy).
+has_1_genre(movie2296).
 has_genre(movie2296, comedy).
+has_4_genre(movie2297).
 has_genre(movie2297, adventure).
 has_genre(movie2297, drama).
 has_genre(movie2297, fantasy).
 has_genre(movie2297, romance).
+has_1_genre(movie2298).
 has_genre(movie2298, thriller).
+has_1_genre(movie2300).
 has_genre(movie2300, comedy).
+has_2_genre(movie2301).
 has_genre(movie2301, comedy).
 has_genre(movie2301, musical).
+has_1_genre(movie2302).
 has_genre(movie2302, comedy).
+has_2_genre(movie2303).
 has_genre(movie2303, drama).
 has_genre(movie2303, musical).
+has_1_genre(movie2304).
 has_genre(movie2304, drama).
+has_1_genre(movie2306).
 has_genre(movie2306, comedy).
+has_2_genre(movie2307).
 has_genre(movie2307, action).
 has_genre(movie2307, crime).
+has_1_genre(movie2310).
 has_genre(movie2310, drama).
+has_1_genre(movie2311).
 has_genre(movie2311, sci-fi).
+has_1_genre(movie2312).
 has_genre(movie2312, drama).
+has_1_genre(movie2313).
 has_genre(movie2313, drama).
+has_1_genre(movie2314).
 has_genre(movie2314, drama).
+has_3_genre(movie2315).
 has_genre(movie2315, comedy).
 has_genre(movie2315, horror).
 has_genre(movie2315, thriller).
+has_4_genre(movie2316).
 has_genre(movie2316, drama).
 has_genre(movie2316, fantasy).
 has_genre(movie2316, mystery).
 has_genre(movie2316, romance).
+has_2_genre(movie2318).
 has_genre(movie2318, comedy).
 has_genre(movie2318, drama).
+has_2_genre(movie2320).
 has_genre(movie2320, drama).
 has_genre(movie2320, thriller).
+has_3_genre(movie2321).
 has_genre(movie2321, comedy).
 has_genre(movie2321, drama).
 has_genre(movie2321, fantasy).
+has_3_genre(movie2322).
 has_genre(movie2322, action).
 has_genre(movie2322, sci-fi).
 has_genre(movie2322, war).
+has_1_genre(movie2323).
 has_genre(movie2323, documentary).
+has_4_genre(movie2324).
 has_genre(movie2324, comedy).
 has_genre(movie2324, drama).
 has_genre(movie2324, romance).
 has_genre(movie2324, war).
+has_1_genre(movie2325).
 has_genre(movie2325, comedy).
+has_3_genre(movie2327).
 has_genre(movie2327, fantasy).
 has_genre(movie2327, horror).
 has_genre(movie2327, thriller).
+has_2_genre(movie2328).
 has_genre(movie2328, horror).
 has_genre(movie2328, western).
+has_2_genre(movie2329).
 has_genre(movie2329, crime).
 has_genre(movie2329, drama).
+has_2_genre(movie2330).
 has_genre(movie2330, comedy).
 has_genre(movie2330, documentary).
+has_3_genre(movie2331).
 has_genre(movie2331, comedy).
 has_genre(movie2331, drama).
 has_genre(movie2331, romance).
+has_2_genre(movie2332).
 has_genre(movie2332, crime).
 has_genre(movie2332, drama).
+has_1_genre(movie2333).
 has_genre(movie2333, drama).
+has_2_genre(movie2334).
 has_genre(movie2334, action).
 has_genre(movie2334, thriller).
+has_1_genre(movie2335).
 has_genre(movie2335, comedy).
+has_1_genre(movie2336).
 has_genre(movie2336, drama).
+has_1_genre(movie2337).
 has_genre(movie2337, drama).
+has_3_genre(movie2338).
 has_genre(movie2338, horror).
 has_genre(movie2338, mystery).
 has_genre(movie2338, thriller).
+has_2_genre(movie2339).
 has_genre(movie2339, comedy).
 has_genre(movie2339, romance).
+has_1_genre(movie2340).
 has_genre(movie2340, romance).
+has_2_genre(movie2342).
 has_genre(movie2342, comedy).
 has_genre(movie2342, drama).
+has_4_genre(movie2344).
 has_genre(movie2344, action).
 has_genre(movie2344, adventure).
 has_genre(movie2344, drama).
 has_genre(movie2344, thriller).
+has_3_genre(movie2346).
 has_genre(movie2346, mystery).
 has_genre(movie2346, sci-fi).
 has_genre(movie2346, thriller).
+has_1_genre(movie2347).
 has_genre(movie2347, drama).
+has_1_genre(movie2348).
 has_genre(movie2348, drama).
+has_2_genre(movie2349).
 has_genre(movie2349, comedy).
 has_genre(movie2349, thriller).
+has_1_genre(movie2350).
 has_genre(movie2350, comedy).
+has_1_genre(movie2351).
 has_genre(movie2351, drama).
+has_2_genre(movie2352).
 has_genre(movie2352, comedy).
 has_genre(movie2352, drama).
+has_2_genre(movie2353).
 has_genre(movie2353, action).
 has_genre(movie2353, thriller).
+has_3_genre(movie2354).
 has_genre(movie2354, animation).
 has_genre(movie2354, children).
 has_genre(movie2354, comedy).
+has_4_genre(movie2355).
 has_genre(movie2355, adventure).
 has_genre(movie2355, animation).
 has_genre(movie2355, children).
 has_genre(movie2355, comedy).
+has_1_genre(movie2356).
 has_genre(movie2356, comedy).
+has_1_genre(movie2357).
 has_genre(movie2357, drama).
+has_2_genre(movie2358).
 has_genre(movie2358, drama).
 has_genre(movie2358, war).
+has_1_genre(movie2359).
 has_genre(movie2359, comedy).
+has_1_genre(movie2360).
 has_genre(movie2360, drama).
+has_1_genre(movie2361).
 has_genre(movie2361, comedy).
+has_1_genre(movie2362).
 has_genre(movie2362, drama).
+has_3_genre(movie2363).
 has_genre(movie2363, drama).
 has_genre(movie2363, horror).
 has_genre(movie2363, sci-fi).
+has_4_genre(movie2364).
 has_genre(movie2364, action).
 has_genre(movie2364, horror).
 has_genre(movie2364, sci-fi).
 has_genre(movie2364, thriller).
+has_2_genre(movie2365).
 has_genre(movie2365, action).
 has_genre(movie2365, sci-fi).
+has_4_genre(movie2366).
 has_genre(movie2366, action).
 has_genre(movie2366, adventure).
 has_genre(movie2366, fantasy).
 has_genre(movie2366, horror).
+has_5_genre(movie2367).
 has_genre(movie2367, adventure).
 has_genre(movie2367, fantasy).
 has_genre(movie2367, romance).
 has_genre(movie2367, sci-fi).
 has_genre(movie2367, thriller).
+has_2_genre(movie2368).
 has_genre(movie2368, adventure).
 has_genre(movie2368, sci-fi).
+has_3_genre(movie2369).
 has_genre(movie2369, comedy).
 has_genre(movie2369, drama).
 has_genre(movie2369, romance).
+has_3_genre(movie2370).
 has_genre(movie2370, action).
 has_genre(movie2370, adventure).
 has_genre(movie2370, drama).
+has_3_genre(movie2371).
 has_genre(movie2371, comedy).
 has_genre(movie2371, crime).
 has_genre(movie2371, mystery).
+has_1_genre(movie2372).
 has_genre(movie2372, comedy).
+has_3_genre(movie2373).
 has_genre(movie2373, action).
 has_genre(movie2373, adventure).
 has_genre(movie2373, fantasy).
+has_2_genre(movie2374).
 has_genre(movie2374, comedy).
 has_genre(movie2374, drama).
+has_1_genre(movie2375).
 has_genre(movie2375, comedy).
+has_3_genre(movie2376).
 has_genre(movie2376, action).
 has_genre(movie2376, adventure).
 has_genre(movie2376, thriller).
+has_2_genre(movie2377).
 has_genre(movie2377, horror).
 has_genre(movie2377, sci-fi).
+has_2_genre(movie2378).
 has_genre(movie2378, comedy).
 has_genre(movie2378, crime).
+has_2_genre(movie2379).
 has_genre(movie2379, comedy).
 has_genre(movie2379, crime).
+has_2_genre(movie2380).
 has_genre(movie2380, comedy).
 has_genre(movie2380, crime).
+has_2_genre(movie2381).
 has_genre(movie2381, comedy).
 has_genre(movie2381, crime).
+has_2_genre(movie2382).
 has_genre(movie2382, comedy).
 has_genre(movie2382, crime).
+has_2_genre(movie2383).
 has_genre(movie2383, comedy).
 has_genre(movie2383, crime).
+has_3_genre(movie2384).
 has_genre(movie2384, adventure).
 has_genre(movie2384, children).
 has_genre(movie2384, drama).
+has_2_genre(movie2385).
 has_genre(movie2385, comedy).
 has_genre(movie2385, romance).
+has_2_genre(movie2387).
 has_genre(movie2387, comedy).
 has_genre(movie2387, crime).
+has_2_genre(movie2388).
 has_genre(movie2388, drama).
 has_genre(movie2388, romance).
+has_3_genre(movie2389).
 has_genre(movie2389, crime).
 has_genre(movie2389, horror).
 has_genre(movie2389, thriller).
+has_1_genre(movie2390).
 has_genre(movie2390, comedy).
+has_3_genre(movie2391).
 has_genre(movie2391, crime).
 has_genre(movie2391, drama).
 has_genre(movie2391, thriller).
+has_3_genre(movie2392).
 has_genre(movie2392, children).
 has_genre(movie2392, comedy).
 has_genre(movie2392, drama).
+has_4_genre(movie2393).
 has_genre(movie2393, action).
 has_genre(movie2393, drama).
 has_genre(movie2393, romance).
 has_genre(movie2393, sci-fi).
+has_2_genre(movie2394).
 has_genre(movie2394, animation).
 has_genre(movie2394, musical).
+has_2_genre(movie2395).
 has_genre(movie2395, comedy).
 has_genre(movie2395, drama).
+has_3_genre(movie2396).
 has_genre(movie2396, comedy).
 has_genre(movie2396, drama).
 has_genre(movie2396, romance).
+has_2_genre(movie2398).
 has_genre(movie2398, comedy).
 has_genre(movie2398, drama).
+has_3_genre(movie2399).
 has_genre(movie2399, adventure).
 has_genre(movie2399, children).
 has_genre(movie2399, fantasy).
+has_3_genre(movie2400).
 has_genre(movie2400, children).
 has_genre(movie2400, drama).
 has_genre(movie2400, fantasy).
+has_1_genre(movie2401).
 has_genre(movie2401, western).
+has_3_genre(movie2402).
 has_genre(movie2402, action).
 has_genre(movie2402, adventure).
 has_genre(movie2402, thriller).
+has_4_genre(movie2403).
 has_genre(movie2403, action).
 has_genre(movie2403, adventure).
 has_genre(movie2403, drama).
 has_genre(movie2403, thriller).
+has_4_genre(movie2404).
 has_genre(movie2404, action).
 has_genre(movie2404, adventure).
 has_genre(movie2404, thriller).
 has_genre(movie2404, war).
+has_4_genre(movie2405).
 has_genre(movie2405, action).
 has_genre(movie2405, adventure).
 has_genre(movie2405, comedy).
 has_genre(movie2405, romance).
+has_4_genre(movie2406).
 has_genre(movie2406, action).
 has_genre(movie2406, adventure).
 has_genre(movie2406, comedy).
 has_genre(movie2406, romance).
+has_2_genre(movie2407).
 has_genre(movie2407, comedy).
 has_genre(movie2407, sci-fi).
+has_2_genre(movie2408).
 has_genre(movie2408, comedy).
 has_genre(movie2408, sci-fi).
+has_2_genre(movie2409).
 has_genre(movie2409, action).
 has_genre(movie2409, drama).
+has_2_genre(movie2410).
 has_genre(movie2410, action).
 has_genre(movie2410, drama).
+has_2_genre(movie2411).
 has_genre(movie2411, action).
 has_genre(movie2411, drama).
+has_2_genre(movie2412).
 has_genre(movie2412, action).
 has_genre(movie2412, drama).
+has_4_genre(movie2413).
 has_genre(movie2413, comedy).
 has_genre(movie2413, crime).
 has_genre(movie2413, mystery).
 has_genre(movie2413, thriller).
+has_more_than_5_genre(movie2414).
 has_genre(movie2414, action).
 has_genre(movie2414, adventure).
 has_genre(movie2414, children).
 has_genre(movie2414, fantasy).
 has_genre(movie2414, mystery).
 has_genre(movie2414, thriller).
+has_2_genre(movie2415).
 has_genre(movie2415, drama).
 has_genre(movie2415, romance).
+has_1_genre(movie2416).
 has_genre(movie2416, comedy).
+has_2_genre(movie2417).
 has_genre(movie2417, comedy).
 has_genre(movie2417, drama).
+has_1_genre(movie2418).
 has_genre(movie2418, comedy).
+has_2_genre(movie2419).
 has_genre(movie2419, drama).
 has_genre(movie2419, thriller).
+has_1_genre(movie2420).
 has_genre(movie2420, drama).
+has_3_genre(movie2421).
 has_genre(movie2421, action).
 has_genre(movie2421, adventure).
 has_genre(movie2421, drama).
+has_4_genre(movie2422).
 has_genre(movie2422, action).
 has_genre(movie2422, adventure).
 has_genre(movie2422, children).
 has_genre(movie2422, drama).
+has_1_genre(movie2423).
 has_genre(movie2423, comedy).
+has_2_genre(movie2424).
 has_genre(movie2424, comedy).
 has_genre(movie2424, romance).
+has_1_genre(movie2425).
 has_genre(movie2425, crime).
+has_3_genre(movie2427).
 has_genre(movie2427, action).
 has_genre(movie2427, drama).
 has_genre(movie2427, war).
+has_2_genre(movie2428).
 has_genre(movie2428, horror).
 has_genre(movie2428, sci-fi).
+has_5_genre(movie2429).
 has_genre(movie2429, action).
 has_genre(movie2429, adventure).
 has_genre(movie2429, drama).
 has_genre(movie2429, fantasy).
 has_genre(movie2429, thriller).
+has_3_genre(movie2430).
 has_genre(movie2430, adventure).
 has_genre(movie2430, children).
 has_genre(movie2430, drama).
+has_2_genre(movie2431).
 has_genre(movie2431, comedy).
 has_genre(movie2431, drama).
+has_1_genre(movie2432).
 has_genre(movie2432, drama).
+has_1_genre(movie2433).
 has_genre(movie2433, drama).
+has_1_genre(movie2435).
 has_genre(movie2435, drama).
+has_3_genre(movie2436).
 has_genre(movie2436, comedy).
 has_genre(movie2436, drama).
 has_genre(movie2436, war).
+has_1_genre(movie2439).
 has_genre(movie2439, drama).
+has_1_genre(movie2442).
 has_genre(movie2442, drama).
+has_2_genre(movie2443).
 has_genre(movie2443, drama).
 has_genre(movie2443, romance).
+has_1_genre(movie2445).
 has_genre(movie2445, drama).
+has_2_genre(movie2446).
 has_genre(movie2446, horror).
 has_genre(movie2446, thriller).
+has_2_genre(movie2447).
 has_genre(movie2447, comedy).
 has_genre(movie2447, drama).
+has_2_genre(movie2448).
 has_genre(movie2448, horror).
 has_genre(movie2448, sci-fi).
+has_3_genre(movie2450).
 has_genre(movie2450, adventure).
 has_genre(movie2450, comedy).
 has_genre(movie2450, sci-fi).
+has_1_genre(movie2451).
 has_genre(movie2451, horror).
+has_2_genre(movie2453).
 has_genre(movie2453, drama).
 has_genre(movie2453, fantasy).
+has_3_genre(movie2454).
 has_genre(movie2454, horror).
 has_genre(movie2454, mystery).
 has_genre(movie2454, sci-fi).
+has_4_genre(movie2455).
 has_genre(movie2455, drama).
 has_genre(movie2455, horror).
 has_genre(movie2455, sci-fi).
 has_genre(movie2455, thriller).
+has_2_genre(movie2456).
 has_genre(movie2456, horror).
 has_genre(movie2456, sci-fi).
+has_2_genre(movie2457).
 has_genre(movie2457, action).
 has_genre(movie2457, comedy).
+has_2_genre(movie2458).
 has_genre(movie2458, comedy).
 has_genre(movie2458, crime).
+has_1_genre(movie2459).
 has_genre(movie2459, horror).
+has_1_genre(movie2460).
 has_genre(movie2460, horror).
+has_1_genre(movie2462).
 has_genre(movie2462, horror).
+has_1_genre(movie2463).
 has_genre(movie2463, comedy).
+has_1_genre(movie2465).
 has_genre(movie2465, horror).
+has_4_genre(movie2467).
 has_genre(movie2467, crime).
 has_genre(movie2467, drama).
 has_genre(movie2467, mystery).
 has_genre(movie2467, thriller).
+has_4_genre(movie2468).
 has_genre(movie2468, action).
 has_genre(movie2468, comedy).
 has_genre(movie2468, romance).
 has_genre(movie2468, thriller).
+has_2_genre(movie2469).
 has_genre(movie2469, comedy).
 has_genre(movie2469, drama).
+has_2_genre(movie2470).
 has_genre(movie2470, adventure).
 has_genre(movie2470, comedy).
+has_3_genre(movie2471).
 has_genre(movie2471, action).
 has_genre(movie2471, adventure).
 has_genre(movie2471, comedy).
+has_1_genre(movie2472).
 has_genre(movie2472, comedy).
+has_1_genre(movie2473).
 has_genre(movie2473, comedy).
+has_1_genre(movie2474).
 has_genre(movie2474, drama).
+has_3_genre(movie2475).
 has_genre(movie2475, action).
 has_genre(movie2475, mystery).
 has_genre(movie2475, thriller).
+has_2_genre(movie2476).
 has_genre(movie2476, action).
 has_genre(movie2476, war).
+has_1_genre(movie2477).
 has_genre(movie2477, adventure).
+has_2_genre(movie2478).
 has_genre(movie2478, comedy).
 has_genre(movie2478, western).
+has_2_genre(movie2481).
 has_genre(movie2481, drama).
 has_genre(movie2481, romance).
+has_2_genre(movie2482).
 has_genre(movie2482, comedy).
 has_genre(movie2482, romance).
+has_3_genre(movie2483).
 has_genre(movie2483, adventure).
 has_genre(movie2483, comedy).
 has_genre(movie2483, thriller).
+has_2_genre(movie2485).
 has_genre(movie2485, comedy).
 has_genre(movie2485, romance).
+has_3_genre(movie2488).
 has_genre(movie2488, drama).
 has_genre(movie2488, horror).
 has_genre(movie2488, thriller).
+has_2_genre(movie2490).
 has_genre(movie2490, action).
 has_genre(movie2490, thriller).
+has_2_genre(movie2491).
 has_genre(movie2491, comedy).
 has_genre(movie2491, romance).
+has_2_genre(movie2492).
 has_genre(movie2492, comedy).
 has_genre(movie2492, romance).
+has_1_genre(movie2493).
 has_genre(movie2493, drama).
+has_1_genre(movie2494).
 has_genre(movie2494, documentary).
+has_2_genre(movie2495).
 has_genre(movie2495, animation).
 has_genre(movie2495, sci-fi).
+has_2_genre(movie2496).
 has_genre(movie2496, comedy).
 has_genre(movie2496, romance).
+has_1_genre(movie2497).
 has_genre(movie2497, romance).
+has_2_genre(movie2498).
 has_genre(movie2498, comedy).
 has_genre(movie2498, sci-fi).
+has_1_genre(movie2500).
 has_genre(movie2500, comedy).
+has_1_genre(movie2501).
 has_genre(movie2501, drama).
+has_2_genre(movie2502).
 has_genre(movie2502, comedy).
 has_genre(movie2502, crime).
+has_1_genre(movie2503).
 has_genre(movie2503, drama).
+has_2_genre(movie2504).
 has_genre(movie2504, comedy).
 has_genre(movie2504, drama).
+has_3_genre(movie2505).
 has_genre(movie2505, drama).
 has_genre(movie2505, mystery).
 has_genre(movie2505, thriller).
+has_3_genre(movie2506).
 has_genre(movie2506, comedy).
 has_genre(movie2506, drama).
 has_genre(movie2506, romance).
+has_2_genre(movie2511).
 has_genre(movie2511, crime).
 has_genre(movie2511, film-noir).
+has_1_genre(movie2512).
 has_genre(movie2512, drama).
+has_1_genre(movie2513).
 has_genre(movie2513, horror).
+has_2_genre(movie2514).
 has_genre(movie2514, comedy).
 has_genre(movie2514, horror).
+has_1_genre(movie2515).
 has_genre(movie2515, horror).
+has_1_genre(movie2516).
 has_genre(movie2516, horror).
+has_1_genre(movie2517).
 has_genre(movie2517, horror).
+has_1_genre(movie2518).
 has_genre(movie2518, comedy).
+has_1_genre(movie2520).
 has_genre(movie2520, drama).
+has_3_genre(movie2521).
 has_genre(movie2521, action).
 has_genre(movie2521, drama).
 has_genre(movie2521, thriller).
+has_1_genre(movie2522).
 has_genre(movie2522, drama).
+has_2_genre(movie2523).
 has_genre(movie2523, drama).
 has_genre(movie2523, thriller).
+has_4_genre(movie2524).
 has_genre(movie2524, action).
 has_genre(movie2524, adventure).
 has_genre(movie2524, drama).
 has_genre(movie2524, thriller).
+has_3_genre(movie2525).
 has_genre(movie2525, action).
 has_genre(movie2525, horror).
 has_genre(movie2525, sci-fi).
+has_1_genre(movie2526).
 has_genre(movie2526, sci-fi).
+has_4_genre(movie2527).
 has_genre(movie2527, action).
 has_genre(movie2527, sci-fi).
 has_genre(movie2527, thriller).
 has_genre(movie2527, western).
+has_3_genre(movie2528).
 has_genre(movie2528, action).
 has_genre(movie2528, adventure).
 has_genre(movie2528, sci-fi).
+has_3_genre(movie2529).
 has_genre(movie2529, action).
 has_genre(movie2529, drama).
 has_genre(movie2529, sci-fi).
+has_2_genre(movie2530).
 has_genre(movie2530, action).
 has_genre(movie2530, sci-fi).
+has_2_genre(movie2531).
 has_genre(movie2531, action).
 has_genre(movie2531, sci-fi).
+has_2_genre(movie2532).
 has_genre(movie2532, action).
 has_genre(movie2532, sci-fi).
+has_2_genre(movie2533).
 has_genre(movie2533, action).
 has_genre(movie2533, sci-fi).
+has_1_genre(movie2534).
 has_genre(movie2534, action).
+has_3_genre(movie2535).
 has_genre(movie2535, action).
 has_genre(movie2535, drama).
 has_genre(movie2535, thriller).
+has_1_genre(movie2537).
 has_genre(movie2537, adventure).
+has_1_genre(movie2538).
 has_genre(movie2538, documentary).
+has_1_genre(movie2539).
 has_genre(movie2539, comedy).
+has_4_genre(movie2540).
 has_genre(movie2540, action).
 has_genre(movie2540, crime).
 has_genre(movie2540, drama).
 has_genre(movie2540, thriller).
+has_1_genre(movie2541).
 has_genre(movie2541, drama).
+has_3_genre(movie2542).
 has_genre(movie2542, comedy).
 has_genre(movie2542, crime).
 has_genre(movie2542, thriller).
+has_2_genre(movie2544).
 has_genre(movie2544, drama).
 has_genre(movie2544, romance).
+has_1_genre(movie2546).
 has_genre(movie2546, drama).
+has_1_genre(movie2548).
 has_genre(movie2548, horror).
+has_2_genre(movie2549).
 has_genre(movie2549, action).
 has_genre(movie2549, sci-fi).
+has_2_genre(movie2550).
 has_genre(movie2550, horror).
 has_genre(movie2550, thriller).
+has_3_genre(movie2551).
 has_genre(movie2551, drama).
 has_genre(movie2551, horror).
 has_genre(movie2551, thriller).
+has_1_genre(movie2552).
 has_genre(movie2552, comedy).
+has_3_genre(movie2553).
 has_genre(movie2553, horror).
 has_genre(movie2553, sci-fi).
 has_genre(movie2553, thriller).
+has_3_genre(movie2554).
 has_genre(movie2554, horror).
 has_genre(movie2554, sci-fi).
 has_genre(movie2554, thriller).
+has_1_genre(movie2555).
 has_genre(movie2555, comedy).
+has_2_genre(movie2557).
 has_genre(movie2557, drama).
 has_genre(movie2557, thriller).
+has_2_genre(movie2558).
 has_genre(movie2558, comedy).
 has_genre(movie2558, romance).
+has_2_genre(movie2559).
 has_genre(movie2559, animation).
 has_genre(movie2559, children).
+has_2_genre(movie2560).
 has_genre(movie2560, horror).
 has_genre(movie2560, thriller).
+has_2_genre(movie2561).
 has_genre(movie2561, crime).
 has_genre(movie2561, thriller).
+has_1_genre(movie2563).
 has_genre(movie2563, drama).
+has_3_genre(movie2565).
 has_genre(movie2565, drama).
 has_genre(movie2565, musical).
 has_genre(movie2565, romance).
+has_2_genre(movie2566).
 has_genre(movie2566, animation).
 has_genre(movie2566, children).
+has_1_genre(movie2567).
 has_genre(movie2567, comedy).
+has_2_genre(movie2568).
 has_genre(movie2568, action).
 has_genre(movie2568, crime).
+has_2_genre(movie2570).
 has_genre(movie2570, drama).
 has_genre(movie2570, romance).
+has_3_genre(movie2571).
 has_genre(movie2571, action).
 has_genre(movie2571, sci-fi).
 has_genre(movie2571, thriller).
+has_2_genre(movie2572).
 has_genre(movie2572, comedy).
 has_genre(movie2572, romance).
+has_2_genre(movie2573).
 has_genre(movie2573, drama).
 has_genre(movie2573, musical).
+has_1_genre(movie2574).
 has_genre(movie2574, comedy).
+has_1_genre(movie2575).
 has_genre(movie2575, drama).
+has_2_genre(movie2577).
 has_genre(movie2577, comedy).
 has_genre(movie2577, drama).
+has_3_genre(movie2579).
 has_genre(movie2579, crime).
 has_genre(movie2579, mystery).
 has_genre(movie2579, thriller).
+has_2_genre(movie2580).
 has_genre(movie2580, comedy).
 has_genre(movie2580, crime).
+has_2_genre(movie2581).
 has_genre(movie2581, comedy).
 has_genre(movie2581, romance).
+has_2_genre(movie2582).
 has_genre(movie2582, action).
 has_genre(movie2582, comedy).
+has_2_genre(movie2583).
 has_genre(movie2583, comedy).
 has_genre(movie2583, drama).
+has_2_genre(movie2585).
 has_genre(movie2585, drama).
 has_genre(movie2585, romance).
+has_3_genre(movie2586).
 has_genre(movie2586, comedy).
 has_genre(movie2586, crime).
 has_genre(movie2586, thriller).
+has_3_genre(movie2587).
 has_genre(movie2587, comedy).
 has_genre(movie2587, crime).
 has_genre(movie2587, drama).
+has_3_genre(movie2589).
 has_genre(movie2589, comedy).
 has_genre(movie2589, drama).
 has_genre(movie2589, romance).
+has_1_genre(movie2590).
 has_genre(movie2590, drama).
+has_1_genre(movie2593).
 has_genre(movie2593, comedy).
+has_4_genre(movie2594).
 has_genre(movie2594, drama).
 has_genre(movie2594, romance).
 has_genre(movie2594, sci-fi).
 has_genre(movie2594, thriller).
+has_2_genre(movie2596).
 has_genre(movie2596, comedy).
 has_genre(movie2596, drama).
+has_2_genre(movie2597).
 has_genre(movie2597, comedy).
 has_genre(movie2597, romance).
+has_1_genre(movie2598).
 has_genre(movie2598, comedy).
+has_1_genre(movie2599).
 has_genre(movie2599, comedy).
+has_3_genre(movie2600).
 has_genre(movie2600, action).
 has_genre(movie2600, sci-fi).
 has_genre(movie2600, thriller).
+has_2_genre(movie2605).
 has_genre(movie2605, crime).
 has_genre(movie2605, thriller).
+has_2_genre(movie2606).
 has_genre(movie2606, comedy).
 has_genre(movie2606, horror).
+has_2_genre(movie2607).
 has_genre(movie2607, drama).
 has_genre(movie2607, romance).
+has_1_genre(movie2609).
 has_genre(movie2609, drama).
+has_1_genre(movie2611).
 has_genre(movie2611, drama).
+has_2_genre(movie2612).
 has_genre(movie2612, drama).
 has_genre(movie2612, film-noir).
+has_3_genre(movie2613).
 has_genre(movie2613, comedy).
 has_genre(movie2613, horror).
 has_genre(movie2613, sci-fi).
+has_3_genre(movie2614).
 has_genre(movie2614, action).
 has_genre(movie2614, horror).
 has_genre(movie2614, sci-fi).
+has_2_genre(movie2615).
 has_genre(movie2615, adventure).
 has_genre(movie2615, sci-fi).
+has_2_genre(movie2616).
 has_genre(movie2616, action).
 has_genre(movie2616, crime).
+has_more_than_5_genre(movie2617).
 has_genre(movie2617, action).
 has_genre(movie2617, adventure).
 has_genre(movie2617, comedy).
 has_genre(movie2617, fantasy).
 has_genre(movie2617, horror).
 has_genre(movie2617, thriller).
+has_1_genre(movie2618).
 has_genre(movie2618, comedy).
+has_2_genre(movie2620).
 has_genre(movie2620, drama).
 has_genre(movie2620, romance).
+has_2_genre(movie2622).
 has_genre(movie2622, comedy).
 has_genre(movie2622, fantasy).
+has_1_genre(movie2623).
 has_genre(movie2623, comedy).
+has_2_genre(movie2624).
 has_genre(movie2624, drama).
 has_genre(movie2624, fantasy).
+has_5_genre(movie2625).
 has_genre(movie2625, action).
 has_genre(movie2625, adventure).
 has_genre(movie2625, crime).
 has_genre(movie2625, sci-fi).
 has_genre(movie2625, thriller).
+has_3_genre(movie2628).
 has_genre(movie2628, action).
 has_genre(movie2628, adventure).
 has_genre(movie2628, sci-fi).
+has_2_genre(movie2629).
 has_genre(movie2629, comedy).
 has_genre(movie2629, romance).
+has_1_genre(movie2630).
 has_genre(movie2630, drama).
+has_3_genre(movie2632).
 has_genre(movie2632, adventure).
 has_genre(movie2632, drama).
 has_genre(movie2632, mystery).
+has_2_genre(movie2633).
 has_genre(movie2633, horror).
 has_genre(movie2633, romance).
+has_1_genre(movie2634).
 has_genre(movie2634, horror).
+has_1_genre(movie2639).
 has_genre(movie2639, drama).
+has_3_genre(movie2640).
 has_genre(movie2640, action).
 has_genre(movie2640, adventure).
 has_genre(movie2640, sci-fi).
+has_2_genre(movie2641).
 has_genre(movie2641, action).
 has_genre(movie2641, sci-fi).
+has_3_genre(movie2642).
 has_genre(movie2642, action).
 has_genre(movie2642, adventure).
 has_genre(movie2642, sci-fi).
+has_3_genre(movie2643).
 has_genre(movie2643, action).
 has_genre(movie2643, adventure).
 has_genre(movie2643, sci-fi).
+has_1_genre(movie2644).
 has_genre(movie2644, horror).
+has_3_genre(movie2648).
 has_genre(movie2648, drama).
 has_genre(movie2648, horror).
 has_genre(movie2648, sci-fi).
+has_1_genre(movie2651).
 has_genre(movie2651, horror).
+has_1_genre(movie2652).
 has_genre(movie2652, horror).
+has_3_genre(movie2654).
 has_genre(movie2654, drama).
 has_genre(movie2654, fantasy).
 has_genre(movie2654, horror).
+has_1_genre(movie2655).
 has_genre(movie2655, horror).
+has_2_genre(movie2656).
 has_genre(movie2656, horror).
 has_genre(movie2656, sci-fi).
+has_4_genre(movie2657).
 has_genre(movie2657, comedy).
 has_genre(movie2657, horror).
 has_genre(movie2657, musical).
 has_genre(movie2657, sci-fi).
+has_2_genre(movie2659).
 has_genre(movie2659, comedy).
 has_genre(movie2659, documentary).
+has_2_genre(movie2660).
 has_genre(movie2660, horror).
 has_genre(movie2660, sci-fi).
+has_1_genre(movie2661).
 has_genre(movie2661, sci-fi).
+has_3_genre(movie2662).
 has_genre(movie2662, action).
 has_genre(movie2662, drama).
 has_genre(movie2662, sci-fi).
+has_3_genre(movie2664).
 has_genre(movie2664, horror).
 has_genre(movie2664, sci-fi).
 has_genre(movie2664, thriller).
+has_1_genre(movie2665).
 has_genre(movie2665, sci-fi).
+has_2_genre(movie2668).
 has_genre(movie2668, horror).
 has_genre(movie2668, sci-fi).
+has_1_genre(movie2669).
 has_genre(movie2669, war).
+has_1_genre(movie2670).
 has_genre(movie2670, war).
+has_2_genre(movie2671).
 has_genre(movie2671, comedy).
 has_genre(movie2671, romance).
+has_3_genre(movie2672).
 has_genre(movie2672, drama).
 has_genre(movie2672, sci-fi).
 has_genre(movie2672, thriller).
+has_2_genre(movie2674).
 has_genre(movie2674, drama).
 has_genre(movie2674, fantasy).
+has_2_genre(movie2676).
 has_genre(movie2676, drama).
 has_genre(movie2676, thriller).
+has_2_genre(movie2677).
 has_genre(movie2677, documentary).
 has_genre(movie2677, musical).
+has_3_genre(movie2681).
 has_genre(movie2681, comedy).
 has_genre(movie2681, romance).
 has_genre(movie2681, sci-fi).
+has_1_genre(movie2682).
 has_genre(movie2682, drama).
+has_3_genre(movie2683).
 has_genre(movie2683, action).
 has_genre(movie2683, adventure).
 has_genre(movie2683, comedy).
+has_2_genre(movie2686).
 has_genre(movie2686, drama).
 has_genre(movie2686, mystery).
+has_4_genre(movie2687).
 has_genre(movie2687, adventure).
 has_genre(movie2687, animation).
 has_genre(movie2687, children).
 has_genre(movie2687, drama).
+has_4_genre(movie2688).
 has_genre(movie2688, crime).
 has_genre(movie2688, drama).
 has_genre(movie2688, mystery).
 has_genre(movie2688, thriller).
+has_2_genre(movie2690).
 has_genre(movie2690, comedy).
 has_genre(movie2690, romance).
+has_1_genre(movie2691).
 has_genre(movie2691, drama).
+has_2_genre(movie2692).
 has_genre(movie2692, action).
 has_genre(movie2692, crime).
+has_1_genre(movie2693).
 has_genre(movie2693, documentary).
+has_1_genre(movie2694).
 has_genre(movie2694, comedy).
+has_1_genre(movie2695).
 has_genre(movie2695, drama).
+has_1_genre(movie2696).
 has_genre(movie2696, comedy).
+has_3_genre(movie2697).
 has_genre(movie2697, comedy).
 has_genre(movie2697, drama).
 has_genre(movie2697, romance).
+has_1_genre(movie2698).
 has_genre(movie2698, sci-fi).
+has_2_genre(movie2699).
 has_genre(movie2699, comedy).
 has_genre(movie2699, horror).
+has_3_genre(movie2700).
 has_genre(movie2700, animation).
 has_genre(movie2700, comedy).
 has_genre(movie2700, musical).
+has_4_genre(movie2701).
 has_genre(movie2701, action).
 has_genre(movie2701, comedy).
 has_genre(movie2701, sci-fi).
 has_genre(movie2701, western).
+has_1_genre(movie2702).
 has_genre(movie2702, drama).
+has_2_genre(movie2706).
 has_genre(movie2706, comedy).
 has_genre(movie2706, romance).
+has_1_genre(movie2707).
 has_genre(movie2707, thriller).
+has_1_genre(movie2708).
 has_genre(movie2708, romance).
+has_2_genre(movie2709).
 has_genre(movie2709, children).
 has_genre(movie2709, comedy).
+has_3_genre(movie2710).
 has_genre(movie2710, drama).
 has_genre(movie2710, horror).
 has_genre(movie2710, thriller).
+has_3_genre(movie2712).
 has_genre(movie2712, drama).
 has_genre(movie2712, mystery).
 has_genre(movie2712, thriller).
+has_2_genre(movie2713).
 has_genre(movie2713, horror).
 has_genre(movie2713, thriller).
+has_3_genre(movie2716).
 has_genre(movie2716, action).
 has_genre(movie2716, comedy).
 has_genre(movie2716, sci-fi).
+has_3_genre(movie2717).
 has_genre(movie2717, comedy).
 has_genre(movie2717, fantasy).
 has_genre(movie2717, sci-fi).
+has_1_genre(movie2718).
 has_genre(movie2718, comedy).
+has_2_genre(movie2719).
 has_genre(movie2719, horror).
 has_genre(movie2719, thriller).
+has_4_genre(movie2720).
 has_genre(movie2720, action).
 has_genre(movie2720, adventure).
 has_genre(movie2720, children).
 has_genre(movie2720, comedy).
+has_4_genre(movie2722).
 has_genre(movie2722, action).
 has_genre(movie2722, horror).
 has_genre(movie2722, sci-fi).
 has_genre(movie2722, thriller).
+has_3_genre(movie2723).
 has_genre(movie2723, action).
 has_genre(movie2723, comedy).
 has_genre(movie2723, fantasy).
+has_2_genre(movie2724).
 has_genre(movie2724, comedy).
 has_genre(movie2724, romance).
+has_1_genre(movie2725).
 has_genre(movie2725, drama).
+has_2_genre(movie2726).
 has_genre(movie2726, crime).
 has_genre(movie2726, film-noir).
+has_2_genre(movie2727).
 has_genre(movie2727, crime).
 has_genre(movie2727, film-noir).
+has_4_genre(movie2728).
 has_genre(movie2728, action).
 has_genre(movie2728, drama).
 has_genre(movie2728, romance).
 has_genre(movie2728, war).
+has_2_genre(movie2729).
 has_genre(movie2729, drama).
 has_genre(movie2729, romance).
+has_3_genre(movie2730).
 has_genre(movie2730, drama).
 has_genre(movie2730, romance).
 has_genre(movie2730, war).
+has_2_genre(movie2731).
 has_genre(movie2731, crime).
 has_genre(movie2731, drama).
+has_2_genre(movie2732).
 has_genre(movie2732, drama).
 has_genre(movie2732, romance).
+has_3_genre(movie2733).
 has_genre(movie2733, adventure).
 has_genre(movie2733, comedy).
 has_genre(movie2733, romance).
+has_3_genre(movie2734).
 has_genre(movie2734, adventure).
 has_genre(movie2734, drama).
 has_genre(movie2734, thriller).
+has_5_genre(movie2735).
 has_genre(movie2735, action).
 has_genre(movie2735, adventure).
 has_genre(movie2735, comedy).
 has_genre(movie2735, fantasy).
 has_genre(movie2735, mystery).
+has_1_genre(movie2736).
 has_genre(movie2736, comedy).
+has_3_genre(movie2737).
 has_genre(movie2737, action).
 has_genre(movie2737, drama).
 has_genre(movie2737, thriller).
+has_2_genre(movie2738).
 has_genre(movie2738, comedy).
 has_genre(movie2738, drama).
+has_1_genre(movie2739).
 has_genre(movie2739, drama).
+has_2_genre(movie2740).
 has_genre(movie2740, horror).
 has_genre(movie2740, sci-fi).
+has_3_genre(movie2741).
 has_genre(movie2741, action).
 has_genre(movie2741, crime).
 has_genre(movie2741, thriller).
+has_2_genre(movie2742).
 has_genre(movie2742, comedy).
 has_genre(movie2742, drama).
+has_1_genre(movie2743).
 has_genre(movie2743, drama).
+has_1_genre(movie2744).
 has_genre(movie2744, drama).
+has_1_genre(movie2745).
 has_genre(movie2745, drama).
+has_3_genre(movie2746).
 has_genre(movie2746, comedy).
 has_genre(movie2746, horror).
 has_genre(movie2746, musical).
+has_2_genre(movie2747).
 has_genre(movie2747, comedy).
 has_genre(movie2747, horror).
+has_3_genre(movie2748).
 has_genre(movie2748, action).
 has_genre(movie2748, adventure).
 has_genre(movie2748, comedy).
+has_2_genre(movie2749).
 has_genre(movie2749, drama).
 has_genre(movie2749, mystery).
+has_2_genre(movie2750).
 has_genre(movie2750, comedy).
 has_genre(movie2750, drama).
+has_2_genre(movie2751).
 has_genre(movie2751, comedy).
 has_genre(movie2751, drama).
+has_2_genre(movie2752).
 has_genre(movie2752, comedy).
 has_genre(movie2752, mystery).
+has_1_genre(movie2754).
 has_genre(movie2754, horror).
+has_1_genre(movie2757).
 has_genre(movie2757, drama).
+has_1_genre(movie2759).
 has_genre(movie2759, comedy).
+has_5_genre(movie2761).
 has_genre(movie2761, adventure).
 has_genre(movie2761, animation).
 has_genre(movie2761, children).
 has_genre(movie2761, drama).
 has_genre(movie2761, sci-fi).
+has_3_genre(movie2762).
 has_genre(movie2762, drama).
 has_genre(movie2762, horror).
 has_genre(movie2762, mystery).
+has_2_genre(movie2763).
 has_genre(movie2763, action).
 has_genre(movie2763, mystery).
+has_4_genre(movie2764).
 has_genre(movie2764, crime).
 has_genre(movie2764, drama).
 has_genre(movie2764, romance).
 has_genre(movie2764, thriller).
+has_2_genre(movie2765).
 has_genre(movie2765, comedy).
 has_genre(movie2765, drama).
+has_2_genre(movie2766).
 has_genre(movie2766, comedy).
 has_genre(movie2766, drama).
+has_2_genre(movie2769).
 has_genre(movie2769, crime).
 has_genre(movie2769, drama).
+has_1_genre(movie2770).
 has_genre(movie2770, comedy).
+has_1_genre(movie2771).
 has_genre(movie2771, drama).
+has_1_genre(movie2772).
 has_genre(movie2772, comedy).
+has_2_genre(movie2774).
 has_genre(movie2774, comedy).
 has_genre(movie2774, romance).
+has_1_genre(movie2775).
 has_genre(movie2775, drama).
+has_1_genre(movie2779).
 has_genre(movie2779, comedy).
+has_1_genre(movie2782).
 has_genre(movie2782, horror).
+has_1_genre(movie2784).
 has_genre(movie2784, horror).
+has_1_genre(movie2786).
 has_genre(movie2786, comedy).
+has_1_genre(movie2787).
 has_genre(movie2787, horror).
+has_1_genre(movie2788).
 has_genre(movie2788, comedy).
+has_1_genre(movie2789).
 has_genre(movie2789, horror).
+has_2_genre(movie2790).
 has_genre(movie2790, horror).
 has_genre(movie2790, thriller).
+has_1_genre(movie2791).
 has_genre(movie2791, comedy).
+has_1_genre(movie2792).
 has_genre(movie2792, comedy).
+has_4_genre(movie2793).
 has_genre(movie2793, comedy).
 has_genre(movie2793, horror).
 has_genre(movie2793, romance).
 has_genre(movie2793, thriller).
+has_3_genre(movie2794).
 has_genre(movie2794, adventure).
 has_genre(movie2794, comedy).
 has_genre(movie2794, romance).
+has_1_genre(movie2795).
 has_genre(movie2795, comedy).
+has_1_genre(movie2796).
 has_genre(movie2796, comedy).
+has_4_genre(movie2797).
 has_genre(movie2797, comedy).
 has_genre(movie2797, drama).
 has_genre(movie2797, fantasy).
 has_genre(movie2797, romance).
+has_2_genre(movie2798).
 has_genre(movie2798, children).
 has_genre(movie2798, comedy).
+has_1_genre(movie2799).
 has_genre(movie2799, comedy).
+has_5_genre(movie2800).
 has_genre(movie2800, adventure).
 has_genre(movie2800, animation).
 has_genre(movie2800, children).
 has_genre(movie2800, drama).
 has_genre(movie2800, fantasy).
+has_2_genre(movie2801).
 has_genre(movie2801, drama).
 has_genre(movie2801, romance).
+has_4_genre(movie2802).
 has_genre(movie2802, action).
 has_genre(movie2802, drama).
 has_genre(movie2802, romance).
 has_genre(movie2802, thriller).
+has_5_genre(movie2803).
 has_genre(movie2803, crime).
 has_genre(movie2803, drama).
 has_genre(movie2803, mystery).
 has_genre(movie2803, romance).
 has_genre(movie2803, thriller).
+has_2_genre(movie2804).
 has_genre(movie2804, children).
 has_genre(movie2804, comedy).
+has_2_genre(movie2805).
 has_genre(movie2805, comedy).
 has_genre(movie2805, romance).
+has_2_genre(movie2806).
 has_genre(movie2806, comedy).
 has_genre(movie2806, thriller).
+has_2_genre(movie2807).
 has_genre(movie2807, action).
 has_genre(movie2807, sci-fi).
+has_2_genre(movie2808).
 has_genre(movie2808, action).
 has_genre(movie2808, sci-fi).
+has_4_genre(movie2810).
 has_genre(movie2810, animation).
 has_genre(movie2810, horror).
 has_genre(movie2810, mystery).
 has_genre(movie2810, thriller).
+has_2_genre(movie2812).
 has_genre(movie2812, action).
 has_genre(movie2812, thriller).
+has_1_genre(movie2813).
 has_genre(movie2813, documentary).
+has_2_genre(movie2815).
 has_genre(movie2815, action).
 has_genre(movie2815, war).
+has_2_genre(movie2816).
 has_genre(movie2816, action).
 has_genre(movie2816, war).
+has_1_genre(movie2817).
 has_genre(movie2817, action).
+has_2_genre(movie2818).
 has_genre(movie2818, action).
 has_genre(movie2818, war).
+has_4_genre(movie2819).
 has_genre(movie2819, drama).
 has_genre(movie2819, mystery).
 has_genre(movie2819, romance).
 has_genre(movie2819, thriller).
+has_1_genre(movie2820).
 has_genre(movie2820, drama).
+has_2_genre(movie2822).
 has_genre(movie2822, adventure).
 has_genre(movie2822, romance).
+has_2_genre(movie2824).
 has_genre(movie2824, documentary).
 has_genre(movie2824, drama).
+has_3_genre(movie2826).
 has_genre(movie2826, action).
 has_genre(movie2826, adventure).
 has_genre(movie2826, fantasy).
+has_3_genre(movie2827).
 has_genre(movie2827, horror).
 has_genre(movie2827, sci-fi).
 has_genre(movie2827, thriller).
+has_2_genre(movie2828).
 has_genre(movie2828, children).
 has_genre(movie2828, comedy).
+has_1_genre(movie2829).
 has_genre(movie2829, comedy).
+has_4_genre(movie2835).
 has_genre(movie2835, action).
 has_genre(movie2835, adventure).
 has_genre(movie2835, comedy).
 has_genre(movie2835, thriller).
+has_1_genre(movie2836).
 has_genre(movie2836, comedy).
+has_2_genre(movie2837).
 has_genre(movie2837, comedy).
 has_genre(movie2837, romance).
+has_1_genre(movie2839).
 has_genre(movie2839, drama).
+has_2_genre(movie2840).
 has_genre(movie2840, drama).
 has_genre(movie2840, thriller).
+has_3_genre(movie2841).
 has_genre(movie2841, horror).
 has_genre(movie2841, mystery).
 has_genre(movie2841, thriller).
+has_2_genre(movie2843).
 has_genre(movie2843, comedy).
 has_genre(movie2843, romance).
+has_2_genre(movie2844).
 has_genre(movie2844, drama).
 has_genre(movie2844, mystery).
+has_4_genre(movie2846).
 has_genre(movie2846, adventure).
 has_genre(movie2846, children).
 has_genre(movie2846, comedy).
 has_genre(movie2846, drama).
+has_3_genre(movie2847).
 has_genre(movie2847, adventure).
 has_genre(movie2847, drama).
 has_genre(movie2847, romance).
+has_1_genre(movie2848).
 has_genre(movie2848, drama).
+has_3_genre(movie2851).
 has_genre(movie2851, adventure).
 has_genre(movie2851, sci-fi).
 has_genre(movie2851, thriller).
+has_1_genre(movie2852).
 has_genre(movie2852, drama).
+has_1_genre(movie2856).
 has_genre(movie2856, thriller).
+has_5_genre(movie2857).
 has_genre(movie2857, adventure).
 has_genre(movie2857, animation).
 has_genre(movie2857, comedy).
 has_genre(movie2857, fantasy).
 has_genre(movie2857, musical).
+has_2_genre(movie2858).
 has_genre(movie2858, drama).
 has_genre(movie2858, romance).
+has_2_genre(movie2859).
 has_genre(movie2859, documentary).
 has_genre(movie2859, musical).
+has_1_genre(movie2860).
 has_genre(movie2860, comedy).
+has_2_genre(movie2861).
 has_genre(movie2861, comedy).
 has_genre(movie2861, drama).
+has_1_genre(movie2862).
 has_genre(movie2862, drama).
+has_3_genre(movie2863).
 has_genre(movie2863, adventure).
 has_genre(movie2863, comedy).
 has_genre(movie2863, musical).
+has_1_genre(movie2865).
 has_genre(movie2865, comedy).
+has_1_genre(movie2866).
 has_genre(movie2866, drama).
+has_3_genre(movie2867).
 has_genre(movie2867, comedy).
 has_genre(movie2867, horror).
 has_genre(movie2867, thriller).
+has_1_genre(movie2868).
 has_genre(movie2868, horror).
+has_1_genre(movie2870).
 has_genre(movie2870, comedy).
+has_3_genre(movie2871).
 has_genre(movie2871, adventure).
 has_genre(movie2871, drama).
 has_genre(movie2871, thriller).
+has_2_genre(movie2872).
 has_genre(movie2872, adventure).
 has_genre(movie2872, fantasy).
+has_3_genre(movie2874).
 has_genre(movie2874, comedy).
 has_genre(movie2874, musical).
 has_genre(movie2874, romance).
+has_3_genre(movie2875).
 has_genre(movie2875, drama).
 has_genre(movie2875, mystery).
 has_genre(movie2875, romance).
+has_3_genre(movie2876).
 has_genre(movie2876, animation).
 has_genre(movie2876, children).
 has_genre(movie2876, fantasy).
+has_1_genre(movie2877).
 has_genre(movie2877, musical).
+has_1_genre(movie2878).
 has_genre(movie2878, horror).
+has_3_genre(movie2879).
 has_genre(movie2879, action).
 has_genre(movie2879, adventure).
 has_genre(movie2879, comedy).
+has_3_genre(movie2880).
 has_genre(movie2880, action).
 has_genre(movie2880, adventure).
 has_genre(movie2880, comedy).
+has_4_genre(movie2881).
 has_genre(movie2881, action).
 has_genre(movie2881, crime).
 has_genre(movie2881, drama).
 has_genre(movie2881, thriller).
+has_1_genre(movie2882).
 has_genre(movie2882, drama).
+has_2_genre(movie2883).
 has_genre(movie2883, comedy).
 has_genre(movie2883, drama).
+has_2_genre(movie2884).
 has_genre(movie2884, comedy).
 has_genre(movie2884, romance).
+has_2_genre(movie2885).
 has_genre(movie2885, drama).
 has_genre(movie2885, romance).
+has_2_genre(movie2886).
 has_genre(movie2886, children).
 has_genre(movie2886, comedy).
+has_2_genre(movie2887).
 has_genre(movie2887, action).
 has_genre(movie2887, comedy).
+has_2_genre(movie2888).
 has_genre(movie2888, comedy).
 has_genre(movie2888, romance).
+has_2_genre(movie2889).
 has_genre(movie2889, comedy).
 has_genre(movie2889, drama).
+has_5_genre(movie2890).
 has_genre(movie2890, action).
 has_genre(movie2890, adventure).
 has_genre(movie2890, comedy).
 has_genre(movie2890, drama).
 has_genre(movie2890, war).
+has_1_genre(movie2891).
 has_genre(movie2891, comedy).
+has_2_genre(movie2892).
 has_genre(movie2892, action).
 has_genre(movie2892, drama).
+has_3_genre(movie2893).
 has_genre(movie2893, action).
 has_genre(movie2893, adventure).
 has_genre(movie2893, drama).
+has_2_genre(movie2894).
 has_genre(movie2894, drama).
 has_genre(movie2894, romance).
+has_1_genre(movie2896).
 has_genre(movie2896, western).
+has_2_genre(movie2897).
 has_genre(movie2897, comedy).
 has_genre(movie2897, war).
+has_2_genre(movie2898).
 has_genre(movie2898, horror).
 has_genre(movie2898, mystery).
+has_3_genre(movie2899).
 has_genre(movie2899, adventure).
 has_genre(movie2899, animation).
 has_genre(movie2899, children).
+has_2_genre(movie2900).
 has_genre(movie2900, horror).
 has_genre(movie2900, sci-fi).
+has_2_genre(movie2901).
 has_genre(movie2901, horror).
 has_genre(movie2901, sci-fi).
+has_3_genre(movie2902).
 has_genre(movie2902, horror).
 has_genre(movie2902, mystery).
 has_genre(movie2902, thriller).
+has_2_genre(movie2903).
 has_genre(movie2903, horror).
 has_genre(movie2903, thriller).
+has_3_genre(movie2905).
 has_genre(movie2905, action).
 has_genre(movie2905, adventure).
 has_genre(movie2905, drama).
+has_2_genre(movie2906).
 has_genre(movie2906, drama).
 has_genre(movie2906, romance).
+has_1_genre(movie2907).
 has_genre(movie2907, comedy).
+has_1_genre(movie2908).
 has_genre(movie2908, drama).
+has_3_genre(movie2912).
 has_genre(movie2912, crime).
 has_genre(movie2912, drama).
 has_genre(movie2912, thriller).
+has_1_genre(movie2915).
 has_genre(movie2915, comedy).
+has_4_genre(movie2916).
 has_genre(movie2916, action).
 has_genre(movie2916, adventure).
 has_genre(movie2916, sci-fi).
 has_genre(movie2916, thriller).
+has_2_genre(movie2917).
 has_genre(movie2917, crime).
 has_genre(movie2917, thriller).
+has_1_genre(movie2918).
 has_genre(movie2918, comedy).
+has_3_genre(movie2919).
 has_genre(movie2919, drama).
 has_genre(movie2919, romance).
 has_genre(movie2919, war).
+has_1_genre(movie2921).
 has_genre(movie2921, western).
+has_3_genre(movie2922).
 has_genre(movie2922, crime).
 has_genre(movie2922, drama).
 has_genre(movie2922, western).
+has_2_genre(movie2924).
 has_genre(movie2924, action).
 has_genre(movie2924, comedy).
+has_1_genre(movie2925).
 has_genre(movie2925, drama).
+has_2_genre(movie2926).
 has_genre(movie2926, comedy).
 has_genre(movie2926, drama).
+has_2_genre(movie2927).
 has_genre(movie2927, drama).
 has_genre(movie2927, romance).
+has_1_genre(movie2928).
 has_genre(movie2928, drama).
+has_2_genre(movie2929).
 has_genre(movie2929, drama).
 has_genre(movie2929, romance).
+has_1_genre(movie2930).
 has_genre(movie2930, documentary).
+has_4_genre(movie2931).
 has_genre(movie2931, comedy).
 has_genre(movie2931, crime).
 has_genre(movie2931, drama).
 has_genre(movie2931, fantasy).
+has_1_genre(movie2932).
 has_genre(movie2932, drama).
+has_2_genre(movie2935).
 has_genre(movie2935, comedy).
 has_genre(movie2935, romance).
+has_3_genre(movie2936).
 has_genre(movie2936, adventure).
 has_genre(movie2936, comedy).
 has_genre(movie2936, romance).
+has_1_genre(movie2937).
 has_genre(movie2937, comedy).
+has_2_genre(movie2939).
 has_genre(movie2939, drama).
 has_genre(movie2939, thriller).
+has_4_genre(movie2940).
 has_genre(movie2940, drama).
 has_genre(movie2940, film-noir).
 has_genre(movie2940, mystery).
 has_genre(movie2940, romance).
+has_3_genre(movie2941).
 has_genre(movie2941, musical).
 has_genre(movie2941, romance).
 has_genre(movie2941, war).
+has_2_genre(movie2942).
 has_genre(movie2942, drama).
 has_genre(movie2942, romance).
+has_2_genre(movie2943).
 has_genre(movie2943, drama).
 has_genre(movie2943, romance).
+has_3_genre(movie2944).
 has_genre(movie2944, action).
 has_genre(movie2944, drama).
 has_genre(movie2944, war).
+has_2_genre(movie2946).
 has_genre(movie2946, comedy).
 has_genre(movie2946, musical).
+has_3_genre(movie2947).
 has_genre(movie2947, action).
 has_genre(movie2947, adventure).
 has_genre(movie2947, thriller).
+has_3_genre(movie2948).
 has_genre(movie2948, action).
 has_genre(movie2948, adventure).
 has_genre(movie2948, thriller).
+has_3_genre(movie2949).
 has_genre(movie2949, action).
 has_genre(movie2949, adventure).
 has_genre(movie2949, thriller).
+has_3_genre(movie2950).
 has_genre(movie2950, adventure).
 has_genre(movie2950, drama).
 has_genre(movie2950, romance).
+has_2_genre(movie2951).
 has_genre(movie2951, action).
 has_genre(movie2951, western).
+has_3_genre(movie2952).
 has_genre(movie2952, crime).
 has_genre(movie2952, drama).
 has_genre(movie2952, thriller).
+has_2_genre(movie2953).
 has_genre(movie2953, children).
 has_genre(movie2953, comedy).
+has_3_genre(movie2956).
 has_genre(movie2956, action).
 has_genre(movie2956, crime).
 has_genre(movie2956, thriller).
+has_4_genre(movie2959).
 has_genre(movie2959, action).
 has_genre(movie2959, crime).
 has_genre(movie2959, drama).
 has_genre(movie2959, thriller).
+has_2_genre(movie2961).
 has_genre(movie2961, comedy).
 has_genre(movie2961, drama).
+has_2_genre(movie2962).
 has_genre(movie2962, comedy).
 has_genre(movie2962, romance).
+has_1_genre(movie2964).
 has_genre(movie2964, drama).
+has_1_genre(movie2965).
 has_genre(movie2965, action).
+has_2_genre(movie2966).
 has_genre(movie2966, adventure).
 has_genre(movie2966, drama).
+has_2_genre(movie2967).
 has_genre(movie2967, drama).
 has_genre(movie2967, thriller).
+has_4_genre(movie2968).
 has_genre(movie2968, adventure).
 has_genre(movie2968, comedy).
 has_genre(movie2968, fantasy).
 has_genre(movie2968, sci-fi).
+has_2_genre(movie2969).
 has_genre(movie2969, drama).
 has_genre(movie2969, romance).
+has_2_genre(movie2970).
 has_genre(movie2970, adventure).
 has_genre(movie2970, drama).
+has_3_genre(movie2971).
 has_genre(movie2971, drama).
 has_genre(movie2971, fantasy).
 has_genre(movie2971, musical).
+has_2_genre(movie2972).
 has_genre(movie2972, drama).
 has_genre(movie2972, war).
+has_3_genre(movie2973).
 has_genre(movie2973, comedy).
 has_genre(movie2973, crime).
 has_genre(movie2973, drama).
+has_2_genre(movie2974).
 has_genre(movie2974, horror).
 has_genre(movie2974, thriller).
+has_2_genre(movie2975).
 has_genre(movie2975, comedy).
 has_genre(movie2975, drama).
+has_1_genre(movie2976).
 has_genre(movie2976, drama).
+has_2_genre(movie2977).
 has_genre(movie2977, comedy).
 has_genre(movie2977, drama).
+has_2_genre(movie2978).
 has_genre(movie2978, comedy).
 has_genre(movie2978, romance).
+has_1_genre(movie2979).
 has_genre(movie2979, drama).
+has_2_genre(movie2982).
 has_genre(movie2982, horror).
 has_genre(movie2982, thriller).
+has_1_genre(movie2983).
 has_genre(movie2983, thriller).
+has_1_genre(movie2984).
 has_genre(movie2984, documentary).
+has_5_genre(movie2985).
 has_genre(movie2985, action).
 has_genre(movie2985, crime).
 has_genre(movie2985, drama).
 has_genre(movie2985, sci-fi).
 has_genre(movie2985, thriller).
+has_4_genre(movie2986).
 has_genre(movie2986, action).
 has_genre(movie2986, crime).
 has_genre(movie2986, sci-fi).
 has_genre(movie2986, thriller).
+has_more_than_5_genre(movie2987).
 has_genre(movie2987, adventure).
 has_genre(movie2987, animation).
 has_genre(movie2987, children).
@@ -9046,2462 +11302,3672 @@ has_genre(movie2987, comedy).
 has_genre(movie2987, crime).
 has_genre(movie2987, fantasy).
 has_genre(movie2987, mystery).
+has_1_genre(movie2988).
 has_genre(movie2988, drama).
+has_3_genre(movie2989).
 has_genre(movie2989, action).
 has_genre(movie2989, adventure).
 has_genre(movie2989, thriller).
+has_3_genre(movie2990).
 has_genre(movie2990, action).
 has_genre(movie2990, adventure).
 has_genre(movie2990, thriller).
+has_3_genre(movie2991).
 has_genre(movie2991, action).
 has_genre(movie2991, adventure).
 has_genre(movie2991, thriller).
+has_2_genre(movie2992).
 has_genre(movie2992, horror).
 has_genre(movie2992, thriller).
+has_3_genre(movie2993).
 has_genre(movie2993, action).
 has_genre(movie2993, adventure).
 has_genre(movie2993, thriller).
+has_2_genre(movie2995).
 has_genre(movie2995, horror).
 has_genre(movie2995, thriller).
+has_1_genre(movie2996).
 has_genre(movie2996, drama).
+has_3_genre(movie2997).
 has_genre(movie2997, comedy).
 has_genre(movie2997, drama).
 has_genre(movie2997, fantasy).
+has_5_genre(movie3000).
 has_genre(movie3000, action).
 has_genre(movie3000, adventure).
 has_genre(movie3000, animation).
 has_genre(movie3000, drama).
 has_genre(movie3000, fantasy).
+has_1_genre(movie3002).
 has_genre(movie3002, documentary).
+has_4_genre(movie3003).
 has_genre(movie3003, comedy).
 has_genre(movie3003, drama).
 has_genre(movie3003, romance).
 has_genre(movie3003, war).
+has_2_genre(movie3004).
 has_genre(movie3004, comedy).
 has_genre(movie3004, romance).
+has_1_genre(movie3005).
 has_genre(movie3005, thriller).
+has_2_genre(movie3006).
 has_genre(movie3006, drama).
 has_genre(movie3006, thriller).
+has_1_genre(movie3007).
 has_genre(movie3007, documentary).
+has_2_genre(movie3008).
 has_genre(movie3008, drama).
 has_genre(movie3008, sci-fi).
+has_1_genre(movie3010).
 has_genre(movie3010, drama).
+has_1_genre(movie3011).
 has_genre(movie3011, drama).
+has_2_genre(movie3013).
 has_genre(movie3013, comedy).
 has_genre(movie3013, horror).
+has_1_genre(movie3014).
 has_genre(movie3014, comedy).
+has_1_genre(movie3015).
 has_genre(movie3015, thriller).
+has_1_genre(movie3016).
 has_genre(movie3016, horror).
+has_1_genre(movie3017).
 has_genre(movie3017, horror).
+has_3_genre(movie3018).
 has_genre(movie3018, comedy).
 has_genre(movie3018, horror).
 has_genre(movie3018, sci-fi).
+has_2_genre(movie3019).
 has_genre(movie3019, crime).
 has_genre(movie3019, drama).
+has_2_genre(movie3020).
 has_genre(movie3020, action).
 has_genre(movie3020, drama).
+has_1_genre(movie3021).
 has_genre(movie3021, horror).
+has_2_genre(movie3022).
 has_genre(movie3022, comedy).
 has_genre(movie3022, war).
+has_2_genre(movie3024).
 has_genre(movie3024, horror).
 has_genre(movie3024, sci-fi).
+has_1_genre(movie3028).
 has_genre(movie3028, comedy).
+has_2_genre(movie3029).
 has_genre(movie3029, action).
 has_genre(movie3029, drama).
+has_2_genre(movie3030).
 has_genre(movie3030, action).
 has_genre(movie3030, adventure).
+has_1_genre(movie3031).
 has_genre(movie3031, comedy).
+has_4_genre(movie3032).
 has_genre(movie3032, action).
 has_genre(movie3032, drama).
 has_genre(movie3032, sci-fi).
 has_genre(movie3032, thriller).
+has_2_genre(movie3033).
 has_genre(movie3033, comedy).
 has_genre(movie3033, sci-fi).
+has_5_genre(movie3034).
 has_genre(movie3034, adventure).
 has_genre(movie3034, animation).
 has_genre(movie3034, children).
 has_genre(movie3034, comedy).
 has_genre(movie3034, musical).
+has_3_genre(movie3035).
 has_genre(movie3035, comedy).
 has_genre(movie3035, drama).
 has_genre(movie3035, war).
+has_2_genre(movie3036).
 has_genre(movie3036, adventure).
 has_genre(movie3036, drama).
+has_1_genre(movie3037).
 has_genre(movie3037, western).
+has_1_genre(movie3038).
 has_genre(movie3038, drama).
+has_1_genre(movie3039).
 has_genre(movie3039, comedy).
+has_1_genre(movie3040).
 has_genre(movie3040, comedy).
+has_1_genre(movie3041).
 has_genre(movie3041, comedy).
+has_1_genre(movie3042).
 has_genre(movie3042, comedy).
+has_1_genre(movie3043).
 has_genre(movie3043, comedy).
+has_3_genre(movie3044).
 has_genre(movie3044, mystery).
 has_genre(movie3044, romance).
 has_genre(movie3044, thriller).
+has_2_genre(movie3045).
 has_genre(movie3045, comedy).
 has_genre(movie3045, drama).
+has_2_genre(movie3046).
 has_genre(movie3046, comedy).
 has_genre(movie3046, romance).
+has_1_genre(movie3048).
 has_genre(movie3048, comedy).
+has_2_genre(movie3051).
 has_genre(movie3051, comedy).
 has_genre(movie3051, drama).
+has_3_genre(movie3052).
 has_genre(movie3052, adventure).
 has_genre(movie3052, comedy).
 has_genre(movie3052, fantasy).
+has_2_genre(movie3053).
 has_genre(movie3053, drama).
 has_genre(movie3053, war).
+has_5_genre(movie3054).
 has_genre(movie3054, adventure).
 has_genre(movie3054, animation).
 has_genre(movie3054, children).
 has_genre(movie3054, fantasy).
 has_genre(movie3054, sci-fi).
+has_1_genre(movie3055).
 has_genre(movie3055, thriller).
+has_3_genre(movie3056).
 has_genre(movie3056, crime).
 has_genre(movie3056, drama).
 has_genre(movie3056, thriller).
+has_1_genre(movie3057).
 has_genre(movie3057, comedy).
+has_3_genre(movie3060).
 has_genre(movie3060, comedy).
 has_genre(movie3060, drama).
 has_genre(movie3060, musical).
+has_2_genre(movie3061).
 has_genre(movie3061, comedy).
 has_genre(movie3061, musical).
+has_3_genre(movie3062).
 has_genre(movie3062, action).
 has_genre(movie3062, drama).
 has_genre(movie3062, war).
+has_2_genre(movie3063).
 has_genre(movie3063, drama).
 has_genre(movie3063, thriller).
+has_2_genre(movie3064).
 has_genre(movie3064, drama).
 has_genre(movie3064, thriller).
+has_3_genre(movie3066).
 has_genre(movie3066, action).
 has_genre(movie3066, drama).
 has_genre(movie3066, war).
+has_2_genre(movie3067).
 has_genre(movie3067, comedy).
 has_genre(movie3067, drama).
+has_2_genre(movie3068).
 has_genre(movie3068, drama).
 has_genre(movie3068, mystery).
+has_3_genre(movie3070).
 has_genre(movie3070, adventure).
 has_genre(movie3070, comedy).
 has_genre(movie3070, sci-fi).
+has_2_genre(movie3071).
 has_genre(movie3071, comedy).
 has_genre(movie3071, drama).
+has_2_genre(movie3072).
 has_genre(movie3072, comedy).
 has_genre(movie3072, romance).
+has_2_genre(movie3073).
 has_genre(movie3073, drama).
 has_genre(movie3073, romance).
+has_1_genre(movie3074).
 has_genre(movie3074, western).
+has_2_genre(movie3075).
 has_genre(movie3075, drama).
 has_genre(movie3075, horror).
+has_1_genre(movie3076).
 has_genre(movie3076, comedy).
+has_1_genre(movie3077).
 has_genre(movie3077, documentary).
+has_1_genre(movie3078).
 has_genre(movie3078, drama).
+has_3_genre(movie3079).
 has_genre(movie3079, comedy).
 has_genre(movie3079, drama).
 has_genre(movie3079, romance).
+has_4_genre(movie3081).
 has_genre(movie3081, fantasy).
 has_genre(movie3081, horror).
 has_genre(movie3081, mystery).
 has_genre(movie3081, romance).
+has_3_genre(movie3082).
 has_genre(movie3082, action).
 has_genre(movie3082, adventure).
 has_genre(movie3082, thriller).
+has_1_genre(movie3083).
 has_genre(movie3083, drama).
+has_4_genre(movie3086).
 has_genre(movie3086, children).
 has_genre(movie3086, comedy).
 has_genre(movie3086, fantasy).
 has_genre(movie3086, musical).
+has_3_genre(movie3087).
 has_genre(movie3087, comedy).
 has_genre(movie3087, fantasy).
 has_genre(movie3087, romance).
+has_2_genre(movie3088).
 has_genre(movie3088, comedy).
 has_genre(movie3088, fantasy).
+has_1_genre(movie3089).
 has_genre(movie3089, drama).
+has_1_genre(movie3090).
 has_genre(movie3090, drama).
+has_2_genre(movie3091).
 has_genre(movie3091, drama).
 has_genre(movie3091, war).
+has_2_genre(movie3093).
 has_genre(movie3093, drama).
 has_genre(movie3093, western).
+has_2_genre(movie3094).
 has_genre(movie3094, drama).
 has_genre(movie3094, romance).
+has_1_genre(movie3095).
 has_genre(movie3095, drama).
+has_1_genre(movie3096).
 has_genre(movie3096, comedy).
+has_3_genre(movie3097).
 has_genre(movie3097, comedy).
 has_genre(movie3097, drama).
 has_genre(movie3097, romance).
+has_1_genre(movie3098).
 has_genre(movie3098, drama).
+has_3_genre(movie3099).
 has_genre(movie3099, comedy).
 has_genre(movie3099, drama).
 has_genre(movie3099, romance).
+has_1_genre(movie3100).
 has_genre(movie3100, drama).
+has_2_genre(movie3101).
 has_genre(movie3101, drama).
 has_genre(movie3101, thriller).
+has_3_genre(movie3102).
 has_genre(movie3102, crime).
 has_genre(movie3102, romance).
 has_genre(movie3102, thriller).
+has_2_genre(movie3103).
 has_genre(movie3103, drama).
 has_genre(movie3103, romance).
+has_4_genre(movie3104).
 has_genre(movie3104, action).
 has_genre(movie3104, comedy).
 has_genre(movie3104, crime).
 has_genre(movie3104, thriller).
+has_2_genre(movie3105).
 has_genre(movie3105, drama).
 has_genre(movie3105, mystery).
+has_2_genre(movie3106).
 has_genre(movie3106, drama).
 has_genre(movie3106, romance).
+has_2_genre(movie3107).
 has_genre(movie3107, action).
 has_genre(movie3107, drama).
+has_4_genre(movie3108).
 has_genre(movie3108, comedy).
 has_genre(movie3108, drama).
 has_genre(movie3108, fantasy).
 has_genre(movie3108, romance).
+has_1_genre(movie3109).
 has_genre(movie3109, drama).
+has_1_genre(movie3111).
 has_genre(movie3111, drama).
+has_1_genre(movie3112).
 has_genre(movie3112, drama).
+has_5_genre(movie3113).
 has_genre(movie3113, action).
 has_genre(movie3113, fantasy).
 has_genre(movie3113, horror).
 has_genre(movie3113, mystery).
 has_genre(movie3113, thriller).
+has_5_genre(movie3114).
 has_genre(movie3114, adventure).
 has_genre(movie3114, animation).
 has_genre(movie3114, children).
 has_genre(movie3114, comedy).
 has_genre(movie3114, fantasy).
+has_1_genre(movie3115).
 has_genre(movie3115, drama).
+has_3_genre(movie3117).
 has_genre(movie3117, drama).
 has_genre(movie3117, romance).
 has_genre(movie3117, war).
+has_1_genre(movie3120).
 has_genre(movie3120, comedy).
+has_1_genre(movie3125).
 has_genre(movie3125, drama).
+has_2_genre(movie3127).
 has_genre(movie3127, comedy).
 has_genre(movie3127, drama).
+has_2_genre(movie3129).
 has_genre(movie3129, comedy).
 has_genre(movie3129, drama).
+has_3_genre(movie3130).
 has_genre(movie3130, comedy).
 has_genre(movie3130, crime).
 has_genre(movie3130, drama).
+has_2_genre(movie3132).
 has_genre(movie3132, comedy).
 has_genre(movie3132, drama).
+has_2_genre(movie3134).
 has_genre(movie3134, drama).
 has_genre(movie3134, war).
+has_1_genre(movie3135).
 has_genre(movie3135, drama).
+has_1_genre(movie3138).
 has_genre(movie3138, drama).
+has_1_genre(movie3141).
 has_genre(movie3141, drama).
+has_2_genre(movie3142).
 has_genre(movie3142, documentary).
 has_genre(movie3142, musical).
+has_2_genre(movie3143).
 has_genre(movie3143, drama).
 has_genre(movie3143, war).
+has_1_genre(movie3145).
 has_genre(movie3145, drama).
+has_1_genre(movie3146).
 has_genre(movie3146, comedy).
+has_2_genre(movie3147).
 has_genre(movie3147, crime).
 has_genre(movie3147, drama).
+has_1_genre(movie3148).
 has_genre(movie3148, drama).
+has_2_genre(movie3150).
 has_genre(movie3150, drama).
 has_genre(movie3150, thriller).
+has_1_genre(movie3152).
 has_genre(movie3152, drama).
+has_3_genre(movie3153).
 has_genre(movie3153, action).
 has_genre(movie3153, adventure).
 has_genre(movie3153, fantasy).
+has_2_genre(movie3155).
 has_genre(movie3155, drama).
 has_genre(movie3155, romance).
+has_3_genre(movie3156).
 has_genre(movie3156, drama).
 has_genre(movie3156, romance).
 has_genre(movie3156, sci-fi).
+has_3_genre(movie3157).
 has_genre(movie3157, children).
 has_genre(movie3157, comedy).
 has_genre(movie3157, fantasy).
+has_1_genre(movie3158).
 has_genre(movie3158, drama).
+has_4_genre(movie3159).
 has_genre(movie3159, animation).
 has_genre(movie3159, children).
 has_genre(movie3159, musical).
 has_genre(movie3159, imax).
+has_1_genre(movie3160).
 has_genre(movie3160, drama).
+has_2_genre(movie3161).
 has_genre(movie3161, drama).
 has_genre(movie3161, romance).
+has_2_genre(movie3162).
 has_genre(movie3162, comedy).
 has_genre(movie3162, drama).
+has_3_genre(movie3163).
 has_genre(movie3163, comedy).
 has_genre(movie3163, drama).
 has_genre(movie3163, musical).
+has_2_genre(movie3165).
 has_genre(movie3165, action).
 has_genre(movie3165, drama).
+has_2_genre(movie3167).
 has_genre(movie3167, comedy).
 has_genre(movie3167, drama).
+has_2_genre(movie3168).
 has_genre(movie3168, adventure).
 has_genre(movie3168, drama).
+has_3_genre(movie3169).
 has_genre(movie3169, crime).
 has_genre(movie3169, drama).
 has_genre(movie3169, thriller).
+has_1_genre(movie3171).
 has_genre(movie3171, drama).
+has_1_genre(movie3173).
 has_genre(movie3173, drama).
+has_2_genre(movie3174).
 has_genre(movie3174, comedy).
 has_genre(movie3174, drama).
+has_3_genre(movie3175).
 has_genre(movie3175, adventure).
 has_genre(movie3175, comedy).
 has_genre(movie3175, sci-fi).
+has_3_genre(movie3176).
 has_genre(movie3176, drama).
 has_genre(movie3176, mystery).
 has_genre(movie3176, thriller).
+has_1_genre(movie3177).
 has_genre(movie3177, comedy).
+has_1_genre(movie3178).
 has_genre(movie3178, drama).
+has_1_genre(movie3179).
 has_genre(movie3179, drama).
+has_1_genre(movie3181).
 has_genre(movie3181, drama).
+has_1_genre(movie3182).
 has_genre(movie3182, documentary).
+has_1_genre(movie3183).
 has_genre(movie3183, drama).
+has_1_genre(movie3185).
 has_genre(movie3185, drama).
+has_1_genre(movie3186).
 has_genre(movie3186, drama).
+has_2_genre(movie3189).
 has_genre(movie3189, children).
 has_genre(movie3189, drama).
+has_3_genre(movie3190).
 has_genre(movie3190, adventure).
 has_genre(movie3190, sci-fi).
 has_genre(movie3190, thriller).
+has_1_genre(movie3192).
 has_genre(movie3192, drama).
+has_2_genre(movie3194).
 has_genre(movie3194, drama).
 has_genre(movie3194, romance).
+has_2_genre(movie3196).
 has_genre(movie3196, drama).
 has_genre(movie3196, war).
+has_4_genre(movie3197).
 has_genre(movie3197, action).
 has_genre(movie3197, crime).
 has_genre(movie3197, romance).
 has_genre(movie3197, thriller).
+has_2_genre(movie3198).
 has_genre(movie3198, crime).
 has_genre(movie3198, drama).
+has_2_genre(movie3200).
 has_genre(movie3200, comedy).
 has_genre(movie3200, drama).
+has_1_genre(movie3201).
 has_genre(movie3201, drama).
+has_1_genre(movie3203).
 has_genre(movie3203, thriller).
+has_3_genre(movie3204).
 has_genre(movie3204, action).
 has_genre(movie3204, mystery).
 has_genre(movie3204, thriller).
+has_1_genre(movie3206).
 has_genre(movie3206, romance).
+has_2_genre(movie3208).
 has_genre(movie3208, action).
 has_genre(movie3208, comedy).
+has_3_genre(movie3210).
 has_genre(movie3210, comedy).
 has_genre(movie3210, drama).
 has_genre(movie3210, romance).
+has_1_genre(movie3211).
 has_genre(movie3211, drama).
+has_2_genre(movie3213).
 has_genre(movie3213, animation).
 has_genre(movie3213, children).
+has_1_genre(movie3214).
 has_genre(movie3214, drama).
+has_1_genre(movie3217).
 has_genre(movie3217, drama).
+has_2_genre(movie3219).
 has_genre(movie3219, mystery).
 has_genre(movie3219, thriller).
+has_1_genre(movie3221).
 has_genre(movie3221, drama).
+has_1_genre(movie3223).
 has_genre(movie3223, drama).
+has_1_genre(movie3224).
 has_genre(movie3224, drama).
+has_2_genre(movie3225).
 has_genre(movie3225, comedy).
 has_genre(movie3225, romance).
+has_1_genre(movie3230).
 has_genre(movie3230, thriller).
+has_1_genre(movie3235).
 has_genre(movie3235, comedy).
+has_1_genre(movie3238).
 has_genre(movie3238, thriller).
+has_1_genre(movie3240).
 has_genre(movie3240, comedy).
+has_1_genre(movie3241).
 has_genre(movie3241, comedy).
+has_1_genre(movie3243).
 has_genre(movie3243, comedy).
+has_2_genre(movie3244).
 has_genre(movie3244, comedy).
 has_genre(movie3244, romance).
+has_1_genre(movie3246).
 has_genre(movie3246, drama).
+has_2_genre(movie3247).
 has_genre(movie3247, comedy).
 has_genre(movie3247, crime).
+has_1_genre(movie3248).
 has_genre(movie3248, comedy).
+has_2_genre(movie3249).
 has_genre(movie3249, drama).
 has_genre(movie3249, thriller).
+has_1_genre(movie3250).
 has_genre(movie3250, drama).
+has_2_genre(movie3251).
 has_genre(movie3251, drama).
 has_genre(movie3251, mystery).
+has_1_genre(movie3252).
 has_genre(movie3252, drama).
+has_1_genre(movie3253).
 has_genre(movie3253, comedy).
+has_1_genre(movie3254).
 has_genre(movie3254, comedy).
+has_2_genre(movie3255).
 has_genre(movie3255, comedy).
 has_genre(movie3255, drama).
+has_4_genre(movie3256).
 has_genre(movie3256, action).
 has_genre(movie3256, crime).
 has_genre(movie3256, drama).
 has_genre(movie3256, thriller).
+has_3_genre(movie3257).
 has_genre(movie3257, drama).
 has_genre(movie3257, romance).
 has_genre(movie3257, thriller).
+has_2_genre(movie3258).
 has_genre(movie3258, comedy).
 has_genre(movie3258, fantasy).
+has_3_genre(movie3259).
 has_genre(movie3259, adventure).
 has_genre(movie3259, drama).
 has_genre(movie3259, romance).
+has_1_genre(movie3260).
 has_genre(movie3260, drama).
+has_3_genre(movie3261).
 has_genre(movie3261, comedy).
 has_genre(movie3261, drama).
 has_genre(movie3261, romance).
+has_4_genre(movie3262).
 has_genre(movie3262, crime).
 has_genre(movie3262, drama).
 has_genre(movie3262, mystery).
 has_genre(movie3262, thriller).
+has_2_genre(movie3263).
 has_genre(movie3263, comedy).
 has_genre(movie3263, drama).
+has_3_genre(movie3264).
 has_genre(movie3264, action).
 has_genre(movie3264, comedy).
 has_genre(movie3264, horror).
+has_4_genre(movie3265).
 has_genre(movie3265, action).
 has_genre(movie3265, crime).
 has_genre(movie3265, drama).
 has_genre(movie3265, thriller).
+has_4_genre(movie3266).
 has_genre(movie3266, comedy).
 has_genre(movie3266, crime).
 has_genre(movie3266, drama).
 has_genre(movie3266, thriller).
+has_4_genre(movie3267).
 has_genre(movie3267, action).
 has_genre(movie3267, crime).
 has_genre(movie3267, thriller).
 has_genre(movie3267, western).
+has_2_genre(movie3268).
 has_genre(movie3268, action).
 has_genre(movie3268, comedy).
+has_3_genre(movie3269).
 has_genre(movie3269, drama).
 has_genre(movie3269, romance).
 has_genre(movie3269, sci-fi).
+has_3_genre(movie3270).
 has_genre(movie3270, comedy).
 has_genre(movie3270, drama).
 has_genre(movie3270, romance).
+has_1_genre(movie3271).
 has_genre(movie3271, drama).
+has_2_genre(movie3272).
 has_genre(movie3272, crime).
 has_genre(movie3272, drama).
+has_4_genre(movie3273).
 has_genre(movie3273, comedy).
 has_genre(movie3273, horror).
 has_genre(movie3273, mystery).
 has_genre(movie3273, thriller).
+has_2_genre(movie3274).
 has_genre(movie3274, drama).
 has_genre(movie3274, thriller).
+has_4_genre(movie3275).
 has_genre(movie3275, action).
 has_genre(movie3275, crime).
 has_genre(movie3275, drama).
 has_genre(movie3275, thriller).
+has_1_genre(movie3276).
 has_genre(movie3276, comedy).
+has_1_genre(movie3280).
 has_genre(movie3280, horror).
+has_1_genre(movie3281).
 has_genre(movie3281, documentary).
+has_1_genre(movie3283).
 has_genre(movie3283, action).
+has_3_genre(movie3284).
 has_genre(movie3284, comedy).
 has_genre(movie3284, mystery).
 has_genre(movie3284, romance).
+has_2_genre(movie3285).
 has_genre(movie3285, adventure).
 has_genre(movie3285, drama).
+has_1_genre(movie3286).
 has_genre(movie3286, comedy).
+has_2_genre(movie3287).
 has_genre(movie3287, animation).
 has_genre(movie3287, children).
+has_1_genre(movie3289).
 has_genre(movie3289, drama).
+has_1_genre(movie3294).
 has_genre(movie3294, horror).
+has_1_genre(movie3295).
 has_genre(movie3295, drama).
+has_1_genre(movie3296).
 has_genre(movie3296, drama).
+has_3_genre(movie3298).
 has_genre(movie3298, crime).
 has_genre(movie3298, drama).
 has_genre(movie3298, thriller).
+has_2_genre(movie3299).
 has_genre(movie3299, comedy).
 has_genre(movie3299, drama).
+has_3_genre(movie3300).
 has_genre(movie3300, horror).
 has_genre(movie3300, sci-fi).
 has_genre(movie3300, thriller).
+has_2_genre(movie3301).
 has_genre(movie3301, comedy).
 has_genre(movie3301, crime).
+has_1_genre(movie3302).
 has_genre(movie3302, comedy).
+has_1_genre(movie3303).
 has_genre(movie3303, documentary).
+has_1_genre(movie3306).
 has_genre(movie3306, comedy).
+has_3_genre(movie3307).
 has_genre(movie3307, comedy).
 has_genre(movie3307, drama).
 has_genre(movie3307, romance).
+has_2_genre(movie3308).
 has_genre(movie3308, comedy).
 has_genre(movie3308, drama).
+has_2_genre(movie3310).
 has_genre(movie3310, comedy).
 has_genre(movie3310, drama).
+has_1_genre(movie3313).
 has_genre(movie3313, comedy).
+has_1_genre(movie3315).
 has_genre(movie3315, musical).
+has_2_genre(movie3316).
 has_genre(movie3316, action).
 has_genre(movie3316, thriller).
+has_2_genre(movie3317).
 has_genre(movie3317, comedy).
 has_genre(movie3317, drama).
+has_2_genre(movie3323).
 has_genre(movie3323, comedy).
 has_genre(movie3323, crime).
+has_1_genre(movie3324).
 has_genre(movie3324, comedy).
+has_2_genre(movie3325).
 has_genre(movie3325, comedy).
 has_genre(movie3325, drama).
+has_2_genre(movie3326).
 has_genre(movie3326, comedy).
 has_genre(movie3326, sci-fi).
+has_1_genre(movie3327).
 has_genre(movie3327, documentary).
+has_2_genre(movie3328).
 has_genre(movie3328, crime).
 has_genre(movie3328, drama).
+has_2_genre(movie3329).
 has_genre(movie3329, drama).
 has_genre(movie3329, romance).
+has_2_genre(movie3330).
 has_genre(movie3330, drama).
 has_genre(movie3330, romance).
+has_1_genre(movie3331).
 has_genre(movie3331, drama).
+has_4_genre(movie3334).
 has_genre(movie3334, crime).
 has_genre(movie3334, drama).
 has_genre(movie3334, film-noir).
 has_genre(movie3334, thriller).
+has_1_genre(movie3338).
 has_genre(movie3338, documentary).
+has_1_genre(movie3341).
 has_genre(movie3341, comedy).
+has_2_genre(movie3342).
 has_genre(movie3342, drama).
 has_genre(movie3342, war).
+has_1_genre(movie3344).
 has_genre(movie3344, horror).
+has_2_genre(movie3345).
 has_genre(movie3345, adventure).
 has_genre(movie3345, children).
+has_2_genre(movie3347).
 has_genre(movie3347, adventure).
 has_genre(movie3347, drama).
+has_1_genre(movie3350).
 has_genre(movie3350, drama).
+has_2_genre(movie3353).
 has_genre(movie3353, comedy).
 has_genre(movie3353, romance).
+has_1_genre(movie3354).
 has_genre(movie3354, sci-fi).
+has_4_genre(movie3355).
 has_genre(movie3355, fantasy).
 has_genre(movie3355, horror).
 has_genre(movie3355, mystery).
 has_genre(movie3355, thriller).
+has_2_genre(movie3357).
 has_genre(movie3357, drama).
 has_genre(movie3357, romance).
+has_4_genre(movie3358).
 has_genre(movie3358, comedy).
 has_genre(movie3358, drama).
 has_genre(movie3358, fantasy).
 has_genre(movie3358, romance).
+has_2_genre(movie3359).
 has_genre(movie3359, comedy).
 has_genre(movie3359, drama).
+has_2_genre(movie3360).
 has_genre(movie3360, drama).
 has_genre(movie3360, romance).
+has_3_genre(movie3361).
 has_genre(movie3361, comedy).
 has_genre(movie3361, drama).
 has_genre(movie3361, romance).
+has_2_genre(movie3362).
 has_genre(movie3362, crime).
 has_genre(movie3362, drama).
+has_2_genre(movie3363).
 has_genre(movie3363, comedy).
 has_genre(movie3363, drama).
+has_2_genre(movie3364).
 has_genre(movie3364, crime).
 has_genre(movie3364, film-noir).
+has_2_genre(movie3365).
 has_genre(movie3365, drama).
 has_genre(movie3365, western).
+has_2_genre(movie3368).
 has_genre(movie3368, romance).
 has_genre(movie3368, western).
+has_2_genre(movie3370).
 has_genre(movie3370, drama).
 has_genre(movie3370, thriller).
+has_2_genre(movie3372).
 has_genre(movie3372, action).
 has_genre(movie3372, war).
+has_1_genre(movie3374).
 has_genre(movie3374, drama).
+has_1_genre(movie3378).
 has_genre(movie3378, drama).
+has_1_genre(movie3379).
 has_genre(movie3379, drama).
+has_2_genre(movie3384).
 has_genre(movie3384, action).
 has_genre(movie3384, crime).
+has_1_genre(movie3385).
 has_genre(movie3385, comedy).
+has_3_genre(movie3386).
 has_genre(movie3386, drama).
 has_genre(movie3386, mystery).
 has_genre(movie3386, thriller).
+has_2_genre(movie3387).
 has_genre(movie3387, comedy).
 has_genre(movie3387, mystery).
+has_2_genre(movie3388).
 has_genre(movie3388, children).
 has_genre(movie3388, comedy).
+has_2_genre(movie3389).
 has_genre(movie3389, action).
 has_genre(movie3389, adventure).
+has_4_genre(movie3390).
 has_genre(movie3390, adventure).
 has_genre(movie3390, crime).
 has_genre(movie3390, drama).
 has_genre(movie3390, romance).
+has_1_genre(movie3391).
 has_genre(movie3391, comedy).
+has_1_genre(movie3392).
 has_genre(movie3392, comedy).
+has_3_genre(movie3393).
 has_genre(movie3393, comedy).
 has_genre(movie3393, fantasy).
 has_genre(movie3393, romance).
+has_2_genre(movie3394).
 has_genre(movie3394, comedy).
 has_genre(movie3394, romance).
+has_1_genre(movie3395).
 has_genre(movie3395, comedy).
+has_4_genre(movie3396).
 has_genre(movie3396, adventure).
 has_genre(movie3396, children).
 has_genre(movie3396, comedy).
 has_genre(movie3396, musical).
+has_2_genre(movie3397).
 has_genre(movie3397, children).
 has_genre(movie3397, comedy).
+has_3_genre(movie3398).
 has_genre(movie3398, children).
 has_genre(movie3398, comedy).
 has_genre(movie3398, musical).
+has_4_genre(movie3400).
 has_genre(movie3400, adventure).
 has_genre(movie3400, animation).
 has_genre(movie3400, children).
 has_genre(movie3400, fantasy).
+has_2_genre(movie3401).
 has_genre(movie3401, adventure).
 has_genre(movie3401, sci-fi).
+has_3_genre(movie3402).
 has_genre(movie3402, comedy).
 has_genre(movie3402, drama).
 has_genre(movie3402, romance).
+has_2_genre(movie3403).
 has_genre(movie3403, drama).
 has_genre(movie3403, thriller).
+has_2_genre(movie3404).
 has_genre(movie3404, action).
 has_genre(movie3404, drama).
+has_2_genre(movie3405).
 has_genre(movie3405, action).
 has_genre(movie3405, drama).
+has_4_genre(movie3406).
 has_genre(movie3406, action).
 has_genre(movie3406, adventure).
 has_genre(movie3406, drama).
 has_genre(movie3406, war).
+has_1_genre(movie3408).
 has_genre(movie3408, drama).
+has_2_genre(movie3409).
 has_genre(movie3409, drama).
 has_genre(movie3409, thriller).
+has_2_genre(movie3410).
 has_genre(movie3410, comedy).
 has_genre(movie3410, drama).
+has_3_genre(movie3412).
 has_genre(movie3412, adventure).
 has_genre(movie3412, children).
 has_genre(movie3412, drama).
+has_3_genre(movie3414).
 has_genre(movie3414, drama).
 has_genre(movie3414, romance).
 has_genre(movie3414, war).
+has_1_genre(movie3415).
 has_genre(movie3415, drama).
+has_2_genre(movie3417).
 has_genre(movie3417, adventure).
 has_genre(movie3417, comedy).
+has_3_genre(movie3418).
 has_genre(movie3418, adventure).
 has_genre(movie3418, crime).
 has_genre(movie3418, drama).
+has_2_genre(movie3420).
 has_genre(movie3420, drama).
 has_genre(movie3420, thriller).
+has_1_genre(movie3421).
 has_genre(movie3421, comedy).
+has_2_genre(movie3422).
 has_genre(movie3422, comedy).
 has_genre(movie3422, romance).
+has_1_genre(movie3423).
 has_genre(movie3423, drama).
+has_1_genre(movie3424).
 has_genre(movie3424, drama).
+has_2_genre(movie3425).
 has_genre(movie3425, drama).
 has_genre(movie3425, musical).
+has_2_genre(movie3426).
 has_genre(movie3426, drama).
 has_genre(movie3426, romance).
+has_1_genre(movie3428).
 has_genre(movie3428, drama).
+has_2_genre(movie3429).
 has_genre(movie3429, animation).
 has_genre(movie3429, comedy).
+has_3_genre(movie3430).
 has_genre(movie3430, action).
 has_genre(movie3430, crime).
 has_genre(movie3430, drama).
+has_2_genre(movie3431).
 has_genre(movie3431, action).
 has_genre(movie3431, drama).
+has_2_genre(movie3432).
 has_genre(movie3432, action).
 has_genre(movie3432, drama).
+has_2_genre(movie3433).
 has_genre(movie3433, action).
 has_genre(movie3433, drama).
+has_2_genre(movie3434).
 has_genre(movie3434, action).
 has_genre(movie3434, drama).
+has_3_genre(movie3435).
 has_genre(movie3435, crime).
 has_genre(movie3435, drama).
 has_genre(movie3435, film-noir).
+has_2_genre(movie3436).
 has_genre(movie3436, drama).
 has_genre(movie3436, romance).
+has_5_genre(movie3438).
 has_genre(movie3438, action).
 has_genre(movie3438, children).
 has_genre(movie3438, comedy).
 has_genre(movie3438, fantasy).
 has_genre(movie3438, sci-fi).
+has_3_genre(movie3439).
 has_genre(movie3439, action).
 has_genre(movie3439, children).
 has_genre(movie3439, fantasy).
+has_5_genre(movie3440).
 has_genre(movie3440, action).
 has_genre(movie3440, adventure).
 has_genre(movie3440, children).
 has_genre(movie3440, comedy).
 has_genre(movie3440, fantasy).
+has_3_genre(movie3441).
 has_genre(movie3441, action).
 has_genre(movie3441, drama).
 has_genre(movie3441, war).
+has_3_genre(movie3442).
 has_genre(movie3442, action).
 has_genre(movie3442, crime).
 has_genre(movie3442, drama).
+has_1_genre(movie3444).
 has_genre(movie3444, action).
+has_2_genre(movie3445).
 has_genre(movie3445, mystery).
 has_genre(movie3445, thriller).
+has_2_genre(movie3446).
 has_genre(movie3446, comedy).
 has_genre(movie3446, drama).
+has_1_genre(movie3447).
 has_genre(movie3447, drama).
+has_3_genre(movie3448).
 has_genre(movie3448, comedy).
 has_genre(movie3448, drama).
 has_genre(movie3448, war).
+has_1_genre(movie3449).
 has_genre(movie3449, drama).
+has_1_genre(movie3450).
 has_genre(movie3450, comedy).
+has_1_genre(movie3451).
 has_genre(movie3451, drama).
+has_4_genre(movie3452).
 has_genre(movie3452, action).
 has_genre(movie3452, crime).
 has_genre(movie3452, romance).
 has_genre(movie3452, thriller).
+has_2_genre(movie3453).
 has_genre(movie3453, drama).
 has_genre(movie3453, romance).
+has_2_genre(movie3454).
 has_genre(movie3454, comedy).
 has_genre(movie3454, romance).
+has_2_genre(movie3455).
 has_genre(movie3455, drama).
 has_genre(movie3455, thriller).
+has_1_genre(movie3456).
 has_genre(movie3456, drama).
+has_2_genre(movie3459).
 has_genre(movie3459, drama).
 has_genre(movie3459, horror).
+has_3_genre(movie3461).
 has_genre(movie3461, adventure).
 has_genre(movie3461, drama).
 has_genre(movie3461, thriller).
+has_3_genre(movie3462).
 has_genre(movie3462, comedy).
 has_genre(movie3462, drama).
 has_genre(movie3462, romance).
+has_2_genre(movie3466).
 has_genre(movie3466, comedy).
 has_genre(movie3466, fantasy).
+has_2_genre(movie3467).
 has_genre(movie3467, drama).
 has_genre(movie3467, western).
+has_1_genre(movie3468).
 has_genre(movie3468, drama).
+has_1_genre(movie3469).
 has_genre(movie3469, drama).
+has_2_genre(movie3470).
 has_genre(movie3470, adventure).
 has_genre(movie3470, drama).
+has_3_genre(movie3471).
 has_genre(movie3471, adventure).
 has_genre(movie3471, drama).
 has_genre(movie3471, sci-fi).
+has_1_genre(movie3473).
 has_genre(movie3473, comedy).
+has_2_genre(movie3474).
 has_genre(movie3474, sci-fi).
 has_genre(movie3474, thriller).
+has_2_genre(movie3475).
 has_genre(movie3475, drama).
 has_genre(movie3475, romance).
+has_2_genre(movie3476).
 has_genre(movie3476, horror).
 has_genre(movie3476, mystery).
+has_2_genre(movie3477).
 has_genre(movie3477, comedy).
 has_genre(movie3477, drama).
+has_1_genre(movie3478).
 has_genre(movie3478, drama).
+has_3_genre(movie3479).
 has_genre(movie3479, adventure).
 has_genre(movie3479, fantasy).
 has_genre(movie3479, romance).
+has_2_genre(movie3480).
 has_genre(movie3480, drama).
 has_genre(movie3480, romance).
+has_3_genre(movie3481).
 has_genre(movie3481, comedy).
 has_genre(movie3481, drama).
 has_genre(movie3481, romance).
+has_2_genre(movie3483).
 has_genre(movie3483, animation).
 has_genre(movie3483, children).
+has_1_genre(movie3484).
 has_genre(movie3484, thriller).
+has_3_genre(movie3489).
 has_genre(movie3489, adventure).
 has_genre(movie3489, comedy).
 has_genre(movie3489, fantasy).
+has_3_genre(movie3492).
 has_genre(movie3492, adventure).
 has_genre(movie3492, comedy).
 has_genre(movie3492, romance).
+has_3_genre(movie3494).
 has_genre(movie3494, adventure).
 has_genre(movie3494, drama).
 has_genre(movie3494, western).
+has_1_genre(movie3496).
 has_genre(movie3496, drama).
+has_1_genre(movie3497).
 has_genre(movie3497, comedy).
+has_1_genre(movie3498).
 has_genre(movie3498, drama).
+has_3_genre(movie3499).
 has_genre(movie3499, drama).
 has_genre(movie3499, horror).
 has_genre(movie3499, thriller).
+has_2_genre(movie3500).
 has_genre(movie3500, comedy).
 has_genre(movie3500, drama).
+has_2_genre(movie3501).
 has_genre(movie3501, comedy).
 has_genre(movie3501, romance).
+has_1_genre(movie3502).
 has_genre(movie3502, drama).
+has_3_genre(movie3503).
 has_genre(movie3503, drama).
 has_genre(movie3503, mystery).
 has_genre(movie3503, sci-fi).
+has_2_genre(movie3504).
 has_genre(movie3504, comedy).
 has_genre(movie3504, drama).
+has_3_genre(movie3505).
 has_genre(movie3505, drama).
 has_genre(movie3505, mystery).
 has_genre(movie3505, thriller).
+has_2_genre(movie3506).
 has_genre(movie3506, comedy).
 has_genre(movie3506, drama).
+has_1_genre(movie3507).
 has_genre(movie3507, comedy).
+has_5_genre(movie3508).
 has_genre(movie3508, action).
 has_genre(movie3508, adventure).
 has_genre(movie3508, drama).
 has_genre(movie3508, thriller).
 has_genre(movie3508, western).
+has_2_genre(movie3510).
 has_genre(movie3510, drama).
 has_genre(movie3510, thriller).
+has_1_genre(movie3511).
 has_genre(movie3511, comedy).
+has_2_genre(movie3512).
 has_genre(movie3512, drama).
 has_genre(movie3512, romance).
+has_2_genre(movie3513).
 has_genre(movie3513, drama).
 has_genre(movie3513, thriller).
+has_1_genre(movie3514).
 has_genre(movie3514, drama).
+has_2_genre(movie3515).
 has_genre(movie3515, comedy).
 has_genre(movie3515, romance).
+has_3_genre(movie3516).
 has_genre(movie3516, comedy).
 has_genre(movie3516, fantasy).
 has_genre(movie3516, romance).
+has_3_genre(movie3519).
 has_genre(movie3519, action).
 has_genre(movie3519, drama).
 has_genre(movie3519, war).
+has_2_genre(movie3521).
 has_genre(movie3521, comedy).
 has_genre(movie3521, drama).
+has_2_genre(movie3524).
 has_genre(movie3524, comedy).
 has_genre(movie3524, romance).
+has_1_genre(movie3525).
 has_genre(movie3525, comedy).
+has_2_genre(movie3526).
 has_genre(movie3526, comedy).
 has_genre(movie3526, drama).
+has_3_genre(movie3527).
 has_genre(movie3527, action).
 has_genre(movie3527, sci-fi).
 has_genre(movie3527, thriller).
+has_2_genre(movie3528).
 has_genre(movie3528, drama).
 has_genre(movie3528, romance).
+has_2_genre(movie3529).
 has_genre(movie3529, crime).
 has_genre(movie3529, thriller).
+has_3_genre(movie3531).
 has_genre(movie3531, comedy).
 has_genre(movie3531, drama).
 has_genre(movie3531, romance).
+has_1_genre(movie3534).
 has_genre(movie3534, drama).
+has_4_genre(movie3535).
 has_genre(movie3535, crime).
 has_genre(movie3535, horror).
 has_genre(movie3535, mystery).
 has_genre(movie3535, thriller).
+has_3_genre(movie3536).
 has_genre(movie3536, comedy).
 has_genre(movie3536, drama).
 has_genre(movie3536, romance).
+has_2_genre(movie3537).
 has_genre(movie3537, comedy).
 has_genre(movie3537, drama).
+has_1_genre(movie3538).
 has_genre(movie3538, comedy).
+has_1_genre(movie3539).
 has_genre(movie3539, documentary).
+has_2_genre(movie3543).
 has_genre(movie3543, comedy).
 has_genre(movie3543, drama).
+has_1_genre(movie3544).
 has_genre(movie3544, comedy).
+has_2_genre(movie3545).
 has_genre(movie3545, drama).
 has_genre(movie3545, musical).
+has_3_genre(movie3546).
 has_genre(movie3546, drama).
 has_genre(movie3546, horror).
 has_genre(movie3546, thriller).
+has_2_genre(movie3548).
 has_genre(movie3548, comedy).
 has_genre(movie3548, drama).
+has_3_genre(movie3549).
 has_genre(movie3549, comedy).
 has_genre(movie3549, musical).
 has_genre(movie3549, romance).
+has_1_genre(movie3550).
 has_genre(movie3550, horror).
+has_3_genre(movie3551).
 has_genre(movie3551, crime).
 has_genre(movie3551, drama).
 has_genre(movie3551, thriller).
+has_1_genre(movie3552).
 has_genre(movie3552, comedy).
+has_2_genre(movie3553).
 has_genre(movie3553, drama).
 has_genre(movie3553, thriller).
+has_2_genre(movie3554).
 has_genre(movie3554, drama).
 has_genre(movie3554, romance).
+has_3_genre(movie3555).
 has_genre(movie3555, action).
 has_genre(movie3555, thriller).
 has_genre(movie3555, war).
+has_2_genre(movie3556).
 has_genre(movie3556, drama).
 has_genre(movie3556, romance).
+has_2_genre(movie3557).
 has_genre(movie3557, mystery).
 has_genre(movie3557, thriller).
+has_3_genre(movie3559).
 has_genre(movie3559, comedy).
 has_genre(movie3559, drama).
 has_genre(movie3559, romance).
+has_2_genre(movie3563).
 has_genre(movie3563, action).
 has_genre(movie3563, horror).
+has_2_genre(movie3564).
 has_genre(movie3564, children).
 has_genre(movie3564, comedy).
+has_2_genre(movie3565).
 has_genre(movie3565, comedy).
 has_genre(movie3565, drama).
+has_2_genre(movie3566).
 has_genre(movie3566, comedy).
 has_genre(movie3566, drama).
+has_3_genre(movie3567).
 has_genre(movie3567, comedy).
 has_genre(movie3567, drama).
 has_genre(movie3567, romance).
+has_2_genre(movie3568).
 has_genre(movie3568, comedy).
 has_genre(movie3568, romance).
+has_2_genre(movie3569).
 has_genre(movie3569, comedy).
 has_genre(movie3569, drama).
+has_2_genre(movie3571).
 has_genre(movie3571, comedy).
 has_genre(movie3571, drama).
+has_2_genre(movie3572).
 has_genre(movie3572, horror).
 has_genre(movie3572, sci-fi).
+has_2_genre(movie3573).
 has_genre(movie3573, horror).
 has_genre(movie3573, sci-fi).
+has_2_genre(movie3574).
 has_genre(movie3574, horror).
 has_genre(movie3574, sci-fi).
+has_3_genre(movie3576).
 has_genre(movie3576, action).
 has_genre(movie3576, horror).
 has_genre(movie3576, sci-fi).
+has_2_genre(movie3577).
 has_genre(movie3577, drama).
 has_genre(movie3577, romance).
+has_3_genre(movie3578).
 has_genre(movie3578, action).
 has_genre(movie3578, adventure).
 has_genre(movie3578, drama).
+has_1_genre(movie3580).
 has_genre(movie3580, drama).
+has_1_genre(movie3581).
 has_genre(movie3581, comedy).
+has_4_genre(movie3584).
 has_genre(movie3584, action).
 has_genre(movie3584, drama).
 has_genre(movie3584, romance).
 has_genre(movie3584, thriller).
+has_2_genre(movie3586).
 has_genre(movie3586, drama).
 has_genre(movie3586, romance).
+has_1_genre(movie3587).
 has_genre(movie3587, horror).
+has_2_genre(movie3590).
 has_genre(movie3590, comedy).
 has_genre(movie3590, drama).
+has_2_genre(movie3591).
 has_genre(movie3591, comedy).
 has_genre(movie3591, drama).
+has_2_genre(movie3592).
 has_genre(movie3592, animation).
 has_genre(movie3592, sci-fi).
+has_2_genre(movie3593).
 has_genre(movie3593, action).
 has_genre(movie3593, sci-fi).
+has_2_genre(movie3594).
 has_genre(movie3594, drama).
 has_genre(movie3594, musical).
+has_1_genre(movie3596).
 has_genre(movie3596, comedy).
+has_1_genre(movie3597).
 has_genre(movie3597, comedy).
+has_4_genre(movie3598).
 has_genre(movie3598, crime).
 has_genre(movie3598, drama).
 has_genre(movie3598, romance).
 has_genre(movie3598, thriller).
+has_2_genre(movie3599).
 has_genre(movie3599, comedy).
 has_genre(movie3599, musical).
+has_1_genre(movie3604).
 has_genre(movie3604, musical).
+has_3_genre(movie3606).
 has_genre(movie3606, comedy).
 has_genre(movie3606, musical).
 has_genre(movie3606, romance).
+has_2_genre(movie3608).
 has_genre(movie3608, adventure).
 has_genre(movie3608, comedy).
+has_1_genre(movie3609).
 has_genre(movie3609, documentary).
+has_2_genre(movie3614).
 has_genre(movie3614, comedy).
 has_genre(movie3614, romance).
+has_3_genre(movie3615).
 has_genre(movie3615, adventure).
 has_genre(movie3615, animation).
 has_genre(movie3615, children).
+has_2_genre(movie3616).
 has_genre(movie3616, comedy).
 has_genre(movie3616, romance).
+has_1_genre(movie3617).
 has_genre(movie3617, comedy).
+has_2_genre(movie3618).
 has_genre(movie3618, comedy).
 has_genre(movie3618, crime).
+has_1_genre(movie3619).
 has_genre(movie3619, comedy).
+has_1_genre(movie3622).
 has_genre(movie3622, comedy).
+has_3_genre(movie3623).
 has_genre(movie3623, action).
 has_genre(movie3623, adventure).
 has_genre(movie3623, thriller).
+has_4_genre(movie3624).
 has_genre(movie3624, action).
 has_genre(movie3624, adventure).
 has_genre(movie3624, comedy).
 has_genre(movie3624, western).
+has_1_genre(movie3625).
 has_genre(movie3625, documentary).
+has_1_genre(movie3626).
 has_genre(movie3626, comedy).
+has_2_genre(movie3627).
 has_genre(movie3627, horror).
 has_genre(movie3627, thriller).
+has_4_genre(movie3628).
 has_genre(movie3628, action).
 has_genre(movie3628, drama).
 has_genre(movie3628, romance).
 has_genre(movie3628, war).
+has_3_genre(movie3629).
 has_genre(movie3629, adventure).
 has_genre(movie3629, comedy).
 has_genre(movie3629, romance).
+has_2_genre(movie3632).
 has_genre(movie3632, comedy).
 has_genre(movie3632, crime).
+has_4_genre(movie3633).
 has_genre(movie3633, action).
 has_genre(movie3633, adventure).
 has_genre(movie3633, romance).
 has_genre(movie3633, thriller).
+has_1_genre(movie3634).
 has_genre(movie3634, thriller).
+has_3_genre(movie3635).
 has_genre(movie3635, action).
 has_genre(movie3635, adventure).
 has_genre(movie3635, thriller).
+has_1_genre(movie3637).
 has_genre(movie3637, drama).
+has_4_genre(movie3638).
 has_genre(movie3638, action).
 has_genre(movie3638, adventure).
 has_genre(movie3638, sci-fi).
 has_genre(movie3638, thriller).
+has_3_genre(movie3639).
 has_genre(movie3639, action).
 has_genre(movie3639, adventure).
 has_genre(movie3639, thriller).
+has_2_genre(movie3640).
 has_genre(movie3640, comedy).
 has_genre(movie3640, drama).
+has_1_genre(movie3641).
 has_genre(movie3641, drama).
+has_3_genre(movie3643).
 has_genre(movie3643, action).
 has_genre(movie3643, drama).
 has_genre(movie3643, war).
+has_1_genre(movie3646).
 has_genre(movie3646, comedy).
+has_2_genre(movie3648).
 has_genre(movie3648, horror).
 has_genre(movie3648, sci-fi).
+has_1_genre(movie3649).
 has_genre(movie3649, drama).
+has_1_genre(movie3652).
 has_genre(movie3652, horror).
+has_1_genre(movie3653).
 has_genre(movie3653, documentary).
+has_4_genre(movie3654).
 has_genre(movie3654, action).
 has_genre(movie3654, adventure).
 has_genre(movie3654, drama).
 has_genre(movie3654, war).
+has_1_genre(movie3655).
 has_genre(movie3655, drama).
+has_2_genre(movie3658).
 has_genre(movie3658, horror).
 has_genre(movie3658, sci-fi).
+has_3_genre(movie3660).
 has_genre(movie3660, horror).
 has_genre(movie3660, sci-fi).
 has_genre(movie3660, thriller).
+has_3_genre(movie3661).
 has_genre(movie3661, horror).
 has_genre(movie3661, sci-fi).
 has_genre(movie3661, thriller).
+has_3_genre(movie3662).
 has_genre(movie3662, horror).
 has_genre(movie3662, sci-fi).
 has_genre(movie3662, thriller).
+has_3_genre(movie3663).
 has_genre(movie3663, horror).
 has_genre(movie3663, sci-fi).
 has_genre(movie3663, thriller).
+has_3_genre(movie3664).
 has_genre(movie3664, horror).
 has_genre(movie3664, sci-fi).
 has_genre(movie3664, thriller).
+has_3_genre(movie3667).
 has_genre(movie3667, action).
 has_genre(movie3667, comedy).
 has_genre(movie3667, crime).
+has_2_genre(movie3668).
 has_genre(movie3668, drama).
 has_genre(movie3668, romance).
+has_1_genre(movie3669).
 has_genre(movie3669, comedy).
+has_2_genre(movie3671).
 has_genre(movie3671, comedy).
 has_genre(movie3671, western).
+has_2_genre(movie3672).
 has_genre(movie3672, adventure).
 has_genre(movie3672, children).
+has_2_genre(movie3673).
 has_genre(movie3673, adventure).
 has_genre(movie3673, children).
+has_4_genre(movie3674).
 has_genre(movie3674, adventure).
 has_genre(movie3674, children).
 has_genre(movie3674, comedy).
 has_genre(movie3674, drama).
+has_3_genre(movie3675).
 has_genre(movie3675, comedy).
 has_genre(movie3675, musical).
 has_genre(movie3675, romance).
+has_2_genre(movie3676).
 has_genre(movie3676, drama).
 has_genre(movie3676, horror).
+has_1_genre(movie3677).
 has_genre(movie3677, documentary).
+has_1_genre(movie3678).
 has_genre(movie3678, drama).
+has_2_genre(movie3679).
 has_genre(movie3679, documentary).
 has_genre(movie3679, musical).
+has_1_genre(movie3680).
 has_genre(movie3680, documentary).
+has_4_genre(movie3681).
 has_genre(movie3681, action).
 has_genre(movie3681, drama).
 has_genre(movie3681, thriller).
 has_genre(movie3681, western).
+has_4_genre(movie3682).
 has_genre(movie3682, action).
 has_genre(movie3682, crime).
 has_genre(movie3682, drama).
 has_genre(movie3682, thriller).
+has_3_genre(movie3683).
 has_genre(movie3683, crime).
 has_genre(movie3683, drama).
 has_genre(movie3683, film-noir).
+has_2_genre(movie3684).
 has_genre(movie3684, drama).
 has_genre(movie3684, romance).
+has_3_genre(movie3685).
 has_genre(movie3685, comedy).
 has_genre(movie3685, drama).
 has_genre(movie3685, romance).
+has_3_genre(movie3686).
 has_genre(movie3686, horror).
 has_genre(movie3686, sci-fi).
 has_genre(movie3686, thriller).
+has_4_genre(movie3687).
 has_genre(movie3687, adventure).
 has_genre(movie3687, animation).
 has_genre(movie3687, fantasy).
 has_genre(movie3687, sci-fi).
+has_1_genre(movie3688).
 has_genre(movie3688, comedy).
+has_1_genre(movie3689).
 has_genre(movie3689, comedy).
+has_1_genre(movie3690).
 has_genre(movie3690, comedy).
+has_1_genre(movie3691).
 has_genre(movie3691, comedy).
+has_2_genre(movie3692).
 has_genre(movie3692, comedy).
 has_genre(movie3692, horror).
+has_2_genre(movie3693).
 has_genre(movie3693, comedy).
 has_genre(movie3693, horror).
+has_2_genre(movie3694).
 has_genre(movie3694, comedy).
 has_genre(movie3694, horror).
+has_2_genre(movie3695).
 has_genre(movie3695, comedy).
 has_genre(movie3695, horror).
+has_4_genre(movie3696).
 has_genre(movie3696, comedy).
 has_genre(movie3696, horror).
 has_genre(movie3696, sci-fi).
 has_genre(movie3696, thriller).
+has_3_genre(movie3697).
 has_genre(movie3697, action).
 has_genre(movie3697, sci-fi).
 has_genre(movie3697, thriller).
+has_2_genre(movie3698).
 has_genre(movie3698, action).
 has_genre(movie3698, sci-fi).
+has_4_genre(movie3699).
 has_genre(movie3699, adventure).
 has_genre(movie3699, drama).
 has_genre(movie3699, romance).
 has_genre(movie3699, sci-fi).
+has_2_genre(movie3700).
 has_genre(movie3700, drama).
 has_genre(movie3700, sci-fi).
+has_4_genre(movie3701).
 has_genre(movie3701, crime).
 has_genre(movie3701, drama).
 has_genre(movie3701, sci-fi).
 has_genre(movie3701, thriller).
+has_3_genre(movie3702).
 has_genre(movie3702, action).
 has_genre(movie3702, adventure).
 has_genre(movie3702, sci-fi).
+has_4_genre(movie3703).
 has_genre(movie3703, action).
 has_genre(movie3703, adventure).
 has_genre(movie3703, sci-fi).
 has_genre(movie3703, thriller).
+has_3_genre(movie3704).
 has_genre(movie3704, action).
 has_genre(movie3704, adventure).
 has_genre(movie3704, sci-fi).
+has_3_genre(movie3705).
 has_genre(movie3705, action).
 has_genre(movie3705, comedy).
 has_genre(movie3705, romance).
+has_4_genre(movie3706).
 has_genre(movie3706, film-noir).
 has_genre(movie3706, horror).
 has_genre(movie3706, mystery).
 has_genre(movie3706, thriller).
+has_2_genre(movie3707).
 has_genre(movie3707, drama).
 has_genre(movie3707, romance).
+has_2_genre(movie3708).
 has_genre(movie3708, horror).
 has_genre(movie3708, thriller).
+has_1_genre(movie3709).
 has_genre(movie3709, horror).
+has_4_genre(movie3710).
 has_genre(movie3710, action).
 has_genre(movie3710, comedy).
 has_genre(movie3710, crime).
 has_genre(movie3710, thriller).
+has_1_genre(movie3711).
 has_genre(movie3711, drama).
+has_1_genre(movie3712).
 has_genre(movie3712, comedy).
+has_1_genre(movie3713).
 has_genre(movie3713, drama).
+has_1_genre(movie3714).
 has_genre(movie3714, drama).
+has_2_genre(movie3715).
 has_genre(movie3715, comedy).
 has_genre(movie3715, crime).
+has_4_genre(movie3716).
 has_genre(movie3716, action).
 has_genre(movie3716, comedy).
 has_genre(movie3716, crime).
 has_genre(movie3716, drama).
+has_2_genre(movie3717).
 has_genre(movie3717, action).
 has_genre(movie3717, crime).
+has_2_genre(movie3719).
 has_genre(movie3719, comedy).
 has_genre(movie3719, romance).
+has_1_genre(movie3720).
 has_genre(movie3720, drama).
+has_1_genre(movie3723).
 has_genre(movie3723, drama).
+has_2_genre(movie3724).
 has_genre(movie3724, drama).
 has_genre(movie3724, war).
+has_2_genre(movie3725).
 has_genre(movie3725, animation).
 has_genre(movie3725, musical).
+has_2_genre(movie3726).
 has_genre(movie3726, action).
 has_genre(movie3726, thriller).
+has_2_genre(movie3727).
 has_genre(movie3727, horror).
 has_genre(movie3727, western).
+has_4_genre(movie3728).
 has_genre(movie3728, crime).
 has_genre(movie3728, drama).
 has_genre(movie3728, film-noir).
 has_genre(movie3728, thriller).
+has_4_genre(movie3729).
 has_genre(movie3729, action).
 has_genre(movie3729, crime).
 has_genre(movie3729, drama).
 has_genre(movie3729, thriller).
+has_2_genre(movie3730).
 has_genre(movie3730, drama).
 has_genre(movie3730, mystery).
+has_2_genre(movie3731).
 has_genre(movie3731, drama).
 has_genre(movie3731, thriller).
+has_1_genre(movie3732).
 has_genre(movie3732, horror).
+has_1_genre(movie3733).
 has_genre(movie3733, drama).
+has_2_genre(movie3735).
 has_genre(movie3735, crime).
 has_genre(movie3735, drama).
+has_1_genre(movie3736).
 has_genre(movie3736, drama).
+has_2_genre(movie3737).
 has_genre(movie3737, drama).
 has_genre(movie3737, western).
+has_1_genre(movie3738).
 has_genre(movie3738, drama).
+has_2_genre(movie3739).
 has_genre(movie3739, comedy).
 has_genre(movie3739, romance).
+has_4_genre(movie3740).
 has_genre(movie3740, action).
 has_genre(movie3740, adventure).
 has_genre(movie3740, comedy).
 has_genre(movie3740, fantasy).
+has_3_genre(movie3741).
 has_genre(movie3741, crime).
 has_genre(movie3741, drama).
 has_genre(movie3741, thriller).
+has_2_genre(movie3742).
 has_genre(movie3742, drama).
 has_genre(movie3742, war).
+has_2_genre(movie3743).
 has_genre(movie3743, comedy).
 has_genre(movie3743, romance).
+has_3_genre(movie3744).
 has_genre(movie3744, action).
 has_genre(movie3744, crime).
 has_genre(movie3744, thriller).
+has_5_genre(movie3745).
 has_genre(movie3745, action).
 has_genre(movie3745, adventure).
 has_genre(movie3745, animation).
 has_genre(movie3745, children).
 has_genre(movie3745, sci-fi).
+has_1_genre(movie3746).
 has_genre(movie3746, drama).
+has_1_genre(movie3747).
 has_genre(movie3747, drama).
+has_3_genre(movie3751).
 has_genre(movie3751, animation).
 has_genre(movie3751, children).
 has_genre(movie3751, comedy).
+has_2_genre(movie3752).
 has_genre(movie3752, adventure).
 has_genre(movie3752, comedy).
+has_3_genre(movie3753).
 has_genre(movie3753, action).
 has_genre(movie3753, drama).
 has_genre(movie3753, war).
+has_5_genre(movie3754).
 has_genre(movie3754, adventure).
 has_genre(movie3754, animation).
 has_genre(movie3754, children).
 has_genre(movie3754, comedy).
 has_genre(movie3754, fantasy).
+has_2_genre(movie3755).
 has_genre(movie3755, drama).
 has_genre(movie3755, thriller).
+has_1_genre(movie3756).
 has_genre(movie3756, drama).
+has_3_genre(movie3758).
 has_genre(movie3758, drama).
 has_genre(movie3758, sci-fi).
 has_genre(movie3758, thriller).
+has_1_genre(movie3760).
 has_genre(movie3760, comedy).
+has_4_genre(movie3761).
 has_genre(movie3761, action).
 has_genre(movie3761, crime).
 has_genre(movie3761, drama).
 has_genre(movie3761, thriller).
+has_3_genre(movie3763).
 has_genre(movie3763, action).
 has_genre(movie3763, crime).
 has_genre(movie3763, thriller).
+has_3_genre(movie3764).
 has_genre(movie3764, action).
 has_genre(movie3764, crime).
 has_genre(movie3764, thriller).
+has_3_genre(movie3765).
 has_genre(movie3765, crime).
 has_genre(movie3765, drama).
 has_genre(movie3765, romance).
+has_2_genre(movie3766).
 has_genre(movie3766, action).
 has_genre(movie3766, war).
+has_2_genre(movie3767).
 has_genre(movie3767, action).
 has_genre(movie3767, war).
+has_2_genre(movie3768).
 has_genre(movie3768, action).
 has_genre(movie3768, war).
+has_1_genre(movie3769).
 has_genre(movie3769, action).
+has_3_genre(movie3770).
 has_genre(movie3770, horror).
 has_genre(movie3770, sci-fi).
 has_genre(movie3770, thriller).
+has_3_genre(movie3771).
 has_genre(movie3771, action).
 has_genre(movie3771, adventure).
 has_genre(movie3771, fantasy).
+has_1_genre(movie3773).
 has_genre(movie3773, comedy).
+has_3_genre(movie3774).
 has_genre(movie3774, comedy).
 has_genre(movie3774, drama).
 has_genre(movie3774, romance).
+has_2_genre(movie3783).
 has_genre(movie3783, crime).
 has_genre(movie3783, drama).
+has_2_genre(movie3784).
 has_genre(movie3784, comedy).
 has_genre(movie3784, fantasy).
+has_2_genre(movie3785).
 has_genre(movie3785, comedy).
 has_genre(movie3785, horror).
+has_1_genre(movie3786).
 has_genre(movie3786, comedy).
+has_1_genre(movie3787).
 has_genre(movie3787, comedy).
+has_2_genre(movie3788).
 has_genre(movie3788, drama).
 has_genre(movie3788, mystery).
+has_1_genre(movie3789).
 has_genre(movie3789, drama).
+has_1_genre(movie3790).
 has_genre(movie3790, drama).
+has_1_genre(movie3791).
 has_genre(movie3791, drama).
+has_3_genre(movie3792).
 has_genre(movie3792, drama).
 has_genre(movie3792, romance).
 has_genre(movie3792, western).
+has_3_genre(movie3793).
 has_genre(movie3793, action).
 has_genre(movie3793, adventure).
 has_genre(movie3793, sci-fi).
+has_2_genre(movie3794).
 has_genre(movie3794, comedy).
 has_genre(movie3794, drama).
+has_1_genre(movie3795).
 has_genre(movie3795, drama).
+has_1_genre(movie3797).
 has_genre(movie3797, thriller).
+has_3_genre(movie3798).
 has_genre(movie3798, drama).
 has_genre(movie3798, horror).
 has_genre(movie3798, mystery).
+has_2_genre(movie3799).
 has_genre(movie3799, animation).
 has_genre(movie3799, children).
+has_2_genre(movie3801).
 has_genre(movie3801, drama).
 has_genre(movie3801, mystery).
+has_2_genre(movie3802).
 has_genre(movie3802, action).
 has_genre(movie3802, sci-fi).
+has_1_genre(movie3806).
 has_genre(movie3806, western).
+has_2_genre(movie3807).
 has_genre(movie3807, adventure).
 has_genre(movie3807, fantasy).
+has_2_genre(movie3808).
 has_genre(movie3808, drama).
 has_genre(movie3808, war).
+has_1_genre(movie3809).
 has_genre(movie3809, comedy).
+has_2_genre(movie3810).
 has_genre(movie3810, drama).
 has_genre(movie3810, thriller).
+has_2_genre(movie3811).
 has_genre(movie3811, drama).
 has_genre(movie3811, war).
+has_1_genre(movie3812).
 has_genre(movie3812, comedy).
+has_1_genre(movie3813).
 has_genre(movie3813, drama).
+has_1_genre(movie3814).
 has_genre(movie3814, comedy).
+has_1_genre(movie3816).
 has_genre(movie3816, drama).
+has_1_genre(movie3819).
 has_genre(movie3819, comedy).
+has_1_genre(movie3821).
 has_genre(movie3821, comedy).
+has_2_genre(movie3822).
 has_genre(movie3822, drama).
 has_genre(movie3822, romance).
+has_1_genre(movie3823).
 has_genre(movie3823, drama).
+has_2_genre(movie3824).
 has_genre(movie3824, drama).
 has_genre(movie3824, romance).
+has_3_genre(movie3825).
 has_genre(movie3825, comedy).
 has_genre(movie3825, drama).
 has_genre(movie3825, romance).
+has_3_genre(movie3826).
 has_genre(movie3826, horror).
 has_genre(movie3826, sci-fi).
 has_genre(movie3826, thriller).
+has_4_genre(movie3827).
 has_genre(movie3827, action).
 has_genre(movie3827, adventure).
 has_genre(movie3827, comedy).
 has_genre(movie3827, sci-fi).
+has_3_genre(movie3830).
 has_genre(movie3830, comedy).
 has_genre(movie3830, horror).
 has_genre(movie3830, thriller).
+has_1_genre(movie3831).
 has_genre(movie3831, comedy).
+has_1_genre(movie3832).
 has_genre(movie3832, horror).
+has_2_genre(movie3833).
 has_genre(movie3833, horror).
 has_genre(movie3833, sci-fi).
+has_3_genre(movie3834).
 has_genre(movie3834, adventure).
 has_genre(movie3834, drama).
 has_genre(movie3834, romance).
+has_1_genre(movie3835).
 has_genre(movie3835, thriller).
+has_3_genre(movie3836).
 has_genre(movie3836, action).
 has_genre(movie3836, comedy).
 has_genre(movie3836, war).
+has_5_genre(movie3837).
 has_genre(movie3837, action).
 has_genre(movie3837, fantasy).
 has_genre(movie3837, horror).
 has_genre(movie3837, sci-fi).
 has_genre(movie3837, thriller).
+has_1_genre(movie3838).
 has_genre(movie3838, horror).
+has_1_genre(movie3839).
 has_genre(movie3839, horror).
+has_1_genre(movie3840).
 has_genre(movie3840, horror).
+has_2_genre(movie3841).
 has_genre(movie3841, action).
 has_genre(movie3841, comedy).
+has_1_genre(movie3843).
 has_genre(movie3843, horror).
+has_1_genre(movie3844).
 has_genre(movie3844, drama).
+has_1_genre(movie3845).
 has_genre(movie3845, drama).
+has_1_genre(movie3846).
 has_genre(movie3846, comedy).
+has_1_genre(movie3847).
 has_genre(movie3847, horror).
+has_3_genre(movie3849).
 has_genre(movie3849, horror).
 has_genre(movie3849, mystery).
 has_genre(movie3849, thriller).
+has_1_genre(movie3851).
 has_genre(movie3851, comedy).
+has_1_genre(movie3852).
 has_genre(movie3852, comedy).
+has_2_genre(movie3855).
 has_genre(movie3855, drama).
 has_genre(movie3855, romance).
+has_1_genre(movie3857).
 has_genre(movie3857, thriller).
+has_1_genre(movie3858).
 has_genre(movie3858, comedy).
+has_1_genre(movie3859).
 has_genre(movie3859, documentary).
+has_1_genre(movie3861).
 has_genre(movie3861, comedy).
+has_1_genre(movie3862).
 has_genre(movie3862, comedy).
+has_3_genre(movie3863).
 has_genre(movie3863, drama).
 has_genre(movie3863, horror).
 has_genre(movie3863, thriller).
+has_3_genre(movie3864).
 has_genre(movie3864, action).
 has_genre(movie3864, adventure).
 has_genre(movie3864, sci-fi).
+has_2_genre(movie3865).
 has_genre(movie3865, comedy).
 has_genre(movie3865, documentary).
+has_4_genre(movie3868).
 has_genre(movie3868, action).
 has_genre(movie3868, comedy).
 has_genre(movie3868, crime).
 has_genre(movie3868, romance).
+has_1_genre(movie3869).
 has_genre(movie3869, comedy).
+has_1_genre(movie3870).
 has_genre(movie3870, drama).
+has_2_genre(movie3871).
 has_genre(movie3871, drama).
 has_genre(movie3871, western).
+has_1_genre(movie3872).
 has_genre(movie3872, drama).
+has_2_genre(movie3873).
 has_genre(movie3873, comedy).
 has_genre(movie3873, western).
+has_3_genre(movie3877).
 has_genre(movie3877, action).
 has_genre(movie3877, adventure).
 has_genre(movie3877, fantasy).
+has_2_genre(movie3879).
 has_genre(movie3879, action).
 has_genre(movie3879, thriller).
+has_1_genre(movie3882).
 has_genre(movie3882, comedy).
+has_1_genre(movie3884).
 has_genre(movie3884, comedy).
+has_2_genre(movie3888).
 has_genre(movie3888, drama).
 has_genre(movie3888, romance).
+has_3_genre(movie3889).
 has_genre(movie3889, action).
 has_genre(movie3889, adventure).
 has_genre(movie3889, fantasy).
+has_5_genre(movie3893).
 has_genre(movie3893, comedy).
 has_genre(movie3893, crime).
 has_genre(movie3893, drama).
 has_genre(movie3893, romance).
 has_genre(movie3893, thriller).
+has_1_genre(movie3894).
 has_genre(movie3894, drama).
+has_2_genre(movie3895).
 has_genre(movie3895, crime).
 has_genre(movie3895, thriller).
+has_2_genre(movie3896).
 has_genre(movie3896, crime).
 has_genre(movie3896, thriller).
+has_1_genre(movie3897).
 has_genre(movie3897, drama).
+has_2_genre(movie3898).
 has_genre(movie3898, action).
 has_genre(movie3898, comedy).
+has_3_genre(movie3899).
 has_genre(movie3899, crime).
 has_genre(movie3899, drama).
 has_genre(movie3899, thriller).
+has_2_genre(movie3900).
 has_genre(movie3900, comedy).
 has_genre(movie3900, drama).
+has_2_genre(movie3901).
 has_genre(movie3901, comedy).
 has_genre(movie3901, drama).
+has_2_genre(movie3906).
 has_genre(movie3906, crime).
 has_genre(movie3906, thriller).
+has_1_genre(movie3908).
 has_genre(movie3908, horror).
+has_2_genre(movie3909).
 has_genre(movie3909, comedy).
 has_genre(movie3909, romance).
+has_2_genre(movie3910).
 has_genre(movie3910, drama).
 has_genre(movie3910, musical).
+has_1_genre(movie3911).
 has_genre(movie3911, comedy).
+has_2_genre(movie3912).
 has_genre(movie3912, comedy).
 has_genre(movie3912, drama).
+has_1_genre(movie3914).
 has_genre(movie3914, drama).
+has_1_genre(movie3915).
 has_genre(movie3915, drama).
+has_1_genre(movie3916).
 has_genre(movie3916, drama).
+has_1_genre(movie3917).
 has_genre(movie3917, horror).
+has_1_genre(movie3918).
 has_genre(movie3918, horror).
+has_1_genre(movie3919).
 has_genre(movie3919, horror).
+has_4_genre(movie3920).
 has_genre(movie3920, drama).
 has_genre(movie3920, fantasy).
 has_genre(movie3920, mystery).
 has_genre(movie3920, romance).
+has_1_genre(movie3922).
 has_genre(movie3922, comedy).
+has_2_genre(movie3925).
 has_genre(movie3925, comedy).
 has_genre(movie3925, drama).
+has_2_genre(movie3926).
 has_genre(movie3926, adventure).
 has_genre(movie3926, sci-fi).
+has_2_genre(movie3927).
 has_genre(movie3927, adventure).
 has_genre(movie3927, sci-fi).
+has_2_genre(movie3928).
 has_genre(movie3928, comedy).
 has_genre(movie3928, horror).
+has_1_genre(movie3929).
 has_genre(movie3929, comedy).
+has_3_genre(movie3930).
 has_genre(movie3930, adventure).
 has_genre(movie3930, horror).
 has_genre(movie3930, sci-fi).
+has_2_genre(movie3932).
 has_genre(movie3932, horror).
 has_genre(movie3932, sci-fi).
+has_2_genre(movie3933).
 has_genre(movie3933, horror).
 has_genre(movie3933, sci-fi).
+has_2_genre(movie3937).
 has_genre(movie3937, sci-fi).
 has_genre(movie3937, thriller).
+has_1_genre(movie3938).
 has_genre(movie3938, horror).
+has_1_genre(movie3939).
 has_genre(movie3939, horror).
+has_1_genre(movie3940).
 has_genre(movie3940, horror).
+has_1_genre(movie3941).
 has_genre(movie3941, horror).
+has_1_genre(movie3942).
 has_genre(movie3942, horror).
+has_1_genre(movie3943).
 has_genre(movie3943, comedy).
+has_3_genre(movie3945).
 has_genre(movie3945, adventure).
 has_genre(movie3945, animation).
 has_genre(movie3945, children).
+has_3_genre(movie3946).
 has_genre(movie3946, action).
 has_genre(movie3946, drama).
 has_genre(movie3946, thriller).
+has_4_genre(movie3947).
 has_genre(movie3947, action).
 has_genre(movie3947, crime).
 has_genre(movie3947, drama).
 has_genre(movie3947, thriller).
+has_1_genre(movie3948).
 has_genre(movie3948, comedy).
+has_1_genre(movie3949).
 has_genre(movie3949, drama).
+has_1_genre(movie3950).
 has_genre(movie3950, drama).
+has_1_genre(movie3951).
 has_genre(movie3951, drama).
+has_2_genre(movie3952).
 has_genre(movie3952, drama).
 has_genre(movie3952, thriller).
+has_2_genre(movie3953).
 has_genre(movie3953, comedy).
 has_genre(movie3953, romance).
+has_1_genre(movie3955).
 has_genre(movie3955, comedy).
+has_2_genre(movie3957).
 has_genre(movie3957, action).
 has_genre(movie3957, drama).
+has_1_genre(movie3958).
 has_genre(movie3958, drama).
+has_3_genre(movie3959).
 has_genre(movie3959, action).
 has_genre(movie3959, adventure).
 has_genre(movie3959, sci-fi).
+has_2_genre(movie3962).
 has_genre(movie3962, comedy).
 has_genre(movie3962, horror).
+has_1_genre(movie3963).
 has_genre(movie3963, musical).
+has_2_genre(movie3964).
 has_genre(movie3964, animation).
 has_genre(movie3964, children).
+has_2_genre(movie3965).
 has_genre(movie3965, drama).
 has_genre(movie3965, film-noir).
+has_2_genre(movie3966).
 has_genre(movie3966, crime).
 has_genre(movie3966, film-noir).
+has_1_genre(movie3967).
 has_genre(movie3967, drama).
+has_1_genre(movie3968).
 has_genre(movie3968, comedy).
+has_1_genre(movie3969).
 has_genre(movie3969, drama).
+has_2_genre(movie3971).
 has_genre(movie3971, comedy).
 has_genre(movie3971, mystery).
+has_2_genre(movie3972).
 has_genre(movie3972, action).
 has_genre(movie3972, comedy).
+has_4_genre(movie3973).
 has_genre(movie3973, crime).
 has_genre(movie3973, horror).
 has_genre(movie3973, mystery).
 has_genre(movie3973, thriller).
+has_2_genre(movie3974).
 has_genre(movie3974, adventure).
 has_genre(movie3974, children).
+has_2_genre(movie3977).
 has_genre(movie3977, action).
 has_genre(movie3977, comedy).
+has_2_genre(movie3978).
 has_genre(movie3978, drama).
 has_genre(movie3978, romance).
+has_1_genre(movie3979).
 has_genre(movie3979, comedy).
+has_1_genre(movie3980).
 has_genre(movie3980, drama).
+has_3_genre(movie3981).
 has_genre(movie3981, action).
 has_genre(movie3981, sci-fi).
 has_genre(movie3981, thriller).
+has_2_genre(movie3983).
 has_genre(movie3983, drama).
 has_genre(movie3983, romance).
+has_3_genre(movie3984).
 has_genre(movie3984, action).
 has_genre(movie3984, adventure).
 has_genre(movie3984, thriller).
+has_2_genre(movie3985).
 has_genre(movie3985, drama).
 has_genre(movie3985, war).
+has_3_genre(movie3986).
 has_genre(movie3986, action).
 has_genre(movie3986, sci-fi).
 has_genre(movie3986, thriller).
+has_2_genre(movie3987).
 has_genre(movie3987, drama).
 has_genre(movie3987, romance).
+has_3_genre(movie3988).
 has_genre(movie3988, children).
 has_genre(movie3988, comedy).
 has_genre(movie3988, fantasy).
+has_1_genre(movie3989).
 has_genre(movie3989, documentary).
+has_3_genre(movie3990).
 has_genre(movie3990, animation).
 has_genre(movie3990, children).
 has_genre(movie3990, comedy).
+has_2_genre(movie3991).
 has_genre(movie3991, children).
 has_genre(movie3991, comedy).
+has_3_genre(movie3992).
 has_genre(movie3992, drama).
 has_genre(movie3992, romance).
 has_genre(movie3992, war).
+has_2_genre(movie3993).
 has_genre(movie3993, drama).
 has_genre(movie3993, romance).
+has_2_genre(movie3994).
 has_genre(movie3994, drama).
 has_genre(movie3994, sci-fi).
+has_3_genre(movie3996).
 has_genre(movie3996, action).
 has_genre(movie3996, drama).
 has_genre(movie3996, romance).
+has_4_genre(movie3997).
 has_genre(movie3997, action).
 has_genre(movie3997, adventure).
 has_genre(movie3997, comedy).
 has_genre(movie3997, fantasy).
+has_1_genre(movie3998).
 has_genre(movie3998, drama).
+has_2_genre(movie3999).
 has_genre(movie3999, action).
 has_genre(movie3999, adventure).
+has_2_genre(movie4000).
 has_genre(movie4000, adventure).
 has_genre(movie4000, drama).
+has_1_genre(movie4002).
 has_genre(movie4002, comedy).
+has_1_genre(movie4003).
 has_genre(movie4003, comedy).
+has_3_genre(movie4005).
 has_genre(movie4005, action).
 has_genre(movie4005, adventure).
 has_genre(movie4005, thriller).
+has_4_genre(movie4006).
 has_genre(movie4006, adventure).
 has_genre(movie4006, animation).
 has_genre(movie4006, children).
 has_genre(movie4006, sci-fi).
+has_1_genre(movie4007).
 has_genre(movie4007, drama).
+has_2_genre(movie4008).
 has_genre(movie4008, drama).
 has_genre(movie4008, war).
+has_1_genre(movie4009).
 has_genre(movie4009, drama).
+has_1_genre(movie4010).
 has_genre(movie4010, comedy).
+has_3_genre(movie4011).
 has_genre(movie4011, comedy).
 has_genre(movie4011, crime).
 has_genre(movie4011, thriller).
+has_2_genre(movie4012).
 has_genre(movie4012, comedy).
 has_genre(movie4012, drama).
+has_2_genre(movie4014).
 has_genre(movie4014, drama).
 has_genre(movie4014, romance).
+has_2_genre(movie4015).
 has_genre(movie4015, comedy).
 has_genre(movie4015, sci-fi).
+has_5_genre(movie4016).
 has_genre(movie4016, adventure).
 has_genre(movie4016, animation).
 has_genre(movie4016, children).
 has_genre(movie4016, comedy).
 has_genre(movie4016, fantasy).
+has_1_genre(movie4017).
 has_genre(movie4017, drama).
+has_2_genre(movie4018).
 has_genre(movie4018, comedy).
 has_genre(movie4018, romance).
+has_1_genre(movie4019).
 has_genre(movie4019, drama).
+has_1_genre(movie4020).
 has_genre(movie4020, thriller).
+has_1_genre(movie4021).
 has_genre(movie4021, drama).
+has_1_genre(movie4022).
 has_genre(movie4022, drama).
+has_3_genre(movie4023).
 has_genre(movie4023, comedy).
 has_genre(movie4023, drama).
 has_genre(movie4023, romance).
+has_1_genre(movie4024).
 has_genre(movie4024, romance).
+has_2_genre(movie4025).
 has_genre(movie4025, comedy).
 has_genre(movie4025, crime).
+has_3_genre(movie4027).
 has_genre(movie4027, adventure).
 has_genre(movie4027, comedy).
 has_genre(movie4027, crime).
+has_2_genre(movie4029).
 has_genre(movie4029, comedy).
 has_genre(movie4029, drama).
+has_1_genre(movie4030).
 has_genre(movie4030, horror).
+has_3_genre(movie4031).
 has_genre(movie4031, drama).
 has_genre(movie4031, romance).
 has_genre(movie4031, western).
+has_1_genre(movie4032).
 has_genre(movie4032, comedy).
+has_3_genre(movie4033).
 has_genre(movie4033, drama).
 has_genre(movie4033, thriller).
 has_genre(movie4033, war).
+has_3_genre(movie4034).
 has_genre(movie4034, crime).
 has_genre(movie4034, drama).
 has_genre(movie4034, thriller).
+has_2_genre(movie4035).
 has_genre(movie4035, romance).
 has_genre(movie4035, western).
+has_2_genre(movie4036).
 has_genre(movie4036, drama).
 has_genre(movie4036, horror).
+has_4_genre(movie4037).
 has_genre(movie4037, crime).
 has_genre(movie4037, film-noir).
 has_genre(movie4037, mystery).
 has_genre(movie4037, thriller).
+has_2_genre(movie4039).
 has_genre(movie4039, children).
 has_genre(movie4039, musical).
+has_1_genre(movie4040).
 has_genre(movie4040, comedy).
+has_2_genre(movie4041).
 has_genre(movie4041, drama).
 has_genre(movie4041, romance).
+has_4_genre(movie4042).
 has_genre(movie4042, action).
 has_genre(movie4042, drama).
 has_genre(movie4042, war).
 has_genre(movie4042, western).
+has_2_genre(movie4043).
 has_genre(movie4043, crime).
 has_genre(movie4043, drama).
+has_1_genre(movie4046).
 has_genre(movie4046, drama).
+has_2_genre(movie4047).
 has_genre(movie4047, drama).
 has_genre(movie4047, war).
+has_2_genre(movie4051).
 has_genre(movie4051, horror).
 has_genre(movie4051, sci-fi).
+has_3_genre(movie4052).
 has_genre(movie4052, crime).
 has_genre(movie4052, drama).
 has_genre(movie4052, thriller).
+has_2_genre(movie4053).
 has_genre(movie4053, action).
 has_genre(movie4053, comedy).
+has_2_genre(movie4054).
 has_genre(movie4054, drama).
 has_genre(movie4054, romance).
+has_1_genre(movie4055).
 has_genre(movie4055, drama).
+has_4_genre(movie4056).
 has_genre(movie4056, crime).
 has_genre(movie4056, drama).
 has_genre(movie4056, mystery).
 has_genre(movie4056, thriller).
+has_2_genre(movie4061).
 has_genre(movie4061, drama).
 has_genre(movie4061, romance).
+has_3_genre(movie4062).
 has_genre(movie4062, comedy).
 has_genre(movie4062, drama).
 has_genre(movie4062, romance).
+has_3_genre(movie4063).
 has_genre(movie4063, comedy).
 has_genre(movie4063, drama).
 has_genre(movie4063, romance).
+has_3_genre(movie4064).
 has_genre(movie4064, action).
 has_genre(movie4064, crime).
 has_genre(movie4064, thriller).
+has_3_genre(movie4065).
 has_genre(movie4065, action).
 has_genre(movie4065, crime).
 has_genre(movie4065, drama).
+has_2_genre(movie4066).
 has_genre(movie4066, action).
 has_genre(movie4066, comedy).
+has_2_genre(movie4067).
 has_genre(movie4067, drama).
 has_genre(movie4067, romance).
+has_1_genre(movie4068).
 has_genre(movie4068, comedy).
+has_2_genre(movie4069).
 has_genre(movie4069, comedy).
 has_genre(movie4069, romance).
+has_1_genre(movie4074).
 has_genre(movie4074, drama).
+has_2_genre(movie4077).
 has_genre(movie4077, drama).
 has_genre(movie4077, thriller).
+has_1_genre(movie4078).
 has_genre(movie4078, drama).
+has_2_genre(movie4079).
 has_genre(movie4079, comedy).
 has_genre(movie4079, sci-fi).
+has_1_genre(movie4080).
 has_genre(movie4080, comedy).
+has_1_genre(movie4081).
 has_genre(movie4081, comedy).
+has_3_genre(movie4082).
 has_genre(movie4082, comedy).
 has_genre(movie4082, drama).
 has_genre(movie4082, romance).
+has_1_genre(movie4083).
 has_genre(movie4083, thriller).
+has_4_genre(movie4084).
 has_genre(movie4084, action).
 has_genre(movie4084, comedy).
 has_genre(movie4084, crime).
 has_genre(movie4084, thriller).
+has_4_genre(movie4085).
 has_genre(movie4085, action).
 has_genre(movie4085, comedy).
 has_genre(movie4085, crime).
 has_genre(movie4085, drama).
+has_5_genre(movie4086).
 has_genre(movie4086, action).
 has_genre(movie4086, crime).
 has_genre(movie4086, mystery).
 has_genre(movie4086, romance).
 has_genre(movie4086, thriller).
+has_1_genre(movie4089).
 has_genre(movie4089, comedy).
+has_2_genre(movie4090).
 has_genre(movie4090, animation).
 has_genre(movie4090, children).
+has_2_genre(movie4091).
 has_genre(movie4091, comedy).
 has_genre(movie4091, romance).
+has_2_genre(movie4092).
 has_genre(movie4092, romance).
 has_genre(movie4092, sci-fi).
+has_1_genre(movie4093).
 has_genre(movie4093, thriller).
+has_2_genre(movie4102).
 has_genre(movie4102, comedy).
 has_genre(movie4102, documentary).
+has_4_genre(movie4103).
 has_genre(movie4103, action).
 has_genre(movie4103, adventure).
 has_genre(movie4103, drama).
 has_genre(movie4103, war).
+has_1_genre(movie4104).
 has_genre(movie4104, comedy).
+has_3_genre(movie4105).
 has_genre(movie4105, fantasy).
 has_genre(movie4105, horror).
 has_genre(movie4105, thriller).
+has_2_genre(movie4109).
 has_genre(movie4109, drama).
 has_genre(movie4109, thriller).
+has_1_genre(movie4110).
 has_genre(movie4110, thriller).
+has_2_genre(movie4111).
 has_genre(movie4111, drama).
 has_genre(movie4111, war).
+has_1_genre(movie4113).
 has_genre(movie4113, drama).
+has_1_genre(movie4115).
 has_genre(movie4115, comedy).
+has_1_genre(movie4116).
 has_genre(movie4116, comedy).
+has_1_genre(movie4117).
 has_genre(movie4117, drama).
+has_4_genre(movie4121).
 has_genre(movie4121, action).
 has_genre(movie4121, adventure).
 has_genre(movie4121, comedy).
 has_genre(movie4121, sci-fi).
+has_1_genre(movie4123).
 has_genre(movie4123, comedy).
+has_2_genre(movie4124).
 has_genre(movie4124, horror).
 has_genre(movie4124, thriller).
+has_2_genre(movie4125).
 has_genre(movie4125, comedy).
 has_genre(movie4125, sci-fi).
+has_1_genre(movie4126).
 has_genre(movie4126, drama).
+has_1_genre(movie4127).
 has_genre(movie4127, comedy).
+has_3_genre(movie4128).
 has_genre(movie4128, comedy).
 has_genre(movie4128, horror).
 has_genre(movie4128, thriller).
+has_2_genre(movie4129).
 has_genre(movie4129, fantasy).
 has_genre(movie4129, romance).
+has_2_genre(movie4130).
 has_genre(movie4130, comedy).
 has_genre(movie4130, fantasy).
+has_3_genre(movie4131).
 has_genre(movie4131, comedy).
 has_genre(movie4131, romance).
 has_genre(movie4131, sci-fi).
+has_2_genre(movie4132).
 has_genre(movie4132, comedy).
 has_genre(movie4132, romance).
+has_4_genre(movie4133).
 has_genre(movie4133, action).
 has_genre(movie4133, adventure).
 has_genre(movie4133, fantasy).
 has_genre(movie4133, sci-fi).
+has_3_genre(movie4135).
 has_genre(movie4135, adventure).
 has_genre(movie4135, comedy).
 has_genre(movie4135, horror).
+has_2_genre(movie4138).
 has_genre(movie4138, comedy).
 has_genre(movie4138, horror).
+has_2_genre(movie4139).
 has_genre(movie4139, crime).
 has_genre(movie4139, drama).
+has_2_genre(movie4141).
 has_genre(movie4141, comedy).
 has_genre(movie4141, romance).
+has_4_genre(movie4142).
 has_genre(movie4142, action).
 has_genre(movie4142, adventure).
 has_genre(movie4142, drama).
 has_genre(movie4142, thriller).
+has_2_genre(movie4143).
 has_genre(movie4143, horror).
 has_genre(movie4143, mystery).
+has_2_genre(movie4144).
 has_genre(movie4144, drama).
 has_genre(movie4144, romance).
+has_3_genre(movie4146).
 has_genre(movie4146, drama).
 has_genre(movie4146, mystery).
 has_genre(movie4146, romance).
+has_3_genre(movie4147).
 has_genre(movie4147, comedy).
 has_genre(movie4147, drama).
 has_genre(movie4147, romance).
+has_2_genre(movie4148).
 has_genre(movie4148, horror).
 has_genre(movie4148, thriller).
+has_2_genre(movie4149).
 has_genre(movie4149, comedy).
 has_genre(movie4149, romance).
+has_1_genre(movie4152).
 has_genre(movie4152, drama).
+has_3_genre(movie4153).
 has_genre(movie4153, comedy).
 has_genre(movie4153, fantasy).
 has_genre(movie4153, romance).
+has_2_genre(movie4154).
 has_genre(movie4154, animation).
 has_genre(movie4154, children).
+has_2_genre(movie4155).
 has_genre(movie4155, drama).
 has_genre(movie4155, romance).
+has_1_genre(movie4156).
 has_genre(movie4156, comedy).
+has_4_genre(movie4157).
 has_genre(movie4157, comedy).
 has_genre(movie4157, drama).
 has_genre(movie4157, fantasy).
 has_genre(movie4157, romance).
+has_3_genre(movie4158).
 has_genre(movie4158, animation).
 has_genre(movie4158, comedy).
 has_genre(movie4158, fantasy).
+has_2_genre(movie4159).
 has_genre(movie4159, action).
 has_genre(movie4159, thriller).
+has_2_genre(movie4160).
 has_genre(movie4160, drama).
 has_genre(movie4160, romance).
+has_2_genre(movie4161).
 has_genre(movie4161, action).
 has_genre(movie4161, comedy).
+has_1_genre(movie4164).
 has_genre(movie4164, drama).
+has_2_genre(movie4166).
 has_genre(movie4166, action).
 has_genre(movie4166, drama).
+has_1_genre(movie4167).
 has_genre(movie4167, thriller).
+has_2_genre(movie4168).
 has_genre(movie4168, comedy).
 has_genre(movie4168, romance).
+has_1_genre(movie4171).
 has_genre(movie4171, documentary).
+has_1_genre(movie4174).
 has_genre(movie4174, drama).
+has_2_genre(movie4175).
 has_genre(movie4175, comedy).
 has_genre(movie4175, drama).
+has_1_genre(movie4178).
 has_genre(movie4178, drama).
+has_2_genre(movie4180).
 has_genre(movie4180, action).
 has_genre(movie4180, drama).
+has_1_genre(movie4181).
 has_genre(movie4181, comedy).
+has_3_genre(movie4184).
 has_genre(movie4184, comedy).
 has_genre(movie4184, drama).
 has_genre(movie4184, romance).
+has_1_genre(movie4187).
 has_genre(movie4187, drama).
+has_1_genre(movie4189).
 has_genre(movie4189, drama).
+has_1_genre(movie4190).
 has_genre(movie4190, drama).
+has_3_genre(movie4191).
 has_genre(movie4191, comedy).
 has_genre(movie4191, drama).
 has_genre(movie4191, romance).
+has_1_genre(movie4193).
 has_genre(movie4193, musical).
+has_3_genre(movie4194).
 has_genre(movie4194, drama).
 has_genre(movie4194, romance).
 has_genre(movie4194, war).
+has_2_genre(movie4195).
 has_genre(movie4195, horror).
 has_genre(movie4195, mystery).
+has_1_genre(movie4197).
 has_genre(movie4197, comedy).
+has_1_genre(movie4198).
 has_genre(movie4198, sci-fi).
+has_1_genre(movie4200).
 has_genre(movie4200, action).
+has_1_genre(movie4202).
 has_genre(movie4202, drama).
+has_3_genre(movie4203).
 has_genre(movie4203, action).
 has_genre(movie4203, crime).
 has_genre(movie4203, drama).
+has_1_genre(movie4204).
 has_genre(movie4204, comedy).
+has_3_genre(movie4205).
 has_genre(movie4205, comedy).
 has_genre(movie4205, drama).
 has_genre(movie4205, romance).
+has_3_genre(movie4207).
 has_genre(movie4207, action).
 has_genre(movie4207, adventure).
 has_genre(movie4207, war).
+has_5_genre(movie4210).
 has_genre(movie4210, action).
 has_genre(movie4210, crime).
 has_genre(movie4210, drama).
 has_genre(movie4210, horror).
 has_genre(movie4210, thriller).
+has_1_genre(movie4211).
 has_genre(movie4211, drama).
+has_2_genre(movie4212).
 has_genre(movie4212, crime).
 has_genre(movie4212, mystery).
+has_1_genre(movie4214).
 has_genre(movie4214, comedy).
+has_1_genre(movie4215).
 has_genre(movie4215, comedy).
+has_1_genre(movie4217).
 has_genre(movie4217, documentary).
+has_2_genre(movie4218).
 has_genre(movie4218, crime).
 has_genre(movie4218, drama).
+has_1_genre(movie4219).
 has_genre(movie4219, comedy).
+has_1_genre(movie4220).
 has_genre(movie4220, comedy).
+has_1_genre(movie4221).
 has_genre(movie4221, comedy).
+has_2_genre(movie4223).
 has_genre(movie4223, drama).
 has_genre(movie4223, war).
+has_2_genre(movie4224).
 has_genre(movie4224, action).
 has_genre(movie4224, thriller).
+has_1_genre(movie4225).
 has_genre(movie4225, comedy).
+has_2_genre(movie4226).
 has_genre(movie4226, mystery).
 has_genre(movie4226, thriller).
+has_3_genre(movie4228).
 has_genre(movie4228, comedy).
 has_genre(movie4228, crime).
 has_genre(movie4228, romance).
+has_2_genre(movie4229).
 has_genre(movie4229, comedy).
 has_genre(movie4229, romance).
+has_2_genre(movie4231).
 has_genre(movie4231, comedy).
 has_genre(movie4231, romance).
+has_4_genre(movie4232).
 has_genre(movie4232, action).
 has_genre(movie4232, adventure).
 has_genre(movie4232, children).
 has_genre(movie4232, comedy).
+has_1_genre(movie4233).
 has_genre(movie4233, comedy).
+has_2_genre(movie4234).
 has_genre(movie4234, drama).
 has_genre(movie4234, thriller).
+has_2_genre(movie4235).
 has_genre(movie4235, drama).
 has_genre(movie4235, thriller).
+has_1_genre(movie4236).
 has_genre(movie4236, documentary).
+has_1_genre(movie4237).
 has_genre(movie4237, documentary).
+has_4_genre(movie4238).
 has_genre(movie4238, action).
 has_genre(movie4238, crime).
 has_genre(movie4238, mystery).
 has_genre(movie4238, thriller).
+has_2_genre(movie4239).
 has_genre(movie4239, crime).
 has_genre(movie4239, drama).
+has_2_genre(movie4240).
 has_genre(movie4240, comedy).
 has_genre(movie4240, fantasy).
+has_2_genre(movie4241).
 has_genre(movie4241, animation).
 has_genre(movie4241, children).
+has_4_genre(movie4242).
 has_genre(movie4242, comedy).
 has_genre(movie4242, crime).
 has_genre(movie4242, drama).
 has_genre(movie4242, thriller).
+has_3_genre(movie4243).
 has_genre(movie4243, crime).
 has_genre(movie4243, drama).
 has_genre(movie4243, mystery).
+has_3_genre(movie4246).
 has_genre(movie4246, comedy).
 has_genre(movie4246, drama).
 has_genre(movie4246, romance).
+has_4_genre(movie4247).
 has_genre(movie4247, adventure).
 has_genre(movie4247, comedy).
 has_genre(movie4247, mystery).
 has_genre(movie4247, romance).
+has_1_genre(movie4248).
 has_genre(movie4248, comedy).
+has_2_genre(movie4251).
 has_genre(movie4251, drama).
 has_genre(movie4251, thriller).
+has_1_genre(movie4252).
 has_genre(movie4252, drama).
+has_2_genre(movie4254).
 has_genre(movie4254, comedy).
 has_genre(movie4254, drama).
+has_1_genre(movie4255).
 has_genre(movie4255, comedy).
+has_1_genre(movie4256).
 has_genre(movie4256, drama).
+has_2_genre(movie4259).
 has_genre(movie4259, drama).
 has_genre(movie4259, romance).
+has_1_genre(movie4260).
 has_genre(movie4260, drama).
+has_3_genre(movie4262).
 has_genre(movie4262, action).
 has_genre(movie4262, crime).
 has_genre(movie4262, drama).
+has_1_genre(movie4263).
 has_genre(movie4263, drama).
+has_2_genre(movie4265).
 has_genre(movie4265, action).
 has_genre(movie4265, thriller).
+has_1_genre(movie4267).
 has_genre(movie4267, comedy).
+has_1_genre(movie4268).
 has_genre(movie4268, comedy).
+has_4_genre(movie4270).
 has_genre(movie4270, action).
 has_genre(movie4270, adventure).
 has_genre(movie4270, comedy).
 has_genre(movie4270, thriller).
+has_1_genre(movie4273).
 has_genre(movie4273, drama).
+has_4_genre(movie4275).
 has_genre(movie4275, action).
 has_genre(movie4275, adventure).
 has_genre(movie4275, fantasy).
 has_genre(movie4275, sci-fi).
+has_1_genre(movie4276).
 has_genre(movie4276, comedy).
+has_1_genre(movie4278).
 has_genre(movie4278, documentary).
+has_3_genre(movie4280).
 has_genre(movie4280, comedy).
 has_genre(movie4280, drama).
 has_genre(movie4280, romance).
+has_2_genre(movie4282).
 has_genre(movie4282, drama).
 has_genre(movie4282, fantasy).
+has_1_genre(movie4284).
 has_genre(movie4284, comedy).
+has_2_genre(movie4285).
 has_genre(movie4285, comedy).
 has_genre(movie4285, romance).
+has_2_genre(movie4289).
 has_genre(movie4289, comedy).
 has_genre(movie4289, drama).
+has_3_genre(movie4290).
 has_genre(movie4290, comedy).
 has_genre(movie4290, drama).
 has_genre(movie4290, musical).
+has_2_genre(movie4291).
 has_genre(movie4291, comedy).
 has_genre(movie4291, crime).
+has_1_genre(movie4292).
 has_genre(movie4292, drama).
+has_1_genre(movie4293).
 has_genre(movie4293, comedy).
+has_3_genre(movie4294).
 has_genre(movie4294, children).
 has_genre(movie4294, fantasy).
 has_genre(movie4294, musical).
+has_2_genre(movie4296).
 has_genre(movie4296, drama).
 has_genre(movie4296, romance).
+has_1_genre(movie4297).
 has_genre(movie4297, drama).
+has_3_genre(movie4298).
 has_genre(movie4298, crime).
 has_genre(movie4298, film-noir).
 has_genre(movie4298, thriller).
+has_3_genre(movie4299).
 has_genre(movie4299, action).
 has_genre(movie4299, comedy).
 has_genre(movie4299, romance).
+has_1_genre(movie4300).
 has_genre(movie4300, drama).
+has_1_genre(movie4304).
 has_genre(movie4304, documentary).
+has_2_genre(movie4305).
 has_genre(movie4305, romance).
 has_genre(movie4305, thriller).
+has_more_than_5_genre(movie4306).
 has_genre(movie4306, adventure).
 has_genre(movie4306, animation).
 has_genre(movie4306, children).
 has_genre(movie4306, comedy).
 has_genre(movie4306, fantasy).
 has_genre(movie4306, romance).
+has_2_genre(movie4307).
 has_genre(movie4307, comedy).
 has_genre(movie4307, romance).
+has_3_genre(movie4308).
 has_genre(movie4308, drama).
 has_genre(movie4308, musical).
 has_genre(movie4308, romance).
+has_4_genre(movie4310).
 has_genre(movie4310, action).
 has_genre(movie4310, drama).
 has_genre(movie4310, romance).
 has_genre(movie4310, war).
+has_2_genre(movie4312).
 has_genre(movie4312, adventure).
 has_genre(movie4312, drama).
+has_1_genre(movie4313).
 has_genre(movie4313, drama).
+has_1_genre(movie4316).
 has_genre(movie4316, drama).
+has_2_genre(movie4317).
 has_genre(movie4317, comedy).
 has_genre(movie4317, romance).
+has_2_genre(movie4321).
 has_genre(movie4321, comedy).
 has_genre(movie4321, western).
+has_1_genre(movie4322).
 has_genre(movie4322, drama).
+has_3_genre(movie4323).
 has_genre(movie4323, adventure).
 has_genre(movie4323, war).
 has_genre(movie4323, western).
+has_1_genre(movie4325).
 has_genre(movie4325, drama).
+has_3_genre(movie4326).
 has_genre(movie4326, crime).
 has_genre(movie4326, drama).
 has_genre(movie4326, thriller).
+has_2_genre(movie4327).
 has_genre(movie4327, adventure).
 has_genre(movie4327, western).
+has_1_genre(movie4329).
 has_genre(movie4329, western).
+has_2_genre(movie4333).
 has_genre(movie4333, comedy).
 has_genre(movie4333, crime).
+has_1_genre(movie4334).
 has_genre(movie4334, drama).
+has_3_genre(movie4337).
 has_genre(movie4337, drama).
 has_genre(movie4337, romance).
 has_genre(movie4337, war).
+has_2_genre(movie4338).
 has_genre(movie4338, drama).
 has_genre(movie4338, war).
+has_4_genre(movie4339).
 has_genre(movie4339, action).
 has_genre(movie4339, adventure).
 has_genre(movie4339, drama).
 has_genre(movie4339, war).
+has_1_genre(movie4340).
 has_genre(movie4340, comedy).
+has_2_genre(movie4342).
 has_genre(movie4342, drama).
 has_genre(movie4342, romance).
+has_2_genre(movie4343).
 has_genre(movie4343, comedy).
 has_genre(movie4343, sci-fi).
+has_3_genre(movie4344).
 has_genre(movie4344, action).
 has_genre(movie4344, crime).
 has_genre(movie4344, drama).
+has_1_genre(movie4345).
 has_genre(movie4345, drama).
+has_2_genre(movie4347).
 has_genre(movie4347, comedy).
 has_genre(movie4347, drama).
+has_2_genre(movie4349).
 has_genre(movie4349, comedy).
 has_genre(movie4349, war).
+has_2_genre(movie4350).
 has_genre(movie4350, comedy).
 has_genre(movie4350, documentary).
+has_3_genre(movie4351).
 has_genre(movie4351, action).
 has_genre(movie4351, crime).
 has_genre(movie4351, thriller).
+has_2_genre(movie4353).
 has_genre(movie4353, action).
 has_genre(movie4353, war).
+has_2_genre(movie4354).
 has_genre(movie4354, crime).
 has_genre(movie4354, thriller).
+has_2_genre(movie4355).
 has_genre(movie4355, action).
 has_genre(movie4355, drama).
+has_3_genre(movie4356).
 has_genre(movie4356, comedy).
 has_genre(movie4356, musical).
 has_genre(movie4356, romance).
+has_3_genre(movie4357).
 has_genre(movie4357, comedy).
 has_genre(movie4357, drama).
 has_genre(movie4357, romance).
+has_1_genre(movie4359).
 has_genre(movie4359, comedy).
+has_2_genre(movie4361).
 has_genre(movie4361, comedy).
 has_genre(movie4361, romance).
+has_4_genre(movie4366).
 has_genre(movie4366, adventure).
 has_genre(movie4366, animation).
 has_genre(movie4366, children).
 has_genre(movie4366, fantasy).
+has_2_genre(movie4367).
 has_genre(movie4367, action).
 has_genre(movie4367, adventure).
+has_1_genre(movie4368).
 has_genre(movie4368, comedy).
+has_3_genre(movie4369).
 has_genre(movie4369, action).
 has_genre(movie4369, crime).
 has_genre(movie4369, thriller).
+has_3_genre(movie4370).
 has_genre(movie4370, adventure).
 has_genre(movie4370, drama).
 has_genre(movie4370, sci-fi).
+has_2_genre(movie4371).
 has_genre(movie4371, crime).
 has_genre(movie4371, drama).
+has_2_genre(movie4372).
 has_genre(movie4372, drama).
 has_genre(movie4372, romance).
+has_1_genre(movie4373).
 has_genre(movie4373, comedy).
+has_2_genre(movie4374).
 has_genre(movie4374, comedy).
 has_genre(movie4374, romance).
+has_2_genre(movie4378).
 has_genre(movie4378, crime).
 has_genre(movie4378, drama).
+has_2_genre(movie4380).
 has_genre(movie4380, drama).
 has_genre(movie4380, romance).
+has_1_genre(movie4381).
 has_genre(movie4381, comedy).
+has_4_genre(movie4383).
 has_genre(movie4383, crime).
 has_genre(movie4383, drama).
 has_genre(movie4383, mystery).
 has_genre(movie4383, thriller).
+has_1_genre(movie4384).
 has_genre(movie4384, drama).
+has_2_genre(movie4386).
 has_genre(movie4386, children).
 has_genre(movie4386, comedy).
+has_1_genre(movie4387).
 has_genre(movie4387, action).
+has_1_genre(movie4388).
 has_genre(movie4388, comedy).
+has_1_genre(movie4389).
 has_genre(movie4389, drama).
+has_3_genre(movie4390).
 has_genre(movie4390, crime).
 has_genre(movie4390, drama).
 has_genre(movie4390, thriller).
+has_4_genre(movie4392).
 has_genre(movie4392, comedy).
 has_genre(movie4392, drama).
 has_genre(movie4392, fantasy).
 has_genre(movie4392, romance).
+has_1_genre(movie4393).
 has_genre(movie4393, drama).
+has_2_genre(movie4394).
 has_genre(movie4394, comedy).
 has_genre(movie4394, musical).
+has_2_genre(movie4395).
 has_genre(movie4395, comedy).
 has_genre(movie4395, crime).
+has_2_genre(movie4396).
 has_genre(movie4396, action).
 has_genre(movie4396, comedy).
+has_2_genre(movie4397).
 has_genre(movie4397, action).
 has_genre(movie4397, comedy).
+has_2_genre(movie4399).
 has_genre(movie4399, comedy).
 has_genre(movie4399, drama).
+has_1_genre(movie4402).
 has_genre(movie4402, comedy).
+has_1_genre(movie4403).
 has_genre(movie4403, horror).
+has_3_genre(movie4404).
 has_genre(movie4404, drama).
 has_genre(movie4404, fantasy).
 has_genre(movie4404, horror).
+has_3_genre(movie4406).
 has_genre(movie4406, crime).
 has_genre(movie4406, drama).
 has_genre(movie4406, western).
+has_3_genre(movie4407).
 has_genre(movie4407, drama).
 has_genre(movie4407, thriller).
 has_genre(movie4407, war).
+has_1_genre(movie4408).
 has_genre(movie4408, drama).
+has_4_genre(movie4409).
 has_genre(movie4409, comedy).
 has_genre(movie4409, drama).
 has_genre(movie4409, mystery).
 has_genre(movie4409, thriller).
+has_3_genre(movie4410).
 has_genre(movie4410, comedy).
 has_genre(movie4410, crime).
 has_genre(movie4410, drama).
+has_3_genre(movie4412).
 has_genre(movie4412, comedy).
 has_genre(movie4412, horror).
 has_genre(movie4412, sci-fi).
+has_2_genre(movie4419).
 has_genre(movie4419, drama).
 has_genre(movie4419, romance).
+has_1_genre(movie4420).
 has_genre(movie4420, drama).
+has_1_genre(movie4422).
 has_genre(movie4422, drama).
+has_1_genre(movie4424).
 has_genre(movie4424, drama).
+has_1_genre(movie4426).
 has_genre(movie4426, film-noir).
+has_1_genre(movie4427).
 has_genre(movie4427, drama).
+has_4_genre(movie4428).
 has_genre(movie4428, comedy).
 has_genre(movie4428, drama).
 has_genre(movie4428, romance).
 has_genre(movie4428, western).
+has_1_genre(movie4429).
 has_genre(movie4429, drama).
+has_2_genre(movie4432).
 has_genre(movie4432, drama).
 has_genre(movie4432, film-noir).
+has_1_genre(movie4433).
 has_genre(movie4433, drama).
+has_4_genre(movie4434).
 has_genre(movie4434, action).
 has_genre(movie4434, comedy).
 has_genre(movie4434, sci-fi).
 has_genre(movie4434, thriller).
+has_2_genre(movie4436).
 has_genre(movie4436, mystery).
 has_genre(movie4436, thriller).
+has_1_genre(movie4437).
 has_genre(movie4437, horror).
+has_4_genre(movie4438).
 has_genre(movie4438, action).
 has_genre(movie4438, drama).
 has_genre(movie4438, romance).
 has_genre(movie4438, thriller).
+has_1_genre(movie4439).
 has_genre(movie4439, drama).
+has_2_genre(movie4440).
 has_genre(movie4440, action).
 has_genre(movie4440, thriller).
+has_1_genre(movie4441).
 has_genre(movie4441, action).
+has_3_genre(movie4442).
 has_genre(movie4442, action).
 has_genre(movie4442, comedy).
 has_genre(movie4442, drama).
+has_3_genre(movie4443).
 has_genre(movie4443, action).
 has_genre(movie4443, sci-fi).
 has_genre(movie4443, thriller).
+has_2_genre(movie4444).
 has_genre(movie4444, action).
 has_genre(movie4444, crime).
+has_3_genre(movie4445).
 has_genre(movie4445, adventure).
 has_genre(movie4445, documentary).
 has_genre(movie4445, imax).
+has_4_genre(movie4446).
 has_genre(movie4446, adventure).
 has_genre(movie4446, animation).
 has_genre(movie4446, fantasy).
 has_genre(movie4446, sci-fi).
+has_2_genre(movie4447).
 has_genre(movie4447, comedy).
 has_genre(movie4447, romance).
+has_2_genre(movie4448).
 has_genre(movie4448, action).
 has_genre(movie4448, drama).
+has_1_genre(movie4449).
 has_genre(movie4449, drama).
+has_3_genre(movie4450).
 has_genre(movie4450, crime).
 has_genre(movie4450, drama).
 has_genre(movie4450, thriller).
+has_3_genre(movie4451).
 has_genre(movie4451, comedy).
 has_genre(movie4451, drama).
 has_genre(movie4451, romance).
+has_1_genre(movie4452).
 has_genre(movie4452, comedy).
+has_2_genre(movie4453).
 has_genre(movie4453, documentary).
 has_genre(movie4453, imax).
+has_4_genre(movie4454).
 has_genre(movie4454, animation).
 has_genre(movie4454, drama).
 has_genre(movie4454, sci-fi).
 has_genre(movie4454, imax).
+has_2_genre(movie4458).
 has_genre(movie4458, documentary).
 has_genre(movie4458, imax).
+has_2_genre(movie4459).
 has_genre(movie4459, documentary).
 has_genre(movie4459, imax).
+has_2_genre(movie4462).
 has_genre(movie4462, comedy).
 has_genre(movie4462, fantasy).
+has_2_genre(movie4463).
 has_genre(movie4463, drama).
 has_genre(movie4463, war).
+has_3_genre(movie4464).
 has_genre(movie4464, comedy).
 has_genre(movie4464, drama).
 has_genre(movie4464, romance).
+has_1_genre(movie4465).
 has_genre(movie4465, drama).
+has_3_genre(movie4466).
 has_genre(movie4466, action).
 has_genre(movie4466, crime).
 has_genre(movie4466, drama).
+has_3_genre(movie4467).
 has_genre(movie4467, adventure).
 has_genre(movie4467, comedy).
 has_genre(movie4467, fantasy).
+has_1_genre(movie4470).
 has_genre(movie4470, drama).
+has_2_genre(movie4471).
 has_genre(movie4471, comedy).
 has_genre(movie4471, romance).
+has_2_genre(movie4473).
 has_genre(movie4473, drama).
 has_genre(movie4473, war).
+has_3_genre(movie4474).
 has_genre(movie4474, comedy).
 has_genre(movie4474, drama).
 has_genre(movie4474, musical).
+has_2_genre(movie4475).
 has_genre(movie4475, drama).
 has_genre(movie4475, war).
+has_1_genre(movie4476).
 has_genre(movie4476, comedy).
+has_3_genre(movie4477).
 has_genre(movie4477, adventure).
 has_genre(movie4477, children).
 has_genre(movie4477, comedy).
+has_2_genre(movie4478).
 has_genre(movie4478, comedy).
 has_genre(movie4478, drama).
+has_2_genre(movie4480).
 has_genre(movie4480, horror).
 has_genre(movie4480, sci-fi).
+has_1_genre(movie4482).
 has_genre(movie4482, drama).
+has_1_genre(movie4483).
 has_genre(movie4483, comedy).
+has_1_genre(movie4484).
 has_genre(movie4484, drama).
+has_2_genre(movie4487).
 has_genre(movie4487, drama).
 has_genre(movie4487, romance).
+has_3_genre(movie4488).
 has_genre(movie4488, action).
 has_genre(movie4488, crime).
 has_genre(movie4488, drama).
+has_2_genre(movie4489).
 has_genre(movie4489, comedy).
 has_genre(movie4489, romance).
+has_1_genre(movie4490).
 has_genre(movie4490, comedy).
+has_2_genre(movie4492).
 has_genre(movie4492, comedy).
 has_genre(movie4492, sci-fi).
+has_2_genre(movie4495).
 has_genre(movie4495, comedy).
 has_genre(movie4495, romance).
+has_3_genre(movie4496).
 has_genre(movie4496, film-noir).
 has_genre(movie4496, mystery).
 has_genre(movie4496, thriller).
+has_4_genre(movie4497).
 has_genre(movie4497, action).
 has_genre(movie4497, comedy).
 has_genre(movie4497, horror).
 has_genre(movie4497, sci-fi).
+has_3_genre(movie4498).
 has_genre(movie4498, action).
 has_genre(movie4498, crime).
 has_genre(movie4498, thriller).
+has_1_genre(movie4499).
 has_genre(movie4499, comedy).
+has_2_genre(movie4500).
 has_genre(movie4500, comedy).
 has_genre(movie4500, drama).
+has_2_genre(movie4502).
 has_genre(movie4502, children).
 has_genre(movie4502, comedy).
+has_1_genre(movie4504).
 has_genre(movie4504, comedy).
+has_2_genre(movie4505).
 has_genre(movie4505, drama).
 has_genre(movie4505, romance).
+has_3_genre(movie4506).
 has_genre(movie4506, crime).
 has_genre(movie4506, mystery).
 has_genre(movie4506, thriller).
+has_1_genre(movie4508).
 has_genre(movie4508, drama).
+has_1_genre(movie4509).
 has_genre(movie4509, comedy).
+has_1_genre(movie4511).
 has_genre(movie4511, comedy).
+has_1_genre(movie4516).
 has_genre(movie4516, comedy).
+has_3_genre(movie4517).
 has_genre(movie4517, horror).
 has_genre(movie4517, mystery).
 has_genre(movie4517, thriller).
+has_2_genre(movie4518).
 has_genre(movie4518, comedy).
 has_genre(movie4518, horror).
+has_4_genre(movie4519).
 has_genre(movie4519, adventure).
 has_genre(movie4519, animation).
 has_genre(movie4519, children).
 has_genre(movie4519, fantasy).
+has_1_genre(movie4520).
 has_genre(movie4520, comedy).
+has_1_genre(movie4521).
 has_genre(movie4521, drama).
+has_3_genre(movie4522).
 has_genre(movie4522, mystery).
 has_genre(movie4522, romance).
 has_genre(movie4522, thriller).
+has_3_genre(movie4523).
 has_genre(movie4523, comedy).
 has_genre(movie4523, drama).
 has_genre(movie4523, fantasy).
+has_1_genre(movie4524).
 has_genre(movie4524, comedy).
+has_3_genre(movie4526).
 has_genre(movie4526, comedy).
 has_genre(movie4526, romance).
 has_genre(movie4526, sci-fi).
+has_2_genre(movie4527).
 has_genre(movie4527, comedy).
 has_genre(movie4527, romance).
+has_2_genre(movie4529).
 has_genre(movie4529, comedy).
 has_genre(movie4529, drama).
+has_1_genre(movie4531).
 has_genre(movie4531, action).
+has_3_genre(movie4533).
 has_genre(movie4533, comedy).
 has_genre(movie4533, horror).
 has_genre(movie4533, sci-fi).
+has_3_genre(movie4534).
 has_genre(movie4534, adventure).
 has_genre(movie4534, drama).
 has_genre(movie4534, western).
+has_3_genre(movie4535).
 has_genre(movie4535, drama).
 has_genre(movie4535, romance).
 has_genre(movie4535, western).
+has_1_genre(movie4537).
 has_genre(movie4537, drama).
+has_1_genre(movie4541).
 has_genre(movie4541, horror).
+has_2_genre(movie4544).
 has_genre(movie4544, comedy).
 has_genre(movie4544, sci-fi).
+has_2_genre(movie4545).
 has_genre(movie4545, comedy).
 has_genre(movie4545, sci-fi).
+has_2_genre(movie4546).
 has_genre(movie4546, drama).
 has_genre(movie4546, thriller).
+has_4_genre(movie4552).
 has_genre(movie4552, action).
 has_genre(movie4552, horror).
 has_genre(movie4552, sci-fi).
 has_genre(movie4552, thriller).
+has_3_genre(movie4553).
 has_genre(movie4553, action).
 has_genre(movie4553, sci-fi).
 has_genre(movie4553, thriller).
+has_1_genre(movie4557).
 has_genre(movie4557, drama).
+has_1_genre(movie4558).
 has_genre(movie4558, comedy).
+has_2_genre(movie4562).
 has_genre(movie4562, comedy).
 has_genre(movie4562, mystery).
+has_1_genre(movie4563).
 has_genre(movie4563, comedy).
+has_3_genre(movie4564).
 has_genre(movie4564, drama).
 has_genre(movie4564, fantasy).
 has_genre(movie4564, romance).
+has_2_genre(movie4565).
 has_genre(movie4565, action).
 has_genre(movie4565, adventure).
+has_1_genre(movie4568).
 has_genre(movie4568, action).
+has_3_genre(movie4571).
 has_genre(movie4571, adventure).
 has_genre(movie4571, comedy).
 has_genre(movie4571, sci-fi).
+has_3_genre(movie4572).
 has_genre(movie4572, action).
 has_genre(movie4572, crime).
 has_genre(movie4572, drama).
+has_2_genre(movie4573).
 has_genre(movie4573, comedy).
 has_genre(movie4573, drama).
+has_2_genre(movie4574).
 has_genre(movie4574, action).
 has_genre(movie4574, thriller).
+has_2_genre(movie4577).
 has_genre(movie4577, drama).
 has_genre(movie4577, war).
+has_2_genre(movie4578).
 has_genre(movie4578, comedy).
 has_genre(movie4578, romance).
+has_2_genre(movie4580).
 has_genre(movie4580, action).
 has_genre(movie4580, sci-fi).
+has_1_genre(movie4581).
 has_genre(movie4581, drama).
+has_2_genre(movie4583).
 has_genre(movie4583, action).
 has_genre(movie4583, comedy).
+has_3_genre(movie4584).
 has_genre(movie4584, comedy).
 has_genre(movie4584, drama).
 has_genre(movie4584, romance).
+has_1_genre(movie4585).
 has_genre(movie4585, comedy).
+has_3_genre(movie4587).
 has_genre(movie4587, comedy).
 has_genre(movie4587, musical).
 has_genre(movie4587, sci-fi).
+has_3_genre(movie4589).
 has_genre(movie4589, drama).
 has_genre(movie4589, musical).
 has_genre(movie4589, mystery).
+has_3_genre(movie4591).
 has_genre(movie4591, adventure).
 has_genre(movie4591, comedy).
 has_genre(movie4591, fantasy).
+has_1_genre(movie4593).
 has_genre(movie4593, comedy).
+has_2_genre(movie4594).
 has_genre(movie4594, action).
 has_genre(movie4594, war).
+has_1_genre(movie4595).
 has_genre(movie4595, drama).
+has_3_genre(movie4597).
 has_genre(movie4597, action).
 has_genre(movie4597, drama).
 has_genre(movie4597, mystery).
+has_1_genre(movie4599).
 has_genre(movie4599, drama).
+has_2_genre(movie4600).
 has_genre(movie4600, comedy).
 has_genre(movie4600, drama).
+has_3_genre(movie4602).
 has_genre(movie4602, comedy).
 has_genre(movie4602, crime).
 has_genre(movie4602, romance).
+has_2_genre(movie4603).
 has_genre(movie4603, comedy).
 has_genre(movie4603, romance).
+has_2_genre(movie4605).
 has_genre(movie4605, comedy).
 has_genre(movie4605, fantasy).
+has_2_genre(movie4608).
 has_genre(movie4608, crime).
 has_genre(movie4608, drama).
+has_4_genre(movie4610).
 has_genre(movie4610, comedy).
 has_genre(movie4610, crime).
 has_genre(movie4610, mystery).
 has_genre(movie4610, thriller).
+has_2_genre(movie4611).
 has_genre(movie4611, crime).
 has_genre(movie4611, drama).
+has_1_genre(movie4612).
 has_genre(movie4612, drama).
+has_3_genre(movie4613).
 has_genre(movie4613, action).
 has_genre(movie4613, comedy).
 has_genre(movie4613, crime).
+has_1_genre(movie4614).
 has_genre(movie4614, action).
+has_1_genre(movie4615).
 has_genre(movie4615, drama).
+has_1_genre(movie4616).
 has_genre(movie4616, drama).
+has_1_genre(movie4617).
 has_genre(movie4617, comedy).
+has_1_genre(movie4619).
 has_genre(movie4619, comedy).
+has_2_genre(movie4621).
 has_genre(movie4621, comedy).
 has_genre(movie4621, romance).
+has_1_genre(movie4622).
 has_genre(movie4622, comedy).
+has_1_genre(movie4623).
 has_genre(movie4623, comedy).
+has_3_genre(movie4624).
 has_genre(movie4624, animation).
 has_genre(movie4624, comedy).
 has_genre(movie4624, musical).
+has_3_genre(movie4625).
 has_genre(movie4625, drama).
 has_genre(movie4625, sci-fi).
 has_genre(movie4625, thriller).
+has_3_genre(movie4626).
 has_genre(movie4626, drama).
 has_genre(movie4626, romance).
 has_genre(movie4626, sci-fi).
+has_2_genre(movie4628).
 has_genre(movie4628, comedy).
 has_genre(movie4628, drama).
+has_3_genre(movie4629).
 has_genre(movie4629, action).
 has_genre(movie4629, crime).
 has_genre(movie4629, thriller).
+has_1_genre(movie4630).
 has_genre(movie4630, action).
+has_2_genre(movie4632).
 has_genre(movie4632, action).
 has_genre(movie4632, thriller).
+has_2_genre(movie4634).
 has_genre(movie4634, adventure).
 has_genre(movie4634, comedy).
+has_3_genre(movie4635).
 has_genre(movie4635, action).
 has_genre(movie4635, comedy).
 has_genre(movie4635, drama).
+has_1_genre(movie4636).
 has_genre(movie4636, action).
+has_4_genre(movie4638).
 has_genre(movie4638, action).
 has_genre(movie4638, adventure).
 has_genre(movie4638, sci-fi).
 has_genre(movie4638, thriller).
+has_2_genre(movie4639).
 has_genre(movie4639, comedy).
 has_genre(movie4639, romance).
+has_3_genre(movie4640).
 has_genre(movie4640, action).
 has_genre(movie4640, crime).
 has_genre(movie4640, thriller).
+has_2_genre(movie4641).
 has_genre(movie4641, comedy).
 has_genre(movie4641, drama).
+has_3_genre(movie4642).
 has_genre(movie4642, comedy).
 has_genre(movie4642, drama).
 has_genre(movie4642, musical).
+has_4_genre(movie4643).
 has_genre(movie4643, action).
 has_genre(movie4643, adventure).
 has_genre(movie4643, drama).
 has_genre(movie4643, sci-fi).
+has_3_genre(movie4644).
 has_genre(movie4644, comedy).
 has_genre(movie4644, drama).
 has_genre(movie4644, romance).
+has_3_genre(movie4645).
 has_genre(movie4645, crime).
 has_genre(movie4645, horror).
 has_genre(movie4645, thriller).
+has_2_genre(movie4646).
 has_genre(movie4646, comedy).
 has_genre(movie4646, drama).
+has_1_genre(movie4649).
 has_genre(movie4649, comedy).
+has_2_genre(movie4653).
 has_genre(movie4653, adventure).
 has_genre(movie4653, comedy).
+has_2_genre(movie4654).
 has_genre(movie4654, action).
 has_genre(movie4654, drama).
+has_4_genre(movie4658).
 has_genre(movie4658, drama).
 has_genre(movie4658, horror).
 has_genre(movie4658, mystery).
 has_genre(movie4658, thriller).
+has_1_genre(movie4660).
 has_genre(movie4660, comedy).
+has_3_genre(movie4661).
 has_genre(movie4661, crime).
 has_genre(movie4661, drama).
 has_genre(movie4661, thriller).
+has_2_genre(movie4662).
 has_genre(movie4662, comedy).
 has_genre(movie4662, crime).
+has_1_genre(movie4663).
 has_genre(movie4663, comedy).
+has_1_genre(movie4666).
 has_genre(movie4666, comedy).
+has_2_genre(movie4670).
 has_genre(movie4670, horror).
 has_genre(movie4670, thriller).
+has_1_genre(movie4671).
 has_genre(movie4671, drama).
+has_2_genre(movie4672).
 has_genre(movie4672, comedy).
 has_genre(movie4672, romance).
+has_4_genre(movie4673).
 has_genre(movie4673, action).
 has_genre(movie4673, comedy).
 has_genre(movie4673, crime).
 has_genre(movie4673, thriller).
+has_2_genre(movie4675).
 has_genre(movie4675, action).
 has_genre(movie4675, comedy).
+has_1_genre(movie4676).
 has_genre(movie4676, comedy).
+has_2_genre(movie4677).
 has_genre(movie4677, comedy).
 has_genre(movie4677, crime).
+has_1_genre(movie4678).
 has_genre(movie4678, comedy).
+has_1_genre(movie4679).
 has_genre(movie4679, comedy).
+has_2_genre(movie4681).
 has_genre(movie4681, comedy).
 has_genre(movie4681, drama).
+has_4_genre(movie4683).
 has_genre(movie4683, adventure).
 has_genre(movie4683, children).
 has_genre(movie4683, comedy).
 has_genre(movie4683, drama).
+has_2_genre(movie4686).
 has_genre(movie4686, adventure).
 has_genre(movie4686, comedy).
+has_1_genre(movie4687).
 has_genre(movie4687, comedy).
+has_2_genre(movie4688).
 has_genre(movie4688, adventure).
 has_genre(movie4688, drama).
+has_2_genre(movie4689).
 has_genre(movie4689, mystery).
 has_genre(movie4689, thriller).
+has_2_genre(movie4690).
 has_genre(movie4690, crime).
 has_genre(movie4690, musical).
+has_2_genre(movie4695).
 has_genre(movie4695, crime).
 has_genre(movie4695, drama).
+has_2_genre(movie4697).
 has_genre(movie4697, comedy).
 has_genre(movie4697, horror).
+has_3_genre(movie4699).
 has_genre(movie4699, drama).
 has_genre(movie4699, romance).
 has_genre(movie4699, thriller).
+has_3_genre(movie4700).
 has_genre(movie4700, children).
 has_genre(movie4700, comedy).
 has_genre(movie4700, romance).
+has_2_genre(movie4701).
 has_genre(movie4701, action).
 has_genre(movie4701, comedy).
+has_1_genre(movie4703).
 has_genre(movie4703, drama).
+has_2_genre(movie4704).
 has_genre(movie4704, adventure).
 has_genre(movie4704, comedy).
+has_1_genre(movie4705).
 has_genre(movie4705, comedy).
+has_2_genre(movie4708).
 has_genre(movie4708, drama).
 has_genre(movie4708, musical).
+has_3_genre(movie4709).
 has_genre(movie4709, comedy).
 has_genre(movie4709, musical).
 has_genre(movie4709, western).
+has_2_genre(movie4710).
 has_genre(movie4710, drama).
 has_genre(movie4710, western).
+has_1_genre(movie4711).
 has_genre(movie4711, documentary).
+has_2_genre(movie4713).
 has_genre(movie4713, drama).
 has_genre(movie4713, sci-fi).
+has_1_genre(movie4714).
 has_genre(movie4714, comedy).
+has_1_genre(movie4715).
 has_genre(movie4715, horror).
+has_2_genre(movie4717).
 has_genre(movie4717, action).
 has_genre(movie4717, comedy).
+has_1_genre(movie4718).
 has_genre(movie4718, comedy).
+has_more_than_5_genre(movie4719).
 has_genre(movie4719, action).
 has_genre(movie4719, animation).
 has_genre(movie4719, comedy).
@@ -11509,2559 +14975,3730 @@ has_genre(movie4719, crime).
 has_genre(movie4719, drama).
 has_genre(movie4719, romance).
 has_genre(movie4719, thriller).
+has_4_genre(movie4720).
 has_genre(movie4720, drama).
 has_genre(movie4720, horror).
 has_genre(movie4720, mystery).
 has_genre(movie4720, thriller).
+has_3_genre(movie4721).
 has_genre(movie4721, action).
 has_genre(movie4721, comedy).
 has_genre(movie4721, western).
+has_1_genre(movie4722).
 has_genre(movie4722, comedy).
+has_1_genre(movie4723).
 has_genre(movie4723, drama).
+has_2_genre(movie4725).
 has_genre(movie4725, horror).
 has_genre(movie4725, thriller).
+has_3_genre(movie4727).
 has_genre(movie4727, drama).
 has_genre(movie4727, romance).
 has_genre(movie4727, war).
+has_1_genre(movie4728).
 has_genre(movie4728, comedy).
+has_1_genre(movie4732).
 has_genre(movie4732, comedy).
+has_1_genre(movie4733).
 has_genre(movie4733, comedy).
+has_2_genre(movie4734).
 has_genre(movie4734, adventure).
 has_genre(movie4734, comedy).
+has_3_genre(movie4735).
 has_genre(movie4735, horror).
 has_genre(movie4735, sci-fi).
 has_genre(movie4735, thriller).
+has_3_genre(movie4736).
 has_genre(movie4736, comedy).
 has_genre(movie4736, drama).
 has_genre(movie4736, romance).
+has_2_genre(movie4738).
 has_genre(movie4738, romance).
 has_genre(movie4738, sci-fi).
+has_2_genre(movie4740).
 has_genre(movie4740, comedy).
 has_genre(movie4740, romance).
+has_3_genre(movie4741).
 has_genre(movie4741, comedy).
 has_genre(movie4741, drama).
 has_genre(movie4741, romance).
+has_2_genre(movie4743).
 has_genre(movie4743, comedy).
 has_genre(movie4743, romance).
+has_1_genre(movie4744).
 has_genre(movie4744, horror).
+has_1_genre(movie4745).
 has_genre(movie4745, drama).
+has_3_genre(movie4748).
 has_genre(movie4748, action).
 has_genre(movie4748, children).
 has_genre(movie4748, comedy).
+has_3_genre(movie4749).
 has_genre(movie4749, action).
 has_genre(movie4749, children).
 has_genre(movie4749, comedy).
+has_2_genre(movie4750).
 has_genre(movie4750, action).
 has_genre(movie4750, children).
+has_4_genre(movie4754).
 has_genre(movie4754, drama).
 has_genre(movie4754, horror).
 has_genre(movie4754, mystery).
 has_genre(movie4754, thriller).
+has_4_genre(movie4756).
 has_genre(movie4756, action).
 has_genre(movie4756, adventure).
 has_genre(movie4756, drama).
 has_genre(movie4756, romance).
+has_3_genre(movie4757).
 has_genre(movie4757, comedy).
 has_genre(movie4757, drama).
 has_genre(movie4757, musical).
+has_2_genre(movie4759).
 has_genre(movie4759, comedy).
 has_genre(movie4759, drama).
+has_1_genre(movie4765).
 has_genre(movie4765, drama).
+has_3_genre(movie4766).
 has_genre(movie4766, crime).
 has_genre(movie4766, drama).
 has_genre(movie4766, romance).
+has_1_genre(movie4769).
 has_genre(movie4769, documentary).
+has_1_genre(movie4770).
 has_genre(movie4770, thriller).
+has_1_genre(movie4771).
 has_genre(movie4771, drama).
+has_1_genre(movie4772).
 has_genre(movie4772, drama).
+has_1_genre(movie4773).
 has_genre(movie4773, comedy).
+has_2_genre(movie4774).
 has_genre(movie4774, comedy).
 has_genre(movie4774, crime).
+has_3_genre(movie4775).
 has_genre(movie4775, drama).
 has_genre(movie4775, musical).
 has_genre(movie4775, romance).
+has_3_genre(movie4776).
 has_genre(movie4776, crime).
 has_genre(movie4776, drama).
 has_genre(movie4776, thriller).
+has_3_genre(movie4777).
 has_genre(movie4777, comedy).
 has_genre(movie4777, musical).
 has_genre(movie4777, sci-fi).
+has_1_genre(movie4780).
 has_genre(movie4780, drama).
+has_2_genre(movie4782).
 has_genre(movie4782, comedy).
 has_genre(movie4782, romance).
+has_1_genre(movie4783).
 has_genre(movie4783, documentary).
+has_1_genre(movie4784).
 has_genre(movie4784, drama).
+has_2_genre(movie4785).
 has_genre(movie4785, drama).
 has_genre(movie4785, western).
+has_2_genre(movie4786).
 has_genre(movie4786, horror).
 has_genre(movie4786, thriller).
+has_1_genre(movie4787).
 has_genre(movie4787, drama).
+has_2_genre(movie4788).
 has_genre(movie4788, drama).
 has_genre(movie4788, romance).
+has_5_genre(movie4789).
 has_genre(movie4789, comedy).
 has_genre(movie4789, fantasy).
 has_genre(movie4789, horror).
 has_genre(movie4789, musical).
 has_genre(movie4789, thriller).
+has_1_genre(movie4792).
 has_genre(movie4792, horror).
+has_3_genre(movie4794).
 has_genre(movie4794, crime).
 has_genre(movie4794, horror).
 has_genre(movie4794, mystery).
+has_4_genre(movie4795).
 has_genre(movie4795, adventure).
 has_genre(movie4795, comedy).
 has_genre(movie4795, romance).
 has_genre(movie4795, war).
+has_2_genre(movie4796).
 has_genre(movie4796, comedy).
 has_genre(movie4796, romance).
+has_2_genre(movie4798).
 has_genre(movie4798, comedy).
 has_genre(movie4798, romance).
+has_4_genre(movie4799).
 has_genre(movie4799, action).
 has_genre(movie4799, adventure).
 has_genre(movie4799, comedy).
 has_genre(movie4799, crime).
+has_5_genre(movie4800).
 has_genre(movie4800, action).
 has_genre(movie4800, adventure).
 has_genre(movie4800, drama).
 has_genre(movie4800, romance).
 has_genre(movie4800, thriller).
+has_1_genre(movie4801).
 has_genre(movie4801, drama).
+has_4_genre(movie4802).
 has_genre(movie4802, action).
 has_genre(movie4802, comedy).
 has_genre(movie4802, romance).
 has_genre(movie4802, war).
+has_2_genre(movie4803).
 has_genre(movie4803, drama).
 has_genre(movie4803, thriller).
+has_2_genre(movie4804).
 has_genre(movie4804, comedy).
 has_genre(movie4804, drama).
+has_2_genre(movie4808).
 has_genre(movie4808, mystery).
 has_genre(movie4808, thriller).
+has_1_genre(movie4809).
 has_genre(movie4809, drama).
+has_1_genre(movie4810).
 has_genre(movie4810, drama).
+has_2_genre(movie4811).
 has_genre(movie4811, drama).
 has_genre(movie4811, musical).
+has_2_genre(movie4812).
 has_genre(movie4812, adventure).
 has_genre(movie4812, sci-fi).
+has_1_genre(movie4813).
 has_genre(movie4813, sci-fi).
+has_1_genre(movie4814).
 has_genre(movie4814, thriller).
+has_1_genre(movie4815).
 has_genre(movie4815, drama).
+has_1_genre(movie4816).
 has_genre(movie4816, comedy).
+has_4_genre(movie4818).
 has_genre(movie4818, action).
 has_genre(movie4818, adventure).
 has_genre(movie4818, comedy).
 has_genre(movie4818, drama).
+has_2_genre(movie4821).
 has_genre(movie4821, adventure).
 has_genre(movie4821, thriller).
+has_2_genre(movie4822).
 has_genre(movie4822, children).
 has_genre(movie4822, comedy).
+has_2_genre(movie4823).
 has_genre(movie4823, comedy).
 has_genre(movie4823, romance).
+has_2_genre(movie4825).
 has_genre(movie4825, comedy).
 has_genre(movie4825, drama).
+has_4_genre(movie4826).
 has_genre(movie4826, action).
 has_genre(movie4826, adventure).
 has_genre(movie4826, drama).
 has_genre(movie4826, war).
+has_1_genre(movie4827).
 has_genre(movie4827, horror).
+has_2_genre(movie4828).
 has_genre(movie4828, comedy).
 has_genre(movie4828, romance).
+has_2_genre(movie4830).
 has_genre(movie4830, crime).
 has_genre(movie4830, drama).
+has_2_genre(movie4831).
 has_genre(movie4831, comedy).
 has_genre(movie4831, musical).
+has_3_genre(movie4833).
 has_genre(movie4833, horror).
 has_genre(movie4833, mystery).
 has_genre(movie4833, thriller).
+has_1_genre(movie4835).
 has_genre(movie4835, drama).
+has_2_genre(movie4836).
 has_genre(movie4836, drama).
 has_genre(movie4836, romance).
+has_2_genre(movie4840).
 has_genre(movie4840, drama).
 has_genre(movie4840, romance).
+has_3_genre(movie4844).
 has_genre(movie4844, comedy).
 has_genre(movie4844, crime).
 has_genre(movie4844, romance).
+has_2_genre(movie4845).
 has_genre(movie4845, comedy).
 has_genre(movie4845, crime).
+has_2_genre(movie4846).
 has_genre(movie4846, action).
 has_genre(movie4846, comedy).
+has_1_genre(movie4847).
 has_genre(movie4847, drama).
+has_5_genre(movie4848).
 has_genre(movie4848, crime).
 has_genre(movie4848, drama).
 has_genre(movie4848, film-noir).
 has_genre(movie4848, mystery).
 has_genre(movie4848, thriller).
+has_2_genre(movie4849).
 has_genre(movie4849, comedy).
 has_genre(movie4849, drama).
+has_3_genre(movie4850).
 has_genre(movie4850, action).
 has_genre(movie4850, animation).
 has_genre(movie4850, sci-fi).
+has_1_genre(movie4852).
 has_genre(movie4852, horror).
+has_3_genre(movie4855).
 has_genre(movie4855, action).
 has_genre(movie4855, crime).
 has_genre(movie4855, thriller).
+has_2_genre(movie4857).
 has_genre(movie4857, drama).
 has_genre(movie4857, musical).
+has_1_genre(movie4860).
 has_genre(movie4860, comedy).
+has_1_genre(movie4862).
 has_genre(movie4862, drama).
+has_2_genre(movie4863).
 has_genre(movie4863, comedy).
 has_genre(movie4863, crime).
+has_2_genre(movie4864).
 has_genre(movie4864, documentary).
 has_genre(movie4864, imax).
+has_4_genre(movie4865).
 has_genre(movie4865, crime).
 has_genre(movie4865, horror).
 has_genre(movie4865, mystery).
 has_genre(movie4865, thriller).
+has_1_genre(movie4866).
 has_genre(movie4866, action).
+has_2_genre(movie4867).
 has_genre(movie4867, comedy).
 has_genre(movie4867, drama).
+has_1_genre(movie4871).
 has_genre(movie4871, drama).
+has_3_genre(movie4873).
 has_genre(movie4873, animation).
 has_genre(movie4873, drama).
 has_genre(movie4873, fantasy).
+has_4_genre(movie4874).
 has_genre(movie4874, drama).
 has_genre(movie4874, fantasy).
 has_genre(movie4874, mystery).
 has_genre(movie4874, sci-fi).
+has_2_genre(movie4876).
 has_genre(movie4876, horror).
 has_genre(movie4876, thriller).
+has_2_genre(movie4877).
 has_genre(movie4877, comedy).
 has_genre(movie4877, romance).
+has_4_genre(movie4878).
 has_genre(movie4878, drama).
 has_genre(movie4878, mystery).
 has_genre(movie4878, sci-fi).
 has_genre(movie4878, thriller).
+has_4_genre(movie4879).
 has_genre(movie4879, action).
 has_genre(movie4879, comedy).
 has_genre(movie4879, crime).
 has_genre(movie4879, drama).
+has_1_genre(movie4880).
 has_genre(movie4880, drama).
+has_2_genre(movie4881).
 has_genre(movie4881, crime).
 has_genre(movie4881, drama).
+has_1_genre(movie4883).
 has_genre(movie4883, drama).
+has_1_genre(movie4885).
 has_genre(movie4885, thriller).
+has_5_genre(movie4886).
 has_genre(movie4886, adventure).
 has_genre(movie4886, animation).
 has_genre(movie4886, children).
 has_genre(movie4886, comedy).
 has_genre(movie4886, fantasy).
+has_3_genre(movie4887).
 has_genre(movie4887, action).
 has_genre(movie4887, sci-fi).
 has_genre(movie4887, thriller).
+has_1_genre(movie4888).
 has_genre(movie4888, drama).
+has_2_genre(movie4889).
 has_genre(movie4889, crime).
 has_genre(movie4889, drama).
+has_3_genre(movie4890).
 has_genre(movie4890, comedy).
 has_genre(movie4890, fantasy).
 has_genre(movie4890, romance).
+has_2_genre(movie4893).
 has_genre(movie4893, horror).
 has_genre(movie4893, thriller).
+has_3_genre(movie4896).
 has_genre(movie4896, adventure).
 has_genre(movie4896, children).
 has_genre(movie4896, fantasy).
+has_4_genre(movie4898).
 has_genre(movie4898, comedy).
 has_genre(movie4898, crime).
 has_genre(movie4898, mystery).
 has_genre(movie4898, thriller).
+has_3_genre(movie4899).
 has_genre(movie4899, adventure).
 has_genre(movie4899, comedy).
 has_genre(movie4899, fantasy).
+has_1_genre(movie4900).
 has_genre(movie4900, comedy).
+has_4_genre(movie4901).
 has_genre(movie4901, action).
 has_genre(movie4901, crime).
 has_genre(movie4901, drama).
 has_genre(movie4901, thriller).
+has_5_genre(movie4902).
 has_genre(movie4902, drama).
 has_genre(movie4902, fantasy).
 has_genre(movie4902, horror).
 has_genre(movie4902, thriller).
 has_genre(movie4902, war).
+has_1_genre(movie4903).
 has_genre(movie4903, drama).
+has_2_genre(movie4909).
 has_genre(movie4909, comedy).
 has_genre(movie4909, sci-fi).
+has_3_genre(movie4911).
 has_genre(movie4911, adventure).
 has_genre(movie4911, comedy).
 has_genre(movie4911, fantasy).
+has_3_genre(movie4912).
 has_genre(movie4912, drama).
 has_genre(movie4912, musical).
 has_genre(movie4912, romance).
+has_3_genre(movie4914).
 has_genre(movie4914, crime).
 has_genre(movie4914, drama).
 has_genre(movie4914, romance).
+has_3_genre(movie4915).
 has_genre(movie4915, action).
 has_genre(movie4915, adventure).
 has_genre(movie4915, fantasy).
+has_2_genre(movie4916).
 has_genre(movie4916, drama).
 has_genre(movie4916, war).
+has_1_genre(movie4917).
 has_genre(movie4917, drama).
+has_4_genre(movie4919).
 has_genre(movie4919, crime).
 has_genre(movie4919, drama).
 has_genre(movie4919, romance).
 has_genre(movie4919, thriller).
+has_2_genre(movie4920).
 has_genre(movie4920, drama).
 has_genre(movie4920, romance).
+has_2_genre(movie4921).
 has_genre(movie4921, drama).
 has_genre(movie4921, romance).
+has_1_genre(movie4925).
 has_genre(movie4925, comedy).
+has_3_genre(movie4926).
 has_genre(movie4926, comedy).
 has_genre(movie4926, drama).
 has_genre(movie4926, musical).
+has_3_genre(movie4927).
 has_genre(movie4927, fantasy).
 has_genre(movie4927, mystery).
 has_genre(movie4927, thriller).
+has_1_genre(movie4928).
 has_genre(movie4928, drama).
+has_1_genre(movie4929).
 has_genre(movie4929, comedy).
+has_2_genre(movie4932).
 has_genre(movie4932, mystery).
 has_genre(movie4932, thriller).
+has_2_genre(movie4936).
 has_genre(movie4936, drama).
 has_genre(movie4936, musical).
+has_2_genre(movie4939).
 has_genre(movie4939, action).
 has_genre(movie4939, sci-fi).
+has_3_genre(movie4941).
 has_genre(movie4941, action).
 has_genre(movie4941, adventure).
 has_genre(movie4941, sci-fi).
+has_1_genre(movie4942).
 has_genre(movie4942, sci-fi).
+has_1_genre(movie4945).
 has_genre(movie4945, crime).
+has_3_genre(movie4946).
 has_genre(movie4946, action).
 has_genre(movie4946, crime).
 has_genre(movie4946, thriller).
+has_1_genre(movie4947).
 has_genre(movie4947, action).
+has_3_genre(movie4951).
 has_genre(movie4951, adventure).
 has_genre(movie4951, drama).
 has_genre(movie4951, thriller).
+has_2_genre(movie4952).
 has_genre(movie4952, comedy).
 has_genre(movie4952, sci-fi).
+has_2_genre(movie4953).
 has_genre(movie4953, adventure).
 has_genre(movie4953, sci-fi).
+has_2_genre(movie4954).
 has_genre(movie4954, comedy).
 has_genre(movie4954, crime).
+has_more_than_5_genre(movie4956).
 has_genre(movie4956, action).
 has_genre(movie4956, adventure).
 has_genre(movie4956, comedy).
 has_genre(movie4956, drama).
 has_genre(movie4956, romance).
 has_genre(movie4956, thriller).
+has_2_genre(movie4957).
 has_genre(movie4957, crime).
 has_genre(movie4957, thriller).
+has_3_genre(movie4958).
 has_genre(movie4958, action).
 has_genre(movie4958, drama).
 has_genre(movie4958, war).
+has_1_genre(movie4959).
 has_genre(movie4959, drama).
+has_1_genre(movie4961).
 has_genre(movie4961, documentary).
+has_2_genre(movie4962).
 has_genre(movie4962, adventure).
 has_genre(movie4962, western).
+has_2_genre(movie4963).
 has_genre(movie4963, crime).
 has_genre(movie4963, thriller).
+has_3_genre(movie4964).
 has_genre(movie4964, adventure).
 has_genre(movie4964, drama).
 has_genre(movie4964, romance).
+has_3_genre(movie4965).
 has_genre(movie4965, action).
 has_genre(movie4965, drama).
 has_genre(movie4965, thriller).
+has_2_genre(movie4966).
 has_genre(movie4966, sci-fi).
 has_genre(movie4966, thriller).
+has_2_genre(movie4967).
 has_genre(movie4967, drama).
 has_genre(movie4967, war).
+has_2_genre(movie4969).
 has_genre(movie4969, crime).
 has_genre(movie4969, mystery).
+has_1_genre(movie4970).
 has_genre(movie4970, drama).
+has_2_genre(movie4971).
 has_genre(movie4971, comedy).
 has_genre(movie4971, drama).
+has_2_genre(movie4973).
 has_genre(movie4973, comedy).
 has_genre(movie4973, romance).
+has_1_genre(movie4974).
 has_genre(movie4974, comedy).
+has_4_genre(movie4975).
 has_genre(movie4975, mystery).
 has_genre(movie4975, romance).
 has_genre(movie4975, sci-fi).
 has_genre(movie4975, thriller).
+has_1_genre(movie4976).
 has_genre(movie4976, drama).
+has_1_genre(movie4977).
 has_genre(movie4977, drama).
+has_3_genre(movie4978).
 has_genre(movie4978, drama).
 has_genre(movie4978, mystery).
 has_genre(movie4978, thriller).
+has_2_genre(movie4979).
 has_genre(movie4979, comedy).
 has_genre(movie4979, drama).
+has_4_genre(movie4980).
 has_genre(movie4980, adventure).
 has_genre(movie4980, comedy).
 has_genre(movie4980, fantasy).
 has_genre(movie4980, sci-fi).
+has_1_genre(movie4981).
 has_genre(movie4981, comedy).
+has_3_genre(movie4985).
 has_genre(movie4985, action).
 has_genre(movie4985, adventure).
 has_genre(movie4985, fantasy).
+has_3_genre(movie4987).
 has_genre(movie4987, action).
 has_genre(movie4987, adventure).
 has_genre(movie4987, sci-fi).
+has_1_genre(movie4988).
 has_genre(movie4988, adventure).
+has_1_genre(movie4989).
 has_genre(movie4989, comedy).
+has_4_genre(movie4990).
 has_genre(movie4990, adventure).
 has_genre(movie4990, animation).
 has_genre(movie4990, children).
 has_genre(movie4990, comedy).
+has_3_genre(movie4991).
 has_genre(movie4991, comedy).
 has_genre(movie4991, drama).
 has_genre(movie4991, romance).
+has_2_genre(movie4992).
 has_genre(movie4992, comedy).
 has_genre(movie4992, romance).
+has_2_genre(movie4993).
 has_genre(movie4993, adventure).
 has_genre(movie4993, fantasy).
+has_3_genre(movie4994).
 has_genre(movie4994, comedy).
 has_genre(movie4994, drama).
 has_genre(movie4994, romance).
+has_2_genre(movie4995).
 has_genre(movie4995, drama).
 has_genre(movie4995, romance).
+has_4_genre(movie4998).
 has_genre(movie4998, adventure).
 has_genre(movie4998, crime).
 has_genre(movie4998, drama).
 has_genre(movie4998, thriller).
+has_1_genre(movie5004).
 has_genre(movie5004, comedy).
+has_3_genre(movie5007).
 has_genre(movie5007, adventure).
 has_genre(movie5007, comedy).
 has_genre(movie5007, thriller).
+has_3_genre(movie5008).
 has_genre(movie5008, drama).
 has_genre(movie5008, mystery).
 has_genre(movie5008, thriller).
+has_1_genre(movie5009).
 has_genre(movie5009, drama).
+has_3_genre(movie5010).
 has_genre(movie5010, action).
 has_genre(movie5010, drama).
 has_genre(movie5010, war).
+has_2_genre(movie5011).
 has_genre(movie5011, drama).
 has_genre(movie5011, romance).
+has_3_genre(movie5012).
 has_genre(movie5012, drama).
 has_genre(movie5012, musical).
 has_genre(movie5012, romance).
+has_3_genre(movie5013).
 has_genre(movie5013, comedy).
 has_genre(movie5013, drama).
 has_genre(movie5013, mystery).
+has_1_genre(movie5014).
 has_genre(movie5014, drama).
+has_2_genre(movie5015).
 has_genre(movie5015, drama).
 has_genre(movie5015, romance).
+has_1_genre(movie5016).
 has_genre(movie5016, drama).
+has_4_genre(movie5021).
 has_genre(movie5021, comedy).
 has_genre(movie5021, crime).
 has_genre(movie5021, mystery).
 has_genre(movie5021, thriller).
+has_1_genre(movie5023).
 has_genre(movie5023, drama).
+has_1_genre(movie5025).
 has_genre(movie5025, comedy).
+has_3_genre(movie5026).
 has_genre(movie5026, action).
 has_genre(movie5026, mystery).
 has_genre(movie5026, thriller).
+has_5_genre(movie5027).
 has_genre(movie5027, action).
 has_genre(movie5027, comedy).
 has_genre(movie5027, crime).
 has_genre(movie5027, drama).
 has_genre(movie5027, thriller).
+has_1_genre(movie5028).
 has_genre(movie5028, drama).
+has_2_genre(movie5033).
 has_genre(movie5033, drama).
 has_genre(movie5033, thriller).
+has_2_genre(movie5034).
 has_genre(movie5034, drama).
 has_genre(movie5034, romance).
+has_3_genre(movie5039).
 has_genre(movie5039, action).
 has_genre(movie5039, adventure).
 has_genre(movie5039, fantasy).
+has_3_genre(movie5040).
 has_genre(movie5040, action).
 has_genre(movie5040, adventure).
 has_genre(movie5040, fantasy).
+has_2_genre(movie5041).
 has_genre(movie5041, animation).
 has_genre(movie5041, fantasy).
+has_4_genre(movie5046).
 has_genre(movie5046, action).
 has_genre(movie5046, drama).
 has_genre(movie5046, sci-fi).
 has_genre(movie5046, thriller).
+has_2_genre(movie5047).
 has_genre(movie5047, action).
 has_genre(movie5047, comedy).
+has_3_genre(movie5048).
 has_genre(movie5048, adventure).
 has_genre(movie5048, children).
 has_genre(movie5048, comedy).
+has_4_genre(movie5049).
 has_genre(movie5049, action).
 has_genre(movie5049, comedy).
 has_genre(movie5049, crime).
 has_genre(movie5049, drama).
+has_3_genre(movie5051).
 has_genre(movie5051, comedy).
 has_genre(movie5051, drama).
 has_genre(movie5051, romance).
+has_1_genre(movie5053).
 has_genre(movie5053, comedy).
+has_2_genre(movie5054).
 has_genre(movie5054, sci-fi).
 has_genre(movie5054, thriller).
+has_2_genre(movie5055).
 has_genre(movie5055, action).
 has_genre(movie5055, drama).
+has_1_genre(movie5059).
 has_genre(movie5059, documentary).
+has_3_genre(movie5060).
 has_genre(movie5060, comedy).
 has_genre(movie5060, drama).
 has_genre(movie5060, war).
+has_3_genre(movie5062).
 has_genre(movie5062, mystery).
 has_genre(movie5062, sci-fi).
 has_genre(movie5062, thriller).
+has_1_genre(movie5063).
 has_genre(movie5063, western).
+has_4_genre(movie5064).
 has_genre(movie5064, action).
 has_genre(movie5064, adventure).
 has_genre(movie5064, drama).
 has_genre(movie5064, thriller).
+has_5_genre(movie5065).
 has_genre(movie5065, drama).
 has_genre(movie5065, fantasy).
 has_genre(movie5065, horror).
 has_genre(movie5065, mystery).
 has_genre(movie5065, thriller).
+has_2_genre(movie5066).
 has_genre(movie5066, drama).
 has_genre(movie5066, romance).
+has_1_genre(movie5068).
 has_genre(movie5068, drama).
+has_5_genre(movie5069).
 has_genre(movie5069, action).
 has_genre(movie5069, adventure).
 has_genre(movie5069, animation).
 has_genre(movie5069, drama).
 has_genre(movie5069, fantasy).
+has_2_genre(movie5071).
 has_genre(movie5071, drama).
 has_genre(movie5071, romance).
+has_2_genre(movie5072).
 has_genre(movie5072, animation).
 has_genre(movie5072, sci-fi).
+has_1_genre(movie5073).
 has_genre(movie5073, drama).
+has_2_genre(movie5074).
 has_genre(movie5074, comedy).
 has_genre(movie5074, drama).
+has_1_genre(movie5075).
 has_genre(movie5075, comedy).
+has_4_genre(movie5076).
 has_genre(movie5076, adventure).
 has_genre(movie5076, children).
 has_genre(movie5076, comedy).
 has_genre(movie5076, drama).
+has_2_genre(movie5077).
 has_genre(movie5077, comedy).
 has_genre(movie5077, romance).
+has_1_genre(movie5080).
 has_genre(movie5080, comedy).
+has_2_genre(movie5081).
 has_genre(movie5081, drama).
 has_genre(movie5081, romance).
+has_2_genre(movie5083).
 has_genre(movie5083, comedy).
 has_genre(movie5083, drama).
+has_3_genre(movie5088).
 has_genre(movie5088, comedy).
 has_genre(movie5088, crime).
 has_genre(movie5088, drama).
+has_2_genre(movie5092).
 has_genre(movie5092, children).
 has_genre(movie5092, comedy).
+has_2_genre(movie5093).
 has_genre(movie5093, action).
 has_genre(movie5093, thriller).
+has_2_genre(movie5094).
 has_genre(movie5094, action).
 has_genre(movie5094, sci-fi).
+has_2_genre(movie5095).
 has_genre(movie5095, comedy).
 has_genre(movie5095, crime).
+has_1_genre(movie5096).
 has_genre(movie5096, comedy).
+has_2_genre(movie5099).
 has_genre(movie5099, children).
 has_genre(movie5099, drama).
+has_2_genre(movie5102).
 has_genre(movie5102, comedy).
 has_genre(movie5102, fantasy).
+has_3_genre(movie5103).
 has_genre(movie5103, children).
 has_genre(movie5103, comedy).
 has_genre(movie5103, drama).
+has_3_genre(movie5105).
 has_genre(movie5105, drama).
 has_genre(movie5105, horror).
 has_genre(movie5105, thriller).
+has_3_genre(movie5106).
 has_genre(movie5106, comedy).
 has_genre(movie5106, musical).
 has_genre(movie5106, romance).
+has_2_genre(movie5107).
 has_genre(movie5107, drama).
 has_genre(movie5107, war).
+has_3_genre(movie5108).
 has_genre(movie5108, crime).
 has_genre(movie5108, drama).
 has_genre(movie5108, thriller).
+has_3_genre(movie5109).
 has_genre(movie5109, adventure).
 has_genre(movie5109, animation).
 has_genre(movie5109, children).
+has_3_genre(movie5110).
 has_genre(movie5110, comedy).
 has_genre(movie5110, crime).
 has_genre(movie5110, mystery).
+has_2_genre(movie5111).
 has_genre(movie5111, drama).
 has_genre(movie5111, thriller).
+has_1_genre(movie5112).
 has_genre(movie5112, drama).
+has_2_genre(movie5113).
 has_genre(movie5113, comedy).
 has_genre(movie5113, crime).
+has_1_genre(movie5114).
 has_genre(movie5114, drama).
+has_1_genre(movie5116).
 has_genre(movie5116, comedy).
+has_3_genre(movie5120).
 has_genre(movie5120, comedy).
 has_genre(movie5120, mystery).
 has_genre(movie5120, thriller).
+has_2_genre(movie5121).
 has_genre(movie5121, comedy).
 has_genre(movie5121, drama).
+has_5_genre(movie5127).
 has_genre(movie5127, drama).
 has_genre(movie5127, fantasy).
 has_genre(movie5127, mystery).
 has_genre(movie5127, romance).
 has_genre(movie5127, thriller).
+has_2_genre(movie5128).
 has_genre(movie5128, fantasy).
 has_genre(movie5128, horror).
+has_2_genre(movie5131).
 has_genre(movie5131, comedy).
 has_genre(movie5131, drama).
+has_2_genre(movie5134).
 has_genre(movie5134, comedy).
 has_genre(movie5134, drama).
+has_2_genre(movie5135).
 has_genre(movie5135, comedy).
 has_genre(movie5135, romance).
+has_2_genre(movie5136).
 has_genre(movie5136, drama).
 has_genre(movie5136, horror).
+has_1_genre(movie5137).
 has_genre(movie5137, documentary).
+has_1_genre(movie5139).
 has_genre(movie5139, comedy).
+has_4_genre(movie5146).
 has_genre(movie5146, animation).
 has_genre(movie5146, fantasy).
 has_genre(movie5146, horror).
 has_genre(movie5146, sci-fi).
+has_1_genre(movie5147).
 has_genre(movie5147, drama).
+has_2_genre(movie5151).
 has_genre(movie5151, comedy).
 has_genre(movie5151, romance).
+has_3_genre(movie5152).
 has_genre(movie5152, action).
 has_genre(movie5152, drama).
 has_genre(movie5152, war).
+has_1_genre(movie5155).
 has_genre(movie5155, action).
+has_1_genre(movie5156).
 has_genre(movie5156, action).
+has_4_genre(movie5159).
 has_genre(movie5159, animation).
 has_genre(movie5159, children).
 has_genre(movie5159, comedy).
 has_genre(movie5159, musical).
+has_1_genre(movie5165).
 has_genre(movie5165, horror).
+has_3_genre(movie5168).
 has_genre(movie5168, comedy).
 has_genre(movie5168, musical).
 has_genre(movie5168, romance).
+has_3_genre(movie5170).
 has_genre(movie5170, action).
 has_genre(movie5170, comedy).
 has_genre(movie5170, crime).
+has_3_genre(movie5171).
 has_genre(movie5171, action).
 has_genre(movie5171, adventure).
 has_genre(movie5171, sci-fi).
+has_2_genre(movie5177).
 has_genre(movie5177, drama).
 has_genre(movie5177, romance).
+has_2_genre(movie5178).
 has_genre(movie5178, crime).
 has_genre(movie5178, drama).
+has_3_genre(movie5181).
 has_genre(movie5181, action).
 has_genre(movie5181, sci-fi).
 has_genre(movie5181, thriller).
+has_1_genre(movie5187).
 has_genre(movie5187, comedy).
+has_2_genre(movie5189).
 has_genre(movie5189, horror).
 has_genre(movie5189, sci-fi).
+has_1_genre(movie5197).
 has_genre(movie5197, drama).
+has_2_genre(movie5198).
 has_genre(movie5198, drama).
 has_genre(movie5198, thriller).
+has_1_genre(movie5202).
 has_genre(movie5202, drama).
+has_2_genre(movie5205).
 has_genre(movie5205, comedy).
 has_genre(movie5205, horror).
+has_3_genre(movie5209).
 has_genre(movie5209, action).
 has_genre(movie5209, adventure).
 has_genre(movie5209, thriller).
+has_1_genre(movie5212).
 has_genre(movie5212, action).
+has_1_genre(movie5213).
 has_genre(movie5213, comedy).
+has_2_genre(movie5214).
 has_genre(movie5214, comedy).
 has_genre(movie5214, fantasy).
+has_4_genre(movie5218).
 has_genre(movie5218, adventure).
 has_genre(movie5218, animation).
 has_genre(movie5218, children).
 has_genre(movie5218, comedy).
+has_4_genre(movie5219).
 has_genre(movie5219, action).
 has_genre(movie5219, horror).
 has_genre(movie5219, sci-fi).
 has_genre(movie5219, thriller).
+has_2_genre(movie5220).
 has_genre(movie5220, action).
 has_genre(movie5220, comedy).
+has_1_genre(movie5221).
 has_genre(movie5221, drama).
+has_2_genre(movie5222).
 has_genre(movie5222, comedy).
 has_genre(movie5222, romance).
+has_1_genre(movie5224).
 has_genre(movie5224, documentary).
+has_2_genre(movie5225).
 has_genre(movie5225, drama).
 has_genre(movie5225, romance).
+has_2_genre(movie5226).
 has_genre(movie5226, drama).
 has_genre(movie5226, romance).
+has_1_genre(movie5231).
 has_genre(movie5231, comedy).
+has_1_genre(movie5237).
 has_genre(movie5237, drama).
+has_1_genre(movie5238).
 has_genre(movie5238, drama).
+has_2_genre(movie5239).
 has_genre(movie5239, documentary).
 has_genre(movie5239, drama).
+has_2_genre(movie5240).
 has_genre(movie5240, action).
 has_genre(movie5240, drama).
+has_2_genre(movie5241).
 has_genre(movie5241, comedy).
 has_genre(movie5241, romance).
+has_2_genre(movie5244).
 has_genre(movie5244, action).
 has_genre(movie5244, adventure).
+has_2_genre(movie5246).
 has_genre(movie5246, action).
 has_genre(movie5246, comedy).
+has_2_genre(movie5247).
 has_genre(movie5247, action).
 has_genre(movie5247, comedy).
+has_2_genre(movie5248).
 has_genre(movie5248, action).
 has_genre(movie5248, comedy).
+has_1_genre(movie5250).
 has_genre(movie5250, comedy).
+has_3_genre(movie5254).
 has_genre(movie5254, action).
 has_genre(movie5254, horror).
 has_genre(movie5254, thriller).
+has_1_genre(movie5255).
 has_genre(movie5255, comedy).
+has_1_genre(movie5256).
 has_genre(movie5256, drama).
+has_1_genre(movie5258).
 has_genre(movie5258, drama).
+has_4_genre(movie5264).
 has_genre(movie5264, action).
 has_genre(movie5264, adventure).
 has_genre(movie5264, sci-fi).
 has_genre(movie5264, thriller).
+has_3_genre(movie5265).
 has_genre(movie5265, comedy).
 has_genre(movie5265, crime).
 has_genre(movie5265, drama).
+has_1_genre(movie5266).
 has_genre(movie5266, thriller).
+has_1_genre(movie5267).
 has_genre(movie5267, drama).
+has_3_genre(movie5268).
 has_genre(movie5268, drama).
 has_genre(movie5268, fantasy).
 has_genre(movie5268, romance).
+has_1_genre(movie5269).
 has_genre(movie5269, drama).
+has_1_genre(movie5272).
 has_genre(movie5272, drama).
+has_1_genre(movie5275).
 has_genre(movie5275, drama).
+has_2_genre(movie5278).
 has_genre(movie5278, comedy).
 has_genre(movie5278, romance).
+has_2_genre(movie5279).
 has_genre(movie5279, comedy).
 has_genre(movie5279, romance).
+has_1_genre(movie5282).
 has_genre(movie5282, thriller).
+has_1_genre(movie5283).
 has_genre(movie5283, comedy).
+has_2_genre(movie5284).
 has_genre(movie5284, comedy).
 has_genre(movie5284, romance).
+has_2_genre(movie5285).
 has_genre(movie5285, comedy).
 has_genre(movie5285, crime).
+has_2_genre(movie5288).
 has_genre(movie5288, documentary).
 has_genre(movie5288, war).
+has_3_genre(movie5291).
 has_genre(movie5291, crime).
 has_genre(movie5291, drama).
 has_genre(movie5291, mystery).
+has_1_genre(movie5292).
 has_genre(movie5292, comedy).
+has_2_genre(movie5293).
 has_genre(movie5293, drama).
 has_genre(movie5293, thriller).
+has_3_genre(movie5294).
 has_genre(movie5294, crime).
 has_genre(movie5294, drama).
 has_genre(movie5294, thriller).
+has_2_genre(movie5296).
 has_genre(movie5296, comedy).
 has_genre(movie5296, romance).
+has_2_genre(movie5297).
 has_genre(movie5297, drama).
 has_genre(movie5297, thriller).
+has_2_genre(movie5298).
 has_genre(movie5298, comedy).
 has_genre(movie5298, romance).
+has_2_genre(movie5299).
 has_genre(movie5299, comedy).
 has_genre(movie5299, romance).
+has_5_genre(movie5300).
 has_genre(movie5300, action).
 has_genre(movie5300, adventure).
 has_genre(movie5300, drama).
 has_genre(movie5300, thriller).
 has_genre(movie5300, western).
+has_2_genre(movie5303).
 has_genre(movie5303, comedy).
 has_genre(movie5303, romance).
+has_2_genre(movie5304).
 has_genre(movie5304, drama).
 has_genre(movie5304, war).
+has_1_genre(movie5307).
 has_genre(movie5307, comedy).
+has_1_genre(movie5308).
 has_genre(movie5308, comedy).
+has_2_genre(movie5309).
 has_genre(movie5309, comedy).
 has_genre(movie5309, romance).
+has_4_genre(movie5311).
 has_genre(movie5311, children).
 has_genre(movie5311, horror).
 has_genre(movie5311, mystery).
 has_genre(movie5311, thriller).
+has_2_genre(movie5312).
 has_genre(movie5312, crime).
 has_genre(movie5312, thriller).
+has_4_genre(movie5313).
 has_genre(movie5313, action).
 has_genre(movie5313, adventure).
 has_genre(movie5313, fantasy).
 has_genre(movie5313, thriller).
+has_2_genre(movie5316).
 has_genre(movie5316, romance).
 has_genre(movie5316, thriller).
+has_2_genre(movie5319).
 has_genre(movie5319, crime).
 has_genre(movie5319, thriller).
+has_1_genre(movie5321).
 has_genre(movie5321, comedy).
+has_1_genre(movie5322).
 has_genre(movie5322, drama).
+has_3_genre(movie5323).
 has_genre(movie5323, horror).
 has_genre(movie5323, sci-fi).
 has_genre(movie5323, thriller).
+has_2_genre(movie5324).
 has_genre(movie5324, comedy).
 has_genre(movie5324, romance).
+has_1_genre(movie5325).
 has_genre(movie5325, documentary).
+has_2_genre(movie5328).
 has_genre(movie5328, drama).
 has_genre(movie5328, romance).
+has_3_genre(movie5329).
 has_genre(movie5329, crime).
 has_genre(movie5329, drama).
 has_genre(movie5329, thriller).
+has_2_genre(movie5333).
 has_genre(movie5333, crime).
 has_genre(movie5333, drama).
+has_2_genre(movie5334).
 has_genre(movie5334, comedy).
 has_genre(movie5334, crime).
+has_1_genre(movie5337).
 has_genre(movie5337, comedy).
+has_1_genre(movie5338).
 has_genre(movie5338, drama).
+has_2_genre(movie5339).
 has_genre(movie5339, comedy).
 has_genre(movie5339, drama).
+has_1_genre(movie5341).
 has_genre(movie5341, drama).
+has_1_genre(movie5345).
 has_genre(movie5345, drama).
+has_2_genre(movie5346).
 has_genre(movie5346, drama).
 has_genre(movie5346, romance).
+has_1_genre(movie5347).
 has_genre(movie5347, drama).
+has_2_genre(movie5348).
 has_genre(movie5348, comedy).
 has_genre(movie5348, drama).
+has_4_genre(movie5349).
 has_genre(movie5349, action).
 has_genre(movie5349, adventure).
 has_genre(movie5349, sci-fi).
 has_genre(movie5349, thriller).
+has_2_genre(movie5353).
 has_genre(movie5353, comedy).
 has_genre(movie5353, drama).
+has_2_genre(movie5356).
 has_genre(movie5356, horror).
 has_genre(movie5356, sci-fi).
+has_1_genre(movie5357).
 has_genre(movie5357, adventure).
+has_1_genre(movie5358).
 has_genre(movie5358, adventure).
+has_1_genre(movie5361).
 has_genre(movie5361, adventure).
+has_1_genre(movie5363).
 has_genre(movie5363, comedy).
+has_2_genre(movie5364).
 has_genre(movie5364, drama).
 has_genre(movie5364, thriller).
+has_2_genre(movie5365).
 has_genre(movie5365, drama).
 has_genre(movie5365, romance).
+has_2_genre(movie5372).
 has_genre(movie5372, musical).
 has_genre(movie5372, western).
+has_3_genre(movie5373).
 has_genre(movie5373, drama).
 has_genre(movie5373, romance).
 has_genre(movie5373, war).
+has_3_genre(movie5375).
 has_genre(movie5375, comedy).
 has_genre(movie5375, musical).
 has_genre(movie5375, western).
+has_3_genre(movie5377).
 has_genre(movie5377, comedy).
 has_genre(movie5377, drama).
 has_genre(movie5377, romance).
+has_4_genre(movie5378).
 has_genre(movie5378, action).
 has_genre(movie5378, adventure).
 has_genre(movie5378, sci-fi).
 has_genre(movie5378, imax).
+has_1_genre(movie5379).
 has_genre(movie5379, drama).
+has_3_genre(movie5380).
 has_genre(movie5380, comedy).
 has_genre(movie5380, drama).
 has_genre(movie5380, romance).
+has_1_genre(movie5382).
 has_genre(movie5382, comedy).
+has_2_genre(movie5384).
 has_genre(movie5384, crime).
 has_genre(movie5384, drama).
+has_1_genre(movie5385).
 has_genre(movie5385, documentary).
+has_2_genre(movie5387).
 has_genre(movie5387, drama).
 has_genre(movie5387, thriller).
+has_5_genre(movie5388).
 has_genre(movie5388, action).
 has_genre(movie5388, crime).
 has_genre(movie5388, drama).
 has_genre(movie5388, mystery).
 has_genre(movie5388, thriller).
+has_4_genre(movie5389).
 has_genre(movie5389, adventure).
 has_genre(movie5389, animation).
 has_genre(movie5389, children).
 has_genre(movie5389, western).
+has_1_genre(movie5390).
 has_genre(movie5390, drama).
+has_1_genre(movie5391).
 has_genre(movie5391, drama).
+has_2_genre(movie5397).
 has_genre(movie5397, comedy).
 has_genre(movie5397, sci-fi).
+has_1_genre(movie5398).
 has_genre(movie5398, drama).
+has_2_genre(movie5400).
 has_genre(movie5400, drama).
 has_genre(movie5400, thriller).
+has_1_genre(movie5401).
 has_genre(movie5401, comedy).
+has_2_genre(movie5404).
 has_genre(movie5404, drama).
 has_genre(movie5404, romance).
+has_1_genre(movie5409).
 has_genre(movie5409, action).
+has_2_genre(movie5410).
 has_genre(movie5410, drama).
 has_genre(movie5410, sci-fi).
+has_3_genre(movie5414).
 has_genre(movie5414, action).
 has_genre(movie5414, comedy).
 has_genre(movie5414, crime).
+has_2_genre(movie5415).
 has_genre(movie5415, comedy).
 has_genre(movie5415, drama).
+has_3_genre(movie5416).
 has_genre(movie5416, comedy).
 has_genre(movie5416, drama).
 has_genre(movie5416, thriller).
+has_2_genre(movie5417).
 has_genre(movie5417, drama).
 has_genre(movie5417, fantasy).
+has_3_genre(movie5418).
 has_genre(movie5418, action).
 has_genre(movie5418, mystery).
 has_genre(movie5418, thriller).
+has_5_genre(movie5419).
 has_genre(movie5419, adventure).
 has_genre(movie5419, children).
 has_genre(movie5419, comedy).
 has_genre(movie5419, fantasy).
 has_genre(movie5419, mystery).
+has_3_genre(movie5420).
 has_genre(movie5420, action).
 has_genre(movie5420, drama).
 has_genre(movie5420, war).
+has_1_genre(movie5421).
 has_genre(movie5421, drama).
+has_1_genre(movie5422).
 has_genre(movie5422, comedy).
+has_3_genre(movie5423).
 has_genre(movie5423, action).
 has_genre(movie5423, crime).
 has_genre(movie5423, thriller).
+has_4_genre(movie5424).
 has_genre(movie5424, crime).
 has_genre(movie5424, drama).
 has_genre(movie5424, romance).
 has_genre(movie5424, thriller).
+has_2_genre(movie5425).
 has_genre(movie5425, drama).
 has_genre(movie5425, war).
+has_1_genre(movie5427).
 has_genre(movie5427, comedy).
+has_1_genre(movie5428).
 has_genre(movie5428, comedy).
+has_5_genre(movie5433).
 has_genre(movie5433, adventure).
 has_genre(movie5433, drama).
 has_genre(movie5433, horror).
 has_genre(movie5433, mystery).
 has_genre(movie5433, thriller).
+has_3_genre(movie5434).
 has_genre(movie5434, drama).
 has_genre(movie5434, film-noir).
 has_genre(movie5434, thriller).
+has_1_genre(movie5435).
 has_genre(movie5435, western).
+has_3_genre(movie5437).
 has_genre(movie5437, comedy).
 has_genre(movie5437, sci-fi).
 has_genre(movie5437, thriller).
+has_2_genre(movie5438).
 has_genre(movie5438, action).
 has_genre(movie5438, comedy).
+has_1_genre(movie5440).
 has_genre(movie5440, western).
+has_3_genre(movie5442).
 has_genre(movie5442, action).
 has_genre(movie5442, comedy).
 has_genre(movie5442, crime).
+has_1_genre(movie5443).
 has_genre(movie5443, comedy).
+has_4_genre(movie5444).
 has_genre(movie5444, adventure).
 has_genre(movie5444, animation).
 has_genre(movie5444, children).
 has_genre(movie5444, sci-fi).
+has_5_genre(movie5445).
 has_genre(movie5445, action).
 has_genre(movie5445, crime).
 has_genre(movie5445, mystery).
 has_genre(movie5445, sci-fi).
 has_genre(movie5445, thriller).
+has_2_genre(movie5446).
 has_genre(movie5446, adventure).
 has_genre(movie5446, drama).
+has_1_genre(movie5447).
 has_genre(movie5447, drama).
+has_4_genre(movie5448).
 has_genre(movie5448, adventure).
 has_genre(movie5448, animation).
 has_genre(movie5448, children).
 has_genre(movie5448, comedy).
+has_2_genre(movie5449).
 has_genre(movie5449, comedy).
 has_genre(movie5449, romance).
+has_3_genre(movie5450).
 has_genre(movie5450, comedy).
 has_genre(movie5450, drama).
 has_genre(movie5450, romance).
+has_3_genre(movie5451).
 has_genre(movie5451, comedy).
 has_genre(movie5451, drama).
 has_genre(movie5451, romance).
+has_3_genre(movie5452).
 has_genre(movie5452, children).
 has_genre(movie5452, comedy).
 has_genre(movie5452, romance).
+has_2_genre(movie5454).
 has_genre(movie5454, comedy).
 has_genre(movie5454, romance).
+has_2_genre(movie5455).
 has_genre(movie5455, comedy).
 has_genre(movie5455, drama).
+has_2_genre(movie5456).
 has_genre(movie5456, comedy).
 has_genre(movie5456, western).
+has_3_genre(movie5458).
 has_genre(movie5458, children).
 has_genre(movie5458, comedy).
 has_genre(movie5458, fantasy).
+has_3_genre(movie5459).
 has_genre(movie5459, action).
 has_genre(movie5459, comedy).
 has_genre(movie5459, sci-fi).
+has_4_genre(movie5460).
 has_genre(movie5460, action).
 has_genre(movie5460, animation).
 has_genre(movie5460, children).
 has_genre(movie5460, comedy).
+has_2_genre(movie5461).
 has_genre(movie5461, comedy).
 has_genre(movie5461, drama).
+has_2_genre(movie5462).
 has_genre(movie5462, adventure).
 has_genre(movie5462, comedy).
+has_3_genre(movie5463).
 has_genre(movie5463, action).
 has_genre(movie5463, adventure).
 has_genre(movie5463, fantasy).
+has_2_genre(movie5464).
 has_genre(movie5464, crime).
 has_genre(movie5464, drama).
+has_3_genre(movie5465).
 has_genre(movie5465, crime).
 has_genre(movie5465, drama).
 has_genre(movie5465, thriller).
+has_3_genre(movie5466).
 has_genre(movie5466, comedy).
 has_genre(movie5466, drama).
 has_genre(movie5466, romance).
+has_1_genre(movie5468).
 has_genre(movie5468, sci-fi).
+has_2_genre(movie5470).
 has_genre(movie5470, comedy).
 has_genre(movie5470, romance).
+has_2_genre(movie5471).
 has_genre(movie5471, drama).
 has_genre(movie5471, romance).
+has_3_genre(movie5472).
 has_genre(movie5472, children).
 has_genre(movie5472, drama).
 has_genre(movie5472, musical).
+has_3_genre(movie5475).
 has_genre(movie5475, drama).
 has_genre(movie5475, mystery).
 has_genre(movie5475, thriller).
+has_2_genre(movie5476).
 has_genre(movie5476, horror).
 has_genre(movie5476, thriller).
+has_2_genre(movie5477).
 has_genre(movie5477, drama).
 has_genre(movie5477, romance).
+has_4_genre(movie5478).
 has_genre(movie5478, action).
 has_genre(movie5478, comedy).
 has_genre(movie5478, horror).
 has_genre(movie5478, sci-fi).
+has_4_genre(movie5479).
 has_genre(movie5479, action).
 has_genre(movie5479, adventure).
 has_genre(movie5479, drama).
 has_genre(movie5479, thriller).
+has_2_genre(movie5480).
 has_genre(movie5480, children).
 has_genre(movie5480, comedy).
+has_1_genre(movie5481).
 has_genre(movie5481, comedy).
+has_1_genre(movie5483).
 has_genre(movie5483, documentary).
+has_3_genre(movie5485).
 has_genre(movie5485, comedy).
 has_genre(movie5485, drama).
 has_genre(movie5485, romance).
+has_1_genre(movie5486).
 has_genre(movie5486, comedy).
+has_1_genre(movie5489).
 has_genre(movie5489, horror).
+has_2_genre(movie5490).
 has_genre(movie5490, action).
 has_genre(movie5490, comedy).
+has_3_genre(movie5493).
 has_genre(movie5493, action).
 has_genre(movie5493, adventure).
 has_genre(movie5493, comedy).
+has_3_genre(movie5497).
 has_genre(movie5497, adventure).
 has_genre(movie5497, comedy).
 has_genre(movie5497, sci-fi).
+has_1_genre(movie5498).
 has_genre(movie5498, drama).
+has_3_genre(movie5499).
 has_genre(movie5499, adventure).
 has_genre(movie5499, drama).
 has_genre(movie5499, romance).
+has_1_genre(movie5500).
 has_genre(movie5500, comedy).
+has_2_genre(movie5501).
 has_genre(movie5501, comedy).
 has_genre(movie5501, mystery).
+has_3_genre(movie5502).
 has_genre(movie5502, horror).
 has_genre(movie5502, sci-fi).
 has_genre(movie5502, thriller).
+has_3_genre(movie5503).
 has_genre(movie5503, comedy).
 has_genre(movie5503, drama).
 has_genre(movie5503, romance).
+has_2_genre(movie5504).
 has_genre(movie5504, adventure).
 has_genre(movie5504, children).
+has_2_genre(movie5505).
 has_genre(movie5505, comedy).
 has_genre(movie5505, drama).
+has_4_genre(movie5506).
 has_genre(movie5506, crime).
 has_genre(movie5506, drama).
 has_genre(movie5506, mystery).
 has_genre(movie5506, thriller).
+has_3_genre(movie5507).
 has_genre(movie5507, action).
 has_genre(movie5507, crime).
 has_genre(movie5507, thriller).
+has_3_genre(movie5508).
 has_genre(movie5508, comedy).
 has_genre(movie5508, drama).
 has_genre(movie5508, musical).
+has_1_genre(movie5512).
 has_genre(movie5512, comedy).
+has_2_genre(movie5513).
 has_genre(movie5513, comedy).
 has_genre(movie5513, documentary).
+has_1_genre(movie5515).
 has_genre(movie5515, drama).
+has_3_genre(movie5521).
 has_genre(movie5521, action).
 has_genre(movie5521, crime).
 has_genre(movie5521, drama).
+has_3_genre(movie5522).
 has_genre(movie5522, action).
 has_genre(movie5522, drama).
 has_genre(movie5522, sci-fi).
+has_4_genre(movie5523).
 has_genre(movie5523, action).
 has_genre(movie5523, adventure).
 has_genre(movie5523, comedy).
 has_genre(movie5523, sci-fi).
+has_3_genre(movie5524).
 has_genre(movie5524, adventure).
 has_genre(movie5524, drama).
 has_genre(movie5524, romance).
+has_3_genre(movie5525).
 has_genre(movie5525, comedy).
 has_genre(movie5525, drama).
 has_genre(movie5525, romance).
+has_2_genre(movie5527).
 has_genre(movie5527, drama).
 has_genre(movie5527, romance).
+has_2_genre(movie5528).
 has_genre(movie5528, drama).
 has_genre(movie5528, thriller).
+has_2_genre(movie5529).
 has_genre(movie5529, comedy).
 has_genre(movie5529, romance).
+has_4_genre(movie5530).
 has_genre(movie5530, comedy).
 has_genre(movie5530, drama).
 has_genre(movie5530, fantasy).
 has_genre(movie5530, sci-fi).
+has_1_genre(movie5531).
 has_genre(movie5531, drama).
+has_2_genre(movie5532).
 has_genre(movie5532, comedy).
 has_genre(movie5532, romance).
+has_2_genre(movie5537).
 has_genre(movie5537, drama).
 has_genre(movie5537, musical).
+has_3_genre(movie5538).
 has_genre(movie5538, animation).
 has_genre(movie5538, children).
 has_genre(movie5538, fantasy).
+has_2_genre(movie5539).
 has_genre(movie5539, animation).
 has_genre(movie5539, children).
+has_4_genre(movie5540).
 has_genre(movie5540, action).
 has_genre(movie5540, adventure).
 has_genre(movie5540, fantasy).
 has_genre(movie5540, romance).
+has_4_genre(movie5541).
 has_genre(movie5541, action).
 has_genre(movie5541, comedy).
 has_genre(movie5541, romance).
 has_genre(movie5541, war).
+has_3_genre(movie5543).
 has_genre(movie5543, action).
 has_genre(movie5543, horror).
 has_genre(movie5543, sci-fi).
+has_2_genre(movie5544).
 has_genre(movie5544, sci-fi).
 has_genre(movie5544, thriller).
+has_1_genre(movie5548).
 has_genre(movie5548, comedy).
+has_2_genre(movie5550).
 has_genre(movie5550, musical).
 has_genre(movie5550, western).
+has_4_genre(movie5553).
 has_genre(movie5553, comedy).
 has_genre(movie5553, crime).
 has_genre(movie5553, romance).
 has_genre(movie5553, thriller).
+has_3_genre(movie5556).
 has_genre(movie5556, crime).
 has_genre(movie5556, horror).
 has_genre(movie5556, thriller).
+has_2_genre(movie5560).
 has_genre(movie5560, comedy).
 has_genre(movie5560, musical).
+has_2_genre(movie5562).
 has_genre(movie5562, drama).
 has_genre(movie5562, thriller).
+has_2_genre(movie5563).
 has_genre(movie5563, crime).
 has_genre(movie5563, drama).
+has_1_genre(movie5564).
 has_genre(movie5564, thriller).
+has_1_genre(movie5568).
 has_genre(movie5568, comedy).
+has_3_genre(movie5569).
 has_genre(movie5569, crime).
 has_genre(movie5569, horror).
 has_genre(movie5569, thriller).
+has_3_genre(movie5570).
 has_genre(movie5570, drama).
 has_genre(movie5570, horror).
 has_genre(movie5570, thriller).
+has_1_genre(movie5572).
 has_genre(movie5572, comedy).
+has_2_genre(movie5573).
 has_genre(movie5573, comedy).
 has_genre(movie5573, crime).
+has_2_genre(movie5574).
 has_genre(movie5574, action).
 has_genre(movie5574, crime).
+has_2_genre(movie5575).
 has_genre(movie5575, crime).
 has_genre(movie5575, drama).
+has_2_genre(movie5577).
 has_genre(movie5577, comedy).
 has_genre(movie5577, drama).
+has_1_genre(movie5580).
 has_genre(movie5580, action).
+has_1_genre(movie5581).
 has_genre(movie5581, comedy).
+has_2_genre(movie5582).
 has_genre(movie5582, adventure).
 has_genre(movie5582, comedy).
+has_1_genre(movie5584).
 has_genre(movie5584, comedy).
+has_1_genre(movie5585).
 has_genre(movie5585, comedy).
+has_1_genre(movie5588).
 has_genre(movie5588, horror).
+has_2_genre(movie5589).
 has_genre(movie5589, comedy).
 has_genre(movie5589, drama).
+has_1_genre(movie5590).
 has_genre(movie5590, crime).
+has_2_genre(movie5591).
 has_genre(movie5591, children).
 has_genre(movie5591, comedy).
+has_3_genre(movie5596).
 has_genre(movie5596, adventure).
 has_genre(movie5596, comedy).
 has_genre(movie5596, sci-fi).
+has_2_genre(movie5597).
 has_genre(movie5597, comedy).
 has_genre(movie5597, sci-fi).
+has_2_genre(movie5601).
 has_genre(movie5601, children).
 has_genre(movie5601, drama).
+has_2_genre(movie5602).
 has_genre(movie5602, comedy).
 has_genre(movie5602, crime).
+has_2_genre(movie5603).
 has_genre(movie5603, comedy).
 has_genre(movie5603, crime).
+has_2_genre(movie5604).
 has_genre(movie5604, comedy).
 has_genre(movie5604, sci-fi).
+has_2_genre(movie5607).
 has_genre(movie5607, comedy).
 has_genre(movie5607, drama).
+has_2_genre(movie5608).
 has_genre(movie5608, drama).
 has_genre(movie5608, thriller).
+has_2_genre(movie5609).
 has_genre(movie5609, action).
 has_genre(movie5609, thriller).
+has_2_genre(movie5610).
 has_genre(movie5610, comedy).
 has_genre(movie5610, drama).
+has_2_genre(movie5611).
 has_genre(movie5611, adventure).
 has_genre(movie5611, war).
+has_2_genre(movie5612).
 has_genre(movie5612, action).
 has_genre(movie5612, thriller).
+has_4_genre(movie5613).
 has_genre(movie5613, comedy).
 has_genre(movie5613, crime).
 has_genre(movie5613, musical).
 has_genre(movie5613, mystery).
+has_2_genre(movie5614).
 has_genre(movie5614, drama).
 has_genre(movie5614, romance).
+has_1_genre(movie5615).
 has_genre(movie5615, drama).
+has_3_genre(movie5617).
 has_genre(movie5617, comedy).
 has_genre(movie5617, drama).
 has_genre(movie5617, romance).
+has_3_genre(movie5618).
 has_genre(movie5618, adventure).
 has_genre(movie5618, animation).
 has_genre(movie5618, fantasy).
+has_1_genre(movie5619).
 has_genre(movie5619, documentary).
+has_2_genre(movie5620).
 has_genre(movie5620, comedy).
 has_genre(movie5620, romance).
+has_2_genre(movie5621).
 has_genre(movie5621, action).
 has_genre(movie5621, comedy).
+has_2_genre(movie5625).
 has_genre(movie5625, drama).
 has_genre(movie5625, romance).
+has_5_genre(movie5628).
 has_genre(movie5628, action).
 has_genre(movie5628, comedy).
 has_genre(movie5628, crime).
 has_genre(movie5628, drama).
 has_genre(movie5628, thriller).
+has_3_genre(movie5629).
 has_genre(movie5629, animation).
 has_genre(movie5629, children).
 has_genre(movie5629, musical).
+has_3_genre(movie5630).
 has_genre(movie5630, crime).
 has_genre(movie5630, mystery).
 has_genre(movie5630, thriller).
+has_1_genre(movie5632).
 has_genre(movie5632, drama).
+has_1_genre(movie5633).
 has_genre(movie5633, drama).
+has_1_genre(movie5635).
 has_genre(movie5635, drama).
+has_2_genre(movie5636).
 has_genre(movie5636, comedy).
 has_genre(movie5636, crime).
+has_1_genre(movie5637).
 has_genre(movie5637, drama).
+has_4_genre(movie5638).
 has_genre(movie5638, action).
 has_genre(movie5638, adventure).
 has_genre(movie5638, fantasy).
 has_genre(movie5638, sci-fi).
+has_2_genre(movie5640).
 has_genre(movie5640, horror).
 has_genre(movie5640, sci-fi).
+has_1_genre(movie5643).
 has_genre(movie5643, documentary).
+has_1_genre(movie5644).
 has_genre(movie5644, drama).
+has_2_genre(movie5646).
 has_genre(movie5646, drama).
 has_genre(movie5646, romance).
+has_1_genre(movie5649).
 has_genre(movie5649, horror).
+has_1_genre(movie5650).
 has_genre(movie5650, comedy).
+has_3_genre(movie5651).
 has_genre(movie5651, animation).
 has_genre(movie5651, comedy).
 has_genre(movie5651, war).
+has_5_genre(movie5657).
 has_genre(movie5657, action).
 has_genre(movie5657, adventure).
 has_genre(movie5657, comedy).
 has_genre(movie5657, crime).
 has_genre(movie5657, drama).
+has_1_genre(movie5663).
 has_genre(movie5663, horror).
+has_1_genre(movie5664).
 has_genre(movie5664, romance).
+has_3_genre(movie5665).
 has_genre(movie5665, action).
 has_genre(movie5665, comedy).
 has_genre(movie5665, crime).
+has_4_genre(movie5666).
 has_genre(movie5666, comedy).
 has_genre(movie5666, drama).
 has_genre(movie5666, romance).
 has_genre(movie5666, thriller).
+has_2_genre(movie5667).
 has_genre(movie5667, drama).
 has_genre(movie5667, fantasy).
+has_1_genre(movie5668).
 has_genre(movie5668, drama).
+has_1_genre(movie5669).
 has_genre(movie5669, documentary).
+has_2_genre(movie5670).
 has_genre(movie5670, comedy).
 has_genre(movie5670, documentary).
+has_4_genre(movie5672).
 has_genre(movie5672, adventure).
 has_genre(movie5672, animation).
 has_genre(movie5672, children).
 has_genre(movie5672, fantasy).
+has_3_genre(movie5673).
 has_genre(movie5673, comedy).
 has_genre(movie5673, drama).
 has_genre(movie5673, romance).
+has_2_genre(movie5675).
 has_genre(movie5675, comedy).
 has_genre(movie5675, romance).
+has_4_genre(movie5678).
 has_genre(movie5678, action).
 has_genre(movie5678, comedy).
 has_genre(movie5678, crime).
 has_genre(movie5678, thriller).
+has_3_genre(movie5679).
 has_genre(movie5679, horror).
 has_genre(movie5679, mystery).
 has_genre(movie5679, thriller).
+has_2_genre(movie5680).
 has_genre(movie5680, crime).
 has_genre(movie5680, drama).
+has_1_genre(movie5682).
 has_genre(movie5682, drama).
+has_1_genre(movie5684).
 has_genre(movie5684, documentary).
+has_2_genre(movie5685).
 has_genre(movie5685, comedy).
 has_genre(movie5685, drama).
+has_1_genre(movie5688).
 has_genre(movie5688, drama).
+has_2_genre(movie5689).
 has_genre(movie5689, crime).
 has_genre(movie5689, drama).
+has_3_genre(movie5690).
 has_genre(movie5690, animation).
 has_genre(movie5690, drama).
 has_genre(movie5690, war).
+has_3_genre(movie5693).
 has_genre(movie5693, comedy).
 has_genre(movie5693, drama).
 has_genre(movie5693, romance).
+has_3_genre(movie5694).
 has_genre(movie5694, comedy).
 has_genre(movie5694, drama).
 has_genre(movie5694, musical).
+has_1_genre(movie5696).
 has_genre(movie5696, drama).
+has_1_genre(movie5699).
 has_genre(movie5699, western).
+has_4_genre(movie5700).
 has_genre(movie5700, action).
 has_genre(movie5700, adventure).
 has_genre(movie5700, fantasy).
 has_genre(movie5700, sci-fi).
+has_2_genre(movie5704).
 has_genre(movie5704, horror).
 has_genre(movie5704, sci-fi).
+has_2_genre(movie5706).
 has_genre(movie5706, comedy).
 has_genre(movie5706, drama).
+has_2_genre(movie5707).
 has_genre(movie5707, drama).
 has_genre(movie5707, romance).
+has_1_genre(movie5710).
 has_genre(movie5710, comedy).
+has_2_genre(movie5712).
 has_genre(movie5712, mystery).
 has_genre(movie5712, thriller).
+has_3_genre(movie5720).
 has_genre(movie5720, action).
 has_genre(movie5720, adventure).
 has_genre(movie5720, comedy).
+has_1_genre(movie5721).
 has_genre(movie5721, drama).
+has_2_genre(movie5723).
 has_genre(movie5723, comedy).
 has_genre(movie5723, romance).
+has_1_genre(movie5733).
 has_genre(movie5733, thriller).
+has_2_genre(movie5735).
 has_genre(movie5735, documentary).
 has_genre(movie5735, horror).
+has_2_genre(movie5736).
 has_genre(movie5736, documentary).
 has_genre(movie5736, horror).
+has_2_genre(movie5741).
 has_genre(movie5741, drama).
 has_genre(movie5741, romance).
+has_2_genre(movie5742).
 has_genre(movie5742, comedy).
 has_genre(movie5742, drama).
+has_2_genre(movie5745).
 has_genre(movie5745, comedy).
 has_genre(movie5745, drama).
+has_4_genre(movie5746).
 has_genre(movie5746, action).
 has_genre(movie5746, horror).
 has_genre(movie5746, mystery).
 has_genre(movie5746, sci-fi).
+has_2_genre(movie5747).
 has_genre(movie5747, drama).
 has_genre(movie5747, war).
+has_2_genre(movie5749).
 has_genre(movie5749, drama).
 has_genre(movie5749, horror).
+has_2_genre(movie5752).
 has_genre(movie5752, comedy).
 has_genre(movie5752, romance).
+has_2_genre(movie5755).
 has_genre(movie5755, horror).
 has_genre(movie5755, mystery).
+has_4_genre(movie5764).
 has_genre(movie5764, drama).
 has_genre(movie5764, horror).
 has_genre(movie5764, sci-fi).
 has_genre(movie5764, thriller).
+has_2_genre(movie5767).
 has_genre(movie5767, comedy).
 has_genre(movie5767, crime).
+has_2_genre(movie5768).
 has_genre(movie5768, comedy).
 has_genre(movie5768, fantasy).
+has_3_genre(movie5771).
 has_genre(movie5771, drama).
 has_genre(movie5771, horror).
 has_genre(movie5771, thriller).
+has_1_genre(movie5772).
 has_genre(movie5772, drama).
+has_1_genre(movie5773).
 has_genre(movie5773, comedy).
+has_2_genre(movie5779).
 has_genre(movie5779, horror).
 has_genre(movie5779, sci-fi).
+has_1_genre(movie5780).
 has_genre(movie5780, comedy).
+has_3_genre(movie5782).
 has_genre(movie5782, action).
 has_genre(movie5782, drama).
 has_genre(movie5782, thriller).
+has_1_genre(movie5784).
 has_genre(movie5784, horror).
+has_3_genre(movie5785).
 has_genre(movie5785, action).
 has_genre(movie5785, comedy).
 has_genre(movie5785, documentary).
+has_2_genre(movie5786).
 has_genre(movie5786, action).
 has_genre(movie5786, drama).
+has_2_genre(movie5787).
 has_genre(movie5787, mystery).
 has_genre(movie5787, thriller).
+has_1_genre(movie5788).
 has_genre(movie5788, drama).
+has_2_genre(movie5791).
 has_genre(movie5791, drama).
 has_genre(movie5791, romance).
+has_2_genre(movie5792).
 has_genre(movie5792, comedy).
 has_genre(movie5792, drama).
+has_3_genre(movie5796).
 has_genre(movie5796, action).
 has_genre(movie5796, adventure).
 has_genre(movie5796, comedy).
+has_2_genre(movie5797).
 has_genre(movie5797, fantasy).
 has_genre(movie5797, horror).
+has_3_genre(movie5799).
 has_genre(movie5799, drama).
 has_genre(movie5799, romance).
 has_genre(movie5799, war).
+has_2_genre(movie5801).
 has_genre(movie5801, comedy).
 has_genre(movie5801, war).
+has_1_genre(movie5802).
 has_genre(movie5802, comedy).
+has_4_genre(movie5803).
 has_genre(movie5803, action).
 has_genre(movie5803, adventure).
 has_genre(movie5803, comedy).
 has_genre(movie5803, crime).
+has_4_genre(movie5804).
 has_genre(movie5804, children).
 has_genre(movie5804, comedy).
 has_genre(movie5804, fantasy).
 has_genre(movie5804, romance).
+has_2_genre(movie5809).
 has_genre(movie5809, crime).
 has_genre(movie5809, thriller).
+has_1_genre(movie5810).
 has_genre(movie5810, drama).
+has_2_genre(movie5812).
 has_genre(movie5812, drama).
 has_genre(movie5812, romance).
+has_2_genre(movie5816).
 has_genre(movie5816, adventure).
 has_genre(movie5816, fantasy).
+has_2_genre(movie5817).
 has_genre(movie5817, drama).
 has_genre(movie5817, war).
+has_2_genre(movie5818).
 has_genre(movie5818, drama).
 has_genre(movie5818, romance).
+has_2_genre(movie5820).
 has_genre(movie5820, documentary).
 has_genre(movie5820, musical).
+has_2_genre(movie5826).
 has_genre(movie5826, romance).
 has_genre(movie5826, western).
+has_2_genre(movie5828).
 has_genre(movie5828, drama).
 has_genre(movie5828, thriller).
+has_3_genre(movie5829).
 has_genre(movie5829, comedy).
 has_genre(movie5829, drama).
 has_genre(movie5829, romance).
+has_2_genre(movie5833).
 has_genre(movie5833, action).
 has_genre(movie5833, horror).
+has_2_genre(movie5836).
 has_genre(movie5836, comedy).
 has_genre(movie5836, romance).
+has_1_genre(movie5838).
 has_genre(movie5838, drama).
+has_2_genre(movie5839).
 has_genre(movie5839, adventure).
 has_genre(movie5839, drama).
+has_2_genre(movie5840).
 has_genre(movie5840, comedy).
 has_genre(movie5840, drama).
+has_2_genre(movie5841).
 has_genre(movie5841, adventure).
 has_genre(movie5841, romance).
+has_2_genre(movie5843).
 has_genre(movie5843, action).
 has_genre(movie5843, drama).
+has_1_genre(movie5847).
 has_genre(movie5847, drama).
+has_1_genre(movie5849).
 has_genre(movie5849, comedy).
+has_3_genre(movie5853).
 has_genre(movie5853, horror).
 has_genre(movie5853, sci-fi).
 has_genre(movie5853, thriller).
+has_3_genre(movie5856).
 has_genre(movie5856, comedy).
 has_genre(movie5856, drama).
 has_genre(movie5856, romance).
+has_1_genre(movie5863).
 has_genre(movie5863, comedy).
+has_3_genre(movie5867).
 has_genre(movie5867, crime).
 has_genre(movie5867, drama).
 has_genre(movie5867, thriller).
+has_3_genre(movie5872).
 has_genre(movie5872, action).
 has_genre(movie5872, adventure).
 has_genre(movie5872, thriller).
+has_1_genre(movie5873).
 has_genre(movie5873, drama).
+has_1_genre(movie5874).
 has_genre(movie5874, comedy).
+has_1_genre(movie5875).
 has_genre(movie5875, drama).
+has_3_genre(movie5876).
 has_genre(movie5876, drama).
 has_genre(movie5876, thriller).
 has_genre(movie5876, war).
+has_2_genre(movie5878).
 has_genre(movie5878, drama).
 has_genre(movie5878, romance).
+has_3_genre(movie5879).
 has_genre(movie5879, animation).
 has_genre(movie5879, comedy).
 has_genre(movie5879, musical).
+has_4_genre(movie5880).
 has_genre(movie5880, action).
 has_genre(movie5880, adventure).
 has_genre(movie5880, crime).
 has_genre(movie5880, thriller).
+has_3_genre(movie5881).
 has_genre(movie5881, drama).
 has_genre(movie5881, romance).
 has_genre(movie5881, sci-fi).
+has_5_genre(movie5882).
 has_genre(movie5882, adventure).
 has_genre(movie5882, animation).
 has_genre(movie5882, children).
 has_genre(movie5882, sci-fi).
 has_genre(movie5882, imax).
+has_2_genre(movie5883).
 has_genre(movie5883, horror).
 has_genre(movie5883, thriller).
+has_2_genre(movie5884).
 has_genre(movie5884, comedy).
 has_genre(movie5884, horror).
+has_2_genre(movie5888).
 has_genre(movie5888, crime).
 has_genre(movie5888, drama).
+has_2_genre(movie5889).
 has_genre(movie5889, drama).
 has_genre(movie5889, romance).
+has_2_genre(movie5890).
 has_genre(movie5890, comedy).
 has_genre(movie5890, drama).
+has_2_genre(movie5891).
 has_genre(movie5891, horror).
 has_genre(movie5891, thriller).
+has_3_genre(movie5893).
 has_genre(movie5893, crime).
 has_genre(movie5893, drama).
 has_genre(movie5893, thriller).
+has_1_genre(movie5896).
 has_genre(movie5896, comedy).
+has_3_genre(movie5899).
 has_genre(movie5899, action).
 has_genre(movie5899, drama).
 has_genre(movie5899, war).
+has_2_genre(movie5900).
 has_genre(movie5900, comedy).
 has_genre(movie5900, crime).
+has_2_genre(movie5901).
 has_genre(movie5901, crime).
 has_genre(movie5901, drama).
+has_3_genre(movie5902).
 has_genre(movie5902, comedy).
 has_genre(movie5902, drama).
 has_genre(movie5902, romance).
+has_3_genre(movie5903).
 has_genre(movie5903, action).
 has_genre(movie5903, sci-fi).
 has_genre(movie5903, thriller).
+has_3_genre(movie5909).
 has_genre(movie5909, comedy).
 has_genre(movie5909, drama).
 has_genre(movie5909, horror).
+has_2_genre(movie5912).
 has_genre(movie5912, comedy).
 has_genre(movie5912, crime).
+has_3_genre(movie5915).
 has_genre(movie5915, action).
 has_genre(movie5915, drama).
 has_genre(movie5915, war).
+has_1_genre(movie5919).
 has_genre(movie5919, sci-fi).
+has_1_genre(movie5922).
 has_genre(movie5922, action).
+has_1_genre(movie5925).
 has_genre(movie5925, horror).
+has_4_genre(movie5927).
 has_genre(movie5927, comedy).
 has_genre(movie5927, drama).
 has_genre(movie5927, musical).
 has_genre(movie5927, romance).
+has_2_genre(movie5929).
 has_genre(movie5929, comedy).
 has_genre(movie5929, romance).
+has_1_genre(movie5932).
 has_genre(movie5932, documentary).
+has_4_genre(movie5938).
 has_genre(movie5938, comedy).
 has_genre(movie5938, crime).
 has_genre(movie5938, mystery).
 has_genre(movie5938, thriller).
+has_4_genre(movie5941).
 has_genre(movie5941, comedy).
 has_genre(movie5941, drama).
 has_genre(movie5941, musical).
 has_genre(movie5941, romance).
+has_1_genre(movie5942).
 has_genre(movie5942, comedy).
+has_2_genre(movie5943).
 has_genre(movie5943, comedy).
 has_genre(movie5943, romance).
+has_4_genre(movie5944).
 has_genre(movie5944, action).
 has_genre(movie5944, drama).
 has_genre(movie5944, sci-fi).
 has_genre(movie5944, thriller).
+has_2_genre(movie5945).
 has_genre(movie5945, comedy).
 has_genre(movie5945, drama).
+has_1_genre(movie5947).
 has_genre(movie5947, drama).
+has_1_genre(movie5949).
 has_genre(movie5949, thriller).
+has_1_genre(movie5951).
 has_genre(movie5951, drama).
+has_2_genre(movie5952).
 has_genre(movie5952, adventure).
 has_genre(movie5952, fantasy).
+has_2_genre(movie5953).
 has_genre(movie5953, drama).
 has_genre(movie5953, war).
+has_2_genre(movie5954).
 has_genre(movie5954, crime).
 has_genre(movie5954, drama).
+has_1_genre(movie5955).
 has_genre(movie5955, drama).
+has_2_genre(movie5956).
 has_genre(movie5956, crime).
 has_genre(movie5956, drama).
+has_2_genre(movie5957).
 has_genre(movie5957, comedy).
 has_genre(movie5957, romance).
+has_3_genre(movie5959).
 has_genre(movie5959, crime).
 has_genre(movie5959, drama).
 has_genre(movie5959, thriller).
+has_2_genre(movie5961).
 has_genre(movie5961, action).
 has_genre(movie5961, thriller).
+has_2_genre(movie5962).
 has_genre(movie5962, drama).
 has_genre(movie5962, thriller).
+has_1_genre(movie5963).
 has_genre(movie5963, drama).
+has_2_genre(movie5965).
 has_genre(movie5965, action).
 has_genre(movie5965, war).
+has_3_genre(movie5968).
 has_genre(movie5968, comedy).
 has_genre(movie5968, crime).
 has_genre(movie5968, drama).
+has_3_genre(movie5969).
 has_genre(movie5969, comedy).
 has_genre(movie5969, drama).
 has_genre(movie5969, romance).
+has_3_genre(movie5970).
 has_genre(movie5970, comedy).
 has_genre(movie5970, drama).
 has_genre(movie5970, romance).
+has_4_genre(movie5971).
 has_genre(movie5971, animation).
 has_genre(movie5971, children).
 has_genre(movie5971, drama).
 has_genre(movie5971, fantasy).
+has_2_genre(movie5974).
 has_genre(movie5974, adventure).
 has_genre(movie5974, fantasy).
+has_3_genre(movie5975).
 has_genre(movie5975, drama).
 has_genre(movie5975, romance).
 has_genre(movie5975, war).
+has_2_genre(movie5979).
 has_genre(movie5979, horror).
 has_genre(movie5979, sci-fi).
+has_3_genre(movie5980).
 has_genre(movie5980, horror).
 has_genre(movie5980, mystery).
 has_genre(movie5980, thriller).
+has_2_genre(movie5984).
 has_genre(movie5984, drama).
 has_genre(movie5984, romance).
+has_1_genre(movie5986).
 has_genre(movie5986, drama).
+has_1_genre(movie5988).
 has_genre(movie5988, drama).
+has_2_genre(movie5989).
 has_genre(movie5989, crime).
 has_genre(movie5989, drama).
+has_3_genre(movie5990).
 has_genre(movie5990, children).
 has_genre(movie5990, comedy).
 has_genre(movie5990, fantasy).
+has_4_genre(movie5991).
 has_genre(movie5991, comedy).
 has_genre(movie5991, crime).
 has_genre(movie5991, drama).
 has_genre(movie5991, musical).
+has_2_genre(movie5992).
 has_genre(movie5992, drama).
 has_genre(movie5992, romance).
+has_1_genre(movie5993).
 has_genre(movie5993, drama).
+has_2_genre(movie5994).
 has_genre(movie5994, drama).
 has_genre(movie5994, romance).
+has_2_genre(movie5995).
 has_genre(movie5995, drama).
 has_genre(movie5995, war).
+has_5_genre(movie5999).
 has_genre(movie5999, action).
 has_genre(movie5999, adventure).
 has_genre(movie5999, animation).
 has_genre(movie5999, fantasy).
 has_genre(movie5999, sci-fi).
+has_2_genre(movie6001).
 has_genre(movie6001, comedy).
 has_genre(movie6001, drama).
+has_1_genre(movie6002).
 has_genre(movie6002, drama).
+has_4_genre(movie6003).
 has_genre(movie6003, comedy).
 has_genre(movie6003, crime).
 has_genre(movie6003, drama).
 has_genre(movie6003, thriller).
+has_2_genre(movie6005).
 has_genre(movie6005, comedy).
 has_genre(movie6005, documentary).
+has_2_genre(movie6006).
 has_genre(movie6006, comedy).
 has_genre(movie6006, romance).
+has_3_genre(movie6009).
 has_genre(movie6009, crime).
 has_genre(movie6009, drama).
 has_genre(movie6009, thriller).
+has_2_genre(movie6012).
 has_genre(movie6012, comedy).
 has_genre(movie6012, romance).
+has_2_genre(movie6013).
 has_genre(movie6013, action).
 has_genre(movie6013, comedy).
+has_2_genre(movie6014).
 has_genre(movie6014, action).
 has_genre(movie6014, comedy).
+has_5_genre(movie6016).
 has_genre(movie6016, action).
 has_genre(movie6016, adventure).
 has_genre(movie6016, crime).
 has_genre(movie6016, drama).
 has_genre(movie6016, thriller).
+has_2_genre(movie6020).
 has_genre(movie6020, comedy).
 has_genre(movie6020, drama).
+has_4_genre(movie6021).
 has_genre(movie6021, crime).
 has_genre(movie6021, drama).
 has_genre(movie6021, mystery).
 has_genre(movie6021, thriller).
+has_1_genre(movie6022).
 has_genre(movie6022, drama).
+has_4_genre(movie6023).
 has_genre(movie6023, comedy).
 has_genre(movie6023, crime).
 has_genre(movie6023, drama).
 has_genre(movie6023, romance).
+has_1_genre(movie6025).
 has_genre(movie6025, comedy).
+has_2_genre(movie6027).
 has_genre(movie6027, drama).
 has_genre(movie6027, romance).
+has_2_genre(movie6030).
 has_genre(movie6030, comedy).
 has_genre(movie6030, musical).
+has_2_genre(movie6031).
 has_genre(movie6031, drama).
 has_genre(movie6031, romance).
+has_1_genre(movie6033).
 has_genre(movie6033, comedy).
+has_3_genre(movie6035).
 has_genre(movie6035, crime).
 has_genre(movie6035, drama).
 has_genre(movie6035, romance).
+has_2_genre(movie6036).
 has_genre(movie6036, comedy).
 has_genre(movie6036, romance).
+has_2_genre(movie6039).
 has_genre(movie6039, comedy).
 has_genre(movie6039, romance).
+has_2_genre(movie6040).
 has_genre(movie6040, horror).
 has_genre(movie6040, thriller).
+has_1_genre(movie6041).
 has_genre(movie6041, drama).
+has_1_genre(movie6042).
 has_genre(movie6042, documentary).
+has_2_genre(movie6044).
 has_genre(movie6044, horror).
 has_genre(movie6044, thriller).
+has_1_genre(movie6049).
 has_genre(movie6049, drama).
+has_3_genre(movie6051).
 has_genre(movie6051, action).
 has_genre(movie6051, crime).
 has_genre(movie6051, drama).
+has_1_genre(movie6055).
 has_genre(movie6055, drama).
+has_3_genre(movie6057).
 has_genre(movie6057, action).
 has_genre(movie6057, crime).
 has_genre(movie6057, drama).
+has_2_genre(movie6058).
 has_genre(movie6058, horror).
 has_genre(movie6058, thriller).
+has_2_genre(movie6059).
 has_genre(movie6059, action).
 has_genre(movie6059, thriller).
+has_2_genre(movie6060).
 has_genre(movie6060, comedy).
 has_genre(movie6060, romance).
+has_1_genre(movie6062).
 has_genre(movie6062, documentary).
+has_2_genre(movie6063).
 has_genre(movie6063, drama).
 has_genre(movie6063, horror).
+has_2_genre(movie6064).
 has_genre(movie6064, drama).
 has_genre(movie6064, film-noir).
+has_2_genre(movie6067).
 has_genre(movie6067, comedy).
 has_genre(movie6067, crime).
+has_1_genre(movie6070).
 has_genre(movie6070, drama).
+has_3_genre(movie6078).
 has_genre(movie6078, action).
 has_genre(movie6078, sci-fi).
 has_genre(movie6078, thriller).
+has_3_genre(movie6086).
 has_genre(movie6086, crime).
 has_genre(movie6086, drama).
 has_genre(movie6086, thriller).
+has_1_genre(movie6090).
 has_genre(movie6090, comedy).
+has_3_genre(movie6093).
 has_genre(movie6093, animation).
 has_genre(movie6093, children).
 has_genre(movie6093, fantasy).
+has_1_genre(movie6095).
 has_genre(movie6095, action).
+has_2_genre(movie6100).
 has_genre(movie6100, comedy).
 has_genre(movie6100, romance).
+has_3_genre(movie6101).
 has_genre(movie6101, drama).
 has_genre(movie6101, mystery).
 has_genre(movie6101, thriller).
+has_1_genre(movie6104).
 has_genre(movie6104, comedy).
+has_2_genre(movie6107).
 has_genre(movie6107, drama).
 has_genre(movie6107, war).
+has_2_genre(movie6111).
 has_genre(movie6111, adventure).
 has_genre(movie6111, romance).
+has_3_genre(movie6116).
 has_genre(movie6116, adventure).
 has_genre(movie6116, comedy).
 has_genre(movie6116, musical).
+has_1_genre(movie6119).
 has_genre(movie6119, comedy).
+has_2_genre(movie6122).
 has_genre(movie6122, comedy).
 has_genre(movie6122, documentary).
+has_1_genre(movie6123).
 has_genre(movie6123, documentary).
+has_1_genre(movie6124).
 has_genre(movie6124, comedy).
+has_3_genre(movie6125).
 has_genre(movie6125, comedy).
 has_genre(movie6125, documentary).
 has_genre(movie6125, musical).
+has_3_genre(movie6140).
 has_genre(movie6140, horror).
 has_genre(movie6140, mystery).
 has_genre(movie6140, thriller).
+has_1_genre(movie6141).
 has_genre(movie6141, comedy).
+has_2_genre(movie6143).
 has_genre(movie6143, comedy).
 has_genre(movie6143, crime).
+has_2_genre(movie6145).
 has_genre(movie6145, horror).
 has_genre(movie6145, thriller).
+has_3_genre(movie6148).
 has_genre(movie6148, drama).
 has_genre(movie6148, horror).
 has_genre(movie6148, thriller).
+has_2_genre(movie6153).
 has_genre(movie6153, comedy).
 has_genre(movie6153, sci-fi).
+has_2_genre(movie6155).
 has_genre(movie6155, comedy).
 has_genre(movie6155, romance).
+has_3_genre(movie6156).
 has_genre(movie6156, action).
 has_genre(movie6156, adventure).
 has_genre(movie6156, comedy).
+has_2_genre(movie6157).
 has_genre(movie6157, action).
 has_genre(movie6157, crime).
+has_2_genre(movie6158).
 has_genre(movie6158, animation).
 has_genre(movie6158, children).
+has_2_genre(movie6159).
 has_genre(movie6159, drama).
 has_genre(movie6159, romance).
+has_2_genre(movie6162).
 has_genre(movie6162, adventure).
 has_genre(movie6162, drama).
+has_2_genre(movie6163).
 has_genre(movie6163, romance).
 has_genre(movie6163, thriller).
+has_1_genre(movie6166).
 has_genre(movie6166, comedy).
+has_2_genre(movie6169).
 has_genre(movie6169, adventure).
 has_genre(movie6169, children).
+has_3_genre(movie6170).
 has_genre(movie6170, adventure).
 has_genre(movie6170, children).
 has_genre(movie6170, drama).
+has_2_genre(movie6178).
 has_genre(movie6178, drama).
 has_genre(movie6178, romance).
+has_2_genre(movie6181).
 has_genre(movie6181, drama).
 has_genre(movie6181, war).
+has_1_genre(movie6182).
 has_genre(movie6182, comedy).
+has_3_genre(movie6183).
 has_genre(movie6183, comedy).
 has_genre(movie6183, musical).
 has_genre(movie6183, romance).
+has_2_genre(movie6184).
 has_genre(movie6184, drama).
 has_genre(movie6184, sci-fi).
+has_4_genre(movie6185).
 has_genre(movie6185, action).
 has_genre(movie6185, crime).
 has_genre(movie6185, drama).
 has_genre(movie6185, thriller).
+has_3_genre(movie6186).
 has_genre(movie6186, action).
 has_genre(movie6186, drama).
 has_genre(movie6186, war).
+has_3_genre(movie6187).
 has_genre(movie6187, crime).
 has_genre(movie6187, drama).
 has_genre(movie6187, thriller).
+has_1_genre(movie6188).
 has_genre(movie6188, comedy).
+has_1_genre(movie6192).
 has_genre(movie6192, romance).
+has_3_genre(movie6193).
 has_genre(movie6193, comedy).
 has_genre(movie6193, drama).
 has_genre(movie6193, thriller).
+has_1_genre(movie6195).
 has_genre(movie6195, documentary).
+has_4_genre(movie6196).
 has_genre(movie6196, action).
 has_genre(movie6196, crime).
 has_genre(movie6196, drama).
 has_genre(movie6196, thriller).
+has_2_genre(movie6197).
 has_genre(movie6197, drama).
 has_genre(movie6197, mystery).
+has_2_genre(movie6201).
 has_genre(movie6201, drama).
 has_genre(movie6201, romance).
+has_3_genre(movie6202).
 has_genre(movie6202, comedy).
 has_genre(movie6202, drama).
 has_genre(movie6202, romance).
+has_1_genre(movie6203).
 has_genre(movie6203, comedy).
+has_1_genre(movie6204).
 has_genre(movie6204, comedy).
+has_2_genre(movie6210).
 has_genre(movie6210, action).
 has_genre(movie6210, comedy).
+has_1_genre(movie6212).
 has_genre(movie6212, comedy).
+has_3_genre(movie6213).
 has_genre(movie6213, action).
 has_genre(movie6213, drama).
 has_genre(movie6213, thriller).
+has_4_genre(movie6214).
 has_genre(movie6214, crime).
 has_genre(movie6214, drama).
 has_genre(movie6214, mystery).
 has_genre(movie6214, thriller).
+has_1_genre(movie6215).
 has_genre(movie6215, drama).
+has_1_genre(movie6216).
 has_genre(movie6216, drama).
+has_1_genre(movie6217).
 has_genre(movie6217, drama).
+has_3_genre(movie6218).
 has_genre(movie6218, comedy).
 has_genre(movie6218, drama).
 has_genre(movie6218, romance).
+has_3_genre(movie6219).
 has_genre(movie6219, action).
 has_genre(movie6219, drama).
 has_genre(movie6219, thriller).
+has_3_genre(movie6220).
 has_genre(movie6220, drama).
 has_genre(movie6220, horror).
 has_genre(movie6220, thriller).
+has_1_genre(movie6222).
 has_genre(movie6222, drama).
+has_3_genre(movie6223).
 has_genre(movie6223, comedy).
 has_genre(movie6223, crime).
 has_genre(movie6223, drama).
+has_1_genre(movie6225).
 has_genre(movie6225, drama).
+has_3_genre(movie6228).
 has_genre(movie6228, comedy).
 has_genre(movie6228, romance).
 has_genre(movie6228, thriller).
+has_3_genre(movie6232).
 has_genre(movie6232, adventure).
 has_genre(movie6232, children).
 has_genre(movie6232, drama).
+has_2_genre(movie6234).
 has_genre(movie6234, drama).
 has_genre(movie6234, mystery).
+has_2_genre(movie6235).
 has_genre(movie6235, drama).
 has_genre(movie6235, war).
+has_1_genre(movie6237).
 has_genre(movie6237, drama).
+has_3_genre(movie6238).
 has_genre(movie6238, comedy).
 has_genre(movie6238, drama).
 has_genre(movie6238, romance).
+has_3_genre(movie6239).
 has_genre(movie6239, adventure).
 has_genre(movie6239, children).
 has_genre(movie6239, sci-fi).
+has_3_genre(movie6241).
 has_genre(movie6241, comedy).
 has_genre(movie6241, drama).
 has_genre(movie6241, romance).
+has_3_genre(movie6242).
 has_genre(movie6242, horror).
 has_genre(movie6242, mystery).
 has_genre(movie6242, thriller).
+has_1_genre(movie6244).
 has_genre(movie6244, drama).
+has_4_genre(movie6245).
 has_genre(movie6245, comedy).
 has_genre(movie6245, drama).
 has_genre(movie6245, musical).
 has_genre(movie6245, romance).
+has_1_genre(movie6246).
 has_genre(movie6246, drama).
+has_1_genre(movie6249).
 has_genre(movie6249, comedy).
+has_4_genre(movie6250).
 has_genre(movie6250, drama).
 has_genre(movie6250, horror).
 has_genre(movie6250, sci-fi).
 has_genre(movie6250, thriller).
+has_2_genre(movie6251).
 has_genre(movie6251, animation).
 has_genre(movie6251, children).
+has_2_genre(movie6252).
 has_genre(movie6252, comedy).
 has_genre(movie6252, romance).
+has_2_genre(movie6254).
 has_genre(movie6254, comedy).
 has_genre(movie6254, romance).
+has_3_genre(movie6263).
 has_genre(movie6263, drama).
 has_genre(movie6263, thriller).
 has_genre(movie6263, war).
+has_4_genre(movie6264).
 has_genre(movie6264, action).
 has_genre(movie6264, drama).
 has_genre(movie6264, sci-fi).
 has_genre(movie6264, thriller).
+has_1_genre(movie6265).
 has_genre(movie6265, comedy).
+has_3_genre(movie6266).
 has_genre(movie6266, comedy).
 has_genre(movie6266, drama).
 has_genre(movie6266, romance).
+has_2_genre(movie6267).
 has_genre(movie6267, drama).
 has_genre(movie6267, thriller).
+has_3_genre(movie6268).
 has_genre(movie6268, comedy).
 has_genre(movie6268, drama).
 has_genre(movie6268, romance).
+has_1_genre(movie6269).
 has_genre(movie6269, documentary).
+has_2_genre(movie6270).
 has_genre(movie6270, drama).
 has_genre(movie6270, fantasy).
+has_3_genre(movie6271).
 has_genre(movie6271, comedy).
 has_genre(movie6271, drama).
 has_genre(movie6271, romance).
+has_4_genre(movie6273).
 has_genre(movie6273, drama).
 has_genre(movie6273, film-noir).
 has_genre(movie6273, mystery).
 has_genre(movie6273, romance).
+has_2_genre(movie6279).
 has_genre(movie6279, crime).
 has_genre(movie6279, drama).
+has_4_genre(movie6280).
 has_genre(movie6280, action).
 has_genre(movie6280, crime).
 has_genre(movie6280, drama).
 has_genre(movie6280, thriller).
+has_2_genre(movie6281).
 has_genre(movie6281, drama).
 has_genre(movie6281, thriller).
+has_4_genre(movie6283).
 has_genre(movie6283, action).
 has_genre(movie6283, animation).
 has_genre(movie6283, sci-fi).
 has_genre(movie6283, thriller).
+has_1_genre(movie6285).
 has_genre(movie6285, drama).
+has_3_genre(movie6286).
 has_genre(movie6286, comedy).
 has_genre(movie6286, crime).
 has_genre(movie6286, drama).
+has_1_genre(movie6287).
 has_genre(movie6287, comedy).
+has_2_genre(movie6288).
 has_genre(movie6288, crime).
 has_genre(movie6288, drama).
+has_2_genre(movie6289).
 has_genre(movie6289, documentary).
 has_genre(movie6289, imax).
+has_1_genre(movie6290).
 has_genre(movie6290, horror).
+has_2_genre(movie6291).
 has_genre(movie6291, crime).
 has_genre(movie6291, drama).
+has_3_genre(movie6294).
 has_genre(movie6294, action).
 has_genre(movie6294, adventure).
 has_genre(movie6294, sci-fi).
+has_1_genre(movie6295).
 has_genre(movie6295, comedy).
+has_2_genre(movie6296).
 has_genre(movie6296, comedy).
 has_genre(movie6296, musical).
+has_4_genre(movie6297).
 has_genre(movie6297, adventure).
 has_genre(movie6297, children).
 has_genre(movie6297, comedy).
 has_genre(movie6297, mystery).
+has_2_genre(movie6298).
 has_genre(movie6298, comedy).
 has_genre(movie6298, crime).
+has_1_genre(movie6299).
 has_genre(movie6299, documentary).
+has_3_genre(movie6300).
 has_genre(movie6300, action).
 has_genre(movie6300, comedy).
 has_genre(movie6300, crime).
+has_2_genre(movie6301).
 has_genre(movie6301, drama).
 has_genre(movie6301, thriller).
+has_1_genre(movie6302).
 has_genre(movie6302, sci-fi).
+has_2_genre(movie6303).
 has_genre(movie6303, mystery).
 has_genre(movie6303, sci-fi).
+has_2_genre(movie6305).
 has_genre(movie6305, drama).
 has_genre(movie6305, sci-fi).
+has_1_genre(movie6306).
 has_genre(movie6306, documentary).
+has_3_genre(movie6308).
 has_genre(movie6308, comedy).
 has_genre(movie6308, crime).
 has_genre(movie6308, romance).
+has_2_genre(movie6310).
 has_genre(movie6310, comedy).
 has_genre(movie6310, drama).
+has_1_genre(movie6313).
 has_genre(movie6313, comedy).
+has_2_genre(movie6314).
 has_genre(movie6314, comedy).
 has_genre(movie6314, crime).
+has_1_genre(movie6315).
 has_genre(movie6315, comedy).
+has_5_genre(movie6316).
 has_genre(movie6316, adventure).
 has_genre(movie6316, children).
 has_genre(movie6316, comedy).
 has_genre(movie6316, fantasy).
 has_genre(movie6316, musical).
+has_2_genre(movie6319).
 has_genre(movie6319, comedy).
 has_genre(movie6319, drama).
+has_1_genre(movie6320).
 has_genre(movie6320, comedy).
+has_2_genre(movie6322).
 has_genre(movie6322, crime).
 has_genre(movie6322, thriller).
+has_4_genre(movie6323).
 has_genre(movie6323, crime).
 has_genre(movie6323, horror).
 has_genre(movie6323, mystery).
 has_genre(movie6323, thriller).
+has_2_genre(movie6324).
 has_genre(movie6324, comedy).
 has_genre(movie6324, drama).
+has_1_genre(movie6327).
 has_genre(movie6327, documentary).
+has_1_genre(movie6329).
 has_genre(movie6329, drama).
+has_2_genre(movie6330).
 has_genre(movie6330, crime).
 has_genre(movie6330, drama).
+has_1_genre(movie6331).
 has_genre(movie6331, documentary).
+has_3_genre(movie6332).
 has_genre(movie6332, children).
 has_genre(movie6332, comedy).
 has_genre(movie6332, romance).
+has_4_genre(movie6333).
 has_genre(movie6333, action).
 has_genre(movie6333, adventure).
 has_genre(movie6333, sci-fi).
 has_genre(movie6333, thriller).
+has_1_genre(movie6334).
 has_genre(movie6334, drama).
+has_3_genre(movie6335).
 has_genre(movie6335, crime).
 has_genre(movie6335, drama).
 has_genre(movie6335, thriller).
+has_1_genre(movie6336).
 has_genre(movie6336, drama).
+has_3_genre(movie6337).
 has_genre(movie6337, crime).
 has_genre(movie6337, drama).
 has_genre(movie6337, thriller).
+has_2_genre(movie6338).
 has_genre(movie6338, children).
 has_genre(movie6338, comedy).
+has_2_genre(movie6339).
 has_genre(movie6339, comedy).
 has_genre(movie6339, drama).
+has_1_genre(movie6341).
 has_genre(movie6341, drama).
+has_3_genre(movie6342).
 has_genre(movie6342, comedy).
 has_genre(movie6342, drama).
 has_genre(movie6342, romance).
+has_3_genre(movie6344).
 has_genre(movie6344, comedy).
 has_genre(movie6344, drama).
 has_genre(movie6344, romance).
+has_3_genre(movie6345).
 has_genre(movie6345, comedy).
 has_genre(movie6345, drama).
 has_genre(movie6345, musical).
+has_2_genre(movie6347).
 has_genre(movie6347, drama).
 has_genre(movie6347, musical).
+has_1_genre(movie6348).
 has_genre(movie6348, musical).
+has_2_genre(movie6349).
 has_genre(movie6349, drama).
 has_genre(movie6349, musical).
+has_more_than_5_genre(movie6350).
 has_genre(movie6350, action).
 has_genre(movie6350, adventure).
 has_genre(movie6350, animation).
 has_genre(movie6350, children).
 has_genre(movie6350, fantasy).
 has_genre(movie6350, sci-fi).
+has_3_genre(movie6357).
 has_genre(movie6357, comedy).
 has_genre(movie6357, musical).
 has_genre(movie6357, romance).
+has_3_genre(movie6358).
 has_genre(movie6358, comedy).
 has_genre(movie6358, musical).
 has_genre(movie6358, romance).
+has_5_genre(movie6365).
 has_genre(movie6365, action).
 has_genre(movie6365, adventure).
 has_genre(movie6365, sci-fi).
 has_genre(movie6365, thriller).
 has_genre(movie6365, imax).
+has_2_genre(movie6367).
 has_genre(movie6367, comedy).
 has_genre(movie6367, romance).
+has_1_genre(movie6368).
 has_genre(movie6368, documentary).
+has_3_genre(movie6370).
 has_genre(movie6370, comedy).
 has_genre(movie6370, drama).
 has_genre(movie6370, romance).
+has_2_genre(movie6371).
 has_genre(movie6371, animation).
 has_genre(movie6371, children).
+has_4_genre(movie6373).
 has_genre(movie6373, comedy).
 has_genre(movie6373, drama).
 has_genre(movie6373, fantasy).
 has_genre(movie6373, romance).
+has_1_genre(movie6374).
 has_genre(movie6374, comedy).
+has_1_genre(movie6375).
 has_genre(movie6375, documentary).
+has_2_genre(movie6376).
 has_genre(movie6376, comedy).
 has_genre(movie6376, drama).
+has_4_genre(movie6377).
 has_genre(movie6377, adventure).
 has_genre(movie6377, animation).
 has_genre(movie6377, children).
 has_genre(movie6377, comedy).
+has_2_genre(movie6378).
 has_genre(movie6378, action).
 has_genre(movie6378, crime).
+has_2_genre(movie6379).
 has_genre(movie6379, horror).
 has_genre(movie6379, thriller).
+has_1_genre(movie6380).
 has_genre(movie6380, documentary).
+has_1_genre(movie6382).
 has_genre(movie6382, drama).
+has_3_genre(movie6383).
 has_genre(movie6383, action).
 has_genre(movie6383, crime).
 has_genre(movie6383, thriller).
+has_1_genre(movie6385).
 has_genre(movie6385, drama).
+has_1_genre(movie6386).
 has_genre(movie6386, western).
+has_4_genre(movie6387).
 has_genre(movie6387, action).
 has_genre(movie6387, comedy).
 has_genre(movie6387, crime).
 has_genre(movie6387, thriller).
+has_1_genre(movie6390).
 has_genre(movie6390, musical).
+has_5_genre(movie6395).
 has_genre(movie6395, action).
 has_genre(movie6395, drama).
 has_genre(movie6395, horror).
 has_genre(movie6395, sci-fi).
 has_genre(movie6395, thriller).
+has_1_genre(movie6400).
 has_genre(movie6400, documentary).
+has_1_genre(movie6402).
 has_genre(movie6402, comedy).
+has_2_genre(movie6405).
 has_genre(movie6405, adventure).
 has_genre(movie6405, children).
+has_2_genre(movie6407).
 has_genre(movie6407, comedy).
 has_genre(movie6407, romance).
+has_2_genre(movie6408).
 has_genre(movie6408, comedy).
 has_genre(movie6408, documentary).
+has_1_genre(movie6410).
 has_genre(movie6410, comedy).
+has_2_genre(movie6412).
 has_genre(movie6412, comedy).
 has_genre(movie6412, western).
+has_2_genre(movie6415).
 has_genre(movie6415, comedy).
 has_genre(movie6415, drama).
+has_1_genre(movie6417).
 has_genre(movie6417, action).
+has_3_genre(movie6422).
 has_genre(movie6422, drama).
 has_genre(movie6422, war).
 has_genre(movie6422, western).
+has_4_genre(movie6424).
 has_genre(movie6424, comedy).
 has_genre(movie6424, crime).
 has_genre(movie6424, mystery).
 has_genre(movie6424, romance).
+has_1_genre(movie6425).
 has_genre(movie6425, comedy).
+has_2_genre(movie6427).
 has_genre(movie6427, children).
 has_genre(movie6427, drama).
+has_3_genre(movie6428).
 has_genre(movie6428, comedy).
 has_genre(movie6428, war).
 has_genre(movie6428, western).
+has_1_genre(movie6429).
 has_genre(movie6429, western).
+has_1_genre(movie6433).
 has_genre(movie6433, documentary).
+has_1_genre(movie6434).
 has_genre(movie6434, war).
+has_1_genre(movie6436).
 has_genre(movie6436, drama).
+has_2_genre(movie6440).
 has_genre(movie6440, drama).
 has_genre(movie6440, thriller).
+has_2_genre(movie6442).
 has_genre(movie6442, comedy).
 has_genre(movie6442, romance).
+has_3_genre(movie6448).
 has_genre(movie6448, action).
 has_genre(movie6448, adventure).
 has_genre(movie6448, drama).
+has_1_genre(movie6449).
 has_genre(movie6449, drama).
+has_1_genre(movie6452).
 has_genre(movie6452, drama).
+has_1_genre(movie6453).
 has_genre(movie6453, documentary).
+has_1_genre(movie6454).
 has_genre(movie6454, drama).
+has_1_genre(movie6460).
 has_genre(movie6460, drama).
+has_2_genre(movie6461).
 has_genre(movie6461, drama).
 has_genre(movie6461, western).
+has_2_genre(movie6464).
 has_genre(movie6464, children).
 has_genre(movie6464, comedy).
+has_1_genre(movie6465).
 has_genre(movie6465, drama).
+has_2_genre(movie6466).
 has_genre(movie6466, drama).
 has_genre(movie6466, romance).
+has_2_genre(movie6476).
 has_genre(movie6476, mystery).
 has_genre(movie6476, thriller).
+has_1_genre(movie6477).
 has_genre(movie6477, drama).
+has_2_genre(movie6480).
 has_genre(movie6480, comedy).
 has_genre(movie6480, musical).
+has_1_genre(movie6482).
 has_genre(movie6482, comedy).
+has_2_genre(movie6483).
 has_genre(movie6483, musical).
 has_genre(movie6483, romance).
+has_3_genre(movie6484).
 has_genre(movie6484, action).
 has_genre(movie6484, crime).
 has_genre(movie6484, drama).
+has_3_genre(movie6493).
 has_genre(movie6493, comedy).
 has_genre(movie6493, drama).
 has_genre(movie6493, romance).
+has_3_genre(movie6502).
 has_genre(movie6502, action).
 has_genre(movie6502, horror).
 has_genre(movie6502, sci-fi).
+has_5_genre(movie6503).
 has_genre(movie6503, action).
 has_genre(movie6503, adventure).
 has_genre(movie6503, comedy).
 has_genre(movie6503, crime).
 has_genre(movie6503, thriller).
+has_2_genre(movie6506).
 has_genre(movie6506, action).
 has_genre(movie6506, thriller).
+has_2_genre(movie6509).
 has_genre(movie6509, drama).
 has_genre(movie6509, romance).
+has_2_genre(movie6510).
 has_genre(movie6510, drama).
 has_genre(movie6510, romance).
+has_1_genre(movie6514).
 has_genre(movie6514, horror).
+has_2_genre(movie6515).
 has_genre(movie6515, crime).
 has_genre(movie6515, film-noir).
+has_1_genre(movie6516).
 has_genre(movie6516, drama).
+has_1_genre(movie6517).
 has_genre(movie6517, drama).
+has_2_genre(movie6523).
 has_genre(movie6523, comedy).
 has_genre(movie6523, romance).
+has_2_genre(movie6527).
 has_genre(movie6527, adventure).
 has_genre(movie6527, romance).
+has_1_genre(movie6528).
 has_genre(movie6528, comedy).
+has_4_genre(movie6530).
 has_genre(movie6530, drama).
 has_genre(movie6530, horror).
 has_genre(movie6530, mystery).
 has_genre(movie6530, thriller).
+has_1_genre(movie6533).
 has_genre(movie6533, comedy).
+has_3_genre(movie6534).
 has_genre(movie6534, action).
 has_genre(movie6534, adventure).
 has_genre(movie6534, sci-fi).
+has_1_genre(movie6535).
 has_genre(movie6535, comedy).
+has_4_genre(movie6536).
 has_genre(movie6536, adventure).
 has_genre(movie6536, animation).
 has_genre(movie6536, children).
 has_genre(movie6536, fantasy).
+has_3_genre(movie6537).
 has_genre(movie6537, action).
 has_genre(movie6537, adventure).
 has_genre(movie6537, sci-fi).
+has_3_genre(movie6538).
 has_genre(movie6538, drama).
 has_genre(movie6538, mystery).
 has_genre(movie6538, thriller).
+has_4_genre(movie6539).
 has_genre(movie6539, action).
 has_genre(movie6539, adventure).
 has_genre(movie6539, comedy).
 has_genre(movie6539, fantasy).
+has_3_genre(movie6541).
 has_genre(movie6541, action).
 has_genre(movie6541, fantasy).
 has_genre(movie6541, sci-fi).
+has_3_genre(movie6542).
 has_genre(movie6542, comedy).
 has_genre(movie6542, drama).
 has_genre(movie6542, war).
+has_2_genre(movie6545).
 has_genre(movie6545, drama).
 has_genre(movie6545, romance).
+has_2_genre(movie6547).
 has_genre(movie6547, drama).
 has_genre(movie6547, fantasy).
+has_4_genre(movie6548).
 has_genre(movie6548, action).
 has_genre(movie6548, comedy).
 has_genre(movie6548, crime).
 has_genre(movie6548, thriller).
+has_3_genre(movie6549).
 has_genre(movie6549, comedy).
 has_genre(movie6549, drama).
 has_genre(movie6549, romance).
+has_3_genre(movie6550).
 has_genre(movie6550, action).
 has_genre(movie6550, comedy).
 has_genre(movie6550, thriller).
+has_2_genre(movie6551).
 has_genre(movie6551, comedy).
 has_genre(movie6551, romance).
+has_3_genre(movie6552).
 has_genre(movie6552, crime).
 has_genre(movie6552, drama).
 has_genre(movie6552, thriller).
+has_1_genre(movie6553).
 has_genre(movie6553, drama).
+has_2_genre(movie6554).
 has_genre(movie6554, comedy).
 has_genre(movie6554, musical).
+has_4_genre(movie6557).
 has_genre(movie6557, adventure).
 has_genre(movie6557, children).
 has_genre(movie6557, comedy).
 has_genre(movie6557, drama).
+has_2_genre(movie6558).
 has_genre(movie6558, comedy).
 has_genre(movie6558, drama).
+has_2_genre(movie6559).
 has_genre(movie6559, children).
 has_genre(movie6559, comedy).
+has_2_genre(movie6560).
 has_genre(movie6560, action).
 has_genre(movie6560, comedy).
+has_2_genre(movie6561).
 has_genre(movie6561, comedy).
 has_genre(movie6561, war).
+has_2_genre(movie6563).
 has_genre(movie6563, comedy).
 has_genre(movie6563, drama).
+has_5_genre(movie6564).
 has_genre(movie6564, action).
 has_genre(movie6564, adventure).
 has_genre(movie6564, comedy).
 has_genre(movie6564, romance).
 has_genre(movie6564, thriller).
+has_1_genre(movie6565).
 has_genre(movie6565, drama).
+has_3_genre(movie6566).
 has_genre(movie6566, action).
 has_genre(movie6566, adventure).
 has_genre(movie6566, children).
+has_4_genre(movie6567).
 has_genre(movie6567, comedy).
 has_genre(movie6567, crime).
 has_genre(movie6567, drama).
 has_genre(movie6567, war).
+has_2_genre(movie6568).
 has_genre(movie6568, comedy).
 has_genre(movie6568, musical).
+has_1_genre(movie6571).
 has_genre(movie6571, drama).
+has_2_genre(movie6572).
 has_genre(movie6572, comedy).
 has_genre(movie6572, crime).
+has_2_genre(movie6573).
 has_genre(movie6573, comedy).
 has_genre(movie6573, drama).
+has_3_genre(movie6574).
 has_genre(movie6574, action).
 has_genre(movie6574, sci-fi).
 has_genre(movie6574, thriller).
+has_2_genre(movie6577).
 has_genre(movie6577, action).
 has_genre(movie6577, drama).
+has_1_genre(movie6578).
 has_genre(movie6578, comedy).
+has_1_genre(movie6579).
 has_genre(movie6579, comedy).
+has_3_genre(movie6581).
 has_genre(movie6581, comedy).
 has_genre(movie6581, drama).
 has_genre(movie6581, mystery).
+has_4_genre(movie6582).
 has_genre(movie6582, action).
 has_genre(movie6582, comedy).
 has_genre(movie6582, crime).
 has_genre(movie6582, thriller).
+has_2_genre(movie6583).
 has_genre(movie6583, action).
 has_genre(movie6583, sci-fi).
+has_4_genre(movie6584).
 has_genre(movie6584, adventure).
 has_genre(movie6584, comedy).
 has_genre(movie6584, crime).
 has_genre(movie6584, thriller).
+has_1_genre(movie6586).
 has_genre(movie6586, comedy).
+has_3_genre(movie6587).
 has_genre(movie6587, comedy).
 has_genre(movie6587, crime).
 has_genre(movie6587, romance).
+has_2_genre(movie6588).
 has_genre(movie6588, romance).
 has_genre(movie6588, thriller).
+has_1_genre(movie6591).
 has_genre(movie6591, drama).
+has_1_genre(movie6592).
 has_genre(movie6592, drama).
+has_3_genre(movie6593).
 has_genre(movie6593, children).
 has_genre(movie6593, comedy).
 has_genre(movie6593, fantasy).
+has_2_genre(movie6595).
 has_genre(movie6595, action).
 has_genre(movie6595, thriller).
+has_3_genre(movie6596).
 has_genre(movie6596, comedy).
 has_genre(movie6596, drama).
 has_genre(movie6596, romance).
+has_2_genre(movie6597).
 has_genre(movie6597, action).
 has_genre(movie6597, sci-fi).
+has_1_genre(movie6598).
 has_genre(movie6598, documentary).
+has_3_genre(movie6603).
 has_genre(movie6603, crime).
 has_genre(movie6603, drama).
 has_genre(movie6603, film-noir).
+has_1_genre(movie6604).
 has_genre(movie6604, comedy).
+has_1_genre(movie6609).
 has_genre(movie6609, drama).
+has_1_genre(movie6611).
 has_genre(movie6611, drama).
+has_1_genre(movie6612).
 has_genre(movie6612, documentary).
+has_2_genre(movie6614).
 has_genre(movie6614, comedy).
 has_genre(movie6614, crime).
+has_3_genre(movie6615).
 has_genre(movie6615, action).
 has_genre(movie6615, horror).
 has_genre(movie6615, thriller).
+has_2_genre(movie6616).
 has_genre(movie6616, action).
 has_genre(movie6616, comedy).
+has_1_genre(movie6617).
 has_genre(movie6617, western).
+has_2_genre(movie6618).
 has_genre(movie6618, action).
 has_genre(movie6618, comedy).
+has_1_genre(movie6619).
 has_genre(movie6619, comedy).
+has_2_genre(movie6620).
 has_genre(movie6620, comedy).
 has_genre(movie6620, drama).
+has_4_genre(movie6624).
 has_genre(movie6624, action).
 has_genre(movie6624, adventure).
 has_genre(movie6624, children).
 has_genre(movie6624, fantasy).
+has_3_genre(movie6625).
 has_genre(movie6625, adventure).
 has_genre(movie6625, children).
 has_genre(movie6625, comedy).
+has_1_genre(movie6628).
 has_genre(movie6628, comedy).
+has_4_genre(movie6629).
 has_genre(movie6629, crime).
 has_genre(movie6629, horror).
 has_genre(movie6629, mystery).
 has_genre(movie6629, thriller).
+has_3_genre(movie6631).
 has_genre(movie6631, horror).
 has_genre(movie6631, sci-fi).
 has_genre(movie6631, thriller).
+has_2_genre(movie6636).
 has_genre(movie6636, comedy).
 has_genre(movie6636, romance).
+has_2_genre(movie6638).
 has_genre(movie6638, comedy).
 has_genre(movie6638, romance).
+has_2_genre(movie6639).
 has_genre(movie6639, drama).
 has_genre(movie6639, thriller).
+has_1_genre(movie6643).
 has_genre(movie6643, drama).
+has_2_genre(movie6644).
 has_genre(movie6644, drama).
 has_genre(movie6644, romance).
+has_4_genre(movie6645).
 has_genre(movie6645, action).
 has_genre(movie6645, adventure).
 has_genre(movie6645, drama).
 has_genre(movie6645, sci-fi).
+has_2_genre(movie6650).
 has_genre(movie6650, comedy).
 has_genre(movie6650, drama).
+has_2_genre(movie6654).
 has_genre(movie6654, adventure).
 has_genre(movie6654, sci-fi).
+has_2_genre(movie6656).
 has_genre(movie6656, horror).
 has_genre(movie6656, sci-fi).
+has_2_genre(movie6658).
 has_genre(movie6658, comedy).
 has_genre(movie6658, romance).
+has_3_genre(movie6659).
 has_genre(movie6659, comedy).
 has_genre(movie6659, horror).
 has_genre(movie6659, sci-fi).
+has_4_genre(movie6660).
 has_genre(movie6660, drama).
 has_genre(movie6660, fantasy).
 has_genre(movie6660, musical).
 has_genre(movie6660, romance).
+has_2_genre(movie6662).
 has_genre(movie6662, comedy).
 has_genre(movie6662, crime).
+has_2_genre(movie6663).
 has_genre(movie6663, comedy).
 has_genre(movie6663, crime).
+has_2_genre(movie6664).
 has_genre(movie6664, action).
 has_genre(movie6664, adventure).
+has_2_genre(movie6665).
 has_genre(movie6665, horror).
 has_genre(movie6665, romance).
+has_3_genre(movie6666).
 has_genre(movie6666, comedy).
 has_genre(movie6666, drama).
 has_genre(movie6666, fantasy).
+has_1_genre(movie6667).
 has_genre(movie6667, documentary).
+has_2_genre(movie6668).
 has_genre(movie6668, drama).
 has_genre(movie6668, romance).
+has_1_genre(movie6669).
 has_genre(movie6669, drama).
+has_1_genre(movie6670).
 has_genre(movie6670, comedy).
+has_1_genre(movie6671).
 has_genre(movie6671, drama).
+has_2_genre(movie6678).
 has_genre(movie6678, drama).
 has_genre(movie6678, sci-fi).
+has_1_genre(movie6679).
 has_genre(movie6679, documentary).
+has_2_genre(movie6684).
 has_genre(movie6684, drama).
 has_genre(movie6684, romance).
+has_4_genre(movie6686).
 has_genre(movie6686, action).
 has_genre(movie6686, comedy).
 has_genre(movie6686, crime).
 has_genre(movie6686, fantasy).
+has_2_genre(movie6687).
 has_genre(movie6687, comedy).
 has_genre(movie6687, romance).
+has_2_genre(movie6688).
 has_genre(movie6688, comedy).
 has_genre(movie6688, drama).
+has_3_genre(movie6689).
 has_genre(movie6689, comedy).
 has_genre(movie6689, drama).
 has_genre(movie6689, romance).
+has_2_genre(movie6691).
 has_genre(movie6691, drama).
 has_genre(movie6691, western).
+has_1_genre(movie6692).
 has_genre(movie6692, documentary).
+has_2_genre(movie6695).
 has_genre(movie6695, horror).
 has_genre(movie6695, thriller).
+has_4_genre(movie6696).
 has_genre(movie6696, comedy).
 has_genre(movie6696, drama).
 has_genre(movie6696, musical).
 has_genre(movie6696, romance).
+has_1_genre(movie6699).
 has_genre(movie6699, drama).
+has_1_genre(movie6702).
 has_genre(movie6702, comedy).
+has_4_genre(movie6705).
 has_genre(movie6705, comedy).
 has_genre(movie6705, crime).
 has_genre(movie6705, drama).
 has_genre(movie6705, thriller).
+has_1_genre(movie6706).
 has_genre(movie6706, drama).
+has_2_genre(movie6707).
 has_genre(movie6707, horror).
 has_genre(movie6707, thriller).
+has_3_genre(movie6708).
 has_genre(movie6708, comedy).
 has_genre(movie6708, crime).
 has_genre(movie6708, drama).
+has_4_genre(movie6709).
 has_genre(movie6709, action).
 has_genre(movie6709, adventure).
 has_genre(movie6709, crime).
 has_genre(movie6709, thriller).
+has_3_genre(movie6710).
 has_genre(movie6710, comedy).
 has_genre(movie6710, drama).
 has_genre(movie6710, romance).
+has_3_genre(movie6711).
 has_genre(movie6711, comedy).
 has_genre(movie6711, drama).
 has_genre(movie6711, romance).
+has_3_genre(movie6713).
 has_genre(movie6713, animation).
 has_genre(movie6713, drama).
 has_genre(movie6713, romance).
+has_1_genre(movie6715).
 has_genre(movie6715, horror).
+has_1_genre(movie6718).
 has_genre(movie6718, comedy).
+has_3_genre(movie6720).
 has_genre(movie6720, action).
 has_genre(movie6720, comedy).
 has_genre(movie6720, crime).
+has_3_genre(movie6721).
 has_genre(movie6721, action).
 has_genre(movie6721, adventure).
 has_genre(movie6721, drama).
+has_2_genre(movie6722).
 has_genre(movie6722, action).
 has_genre(movie6722, romance).
+has_1_genre(movie6723).
 has_genre(movie6723, action).
+has_3_genre(movie6724).
 has_genre(movie6724, comedy).
 has_genre(movie6724, crime).
 has_genre(movie6724, drama).
+has_3_genre(movie6731).
 has_genre(movie6731, horror).
 has_genre(movie6731, sci-fi).
 has_genre(movie6731, thriller).
+has_3_genre(movie6732).
 has_genre(movie6732, comedy).
 has_genre(movie6732, musical).
 has_genre(movie6732, romance).
+has_4_genre(movie6734).
 has_genre(movie6734, comedy).
 has_genre(movie6734, romance).
 has_genre(movie6734, sci-fi).
 has_genre(movie6734, thriller).
+has_2_genre(movie6744).
 has_genre(movie6744, comedy).
 has_genre(movie6744, horror).
+has_2_genre(movie6746).
 has_genre(movie6746, horror).
 has_genre(movie6746, romance).
+has_1_genre(movie6748).
 has_genre(movie6748, horror).
+has_3_genre(movie6750).
 has_genre(movie6750, comedy).
 has_genre(movie6750, drama).
 has_genre(movie6750, romance).
+has_2_genre(movie6751).
 has_genre(movie6751, drama).
 has_genre(movie6751, thriller).
+has_1_genre(movie6752).
 has_genre(movie6752, drama).
+has_3_genre(movie6753).
 has_genre(movie6753, children).
 has_genre(movie6753, comedy).
 has_genre(movie6753, drama).
+has_3_genre(movie6754).
 has_genre(movie6754, action).
 has_genre(movie6754, fantasy).
 has_genre(movie6754, horror).
+has_2_genre(movie6755).
 has_genre(movie6755, comedy).
 has_genre(movie6755, horror).
+has_2_genre(movie6760).
 has_genre(movie6760, adventure).
 has_genre(movie6760, drama).
+has_2_genre(movie6763).
 has_genre(movie6763, comedy).
 has_genre(movie6763, crime).
+has_3_genre(movie6764).
 has_genre(movie6764, action).
 has_genre(movie6764, adventure).
 has_genre(movie6764, comedy).
+has_3_genre(movie6765).
 has_genre(movie6765, comedy).
 has_genre(movie6765, drama).
 has_genre(movie6765, romance).
+has_1_genre(movie6768).
 has_genre(movie6768, drama).
+has_1_genre(movie6769).
 has_genre(movie6769, comedy).
+has_2_genre(movie6770).
 has_genre(movie6770, drama).
 has_genre(movie6770, romance).
+has_1_genre(movie6772).
 has_genre(movie6772, documentary).
+has_3_genre(movie6773).
 has_genre(movie6773, animation).
 has_genre(movie6773, comedy).
 has_genre(movie6773, fantasy).
+has_4_genre(movie6774).
 has_genre(movie6774, fantasy).
 has_genre(movie6774, horror).
 has_genre(movie6774, sci-fi).
 has_genre(movie6774, thriller).
+has_1_genre(movie6775).
 has_genre(movie6775, documentary).
+has_4_genre(movie6776).
 has_genre(movie6776, comedy).
 has_genre(movie6776, drama).
 has_genre(movie6776, musical).
 has_genre(movie6776, romance).
+has_1_genre(movie6777).
 has_genre(movie6777, drama).
+has_1_genre(movie6780).
 has_genre(movie6780, documentary).
+has_2_genre(movie6782).
 has_genre(movie6782, comedy).
 has_genre(movie6782, musical).
+has_2_genre(movie6783).
 has_genre(movie6783, comedy).
 has_genre(movie6783, drama).
+has_4_genre(movie6785).
 has_genre(movie6785, comedy).
 has_genre(movie6785, musical).
 has_genre(movie6785, romance).
 has_genre(movie6785, western).
+has_1_genre(movie6786).
 has_genre(movie6786, drama).
+has_2_genre(movie6787).
 has_genre(movie6787, drama).
 has_genre(movie6787, thriller).
+has_3_genre(movie6788).
 has_genre(movie6788, comedy).
 has_genre(movie6788, drama).
 has_genre(movie6788, romance).
+has_3_genre(movie6789).
 has_genre(movie6789, drama).
 has_genre(movie6789, mystery).
 has_genre(movie6789, romance).
+has_3_genre(movie6790).
 has_genre(movie6790, drama).
 has_genre(movie6790, fantasy).
 has_genre(movie6790, sci-fi).
+has_1_genre(movie6791).
 has_genre(movie6791, drama).
+has_3_genre(movie6793).
 has_genre(movie6793, children).
 has_genre(movie6793, comedy).
 has_genre(movie6793, drama).
+has_2_genre(movie6794).
 has_genre(movie6794, children).
 has_genre(movie6794, comedy).
+has_2_genre(movie6796).
 has_genre(movie6796, crime).
 has_genre(movie6796, drama).
+has_2_genre(movie6797).
 has_genre(movie6797, crime).
 has_genre(movie6797, drama).
+has_4_genre(movie6798).
 has_genre(movie6798, children).
 has_genre(movie6798, comedy).
 has_genre(movie6798, crime).
 has_genre(movie6798, musical).
+has_2_genre(movie6800).
 has_genre(movie6800, action).
 has_genre(movie6800, crime).
+has_3_genre(movie6803).
 has_genre(movie6803, horror).
 has_genre(movie6803, mystery).
 has_genre(movie6803, thriller).
+has_2_genre(movie6804).
 has_genre(movie6804, comedy).
 has_genre(movie6804, crime).
+has_1_genre(movie6807).
 has_genre(movie6807, comedy).
+has_3_genre(movie6808).
 has_genre(movie6808, action).
 has_genre(movie6808, adventure).
 has_genre(movie6808, war).
+has_1_genre(movie6809).
 has_genre(movie6809, thriller).
+has_2_genre(movie6810).
 has_genre(movie6810, drama).
 has_genre(movie6810, thriller).
+has_1_genre(movie6811).
 has_genre(movie6811, comedy).
+has_3_genre(movie6812).
 has_genre(movie6812, action).
 has_genre(movie6812, comedy).
 has_genre(movie6812, thriller).
+has_2_genre(movie6814).
 has_genre(movie6814, action).
 has_genre(movie6814, comedy).
+has_1_genre(movie6816).
 has_genre(movie6816, comedy).
+has_2_genre(movie6817).
 has_genre(movie6817, adventure).
 has_genre(movie6817, drama).
+has_2_genre(movie6818).
 has_genre(movie6818, drama).
 has_genre(movie6818, war).
+has_3_genre(movie6820).
 has_genre(movie6820, drama).
 has_genre(movie6820, horror).
 has_genre(movie6820, thriller).
+has_1_genre(movie6821).
 has_genre(movie6821, comedy).
+has_1_genre(movie6827).
 has_genre(movie6827, comedy).
+has_1_genre(movie6832).
 has_genre(movie6832, drama).
+has_3_genre(movie6835).
 has_genre(movie6835, action).
 has_genre(movie6835, horror).
 has_genre(movie6835, sci-fi).
+has_1_genre(movie6836).
 has_genre(movie6836, sci-fi).
+has_3_genre(movie6837).
 has_genre(movie6837, comedy).
 has_genre(movie6837, drama).
 has_genre(movie6837, romance).
+has_3_genre(movie6849).
 has_genre(movie6849, drama).
 has_genre(movie6849, fantasy).
 has_genre(movie6849, musical).
+has_2_genre(movie6850).
 has_genre(movie6850, comedy).
 has_genre(movie6850, drama).
+has_2_genre(movie6851).
 has_genre(movie6851, drama).
 has_genre(movie6851, romance).
+has_2_genre(movie6852).
 has_genre(movie6852, crime).
 has_genre(movie6852, drama).
+has_1_genre(movie6853).
 has_genre(movie6853, comedy).
+has_2_genre(movie6856).
 has_genre(movie6856, drama).
 has_genre(movie6856, musical).
+has_4_genre(movie6857).
 has_genre(movie6857, action).
 has_genre(movie6857, adventure).
 has_genre(movie6857, animation).
 has_genre(movie6857, fantasy).
+has_1_genre(movie6858).
 has_genre(movie6858, drama).
+has_2_genre(movie6860).
 has_genre(movie6860, crime).
 has_genre(movie6860, drama).
+has_3_genre(movie6862).
 has_genre(movie6862, crime).
 has_genre(movie6862, drama).
 has_genre(movie6862, thriller).
+has_2_genre(movie6863).
 has_genre(movie6863, comedy).
 has_genre(movie6863, musical).
+has_2_genre(movie6867).
 has_genre(movie6867, comedy).
 has_genre(movie6867, drama).
+has_4_genre(movie6868).
 has_genre(movie6868, crime).
 has_genre(movie6868, drama).
 has_genre(movie6868, mystery).
 has_genre(movie6868, thriller).
+has_2_genre(movie6869).
 has_genre(movie6869, crime).
 has_genre(movie6869, documentary).
+has_3_genre(movie6870).
 has_genre(movie6870, crime).
 has_genre(movie6870, drama).
 has_genre(movie6870, mystery).
+has_2_genre(movie6872).
 has_genre(movie6872, action).
 has_genre(movie6872, horror).
+has_2_genre(movie6873).
 has_genre(movie6873, comedy).
 has_genre(movie6873, romance).
+has_3_genre(movie6874).
 has_genre(movie6874, action).
 has_genre(movie6874, crime).
 has_genre(movie6874, thriller).
+has_2_genre(movie6879).
 has_genre(movie6879, drama).
 has_genre(movie6879, thriller).
+has_1_genre(movie6880).
 has_genre(movie6880, horror).
+has_2_genre(movie6881).
 has_genre(movie6881, comedy).
 has_genre(movie6881, drama).
+has_3_genre(movie6882).
 has_genre(movie6882, action).
 has_genre(movie6882, adventure).
 has_genre(movie6882, sci-fi).
+has_2_genre(movie6883).
 has_genre(movie6883, drama).
 has_genre(movie6883, romance).
+has_3_genre(movie6884).
 has_genre(movie6884, crime).
 has_genre(movie6884, drama).
 has_genre(movie6884, thriller).
+has_5_genre(movie6885).
 has_genre(movie6885, crime).
 has_genre(movie6885, drama).
 has_genre(movie6885, mystery).
 has_genre(movie6885, romance).
 has_genre(movie6885, thriller).
+has_3_genre(movie6886).
 has_genre(movie6886, drama).
 has_genre(movie6886, romance).
 has_genre(movie6886, war).
+has_1_genre(movie6887).
 has_genre(movie6887, drama).
+has_2_genre(movie6888).
 has_genre(movie6888, comedy).
 has_genre(movie6888, horror).
+has_3_genre(movie6889).
 has_genre(movie6889, adventure).
 has_genre(movie6889, animation).
 has_genre(movie6889, children).
+has_1_genre(movie6890).
 has_genre(movie6890, drama).
+has_3_genre(movie6893).
 has_genre(movie6893, action).
 has_genre(movie6893, comedy).
 has_genre(movie6893, crime).
+has_1_genre(movie6898).
 has_genre(movie6898, drama).
+has_1_genre(movie6899).
 has_genre(movie6899, sci-fi).
+has_more_than_5_genre(movie6902).
 has_genre(movie6902, adventure).
 has_genre(movie6902, comedy).
 has_genre(movie6902, drama).
@@ -14069,2119 +18706,3044 @@ has_genre(movie6902, fantasy).
 has_genre(movie6902, mystery).
 has_genre(movie6902, sci-fi).
 has_genre(movie6902, thriller).
+has_1_genre(movie6909).
 has_genre(movie6909, thriller).
+has_1_genre(movie6911).
 has_genre(movie6911, musical).
+has_3_genre(movie6912).
 has_genre(movie6912, comedy).
 has_genre(movie6912, musical).
 has_genre(movie6912, romance).
+has_1_genre(movie6918).
 has_genre(movie6918, drama).
+has_2_genre(movie6920).
 has_genre(movie6920, crime).
 has_genre(movie6920, thriller).
+has_3_genre(movie6927).
 has_genre(movie6927, drama).
 has_genre(movie6927, romance).
 has_genre(movie6927, thriller).
+has_2_genre(movie6932).
 has_genre(movie6932, crime).
 has_genre(movie6932, drama).
+has_5_genre(movie6934).
 has_genre(movie6934, action).
 has_genre(movie6934, adventure).
 has_genre(movie6934, sci-fi).
 has_genre(movie6934, thriller).
 has_genre(movie6934, imax).
+has_1_genre(movie6935).
 has_genre(movie6935, documentary).
+has_3_genre(movie6936).
 has_genre(movie6936, children).
 has_genre(movie6936, comedy).
 has_genre(movie6936, fantasy).
+has_1_genre(movie6938).
 has_genre(movie6938, documentary).
+has_2_genre(movie6939).
 has_genre(movie6939, drama).
 has_genre(movie6939, romance).
+has_3_genre(movie6942).
 has_genre(movie6942, comedy).
 has_genre(movie6942, drama).
 has_genre(movie6942, romance).
+has_1_genre(movie6944).
 has_genre(movie6944, comedy).
+has_1_genre(movie6945).
 has_genre(movie6945, documentary).
+has_4_genre(movie6946).
 has_genre(movie6946, action).
 has_genre(movie6946, animation).
 has_genre(movie6946, children).
 has_genre(movie6946, fantasy).
+has_3_genre(movie6947).
 has_genre(movie6947, adventure).
 has_genre(movie6947, drama).
 has_genre(movie6947, war).
+has_1_genre(movie6948).
 has_genre(movie6948, documentary).
+has_3_genre(movie6949).
 has_genre(movie6949, comedy).
 has_genre(movie6949, mystery).
 has_genre(movie6949, sci-fi).
+has_3_genre(movie6950).
 has_genre(movie6950, adventure).
 has_genre(movie6950, thriller).
 has_genre(movie6950, western).
+has_2_genre(movie6951).
 has_genre(movie6951, children).
 has_genre(movie6951, comedy).
+has_2_genre(movie6952).
 has_genre(movie6952, horror).
 has_genre(movie6952, thriller).
+has_5_genre(movie6953).
 has_genre(movie6953, crime).
 has_genre(movie6953, drama).
 has_genre(movie6953, mystery).
 has_genre(movie6953, romance).
 has_genre(movie6953, thriller).
+has_5_genre(movie6954).
 has_genre(movie6954, comedy).
 has_genre(movie6954, crime).
 has_genre(movie6954, drama).
 has_genre(movie6954, mystery).
 has_genre(movie6954, romance).
+has_2_genre(movie6957).
 has_genre(movie6957, comedy).
 has_genre(movie6957, crime).
+has_4_genre(movie6958).
 has_genre(movie6958, children).
 has_genre(movie6958, comedy).
 has_genre(movie6958, fantasy).
 has_genre(movie6958, horror).
+has_3_genre(movie6959).
 has_genre(movie6959, action).
 has_genre(movie6959, adventure).
 has_genre(movie6959, sci-fi).
+has_1_genre(movie6961).
 has_genre(movie6961, drama).
+has_1_genre(movie6962).
 has_genre(movie6962, documentary).
+has_1_genre(movie6963).
 has_genre(movie6963, documentary).
+has_1_genre(movie6965).
 has_genre(movie6965, documentary).
+has_5_genre(movie6966).
 has_genre(movie6966, action).
 has_genre(movie6966, crime).
 has_genre(movie6966, fantasy).
 has_genre(movie6966, sci-fi).
 has_genre(movie6966, thriller).
+has_2_genre(movie6967).
 has_genre(movie6967, horror).
 has_genre(movie6967, mystery).
+has_2_genre(movie6969).
 has_genre(movie6969, drama).
 has_genre(movie6969, sci-fi).
+has_2_genre(movie6970).
 has_genre(movie6970, comedy).
 has_genre(movie6970, romance).
+has_2_genre(movie6971).
 has_genre(movie6971, drama).
 has_genre(movie6971, thriller).
+has_3_genre(movie6973).
 has_genre(movie6973, drama).
 has_genre(movie6973, romance).
 has_genre(movie6973, thriller).
+has_2_genre(movie6974).
 has_genre(movie6974, comedy).
 has_genre(movie6974, crime).
+has_3_genre(movie6975).
 has_genre(movie6975, drama).
 has_genre(movie6975, horror).
 has_genre(movie6975, thriller).
+has_2_genre(movie6978).
 has_genre(movie6978, comedy).
 has_genre(movie6978, drama).
+has_3_genre(movie6979).
 has_genre(movie6979, drama).
 has_genre(movie6979, sci-fi).
 has_genre(movie6979, thriller).
+has_1_genre(movie6981).
 has_genre(movie6981, drama).
+has_2_genre(movie6982).
 has_genre(movie6982, drama).
 has_genre(movie6982, war).
+has_2_genre(movie6983).
 has_genre(movie6983, drama).
 has_genre(movie6983, romance).
+has_1_genre(movie6984).
 has_genre(movie6984, drama).
+has_1_genre(movie6985).
 has_genre(movie6985, drama).
+has_3_genre(movie6986).
 has_genre(movie6986, adventure).
 has_genre(movie6986, drama).
 has_genre(movie6986, romance).
+has_3_genre(movie6987).
 has_genre(movie6987, crime).
 has_genre(movie6987, fantasy).
 has_genre(movie6987, horror).
+has_3_genre(movie6989).
 has_genre(movie6989, crime).
 has_genre(movie6989, drama).
 has_genre(movie6989, thriller).
+has_5_genre(movie6990).
 has_genre(movie6990, action).
 has_genre(movie6990, adventure).
 has_genre(movie6990, comedy).
 has_genre(movie6990, crime).
 has_genre(movie6990, drama).
+has_2_genre(movie6992).
 has_genre(movie6992, comedy).
 has_genre(movie6992, drama).
+has_3_genre(movie6993).
 has_genre(movie6993, comedy).
 has_genre(movie6993, drama).
 has_genre(movie6993, romance).
+has_2_genre(movie6994).
 has_genre(movie6994, action).
 has_genre(movie6994, comedy).
+has_2_genre(movie6996).
 has_genre(movie6996, action).
 has_genre(movie6996, sci-fi).
+has_2_genre(movie6997).
 has_genre(movie6997, crime).
 has_genre(movie6997, drama).
+has_1_genre(movie6998).
 has_genre(movie6998, drama).
+has_2_genre(movie6999).
 has_genre(movie6999, comedy).
 has_genre(movie6999, romance).
+has_3_genre(movie7000).
 has_genre(movie7000, action).
 has_genre(movie7000, adventure).
 has_genre(movie7000, comedy).
+has_4_genre(movie7001).
 has_genre(movie7001, horror).
 has_genre(movie7001, mystery).
 has_genre(movie7001, sci-fi).
 has_genre(movie7001, thriller).
+has_4_genre(movie7004).
 has_genre(movie7004, action).
 has_genre(movie7004, comedy).
 has_genre(movie7004, crime).
 has_genre(movie7004, thriller).
+has_1_genre(movie7005).
 has_genre(movie7005, comedy).
+has_5_genre(movie7007).
 has_genre(movie7007, action).
 has_genre(movie7007, comedy).
 has_genre(movie7007, crime).
 has_genre(movie7007, drama).
 has_genre(movie7007, thriller).
+has_2_genre(movie7008).
 has_genre(movie7008, drama).
 has_genre(movie7008, romance).
+has_1_genre(movie7009).
 has_genre(movie7009, drama).
+has_2_genre(movie7010).
 has_genre(movie7010, drama).
 has_genre(movie7010, romance).
+has_2_genre(movie7012).
 has_genre(movie7012, comedy).
 has_genre(movie7012, fantasy).
+has_3_genre(movie7013).
 has_genre(movie7013, drama).
 has_genre(movie7013, film-noir).
 has_genre(movie7013, thriller).
+has_2_genre(movie7015).
 has_genre(movie7015, comedy).
 has_genre(movie7015, romance).
+has_2_genre(movie7016).
 has_genre(movie7016, action).
 has_genre(movie7016, drama).
+has_2_genre(movie7017).
 has_genre(movie7017, action).
 has_genre(movie7017, thriller).
+has_3_genre(movie7018).
 has_genre(movie7018, crime).
 has_genre(movie7018, drama).
 has_genre(movie7018, thriller).
+has_2_genre(movie7019).
 has_genre(movie7019, comedy).
 has_genre(movie7019, drama).
+has_3_genre(movie7020).
 has_genre(movie7020, comedy).
 has_genre(movie7020, drama).
 has_genre(movie7020, romance).
+has_4_genre(movie7022).
 has_genre(movie7022, action).
 has_genre(movie7022, drama).
 has_genre(movie7022, horror).
 has_genre(movie7022, thriller).
+has_3_genre(movie7023).
 has_genre(movie7023, comedy).
 has_genre(movie7023, drama).
 has_genre(movie7023, romance).
+has_1_genre(movie7024).
 has_genre(movie7024, drama).
+has_2_genre(movie7025).
 has_genre(movie7025, drama).
 has_genre(movie7025, war).
+has_1_genre(movie7026).
 has_genre(movie7026, comedy).
+has_2_genre(movie7027).
 has_genre(movie7027, action).
 has_genre(movie7027, western).
+has_2_genre(movie7028).
 has_genre(movie7028, comedy).
 has_genre(movie7028, crime).
+has_1_genre(movie7030).
 has_genre(movie7030, drama).
+has_4_genre(movie7031).
 has_genre(movie7031, action).
 has_genre(movie7031, crime).
 has_genre(movie7031, drama).
 has_genre(movie7031, thriller).
+has_3_genre(movie7032).
 has_genre(movie7032, drama).
 has_genre(movie7032, romance).
 has_genre(movie7032, thriller).
+has_2_genre(movie7033).
 has_genre(movie7033, comedy).
 has_genre(movie7033, romance).
+has_2_genre(movie7034).
 has_genre(movie7034, drama).
 has_genre(movie7034, romance).
+has_2_genre(movie7036).
 has_genre(movie7036, comedy).
 has_genre(movie7036, fantasy).
+has_2_genre(movie7037).
 has_genre(movie7037, comedy).
 has_genre(movie7037, drama).
+has_2_genre(movie7038).
 has_genre(movie7038, drama).
 has_genre(movie7038, romance).
+has_4_genre(movie7040).
 has_genre(movie7040, action).
 has_genre(movie7040, crime).
 has_genre(movie7040, drama).
 has_genre(movie7040, thriller).
+has_2_genre(movie7041).
 has_genre(movie7041, comedy).
 has_genre(movie7041, crime).
+has_5_genre(movie7044).
 has_genre(movie7044, crime).
 has_genre(movie7044, drama).
 has_genre(movie7044, mystery).
 has_genre(movie7044, romance).
 has_genre(movie7044, thriller).
+has_2_genre(movie7045).
 has_genre(movie7045, children).
 has_genre(movie7045, fantasy).
+has_4_genre(movie7046).
 has_genre(movie7046, comedy).
 has_genre(movie7046, fantasy).
 has_genre(movie7046, horror).
 has_genre(movie7046, thriller).
+has_3_genre(movie7047).
 has_genre(movie7047, action).
 has_genre(movie7047, crime).
 has_genre(movie7047, drama).
+has_4_genre(movie7048).
 has_genre(movie7048, action).
 has_genre(movie7048, adventure).
 has_genre(movie7048, comedy).
 has_genre(movie7048, crime).
+has_3_genre(movie7049).
 has_genre(movie7049, comedy).
 has_genre(movie7049, musical).
 has_genre(movie7049, romance).
+has_3_genre(movie7050).
 has_genre(movie7050, comedy).
 has_genre(movie7050, musical).
 has_genre(movie7050, romance).
+has_1_genre(movie7051).
 has_genre(movie7051, comedy).
+has_1_genre(movie7052).
 has_genre(movie7052, drama).
+has_3_genre(movie7053).
 has_genre(movie7053, comedy).
 has_genre(movie7053, musical).
 has_genre(movie7053, romance).
+has_1_genre(movie7054).
 has_genre(movie7054, drama).
+has_3_genre(movie7055).
 has_genre(movie7055, comedy).
 has_genre(movie7055, musical).
 has_genre(movie7055, romance).
+has_3_genre(movie7056).
 has_genre(movie7056, action).
 has_genre(movie7056, crime).
 has_genre(movie7056, drama).
+has_3_genre(movie7057).
 has_genre(movie7057, comedy).
 has_genre(movie7057, fantasy).
 has_genre(movie7057, romance).
+has_1_genre(movie7058).
 has_genre(movie7058, comedy).
+has_2_genre(movie7059).
 has_genre(movie7059, children).
 has_genre(movie7059, drama).
+has_2_genre(movie7060).
 has_genre(movie7060, drama).
 has_genre(movie7060, musical).
+has_2_genre(movie7061).
 has_genre(movie7061, drama).
 has_genre(movie7061, romance).
+has_1_genre(movie7062).
 has_genre(movie7062, drama).
+has_2_genre(movie7063).
 has_genre(movie7063, adventure).
 has_genre(movie7063, drama).
+has_2_genre(movie7064).
 has_genre(movie7064, drama).
 has_genre(movie7064, fantasy).
+has_2_genre(movie7065).
 has_genre(movie7065, drama).
 has_genre(movie7065, war).
+has_4_genre(movie7067).
 has_genre(movie7067, comedy).
 has_genre(movie7067, drama).
 has_genre(movie7067, fantasy).
 has_genre(movie7067, romance).
+has_1_genre(movie7069).
 has_genre(movie7069, drama).
+has_3_genre(movie7070).
 has_genre(movie7070, action).
 has_genre(movie7070, adventure).
 has_genre(movie7070, western).
+has_1_genre(movie7071).
 has_genre(movie7071, drama).
+has_4_genre(movie7072).
 has_genre(movie7072, action).
 has_genre(movie7072, drama).
 has_genre(movie7072, romance).
 has_genre(movie7072, western).
+has_3_genre(movie7073).
 has_genre(movie7073, comedy).
 has_genre(movie7073, crime).
 has_genre(movie7073, mystery).
+has_1_genre(movie7074).
 has_genre(movie7074, comedy).
+has_3_genre(movie7075).
 has_genre(movie7075, adventure).
 has_genre(movie7075, comedy).
 has_genre(movie7075, musical).
+has_4_genre(movie7076).
 has_genre(movie7076, action).
 has_genre(movie7076, crime).
 has_genre(movie7076, drama).
 has_genre(movie7076, thriller).
+has_1_genre(movie7078).
 has_genre(movie7078, drama).
+has_1_genre(movie7079).
 has_genre(movie7079, drama).
+has_3_genre(movie7080).
 has_genre(movie7080, drama).
 has_genre(movie7080, musical).
 has_genre(movie7080, romance).
+has_2_genre(movie7082).
 has_genre(movie7082, comedy).
 has_genre(movie7082, romance).
+has_1_genre(movie7083).
 has_genre(movie7083, drama).
+has_2_genre(movie7084).
 has_genre(movie7084, comedy).
 has_genre(movie7084, romance).
+has_2_genre(movie7085).
 has_genre(movie7085, comedy).
 has_genre(movie7085, romance).
+has_2_genre(movie7086).
 has_genre(movie7086, comedy).
 has_genre(movie7086, drama).
+has_2_genre(movie7087).
 has_genre(movie7087, adventure).
 has_genre(movie7087, drama).
+has_2_genre(movie7088).
 has_genre(movie7088, drama).
 has_genre(movie7088, romance).
+has_2_genre(movie7089).
 has_genre(movie7089, comedy).
 has_genre(movie7089, drama).
+has_3_genre(movie7090).
 has_genre(movie7090, action).
 has_genre(movie7090, adventure).
 has_genre(movie7090, drama).
+has_1_genre(movie7091).
 has_genre(movie7091, comedy).
+has_2_genre(movie7092).
 has_genre(movie7092, drama).
 has_genre(movie7092, romance).
+has_1_genre(movie7093).
 has_genre(movie7093, comedy).
+has_1_genre(movie7096).
 has_genre(movie7096, documentary).
+has_5_genre(movie7099).
 has_genre(movie7099, adventure).
 has_genre(movie7099, animation).
 has_genre(movie7099, drama).
 has_genre(movie7099, fantasy).
 has_genre(movie7099, sci-fi).
+has_2_genre(movie7101).
 has_genre(movie7101, comedy).
 has_genre(movie7101, romance).
+has_3_genre(movie7102).
 has_genre(movie7102, comedy).
 has_genre(movie7102, crime).
 has_genre(movie7102, drama).
+has_1_genre(movie7103).
 has_genre(movie7103, comedy).
+has_2_genre(movie7104).
 has_genre(movie7104, comedy).
 has_genre(movie7104, war).
+has_2_genre(movie7107).
 has_genre(movie7107, comedy).
 has_genre(movie7107, thriller).
+has_3_genre(movie7108).
 has_genre(movie7108, action).
 has_genre(movie7108, crime).
 has_genre(movie7108, drama).
+has_2_genre(movie7109).
 has_genre(movie7109, drama).
 has_genre(movie7109, romance).
+has_3_genre(movie7114).
 has_genre(movie7114, drama).
 has_genre(movie7114, horror).
 has_genre(movie7114, thriller).
+has_3_genre(movie7115).
 has_genre(movie7115, horror).
 has_genre(movie7115, mystery).
 has_genre(movie7115, thriller).
+has_3_genre(movie7116).
 has_genre(movie7116, horror).
 has_genre(movie7116, mystery).
 has_genre(movie7116, thriller).
+has_2_genre(movie7117).
 has_genre(movie7117, comedy).
 has_genre(movie7117, horror).
+has_4_genre(movie7118).
 has_genre(movie7118, animation).
 has_genre(movie7118, drama).
 has_genre(movie7118, sci-fi).
 has_genre(movie7118, war).
+has_2_genre(movie7121).
 has_genre(movie7121, comedy).
 has_genre(movie7121, romance).
+has_3_genre(movie7122).
 has_genre(movie7122, comedy).
 has_genre(movie7122, drama).
 has_genre(movie7122, war).
+has_4_genre(movie7123).
 has_genre(movie7123, drama).
 has_genre(movie7123, fantasy).
 has_genre(movie7123, mystery).
 has_genre(movie7123, sci-fi).
+has_1_genre(movie7124).
 has_genre(movie7124, documentary).
+has_1_genre(movie7125).
 has_genre(movie7125, drama).
+has_3_genre(movie7127).
 has_genre(movie7127, action).
 has_genre(movie7127, drama).
 has_genre(movie7127, thriller).
+has_1_genre(movie7131).
 has_genre(movie7131, drama).
+has_3_genre(movie7132).
 has_genre(movie7132, comedy).
 has_genre(movie7132, musical).
 has_genre(movie7132, romance).
+has_2_genre(movie7134).
 has_genre(movie7134, drama).
 has_genre(movie7134, thriller).
+has_3_genre(movie7137).
 has_genre(movie7137, comedy).
 has_genre(movie7137, drama).
 has_genre(movie7137, romance).
+has_2_genre(movie7139).
 has_genre(movie7139, drama).
 has_genre(movie7139, romance).
+has_1_genre(movie7141).
 has_genre(movie7141, documentary).
+has_2_genre(movie7142).
 has_genre(movie7142, drama).
 has_genre(movie7142, romance).
+has_4_genre(movie7143).
 has_genre(movie7143, action).
 has_genre(movie7143, adventure).
 has_genre(movie7143, drama).
 has_genre(movie7143, war).
+has_3_genre(movie7147).
 has_genre(movie7147, drama).
 has_genre(movie7147, fantasy).
 has_genre(movie7147, romance).
+has_3_genre(movie7149).
 has_genre(movie7149, comedy).
 has_genre(movie7149, drama).
 has_genre(movie7149, romance).
+has_1_genre(movie7150).
 has_genre(movie7150, comedy).
+has_2_genre(movie7151).
 has_genre(movie7151, drama).
 has_genre(movie7151, romance).
+has_4_genre(movie7153).
 has_genre(movie7153, action).
 has_genre(movie7153, adventure).
 has_genre(movie7153, drama).
 has_genre(movie7153, fantasy).
+has_2_genre(movie7154).
 has_genre(movie7154, drama).
 has_genre(movie7154, romance).
+has_1_genre(movie7155).
 has_genre(movie7155, comedy).
+has_2_genre(movie7156).
 has_genre(movie7156, documentary).
 has_genre(movie7156, war).
+has_1_genre(movie7158).
 has_genre(movie7158, drama).
+has_2_genre(movie7160).
 has_genre(movie7160, crime).
 has_genre(movie7160, drama).
+has_2_genre(movie7161).
 has_genre(movie7161, children).
 has_genre(movie7161, comedy).
+has_3_genre(movie7162).
 has_genre(movie7162, drama).
 has_genre(movie7162, romance).
 has_genre(movie7162, war).
+has_3_genre(movie7163).
 has_genre(movie7163, action).
 has_genre(movie7163, sci-fi).
 has_genre(movie7163, thriller).
+has_4_genre(movie7164).
 has_genre(movie7164, action).
 has_genre(movie7164, adventure).
 has_genre(movie7164, children).
 has_genre(movie7164, fantasy).
+has_2_genre(movie7165).
 has_genre(movie7165, drama).
 has_genre(movie7165, musical).
+has_1_genre(movie7167).
 has_genre(movie7167, drama).
+has_2_genre(movie7169).
 has_genre(movie7169, comedy).
 has_genre(movie7169, romance).
+has_1_genre(movie7171).
 has_genre(movie7171, documentary).
+has_2_genre(movie7173).
 has_genre(movie7173, comedy).
 has_genre(movie7173, romance).
+has_2_genre(movie7175).
 has_genre(movie7175, action).
 has_genre(movie7175, crime).
+has_1_genre(movie7176).
 has_genre(movie7176, drama).
+has_1_genre(movie7177).
 has_genre(movie7177, drama).
+has_1_genre(movie7178).
 has_genre(movie7178, drama).
+has_2_genre(movie7179).
 has_genre(movie7179, drama).
 has_genre(movie7179, romance).
+has_1_genre(movie7181).
 has_genre(movie7181, drama).
+has_2_genre(movie7184).
 has_genre(movie7184, drama).
 has_genre(movie7184, romance).
+has_1_genre(movie7190).
 has_genre(movie7190, drama).
+has_1_genre(movie7191).
 has_genre(movie7191, comedy).
+has_1_genre(movie7192).
 has_genre(movie7192, action).
+has_2_genre(movie7193).
 has_genre(movie7193, action).
 has_genre(movie7193, comedy).
+has_1_genre(movie7202).
 has_genre(movie7202, horror).
+has_1_genre(movie7205).
 has_genre(movie7205, adventure).
+has_1_genre(movie7206).
 has_genre(movie7206, comedy).
+has_2_genre(movie7208).
 has_genre(movie7208, drama).
 has_genre(movie7208, horror).
+has_1_genre(movie7209).
 has_genre(movie7209, comedy).
+has_2_genre(movie7211).
 has_genre(movie7211, comedy).
 has_genre(movie7211, romance).
+has_2_genre(movie7212).
 has_genre(movie7212, comedy).
 has_genre(movie7212, romance).
+has_5_genre(movie7215).
 has_genre(movie7215, adventure).
 has_genre(movie7215, drama).
 has_genre(movie7215, romance).
 has_genre(movie7215, thriller).
 has_genre(movie7215, war).
+has_4_genre(movie7216).
 has_genre(movie7216, crime).
 has_genre(movie7216, drama).
 has_genre(movie7216, film-noir).
 has_genre(movie7216, thriller).
+has_5_genre(movie7217).
 has_genre(movie7217, crime).
 has_genre(movie7217, drama).
 has_genre(movie7217, film-noir).
 has_genre(movie7217, romance).
 has_genre(movie7217, thriller).
+has_2_genre(movie7218).
 has_genre(movie7218, drama).
 has_genre(movie7218, western).
+has_1_genre(movie7219).
 has_genre(movie7219, drama).
+has_2_genre(movie7222).
 has_genre(movie7222, comedy).
 has_genre(movie7222, drama).
+has_3_genre(movie7223).
 has_genre(movie7223, drama).
 has_genre(movie7223, film-noir).
 has_genre(movie7223, mystery).
+has_1_genre(movie7225).
 has_genre(movie7225, documentary).
+has_3_genre(movie7228).
 has_genre(movie7228, animation).
 has_genre(movie7228, comedy).
 has_genre(movie7228, fantasy).
+has_1_genre(movie7234).
 has_genre(movie7234, drama).
+has_more_than_5_genre(movie7235).
 has_genre(movie7235, action).
 has_genre(movie7235, comedy).
 has_genre(movie7235, crime).
 has_genre(movie7235, drama).
 has_genre(movie7235, horror).
 has_genre(movie7235, thriller).
+has_1_genre(movie7236).
 has_genre(movie7236, sci-fi).
+has_2_genre(movie7238).
 has_genre(movie7238, drama).
 has_genre(movie7238, war).
+has_1_genre(movie7243).
 has_genre(movie7243, drama).
+has_2_genre(movie7245).
 has_genre(movie7245, horror).
 has_genre(movie7245, thriller).
+has_5_genre(movie7247).
 has_genre(movie7247, adventure).
 has_genre(movie7247, children).
 has_genre(movie7247, comedy).
 has_genre(movie7247, fantasy).
 has_genre(movie7247, musical).
+has_4_genre(movie7248).
 has_genre(movie7248, action).
 has_genre(movie7248, adventure).
 has_genre(movie7248, drama).
 has_genre(movie7248, war).
+has_1_genre(movie7251).
 has_genre(movie7251, drama).
+has_3_genre(movie7254).
 has_genre(movie7254, drama).
 has_genre(movie7254, sci-fi).
 has_genre(movie7254, thriller).
+has_2_genre(movie7255).
 has_genre(movie7255, comedy).
 has_genre(movie7255, romance).
+has_2_genre(movie7256).
 has_genre(movie7256, adventure).
 has_genre(movie7256, documentary).
+has_3_genre(movie7257).
 has_genre(movie7257, comedy).
 has_genre(movie7257, crime).
 has_genre(movie7257, thriller).
+has_2_genre(movie7258).
 has_genre(movie7258, comedy).
 has_genre(movie7258, crime).
+has_2_genre(movie7259).
 has_genre(movie7259, drama).
 has_genre(movie7259, musical).
+has_3_genre(movie7260).
 has_genre(movie7260, comedy).
 has_genre(movie7260, drama).
 has_genre(movie7260, romance).
+has_1_genre(movie7261).
 has_genre(movie7261, comedy).
+has_5_genre(movie7262).
 has_genre(movie7262, action).
 has_genre(movie7262, adventure).
 has_genre(movie7262, children).
 has_genre(movie7262, comedy).
 has_genre(movie7262, crime).
+has_1_genre(movie7263).
 has_genre(movie7263, drama).
+has_2_genre(movie7264).
 has_genre(movie7264, comedy).
 has_genre(movie7264, romance).
+has_1_genre(movie7265).
 has_genre(movie7265, drama).
+has_3_genre(movie7266).
 has_genre(movie7266, comedy).
 has_genre(movie7266, horror).
 has_genre(movie7266, sci-fi).
+has_3_genre(movie7282).
 has_genre(movie7282, comedy).
 has_genre(movie7282, horror).
 has_genre(movie7282, thriller).
+has_1_genre(movie7285).
 has_genre(movie7285, drama).
+has_2_genre(movie7292).
 has_genre(movie7292, comedy).
 has_genre(movie7292, war).
+has_2_genre(movie7293).
 has_genre(movie7293, comedy).
 has_genre(movie7293, romance).
+has_1_genre(movie7294).
 has_genre(movie7294, comedy).
+has_2_genre(movie7297).
 has_genre(movie7297, comedy).
 has_genre(movie7297, drama).
+has_1_genre(movie7299).
 has_genre(movie7299, drama).
+has_1_genre(movie7301).
 has_genre(movie7301, drama).
+has_3_genre(movie7302).
 has_genre(movie7302, action).
 has_genre(movie7302, adventure).
 has_genre(movie7302, fantasy).
+has_2_genre(movie7303).
 has_genre(movie7303, drama).
 has_genre(movie7303, war).
+has_4_genre(movie7304).
 has_genre(movie7304, animation).
 has_genre(movie7304, comedy).
 has_genre(movie7304, fantasy).
 has_genre(movie7304, musical).
+has_4_genre(movie7305).
 has_genre(movie7305, crime).
 has_genre(movie7305, drama).
 has_genre(movie7305, mystery).
 has_genre(movie7305, thriller).
+has_3_genre(movie7306).
 has_genre(movie7306, comedy).
 has_genre(movie7306, crime).
 has_genre(movie7306, mystery).
+has_4_genre(movie7307).
 has_genre(movie7307, action).
 has_genre(movie7307, adventure).
 has_genre(movie7307, drama).
 has_genre(movie7307, war).
+has_2_genre(movie7308).
 has_genre(movie7308, adventure).
 has_genre(movie7308, comedy).
+has_1_genre(movie7310).
 has_genre(movie7310, action).
+has_2_genre(movie7311).
 has_genre(movie7311, drama).
 has_genre(movie7311, romance).
+has_2_genre(movie7312).
 has_genre(movie7312, comedy).
 has_genre(movie7312, drama).
+has_2_genre(movie7315).
 has_genre(movie7315, comedy).
 has_genre(movie7315, drama).
+has_1_genre(movie7316).
 has_genre(movie7316, comedy).
+has_2_genre(movie7317).
 has_genre(movie7317, adventure).
 has_genre(movie7317, comedy).
+has_1_genre(movie7318).
 has_genre(movie7318, drama).
+has_2_genre(movie7319).
 has_genre(movie7319, comedy).
 has_genre(movie7319, horror).
+has_1_genre(movie7320).
 has_genre(movie7320, romance).
+has_1_genre(movie7321).
 has_genre(movie7321, thriller).
+has_2_genre(movie7323).
 has_genre(movie7323, comedy).
 has_genre(movie7323, drama).
+has_2_genre(movie7324).
 has_genre(movie7324, adventure).
 has_genre(movie7324, drama).
+has_4_genre(movie7325).
 has_genre(movie7325, action).
 has_genre(movie7325, comedy).
 has_genre(movie7325, crime).
 has_genre(movie7325, thriller).
+has_2_genre(movie7326).
 has_genre(movie7326, crime).
 has_genre(movie7326, drama).
+has_1_genre(movie7327).
 has_genre(movie7327, drama).
+has_1_genre(movie7328).
 has_genre(movie7328, drama).
+has_3_genre(movie7333).
 has_genre(movie7333, crime).
 has_genre(movie7333, drama).
 has_genre(movie7333, thriller).
+has_1_genre(movie7335).
 has_genre(movie7335, film-noir).
+has_2_genre(movie7336).
 has_genre(movie7336, drama).
 has_genre(movie7336, war).
+has_1_genre(movie7340).
 has_genre(movie7340, comedy).
+has_2_genre(movie7344).
 has_genre(movie7344, comedy).
 has_genre(movie7344, crime).
+has_4_genre(movie7345).
 has_genre(movie7345, action).
 has_genre(movie7345, adventure).
 has_genre(movie7345, children).
 has_genre(movie7345, comedy).
+has_2_genre(movie7346).
 has_genre(movie7346, comedy).
 has_genre(movie7346, romance).
+has_2_genre(movie7347).
 has_genre(movie7347, mystery).
 has_genre(movie7347, thriller).
+has_1_genre(movie7348).
 has_genre(movie7348, thriller).
+has_1_genre(movie7349).
 has_genre(movie7349, drama).
+has_3_genre(movie7352).
 has_genre(movie7352, comedy).
 has_genre(movie7352, drama).
 has_genre(movie7352, romance).
+has_3_genre(movie7354).
 has_genre(movie7354, comedy).
 has_genre(movie7354, drama).
 has_genre(movie7354, romance).
+has_2_genre(movie7357).
 has_genre(movie7357, drama).
 has_genre(movie7357, romance).
+has_4_genre(movie7360).
 has_genre(movie7360, action).
 has_genre(movie7360, drama).
 has_genre(movie7360, horror).
 has_genre(movie7360, thriller).
+has_3_genre(movie7361).
 has_genre(movie7361, drama).
 has_genre(movie7361, romance).
 has_genre(movie7361, sci-fi).
+has_3_genre(movie7362).
 has_genre(movie7362, crime).
 has_genre(movie7362, drama).
 has_genre(movie7362, thriller).
+has_3_genre(movie7364).
 has_genre(movie7364, comedy).
 has_genre(movie7364, crime).
 has_genre(movie7364, drama).
+has_3_genre(movie7366).
 has_genre(movie7366, comedy).
 has_genre(movie7366, drama).
 has_genre(movie7366, romance).
+has_2_genre(movie7367).
 has_genre(movie7367, comedy).
 has_genre(movie7367, crime).
+has_3_genre(movie7368).
 has_genre(movie7368, crime).
 has_genre(movie7368, drama).
 has_genre(movie7368, thriller).
+has_5_genre(movie7369).
 has_genre(movie7369, action).
 has_genre(movie7369, adventure).
 has_genre(movie7369, children).
 has_genre(movie7369, comedy).
 has_genre(movie7369, mystery).
+has_3_genre(movie7371).
 has_genre(movie7371, drama).
 has_genre(movie7371, mystery).
 has_genre(movie7371, thriller).
+has_1_genre(movie7372).
 has_genre(movie7372, drama).
+has_4_genre(movie7373).
 has_genre(movie7373, action).
 has_genre(movie7373, adventure).
 has_genre(movie7373, fantasy).
 has_genre(movie7373, horror).
+has_2_genre(movie7375).
 has_genre(movie7375, comedy).
 has_genre(movie7375, romance).
+has_1_genre(movie7376).
 has_genre(movie7376, action).
+has_2_genre(movie7377).
 has_genre(movie7377, crime).
 has_genre(movie7377, drama).
+has_3_genre(movie7379).
 has_genre(movie7379, drama).
 has_genre(movie7379, war).
 has_genre(movie7379, western).
+has_3_genre(movie7380).
 has_genre(movie7380, comedy).
 has_genre(movie7380, fantasy).
 has_genre(movie7380, romance).
+has_3_genre(movie7381).
 has_genre(movie7381, action).
 has_genre(movie7381, comedy).
 has_genre(movie7381, crime).
+has_3_genre(movie7382).
 has_genre(movie7382, drama).
 has_genre(movie7382, mystery).
 has_genre(movie7382, thriller).
+has_2_genre(movie7386).
 has_genre(movie7386, adventure).
 has_genre(movie7386, drama).
+has_3_genre(movie7387).
 has_genre(movie7387, action).
 has_genre(movie7387, drama).
 has_genre(movie7387, horror).
+has_2_genre(movie7390).
 has_genre(movie7390, drama).
 has_genre(movie7390, musical).
+has_3_genre(movie7394).
 has_genre(movie7394, action).
 has_genre(movie7394, adventure).
 has_genre(movie7394, comedy).
+has_2_genre(movie7395).
 has_genre(movie7395, comedy).
 has_genre(movie7395, drama).
+has_1_genre(movie7396).
 has_genre(movie7396, drama).
+has_2_genre(movie7411).
 has_genre(movie7411, comedy).
 has_genre(movie7411, horror).
+has_2_genre(movie7414).
 has_genre(movie7414, comedy).
 has_genre(movie7414, drama).
+has_2_genre(movie7419).
 has_genre(movie7419, comedy).
 has_genre(movie7419, thriller).
+has_3_genre(movie7438).
 has_genre(movie7438, action).
 has_genre(movie7438, drama).
 has_genre(movie7438, thriller).
+has_3_genre(movie7439).
 has_genre(movie7439, action).
 has_genre(movie7439, crime).
 has_genre(movie7439, thriller).
+has_1_genre(movie7440).
 has_genre(movie7440, documentary).
+has_1_genre(movie7443).
 has_genre(movie7443, documentary).
+has_3_genre(movie7444).
 has_genre(movie7444, comedy).
 has_genre(movie7444, fantasy).
 has_genre(movie7444, romance).
+has_5_genre(movie7445).
 has_genre(movie7445, action).
 has_genre(movie7445, crime).
 has_genre(movie7445, drama).
 has_genre(movie7445, mystery).
 has_genre(movie7445, thriller).
+has_1_genre(movie7448).
 has_genre(movie7448, comedy).
+has_3_genre(movie7449).
 has_genre(movie7449, drama).
 has_genre(movie7449, horror).
 has_genre(movie7449, thriller).
+has_2_genre(movie7450).
 has_genre(movie7450, comedy).
 has_genre(movie7450, romance).
+has_1_genre(movie7451).
 has_genre(movie7451, comedy).
+has_4_genre(movie7454).
 has_genre(movie7454, action).
 has_genre(movie7454, adventure).
 has_genre(movie7454, fantasy).
 has_genre(movie7454, horror).
+has_1_genre(movie7455).
 has_genre(movie7455, drama).
+has_2_genre(movie7457).
 has_genre(movie7457, comedy).
 has_genre(movie7457, romance).
+has_4_genre(movie7458).
 has_genre(movie7458, action).
 has_genre(movie7458, adventure).
 has_genre(movie7458, drama).
 has_genre(movie7458, war).
+has_2_genre(movie7459).
 has_genre(movie7459, crime).
 has_genre(movie7459, drama).
+has_2_genre(movie7460).
 has_genre(movie7460, comedy).
 has_genre(movie7460, drama).
+has_2_genre(movie7477).
 has_genre(movie7477, horror).
 has_genre(movie7477, thriller).
+has_1_genre(movie7479).
 has_genre(movie7479, drama).
+has_3_genre(movie7481).
 has_genre(movie7481, adventure).
 has_genre(movie7481, drama).
 has_genre(movie7481, sci-fi).
+has_2_genre(movie7482).
 has_genre(movie7482, action).
 has_genre(movie7482, crime).
+has_2_genre(movie7486).
 has_genre(movie7486, drama).
 has_genre(movie7486, romance).
+has_1_genre(movie7487).
 has_genre(movie7487, drama).
+has_2_genre(movie7492).
 has_genre(movie7492, drama).
 has_genre(movie7492, horror).
+has_1_genre(movie7493).
 has_genre(movie7493, drama).
+has_2_genre(movie7541).
 has_genre(movie7541, comedy).
 has_genre(movie7541, romance).
+has_3_genre(movie7560).
 has_genre(movie7560, drama).
 has_genre(movie7560, thriller).
 has_genre(movie7560, war).
+has_3_genre(movie7561).
 has_genre(movie7561, fantasy).
 has_genre(movie7561, horror).
 has_genre(movie7561, thriller).
+has_2_genre(movie7562).
 has_genre(movie7562, action).
 has_genre(movie7562, crime).
+has_1_genre(movie7564).
 has_genre(movie7564, horror).
+has_1_genre(movie7566).
 has_genre(movie7566, documentary).
+has_4_genre(movie7569).
 has_genre(movie7569, action).
 has_genre(movie7569, adventure).
 has_genre(movie7569, sci-fi).
 has_genre(movie7569, thriller).
+has_3_genre(movie7570).
 has_genre(movie7570, action).
 has_genre(movie7570, adventure).
 has_genre(movie7570, thriller).
+has_1_genre(movie7572).
 has_genre(movie7572, drama).
+has_3_genre(movie7573).
 has_genre(movie7573, action).
 has_genre(movie7573, adventure).
 has_genre(movie7573, thriller).
+has_3_genre(movie7579).
 has_genre(movie7579, comedy).
 has_genre(movie7579, drama).
 has_genre(movie7579, romance).
+has_1_genre(movie7581).
 has_genre(movie7581, drama).
+has_2_genre(movie7584).
 has_genre(movie7584, comedy).
 has_genre(movie7584, romance).
+has_3_genre(movie7587).
 has_genre(movie7587, crime).
 has_genre(movie7587, drama).
 has_genre(movie7587, thriller).
+has_3_genre(movie7614).
 has_genre(movie7614, musical).
 has_genre(movie7614, romance).
 has_genre(movie7614, western).
+has_1_genre(movie7615).
 has_genre(movie7615, drama).
+has_2_genre(movie7616).
 has_genre(movie7616, mystery).
 has_genre(movie7616, thriller).
+has_1_genre(movie7618).
 has_genre(movie7618, drama).
+has_1_genre(movie7619).
 has_genre(movie7619, drama).
+has_2_genre(movie7620).
 has_genre(movie7620, comedy).
 has_genre(movie7620, drama).
+has_1_genre(movie7624).
 has_genre(movie7624, drama).
+has_2_genre(movie7636).
 has_genre(movie7636, horror).
 has_genre(movie7636, thriller).
+has_3_genre(movie7646).
 has_genre(movie7646, horror).
 has_genre(movie7646, mystery).
 has_genre(movie7646, thriller).
+has_1_genre(movie7647).
 has_genre(movie7647, comedy).
+has_2_genre(movie7649).
 has_genre(movie7649, adventure).
 has_genre(movie7649, sci-fi).
+has_1_genre(movie7650).
 has_genre(movie7650, horror).
+has_4_genre(movie7657).
 has_genre(movie7657, action).
 has_genre(movie7657, comedy).
 has_genre(movie7657, fantasy).
 has_genre(movie7657, horror).
+has_2_genre(movie7669).
 has_genre(movie7669, drama).
 has_genre(movie7669, romance).
+has_2_genre(movie7698).
 has_genre(movie7698, drama).
 has_genre(movie7698, thriller).
+has_4_genre(movie7700).
 has_genre(movie7700, action).
 has_genre(movie7700, adventure).
 has_genre(movie7700, drama).
 has_genre(movie7700, thriller).
+has_2_genre(movie7701).
 has_genre(movie7701, comedy).
 has_genre(movie7701, romance).
+has_1_genre(movie7702).
 has_genre(movie7702, drama).
+has_1_genre(movie7704).
 has_genre(movie7704, action).
+has_2_genre(movie7705).
 has_genre(movie7705, comedy).
 has_genre(movie7705, romance).
+has_2_genre(movie7706).
 has_genre(movie7706, comedy).
 has_genre(movie7706, musical).
+has_3_genre(movie7707).
 has_genre(movie7707, comedy).
 has_genre(movie7707, drama).
 has_genre(movie7707, romance).
+has_2_genre(movie7708).
 has_genre(movie7708, comedy).
 has_genre(movie7708, fantasy).
+has_4_genre(movie7713).
 has_genre(movie7713, drama).
 has_genre(movie7713, horror).
 has_genre(movie7713, romance).
 has_genre(movie7713, thriller).
+has_3_genre(movie7714).
 has_genre(movie7714, drama).
 has_genre(movie7714, musical).
 has_genre(movie7714, romance).
+has_1_genre(movie7716).
 has_genre(movie7716, comedy).
+has_4_genre(movie7720).
 has_genre(movie7720, action).
 has_genre(movie7720, adventure).
 has_genre(movie7720, comedy).
 has_genre(movie7720, romance).
+has_1_genre(movie7727).
 has_genre(movie7727, comedy).
+has_4_genre(movie7728).
 has_genre(movie7728, crime).
 has_genre(movie7728, drama).
 has_genre(movie7728, film-noir).
 has_genre(movie7728, thriller).
+has_2_genre(movie7730).
 has_genre(movie7730, comedy).
 has_genre(movie7730, drama).
+has_2_genre(movie7742).
 has_genre(movie7742, drama).
 has_genre(movie7742, horror).
+has_3_genre(movie7743).
 has_genre(movie7743, adventure).
 has_genre(movie7743, children).
 has_genre(movie7743, sci-fi).
+has_1_genre(movie7745).
 has_genre(movie7745, drama).
+has_2_genre(movie7748).
 has_genre(movie7748, crime).
 has_genre(movie7748, drama).
+has_1_genre(movie7749).
 has_genre(movie7749, drama).
+has_1_genre(movie7753).
 has_genre(movie7753, drama).
+has_3_genre(movie7756).
 has_genre(movie7756, action).
 has_genre(movie7756, drama).
 has_genre(movie7756, war).
+has_3_genre(movie7757).
 has_genre(movie7757, action).
 has_genre(movie7757, adventure).
 has_genre(movie7757, fantasy).
+has_2_genre(movie7762).
 has_genre(movie7762, drama).
 has_genre(movie7762, thriller).
+has_4_genre(movie7766).
 has_genre(movie7766, action).
 has_genre(movie7766, drama).
 has_genre(movie7766, thriller).
 has_genre(movie7766, war).
+has_1_genre(movie7767).
 has_genre(movie7767, drama).
+has_2_genre(movie7772).
 has_genre(movie7772, film-noir).
 has_genre(movie7772, thriller).
+has_1_genre(movie7773).
 has_genre(movie7773, drama).
+has_1_genre(movie7781).
 has_genre(movie7781, comedy).
+has_2_genre(movie7782).
 has_genre(movie7782, action).
 has_genre(movie7782, drama).
+has_1_genre(movie7786).
 has_genre(movie7786, documentary).
+has_1_genre(movie7789).
 has_genre(movie7789, drama).
+has_1_genre(movie7792).
 has_genre(movie7792, thriller).
+has_4_genre(movie7802).
 has_genre(movie7802, action).
 has_genre(movie7802, adventure).
 has_genre(movie7802, crime).
 has_genre(movie7802, thriller).
+has_2_genre(movie7810).
 has_genre(movie7810, adventure).
 has_genre(movie7810, sci-fi).
+has_2_genre(movie7811).
 has_genre(movie7811, drama).
 has_genre(movie7811, sci-fi).
+has_2_genre(movie7812).
 has_genre(movie7812, drama).
 has_genre(movie7812, sci-fi).
+has_2_genre(movie7815).
 has_genre(movie7815, comedy).
 has_genre(movie7815, musical).
+has_2_genre(movie7820).
 has_genre(movie7820, crime).
 has_genre(movie7820, drama).
+has_3_genre(movie7822).
 has_genre(movie7822, adventure).
 has_genre(movie7822, drama).
 has_genre(movie7822, romance).
+has_3_genre(movie7826).
 has_genre(movie7826, comedy).
 has_genre(movie7826, romance).
 has_genre(movie7826, thriller).
+has_5_genre(movie7831).
 has_genre(movie7831, comedy).
 has_genre(movie7831, crime).
 has_genre(movie7831, drama).
 has_genre(movie7831, mystery).
 has_genre(movie7831, romance).
+has_3_genre(movie7832).
 has_genre(movie7832, comedy).
 has_genre(movie7832, crime).
 has_genre(movie7832, mystery).
+has_3_genre(movie7833).
 has_genre(movie7833, comedy).
 has_genre(movie7833, crime).
 has_genre(movie7833, mystery).
+has_4_genre(movie7834).
 has_genre(movie7834, comedy).
 has_genre(movie7834, crime).
 has_genre(movie7834, mystery).
 has_genre(movie7834, romance).
+has_more_than_5_genre(movie7835).
 has_genre(movie7835, comedy).
 has_genre(movie7835, crime).
 has_genre(movie7835, drama).
 has_genre(movie7835, musical).
 has_genre(movie7835, mystery).
 has_genre(movie7835, romance).
+has_1_genre(movie7839).
 has_genre(movie7839, comedy).
+has_3_genre(movie7840).
 has_genre(movie7840, adventure).
 has_genre(movie7840, comedy).
 has_genre(movie7840, war).
+has_2_genre(movie7841).
 has_genre(movie7841, fantasy).
 has_genre(movie7841, sci-fi).
+has_3_genre(movie7842).
 has_genre(movie7842, drama).
 has_genre(movie7842, fantasy).
 has_genre(movie7842, sci-fi).
+has_1_genre(movie7843).
 has_genre(movie7843, comedy).
+has_2_genre(movie7844).
 has_genre(movie7844, action).
 has_genre(movie7844, comedy).
+has_3_genre(movie7845).
 has_genre(movie7845, comedy).
 has_genre(movie7845, horror).
 has_genre(movie7845, sci-fi).
+has_3_genre(movie7846).
 has_genre(movie7846, comedy).
 has_genre(movie7846, horror).
 has_genre(movie7846, sci-fi).
+has_1_genre(movie7879).
 has_genre(movie7879, comedy).
+has_1_genre(movie7882).
 has_genre(movie7882, horror).
+has_2_genre(movie7883).
 has_genre(movie7883, drama).
 has_genre(movie7883, horror).
+has_1_genre(movie7884).
 has_genre(movie7884, comedy).
+has_2_genre(movie7888).
 has_genre(movie7888, comedy).
 has_genre(movie7888, musical).
+has_1_genre(movie7889).
 has_genre(movie7889, western).
+has_3_genre(movie7891).
 has_genre(movie7891, drama).
 has_genre(movie7891, horror).
 has_genre(movie7891, sci-fi).
+has_2_genre(movie7894).
 has_genre(movie7894, action).
 has_genre(movie7894, western).
+has_3_genre(movie7895).
 has_genre(movie7895, crime).
 has_genre(movie7895, drama).
 has_genre(movie7895, thriller).
+has_3_genre(movie7896).
 has_genre(movie7896, adventure).
 has_genre(movie7896, drama).
 has_genre(movie7896, western).
+has_1_genre(movie7899).
 has_genre(movie7899, action).
+has_3_genre(movie7900).
 has_genre(movie7900, drama).
 has_genre(movie7900, horror).
 has_genre(movie7900, sci-fi).
+has_1_genre(movie7916).
 has_genre(movie7916, comedy).
+has_2_genre(movie7920).
 has_genre(movie7920, comedy).
 has_genre(movie7920, crime).
+has_3_genre(movie7924).
 has_genre(movie7924, drama).
 has_genre(movie7924, film-noir).
 has_genre(movie7924, thriller).
+has_2_genre(movie7925).
 has_genre(movie7925, action).
 has_genre(movie7925, adventure).
+has_4_genre(movie7926).
 has_genre(movie7926, crime).
 has_genre(movie7926, drama).
 has_genre(movie7926, film-noir).
 has_genre(movie7926, thriller).
+has_3_genre(movie7930).
 has_genre(movie7930, horror).
 has_genre(movie7930, mystery).
 has_genre(movie7930, thriller).
+has_1_genre(movie7932).
 has_genre(movie7932, documentary).
+has_1_genre(movie7934).
 has_genre(movie7934, comedy).
+has_2_genre(movie7936).
 has_genre(movie7936, drama).
 has_genre(movie7936, war).
+has_1_genre(movie7937).
 has_genre(movie7937, drama).
+has_1_genre(movie7938).
 has_genre(movie7938, drama).
+has_1_genre(movie7939).
 has_genre(movie7939, drama).
+has_1_genre(movie7940).
 has_genre(movie7940, drama).
+has_2_genre(movie7943).
 has_genre(movie7943, crime).
 has_genre(movie7943, film-noir).
+has_2_genre(movie7944).
 has_genre(movie7944, drama).
 has_genre(movie7944, thriller).
+has_2_genre(movie7951).
 has_genre(movie7951, fantasy).
 has_genre(movie7951, horror).
+has_1_genre(movie7976).
 has_genre(movie7976, drama).
+has_2_genre(movie7979).
 has_genre(movie7979, documentary).
 has_genre(movie7979, musical).
+has_3_genre(movie7980).
 has_genre(movie7980, action).
 has_genre(movie7980, drama).
 has_genre(movie7980, war).
+has_3_genre(movie7981).
 has_genre(movie7981, crime).
 has_genre(movie7981, drama).
 has_genre(movie7981, thriller).
+has_4_genre(movie7982).
 has_genre(movie7982, drama).
 has_genre(movie7982, horror).
 has_genre(movie7982, mystery).
 has_genre(movie7982, thriller).
+has_1_genre(movie7983).
 has_genre(movie7983, comedy).
+has_2_genre(movie7984).
 has_genre(movie7984, horror).
 has_genre(movie7984, sci-fi).
+has_1_genre(movie7986).
 has_genre(movie7986, sci-fi).
+has_1_genre(movie7987).
 has_genre(movie7987, horror).
+has_2_genre(movie7988).
 has_genre(movie7988, comedy).
 has_genre(movie7988, sci-fi).
+has_2_genre(movie7991).
 has_genre(movie7991, action).
 has_genre(movie7991, sci-fi).
+has_2_genre(movie7993).
 has_genre(movie7993, comedy).
 has_genre(movie7993, horror).
+has_3_genre(movie8008).
 has_genre(movie8008, fantasy).
 has_genre(movie8008, musical).
 has_genre(movie8008, romance).
+has_1_genre(movie8010).
 has_genre(movie8010, drama).
+has_1_genre(movie8011).
 has_genre(movie8011, documentary).
+has_2_genre(movie8012).
 has_genre(movie8012, comedy).
 has_genre(movie8012, drama).
+has_1_genre(movie8014).
 has_genre(movie8014, drama).
+has_4_genre(movie8015).
 has_genre(movie8015, adventure).
 has_genre(movie8015, animation).
 has_genre(movie8015, children).
 has_genre(movie8015, fantasy).
+has_4_genre(movie8016).
 has_genre(movie8016, action).
 has_genre(movie8016, crime).
 has_genre(movie8016, drama).
 has_genre(movie8016, thriller).
+has_4_genre(movie8019).
 has_genre(movie8019, drama).
 has_genre(movie8019, horror).
 has_genre(movie8019, mystery).
 has_genre(movie8019, thriller).
+has_3_genre(movie8024).
 has_genre(movie8024, comedy).
 has_genre(movie8024, drama).
 has_genre(movie8024, romance).
+has_1_genre(movie8025).
 has_genre(movie8025, drama).
+has_3_genre(movie8033).
 has_genre(movie8033, comedy).
 has_genre(movie8033, crime).
 has_genre(movie8033, romance).
+has_3_genre(movie8035).
 has_genre(movie8035, crime).
 has_genre(movie8035, horror).
 has_genre(movie8035, thriller).
+has_2_genre(movie8042).
 has_genre(movie8042, crime).
 has_genre(movie8042, drama).
+has_2_genre(movie8043).
 has_genre(movie8043, comedy).
 has_genre(movie8043, drama).
+has_3_genre(movie8044).
 has_genre(movie8044, crime).
 has_genre(movie8044, drama).
 has_genre(movie8044, film-noir).
+has_3_genre(movie8045).
 has_genre(movie8045, action).
 has_genre(movie8045, drama).
 has_genre(movie8045, war).
+has_1_genre(movie8057).
 has_genre(movie8057, drama).
+has_3_genre(movie8092).
 has_genre(movie8092, drama).
 has_genre(movie8092, horror).
 has_genre(movie8092, sci-fi).
+has_4_genre(movie8093).
 has_genre(movie8093, action).
 has_genre(movie8093, drama).
 has_genre(movie8093, romance).
 has_genre(movie8093, thriller).
+has_3_genre(movie8094).
 has_genre(movie8094, drama).
 has_genre(movie8094, thriller).
 has_genre(movie8094, western).
+has_2_genre(movie8117).
 has_genre(movie8117, action).
 has_genre(movie8117, comedy).
+has_4_genre(movie8118).
 has_genre(movie8118, action).
 has_genre(movie8118, adventure).
 has_genre(movie8118, thriller).
 has_genre(movie8118, war).
+has_1_genre(movie8119).
 has_genre(movie8119, drama).
+has_1_genre(movie8121).
 has_genre(movie8121, comedy).
+has_2_genre(movie8125).
 has_genre(movie8125, drama).
 has_genre(movie8125, romance).
+has_1_genre(movie8126).
 has_genre(movie8126, drama).
+has_1_genre(movie8128).
 has_genre(movie8128, drama).
+has_2_genre(movie8131).
 has_genre(movie8131, comedy).
 has_genre(movie8131, romance).
+has_2_genre(movie8132).
 has_genre(movie8132, action).
 has_genre(movie8132, drama).
+has_3_genre(movie8136).
 has_genre(movie8136, crime).
 has_genre(movie8136, horror).
 has_genre(movie8136, sci-fi).
+has_2_genre(movie8137).
 has_genre(movie8137, horror).
 has_genre(movie8137, sci-fi).
+has_2_genre(movie8138).
 has_genre(movie8138, horror).
 has_genre(movie8138, sci-fi).
+has_2_genre(movie8142).
 has_genre(movie8142, action).
 has_genre(movie8142, crime).
+has_1_genre(movie8143).
 has_genre(movie8143, drama).
+has_2_genre(movie8147).
 has_genre(movie8147, drama).
 has_genre(movie8147, sci-fi).
+has_1_genre(movie8153).
 has_genre(movie8153, drama).
+has_1_genre(movie8154).
 has_genre(movie8154, drama).
+has_3_genre(movie8157).
 has_genre(movie8157, animation).
 has_genre(movie8157, fantasy).
 has_genre(movie8157, thriller).
+has_2_genre(movie8158).
 has_genre(movie8158, crime).
 has_genre(movie8158, drama).
+has_3_genre(movie8167).
 has_genre(movie8167, action).
 has_genre(movie8167, adventure).
 has_genre(movie8167, romance).
+has_4_genre(movie8169).
 has_genre(movie8169, children).
 has_genre(movie8169, comedy).
 has_genre(movie8169, fantasy).
 has_genre(movie8169, sci-fi).
+has_2_genre(movie8183).
 has_genre(movie8183, comedy).
 has_genre(movie8183, drama).
+has_1_genre(movie8188).
 has_genre(movie8188, drama).
+has_1_genre(movie8189).
 has_genre(movie8189, comedy).
+has_3_genre(movie8190).
 has_genre(movie8190, comedy).
 has_genre(movie8190, drama).
 has_genre(movie8190, war).
+has_1_genre(movie8191).
 has_genre(movie8191, drama).
+has_3_genre(movie8195).
 has_genre(movie8195, drama).
 has_genre(movie8195, mystery).
 has_genre(movie8195, romance).
+has_2_genre(movie8196).
 has_genre(movie8196, comedy).
 has_genre(movie8196, horror).
+has_3_genre(movie8197).
 has_genre(movie8197, drama).
 has_genre(movie8197, romance).
 has_genre(movie8197, war).
+has_2_genre(movie8199).
 has_genre(movie8199, drama).
 has_genre(movie8199, thriller).
+has_2_genre(movie8207).
 has_genre(movie8207, crime).
 has_genre(movie8207, thriller).
+has_1_genre(movie8225).
 has_genre(movie8225, horror).
+has_1_genre(movie8228).
 has_genre(movie8228, mystery).
+has_2_genre(movie8232).
 has_genre(movie8232, comedy).
 has_genre(movie8232, drama).
+has_3_genre(movie8235).
 has_genre(movie8235, action).
 has_genre(movie8235, comedy).
 has_genre(movie8235, romance).
+has_2_genre(movie8236).
 has_genre(movie8236, drama).
 has_genre(movie8236, film-noir).
+has_2_genre(movie8238).
 has_genre(movie8238, comedy).
 has_genre(movie8238, crime).
+has_2_genre(movie8239).
 has_genre(movie8239, comedy).
 has_genre(movie8239, drama).
+has_3_genre(movie8241).
 has_genre(movie8241, action).
 has_genre(movie8241, comedy).
 has_genre(movie8241, thriller).
+has_more_than_5_genre(movie8253).
 has_genre(movie8253, action).
 has_genre(movie8253, adventure).
 has_genre(movie8253, animation).
 has_genre(movie8253, comedy).
 has_genre(movie8253, crime).
 has_genre(movie8253, mystery).
+has_4_genre(movie8254).
 has_genre(movie8254, comedy).
 has_genre(movie8254, drama).
 has_genre(movie8254, fantasy).
 has_genre(movie8254, romance).
+has_1_genre(movie8261).
 has_genre(movie8261, drama).
+has_1_genre(movie8264).
 has_genre(movie8264, documentary).
+has_2_genre(movie8266).
 has_genre(movie8266, drama).
 has_genre(movie8266, musical).
+has_2_genre(movie8268).
 has_genre(movie8268, action).
 has_genre(movie8268, thriller).
+has_3_genre(movie8270).
 has_genre(movie8270, comedy).
 has_genre(movie8270, drama).
 has_genre(movie8270, romance).
+has_1_genre(movie8275).
 has_genre(movie8275, comedy).
+has_2_genre(movie8290).
 has_genre(movie8290, action).
 has_genre(movie8290, crime).
+has_2_genre(movie8293).
 has_genre(movie8293, comedy).
 has_genre(movie8293, drama).
+has_3_genre(movie8302).
 has_genre(movie8302, comedy).
 has_genre(movie8302, drama).
 has_genre(movie8302, romance).
+has_2_genre(movie8327).
 has_genre(movie8327, drama).
 has_genre(movie8327, romance).
+has_1_genre(movie8331).
 has_genre(movie8331, comedy).
+has_1_genre(movie8335).
 has_genre(movie8335, drama).
+has_2_genre(movie8336).
 has_genre(movie8336, comedy).
 has_genre(movie8336, romance).
+has_2_genre(movie8337).
 has_genre(movie8337, drama).
 has_genre(movie8337, war).
+has_1_genre(movie8338).
 has_genre(movie8338, drama).
+has_2_genre(movie8340).
 has_genre(movie8340, drama).
 has_genre(movie8340, thriller).
+has_3_genre(movie8341).
 has_genre(movie8341, adventure).
 has_genre(movie8341, crime).
 has_genre(movie8341, drama).
+has_more_than_5_genre(movie8360).
 has_genre(movie8360, adventure).
 has_genre(movie8360, animation).
 has_genre(movie8360, children).
 has_genre(movie8360, comedy).
 has_genre(movie8360, musical).
 has_genre(movie8360, romance).
+has_5_genre(movie8361).
 has_genre(movie8361, action).
 has_genre(movie8361, adventure).
 has_genre(movie8361, drama).
 has_genre(movie8361, sci-fi).
 has_genre(movie8361, thriller).
+has_3_genre(movie8362).
 has_genre(movie8362, comedy).
 has_genre(movie8362, drama).
 has_genre(movie8362, romance).
+has_1_genre(movie8363).
 has_genre(movie8363, comedy).
+has_1_genre(movie8364).
 has_genre(movie8364, drama).
+has_2_genre(movie8366).
 has_genre(movie8366, comedy).
 has_genre(movie8366, drama).
+has_3_genre(movie8368).
 has_genre(movie8368, adventure).
 has_genre(movie8368, fantasy).
 has_genre(movie8368, imax).
+has_5_genre(movie8369).
 has_genre(movie8369, action).
 has_genre(movie8369, crime).
 has_genre(movie8369, horror).
 has_genre(movie8369, mystery).
 has_genre(movie8369, thriller).
+has_4_genre(movie8370).
 has_genre(movie8370, action).
 has_genre(movie8370, comedy).
 has_genre(movie8370, crime).
 has_genre(movie8370, drama).
+has_3_genre(movie8371).
 has_genre(movie8371, action).
 has_genre(movie8371, sci-fi).
 has_genre(movie8371, thriller).
+has_3_genre(movie8372).
 has_genre(movie8372, animation).
 has_genre(movie8372, children).
 has_genre(movie8372, comedy).
+has_3_genre(movie8373).
 has_genre(movie8373, comedy).
 has_genre(movie8373, fantasy).
 has_genre(movie8373, thriller).
+has_1_genre(movie8375).
 has_genre(movie8375, documentary).
+has_1_genre(movie8376).
 has_genre(movie8376, comedy).
+has_1_genre(movie8378).
 has_genre(movie8378, drama).
+has_1_genre(movie8379).
 has_genre(movie8379, drama).
+has_1_genre(movie8380).
 has_genre(movie8380, comedy).
+has_1_genre(movie8382).
 has_genre(movie8382, comedy).
+has_2_genre(movie8383).
 has_genre(movie8383, comedy).
 has_genre(movie8383, romance).
+has_2_genre(movie8385).
 has_genre(movie8385, comedy).
 has_genre(movie8385, romance).
+has_2_genre(movie8387).
 has_genre(movie8387, comedy).
 has_genre(movie8387, crime).
+has_2_genre(movie8391).
 has_genre(movie8391, comedy).
 has_genre(movie8391, drama).
+has_2_genre(movie8402).
 has_genre(movie8402, comedy).
 has_genre(movie8402, romance).
+has_2_genre(movie8405).
 has_genre(movie8405, drama).
 has_genre(movie8405, horror).
+has_3_genre(movie8410).
 has_genre(movie8410, crime).
 has_genre(movie8410, drama).
 has_genre(movie8410, film-noir).
+has_2_genre(movie8424).
 has_genre(movie8424, drama).
 has_genre(movie8424, romance).
+has_1_genre(movie8425).
 has_genre(movie8425, comedy).
+has_5_genre(movie8426).
 has_genre(movie8426, animation).
 has_genre(movie8426, comedy).
 has_genre(movie8426, drama).
 has_genre(movie8426, fantasy).
 has_genre(movie8426, sci-fi).
+has_2_genre(movie8427).
 has_genre(movie8427, comedy).
 has_genre(movie8427, sci-fi).
+has_4_genre(movie8446).
 has_genre(movie8446, action).
 has_genre(movie8446, drama).
 has_genre(movie8446, romance).
 has_genre(movie8446, war).
+has_1_genre(movie8447).
 has_genre(movie8447, sci-fi).
+has_2_genre(movie8450).
 has_genre(movie8450, adventure).
 has_genre(movie8450, romance).
+has_1_genre(movie8451).
 has_genre(movie8451, drama).
+has_3_genre(movie8454).
 has_genre(movie8454, comedy).
 has_genre(movie8454, drama).
 has_genre(movie8454, fantasy).
+has_3_genre(movie8456).
 has_genre(movie8456, crime).
 has_genre(movie8456, drama).
 has_genre(movie8456, thriller).
+has_1_genre(movie8458).
 has_genre(movie8458, drama).
+has_2_genre(movie8459).
 has_genre(movie8459, drama).
 has_genre(movie8459, romance).
+has_2_genre(movie8461).
 has_genre(movie8461, drama).
 has_genre(movie8461, war).
+has_1_genre(movie8462).
 has_genre(movie8462, drama).
+has_1_genre(movie8463).
 has_genre(movie8463, drama).
+has_3_genre(movie8464).
 has_genre(movie8464, comedy).
 has_genre(movie8464, documentary).
 has_genre(movie8464, drama).
+has_4_genre(movie8465).
 has_genre(movie8465, crime).
 has_genre(movie8465, drama).
 has_genre(movie8465, film-noir).
 has_genre(movie8465, romance).
+has_2_genre(movie8477).
 has_genre(movie8477, romance).
 has_genre(movie8477, sci-fi).
+has_more_than_5_genre(movie8481).
 has_genre(movie8481, action).
 has_genre(movie8481, adventure).
 has_genre(movie8481, drama).
 has_genre(movie8481, romance).
 has_genre(movie8481, thriller).
 has_genre(movie8481, western).
+has_3_genre(movie8482).
 has_genre(movie8482, drama).
 has_genre(movie8482, fantasy).
 has_genre(movie8482, horror).
+has_2_genre(movie8484).
 has_genre(movie8484, drama).
 has_genre(movie8484, war).
+has_3_genre(movie8487).
 has_genre(movie8487, children).
 has_genre(movie8487, comedy).
 has_genre(movie8487, musical).
+has_3_genre(movie8491).
 has_genre(movie8491, crime).
 has_genre(movie8491, drama).
 has_genre(movie8491, film-noir).
+has_2_genre(movie8492).
 has_genre(movie8492, drama).
 has_genre(movie8492, fantasy).
+has_3_genre(movie8493).
 has_genre(movie8493, action).
 has_genre(movie8493, drama).
 has_genre(movie8493, war).
+has_1_genre(movie8494).
 has_genre(movie8494, drama).
+has_2_genre(movie8495).
 has_genre(movie8495, crime).
 has_genre(movie8495, drama).
+has_3_genre(movie8500).
 has_genre(movie8500, action).
 has_genre(movie8500, horror).
 has_genre(movie8500, sci-fi).
+has_2_genre(movie8501).
 has_genre(movie8501, action).
 has_genre(movie8501, thriller).
+has_3_genre(movie8502).
 has_genre(movie8502, drama).
 has_genre(movie8502, musical).
 has_genre(movie8502, romance).
+has_2_genre(movie8506).
 has_genre(movie8506, mystery).
 has_genre(movie8506, thriller).
+has_3_genre(movie8507).
 has_genre(movie8507, crime).
 has_genre(movie8507, drama).
 has_genre(movie8507, horror).
+has_1_genre(movie8511).
 has_genre(movie8511, comedy).
+has_1_genre(movie8512).
 has_genre(movie8512, comedy).
+has_1_genre(movie8518).
 has_genre(movie8518, drama).
+has_2_genre(movie8521).
 has_genre(movie8521, drama).
 has_genre(movie8521, horror).
+has_3_genre(movie8526).
 has_genre(movie8526, adventure).
 has_genre(movie8526, children).
 has_genre(movie8526, comedy).
+has_1_genre(movie8528).
 has_genre(movie8528, comedy).
+has_3_genre(movie8529).
 has_genre(movie8529, comedy).
 has_genre(movie8529, drama).
 has_genre(movie8529, romance).
+has_2_genre(movie8530).
 has_genre(movie8530, drama).
 has_genre(movie8530, romance).
+has_3_genre(movie8531).
 has_genre(movie8531, action).
 has_genre(movie8531, comedy).
 has_genre(movie8531, crime).
+has_1_genre(movie8532).
 has_genre(movie8532, drama).
+has_2_genre(movie8533).
 has_genre(movie8533, drama).
 has_genre(movie8533, romance).
+has_3_genre(movie8534).
 has_genre(movie8534, adventure).
 has_genre(movie8534, children).
 has_genre(movie8534, drama).
+has_2_genre(movie8535).
 has_genre(movie8535, drama).
 has_genre(movie8535, musical).
+has_2_genre(movie8542).
 has_genre(movie8542, comedy).
 has_genre(movie8542, musical).
+has_2_genre(movie8571).
 has_genre(movie8571, comedy).
 has_genre(movie8571, drama).
+has_4_genre(movie8574).
 has_genre(movie8574, animation).
 has_genre(movie8574, children).
 has_genre(movie8574, comedy).
 has_genre(movie8574, musical).
+has_2_genre(movie8575).
 has_genre(movie8575, comedy).
 has_genre(movie8575, drama).
+has_1_genre(movie8577).
 has_genre(movie8577, documentary).
+has_4_genre(movie8578).
 has_genre(movie8578, action).
 has_genre(movie8578, comedy).
 has_genre(movie8578, horror).
 has_genre(movie8578, sci-fi).
+has_4_genre(movie8580).
 has_genre(movie8580, adventure).
 has_genre(movie8580, comedy).
 has_genre(movie8580, fantasy).
 has_genre(movie8580, musical).
+has_2_genre(movie8581).
 has_genre(movie8581, documentary).
 has_genre(movie8581, drama).
+has_2_genre(movie8582).
 has_genre(movie8582, documentary).
 has_genre(movie8582, war).
+has_1_genre(movie8587).
 has_genre(movie8587, documentary).
+has_4_genre(movie8588).
 has_genre(movie8588, drama).
 has_genre(movie8588, mystery).
 has_genre(movie8588, romance).
 has_genre(movie8588, thriller).
+has_3_genre(movie8591).
 has_genre(movie8591, adventure).
 has_genre(movie8591, drama).
 has_genre(movie8591, sci-fi).
+has_4_genre(movie8593).
 has_genre(movie8593, action).
 has_genre(movie8593, crime).
 has_genre(movie8593, drama).
 has_genre(movie8593, thriller).
+has_2_genre(movie8596).
 has_genre(movie8596, comedy).
 has_genre(movie8596, crime).
+has_4_genre(movie8600).
 has_genre(movie8600, crime).
 has_genre(movie8600, drama).
 has_genre(movie8600, film-noir).
 has_genre(movie8600, thriller).
+has_2_genre(movie8601).
 has_genre(movie8601, comedy).
 has_genre(movie8601, drama).
+has_2_genre(movie8604).
 has_genre(movie8604, action).
 has_genre(movie8604, comedy).
+has_2_genre(movie8605).
 has_genre(movie8605, action).
 has_genre(movie8605, comedy).
+has_3_genre(movie8607).
 has_genre(movie8607, adventure).
 has_genre(movie8607, animation).
 has_genre(movie8607, drama).
+has_1_genre(movie8609).
 has_genre(movie8609, comedy).
+has_2_genre(movie8610).
 has_genre(movie8610, comedy).
 has_genre(movie8610, fantasy).
+has_1_genre(movie8611).
 has_genre(movie8611, comedy).
+has_2_genre(movie8614).
 has_genre(movie8614, comedy).
 has_genre(movie8614, romance).
+has_1_genre(movie8617).
 has_genre(movie8617, drama).
+has_4_genre(movie8620).
 has_genre(movie8620, comedy).
 has_genre(movie8620, drama).
 has_genre(movie8620, fantasy).
 has_genre(movie8620, mystery).
+has_1_genre(movie8622).
 has_genre(movie8622, documentary).
+has_2_genre(movie8623).
 has_genre(movie8623, comedy).
 has_genre(movie8623, romance).
+has_2_genre(movie8626).
 has_genre(movie8626, horror).
 has_genre(movie8626, sci-fi).
+has_1_genre(movie8632).
 has_genre(movie8632, comedy).
+has_4_genre(movie8633).
 has_genre(movie8633, action).
 has_genre(movie8633, adventure).
 has_genre(movie8633, comedy).
 has_genre(movie8633, sci-fi).
+has_4_genre(movie8636).
 has_genre(movie8636, action).
 has_genre(movie8636, adventure).
 has_genre(movie8636, sci-fi).
 has_genre(movie8636, imax).
+has_2_genre(movie8638).
 has_genre(movie8638, drama).
 has_genre(movie8638, romance).
+has_4_genre(movie8640).
 has_genre(movie8640, action).
 has_genre(movie8640, adventure).
 has_genre(movie8640, drama).
 has_genre(movie8640, war).
+has_1_genre(movie8641).
 has_genre(movie8641, comedy).
+has_2_genre(movie8643).
 has_genre(movie8643, comedy).
 has_genre(movie8643, romance).
+has_4_genre(movie8644).
 has_genre(movie8644, action).
 has_genre(movie8644, adventure).
 has_genre(movie8644, sci-fi).
 has_genre(movie8644, thriller).
+has_2_genre(movie8645).
 has_genre(movie8645, crime).
 has_genre(movie8645, drama).
+has_1_genre(movie8650).
 has_genre(movie8650, drama).
+has_2_genre(movie8656).
 has_genre(movie8656, crime).
 has_genre(movie8656, drama).
+has_3_genre(movie8665).
 has_genre(movie8665, action).
 has_genre(movie8665, crime).
 has_genre(movie8665, thriller).
+has_3_genre(movie8666).
 has_genre(movie8666, action).
 has_genre(movie8666, crime).
 has_genre(movie8666, fantasy).
+has_2_genre(movie8667).
 has_genre(movie8667, drama).
 has_genre(movie8667, romance).
+has_4_genre(movie8670).
 has_genre(movie8670, crime).
 has_genre(movie8670, horror).
 has_genre(movie8670, mystery).
 has_genre(movie8670, thriller).
+has_2_genre(movie8677).
 has_genre(movie8677, action).
 has_genre(movie8677, sci-fi).
+has_2_genre(movie8684).
 has_genre(movie8684, adventure).
 has_genre(movie8684, drama).
+has_2_genre(movie8685).
 has_genre(movie8685, comedy).
 has_genre(movie8685, drama).
+has_4_genre(movie8690).
 has_genre(movie8690, comedy).
 has_genre(movie8690, drama).
 has_genre(movie8690, sci-fi).
 has_genre(movie8690, war).
+has_1_genre(movie8695).
 has_genre(movie8695, comedy).
+has_1_genre(movie8711).
 has_genre(movie8711, comedy).
+has_2_genre(movie8712).
 has_genre(movie8712, comedy).
 has_genre(movie8712, romance).
+has_4_genre(movie8713).
 has_genre(movie8713, adventure).
 has_genre(movie8713, children).
 has_genre(movie8713, fantasy).
 has_genre(movie8713, musical).
+has_2_genre(movie8714).
 has_genre(movie8714, drama).
 has_genre(movie8714, musical).
+has_1_genre(movie8718).
 has_genre(movie8718, drama).
+has_1_genre(movie8720).
 has_genre(movie8720, comedy).
+has_2_genre(movie8724).
 has_genre(movie8724, drama).
 has_genre(movie8724, war).
+has_1_genre(movie8727).
 has_genre(movie8727, drama).
+has_3_genre(movie8730).
 has_genre(movie8730, action).
 has_genre(movie8730, drama).
 has_genre(movie8730, war).
+has_4_genre(movie8738).
 has_genre(movie8738, comedy).
 has_genre(movie8738, drama).
 has_genre(movie8738, musical).
 has_genre(movie8738, romance).
+has_3_genre(movie8743).
 has_genre(movie8743, adventure).
 has_genre(movie8743, fantasy).
 has_genre(movie8743, sci-fi).
+has_1_genre(movie8748).
 has_genre(movie8748, comedy).
+has_1_genre(movie8753).
 has_genre(movie8753, documentary).
+has_1_genre(movie8754).
 has_genre(movie8754, drama).
+has_1_genre(movie8755).
 has_genre(movie8755, documentary).
+has_3_genre(movie8765).
 has_genre(movie8765, crime).
 has_genre(movie8765, film-noir).
 has_genre(movie8765, thriller).
+has_3_genre(movie8771).
 has_genre(movie8771, crime).
 has_genre(movie8771, mystery).
 has_genre(movie8771, thriller).
+has_2_genre(movie8772).
 has_genre(movie8772, drama).
 has_genre(movie8772, thriller).
+has_3_genre(movie8773).
 has_genre(movie8773, crime).
 has_genre(movie8773, mystery).
 has_genre(movie8773, thriller).
+has_1_genre(movie8774).
 has_genre(movie8774, mystery).
+has_2_genre(movie8778).
 has_genre(movie8778, crime).
 has_genre(movie8778, mystery).
+has_1_genre(movie8781).
 has_genre(movie8781, thriller).
+has_4_genre(movie8782).
 has_genre(movie8782, action).
 has_genre(movie8782, adventure).
 has_genre(movie8782, fantasy).
 has_genre(movie8782, sci-fi).
+has_3_genre(movie8783).
 has_genre(movie8783, drama).
 has_genre(movie8783, mystery).
 has_genre(movie8783, thriller).
+has_3_genre(movie8784).
 has_genre(movie8784, comedy).
 has_genre(movie8784, drama).
 has_genre(movie8784, romance).
+has_4_genre(movie8795).
 has_genre(movie8795, action).
 has_genre(movie8795, adventure).
 has_genre(movie8795, drama).
 has_genre(movie8795, war).
+has_2_genre(movie8796).
 has_genre(movie8796, comedy).
 has_genre(movie8796, musical).
+has_4_genre(movie8798).
 has_genre(movie8798, action).
 has_genre(movie8798, crime).
 has_genre(movie8798, drama).
 has_genre(movie8798, thriller).
+has_2_genre(movie8799).
 has_genre(movie8799, comedy).
 has_genre(movie8799, romance).
+has_2_genre(movie8800).
 has_genre(movie8800, romance).
 has_genre(movie8800, sci-fi).
+has_1_genre(movie8804).
 has_genre(movie8804, drama).
+has_2_genre(movie8807).
 has_genre(movie8807, adventure).
 has_genre(movie8807, comedy).
+has_2_genre(movie8808).
 has_genre(movie8808, comedy).
 has_genre(movie8808, romance).
+has_2_genre(movie8809).
 has_genre(movie8809, comedy).
 has_genre(movie8809, romance).
+has_4_genre(movie8810).
 has_genre(movie8810, action).
 has_genre(movie8810, horror).
 has_genre(movie8810, sci-fi).
 has_genre(movie8810, thriller).
+has_1_genre(movie8813).
 has_genre(movie8813, drama).
+has_1_genre(movie8814).
 has_genre(movie8814, comedy).
+has_2_genre(movie8815).
 has_genre(movie8815, horror).
 has_genre(movie8815, thriller).
+has_2_genre(movie8827).
 has_genre(movie8827, comedy).
 has_genre(movie8827, documentary).
+has_5_genre(movie8830).
 has_genre(movie8830, adventure).
 has_genre(movie8830, drama).
 has_genre(movie8830, horror).
 has_genre(movie8830, sci-fi).
 has_genre(movie8830, thriller).
+has_2_genre(movie8831).
 has_genre(movie8831, crime).
 has_genre(movie8831, thriller).
+has_3_genre(movie8832).
 has_genre(movie8832, action).
 has_genre(movie8832, adventure).
 has_genre(movie8832, drama).
+has_2_genre(movie8833).
 has_genre(movie8833, drama).
 has_genre(movie8833, romance).
+has_2_genre(movie8835).
 has_genre(movie8835, drama).
 has_genre(movie8835, thriller).
+has_3_genre(movie8836).
 has_genre(movie8836, drama).
 has_genre(movie8836, romance).
 has_genre(movie8836, thriller).
+has_2_genre(movie8838).
 has_genre(movie8838, drama).
 has_genre(movie8838, romance).
+has_1_genre(movie8840).
 has_genre(movie8840, drama).
+has_1_genre(movie8844).
 has_genre(movie8844, drama).
+has_1_genre(movie8848).
 has_genre(movie8848, drama).
+has_5_genre(movie8860).
 has_genre(movie8860, action).
 has_genre(movie8860, crime).
 has_genre(movie8860, drama).
 has_genre(movie8860, mystery).
 has_genre(movie8860, thriller).
+has_4_genre(movie8861).
 has_genre(movie8861, action).
 has_genre(movie8861, horror).
 has_genre(movie8861, sci-fi).
 has_genre(movie8861, thriller).
+has_2_genre(movie8864).
 has_genre(movie8864, comedy).
 has_genre(movie8864, drama).
+has_3_genre(movie8865).
 has_genre(movie8865, action).
 has_genre(movie8865, adventure).
 has_genre(movie8865, sci-fi).
+has_2_genre(movie8866).
 has_genre(movie8866, comedy).
 has_genre(movie8866, romance).
+has_2_genre(movie8869).
 has_genre(movie8869, comedy).
 has_genre(movie8869, romance).
+has_4_genre(movie8870).
 has_genre(movie8870, drama).
 has_genre(movie8870, mystery).
 has_genre(movie8870, sci-fi).
 has_genre(movie8870, thriller).
+has_2_genre(movie8873).
 has_genre(movie8873, adventure).
 has_genre(movie8873, drama).
+has_2_genre(movie8874).
 has_genre(movie8874, comedy).
 has_genre(movie8874, horror).
+has_1_genre(movie8875).
 has_genre(movie8875, drama).
+has_3_genre(movie8879).
 has_genre(movie8879, crime).
 has_genre(movie8879, mystery).
 has_genre(movie8879, thriller).
+has_1_genre(movie8880).
 has_genre(movie8880, drama).
+has_4_genre(movie8894).
 has_genre(movie8894, action).
 has_genre(movie8894, drama).
 has_genre(movie8894, horror).
 has_genre(movie8894, thriller).
+has_2_genre(movie8905).
 has_genre(movie8905, adventure).
 has_genre(movie8905, drama).
+has_1_genre(movie8906).
 has_genre(movie8906, horror).
+has_3_genre(movie8907).
 has_genre(movie8907, animation).
 has_genre(movie8907, children).
 has_genre(movie8907, comedy).
+has_3_genre(movie8908).
 has_genre(movie8908, action).
 has_genre(movie8908, drama).
 has_genre(movie8908, thriller).
+has_1_genre(movie8910).
 has_genre(movie8910, comedy).
+has_1_genre(movie8911).
 has_genre(movie8911, romance).
+has_2_genre(movie8912).
 has_genre(movie8912, action).
 has_genre(movie8912, comedy).
+has_2_genre(movie8914).
 has_genre(movie8914, drama).
 has_genre(movie8914, sci-fi).
+has_1_genre(movie8915).
 has_genre(movie8915, drama).
+has_2_genre(movie8916).
 has_genre(movie8916, comedy).
 has_genre(movie8916, romance).
+has_4_genre(movie8917).
 has_genre(movie8917, action).
 has_genre(movie8917, adventure).
 has_genre(movie8917, animation).
 has_genre(movie8917, comedy).
+has_3_genre(movie8918).
 has_genre(movie8918, comedy).
 has_genre(movie8918, crime).
 has_genre(movie8918, drama).
+has_4_genre(movie8919).
 has_genre(movie8919, comedy).
 has_genre(movie8919, drama).
 has_genre(movie8919, fantasy).
 has_genre(movie8919, romance).
+has_1_genre(movie8920).
 has_genre(movie8920, drama).
+has_2_genre(movie8921).
 has_genre(movie8921, drama).
 has_genre(movie8921, romance).
+has_2_genre(movie8928).
 has_genre(movie8928, comedy).
 has_genre(movie8928, horror).
+has_2_genre(movie8933).
 has_genre(movie8933, comedy).
 has_genre(movie8933, drama).
+has_3_genre(movie8934).
 has_genre(movie8934, animation).
 has_genre(movie8934, children).
 has_genre(movie8934, comedy).
+has_2_genre(movie8937).
 has_genre(movie8937, action).
 has_genre(movie8937, drama).
+has_1_genre(movie8938).
 has_genre(movie8938, documentary).
+has_2_genre(movie8939).
 has_genre(movie8939, sci-fi).
 has_genre(movie8939, thriller).
+has_2_genre(movie8943).
 has_genre(movie8943, comedy).
 has_genre(movie8943, drama).
+has_1_genre(movie8946).
 has_genre(movie8946, comedy).
+has_3_genre(movie8947).
 has_genre(movie8947, horror).
 has_genre(movie8947, mystery).
 has_genre(movie8947, thriller).
+has_3_genre(movie8948).
 has_genre(movie8948, comedy).
 has_genre(movie8948, drama).
 has_genre(movie8948, romance).
+has_3_genre(movie8949).
 has_genre(movie8949, comedy).
 has_genre(movie8949, drama).
 has_genre(movie8949, romance).
+has_3_genre(movie8950).
 has_genre(movie8950, drama).
 has_genre(movie8950, mystery).
 has_genre(movie8950, thriller).
+has_1_genre(movie8951).
 has_genre(movie8951, drama).
+has_1_genre(movie8952).
 has_genre(movie8952, drama).
+has_1_genre(movie8954).
 has_genre(movie8954, documentary).
+has_3_genre(movie8955).
 has_genre(movie8955, crime).
 has_genre(movie8955, drama).
 has_genre(movie8955, thriller).
+has_3_genre(movie8957).
 has_genre(movie8957, horror).
 has_genre(movie8957, mystery).
 has_genre(movie8957, thriller).
+has_1_genre(movie8958).
 has_genre(movie8958, drama).
+has_2_genre(movie8959).
 has_genre(movie8959, drama).
 has_genre(movie8959, mystery).
+has_5_genre(movie8961).
 has_genre(movie8961, action).
 has_genre(movie8961, adventure).
 has_genre(movie8961, animation).
 has_genre(movie8961, children).
 has_genre(movie8961, comedy).
+has_1_genre(movie8964).
 has_genre(movie8964, drama).
+has_5_genre(movie8965).
 has_genre(movie8965, adventure).
 has_genre(movie8965, animation).
 has_genre(movie8965, children).
 has_genre(movie8965, fantasy).
 has_genre(movie8965, imax).
+has_1_genre(movie8966).
 has_genre(movie8966, drama).
+has_2_genre(movie8967).
 has_genre(movie8967, comedy).
 has_genre(movie8967, horror).
+has_5_genre(movie8968).
 has_genre(movie8968, action).
 has_genre(movie8968, adventure).
 has_genre(movie8968, comedy).
 has_genre(movie8968, crime).
 has_genre(movie8968, thriller).
+has_3_genre(movie8969).
 has_genre(movie8969, comedy).
 has_genre(movie8969, drama).
 has_genre(movie8969, romance).
+has_1_genre(movie8970).
 has_genre(movie8970, drama).
+has_5_genre(movie8972).
 has_genre(movie8972, action).
 has_genre(movie8972, adventure).
 has_genre(movie8972, drama).
 has_genre(movie8972, mystery).
 has_genre(movie8972, thriller).
+has_2_genre(movie8973).
 has_genre(movie8973, drama).
 has_genre(movie8973, thriller).
+has_4_genre(movie8974).
 has_genre(movie8974, adventure).
 has_genre(movie8974, animation).
 has_genre(movie8974, children).
 has_genre(movie8974, comedy).
+has_4_genre(movie8977).
 has_genre(movie8977, action).
 has_genre(movie8977, adventure).
 has_genre(movie8977, drama).
 has_genre(movie8977, war).
+has_2_genre(movie8978).
 has_genre(movie8978, children).
 has_genre(movie8978, comedy).
+has_1_genre(movie8979).
 has_genre(movie8979, documentary).
+has_2_genre(movie8981).
 has_genre(movie8981, drama).
 has_genre(movie8981, romance).
+has_1_genre(movie8982).
 has_genre(movie8982, drama).
+has_3_genre(movie8983).
 has_genre(movie8983, action).
 has_genre(movie8983, drama).
 has_genre(movie8983, romance).
+has_4_genre(movie8984).
 has_genre(movie8984, action).
 has_genre(movie8984, comedy).
 has_genre(movie8984, crime).
 has_genre(movie8984, thriller).
+has_4_genre(movie8985).
 has_genre(movie8985, action).
 has_genre(movie8985, fantasy).
 has_genre(movie8985, horror).
 has_genre(movie8985, thriller).
+has_1_genre(movie8987).
 has_genre(movie8987, documentary).
+has_2_genre(movie8989).
 has_genre(movie8989, comedy).
 has_genre(movie8989, musical).
+has_1_genre(movie8998).
 has_genre(movie8998, documentary).
+has_3_genre(movie9004).
 has_genre(movie9004, adventure).
 has_genre(movie9004, children).
 has_genre(movie9004, sci-fi).
+has_3_genre(movie9005).
 has_genre(movie9005, drama).
 has_genre(movie9005, mystery).
 has_genre(movie9005, sci-fi).
+has_2_genre(movie9008).
 has_genre(movie9008, horror).
 has_genre(movie9008, sci-fi).
+has_2_genre(movie9010).
 has_genre(movie9010, drama).
 has_genre(movie9010, romance).
+has_2_genre(movie9018).
 has_genre(movie9018, documentary).
 has_genre(movie9018, war).
+has_2_genre(movie25746).
 has_genre(movie25746, drama).
 has_genre(movie25746, horror).
+has_3_genre(movie25750).
 has_genre(movie25750, comedy).
 has_genre(movie25750, fantasy).
 has_genre(movie25750, romance).
+has_1_genre(movie25752).
 has_genre(movie25752, comedy).
+has_1_genre(movie25753).
 has_genre(movie25753, drama).
+has_3_genre(movie25757).
 has_genre(movie25757, drama).
 has_genre(movie25757, musical).
 has_genre(movie25757, romance).
+has_2_genre(movie25769).
 has_genre(movie25769, comedy).
 has_genre(movie25769, romance).
+has_1_genre(movie25771).
 has_genre(movie25771, fantasy).
+has_2_genre(movie25773).
 has_genre(movie25773, crime).
 has_genre(movie25773, drama).
+has_1_genre(movie25782).
 has_genre(movie25782, comedy).
+has_2_genre(movie25788).
 has_genre(movie25788, crime).
 has_genre(movie25788, drama).
+has_3_genre(movie25795).
 has_genre(movie25795, comedy).
 has_genre(movie25795, drama).
 has_genre(movie25795, romance).
+has_1_genre(movie25797).
 has_genre(movie25797, musical).
+has_3_genre(movie25805).
 has_genre(movie25805, comedy).
 has_genre(movie25805, drama).
 has_genre(movie25805, romance).
+has_2_genre(movie25825).
 has_genre(movie25825, drama).
 has_genre(movie25825, film-noir).
+has_2_genre(movie25826).
 has_genre(movie25826, comedy).
 has_genre(movie25826, romance).
+has_2_genre(movie25827).
 has_genre(movie25827, comedy).
 has_genre(movie25827, romance).
+has_2_genre(movie25833).
 has_genre(movie25833, drama).
 has_genre(movie25833, romance).
+has_2_genre(movie25834).
 has_genre(movie25834, adventure).
 has_genre(movie25834, drama).
+has_1_genre(movie25841).
 has_genre(movie25841, drama).
+has_3_genre(movie25850).
 has_genre(movie25850, comedy).
 has_genre(movie25850, drama).
 has_genre(movie25850, romance).
+has_3_genre(movie25855).
 has_genre(movie25855, crime).
 has_genre(movie25855, drama).
 has_genre(movie25855, thriller).
+has_2_genre(movie25856).
 has_genre(movie25856, drama).
 has_genre(movie25856, romance).
+has_2_genre(movie25865).
 has_genre(movie25865, drama).
 has_genre(movie25865, film-noir).
+has_3_genre(movie25870).
 has_genre(movie25870, comedy).
 has_genre(movie25870, fantasy).
 has_genre(movie25870, romance).
+has_2_genre(movie25886).
 has_genre(movie25886, drama).
 has_genre(movie25886, romance).
+has_2_genre(movie25887).
 has_genre(movie25887, comedy).
 has_genre(movie25887, drama).
+has_1_genre(movie25898).
 has_genre(movie25898, drama).
+has_2_genre(movie25905).
 has_genre(movie25905, comedy).
 has_genre(movie25905, romance).
+has_2_genre(movie25906).
 has_genre(movie25906, drama).
 has_genre(movie25906, romance).
+has_1_genre(movie25923).
 has_genre(movie25923, drama).
+has_3_genre(movie25927).
 has_genre(movie25927, drama).
 has_genre(movie25927, film-noir).
 has_genre(movie25927, thriller).
+has_2_genre(movie25937).
 has_genre(movie25937, musical).
 has_genre(movie25937, romance).
+has_3_genre(movie25940).
 has_genre(movie25940, drama).
 has_genre(movie25940, film-noir).
 has_genre(movie25940, mystery).
+has_4_genre(movie25946).
 has_genre(movie25946, action).
 has_genre(movie25946, adventure).
 has_genre(movie25946, drama).
 has_genre(movie25946, romance).
+has_1_genre(movie25947).
 has_genre(movie25947, comedy).
+has_2_genre(movie25952).
 has_genre(movie25952, comedy).
 has_genre(movie25952, drama).
+has_4_genre(movie25959).
 has_genre(movie25959, comedy).
 has_genre(movie25959, musical).
 has_genre(movie25959, romance).
 has_genre(movie25959, western).
+has_3_genre(movie25962).
 has_genre(movie25962, action).
 has_genre(movie25962, adventure).
 has_genre(movie25962, romance).
+has_2_genre(movie25963).
 has_genre(movie25963, crime).
 has_genre(movie25963, drama).
+has_2_genre(movie25996).
 has_genre(movie25996, drama).
 has_genre(movie25996, musical).
+has_1_genre(movie25999).
 has_genre(movie25999, drama).
+has_4_genre(movie26002).
 has_genre(movie26002, crime).
 has_genre(movie26002, drama).
 has_genre(movie26002, mystery).
 has_genre(movie26002, thriller).
+has_3_genre(movie26003).
 has_genre(movie26003, crime).
 has_genre(movie26003, documentary).
 has_genre(movie26003, war).
+has_2_genre(movie26038).
 has_genre(movie26038, comedy).
 has_genre(movie26038, romance).
+has_2_genre(movie26048).
 has_genre(movie26048, drama).
 has_genre(movie26048, war).
+has_2_genre(movie26052).
 has_genre(movie26052, crime).
 has_genre(movie26052, drama).
+has_1_genre(movie26059).
 has_genre(movie26059, drama).
+has_2_genre(movie26073).
 has_genre(movie26073, drama).
 has_genre(movie26073, war).
+has_1_genre(movie26078).
 has_genre(movie26078, drama).
+has_1_genre(movie26082).
 has_genre(movie26082, drama).
+has_4_genre(movie26084).
 has_genre(movie26084, children).
 has_genre(movie26084, comedy).
 has_genre(movie26084, musical).
 has_genre(movie26084, romance).
+has_3_genre(movie26085).
 has_genre(movie26085, adventure).
 has_genre(movie26085, drama).
 has_genre(movie26085, romance).
+has_3_genre(movie26095).
 has_genre(movie26095, comedy).
 has_genre(movie26095, drama).
 has_genre(movie26095, war).
+has_2_genre(movie26116).
 has_genre(movie26116, horror).
 has_genre(movie26116, thriller).
+has_3_genre(movie26122).
 has_genre(movie26122, drama).
 has_genre(movie26122, horror).
 has_genre(movie26122, war).
+has_1_genre(movie26124).
 has_genre(movie26124, sci-fi).
+has_2_genre(movie26131).
 has_genre(movie26131, drama).
 has_genre(movie26131, war).
+has_3_genre(movie26133).
 has_genre(movie26133, animation).
 has_genre(movie26133, children).
 has_genre(movie26133, comedy).
+has_3_genre(movie26142).
 has_genre(movie26142, adventure).
 has_genre(movie26142, war).
 has_genre(movie26142, western).
+has_3_genre(movie26147).
 has_genre(movie26147, comedy).
 has_genre(movie26147, drama).
 has_genre(movie26147, romance).
+has_2_genre(movie26150).
 has_genre(movie26150, drama).
 has_genre(movie26150, war).
+has_2_genre(movie26151).
 has_genre(movie26151, crime).
 has_genre(movie26151, drama).
+has_3_genre(movie26152).
 has_genre(movie26152, action).
 has_genre(movie26152, adventure).
 has_genre(movie26152, comedy).
+has_3_genre(movie26158).
 has_genre(movie26158, comedy).
 has_genre(movie26158, drama).
 has_genre(movie26158, war).
+has_3_genre(movie26159).
 has_genre(movie26159, action).
 has_genre(movie26159, crime).
 has_genre(movie26159, drama).
+has_3_genre(movie26169).
 has_genre(movie26169, action).
 has_genre(movie26169, crime).
 has_genre(movie26169, drama).
+has_1_genre(movie26171).
 has_genre(movie26171, comedy).
+has_4_genre(movie26172).
 has_genre(movie26172, action).
 has_genre(movie26172, crime).
 has_genre(movie26172, drama).
 has_genre(movie26172, thriller).
+has_2_genre(movie26176).
 has_genre(movie26176, documentary).
 has_genre(movie26176, drama).
+has_5_genre(movie26183).
 has_genre(movie26183, action).
 has_genre(movie26183, adventure).
 has_genre(movie26183, animation).
 has_genre(movie26183, children).
 has_genre(movie26183, comedy).
+has_5_genre(movie26184).
 has_genre(movie26184, action).
 has_genre(movie26184, adventure).
 has_genre(movie26184, comedy).
 has_genre(movie26184, crime).
 has_genre(movie26184, thriller).
+has_2_genre(movie26195).
 has_genre(movie26195, documentary).
 has_genre(movie26195, musical).
+has_2_genre(movie26198).
 has_genre(movie26198, children).
 has_genre(movie26198, comedy).
+has_2_genre(movie26225).
 has_genre(movie26225, comedy).
 has_genre(movie26225, romance).
+has_3_genre(movie26231).
 has_genre(movie26231, crime).
 has_genre(movie26231, drama).
 has_genre(movie26231, thriller).
+has_more_than_5_genre(movie26236).
 has_genre(movie26236, action).
 has_genre(movie26236, adventure).
 has_genre(movie26236, comedy).
 has_genre(movie26236, drama).
 has_genre(movie26236, romance).
 has_genre(movie26236, war).
+has_2_genre(movie26237).
 has_genre(movie26237, drama).
 has_genre(movie26237, romance).
+has_3_genre(movie26242).
 has_genre(movie26242, action).
 has_genre(movie26242, mystery).
 has_genre(movie26242, thriller).
+has_2_genre(movie26249).
 has_genre(movie26249, comedy).
 has_genre(movie26249, western).
+has_2_genre(movie26258).
 has_genre(movie26258, fantasy).
 has_genre(movie26258, western).
+has_4_genre(movie26265).
 has_genre(movie26265, adventure).
 has_genre(movie26265, comedy).
 has_genre(movie26265, horror).
 has_genre(movie26265, romance).
+has_3_genre(movie26283).
 has_genre(movie26283, crime).
 has_genre(movie26283, drama).
 has_genre(movie26283, thriller).
+has_3_genre(movie26285).
 has_genre(movie26285, comedy).
 has_genre(movie26285, sci-fi).
 has_genre(movie26285, thriller).
+has_2_genre(movie26303).
 has_genre(movie26303, horror).
 has_genre(movie26303, thriller).
+has_2_genre(movie26308).
 has_genre(movie26308, drama).
 has_genre(movie26308, romance).
+has_2_genre(movie26313).
 has_genre(movie26313, comedy).
 has_genre(movie26313, drama).
+has_2_genre(movie26317).
 has_genre(movie26317, drama).
 has_genre(movie26317, romance).
+has_3_genre(movie26322).
 has_genre(movie26322, action).
 has_genre(movie26322, crime).
 has_genre(movie26322, drama).
+has_1_genre(movie26326).
 has_genre(movie26326, drama).
+has_more_than_5_genre(movie26340).
 has_genre(movie26340, action).
 has_genre(movie26340, adventure).
 has_genre(movie26340, animation).
 has_genre(movie26340, children).
 has_genre(movie26340, comedy).
 has_genre(movie26340, fantasy).
+has_4_genre(movie26344).
 has_genre(movie26344, action).
 has_genre(movie26344, crime).
 has_genre(movie26344, drama).
 has_genre(movie26344, thriller).
+has_3_genre(movie26347).
 has_genre(movie26347, comedy).
 has_genre(movie26347, drama).
 has_genre(movie26347, romance).
+has_1_genre(movie26350).
 has_genre(movie26350, drama).
+has_2_genre(movie26357).
 has_genre(movie26357, horror).
 has_genre(movie26357, thriller).
+has_2_genre(movie26359).
 has_genre(movie26359, drama).
 has_genre(movie26359, war).
+has_2_genre(movie26365).
 has_genre(movie26365, sci-fi).
 has_genre(movie26365, thriller).
+has_1_genre(movie26366).
 has_genre(movie26366, documentary).
+has_3_genre(movie26375).
 has_genre(movie26375, action).
 has_genre(movie26375, comedy).
 has_genre(movie26375, crime).
+has_2_genre(movie26386).
 has_genre(movie26386, comedy).
 has_genre(movie26386, thriller).
+has_3_genre(movie26391).
 has_genre(movie26391, drama).
 has_genre(movie26391, musical).
 has_genre(movie26391, romance).
+has_2_genre(movie26394).
 has_genre(movie26394, drama).
 has_genre(movie26394, romance).
+has_1_genre(movie26399).
 has_genre(movie26399, action).
+has_2_genre(movie26401).
 has_genre(movie26401, action).
 has_genre(movie26401, drama).
+has_2_genre(movie26409).
 has_genre(movie26409, horror).
 has_genre(movie26409, sci-fi).
+has_2_genre(movie26413).
 has_genre(movie26413, action).
 has_genre(movie26413, comedy).
+has_3_genre(movie26422).
 has_genre(movie26422, comedy).
 has_genre(movie26422, drama).
 has_genre(movie26422, musical).
+has_3_genre(movie26429).
 has_genre(movie26429, comedy).
 has_genre(movie26429, horror).
 has_genre(movie26429, romance).
+has_3_genre(movie26444).
 has_genre(movie26444, adventure).
 has_genre(movie26444, comedy).
 has_genre(movie26444, sci-fi).
+has_2_genre(movie26453).
 has_genre(movie26453, drama).
 has_genre(movie26453, mystery).
+has_3_genre(movie26464).
 has_genre(movie26464, action).
 has_genre(movie26464, crime).
 has_genre(movie26464, drama).
+has_2_genre(movie26467).
 has_genre(movie26467, drama).
 has_genre(movie26467, sci-fi).
+has_2_genre(movie26471).
 has_genre(movie26471, comedy).
 has_genre(movie26471, documentary).
+has_2_genre(movie26472).
 has_genre(movie26472, adventure).
 has_genre(movie26472, drama).
+has_4_genre(movie26492).
 has_genre(movie26492, fantasy).
 has_genre(movie26492, horror).
 has_genre(movie26492, sci-fi).
 has_genre(movie26492, thriller).
+has_1_genre(movie26498).
 has_genre(movie26498, drama).
+has_more_than_5_genre(movie26504).
 has_genre(movie26504, action).
 has_genre(movie26504, adventure).
 has_genre(movie26504, children).
 has_genre(movie26504, crime).
 has_genre(movie26504, mystery).
 has_genre(movie26504, thriller).
+has_4_genre(movie26510).
 has_genre(movie26510, adventure).
 has_genre(movie26510, children).
 has_genre(movie26510, fantasy).
 has_genre(movie26510, sci-fi).
+has_2_genre(movie26523).
 has_genre(movie26523, horror).
 has_genre(movie26523, thriller).
+has_1_genre(movie26524).
 has_genre(movie26524, documentary).
+has_2_genre(movie26527).
 has_genre(movie26527, comedy).
 has_genre(movie26527, drama).
+has_2_genre(movie26528).
 has_genre(movie26528, children).
 has_genre(movie26528, drama).
+has_1_genre(movie26539).
 has_genre(movie26539, drama).
+has_4_genre(movie26542).
 has_genre(movie26542, adventure).
 has_genre(movie26542, children).
 has_genre(movie26542, fantasy).
 has_genre(movie26542, sci-fi).
+has_4_genre(movie26547).
 has_genre(movie26547, action).
 has_genre(movie26547, comedy).
 has_genre(movie26547, crime).
 has_genre(movie26547, thriller).
+has_3_genre(movie26554).
 has_genre(movie26554, drama).
 has_genre(movie26554, mystery).
 has_genre(movie26554, sci-fi).
+has_1_genre(movie26555).
 has_genre(movie26555, comedy).
+has_1_genre(movie26562).
 has_genre(movie26562, drama).
+has_2_genre(movie26564).
 has_genre(movie26564, drama).
 has_genre(movie26564, musical).
+has_1_genre(movie26567).
 has_genre(movie26567, comedy).
+has_1_genre(movie26578).
 has_genre(movie26578, drama).
+has_3_genre(movie26585).
 has_genre(movie26585, crime).
 has_genre(movie26585, drama).
 has_genre(movie26585, thriller).
+has_3_genre(movie26587).
 has_genre(movie26587, crime).
 has_genre(movie26587, drama).
 has_genre(movie26587, romance).
+has_more_than_5_genre(movie26590).
 has_genre(movie26590, action).
 has_genre(movie26590, adventure).
 has_genre(movie26590, animation).
 has_genre(movie26590, children).
 has_genre(movie26590, fantasy).
 has_genre(movie26590, sci-fi).
+has_3_genre(movie26593).
 has_genre(movie26593, action).
 has_genre(movie26593, comedy).
 has_genre(movie26593, sci-fi).
+has_3_genre(movie26599).
 has_genre(movie26599, comedy).
 has_genre(movie26599, drama).
 has_genre(movie26599, romance).
+has_4_genre(movie26603).
 has_genre(movie26603, fantasy).
 has_genre(movie26603, horror).
 has_genre(movie26603, sci-fi).
 has_genre(movie26603, thriller).
+has_4_genre(movie26606).
 has_genre(movie26606, action).
 has_genre(movie26606, fantasy).
 has_genre(movie26606, horror).
 has_genre(movie26606, romance).
+has_3_genre(movie26612).
 has_genre(movie26612, crime).
 has_genre(movie26612, drama).
 has_genre(movie26612, thriller).
+has_5_genre(movie26614).
 has_genre(movie26614, action).
 has_genre(movie26614, adventure).
 has_genre(movie26614, drama).
 has_genre(movie26614, mystery).
 has_genre(movie26614, thriller).
+has_1_genre(movie26622).
 has_genre(movie26622, drama).
+has_3_genre(movie26629).
 has_genre(movie26629, comedy).
 has_genre(movie26629, horror).
 has_genre(movie26629, sci-fi).
+has_1_genre(movie26630).
 has_genre(movie26630, musical).
+has_3_genre(movie26631).
 has_genre(movie26631, animation).
 has_genre(movie26631, fantasy).
 has_genre(movie26631, mystery).
+has_1_genre(movie26645).
 has_genre(movie26645, comedy).
+has_3_genre(movie26649).
 has_genre(movie26649, adventure).
 has_genre(movie26649, drama).
 has_genre(movie26649, western).
+has_5_genre(movie26662).
 has_genre(movie26662, adventure).
 has_genre(movie26662, animation).
 has_genre(movie26662, children).
 has_genre(movie26662, drama).
 has_genre(movie26662, fantasy).
+has_1_genre(movie26676).
 has_genre(movie26676, comedy).
+has_3_genre(movie26680).
 has_genre(movie26680, comedy).
 has_genre(movie26680, musical).
 has_genre(movie26680, romance).
+has_3_genre(movie26681).
 has_genre(movie26681, action).
 has_genre(movie26681, drama).
 has_genre(movie26681, war).
+has_2_genre(movie26686).
 has_genre(movie26686, comedy).
 has_genre(movie26686, fantasy).
+has_5_genre(movie26693).
 has_genre(movie26693, drama).
 has_genre(movie26693, fantasy).
 has_genre(movie26693, horror).
 has_genre(movie26693, mystery).
 has_genre(movie26693, thriller).
+has_1_genre(movie26694).
 has_genre(movie26694, drama).
+has_1_genre(movie26695).
 has_genre(movie26695, drama).
+has_1_genre(movie26696).
 has_genre(movie26696, action).
+has_2_genre(movie26700).
 has_genre(movie26700, comedy).
 has_genre(movie26700, crime).
+has_more_than_5_genre(movie26701).
 has_genre(movie26701, action).
 has_genre(movie26701, animation).
 has_genre(movie26701, crime).
@@ -16190,696 +21752,959 @@ has_genre(movie26701, film-noir).
 has_genre(movie26701, mystery).
 has_genre(movie26701, sci-fi).
 has_genre(movie26701, thriller).
+has_3_genre(movie26704).
 has_genre(movie26704, crime).
 has_genre(movie26704, drama).
 has_genre(movie26704, thriller).
+has_1_genre(movie26712).
 has_genre(movie26712, documentary).
+has_2_genre(movie26713).
 has_genre(movie26713, drama).
 has_genre(movie26713, romance).
+has_2_genre(movie26717).
 has_genre(movie26717, drama).
 has_genre(movie26717, horror).
+has_1_genre(movie26726).
 has_genre(movie26726, comedy).
+has_1_genre(movie26729).
 has_genre(movie26729, documentary).
+has_1_genre(movie26732).
 has_genre(movie26732, comedy).
+has_3_genre(movie26736).
 has_genre(movie26736, action).
 has_genre(movie26736, crime).
 has_genre(movie26736, thriller).
+has_3_genre(movie26741).
 has_genre(movie26741, comedy).
 has_genre(movie26741, fantasy).
 has_genre(movie26741, romance).
+has_2_genre(movie26743).
 has_genre(movie26743, animation).
 has_genre(movie26743, drama).
+has_3_genre(movie26745).
 has_genre(movie26745, comedy).
 has_genre(movie26745, drama).
 has_genre(movie26745, romance).
+has_3_genre(movie26750).
 has_genre(movie26750, adventure).
 has_genre(movie26750, drama).
 has_genre(movie26750, western).
+has_5_genre(movie26761).
 has_genre(movie26761, crime).
 has_genre(movie26761, drama).
 has_genre(movie26761, mystery).
 has_genre(movie26761, romance).
 has_genre(movie26761, thriller).
+has_5_genre(movie26764).
 has_genre(movie26764, action).
 has_genre(movie26764, fantasy).
 has_genre(movie26764, sci-fi).
 has_genre(movie26764, thriller).
 has_genre(movie26764, war).
+has_3_genre(movie26765).
 has_genre(movie26765, action).
 has_genre(movie26765, comedy).
 has_genre(movie26765, romance).
+has_5_genre(movie26776).
 has_genre(movie26776, adventure).
 has_genre(movie26776, animation).
 has_genre(movie26776, comedy).
 has_genre(movie26776, fantasy).
 has_genre(movie26776, romance).
+has_1_genre(movie26777).
 has_genre(movie26777, drama).
+has_1_genre(movie26778).
 has_genre(movie26778, comedy).
+has_2_genre(movie26782).
 has_genre(movie26782, drama).
 has_genre(movie26782, musical).
+has_4_genre(movie26791).
 has_genre(movie26791, drama).
 has_genre(movie26791, romance).
 has_genre(movie26791, thriller).
 has_genre(movie26791, war).
+has_4_genre(movie26792).
 has_genre(movie26792, action).
 has_genre(movie26792, adventure).
 has_genre(movie26792, children).
 has_genre(movie26792, comedy).
+has_2_genre(movie26796).
 has_genre(movie26796, drama).
 has_genre(movie26796, romance).
+has_1_genre(movie26797).
 has_genre(movie26797, documentary).
+has_1_genre(movie26810).
 has_genre(movie26810, drama).
+has_1_genre(movie26812).
 has_genre(movie26812, drama).
+has_2_genre(movie26819).
 has_genre(movie26819, action).
 has_genre(movie26819, sci-fi).
+has_3_genre(movie26828).
 has_genre(movie26828, action).
 has_genre(movie26828, children).
 has_genre(movie26828, comedy).
+has_2_genre(movie26838).
 has_genre(movie26838, comedy).
 has_genre(movie26838, drama).
+has_4_genre(movie26840).
 has_genre(movie26840, action).
 has_genre(movie26840, comedy).
 has_genre(movie26840, crime).
 has_genre(movie26840, drama).
+has_5_genre(movie26849).
 has_genre(movie26849, adventure).
 has_genre(movie26849, drama).
 has_genre(movie26849, fantasy).
 has_genre(movie26849, horror).
 has_genre(movie26849, sci-fi).
+has_3_genre(movie26854).
 has_genre(movie26854, action).
 has_genre(movie26854, crime).
 has_genre(movie26854, horror).
+has_2_genre(movie26861).
 has_genre(movie26861, comedy).
 has_genre(movie26861, sci-fi).
+has_2_genre(movie26865).
 has_genre(movie26865, action).
 has_genre(movie26865, drama).
+has_1_genre(movie26870).
 has_genre(movie26870, comedy).
+has_2_genre(movie26871).
 has_genre(movie26871, comedy).
 has_genre(movie26871, romance).
+has_4_genre(movie26875).
 has_genre(movie26875, crime).
 has_genre(movie26875, film-noir).
 has_genre(movie26875, mystery).
 has_genre(movie26875, thriller).
+has_more_than_5_genre(movie26887).
 has_genre(movie26887, drama).
 has_genre(movie26887, fantasy).
 has_genre(movie26887, horror).
 has_genre(movie26887, mystery).
 has_genre(movie26887, sci-fi).
 has_genre(movie26887, thriller).
+has_2_genre(movie26900).
 has_genre(movie26900, comedy).
 has_genre(movie26900, drama).
+has_2_genre(movie26901).
 has_genre(movie26901, adventure).
 has_genre(movie26901, western).
+has_3_genre(movie26903).
 has_genre(movie26903, animation).
 has_genre(movie26903, drama).
 has_genre(movie26903, romance).
+has_2_genre(movie26913).
 has_genre(movie26913, action).
 has_genre(movie26913, animation).
+has_3_genre(movie26928).
 has_genre(movie26928, comedy).
 has_genre(movie26928, drama).
 has_genre(movie26928, romance).
+has_1_genre(movie26940).
 has_genre(movie26940, comedy).
+has_2_genre(movie26947).
 has_genre(movie26947, crime).
 has_genre(movie26947, thriller).
+has_1_genre(movie26958).
 has_genre(movie26958, romance).
+has_2_genre(movie26965).
 has_genre(movie26965, drama).
 has_genre(movie26965, thriller).
+has_1_genre(movie26974).
 has_genre(movie26974, drama).
+has_2_genre(movie26985).
 has_genre(movie26985, action).
 has_genre(movie26985, sci-fi).
+has_5_genre(movie26999).
 has_genre(movie26999, adventure).
 has_genre(movie26999, animation).
 has_genre(movie26999, children).
 has_genre(movie26999, musical).
 has_genre(movie26999, romance).
+has_4_genre(movie27002).
 has_genre(movie27002, action).
 has_genre(movie27002, documentary).
 has_genre(movie27002, drama).
 has_genre(movie27002, thriller).
+has_3_genre(movie27003).
 has_genre(movie27003, action).
 has_genre(movie27003, horror).
 has_genre(movie27003, sci-fi).
+has_1_genre(movie27006).
 has_genre(movie27006, drama).
+has_3_genre(movie27008).
 has_genre(movie27008, comedy).
 has_genre(movie27008, crime).
 has_genre(movie27008, horror).
+has_2_genre(movie27020).
 has_genre(movie27020, drama).
 has_genre(movie27020, romance).
+has_3_genre(movie27022).
 has_genre(movie27022, action).
 has_genre(movie27022, crime).
 has_genre(movie27022, thriller).
+has_5_genre(movie27032).
 has_genre(movie27032, action).
 has_genre(movie27032, adventure).
 has_genre(movie27032, comedy).
 has_genre(movie27032, sci-fi).
 has_genre(movie27032, thriller).
+has_5_genre(movie27036).
 has_genre(movie27036, action).
 has_genre(movie27036, adventure).
 has_genre(movie27036, drama).
 has_genre(movie27036, fantasy).
 has_genre(movie27036, romance).
+has_1_genre(movie27074).
 has_genre(movie27074, sci-fi).
+has_3_genre(movie27075).
 has_genre(movie27075, children).
 has_genre(movie27075, comedy).
 has_genre(movie27075, fantasy).
+has_2_genre(movie27105).
 has_genre(movie27105, fantasy).
 has_genre(movie27105, western).
+has_2_genre(movie27124).
 has_genre(movie27124, drama).
 has_genre(movie27124, thriller).
+has_3_genre(movie27134).
 has_genre(movie27134, action).
 has_genre(movie27134, crime).
 has_genre(movie27134, fantasy).
+has_1_genre(movie27140).
 has_genre(movie27140, horror).
+has_more_than_5_genre(movie27155).
 has_genre(movie27155, action).
 has_genre(movie27155, adventure).
 has_genre(movie27155, animation).
 has_genre(movie27155, children).
 has_genre(movie27155, fantasy).
 has_genre(movie27155, sci-fi).
+has_5_genre(movie27156).
 has_genre(movie27156, action).
 has_genre(movie27156, animation).
 has_genre(movie27156, drama).
 has_genre(movie27156, fantasy).
 has_genre(movie27156, sci-fi).
+has_1_genre(movie27176).
 has_genre(movie27176, documentary).
+has_2_genre(movie27178).
 has_genre(movie27178, comedy).
 has_genre(movie27178, romance).
+has_4_genre(movie27186).
 has_genre(movie27186, adventure).
 has_genre(movie27186, animation).
 has_genre(movie27186, children).
 has_genre(movie27186, fantasy).
+has_2_genre(movie27193).
 has_genre(movie27193, action).
 has_genre(movie27193, comedy).
+has_2_genre(movie27246).
 has_genre(movie27246, drama).
 has_genre(movie27246, romance).
+has_3_genre(movie27251).
 has_genre(movie27251, adventure).
 has_genre(movie27251, comedy).
 has_genre(movie27251, fantasy).
+has_1_genre(movie27255).
 has_genre(movie27255, drama).
+has_4_genre(movie27266).
 has_genre(movie27266, drama).
 has_genre(movie27266, fantasy).
 has_genre(movie27266, romance).
 has_genre(movie27266, sci-fi).
+has_2_genre(movie27306).
 has_genre(movie27306, comedy).
 has_genre(movie27306, drama).
+has_5_genre(movie27311).
 has_genre(movie27311, action).
 has_genre(movie27311, animation).
 has_genre(movie27311, crime).
 has_genre(movie27311, sci-fi).
 has_genre(movie27311, thriller).
+has_5_genre(movie27317).
 has_genre(movie27317, drama).
 has_genre(movie27317, horror).
 has_genre(movie27317, mystery).
 has_genre(movie27317, romance).
 has_genre(movie27317, thriller).
+has_3_genre(movie27320).
 has_genre(movie27320, comedy).
 has_genre(movie27320, drama).
 has_genre(movie27320, fantasy).
+has_5_genre(movie27328).
 has_genre(movie27328, action).
 has_genre(movie27328, comedy).
 has_genre(movie27328, crime).
 has_genre(movie27328, fantasy).
 has_genre(movie27328, thriller).
+has_1_genre(movie27329).
 has_genre(movie27329, documentary).
+has_3_genre(movie27368).
 has_genre(movie27368, adventure).
 has_genre(movie27368, comedy).
 has_genre(movie27368, fantasy).
+has_2_genre(movie27369).
 has_genre(movie27369, animation).
 has_genre(movie27369, comedy).
+has_1_genre(movie27370).
 has_genre(movie27370, comedy).
+has_1_genre(movie27373).
 has_genre(movie27373, drama).
+has_5_genre(movie27397).
 has_genre(movie27397, crime).
 has_genre(movie27397, drama).
 has_genre(movie27397, mystery).
 has_genre(movie27397, thriller).
 has_genre(movie27397, war).
+has_2_genre(movie27408).
 has_genre(movie27408, drama).
 has_genre(movie27408, thriller).
+has_3_genre(movie27416).
 has_genre(movie27416, comedy).
 has_genre(movie27416, drama).
 has_genre(movie27416, romance).
+has_4_genre(movie27420).
 has_genre(movie27420, comedy).
 has_genre(movie27420, drama).
 has_genre(movie27420, romance).
 has_genre(movie27420, sci-fi).
+has_3_genre(movie27426).
 has_genre(movie27426, action).
 has_genre(movie27426, comedy).
 has_genre(movie27426, thriller).
+has_2_genre(movie27434).
 has_genre(movie27434, horror).
 has_genre(movie27434, mystery).
+has_3_genre(movie27441).
 has_genre(movie27441, action).
 has_genre(movie27441, animation).
 has_genre(movie27441, horror).
+has_2_genre(movie27450).
 has_genre(movie27450, adventure).
 has_genre(movie27450, western).
+has_5_genre(movie27473).
 has_genre(movie27473, comedy).
 has_genre(movie27473, crime).
 has_genre(movie27473, horror).
 has_genre(movie27473, mystery).
 has_genre(movie27473, thriller).
+has_1_genre(movie27478).
 has_genre(movie27478, comedy).
+has_3_genre(movie27480).
 has_genre(movie27480, action).
 has_genre(movie27480, crime).
 has_genre(movie27480, thriller).
+has_3_genre(movie27482).
 has_genre(movie27482, horror).
 has_genre(movie27482, mystery).
 has_genre(movie27482, sci-fi).
+has_3_genre(movie27491).
 has_genre(movie27491, horror).
 has_genre(movie27491, mystery).
 has_genre(movie27491, thriller).
+has_1_genre(movie27513).
 has_genre(movie27513, drama).
+has_2_genre(movie27523).
 has_genre(movie27523, comedy).
 has_genre(movie27523, romance).
+has_4_genre(movie27537).
 has_genre(movie27537, comedy).
 has_genre(movie27537, fantasy).
 has_genre(movie27537, mystery).
 has_genre(movie27537, sci-fi).
+has_2_genre(movie27539).
 has_genre(movie27539, comedy).
 has_genre(movie27539, romance).
+has_5_genre(movie27549).
 has_genre(movie27549, comedy).
 has_genre(movie27549, crime).
 has_genre(movie27549, drama).
 has_genre(movie27549, sci-fi).
 has_genre(movie27549, thriller).
+has_1_genre(movie27555).
 has_genre(movie27555, comedy).
+has_3_genre(movie27563).
 has_genre(movie27563, comedy).
 has_genre(movie27563, horror).
 has_genre(movie27563, musical).
+has_4_genre(movie27584).
 has_genre(movie27584, comedy).
 has_genre(movie27584, horror).
 has_genre(movie27584, mystery).
 has_genre(movie27584, thriller).
+has_2_genre(movie27592).
 has_genre(movie27592, crime).
 has_genre(movie27592, drama).
+has_4_genre(movie27595).
 has_genre(movie27595, action).
 has_genre(movie27595, comedy).
 has_genre(movie27595, horror).
 has_genre(movie27595, musical).
+has_3_genre(movie27604).
 has_genre(movie27604, horror).
 has_genre(movie27604, mystery).
 has_genre(movie27604, thriller).
+has_3_genre(movie27611).
 has_genre(movie27611, drama).
 has_genre(movie27611, sci-fi).
 has_genre(movie27611, war).
+has_5_genre(movie27618).
 has_genre(movie27618, action).
 has_genre(movie27618, adventure).
 has_genre(movie27618, drama).
 has_genre(movie27618, sci-fi).
 has_genre(movie27618, thriller).
+has_4_genre(movie27619).
 has_genre(movie27619, adventure).
 has_genre(movie27619, animation).
 has_genre(movie27619, children).
 has_genre(movie27619, comedy).
+has_2_genre(movie27627).
 has_genre(movie27627, drama).
 has_genre(movie27627, romance).
+has_3_genre(movie27644).
 has_genre(movie27644, comedy).
 has_genre(movie27644, drama).
 has_genre(movie27644, romance).
+has_4_genre(movie27660).
 has_genre(movie27660, action).
 has_genre(movie27660, animation).
 has_genre(movie27660, drama).
 has_genre(movie27660, sci-fi).
+has_1_genre(movie27664).
 has_genre(movie27664, drama).
+has_1_genre(movie27667).
 has_genre(movie27667, horror).
+has_5_genre(movie27674).
 has_genre(movie27674, comedy).
 has_genre(movie27674, crime).
 has_genre(movie27674, drama).
 has_genre(movie27674, mystery).
 has_genre(movie27674, thriller).
+has_more_than_5_genre(movie27683).
 has_genre(movie27683, action).
 has_genre(movie27683, comedy).
 has_genre(movie27683, horror).
 has_genre(movie27683, sci-fi).
 has_genre(movie27683, thriller).
 has_genre(movie27683, western).
+has_1_genre(movie27685).
 has_genre(movie27685, comedy).
+has_3_genre(movie27689).
 has_genre(movie27689, action).
 has_genre(movie27689, crime).
 has_genre(movie27689, thriller).
+has_4_genre(movie27692).
 has_genre(movie27692, action).
 has_genre(movie27692, comedy).
 has_genre(movie27692, drama).
 has_genre(movie27692, war).
+has_3_genre(movie27695).
 has_genre(movie27695, action).
 has_genre(movie27695, comedy).
 has_genre(movie27695, drama).
+has_4_genre(movie27704).
 has_genre(movie27704, action).
 has_genre(movie27704, drama).
 has_genre(movie27704, thriller).
 has_genre(movie27704, war).
+has_3_genre(movie27705).
 has_genre(movie27705, action).
 has_genre(movie27705, drama).
 has_genre(movie27705, thriller).
+has_4_genre(movie27706).
 has_genre(movie27706, adventure).
 has_genre(movie27706, children).
 has_genre(movie27706, comedy).
 has_genre(movie27706, fantasy).
+has_4_genre(movie27708).
 has_genre(movie27708, action).
 has_genre(movie27708, adventure).
 has_genre(movie27708, drama).
 has_genre(movie27708, romance).
+has_4_genre(movie27716).
 has_genre(movie27716, comedy).
 has_genre(movie27716, crime).
 has_genre(movie27716, drama).
 has_genre(movie27716, romance).
+has_4_genre(movie27721).
 has_genre(movie27721, drama).
 has_genre(movie27721, mystery).
 has_genre(movie27721, romance).
 has_genre(movie27721, war).
+has_2_genre(movie27722).
 has_genre(movie27722, drama).
 has_genre(movie27722, romance).
+has_5_genre(movie27728).
 has_genre(movie27728, action).
 has_genre(movie27728, animation).
 has_genre(movie27728, drama).
 has_genre(movie27728, sci-fi).
 has_genre(movie27728, thriller).
+has_4_genre(movie27731).
 has_genre(movie27731, adventure).
 has_genre(movie27731, animation).
 has_genre(movie27731, children).
 has_genre(movie27731, fantasy).
+has_2_genre(movie27741).
 has_genre(movie27741, drama).
 has_genre(movie27741, romance).
+has_2_genre(movie27744).
 has_genre(movie27744, drama).
 has_genre(movie27744, romance).
+has_2_genre(movie27746).
 has_genre(movie27746, horror).
 has_genre(movie27746, thriller).
+has_4_genre(movie27751).
 has_genre(movie27751, drama).
 has_genre(movie27751, horror).
 has_genre(movie27751, mystery).
 has_genre(movie27751, thriller).
+has_1_genre(movie27762).
 has_genre(movie27762, comedy).
+has_1_genre(movie27768).
 has_genre(movie27768, drama).
+has_1_genre(movie27769).
 has_genre(movie27769, drama).
+has_1_genre(movie27772).
 has_genre(movie27772, horror).
+has_2_genre(movie27773).
 has_genre(movie27773, mystery).
 has_genre(movie27773, thriller).
+has_1_genre(movie27776).
 has_genre(movie27776, drama).
+has_2_genre(movie27778).
 has_genre(movie27778, fantasy).
 has_genre(movie27778, horror).
+has_2_genre(movie27784).
 has_genre(movie27784, horror).
 has_genre(movie27784, mystery).
+has_4_genre(movie27788).
 has_genre(movie27788, drama).
 has_genre(movie27788, mystery).
 has_genre(movie27788, sci-fi).
 has_genre(movie27788, thriller).
+has_5_genre(movie27790).
 has_genre(movie27790, children).
 has_genre(movie27790, comedy).
 has_genre(movie27790, crime).
 has_genre(movie27790, drama).
 has_genre(movie27790, fantasy).
+has_4_genre(movie27793).
 has_genre(movie27793, action).
 has_genre(movie27793, horror).
 has_genre(movie27793, sci-fi).
 has_genre(movie27793, war).
+has_2_genre(movie27801).
 has_genre(movie27801, action).
 has_genre(movie27801, thriller).
+has_4_genre(movie27802).
 has_genre(movie27802, action).
 has_genre(movie27802, crime).
 has_genre(movie27802, drama).
 has_genre(movie27802, thriller).
+has_1_genre(movie27803).
 has_genre(movie27803, drama).
+has_3_genre(movie27808).
 has_genre(movie27808, comedy).
 has_genre(movie27808, drama).
 has_genre(movie27808, romance).
+has_1_genre(movie27815).
 has_genre(movie27815, drama).
+has_4_genre(movie27816).
 has_genre(movie27816, action).
 has_genre(movie27816, adventure).
 has_genre(movie27816, drama).
 has_genre(movie27816, war).
+has_2_genre(movie27820).
 has_genre(movie27820, documentary).
 has_genre(movie27820, drama).
+has_2_genre(movie27821).
 has_genre(movie27821, drama).
 has_genre(movie27821, thriller).
+has_2_genre(movie27822).
 has_genre(movie27822, drama).
 has_genre(movie27822, thriller).
+has_3_genre(movie27826).
 has_genre(movie27826, comedy).
 has_genre(movie27826, drama).
 has_genre(movie27826, romance).
+has_1_genre(movie27829).
 has_genre(movie27829, documentary).
+has_1_genre(movie27830).
 has_genre(movie27830, drama).
+has_3_genre(movie27831).
 has_genre(movie27831, crime).
 has_genre(movie27831, drama).
 has_genre(movie27831, thriller).
+has_1_genre(movie27834).
 has_genre(movie27834, drama).
+has_2_genre(movie27837).
 has_genre(movie27837, action).
 has_genre(movie27837, adventure).
+has_2_genre(movie27838).
 has_genre(movie27838, drama).
 has_genre(movie27838, thriller).
+has_4_genre(movie27839).
 has_genre(movie27839, drama).
 has_genre(movie27839, horror).
 has_genre(movie27839, mystery).
 has_genre(movie27839, thriller).
+has_1_genre(movie27846).
 has_genre(movie27846, documentary).
+has_1_genre(movie27850).
 has_genre(movie27850, documentary).
+has_4_genre(movie27865).
 has_genre(movie27865, action).
 has_genre(movie27865, adventure).
 has_genre(movie27865, drama).
 has_genre(movie27865, thriller).
+has_1_genre(movie27866).
 has_genre(movie27866, drama).
+has_3_genre(movie27869).
 has_genre(movie27869, action).
 has_genre(movie27869, drama).
 has_genre(movie27869, war).
+has_1_genre(movie27873).
 has_genre(movie27873, documentary).
+has_1_genre(movie27878).
 has_genre(movie27878, documentary).
+has_1_genre(movie27879).
 has_genre(movie27879, documentary).
+has_1_genre(movie27882).
 has_genre(movie27882, documentary).
+has_3_genre(movie27899).
 has_genre(movie27899, comedy).
 has_genre(movie27899, documentary).
 has_genre(movie27899, drama).
+has_5_genre(movie27904).
 has_genre(movie27904, animation).
 has_genre(movie27904, drama).
 has_genre(movie27904, mystery).
 has_genre(movie27904, sci-fi).
 has_genre(movie27904, thriller).
+has_4_genre(movie27905).
 has_genre(movie27905, action).
 has_genre(movie27905, drama).
 has_genre(movie27905, fantasy).
 has_genre(movie27905, sci-fi).
+has_1_genre(movie27912).
 has_genre(movie27912, documentary).
+has_1_genre(movie30707).
 has_genre(movie30707, drama).
+has_5_genre(movie30745).
 has_genre(movie30745, comedy).
 has_genre(movie30745, crime).
 has_genre(movie30745, drama).
 has_genre(movie30745, horror).
 has_genre(movie30745, mystery).
+has_2_genre(movie30749).
 has_genre(movie30749, drama).
 has_genre(movie30749, war).
+has_5_genre(movie30793).
 has_genre(movie30793, adventure).
 has_genre(movie30793, children).
 has_genre(movie30793, comedy).
 has_genre(movie30793, fantasy).
 has_genre(movie30793, imax).
+has_2_genre(movie30803).
 has_genre(movie30803, drama).
 has_genre(movie30803, romance).
+has_3_genre(movie30810).
 has_genre(movie30810, adventure).
 has_genre(movie30810, comedy).
 has_genre(movie30810, fantasy).
+has_1_genre(movie30812).
 has_genre(movie30812, drama).
+has_3_genre(movie30816).
 has_genre(movie30816, drama).
 has_genre(movie30816, musical).
 has_genre(movie30816, romance).
+has_2_genre(movie30818).
 has_genre(movie30818, drama).
 has_genre(movie30818, musical).
+has_1_genre(movie30820).
 has_genre(movie30820, drama).
+has_2_genre(movie30822).
 has_genre(movie30822, comedy).
 has_genre(movie30822, drama).
+has_1_genre(movie30825).
 has_genre(movie30825, comedy).
+has_3_genre(movie30846).
 has_genre(movie30846, crime).
 has_genre(movie30846, drama).
 has_genre(movie30846, thriller).
+has_1_genre(movie30848).
 has_genre(movie30848, drama).
+has_1_genre(movie30850).
 has_genre(movie30850, drama).
+has_2_genre(movie30883).
 has_genre(movie30883, comedy).
 has_genre(movie30883, fantasy).
+has_1_genre(movie30890).
 has_genre(movie30890, drama).
+has_2_genre(movie30892).
 has_genre(movie30892, animation).
 has_genre(movie30892, documentary).
+has_5_genre(movie30894).
 has_genre(movie30894, drama).
 has_genre(movie30894, horror).
 has_genre(movie30894, mystery).
 has_genre(movie30894, sci-fi).
 has_genre(movie30894, thriller).
+has_3_genre(movie30898).
 has_genre(movie30898, comedy).
 has_genre(movie30898, drama).
 has_genre(movie30898, romance).
+has_2_genre(movie30994).
 has_genre(movie30994, comedy).
 has_genre(movie30994, drama).
+has_1_genre(movie31000).
 has_genre(movie31000, comedy).
+has_2_genre(movie31030).
 has_genre(movie31030, children).
 has_genre(movie31030, drama).
+has_2_genre(movie31038).
 has_genre(movie31038, drama).
 has_genre(movie31038, romance).
+has_2_genre(movie31049).
 has_genre(movie31049, comedy).
 has_genre(movie31049, thriller).
+has_2_genre(movie31083).
 has_genre(movie31083, comedy).
 has_genre(movie31083, romance).
+has_2_genre(movie31086).
 has_genre(movie31086, crime).
 has_genre(movie31086, drama).
+has_3_genre(movie31101).
 has_genre(movie31101, action).
 has_genre(movie31101, crime).
 has_genre(movie31101, drama).
+has_2_genre(movie31114).
 has_genre(movie31114, comedy).
 has_genre(movie31114, drama).
+has_2_genre(movie31116).
 has_genre(movie31116, drama).
 has_genre(movie31116, war).
+has_2_genre(movie31123).
 has_genre(movie31123, comedy).
 has_genre(movie31123, crime).
+has_4_genre(movie31150).
 has_genre(movie31150, animation).
 has_genre(movie31150, fantasy).
 has_genre(movie31150, sci-fi).
 has_genre(movie31150, war).
+has_2_genre(movie31162).
 has_genre(movie31162, comedy).
 has_genre(movie31162, drama).
+has_4_genre(movie31184).
 has_genre(movie31184, action).
 has_genre(movie31184, animation).
 has_genre(movie31184, fantasy).
 has_genre(movie31184, sci-fi).
+has_3_genre(movie31193).
 has_genre(movie31193, animation).
 has_genre(movie31193, children).
 has_genre(movie31193, musical).
+has_4_genre(movie31221).
 has_genre(movie31221, action).
 has_genre(movie31221, adventure).
 has_genre(movie31221, crime).
 has_genre(movie31221, drama).
+has_2_genre(movie31223).
 has_genre(movie31223, children).
 has_genre(movie31223, comedy).
+has_1_genre(movie31225).
 has_genre(movie31225, drama).
+has_1_genre(movie31260).
 has_genre(movie31260, drama).
+has_2_genre(movie31297).
 has_genre(movie31297, comedy).
 has_genre(movie31297, musical).
+has_2_genre(movie31309).
 has_genre(movie31309, crime).
 has_genre(movie31309, drama).
+has_4_genre(movie31364).
 has_genre(movie31364, crime).
 has_genre(movie31364, drama).
 has_genre(movie31364, mystery).
 has_genre(movie31364, thriller).
+has_more_than_5_genre(movie31367).
 has_genre(movie31367, action).
 has_genre(movie31367, adventure).
 has_genre(movie31367, comedy).
 has_genre(movie31367, crime).
 has_genre(movie31367, romance).
 has_genre(movie31367, thriller).
+has_2_genre(movie31410).
 has_genre(movie31410, drama).
 has_genre(movie31410, war).
+has_4_genre(movie31420).
 has_genre(movie31420, action).
 has_genre(movie31420, crime).
 has_genre(movie31420, drama).
 has_genre(movie31420, thriller).
+has_2_genre(movie31422).
 has_genre(movie31422, children).
 has_genre(movie31422, comedy).
+has_4_genre(movie31424).
 has_genre(movie31424, action).
 has_genre(movie31424, horror).
 has_genre(movie31424, sci-fi).
 has_genre(movie31424, thriller).
+has_3_genre(movie31427).
 has_genre(movie31427, horror).
 has_genre(movie31427, mystery).
 has_genre(movie31427, thriller).
+has_4_genre(movie31431).
 has_genre(movie31431, drama).
 has_genre(movie31431, horror).
 has_genre(movie31431, mystery).
 has_genre(movie31431, thriller).
+has_2_genre(movie31433).
 has_genre(movie31433, comedy).
 has_genre(movie31433, romance).
+has_1_genre(movie31435).
 has_genre(movie31435, drama).
+has_1_genre(movie31437).
 has_genre(movie31437, drama).
+has_2_genre(movie31445).
 has_genre(movie31445, comedy).
 has_genre(movie31445, drama).
+has_1_genre(movie31522).
 has_genre(movie31522, drama).
+has_2_genre(movie31545).
 has_genre(movie31545, crime).
 has_genre(movie31545, film-noir).
+has_3_genre(movie31553).
 has_genre(movie31553, action).
 has_genre(movie31553, adventure).
 has_genre(movie31553, sci-fi).
+has_3_genre(movie31590).
 has_genre(movie31590, crime).
 has_genre(movie31590, drama).
 has_genre(movie31590, thriller).
+has_1_genre(movie31610).
 has_genre(movie31610, drama).
+has_5_genre(movie31617).
 has_genre(movie31617, action).
 has_genre(movie31617, adventure).
 has_genre(movie31617, drama).
 has_genre(movie31617, romance).
 has_genre(movie31617, war).
+has_4_genre(movie31658).
 has_genre(movie31658, adventure).
 has_genre(movie31658, animation).
 has_genre(movie31658, fantasy).
 has_genre(movie31658, romance).
+has_4_genre(movie31660).
 has_genre(movie31660, action).
 has_genre(movie31660, animation).
 has_genre(movie31660, drama).
 has_genre(movie31660, sci-fi).
+has_3_genre(movie31664).
 has_genre(movie31664, action).
 has_genre(movie31664, comedy).
 has_genre(movie31664, romance).
+has_2_genre(movie31685).
 has_genre(movie31685, comedy).
 has_genre(movie31685, romance).
+has_1_genre(movie31692).
 has_genre(movie31692, comedy).
+has_3_genre(movie31694).
 has_genre(movie31694, comedy).
 has_genre(movie31694, musical).
 has_genre(movie31694, romance).
+has_4_genre(movie31696).
 has_genre(movie31696, action).
 has_genre(movie31696, fantasy).
 has_genre(movie31696, horror).
 has_genre(movie31696, thriller).
+has_4_genre(movie31698).
 has_genre(movie31698, adventure).
 has_genre(movie31698, children).
 has_genre(movie31698, comedy).
 has_genre(movie31698, fantasy).
+has_3_genre(movie31700).
 has_genre(movie31700, children).
 has_genre(movie31700, comedy).
 has_genre(movie31700, drama).
+has_2_genre(movie31702).
 has_genre(movie31702, drama).
 has_genre(movie31702, war).
+has_2_genre(movie31737).
 has_genre(movie31737, mystery).
 has_genre(movie31737, thriller).
+has_more_than_5_genre(movie31804).
 has_genre(movie31804, action).
 has_genre(movie31804, fantasy).
 has_genre(movie31804, horror).
 has_genre(movie31804, mystery).
 has_genre(movie31804, sci-fi).
 has_genre(movie31804, thriller).
+has_1_genre(movie31851).
 has_genre(movie31851, comedy).
+has_2_genre(movie31867).
 has_genre(movie31867, action).
 has_genre(movie31867, comedy).
+has_2_genre(movie31878).
 has_genre(movie31878, action).
 has_genre(movie31878, comedy).
+has_2_genre(movie31903).
 has_genre(movie31903, drama).
 has_genre(movie31903, romance).
+has_2_genre(movie31909).
 has_genre(movie31909, comedy).
 has_genre(movie31909, horror).
+has_more_than_5_genre(movie31921).
 has_genre(movie31921, adventure).
 has_genre(movie31921, comedy).
 has_genre(movie31921, crime).
 has_genre(movie31921, drama).
 has_genre(movie31921, mystery).
 has_genre(movie31921, thriller).
+has_3_genre(movie31923).
 has_genre(movie31923, action).
 has_genre(movie31923, adventure).
 has_genre(movie31923, comedy).
+has_3_genre(movie31925).
 has_genre(movie31925, adventure).
 has_genre(movie31925, comedy).
 has_genre(movie31925, romance).
+has_4_genre(movie31952).
 has_genre(movie31952, comedy).
 has_genre(movie31952, crime).
 has_genre(movie31952, drama).
 has_genre(movie31952, mystery).
+has_2_genre(movie31973).
 has_genre(movie31973, drama).
 has_genre(movie31973, war).
+has_3_genre(movie32009).
 has_genre(movie32009, comedy).
 has_genre(movie32009, drama).
 has_genre(movie32009, romance).
+has_2_genre(movie32011).
 has_genre(movie32011, horror).
 has_genre(movie32011, thriller).
+has_2_genre(movie32017).
 has_genre(movie32017, action).
 has_genre(movie32017, comedy).
+has_3_genre(movie32019).
 has_genre(movie32019, comedy).
 has_genre(movie32019, crime).
 has_genre(movie32019, musical).
+has_2_genre(movie32022).
 has_genre(movie32022, documentary).
 has_genre(movie32022, war).
+has_4_genre(movie32029).
 has_genre(movie32029, action).
 has_genre(movie32029, crime).
 has_genre(movie32029, drama).
 has_genre(movie32029, thriller).
+has_more_than_5_genre(movie32031).
 has_genre(movie32031, adventure).
 has_genre(movie32031, animation).
 has_genre(movie32031, children).
@@ -16887,815 +22712,1141 @@ has_genre(movie32031, comedy).
 has_genre(movie32031, fantasy).
 has_genre(movie32031, sci-fi).
 has_genre(movie32031, imax).
+has_1_genre(movie32058).
 has_genre(movie32058, drama).
+has_2_genre(movie32060).
 has_genre(movie32060, horror).
 has_genre(movie32060, mystery).
+has_1_genre(movie32116).
 has_genre(movie32116, comedy).
+has_1_genre(movie32139).
 has_genre(movie32139, drama).
+has_1_genre(movie32160).
 has_genre(movie32160, comedy).
+has_3_genre(movie32179).
 has_genre(movie32179, crime).
 has_genre(movie32179, drama).
 has_genre(movie32179, thriller).
+has_4_genre(movie32213).
 has_genre(movie32213, horror).
 has_genre(movie32213, mystery).
 has_genre(movie32213, sci-fi).
 has_genre(movie32213, thriller).
+has_1_genre(movie32234).
 has_genre(movie32234, drama).
+has_3_genre(movie32243).
 has_genre(movie32243, action).
 has_genre(movie32243, comedy).
 has_genre(movie32243, crime).
+has_3_genre(movie32289).
 has_genre(movie32289, children).
 has_genre(movie32289, comedy).
 has_genre(movie32289, drama).
+has_2_genre(movie32291).
 has_genre(movie32291, comedy).
 has_genre(movie32291, drama).
+has_1_genre(movie32294).
 has_genre(movie32294, drama).
+has_3_genre(movie32296).
 has_genre(movie32296, adventure).
 has_genre(movie32296, comedy).
 has_genre(movie32296, crime).
+has_2_genre(movie32298).
 has_genre(movie32298, comedy).
 has_genre(movie32298, romance).
+has_2_genre(movie32300).
 has_genre(movie32300, action).
 has_genre(movie32300, comedy).
+has_1_genre(movie32302).
 has_genre(movie32302, documentary).
+has_3_genre(movie32314).
 has_genre(movie32314, adventure).
 has_genre(movie32314, comedy).
 has_genre(movie32314, documentary).
+has_3_genre(movie32371).
 has_genre(movie32371, crime).
 has_genre(movie32371, drama).
 has_genre(movie32371, film-noir).
+has_2_genre(movie32387).
 has_genre(movie32387, action).
 has_genre(movie32387, drama).
+has_4_genre(movie32392).
 has_genre(movie32392, comedy).
 has_genre(movie32392, crime).
 has_genre(movie32392, drama).
 has_genre(movie32392, western).
+has_2_genre(movie32440).
 has_genre(movie32440, action).
 has_genre(movie32440, comedy).
+has_1_genre(movie32442).
 has_genre(movie32442, comedy).
+has_4_genre(movie32456).
 has_genre(movie32456, animation).
 has_genre(movie32456, comedy).
 has_genre(movie32456, drama).
 has_genre(movie32456, fantasy).
+has_4_genre(movie32460).
 has_genre(movie32460, action).
 has_genre(movie32460, comedy).
 has_genre(movie32460, crime).
 has_genre(movie32460, drama).
+has_3_genre(movie32469).
 has_genre(movie32469, comedy).
 has_genre(movie32469, crime).
 has_genre(movie32469, drama).
+has_2_genre(movie32511).
 has_genre(movie32511, action).
 has_genre(movie32511, adventure).
+has_4_genre(movie32515).
 has_genre(movie32515, adventure).
 has_genre(movie32515, drama).
 has_genre(movie32515, war).
 has_genre(movie32515, western).
+has_4_genre(movie32554).
 has_genre(movie32554, animation).
 has_genre(movie32554, fantasy).
 has_genre(movie32554, sci-fi).
 has_genre(movie32554, thriller).
+has_1_genre(movie32582).
 has_genre(movie32582, documentary).
+has_1_genre(movie32584).
 has_genre(movie32584, drama).
+has_5_genre(movie32587).
 has_genre(movie32587, action).
 has_genre(movie32587, crime).
 has_genre(movie32587, film-noir).
 has_genre(movie32587, mystery).
 has_genre(movie32587, thriller).
+has_1_genre(movie32589).
 has_genre(movie32589, comedy).
+has_3_genre(movie32596).
 has_genre(movie32596, action).
 has_genre(movie32596, adventure).
 has_genre(movie32596, comedy).
+has_2_genre(movie32598).
 has_genre(movie32598, comedy).
 has_genre(movie32598, romance).
+has_1_genre(movie32600).
 has_genre(movie32600, drama).
+has_3_genre(movie32620).
 has_genre(movie32620, comedy).
 has_genre(movie32620, musical).
 has_genre(movie32620, romance).
+has_2_genre(movie32632).
 has_genre(movie32632, action).
 has_genre(movie32632, crime).
+has_2_genre(movie32649).
 has_genre(movie32649, drama).
 has_genre(movie32649, war).
+has_2_genre(movie32657).
 has_genre(movie32657, animation).
 has_genre(movie32657, drama).
+has_1_genre(movie32659).
 has_genre(movie32659, comedy).
+has_1_genre(movie32666).
 has_genre(movie32666, comedy).
+has_3_genre(movie32728).
 has_genre(movie32728, drama).
 has_genre(movie32728, mystery).
 has_genre(movie32728, thriller).
+has_3_genre(movie32743).
 has_genre(movie32743, drama).
 has_genre(movie32743, horror).
 has_genre(movie32743, thriller).
+has_1_genre(movie32770).
 has_genre(movie32770, drama).
+has_2_genre(movie32799).
 has_genre(movie32799, drama).
 has_genre(movie32799, romance).
+has_2_genre(movie32862).
 has_genre(movie32862, comedy).
 has_genre(movie32862, romance).
+has_1_genre(movie32875).
 has_genre(movie32875, comedy).
+has_2_genre(movie32892).
 has_genre(movie32892, drama).
 has_genre(movie32892, war).
+has_4_genre(movie32898).
 has_genre(movie32898, action).
 has_genre(movie32898, adventure).
 has_genre(movie32898, fantasy).
 has_genre(movie32898, sci-fi).
+has_2_genre(movie32906).
 has_genre(movie32906, drama).
 has_genre(movie32906, war).
+has_3_genre(movie32914).
 has_genre(movie32914, drama).
 has_genre(movie32914, horror).
 has_genre(movie32914, thriller).
+has_3_genre(movie32917).
 has_genre(movie32917, comedy).
 has_genre(movie32917, fantasy).
 has_genre(movie32917, romance).
+has_3_genre(movie33004).
 has_genre(movie33004, adventure).
 has_genre(movie33004, comedy).
 has_genre(movie33004, sci-fi).
+has_2_genre(movie33085).
 has_genre(movie33085, horror).
 has_genre(movie33085, thriller).
+has_3_genre(movie33090).
 has_genre(movie33090, animation).
 has_genre(movie33090, comedy).
 has_genre(movie33090, sci-fi).
+has_2_genre(movie33124).
 has_genre(movie33124, drama).
 has_genre(movie33124, war).
+has_2_genre(movie33126).
 has_genre(movie33126, comedy).
 has_genre(movie33126, western).
+has_3_genre(movie33132).
 has_genre(movie33132, action).
 has_genre(movie33132, crime).
 has_genre(movie33132, drama).
+has_3_genre(movie33138).
 has_genre(movie33138, adventure).
 has_genre(movie33138, comedy).
 has_genre(movie33138, drama).
+has_3_genre(movie33145).
 has_genre(movie33145, comedy).
 has_genre(movie33145, drama).
 has_genre(movie33145, romance).
+has_2_genre(movie33148).
 has_genre(movie33148, comedy).
 has_genre(movie33148, crime).
+has_1_genre(movie33154).
 has_genre(movie33154, documentary).
+has_3_genre(movie33158).
 has_genre(movie33158, action).
 has_genre(movie33158, crime).
 has_genre(movie33158, thriller).
+has_4_genre(movie33162).
 has_genre(movie33162, action).
 has_genre(movie33162, drama).
 has_genre(movie33162, romance).
 has_genre(movie33162, war).
+has_2_genre(movie33164).
 has_genre(movie33164, horror).
 has_genre(movie33164, thriller).
+has_2_genre(movie33166).
 has_genre(movie33166, crime).
 has_genre(movie33166, drama).
+has_2_genre(movie33171).
 has_genre(movie33171, drama).
 has_genre(movie33171, mystery).
+has_2_genre(movie33188).
 has_genre(movie33188, comedy).
 has_genre(movie33188, romance).
+has_4_genre(movie33201).
 has_genre(movie33201, drama).
 has_genre(movie33201, mystery).
 has_genre(movie33201, romance).
 has_genre(movie33201, thriller).
+has_3_genre(movie33237).
 has_genre(movie33237, drama).
 has_genre(movie33237, musical).
 has_genre(movie33237, romance).
+has_3_genre(movie33294).
 has_genre(movie33294, animation).
 has_genre(movie33294, fantasy).
 has_genre(movie33294, horror).
+has_2_genre(movie33310).
 has_genre(movie33310, drama).
 has_genre(movie33310, romance).
+has_2_genre(movie33312).
 has_genre(movie33312, comedy).
 has_genre(movie33312, musical).
+has_1_genre(movie33421).
 has_genre(movie33421, drama).
+has_1_genre(movie33435).
 has_genre(movie33435, documentary).
+has_4_genre(movie33437).
 has_genre(movie33437, action).
 has_genre(movie33437, crime).
 has_genre(movie33437, drama).
 has_genre(movie33437, thriller).
+has_3_genre(movie33493).
 has_genre(movie33493, action).
 has_genre(movie33493, adventure).
 has_genre(movie33493, sci-fi).
+has_1_genre(movie33495).
 has_genre(movie33495, comedy).
+has_2_genre(movie33499).
 has_genre(movie33499, comedy).
 has_genre(movie33499, romance).
+has_2_genre(movie33558).
 has_genre(movie33558, adventure).
 has_genre(movie33558, drama).
+has_1_genre(movie33564).
 has_genre(movie33564, comedy).
+has_4_genre(movie33615).
 has_genre(movie33615, adventure).
 has_genre(movie33615, animation).
 has_genre(movie33615, children).
 has_genre(movie33615, comedy).
+has_2_genre(movie33629).
 has_genre(movie33629, adventure).
 has_genre(movie33629, comedy).
+has_2_genre(movie33639).
 has_genre(movie33639, children).
 has_genre(movie33639, documentary).
+has_2_genre(movie33644).
 has_genre(movie33644, horror).
 has_genre(movie33644, thriller).
+has_2_genre(movie33646).
 has_genre(movie33646, comedy).
 has_genre(movie33646, drama).
+has_3_genre(movie33649).
 has_genre(movie33649, comedy).
 has_genre(movie33649, drama).
 has_genre(movie33649, romance).
+has_2_genre(movie33660).
 has_genre(movie33660, drama).
 has_genre(movie33660, romance).
+has_3_genre(movie33669).
 has_genre(movie33669, adventure).
 has_genre(movie33669, comedy).
 has_genre(movie33669, drama).
+has_3_genre(movie33672).
 has_genre(movie33672, action).
 has_genre(movie33672, comedy).
 has_genre(movie33672, drama).
+has_1_genre(movie33677).
 has_genre(movie33677, documentary).
+has_4_genre(movie33679).
 has_genre(movie33679, action).
 has_genre(movie33679, adventure).
 has_genre(movie33679, comedy).
 has_genre(movie33679, romance).
+has_4_genre(movie33681).
 has_genre(movie33681, action).
 has_genre(movie33681, adventure).
 has_genre(movie33681, children).
 has_genre(movie33681, fantasy).
+has_2_genre(movie33683).
 has_genre(movie33683, horror).
 has_genre(movie33683, thriller).
+has_3_genre(movie33725).
 has_genre(movie33725, comedy).
 has_genre(movie33725, drama).
 has_genre(movie33725, musical).
+has_1_genre(movie33779).
 has_genre(movie33779, comedy).
+has_2_genre(movie33781).
 has_genre(movie33781, drama).
 has_genre(movie33781, romance).
+has_3_genre(movie33794).
 has_genre(movie33794, action).
 has_genre(movie33794, crime).
 has_genre(movie33794, imax).
+has_4_genre(movie33801).
 has_genre(movie33801, action).
 has_genre(movie33801, adventure).
 has_genre(movie33801, fantasy).
 has_genre(movie33801, sci-fi).
+has_3_genre(movie33815).
 has_genre(movie33815, comedy).
 has_genre(movie33815, drama).
 has_genre(movie33815, romance).
+has_2_genre(movie33826).
 has_genre(movie33826, comedy).
 has_genre(movie33826, drama).
+has_3_genre(movie33830).
 has_genre(movie33830, adventure).
 has_genre(movie33830, comedy).
 has_genre(movie33830, romance).
+has_3_genre(movie33834).
 has_genre(movie33834, action).
 has_genre(movie33834, horror).
 has_genre(movie33834, thriller).
+has_3_genre(movie33836).
 has_genre(movie33836, comedy).
 has_genre(movie33836, fantasy).
 has_genre(movie33836, romance).
+has_1_genre(movie33838).
 has_genre(movie33838, documentary).
+has_2_genre(movie33880).
 has_genre(movie33880, comedy).
 has_genre(movie33880, drama).
+has_3_genre(movie33893).
 has_genre(movie33893, comedy).
 has_genre(movie33893, crime).
 has_genre(movie33893, thriller).
+has_1_genre(movie33896).
 has_genre(movie33896, horror).
+has_4_genre(movie33903).
 has_genre(movie33903, comedy).
 has_genre(movie33903, crime).
 has_genre(movie33903, drama).
 has_genre(movie33903, romance).
+has_1_genre(movie33966).
 has_genre(movie33966, comedy).
+has_2_genre(movie34018).
 has_genre(movie34018, comedy).
 has_genre(movie34018, musical).
+has_4_genre(movie34048).
 has_genre(movie34048, action).
 has_genre(movie34048, adventure).
 has_genre(movie34048, sci-fi).
 has_genre(movie34048, thriller).
+has_1_genre(movie34072).
 has_genre(movie34072, documentary).
+has_1_genre(movie34129).
 has_genre(movie34129, comedy).
+has_3_genre(movie34143).
 has_genre(movie34143, drama).
 has_genre(movie34143, horror).
 has_genre(movie34143, thriller).
+has_1_genre(movie34148).
 has_genre(movie34148, drama).
+has_3_genre(movie34150).
 has_genre(movie34150, action).
 has_genre(movie34150, adventure).
 has_genre(movie34150, sci-fi).
+has_1_genre(movie34153).
 has_genre(movie34153, documentary).
+has_2_genre(movie34162).
 has_genre(movie34162, comedy).
 has_genre(movie34162, romance).
+has_2_genre(movie34164).
 has_genre(movie34164, comedy).
 has_genre(movie34164, drama).
+has_2_genre(movie34271).
 has_genre(movie34271, crime).
 has_genre(movie34271, drama).
+has_3_genre(movie34292).
 has_genre(movie34292, action).
 has_genre(movie34292, horror).
 has_genre(movie34292, sci-fi).
+has_1_genre(movie34312).
 has_genre(movie34312, comedy).
+has_3_genre(movie34319).
 has_genre(movie34319, action).
 has_genre(movie34319, sci-fi).
 has_genre(movie34319, thriller).
+has_2_genre(movie34321).
 has_genre(movie34321, children).
 has_genre(movie34321, comedy).
+has_3_genre(movie34323).
 has_genre(movie34323, action).
 has_genre(movie34323, crime).
 has_genre(movie34323, horror).
+has_1_genre(movie34326).
 has_genre(movie34326, drama).
+has_2_genre(movie34330).
 has_genre(movie34330, drama).
 has_genre(movie34330, mystery).
+has_4_genre(movie34332).
 has_genre(movie34332, action).
 has_genre(movie34332, adventure).
 has_genre(movie34332, children).
 has_genre(movie34332, comedy).
+has_4_genre(movie34334).
 has_genre(movie34334, action).
 has_genre(movie34334, adventure).
 has_genre(movie34334, sci-fi).
 has_genre(movie34334, thriller).
+has_2_genre(movie34336).
 has_genre(movie34336, comedy).
 has_genre(movie34336, romance).
+has_2_genre(movie34338).
 has_genre(movie34338, comedy).
 has_genre(movie34338, documentary).
+has_1_genre(movie34359).
 has_genre(movie34359, comedy).
+has_4_genre(movie34397).
 has_genre(movie34397, action).
 has_genre(movie34397, adventure).
 has_genre(movie34397, drama).
 has_genre(movie34397, thriller).
+has_3_genre(movie34405).
 has_genre(movie34405, action).
 has_genre(movie34405, adventure).
 has_genre(movie34405, sci-fi).
+has_2_genre(movie34437).
 has_genre(movie34437, comedy).
 has_genre(movie34437, drama).
+has_4_genre(movie34450).
 has_genre(movie34450, action).
 has_genre(movie34450, comedy).
 has_genre(movie34450, crime).
 has_genre(movie34450, drama).
+has_1_genre(movie34482).
 has_genre(movie34482, drama).
+has_3_genre(movie34520).
 has_genre(movie34520, action).
 has_genre(movie34520, adventure).
 has_genre(movie34520, comedy).
+has_2_genre(movie34523).
 has_genre(movie34523, comedy).
 has_genre(movie34523, drama).
+has_2_genre(movie34528).
 has_genre(movie34528, comedy).
 has_genre(movie34528, drama).
+has_1_genre(movie34530).
 has_genre(movie34530, comedy).
+has_4_genre(movie34532).
 has_genre(movie34532, drama).
 has_genre(movie34532, horror).
 has_genre(movie34532, mystery).
 has_genre(movie34532, thriller).
+has_3_genre(movie34534).
 has_genre(movie34534, action).
 has_genre(movie34534, crime).
 has_genre(movie34534, drama).
+has_3_genre(movie34536).
 has_genre(movie34536, action).
 has_genre(movie34536, drama).
 has_genre(movie34536, war).
+has_2_genre(movie34540).
 has_genre(movie34540, comedy).
 has_genre(movie34540, drama).
+has_1_genre(movie34542).
 has_genre(movie34542, documentary).
+has_1_genre(movie34800).
 has_genre(movie34800, comedy).
+has_4_genre(movie34811).
 has_genre(movie34811, action).
 has_genre(movie34811, crime).
 has_genre(movie34811, drama).
 has_genre(movie34811, thriller).
+has_2_genre(movie35015).
 has_genre(movie35015, adventure).
 has_genre(movie35015, drama).
+has_2_genre(movie35347).
 has_genre(movie35347, animation).
 has_genre(movie35347, drama).
+has_1_genre(movie35807).
 has_genre(movie35807, comedy).
+has_2_genre(movie35836).
 has_genre(movie35836, comedy).
 has_genre(movie35836, romance).
+has_2_genre(movie35957).
 has_genre(movie35957, horror).
 has_genre(movie35957, thriller).
+has_3_genre(movie36276).
 has_genre(movie36276, drama).
 has_genre(movie36276, mystery).
 has_genre(movie36276, thriller).
+has_4_genre(movie36289).
 has_genre(movie36289, adventure).
 has_genre(movie36289, children).
 has_genre(movie36289, comedy).
 has_genre(movie36289, fantasy).
+has_3_genre(movie36363).
 has_genre(movie36363, comedy).
 has_genre(movie36363, drama).
 has_genre(movie36363, sci-fi).
+has_more_than_5_genre(movie36397).
 has_genre(movie36397, adventure).
 has_genre(movie36397, animation).
 has_genre(movie36397, children).
 has_genre(movie36397, comedy).
 has_genre(movie36397, fantasy).
 has_genre(movie36397, war).
+has_4_genre(movie36401).
 has_genre(movie36401, comedy).
 has_genre(movie36401, fantasy).
 has_genre(movie36401, horror).
 has_genre(movie36401, thriller).
+has_3_genre(movie36477).
 has_genre(movie36477, comedy).
 has_genre(movie36477, drama).
 has_genre(movie36477, romance).
+has_more_than_5_genre(movie36509).
 has_genre(movie36509, action).
 has_genre(movie36509, adventure).
 has_genre(movie36509, horror).
 has_genre(movie36509, mystery).
 has_genre(movie36509, sci-fi).
 has_genre(movie36509, thriller).
+has_2_genre(movie36517).
 has_genre(movie36517, drama).
 has_genre(movie36517, thriller).
+has_3_genre(movie36519).
 has_genre(movie36519, action).
 has_genre(movie36519, crime).
 has_genre(movie36519, thriller).
+has_3_genre(movie36525).
 has_genre(movie36525, comedy).
 has_genre(movie36525, fantasy).
 has_genre(movie36525, romance).
+has_1_genre(movie36527).
 has_genre(movie36527, drama).
+has_5_genre(movie36529).
 has_genre(movie36529, action).
 has_genre(movie36529, crime).
 has_genre(movie36529, drama).
 has_genre(movie36529, thriller).
 has_genre(movie36529, war).
+has_4_genre(movie36533).
 has_genre(movie36533, drama).
 has_genre(movie36533, horror).
 has_genre(movie36533, mystery).
 has_genre(movie36533, thriller).
+has_2_genre(movie36535).
 has_genre(movie36535, comedy).
 has_genre(movie36535, drama).
+has_2_genre(movie36537).
 has_genre(movie36537, comedy).
 has_genre(movie36537, drama).
+has_3_genre(movie36708).
 has_genre(movie36708, adventure).
 has_genre(movie36708, animation).
 has_genre(movie36708, comedy).
+has_4_genre(movie36850).
 has_genre(movie36850, action).
 has_genre(movie36850, comedy).
 has_genre(movie36850, crime).
 has_genre(movie36850, thriller).
+has_3_genre(movie36931).
 has_genre(movie36931, action).
 has_genre(movie36931, crime).
 has_genre(movie36931, drama).
+has_3_genre(movie37211).
 has_genre(movie37211, comedy).
 has_genre(movie37211, musical).
 has_genre(movie37211, western).
+has_1_genre(movie37240).
 has_genre(movie37240, documentary).
+has_3_genre(movie37380).
 has_genre(movie37380, action).
 has_genre(movie37380, horror).
 has_genre(movie37380, sci-fi).
+has_3_genre(movie37382).
 has_genre(movie37382, crime).
 has_genre(movie37382, drama).
 has_genre(movie37382, thriller).
+has_1_genre(movie37384).
 has_genre(movie37384, comedy).
+has_2_genre(movie37386).
 has_genre(movie37386, action).
 has_genre(movie37386, sci-fi).
+has_3_genre(movie37444).
 has_genre(movie37444, comedy).
 has_genre(movie37444, horror).
 has_genre(movie37444, romance).
+has_1_genre(movie37475).
 has_genre(movie37475, drama).
+has_3_genre(movie37477).
 has_genre(movie37477, action).
 has_genre(movie37477, comedy).
 has_genre(movie37477, crime).
+has_4_genre(movie37495).
 has_genre(movie37495, fantasy).
 has_genre(movie37495, mystery).
 has_genre(movie37495, romance).
 has_genre(movie37495, thriller).
+has_1_genre(movie37545).
 has_genre(movie37545, drama).
+has_4_genre(movie37720).
 has_genre(movie37720, crime).
 has_genre(movie37720, drama).
 has_genre(movie37720, horror).
 has_genre(movie37720, thriller).
+has_3_genre(movie37727).
 has_genre(movie37727, action).
 has_genre(movie37727, drama).
 has_genre(movie37727, thriller).
+has_5_genre(movie37729).
 has_genre(movie37729, animation).
 has_genre(movie37729, comedy).
 has_genre(movie37729, fantasy).
 has_genre(movie37729, musical).
 has_genre(movie37729, romance).
+has_2_genre(movie37731).
 has_genre(movie37731, crime).
 has_genre(movie37731, drama).
+has_4_genre(movie37733).
 has_genre(movie37733, action).
 has_genre(movie37733, crime).
 has_genre(movie37733, drama).
 has_genre(movie37733, thriller).
+has_1_genre(movie37736).
 has_genre(movie37736, drama).
+has_1_genre(movie37739).
 has_genre(movie37739, drama).
+has_2_genre(movie37741).
 has_genre(movie37741, crime).
 has_genre(movie37741, drama).
+has_5_genre(movie37830).
 has_genre(movie37830, action).
 has_genre(movie37830, adventure).
 has_genre(movie37830, animation).
 has_genre(movie37830, fantasy).
 has_genre(movie37830, sci-fi).
+has_3_genre(movie37844).
 has_genre(movie37844, comedy).
 has_genre(movie37844, drama).
 has_genre(movie37844, romance).
+has_4_genre(movie37853).
 has_genre(movie37853, action).
 has_genre(movie37853, adventure).
 has_genre(movie37853, crime).
 has_genre(movie37853, thriller).
+has_4_genre(movie37857).
 has_genre(movie37857, adventure).
 has_genre(movie37857, children).
 has_genre(movie37857, drama).
 has_genre(movie37857, fantasy).
+has_4_genre(movie38038).
 has_genre(movie38038, adventure).
 has_genre(movie38038, animation).
 has_genre(movie38038, children).
 has_genre(movie38038, comedy).
+has_4_genre(movie38061).
 has_genre(movie38061, comedy).
 has_genre(movie38061, crime).
 has_genre(movie38061, mystery).
 has_genre(movie38061, thriller).
+has_3_genre(movie38095).
 has_genre(movie38095, action).
 has_genre(movie38095, crime).
 has_genre(movie38095, drama).
+has_2_genre(movie38159).
 has_genre(movie38159, drama).
 has_genre(movie38159, romance).
+has_2_genre(movie38164).
 has_genre(movie38164, drama).
 has_genre(movie38164, romance).
+has_1_genre(movie38198).
 has_genre(movie38198, documentary).
+has_4_genre(movie38294).
 has_genre(movie38294, action).
 has_genre(movie38294, adventure).
 has_genre(movie38294, drama).
 has_genre(movie38294, fantasy).
+has_1_genre(movie38304).
 has_genre(movie38304, documentary).
+has_1_genre(movie38388).
 has_genre(movie38388, drama).
+has_4_genre(movie38583).
 has_genre(movie38583, action).
 has_genre(movie38583, horror).
 has_genre(movie38583, sci-fi).
 has_genre(movie38583, thriller).
+has_2_genre(movie38798).
 has_genre(movie38798, comedy).
 has_genre(movie38798, drama).
+has_2_genre(movie38886).
 has_genre(movie38886, comedy).
 has_genre(movie38886, drama).
+has_1_genre(movie38992).
 has_genre(movie38992, drama).
+has_2_genre(movie39183).
 has_genre(movie39183, drama).
 has_genre(movie39183, romance).
+has_3_genre(movie39231).
 has_genre(movie39231, comedy).
 has_genre(movie39231, drama).
 has_genre(movie39231, romance).
+has_1_genre(movie39234).
 has_genre(movie39234, drama).
+has_2_genre(movie39292).
 has_genre(movie39292, crime).
 has_genre(movie39292, drama).
+has_2_genre(movie39307).
 has_genre(movie39307, children).
 has_genre(movie39307, drama).
+has_3_genre(movie39381).
 has_genre(movie39381, crime).
 has_genre(movie39381, drama).
 has_genre(movie39381, western).
+has_4_genre(movie39400).
 has_genre(movie39400, action).
 has_genre(movie39400, horror).
 has_genre(movie39400, mystery).
 has_genre(movie39400, thriller).
+has_3_genre(movie39414).
 has_genre(movie39414, comedy).
 has_genre(movie39414, drama).
 has_genre(movie39414, romance).
+has_1_genre(movie39427).
 has_genre(movie39427, thriller).
+has_4_genre(movie39435).
 has_genre(movie39435, action).
 has_genre(movie39435, adventure).
 has_genre(movie39435, drama).
 has_genre(movie39435, western).
+has_2_genre(movie39444).
 has_genre(movie39444, comedy).
 has_genre(movie39444, drama).
+has_2_genre(movie39446).
 has_genre(movie39446, horror).
 has_genre(movie39446, thriller).
+has_3_genre(movie39449).
 has_genre(movie39449, comedy).
 has_genre(movie39449, drama).
 has_genre(movie39449, romance).
+has_1_genre(movie39516).
 has_genre(movie39516, drama).
+has_1_genre(movie39715).
 has_genre(movie39715, comedy).
+has_4_genre(movie39801).
 has_genre(movie39801, adventure).
 has_genre(movie39801, comedy).
 has_genre(movie39801, fantasy).
 has_genre(movie39801, horror).
+has_1_genre(movie39869).
 has_genre(movie39869, drama).
+has_3_genre(movie40148).
 has_genre(movie40148, crime).
 has_genre(movie40148, drama).
 has_genre(movie40148, thriller).
+has_3_genre(movie40278).
 has_genre(movie40278, action).
 has_genre(movie40278, drama).
 has_genre(movie40278, war).
+has_more_than_5_genre(movie40339).
 has_genre(movie40339, action).
 has_genre(movie40339, adventure).
 has_genre(movie40339, animation).
 has_genre(movie40339, children).
 has_genre(movie40339, comedy).
 has_genre(movie40339, sci-fi).
+has_2_genre(movie40412).
 has_genre(movie40412, crime).
 has_genre(movie40412, thriller).
+has_2_genre(movie40414).
 has_genre(movie40414, drama).
 has_genre(movie40414, war).
+has_3_genre(movie40478).
 has_genre(movie40478, horror).
 has_genre(movie40478, sci-fi).
 has_genre(movie40478, thriller).
+has_2_genre(movie40491).
 has_genre(movie40491, comedy).
 has_genre(movie40491, drama).
+has_2_genre(movie40578).
 has_genre(movie40578, action).
 has_genre(movie40578, drama).
+has_2_genre(movie40581).
 has_genre(movie40581, comedy).
 has_genre(movie40581, romance).
+has_2_genre(movie40583).
 has_genre(movie40583, drama).
 has_genre(movie40583, thriller).
+has_2_genre(movie40597).
 has_genre(movie40597, comedy).
 has_genre(movie40597, drama).
+has_2_genre(movie40614).
 has_genre(movie40614, drama).
 has_genre(movie40614, thriller).
+has_2_genre(movie40617).
 has_genre(movie40617, horror).
 has_genre(movie40617, thriller).
+has_2_genre(movie40629).
 has_genre(movie40629, drama).
 has_genre(movie40629, romance).
+has_1_genre(movie40697).
 has_genre(movie40697, sci-fi).
+has_3_genre(movie40723).
 has_genre(movie40723, crime).
 has_genre(movie40723, horror).
 has_genre(movie40723, thriller).
+has_4_genre(movie40732).
 has_genre(movie40732, adventure).
 has_genre(movie40732, drama).
 has_genre(movie40732, horror).
 has_genre(movie40732, thriller).
+has_4_genre(movie40815).
 has_genre(movie40815, adventure).
 has_genre(movie40815, fantasy).
 has_genre(movie40815, thriller).
 has_genre(movie40815, imax).
+has_3_genre(movie40819).
 has_genre(movie40819, drama).
 has_genre(movie40819, musical).
 has_genre(movie40819, romance).
+has_3_genre(movie40826).
 has_genre(movie40826, drama).
 has_genre(movie40826, musical).
 has_genre(movie40826, romance).
+has_4_genre(movie40851).
 has_genre(movie40851, action).
 has_genre(movie40851, adventure).
 has_genre(movie40851, children).
 has_genre(movie40851, fantasy).
+has_1_genre(movie40870).
 has_genre(movie40870, drama).
+has_2_genre(movie40946).
 has_genre(movie40946, comedy).
 has_genre(movie40946, musical).
+has_2_genre(movie40955).
 has_genre(movie40955, comedy).
 has_genre(movie40955, drama).
+has_4_genre(movie40959).
 has_genre(movie40959, action).
 has_genre(movie40959, comedy).
 has_genre(movie40959, crime).
 has_genre(movie40959, thriller).
+has_2_genre(movie40962).
 has_genre(movie40962, comedy).
 has_genre(movie40962, romance).
+has_1_genre(movie40966).
 has_genre(movie40966, drama).
+has_4_genre(movie41014).
 has_genre(movie41014, crime).
 has_genre(movie41014, horror).
 has_genre(movie41014, mystery).
 has_genre(movie41014, thriller).
+has_3_genre(movie41285).
 has_genre(movie41285, crime).
 has_genre(movie41285, drama).
 has_genre(movie41285, romance).
+has_4_genre(movie41527).
 has_genre(movie41527, crime).
 has_genre(movie41527, drama).
 has_genre(movie41527, thriller).
 has_genre(movie41527, war).
+has_3_genre(movie41566).
 has_genre(movie41566, adventure).
 has_genre(movie41566, children).
 has_genre(movie41566, fantasy).
+has_5_genre(movie41569).
 has_genre(movie41569, action).
 has_genre(movie41569, adventure).
 has_genre(movie41569, drama).
 has_genre(movie41569, fantasy).
 has_genre(movie41569, thriller).
+has_2_genre(movie41571).
 has_genre(movie41571, drama).
 has_genre(movie41571, romance).
+has_3_genre(movie41573).
 has_genre(movie41573, comedy).
 has_genre(movie41573, drama).
 has_genre(movie41573, romance).
+has_3_genre(movie41617).
 has_genre(movie41617, crime).
 has_genre(movie41617, drama).
 has_genre(movie41617, romance).
+has_2_genre(movie41627).
 has_genre(movie41627, action).
 has_genre(movie41627, drama).
+has_2_genre(movie41712).
 has_genre(movie41712, comedy).
 has_genre(movie41712, drama).
+has_3_genre(movie41716).
 has_genre(movie41716, comedy).
 has_genre(movie41716, drama).
 has_genre(movie41716, thriller).
+has_1_genre(movie41724).
 has_genre(movie41724, documentary).
+has_3_genre(movie41769).
 has_genre(movie41769, comedy).
 has_genre(movie41769, drama).
 has_genre(movie41769, romance).
+has_2_genre(movie41828).
 has_genre(movie41828, comedy).
 has_genre(movie41828, war).
+has_3_genre(movie41863).
 has_genre(movie41863, adventure).
 has_genre(movie41863, crime).
 has_genre(movie41863, drama).
+has_4_genre(movie41997).
 has_genre(movie41997, action).
 has_genre(movie41997, crime).
 has_genre(movie41997, drama).
 has_genre(movie41997, thriller).
+has_2_genre(movie42002).
 has_genre(movie42002, comedy).
 has_genre(movie42002, musical).
+has_3_genre(movie42004).
 has_genre(movie42004, adventure).
 has_genre(movie42004, comedy).
 has_genre(movie42004, drama).
+has_3_genre(movie42007).
 has_genre(movie42007, comedy).
 has_genre(movie42007, drama).
 has_genre(movie42007, romance).
+has_2_genre(movie42009).
 has_genre(movie42009, adventure).
 has_genre(movie42009, comedy).
+has_2_genre(movie42011).
 has_genre(movie42011, comedy).
 has_genre(movie42011, crime).
+has_1_genre(movie42013).
 has_genre(movie42013, comedy).
+has_5_genre(movie42015).
 has_genre(movie42015, action).
 has_genre(movie42015, adventure).
 has_genre(movie42015, comedy).
 has_genre(movie42015, drama).
 has_genre(movie42015, romance).
+has_2_genre(movie42018).
 has_genre(movie42018, comedy).
 has_genre(movie42018, drama).
+has_2_genre(movie42176).
 has_genre(movie42176, drama).
 has_genre(movie42176, thriller).
+has_2_genre(movie42191).
 has_genre(movie42191, animation).
 has_genre(movie42191, children).
+has_2_genre(movie42285).
 has_genre(movie42285, horror).
 has_genre(movie42285, thriller).
+has_3_genre(movie42418).
 has_genre(movie42418, adventure).
 has_genre(movie42418, drama).
 has_genre(movie42418, romance).
+has_4_genre(movie42422).
 has_genre(movie42422, animation).
 has_genre(movie42422, drama).
 has_genre(movie42422, romance).
 has_genre(movie42422, sci-fi).
+has_3_genre(movie42556).
 has_genre(movie42556, fantasy).
 has_genre(movie42556, mystery).
 has_genre(movie42556, western).
+has_3_genre(movie42559).
 has_genre(movie42559, action).
 has_genre(movie42559, adventure).
 has_genre(movie42559, drama).
+has_1_genre(movie42602).
 has_genre(movie42602, documentary).
+has_4_genre(movie42632).
 has_genre(movie42632, crime).
 has_genre(movie42632, drama).
 has_genre(movie42632, mystery).
 has_genre(movie42632, thriller).
+has_2_genre(movie42638).
 has_genre(movie42638, comedy).
 has_genre(movie42638, drama).
+has_3_genre(movie42718).
 has_genre(movie42718, action).
 has_genre(movie42718, crime).
 has_genre(movie42718, sci-fi).
+has_1_genre(movie42723).
 has_genre(movie42723, horror).
+has_1_genre(movie42725).
 has_genre(movie42725, comedy).
+has_2_genre(movie42728).
 has_genre(movie42728, drama).
 has_genre(movie42728, romance).
+has_1_genre(movie42730).
 has_genre(movie42730, drama).
+has_1_genre(movie42732).
 has_genre(movie42732, comedy).
+has_3_genre(movie42734).
 has_genre(movie42734, animation).
 has_genre(movie42734, children).
 has_genre(movie42734, comedy).
+has_3_genre(movie42738).
 has_genre(movie42738, action).
 has_genre(movie42738, fantasy).
 has_genre(movie42738, horror).
+has_1_genre(movie42740).
 has_genre(movie42740, comedy).
+has_4_genre(movie42761).
 has_genre(movie42761, adventure).
 has_genre(movie42761, children).
 has_genre(movie42761, comedy).
 has_genre(movie42761, fantasy).
+has_3_genre(movie42943).
 has_genre(movie42943, adventure).
 has_genre(movie42943, drama).
 has_genre(movie42943, war).
+has_2_genre(movie42946).
 has_genre(movie42946, action).
 has_genre(movie42946, comedy).
+has_4_genre(movie43289).
 has_genre(movie43289, adventure).
 has_genre(movie43289, comedy).
 has_genre(movie43289, drama).
 has_genre(movie43289, fantasy).
+has_2_genre(movie43333).
 has_genre(movie43333, drama).
 has_genre(movie43333, romance).
+has_2_genre(movie43376).
 has_genre(movie43376, drama).
 has_genre(movie43376, war).
+has_1_genre(movie43396).
 has_genre(movie43396, drama).
+has_4_genre(movie43419).
 has_genre(movie43419, action).
 has_genre(movie43419, comedy).
 has_genre(movie43419, crime).
 has_genre(movie43419, western).
+has_2_genre(movie43460).
 has_genre(movie43460, comedy).
 has_genre(movie43460, drama).
+has_4_genre(movie43549).
 has_genre(movie43549, action).
 has_genre(movie43549, crime).
 has_genre(movie43549, drama).
 has_genre(movie43549, horror).
+has_1_genre(movie43556).
 has_genre(movie43556, drama).
+has_3_genre(movie43558).
 has_genre(movie43558, action).
 has_genre(movie43558, comedy).
 has_genre(movie43558, crime).
+has_3_genre(movie43560).
 has_genre(movie43560, children).
 has_genre(movie43560, comedy).
 has_genre(movie43560, fantasy).
+has_2_genre(movie43677).
 has_genre(movie43677, drama).
 has_genre(movie43677, war).
+has_3_genre(movie43679).
 has_genre(movie43679, horror).
 has_genre(movie43679, mystery).
 has_genre(movie43679, thriller).
+has_3_genre(movie43684).
 has_genre(movie43684, comedy).
 has_genre(movie43684, drama).
 has_genre(movie43684, romance).
+has_2_genre(movie43708).
 has_genre(movie43708, comedy).
 has_genre(movie43708, documentary).
+has_3_genre(movie43744).
 has_genre(movie43744, comedy).
 has_genre(movie43744, drama).
 has_genre(movie43744, romance).
+has_3_genre(movie43836).
 has_genre(movie43836, adventure).
 has_genre(movie43836, comedy).
 has_genre(movie43836, crime).
+has_4_genre(movie43869).
 has_genre(movie43869, adventure).
 has_genre(movie43869, animation).
 has_genre(movie43869, children).
 has_genre(movie43869, comedy).
+has_3_genre(movie43871).
 has_genre(movie43871, crime).
 has_genre(movie43871, drama).
 has_genre(movie43871, thriller).
+has_2_genre(movie43904).
 has_genre(movie43904, horror).
 has_genre(movie43904, thriller).
+has_1_genre(movie43908).
 has_genre(movie43908, drama).
+has_2_genre(movie43912).
 has_genre(movie43912, crime).
 has_genre(movie43912, drama).
+has_1_genre(movie43914).
 has_genre(movie43914, drama).
+has_4_genre(movie43917).
 has_genre(movie43917, action).
 has_genre(movie43917, adventure).
 has_genre(movie43917, drama).
 has_genre(movie43917, romance).
+has_2_genre(movie43919).
 has_genre(movie43919, comedy).
 has_genre(movie43919, romance).
+has_3_genre(movie43921).
 has_genre(movie43921, action).
 has_genre(movie43921, crime).
 has_genre(movie43921, thriller).
+has_4_genre(movie43928).
 has_genre(movie43928, action).
 has_genre(movie43928, fantasy).
 has_genre(movie43928, sci-fi).
 has_genre(movie43928, thriller).
+has_2_genre(movie43930).
 has_genre(movie43930, comedy).
 has_genre(movie43930, romance).
+has_more_than_5_genre(movie43932).
 has_genre(movie43932, action).
 has_genre(movie43932, drama).
 has_genre(movie43932, fantasy).
@@ -17703,779 +23854,1096 @@ has_genre(movie43932, horror).
 has_genre(movie43932, mystery).
 has_genre(movie43932, sci-fi).
 has_genre(movie43932, thriller).
+has_2_genre(movie43936).
 has_genre(movie43936, crime).
 has_genre(movie43936, thriller).
+has_2_genre(movie44004).
 has_genre(movie44004, comedy).
 has_genre(movie44004, romance).
+has_4_genre(movie44020).
 has_genre(movie44020, action).
 has_genre(movie44020, animation).
 has_genre(movie44020, children).
 has_genre(movie44020, sci-fi).
+has_4_genre(movie44022).
 has_genre(movie44022, adventure).
 has_genre(movie44022, animation).
 has_genre(movie44022, children).
 has_genre(movie44022, comedy).
+has_2_genre(movie44189).
 has_genre(movie44189, drama).
 has_genre(movie44189, romance).
+has_4_genre(movie44191).
 has_genre(movie44191, action).
 has_genre(movie44191, sci-fi).
 has_genre(movie44191, thriller).
 has_genre(movie44191, imax).
+has_2_genre(movie44193).
 has_genre(movie44193, comedy).
 has_genre(movie44193, romance).
+has_2_genre(movie44195).
 has_genre(movie44195, comedy).
 has_genre(movie44195, drama).
+has_3_genre(movie44197).
 has_genre(movie44197, comedy).
 has_genre(movie44197, crime).
 has_genre(movie44197, drama).
+has_3_genre(movie44199).
 has_genre(movie44199, crime).
 has_genre(movie44199, drama).
 has_genre(movie44199, thriller).
+has_2_genre(movie44204).
 has_genre(movie44204, crime).
 has_genre(movie44204, drama).
+has_3_genre(movie44225).
 has_genre(movie44225, children).
 has_genre(movie44225, comedy).
 has_genre(movie44225, fantasy).
+has_3_genre(movie44238).
 has_genre(movie44238, comedy).
 has_genre(movie44238, fantasy).
 has_genre(movie44238, horror).
+has_3_genre(movie44241).
 has_genre(movie44241, comedy).
 has_genre(movie44241, fantasy).
 has_genre(movie44241, horror).
+has_4_genre(movie44243).
 has_genre(movie44243, comedy).
 has_genre(movie44243, fantasy).
 has_genre(movie44243, horror).
 has_genre(movie44243, sci-fi).
+has_2_genre(movie44301).
 has_genre(movie44301, crime).
 has_genre(movie44301, drama).
+has_3_genre(movie44397).
 has_genre(movie44397, drama).
 has_genre(movie44397, horror).
 has_genre(movie44397, thriller).
+has_4_genre(movie44399).
 has_genre(movie44399, adventure).
 has_genre(movie44399, children).
 has_genre(movie44399, comedy).
 has_genre(movie44399, fantasy).
+has_1_genre(movie44511).
 has_genre(movie44511, documentary).
+has_3_genre(movie44555).
 has_genre(movie44555, drama).
 has_genre(movie44555, romance).
 has_genre(movie44555, thriller).
+has_3_genre(movie44597).
 has_genre(movie44597, action).
 has_genre(movie44597, crime).
 has_genre(movie44597, mystery).
+has_1_genre(movie44613).
 has_genre(movie44613, drama).
+has_1_genre(movie44633).
 has_genre(movie44633, documentary).
+has_1_genre(movie44657).
 has_genre(movie44657, drama).
+has_3_genre(movie44665).
 has_genre(movie44665, crime).
 has_genre(movie44665, drama).
 has_genre(movie44665, mystery).
+has_2_genre(movie44694).
 has_genre(movie44694, comedy).
 has_genre(movie44694, drama).
+has_1_genre(movie44709).
 has_genre(movie44709, drama).
+has_1_genre(movie44719).
 has_genre(movie44719, drama).
+has_3_genre(movie44731).
 has_genre(movie44731, horror).
 has_genre(movie44731, sci-fi).
 has_genre(movie44731, thriller).
+has_4_genre(movie44759).
 has_genre(movie44759, crime).
 has_genre(movie44759, drama).
 has_genre(movie44759, mystery).
 has_genre(movie44759, thriller).
+has_4_genre(movie44761).
 has_genre(movie44761, crime).
 has_genre(movie44761, drama).
 has_genre(movie44761, film-noir).
 has_genre(movie44761, mystery).
+has_2_genre(movie44773).
 has_genre(movie44773, comedy).
 has_genre(movie44773, horror).
+has_3_genre(movie44777).
 has_genre(movie44777, comedy).
 has_genre(movie44777, horror).
 has_genre(movie44777, sci-fi).
+has_1_genre(movie44788).
 has_genre(movie44788, documentary).
+has_3_genre(movie44828).
 has_genre(movie44828, comedy).
 has_genre(movie44828, horror).
 has_genre(movie44828, sci-fi).
+has_1_genre(movie44840).
 has_genre(movie44840, comedy).
+has_5_genre(movie44849).
 has_genre(movie44849, action).
 has_genre(movie44849, animation).
 has_genre(movie44849, film-noir).
 has_genre(movie44849, sci-fi).
 has_genre(movie44849, thriller).
+has_1_genre(movie44851).
 has_genre(movie44851, comedy).
+has_3_genre(movie44864).
 has_genre(movie44864, comedy).
 has_genre(movie44864, drama).
 has_genre(movie44864, romance).
+has_3_genre(movie44889).
 has_genre(movie44889, comedy).
 has_genre(movie44889, drama).
 has_genre(movie44889, musical).
+has_2_genre(movie44929).
 has_genre(movie44929, drama).
 has_genre(movie44929, romance).
+has_1_genre(movie44931).
 has_genre(movie44931, drama).
+has_2_genre(movie44937).
 has_genre(movie44937, crime).
 has_genre(movie44937, drama).
+has_1_genre(movie44943).
 has_genre(movie44943, documentary).
+has_2_genre(movie44972).
 has_genre(movie44972, comedy).
 has_genre(movie44972, horror).
+has_2_genre(movie44974).
 has_genre(movie44974, drama).
 has_genre(movie44974, thriller).
+has_3_genre(movie45028).
 has_genre(movie45028, comedy).
 has_genre(movie45028, drama).
 has_genre(movie45028, musical).
+has_3_genre(movie45062).
 has_genre(movie45062, crime).
 has_genre(movie45062, drama).
 has_genre(movie45062, thriller).
+has_5_genre(movie45074).
 has_genre(movie45074, adventure).
 has_genre(movie45074, animation).
 has_genre(movie45074, children).
 has_genre(movie45074, comedy).
 has_genre(movie45074, fantasy).
+has_3_genre(movie45081).
 has_genre(movie45081, fantasy).
 has_genre(movie45081, horror).
 has_genre(movie45081, thriller).
+has_2_genre(movie45106).
 has_genre(movie45106, comedy).
 has_genre(movie45106, drama).
+has_2_genre(movie45175).
 has_genre(movie45175, comedy).
 has_genre(movie45175, drama).
+has_4_genre(movie45183).
 has_genre(movie45183, action).
 has_genre(movie45183, comedy).
 has_genre(movie45183, crime).
 has_genre(movie45183, thriller).
+has_3_genre(movie45186).
 has_genre(movie45186, action).
 has_genre(movie45186, adventure).
 has_genre(movie45186, thriller).
+has_3_genre(movie45208).
 has_genre(movie45208, adventure).
 has_genre(movie45208, children).
 has_genre(movie45208, comedy).
+has_2_genre(movie45210).
 has_genre(movie45210, crime).
 has_genre(movie45210, drama).
+has_1_genre(movie45221).
 has_genre(movie45221, comedy).
+has_4_genre(movie45361).
 has_genre(movie45361, drama).
 has_genre(movie45361, horror).
 has_genre(movie45361, mystery).
 has_genre(movie45361, thriller).
+has_2_genre(movie45382).
 has_genre(movie45382, drama).
 has_genre(movie45382, romance).
+has_4_genre(movie45431).
 has_genre(movie45431, adventure).
 has_genre(movie45431, animation).
 has_genre(movie45431, children).
 has_genre(movie45431, comedy).
+has_2_genre(movie45440).
 has_genre(movie45440, comedy).
 has_genre(movie45440, drama).
+has_4_genre(movie45442).
 has_genre(movie45442, action).
 has_genre(movie45442, adventure).
 has_genre(movie45442, thriller).
 has_genre(movie45442, imax).
+has_3_genre(movie45447).
 has_genre(movie45447, drama).
 has_genre(movie45447, mystery).
 has_genre(movie45447, thriller).
+has_3_genre(movie45499).
 has_genre(movie45499, action).
 has_genre(movie45499, sci-fi).
 has_genre(movie45499, thriller).
+has_3_genre(movie45501).
 has_genre(movie45501, comedy).
 has_genre(movie45501, drama).
 has_genre(movie45501, romance).
+has_1_genre(movie45503).
 has_genre(movie45503, drama).
+has_3_genre(movie45517).
 has_genre(movie45517, animation).
 has_genre(movie45517, children).
 has_genre(movie45517, comedy).
+has_1_genre(movie45635).
 has_genre(movie45635, drama).
+has_2_genre(movie45648).
 has_genre(movie45648, comedy).
 has_genre(movie45648, drama).
+has_1_genre(movie45658).
 has_genre(movie45658, drama).
+has_2_genre(movie45662).
 has_genre(movie45662, horror).
 has_genre(movie45662, thriller).
+has_1_genre(movie45666).
 has_genre(movie45666, comedy).
+has_3_genre(movie45668).
 has_genre(movie45668, drama).
 has_genre(movie45668, fantasy).
 has_genre(movie45668, romance).
+has_5_genre(movie45672).
 has_genre(movie45672, adventure).
 has_genre(movie45672, comedy).
 has_genre(movie45672, drama).
 has_genre(movie45672, fantasy).
 has_genre(movie45672, romance).
+has_2_genre(movie45720).
 has_genre(movie45720, comedy).
 has_genre(movie45720, drama).
+has_3_genre(movie45722).
 has_genre(movie45722, action).
 has_genre(movie45722, adventure).
 has_genre(movie45722, fantasy).
+has_1_genre(movie45726).
 has_genre(movie45726, comedy).
+has_1_genre(movie45728).
 has_genre(movie45728, comedy).
+has_3_genre(movie45730).
 has_genre(movie45730, drama).
 has_genre(movie45730, fantasy).
 has_genre(movie45730, mystery).
+has_3_genre(movie45732).
 has_genre(movie45732, comedy).
 has_genre(movie45732, fantasy).
 has_genre(movie45732, romance).
+has_2_genre(movie45880).
 has_genre(movie45880, drama).
 has_genre(movie45880, romance).
+has_1_genre(movie45928).
 has_genre(movie45928, documentary).
+has_1_genre(movie45950).
 has_genre(movie45950, documentary).
+has_2_genre(movie45969).
 has_genre(movie45969, comedy).
 has_genre(movie45969, romance).
+has_5_genre(movie46062).
 has_genre(movie46062, children).
 has_genre(movie46062, comedy).
 has_genre(movie46062, drama).
 has_genre(movie46062, musical).
 has_genre(movie46062, romance).
+has_3_genre(movie46105).
 has_genre(movie46105, comedy).
 has_genre(movie46105, documentary).
 has_genre(movie46105, romance).
+has_1_genre(movie46231).
 has_genre(movie46231, drama).
+has_2_genre(movie46322).
 has_genre(movie46322, action).
 has_genre(movie46322, drama).
+has_4_genre(movie46335).
 has_genre(movie46335, action).
 has_genre(movie46335, crime).
 has_genre(movie46335, drama).
 has_genre(movie46335, thriller).
+has_3_genre(movie46337).
 has_genre(movie46337, animation).
 has_genre(movie46337, children).
 has_genre(movie46337, comedy).
+has_1_genre(movie46347).
 has_genre(movie46347, documentary).
+has_2_genre(movie46367).
 has_genre(movie46367, crime).
 has_genre(movie46367, thriller).
+has_4_genre(movie46530).
 has_genre(movie46530, action).
 has_genre(movie46530, adventure).
 has_genre(movie46530, sci-fi).
 has_genre(movie46530, imax).
+has_2_genre(movie46559).
 has_genre(movie46559, drama).
 has_genre(movie46559, war).
+has_2_genre(movie46572).
 has_genre(movie46572, drama).
 has_genre(movie46572, thriller).
+has_1_genre(movie46574).
 has_genre(movie46574, comedy).
+has_3_genre(movie46578).
 has_genre(movie46578, adventure).
 has_genre(movie46578, comedy).
 has_genre(movie46578, drama).
+has_3_genre(movie46664).
 has_genre(movie46664, drama).
 has_genre(movie46664, mystery).
 has_genre(movie46664, thriller).
+has_2_genre(movie46723).
 has_genre(movie46723, drama).
 has_genre(movie46723, thriller).
+has_1_genre(movie46772).
 has_genre(movie46772, comedy).
+has_1_genre(movie46850).
 has_genre(movie46850, documentary).
+has_4_genre(movie46855).
 has_genre(movie46855, action).
 has_genre(movie46855, drama).
 has_genre(movie46855, thriller).
 has_genre(movie46855, war).
+has_1_genre(movie46862).
 has_genre(movie46862, drama).
+has_1_genre(movie46865).
 has_genre(movie46865, comedy).
+has_4_genre(movie46948).
 has_genre(movie46948, animation).
 has_genre(movie46948, children).
 has_genre(movie46948, fantasy).
 has_genre(movie46948, mystery).
+has_4_genre(movie46965).
 has_genre(movie46965, action).
 has_genre(movie46965, comedy).
 has_genre(movie46965, horror).
 has_genre(movie46965, thriller).
+has_3_genre(movie46967).
 has_genre(movie46967, comedy).
 has_genre(movie46967, fantasy).
 has_genre(movie46967, mystery).
+has_2_genre(movie46970).
 has_genre(movie46970, action).
 has_genre(movie46970, comedy).
+has_4_genre(movie46972).
 has_genre(movie46972, action).
 has_genre(movie46972, comedy).
 has_genre(movie46972, fantasy).
 has_genre(movie46972, imax).
+has_1_genre(movie46974).
 has_genre(movie46974, drama).
+has_4_genre(movie46976).
 has_genre(movie46976, comedy).
 has_genre(movie46976, drama).
 has_genre(movie46976, fantasy).
 has_genre(movie46976, romance).
+has_4_genre(movie47044).
 has_genre(movie47044, action).
 has_genre(movie47044, crime).
 has_genre(movie47044, drama).
 has_genre(movie47044, thriller).
+has_1_genre(movie47099).
 has_genre(movie47099, drama).
+has_2_genre(movie47122).
 has_genre(movie47122, comedy).
 has_genre(movie47122, romance).
+has_more_than_5_genre(movie47124).
 has_genre(movie47124, adventure).
 has_genre(movie47124, animation).
 has_genre(movie47124, children).
 has_genre(movie47124, comedy).
 has_genre(movie47124, fantasy).
 has_genre(movie47124, imax).
+has_2_genre(movie47200).
 has_genre(movie47200, action).
 has_genre(movie47200, thriller).
+has_2_genre(movie47202).
 has_genre(movie47202, drama).
 has_genre(movie47202, romance).
+has_4_genre(movie47254).
 has_genre(movie47254, action).
 has_genre(movie47254, crime).
 has_genre(movie47254, drama).
 has_genre(movie47254, thriller).
+has_3_genre(movie47261).
 has_genre(movie47261, fantasy).
 has_genre(movie47261, mystery).
 has_genre(movie47261, thriller).
+has_2_genre(movie47382).
 has_genre(movie47382, drama).
 has_genre(movie47382, romance).
+has_4_genre(movie47384).
 has_genre(movie47384, adventure).
 has_genre(movie47384, comedy).
 has_genre(movie47384, drama).
 has_genre(movie47384, fantasy).
+has_more_than_5_genre(movie47404).
 has_genre(movie47404, adventure).
 has_genre(movie47404, animation).
 has_genre(movie47404, comedy).
 has_genre(movie47404, fantasy).
 has_genre(movie47404, romance).
 has_genre(movie47404, sci-fi).
+has_1_genre(movie47423).
 has_genre(movie47423, drama).
+has_3_genre(movie47446).
 has_genre(movie47446, drama).
 has_genre(movie47446, mystery).
 has_genre(movie47446, thriller).
+has_3_genre(movie47465).
 has_genre(movie47465, drama).
 has_genre(movie47465, fantasy).
 has_genre(movie47465, thriller).
+has_2_genre(movie47491).
 has_genre(movie47491, comedy).
 has_genre(movie47491, drama).
+has_3_genre(movie47516).
 has_genre(movie47516, children).
 has_genre(movie47516, comedy).
 has_genre(movie47516, drama).
+has_1_genre(movie47518).
 has_genre(movie47518, comedy).
+has_4_genre(movie47538).
 has_genre(movie47538, action).
 has_genre(movie47538, adventure).
 has_genre(movie47538, comedy).
 has_genre(movie47538, crime).
+has_3_genre(movie47566).
 has_genre(movie47566, crime).
 has_genre(movie47566, drama).
 has_genre(movie47566, film-noir).
+has_4_genre(movie47610).
 has_genre(movie47610, drama).
 has_genre(movie47610, fantasy).
 has_genre(movie47610, mystery).
 has_genre(movie47610, romance).
+has_1_genre(movie47629).
 has_genre(movie47629, drama).
+has_1_genre(movie47640).
 has_genre(movie47640, comedy).
+has_1_genre(movie47644).
 has_genre(movie47644, drama).
+has_3_genre(movie47646).
 has_genre(movie47646, crime).
 has_genre(movie47646, drama).
 has_genre(movie47646, musical).
+has_2_genre(movie47721).
 has_genre(movie47721, children).
 has_genre(movie47721, fantasy).
+has_4_genre(movie47725).
 has_genre(movie47725, comedy).
 has_genre(movie47725, drama).
 has_genre(movie47725, fantasy).
 has_genre(movie47725, romance).
+has_1_genre(movie47736).
 has_genre(movie47736, comedy).
+has_2_genre(movie47774).
 has_genre(movie47774, comedy).
 has_genre(movie47774, fantasy).
+has_2_genre(movie47793).
 has_genre(movie47793, drama).
 has_genre(movie47793, romance).
+has_3_genre(movie47810).
 has_genre(movie47810, horror).
 has_genre(movie47810, mystery).
 has_genre(movie47810, thriller).
+has_2_genre(movie47894).
 has_genre(movie47894, drama).
 has_genre(movie47894, war).
+has_3_genre(movie47937).
 has_genre(movie47937, comedy).
 has_genre(movie47937, horror).
 has_genre(movie47937, thriller).
+has_4_genre(movie47950).
 has_genre(movie47950, crime).
 has_genre(movie47950, drama).
 has_genre(movie47950, mystery).
 has_genre(movie47950, thriller).
+has_3_genre(movie47952).
 has_genre(movie47952, action).
 has_genre(movie47952, horror).
 has_genre(movie47952, thriller).
+has_2_genre(movie47970).
 has_genre(movie47970, comedy).
 has_genre(movie47970, drama).
+has_1_genre(movie47978).
 has_genre(movie47978, drama).
+has_4_genre(movie47997).
 has_genre(movie47997, adventure).
 has_genre(movie47997, comedy).
 has_genre(movie47997, sci-fi).
 has_genre(movie47997, thriller).
+has_2_genre(movie47999).
 has_genre(movie47999, documentary).
 has_genre(movie47999, drama).
+has_2_genre(movie48001).
 has_genre(movie48001, drama).
 has_genre(movie48001, romance).
+has_4_genre(movie48032).
 has_genre(movie48032, comedy).
 has_genre(movie48032, drama).
 has_genre(movie48032, romance).
 has_genre(movie48032, war).
+has_3_genre(movie48043).
 has_genre(movie48043, drama).
 has_genre(movie48043, fantasy).
 has_genre(movie48043, romance).
+has_1_genre(movie48045).
 has_genre(movie48045, comedy).
+has_4_genre(movie48082).
 has_genre(movie48082, comedy).
 has_genre(movie48082, drama).
 has_genre(movie48082, fantasy).
 has_genre(movie48082, romance).
+has_4_genre(movie48142).
 has_genre(movie48142, crime).
 has_genre(movie48142, drama).
 has_genre(movie48142, mystery).
 has_genre(movie48142, thriller).
+has_1_genre(movie48150).
 has_genre(movie48150, horror).
+has_1_genre(movie48161).
 has_genre(movie48161, drama).
+has_1_genre(movie48214).
 has_genre(movie48214, drama).
+has_1_genre(movie48262).
 has_genre(movie48262, documentary).
+has_3_genre(movie48304).
 has_genre(movie48304, adventure).
 has_genre(movie48304, drama).
 has_genre(movie48304, thriller).
+has_4_genre(movie48319).
 has_genre(movie48319, action).
 has_genre(movie48319, adventure).
 has_genre(movie48319, drama).
 has_genre(movie48319, war).
+has_2_genre(movie48322).
 has_genre(movie48322, comedy).
 has_genre(movie48322, documentary).
+has_1_genre(movie48326).
 has_genre(movie48326, drama).
+has_3_genre(movie48342).
 has_genre(movie48342, comedy).
 has_genre(movie48342, drama).
 has_genre(movie48342, romance).
+has_1_genre(movie48385).
 has_genre(movie48385, comedy).
+has_3_genre(movie48394).
 has_genre(movie48394, drama).
 has_genre(movie48394, fantasy).
 has_genre(movie48394, thriller).
+has_3_genre(movie48412).
 has_genre(movie48412, action).
 has_genre(movie48412, adventure).
 has_genre(movie48412, drama).
+has_5_genre(movie48414).
 has_genre(movie48414, adventure).
 has_genre(movie48414, animation).
 has_genre(movie48414, children).
 has_genre(movie48414, comedy).
 has_genre(movie48414, imax).
+has_2_genre(movie48416).
 has_genre(movie48416, comedy).
 has_genre(movie48416, crime).
+has_3_genre(movie48516).
 has_genre(movie48516, crime).
 has_genre(movie48516, drama).
 has_genre(movie48516, thriller).
+has_2_genre(movie48518).
 has_genre(movie48518, horror).
 has_genre(movie48518, thriller).
+has_1_genre(movie48520).
 has_genre(movie48520, comedy).
+has_2_genre(movie48560).
 has_genre(movie48560, comedy).
 has_genre(movie48560, drama).
+has_2_genre(movie48593).
 has_genre(movie48593, comedy).
 has_genre(movie48593, thriller).
+has_3_genre(movie48596).
 has_genre(movie48596, action).
 has_genre(movie48596, drama).
 has_genre(movie48596, thriller).
+has_1_genre(movie48598).
 has_genre(movie48598, drama).
+has_2_genre(movie48638).
 has_genre(movie48638, drama).
 has_genre(movie48638, romance).
+has_2_genre(movie48649).
 has_genre(movie48649, drama).
 has_genre(movie48649, war).
+has_4_genre(movie48678).
 has_genre(movie48678, action).
 has_genre(movie48678, comedy).
 has_genre(movie48678, horror).
 has_genre(movie48678, thriller).
+has_2_genre(movie48696).
 has_genre(movie48696, drama).
 has_genre(movie48696, romance).
+has_1_genre(movie48698).
 has_genre(movie48698, documentary).
+has_2_genre(movie48738).
 has_genre(movie48738, drama).
 has_genre(movie48738, thriller).
+has_1_genre(movie48741).
 has_genre(movie48741, documentary).
+has_3_genre(movie48744).
 has_genre(movie48744, comedy).
 has_genre(movie48744, drama).
 has_genre(movie48744, romance).
+has_5_genre(movie48774).
 has_genre(movie48774, action).
 has_genre(movie48774, adventure).
 has_genre(movie48774, drama).
 has_genre(movie48774, sci-fi).
 has_genre(movie48774, thriller).
+has_4_genre(movie48780).
 has_genre(movie48780, drama).
 has_genre(movie48780, mystery).
 has_genre(movie48780, sci-fi).
 has_genre(movie48780, thriller).
+has_2_genre(movie48783).
 has_genre(movie48783, drama).
 has_genre(movie48783, war).
+has_2_genre(movie48872).
 has_genre(movie48872, film-noir).
 has_genre(movie48872, thriller).
+has_3_genre(movie48877).
 has_genre(movie48877, crime).
 has_genre(movie48877, horror).
 has_genre(movie48877, thriller).
+has_2_genre(movie48879).
 has_genre(movie48879, drama).
 has_genre(movie48879, thriller).
+has_4_genre(movie48883).
 has_genre(movie48883, crime).
 has_genre(movie48883, drama).
 has_genre(movie48883, mystery).
 has_genre(movie48883, thriller).
+has_2_genre(movie48982).
 has_genre(movie48982, animation).
 has_genre(movie48982, comedy).
+has_3_genre(movie48997).
 has_genre(movie48997, crime).
 has_genre(movie48997, drama).
 has_genre(movie48997, thriller).
+has_2_genre(movie49013).
 has_genre(movie49013, comedy).
 has_genre(movie49013, fantasy).
+has_2_genre(movie49110).
 has_genre(movie49110, comedy).
 has_genre(movie49110, sci-fi).
+has_3_genre(movie49130).
 has_genre(movie49130, comedy).
 has_genre(movie49130, drama).
 has_genre(movie49130, romance).
+has_1_genre(movie49132).
 has_genre(movie49132, documentary).
+has_1_genre(movie49220).
 has_genre(movie49220, comedy).
+has_2_genre(movie49263).
 has_genre(movie49263, comedy).
 has_genre(movie49263, documentary).
+has_3_genre(movie49265).
 has_genre(movie49265, documentary).
 has_genre(movie49265, drama).
 has_genre(movie49265, war).
+has_3_genre(movie49272).
 has_genre(movie49272, action).
 has_genre(movie49272, adventure).
 has_genre(movie49272, thriller).
+has_5_genre(movie49274).
 has_genre(movie49274, adventure).
 has_genre(movie49274, animation).
 has_genre(movie49274, children).
 has_genre(movie49274, comedy).
 has_genre(movie49274, imax).
+has_1_genre(movie49276).
 has_genre(movie49276, comedy).
+has_3_genre(movie49278).
 has_genre(movie49278, action).
 has_genre(movie49278, sci-fi).
 has_genre(movie49278, thriller).
+has_1_genre(movie49280).
 has_genre(movie49280, drama).
+has_3_genre(movie49284).
 has_genre(movie49284, comedy).
 has_genre(movie49284, drama).
 has_genre(movie49284, romance).
+has_2_genre(movie49286).
 has_genre(movie49286, comedy).
 has_genre(movie49286, romance).
+has_3_genre(movie49314).
 has_genre(movie49314, action).
 has_genre(movie49314, crime).
 has_genre(movie49314, drama).
+has_1_genre(movie49347).
 has_genre(movie49347, drama).
+has_2_genre(movie49389).
 has_genre(movie49389, crime).
 has_genre(movie49389, western).
+has_3_genre(movie49396).
 has_genre(movie49396, adventure).
 has_genre(movie49396, comedy).
 has_genre(movie49396, musical).
+has_1_genre(movie49524).
 has_genre(movie49524, drama).
+has_more_than_5_genre(movie49530).
 has_genre(movie49530, action).
 has_genre(movie49530, adventure).
 has_genre(movie49530, crime).
 has_genre(movie49530, drama).
 has_genre(movie49530, thriller).
 has_genre(movie49530, war).
+has_4_genre(movie49647).
 has_genre(movie49647, children).
 has_genre(movie49647, comedy).
 has_genre(movie49647, drama).
 has_genre(movie49647, fantasy).
+has_3_genre(movie49649).
 has_genre(movie49649, action).
 has_genre(movie49649, adventure).
 has_genre(movie49649, fantasy).
+has_2_genre(movie49651).
 has_genre(movie49651, action).
 has_genre(movie49651, drama).
+has_3_genre(movie49666).
 has_genre(movie49666, drama).
 has_genre(movie49666, fantasy).
 has_genre(movie49666, romance).
+has_3_genre(movie49688).
 has_genre(movie49688, action).
 has_genre(movie49688, drama).
 has_genre(movie49688, war).
+has_1_genre(movie49735).
 has_genre(movie49735, comedy).
+has_2_genre(movie49772).
 has_genre(movie49772, drama).
 has_genre(movie49772, romance).
+has_1_genre(movie49793).
 has_genre(movie49793, drama).
+has_2_genre(movie49822).
 has_genre(movie49822, drama).
 has_genre(movie49822, thriller).
+has_2_genre(movie49824).
 has_genre(movie49824, drama).
 has_genre(movie49824, musical).
+has_1_genre(movie49910).
 has_genre(movie49910, drama).
+has_1_genre(movie49917).
 has_genre(movie49917, documentary).
+has_3_genre(movie49932).
 has_genre(movie49932, drama).
 has_genre(movie49932, mystery).
 has_genre(movie49932, thriller).
+has_2_genre(movie49957).
 has_genre(movie49957, comedy).
 has_genre(movie49957, drama).
+has_1_genre(movie49961).
 has_genre(movie49961, drama).
+has_2_genre(movie50003).
 has_genre(movie50003, action).
 has_genre(movie50003, adventure).
+has_2_genre(movie50005).
 has_genre(movie50005, action).
 has_genre(movie50005, drama).
+has_3_genre(movie50064).
 has_genre(movie50064, drama).
 has_genre(movie50064, mystery).
 has_genre(movie50064, thriller).
+has_2_genre(movie50068).
 has_genre(movie50068, drama).
 has_genre(movie50068, war).
+has_3_genre(movie50147).
 has_genre(movie50147, action).
 has_genre(movie50147, horror).
 has_genre(movie50147, thriller).
+has_2_genre(movie50158).
 has_genre(movie50158, drama).
 has_genre(movie50158, musical).
+has_1_genre(movie50160).
 has_genre(movie50160, drama).
+has_2_genre(movie50189).
 has_genre(movie50189, comedy).
 has_genre(movie50189, romance).
+has_2_genre(movie50274).
 has_genre(movie50274, drama).
 has_genre(movie50274, romance).
+has_1_genre(movie50354).
 has_genre(movie50354, comedy).
+has_1_genre(movie50356).
 has_genre(movie50356, comedy).
+has_2_genre(movie50440).
 has_genre(movie50440, horror).
 has_genre(movie50440, thriller).
+has_2_genre(movie50442).
 has_genre(movie50442, crime).
 has_genre(movie50442, drama).
+has_3_genre(movie50445).
 has_genre(movie50445, action).
 has_genre(movie50445, horror).
 has_genre(movie50445, thriller).
+has_1_genre(movie50514).
 has_genre(movie50514, drama).
+has_3_genre(movie50601).
 has_genre(movie50601, adventure).
 has_genre(movie50601, children).
 has_genre(movie50601, fantasy).
+has_1_genre(movie50610).
 has_genre(movie50610, comedy).
+has_1_genre(movie50613).
 has_genre(movie50613, horror).
+has_1_genre(movie50658).
 has_genre(movie50658, documentary).
+has_3_genre(movie50685).
 has_genre(movie50685, comedy).
 has_genre(movie50685, drama).
 has_genre(movie50685, romance).
+has_1_genre(movie50740).
 has_genre(movie50740, documentary).
+has_3_genre(movie50792).
 has_genre(movie50792, comedy).
 has_genre(movie50792, drama).
 has_genre(movie50792, romance).
+has_4_genre(movie50794).
 has_genre(movie50794, action).
 has_genre(movie50794, crime).
 has_genre(movie50794, drama).
 has_genre(movie50794, thriller).
+has_4_genre(movie50796).
 has_genre(movie50796, drama).
 has_genre(movie50796, fantasy).
 has_genre(movie50796, horror).
 has_genre(movie50796, romance).
+has_2_genre(movie50798).
 has_genre(movie50798, adventure).
 has_genre(movie50798, comedy).
+has_3_genre(movie50800).
 has_genre(movie50800, drama).
 has_genre(movie50800, horror).
 has_genre(movie50800, thriller).
+has_3_genre(movie50802).
 has_genre(movie50802, comedy).
 has_genre(movie50802, drama).
 has_genre(movie50802, romance).
+has_3_genre(movie50804).
 has_genre(movie50804, drama).
 has_genre(movie50804, horror).
 has_genre(movie50804, thriller).
+has_2_genre(movie50806).
 has_genre(movie50806, comedy).
 has_genre(movie50806, romance).
+has_2_genre(movie50842).
 has_genre(movie50842, comedy).
 has_genre(movie50842, drama).
+has_1_genre(movie50851).
 has_genre(movie50851, documentary).
+has_3_genre(movie50872).
 has_genre(movie50872, animation).
 has_genre(movie50872, children).
 has_genre(movie50872, drama).
+has_1_genre(movie50912).
 has_genre(movie50912, romance).
+has_1_genre(movie50923).
 has_genre(movie50923, drama).
+has_1_genre(movie50942).
 has_genre(movie50942, comedy).
+has_2_genre(movie50954).
 has_genre(movie50954, comedy).
 has_genre(movie50954, romance).
+has_2_genre(movie50999).
 has_genre(movie50999, animation).
 has_genre(movie50999, comedy).
+has_3_genre(movie51024).
 has_genre(movie51024, adventure).
 has_genre(movie51024, drama).
 has_genre(movie51024, fantasy).
+has_3_genre(movie51037).
 has_genre(movie51037, drama).
 has_genre(movie51037, mystery).
 has_genre(movie51037, thriller).
+has_3_genre(movie51077).
 has_genre(movie51077, action).
 has_genre(movie51077, fantasy).
 has_genre(movie51077, thriller).
+has_2_genre(movie51080).
 has_genre(movie51080, drama).
 has_genre(movie51080, thriller).
+has_2_genre(movie51082).
 has_genre(movie51082, comedy).
 has_genre(movie51082, romance).
+has_2_genre(movie51084).
 has_genre(movie51084, comedy).
 has_genre(movie51084, romance).
+has_3_genre(movie51086).
 has_genre(movie51086, drama).
 has_genre(movie51086, mystery).
 has_genre(movie51086, thriller).
+has_1_genre(movie51088).
 has_genre(movie51088, comedy).
+has_1_genre(movie51091).
 has_genre(movie51091, drama).
+has_1_genre(movie51167).
 has_genre(movie51167, drama).
+has_1_genre(movie51174).
 has_genre(movie51174, drama).
+has_4_genre(movie51255).
 has_genre(movie51255, action).
 has_genre(movie51255, comedy).
 has_genre(movie51255, crime).
 has_genre(movie51255, mystery).
+has_3_genre(movie51314).
 has_genre(movie51314, adventure).
 has_genre(movie51314, drama).
 has_genre(movie51314, romance).
+has_3_genre(movie51357).
 has_genre(movie51357, crime).
 has_genre(movie51357, drama).
 has_genre(movie51357, thriller).
+has_3_genre(movie51412).
 has_genre(movie51412, action).
 has_genre(movie51412, sci-fi).
 has_genre(movie51412, thriller).
+has_2_genre(movie51471).
 has_genre(movie51471, drama).
 has_genre(movie51471, romance).
+has_2_genre(movie51498).
 has_genre(movie51498, comedy).
 has_genre(movie51498, horror).
+has_3_genre(movie51540).
 has_genre(movie51540, crime).
 has_genre(movie51540, drama).
 has_genre(movie51540, thriller).
+has_5_genre(movie51545).
 has_genre(movie51545, action).
 has_genre(movie51545, comedy).
 has_genre(movie51545, drama).
 has_genre(movie51545, horror).
 has_genre(movie51545, thriller).
+has_1_genre(movie51562).
 has_genre(movie51562, sci-fi).
+has_1_genre(movie51573).
 has_genre(movie51573, fantasy).
+has_2_genre(movie51575).
 has_genre(movie51575, adventure).
 has_genre(movie51575, comedy).
+has_4_genre(movie51662).
 has_genre(movie51662, action).
 has_genre(movie51662, fantasy).
 has_genre(movie51662, war).
 has_genre(movie51662, imax).
+has_3_genre(movie51666).
 has_genre(movie51666, horror).
 has_genre(movie51666, mystery).
 has_genre(movie51666, thriller).
+has_2_genre(movie51694).
 has_genre(movie51694, drama).
 has_genre(movie51694, romance).
+has_3_genre(movie51698).
 has_genre(movie51698, adventure).
 has_genre(movie51698, children).
 has_genre(movie51698, sci-fi).
+has_2_genre(movie51705).
 has_genre(movie51705, comedy).
 has_genre(movie51705, romance).
+has_5_genre(movie51709).
 has_genre(movie51709, comedy).
 has_genre(movie51709, drama).
 has_genre(movie51709, horror).
 has_genre(movie51709, sci-fi).
 has_genre(movie51709, thriller).
+has_2_genre(movie51834).
 has_genre(movie51834, drama).
 has_genre(movie51834, romance).
+has_2_genre(movie51884).
 has_genre(movie51884, drama).
 has_genre(movie51884, romance).
+has_3_genre(movie51903).
 has_genre(movie51903, comedy).
 has_genre(movie51903, drama).
 has_genre(movie51903, romance).
+has_4_genre(movie51925).
 has_genre(movie51925, drama).
 has_genre(movie51925, fantasy).
 has_genre(movie51925, mystery).
 has_genre(movie51925, thriller).
+has_3_genre(movie51927).
 has_genre(movie51927, horror).
 has_genre(movie51927, mystery).
 has_genre(movie51927, thriller).
+has_1_genre(movie51931).
 has_genre(movie51931, drama).
+has_1_genre(movie51933).
 has_genre(movie51933, drama).
+has_3_genre(movie51935).
 has_genre(movie51935, action).
 has_genre(movie51935, drama).
 has_genre(movie51935, thriller).
+has_2_genre(movie51937).
 has_genre(movie51937, horror).
 has_genre(movie51937, thriller).
+has_more_than_5_genre(movie51939).
 has_genre(movie51939, action).
 has_genre(movie51939, adventure).
 has_genre(movie51939, animation).
 has_genre(movie51939, children).
 has_genre(movie51939, comedy).
 has_genre(movie51939, fantasy).
+has_3_genre(movie52042).
 has_genre(movie52042, drama).
 has_genre(movie52042, thriller).
 has_genre(movie52042, war).
+has_3_genre(movie52241).
 has_genre(movie52241, crime).
 has_genre(movie52241, drama).
 has_genre(movie52241, thriller).
+has_2_genre(movie52245).
 has_genre(movie52245, comedy).
 has_genre(movie52245, romance).
+has_1_genre(movie52279).
 has_genre(movie52279, comedy).
+has_5_genre(movie52281).
 has_genre(movie52281, action).
 has_genre(movie52281, crime).
 has_genre(movie52281, horror).
 has_genre(movie52281, sci-fi).
 has_genre(movie52281, thriller).
+has_2_genre(movie52283).
 has_genre(movie52283, horror).
 has_genre(movie52283, thriller).
+has_more_than_5_genre(movie52287).
 has_genre(movie52287, action).
 has_genre(movie52287, adventure).
 has_genre(movie52287, animation).
 has_genre(movie52287, children).
 has_genre(movie52287, comedy).
 has_genre(movie52287, sci-fi).
+has_1_genre(movie52299).
 has_genre(movie52299, documentary).
+has_4_genre(movie52319).
 has_genre(movie52319, action).
 has_genre(movie52319, adventure).
 has_genre(movie52319, drama).
 has_genre(movie52319, war).
+has_4_genre(movie52328).
 has_genre(movie52328, adventure).
 has_genre(movie52328, drama).
 has_genre(movie52328, sci-fi).
 has_genre(movie52328, thriller).
+has_2_genre(movie52375).
 has_genre(movie52375, crime).
 has_genre(movie52375, drama).
+has_4_genre(movie52435).
 has_genre(movie52435, animation).
 has_genre(movie52435, comedy).
 has_genre(movie52435, fantasy).
 has_genre(movie52435, musical).
+has_2_genre(movie52458).
 has_genre(movie52458, drama).
 has_genre(movie52458, thriller).
+has_more_than_5_genre(movie52462).
 has_genre(movie52462, action).
 has_genre(movie52462, adventure).
 has_genre(movie52462, animation).
@@ -18483,410 +24951,574 @@ has_genre(movie52462, comedy).
 has_genre(movie52462, fantasy).
 has_genre(movie52462, mystery).
 has_genre(movie52462, sci-fi).
+has_2_genre(movie52579).
 has_genre(movie52579, drama).
 has_genre(movie52579, musical).
+has_4_genre(movie52604).
 has_genre(movie52604, crime).
 has_genre(movie52604, drama).
 has_genre(movie52604, mystery).
 has_genre(movie52604, thriller).
+has_2_genre(movie52644).
 has_genre(movie52644, horror).
 has_genre(movie52644, thriller).
+has_3_genre(movie52668).
 has_genre(movie52668, comedy).
 has_genre(movie52668, drama).
 has_genre(movie52668, romance).
+has_1_genre(movie52694).
 has_genre(movie52694, comedy).
+has_5_genre(movie52712).
 has_genre(movie52712, crime).
 has_genre(movie52712, drama).
 has_genre(movie52712, fantasy).
 has_genre(movie52712, mystery).
 has_genre(movie52712, thriller).
+has_1_genre(movie52715).
 has_genre(movie52715, comedy).
+has_5_genre(movie52722).
 has_genre(movie52722, action).
 has_genre(movie52722, adventure).
 has_genre(movie52722, sci-fi).
 has_genre(movie52722, thriller).
 has_genre(movie52722, imax).
+has_2_genre(movie52724).
 has_genre(movie52724, comedy).
 has_genre(movie52724, drama).
+has_2_genre(movie52730).
 has_genre(movie52730, children).
 has_genre(movie52730, comedy).
+has_1_genre(movie52767).
 has_genre(movie52767, documentary).
+has_1_genre(movie52784).
 has_genre(movie52784, documentary).
+has_4_genre(movie52831).
 has_genre(movie52831, action).
 has_genre(movie52831, crime).
 has_genre(movie52831, horror).
 has_genre(movie52831, thriller).
+has_2_genre(movie52867).
 has_genre(movie52867, comedy).
 has_genre(movie52867, romance).
+has_3_genre(movie52885).
 has_genre(movie52885, animation).
 has_genre(movie52885, mystery).
 has_genre(movie52885, sci-fi).
+has_4_genre(movie52950).
 has_genre(movie52950, action).
 has_genre(movie52950, fantasy).
 has_genre(movie52950, horror).
 has_genre(movie52950, thriller).
+has_1_genre(movie52952).
 has_genre(movie52952, drama).
+has_1_genre(movie52967).
 has_genre(movie52967, drama).
+has_3_genre(movie52973).
 has_genre(movie52973, comedy).
 has_genre(movie52973, drama).
 has_genre(movie52973, romance).
+has_3_genre(movie52975).
 has_genre(movie52975, comedy).
 has_genre(movie52975, drama).
 has_genre(movie52975, musical).
+has_3_genre(movie53000).
 has_genre(movie53000, horror).
 has_genre(movie53000, sci-fi).
 has_genre(movie53000, thriller).
+has_4_genre(movie53022).
 has_genre(movie53022, action).
 has_genre(movie53022, comedy).
 has_genre(movie53022, crime).
 has_genre(movie53022, romance).
+has_1_genre(movie53024).
 has_genre(movie53024, documentary).
+has_5_genre(movie53121).
 has_genre(movie53121, adventure).
 has_genre(movie53121, animation).
 has_genre(movie53121, children).
 has_genre(movie53121, comedy).
 has_genre(movie53121, fantasy).
+has_3_genre(movie53123).
 has_genre(movie53123, drama).
 has_genre(movie53123, musical).
 has_genre(movie53123, romance).
+has_4_genre(movie53125).
 has_genre(movie53125, action).
 has_genre(movie53125, adventure).
 has_genre(movie53125, comedy).
 has_genre(movie53125, fantasy).
+has_3_genre(movie53127).
 has_genre(movie53127, drama).
 has_genre(movie53127, horror).
 has_genre(movie53127, thriller).
+has_3_genre(movie53129).
 has_genre(movie53129, crime).
 has_genre(movie53129, drama).
 has_genre(movie53129, thriller).
+has_3_genre(movie53138).
 has_genre(movie53138, action).
 has_genre(movie53138, adventure).
 has_genre(movie53138, fantasy).
+has_5_genre(movie53140).
 has_genre(movie53140, action).
 has_genre(movie53140, adventure).
 has_genre(movie53140, comedy).
 has_genre(movie53140, fantasy).
 has_genre(movie53140, romance).
+has_2_genre(movie53143).
 has_genre(movie53143, action).
 has_genre(movie53143, thriller).
+has_4_genre(movie53161).
 has_genre(movie53161, comedy).
 has_genre(movie53161, drama).
 has_genre(movie53161, romance).
 has_genre(movie53161, sci-fi).
+has_2_genre(movie53280).
 has_genre(movie53280, horror).
 has_genre(movie53280, thriller).
+has_3_genre(movie53318).
 has_genre(movie53318, comedy).
 has_genre(movie53318, drama).
 has_genre(movie53318, romance).
+has_2_genre(movie53322).
 has_genre(movie53322, crime).
 has_genre(movie53322, thriller).
+has_1_genre(movie53326).
 has_genre(movie53326, horror).
+has_2_genre(movie53355).
 has_genre(movie53355, comedy).
 has_genre(movie53355, romance).
+has_3_genre(movie53435).
 has_genre(movie53435, crime).
 has_genre(movie53435, horror).
 has_genre(movie53435, thriller).
+has_2_genre(movie53447).
 has_genre(movie53447, crime).
 has_genre(movie53447, drama).
+has_3_genre(movie53450).
 has_genre(movie53450, comedy).
 has_genre(movie53450, fantasy).
 has_genre(movie53450, horror).
+has_4_genre(movie53453).
 has_genre(movie53453, action).
 has_genre(movie53453, adventure).
 has_genre(movie53453, fantasy).
 has_genre(movie53453, sci-fi).
+has_3_genre(movie53460).
 has_genre(movie53460, animation).
 has_genre(movie53460, children).
 has_genre(movie53460, comedy).
+has_3_genre(movie53464).
 has_genre(movie53464, action).
 has_genre(movie53464, adventure).
 has_genre(movie53464, sci-fi).
+has_3_genre(movie53466).
 has_genre(movie53466, adventure).
 has_genre(movie53466, crime).
 has_genre(movie53466, thriller).
+has_3_genre(movie53468).
 has_genre(movie53468, comedy).
 has_genre(movie53468, horror).
 has_genre(movie53468, thriller).
+has_5_genre(movie53519).
 has_genre(movie53519, action).
 has_genre(movie53519, adventure).
 has_genre(movie53519, crime).
 has_genre(movie53519, horror).
 has_genre(movie53519, thriller).
+has_4_genre(movie53550).
 has_genre(movie53550, action).
 has_genre(movie53550, adventure).
 has_genre(movie53550, drama).
 has_genre(movie53550, war).
+has_2_genre(movie53574).
 has_genre(movie53574, comedy).
 has_genre(movie53574, drama).
+has_1_genre(movie53578).
 has_genre(movie53578, comedy).
+has_1_genre(movie53808).
 has_genre(movie53808, comedy).
+has_1_genre(movie53883).
 has_genre(movie53883, documentary).
+has_2_genre(movie53894).
 has_genre(movie53894, documentary).
 has_genre(movie53894, drama).
+has_2_genre(movie53921).
 has_genre(movie53921, drama).
 has_genre(movie53921, thriller).
+has_3_genre(movie53953).
 has_genre(movie53953, drama).
 has_genre(movie53953, horror).
 has_genre(movie53953, thriller).
+has_1_genre(movie53956).
 has_genre(movie53956, comedy).
+has_4_genre(movie53972).
 has_genre(movie53972, action).
 has_genre(movie53972, adventure).
 has_genre(movie53972, crime).
 has_genre(movie53972, thriller).
+has_2_genre(movie53974).
 has_genre(movie53974, comedy).
 has_genre(movie53974, romance).
+has_2_genre(movie53993).
 has_genre(movie53993, comedy).
 has_genre(movie53993, fantasy).
+has_4_genre(movie53996).
 has_genre(movie53996, action).
 has_genre(movie53996, sci-fi).
 has_genre(movie53996, thriller).
 has_genre(movie53996, imax).
+has_4_genre(movie54001).
 has_genre(movie54001, adventure).
 has_genre(movie54001, drama).
 has_genre(movie54001, fantasy).
 has_genre(movie54001, imax).
+has_2_genre(movie54004).
 has_genre(movie54004, comedy).
 has_genre(movie54004, romance).
+has_2_genre(movie54116).
 has_genre(movie54116, drama).
 has_genre(movie54116, thriller).
+has_3_genre(movie54121).
 has_genre(movie54121, drama).
 has_genre(movie54121, romance).
 has_genre(movie54121, western).
+has_1_genre(movie54185).
 has_genre(movie54185, documentary).
+has_4_genre(movie54190).
 has_genre(movie54190, drama).
 has_genre(movie54190, fantasy).
 has_genre(movie54190, musical).
 has_genre(movie54190, romance).
+has_1_genre(movie54256).
 has_genre(movie54256, comedy).
+has_4_genre(movie54259).
 has_genre(movie54259, adventure).
 has_genre(movie54259, comedy).
 has_genre(movie54259, fantasy).
 has_genre(movie54259, romance).
+has_2_genre(movie54272).
 has_genre(movie54272, animation).
 has_genre(movie54272, comedy).
+has_3_genre(movie54274).
 has_genre(movie54274, crime).
 has_genre(movie54274, drama).
 has_genre(movie54274, thriller).
+has_3_genre(movie54276).
 has_genre(movie54276, comedy).
 has_genre(movie54276, drama).
 has_genre(movie54276, romance).
+has_2_genre(movie54281).
 has_genre(movie54281, comedy).
 has_genre(movie54281, drama).
+has_3_genre(movie54286).
 has_genre(movie54286, action).
 has_genre(movie54286, crime).
 has_genre(movie54286, thriller).
+has_1_genre(movie54354).
 has_genre(movie54354, documentary).
+has_4_genre(movie54372).
 has_genre(movie54372, crime).
 has_genre(movie54372, drama).
 has_genre(movie54372, mystery).
 has_genre(movie54372, thriller).
+has_1_genre(movie54503).
 has_genre(movie54503, comedy).
+has_1_genre(movie54617).
 has_genre(movie54617, comedy).
+has_4_genre(movie54648).
 has_genre(movie54648, action).
 has_genre(movie54648, comedy).
 has_genre(movie54648, crime).
 has_genre(movie54648, thriller).
+has_4_genre(movie54686).
 has_genre(movie54686, action).
 has_genre(movie54686, adventure).
 has_genre(movie54686, fantasy).
 has_genre(movie54686, war).
+has_1_genre(movie54732).
 has_genre(movie54732, comedy).
+has_1_genre(movie54734).
 has_genre(movie54734, comedy).
+has_3_genre(movie54736).
 has_genre(movie54736, action).
 has_genre(movie54736, drama).
 has_genre(movie54736, thriller).
+has_2_genre(movie54745).
 has_genre(movie54745, comedy).
 has_genre(movie54745, drama).
+has_2_genre(movie54768).
 has_genre(movie54768, children).
 has_genre(movie54768, comedy).
+has_5_genre(movie54771).
 has_genre(movie54771, action).
 has_genre(movie54771, drama).
 has_genre(movie54771, horror).
 has_genre(movie54771, sci-fi).
 has_genre(movie54771, thriller).
+has_3_genre(movie54780).
 has_genre(movie54780, comedy).
 has_genre(movie54780, drama).
 has_genre(movie54780, romance).
+has_1_genre(movie54785).
 has_genre(movie54785, horror).
+has_2_genre(movie54787).
 has_genre(movie54787, drama).
 has_genre(movie54787, thriller).
+has_3_genre(movie54796).
 has_genre(movie54796, comedy).
 has_genre(movie54796, drama).
 has_genre(movie54796, romance).
+has_1_genre(movie54881).
 has_genre(movie54881, documentary).
+has_2_genre(movie54908).
 has_genre(movie54908, action).
 has_genre(movie54908, comedy).
+has_3_genre(movie54910).
 has_genre(movie54910, comedy).
 has_genre(movie54910, horror).
 has_genre(movie54910, thriller).
+has_1_genre(movie54934).
 has_genre(movie54934, comedy).
+has_2_genre(movie54962).
 has_genre(movie54962, drama).
 has_genre(movie54962, mystery).
+has_3_genre(movie54995).
 has_genre(movie54995, action).
 has_genre(movie54995, horror).
 has_genre(movie54995, sci-fi).
+has_4_genre(movie54997).
 has_genre(movie54997, action).
 has_genre(movie54997, crime).
 has_genre(movie54997, drama).
 has_genre(movie54997, western).
+has_3_genre(movie54999).
 has_genre(movie54999, action).
 has_genre(movie54999, comedy).
 has_genre(movie54999, crime).
+has_1_genre(movie55020).
 has_genre(movie55020, comedy).
+has_2_genre(movie55036).
 has_genre(movie55036, crime).
 has_genre(movie55036, drama).
+has_3_genre(movie55052).
 has_genre(movie55052, drama).
 has_genre(movie55052, romance).
 has_genre(movie55052, war).
+has_2_genre(movie55061).
 has_genre(movie55061, drama).
 has_genre(movie55061, sci-fi).
+has_2_genre(movie55067).
 has_genre(movie55067, drama).
 has_genre(movie55067, thriller).
+has_1_genre(movie55069).
 has_genre(movie55069, drama).
+has_1_genre(movie55071).
 has_genre(movie55071, documentary).
+has_3_genre(movie55080).
 has_genre(movie55080, crime).
 has_genre(movie55080, drama).
 has_genre(movie55080, thriller).
+has_2_genre(movie55094).
 has_genre(movie55094, drama).
 has_genre(movie55094, mystery).
+has_1_genre(movie55110).
 has_genre(movie55110, drama).
+has_3_genre(movie55112).
 has_genre(movie55112, comedy).
 has_genre(movie55112, drama).
 has_genre(movie55112, romance).
+has_5_genre(movie55116).
 has_genre(movie55116, action).
 has_genre(movie55116, adventure).
 has_genre(movie55116, comedy).
 has_genre(movie55116, drama).
 has_genre(movie55116, thriller).
+has_3_genre(movie55118).
 has_genre(movie55118, crime).
 has_genre(movie55118, drama).
 has_genre(movie55118, thriller).
+has_1_genre(movie55156).
 has_genre(movie55156, documentary).
+has_5_genre(movie55167).
 has_genre(movie55167, action).
 has_genre(movie55167, adventure).
 has_genre(movie55167, animation).
 has_genre(movie55167, crime).
 has_genre(movie55167, fantasy).
+has_2_genre(movie55190).
 has_genre(movie55190, comedy).
 has_genre(movie55190, romance).
+has_1_genre(movie55205).
 has_genre(movie55205, drama).
+has_2_genre(movie55207).
 has_genre(movie55207, comedy).
 has_genre(movie55207, drama).
+has_4_genre(movie55232).
 has_genre(movie55232, action).
 has_genre(movie55232, horror).
 has_genre(movie55232, sci-fi).
 has_genre(movie55232, thriller).
+has_1_genre(movie55241).
 has_genre(movie55241, comedy).
+has_2_genre(movie55245).
 has_genre(movie55245, comedy).
 has_genre(movie55245, romance).
+has_3_genre(movie55247).
 has_genre(movie55247, action).
 has_genre(movie55247, adventure).
 has_genre(movie55247, drama).
+has_1_genre(movie55250).
 has_genre(movie55250, comedy).
+has_4_genre(movie55253).
 has_genre(movie55253, drama).
 has_genre(movie55253, romance).
 has_genre(movie55253, thriller).
 has_genre(movie55253, war).
+has_4_genre(movie55259).
 has_genre(movie55259, action).
 has_genre(movie55259, adventure).
 has_genre(movie55259, drama).
 has_genre(movie55259, fantasy).
+has_3_genre(movie55261).
 has_genre(movie55261, comedy).
 has_genre(movie55261, drama).
 has_genre(movie55261, romance).
+has_3_genre(movie55267).
 has_genre(movie55267, comedy).
 has_genre(movie55267, drama).
 has_genre(movie55267, romance).
+has_3_genre(movie55269).
 has_genre(movie55269, adventure).
 has_genre(movie55269, comedy).
 has_genre(movie55269, drama).
+has_2_genre(movie55272).
 has_genre(movie55272, crime).
 has_genre(movie55272, drama).
+has_1_genre(movie55274).
 has_genre(movie55274, drama).
+has_2_genre(movie55276).
 has_genre(movie55276, drama).
 has_genre(movie55276, thriller).
+has_3_genre(movie55278).
 has_genre(movie55278, drama).
 has_genre(movie55278, mystery).
 has_genre(movie55278, thriller).
+has_2_genre(movie55280).
 has_genre(movie55280, comedy).
 has_genre(movie55280, drama).
+has_2_genre(movie55282).
 has_genre(movie55282, horror).
 has_genre(movie55282, thriller).
+has_3_genre(movie55290).
 has_genre(movie55290, crime).
 has_genre(movie55290, drama).
 has_genre(movie55290, mystery).
+has_1_genre(movie55292).
 has_genre(movie55292, comedy).
+has_3_genre(movie55294).
 has_genre(movie55294, comedy).
 has_genre(movie55294, crime).
 has_genre(movie55294, drama).
+has_3_genre(movie55363).
 has_genre(movie55363, crime).
 has_genre(movie55363, drama).
 has_genre(movie55363, western).
+has_3_genre(movie55391).
 has_genre(movie55391, crime).
 has_genre(movie55391, drama).
 has_genre(movie55391, thriller).
+has_2_genre(movie55442).
 has_genre(movie55442, animation).
 has_genre(movie55442, drama).
+has_1_genre(movie55444).
 has_genre(movie55444, drama).
+has_3_genre(movie55451).
 has_genre(movie55451, comedy).
 has_genre(movie55451, drama).
 has_genre(movie55451, romance).
+has_1_genre(movie55492).
 has_genre(movie55492, horror).
+has_2_genre(movie55553).
 has_genre(movie55553, comedy).
 has_genre(movie55553, horror).
+has_1_genre(movie55555).
 has_genre(movie55555, drama).
+has_3_genre(movie55577).
 has_genre(movie55577, crime).
 has_genre(movie55577, horror).
 has_genre(movie55577, thriller).
+has_1_genre(movie55620).
 has_genre(movie55620, documentary).
+has_1_genre(movie55687).
 has_genre(movie55687, documentary).
+has_4_genre(movie55721).
 has_genre(movie55721, action).
 has_genre(movie55721, crime).
 has_genre(movie55721, drama).
 has_genre(movie55721, thriller).
+has_1_genre(movie55729).
 has_genre(movie55729, comedy).
+has_3_genre(movie55765).
 has_genre(movie55765, crime).
 has_genre(movie55765, drama).
 has_genre(movie55765, thriller).
+has_2_genre(movie55768).
 has_genre(movie55768, animation).
 has_genre(movie55768, comedy).
+has_3_genre(movie55805).
 has_genre(movie55805, crime).
 has_genre(movie55805, drama).
 has_genre(movie55805, thriller).
+has_1_genre(movie55814).
 has_genre(movie55814, drama).
+has_2_genre(movie55820).
 has_genre(movie55820, crime).
 has_genre(movie55820, drama).
+has_1_genre(movie55830).
 has_genre(movie55830, comedy).
+has_3_genre(movie55844).
 has_genre(movie55844, comedy).
 has_genre(movie55844, drama).
 has_genre(movie55844, romance).
+has_1_genre(movie55854).
 has_genre(movie55854, drama).
+has_2_genre(movie55872).
 has_genre(movie55872, drama).
 has_genre(movie55872, musical).
+has_2_genre(movie55908).
 has_genre(movie55908, drama).
 has_genre(movie55908, sci-fi).
+has_3_genre(movie55946).
 has_genre(movie55946, drama).
 has_genre(movie55946, thriller).
 has_genre(movie55946, war).
+has_5_genre(movie55995).
 has_genre(movie55995, action).
 has_genre(movie55995, adventure).
 has_genre(movie55995, animation).
 has_genre(movie55995, fantasy).
 has_genre(movie55995, imax).
+has_4_genre(movie56003).
 has_genre(movie56003, comedy).
 has_genre(movie56003, drama).
 has_genre(movie56003, sci-fi).
 has_genre(movie56003, thriller).
+has_2_genre(movie56012).
 has_genre(movie56012, comedy).
 has_genre(movie56012, documentary).
+has_2_genre(movie56022).
 has_genre(movie56022, drama).
 has_genre(movie56022, sci-fi).
+has_4_genre(movie56060).
 has_genre(movie56060, comedy).
 has_genre(movie56060, drama).
 has_genre(movie56060, romance).
 has_genre(movie56060, war).
+has_2_genre(movie56145).
 has_genre(movie56145, horror).
 has_genre(movie56145, sci-fi).
+has_more_than_5_genre(movie56152).
 has_genre(movie56152, adventure).
 has_genre(movie56152, animation).
 has_genre(movie56152, children).
@@ -18894,1376 +25526,1920 @@ has_genre(movie56152, comedy).
 has_genre(movie56152, fantasy).
 has_genre(movie56152, musical).
 has_genre(movie56152, romance).
+has_3_genre(movie56156).
 has_genre(movie56156, action).
 has_genre(movie56156, crime).
 has_genre(movie56156, thriller).
+has_2_genre(movie56169).
 has_genre(movie56169, drama).
 has_genre(movie56169, thriller).
+has_3_genre(movie56171).
 has_genre(movie56171, adventure).
 has_genre(movie56171, children).
 has_genre(movie56171, fantasy).
+has_5_genre(movie56174).
 has_genre(movie56174, action).
 has_genre(movie56174, horror).
 has_genre(movie56174, sci-fi).
 has_genre(movie56174, thriller).
 has_genre(movie56174, imax).
+has_2_genre(movie56176).
 has_genre(movie56176, children).
 has_genre(movie56176, comedy).
+has_3_genre(movie56251).
 has_genre(movie56251, animation).
 has_genre(movie56251, comedy).
 has_genre(movie56251, sci-fi).
+has_1_genre(movie56274).
 has_genre(movie56274, drama).
+has_1_genre(movie56286).
 has_genre(movie56286, drama).
+has_2_genre(movie56333).
 has_genre(movie56333, comedy).
 has_genre(movie56333, drama).
+has_3_genre(movie56336).
 has_genre(movie56336, action).
 has_genre(movie56336, horror).
 has_genre(movie56336, thriller).
+has_4_genre(movie56339).
 has_genre(movie56339, drama).
 has_genre(movie56339, horror).
 has_genre(movie56339, mystery).
 has_genre(movie56339, thriller).
+has_3_genre(movie56367).
 has_genre(movie56367, comedy).
 has_genre(movie56367, drama).
 has_genre(movie56367, romance).
+has_1_genre(movie56379).
 has_genre(movie56379, documentary).
+has_2_genre(movie56389).
 has_genre(movie56389, drama).
 has_genre(movie56389, romance).
+has_1_genre(movie56563).
 has_genre(movie56563, documentary).
+has_2_genre(movie56587).
 has_genre(movie56587, comedy).
 has_genre(movie56587, drama).
+has_1_genre(movie56607).
 has_genre(movie56607, drama).
+has_2_genre(movie56620).
 has_genre(movie56620, horror).
 has_genre(movie56620, thriller).
+has_3_genre(movie56715).
 has_genre(movie56715, drama).
 has_genre(movie56715, fantasy).
 has_genre(movie56715, romance).
+has_4_genre(movie56757).
 has_genre(movie56757, drama).
 has_genre(movie56757, horror).
 has_genre(movie56757, musical).
 has_genre(movie56757, thriller).
+has_2_genre(movie56775).
 has_genre(movie56775, action).
 has_genre(movie56775, adventure).
+has_2_genre(movie56782).
 has_genre(movie56782, drama).
 has_genre(movie56782, western).
+has_3_genre(movie56788).
 has_genre(movie56788, comedy).
 has_genre(movie56788, drama).
 has_genre(movie56788, war).
+has_3_genre(movie56801).
 has_genre(movie56801, action).
 has_genre(movie56801, horror).
 has_genre(movie56801, sci-fi).
+has_2_genre(movie56805).
 has_genre(movie56805, comedy).
 has_genre(movie56805, musical).
+has_3_genre(movie56837).
 has_genre(movie56837, comedy).
 has_genre(movie56837, drama).
 has_genre(movie56837, romance).
+has_1_genre(movie56869).
 has_genre(movie56869, comedy).
+has_3_genre(movie56908).
 has_genre(movie56908, comedy).
 has_genre(movie56908, drama).
 has_genre(movie56908, romance).
+has_3_genre(movie56915).
 has_genre(movie56915, adventure).
 has_genre(movie56915, children).
 has_genre(movie56915, fantasy).
+has_4_genre(movie56921).
 has_genre(movie56921, action).
 has_genre(movie56921, drama).
 has_genre(movie56921, sci-fi).
 has_genre(movie56921, thriller).
+has_3_genre(movie56941).
 has_genre(movie56941, comedy).
 has_genre(movie56941, drama).
 has_genre(movie56941, romance).
+has_2_genre(movie56949).
 has_genre(movie56949, comedy).
 has_genre(movie56949, romance).
+has_3_genre(movie57147).
 has_genre(movie57147, crime).
 has_genre(movie57147, drama).
 has_genre(movie57147, thriller).
+has_1_genre(movie57183).
 has_genre(movie57183, drama).
+has_2_genre(movie57243).
 has_genre(movie57243, comedy).
 has_genre(movie57243, drama).
+has_3_genre(movie57274).
 has_genre(movie57274, drama).
 has_genre(movie57274, horror).
 has_genre(movie57274, thriller).
+has_3_genre(movie57326).
 has_genre(movie57326, action).
 has_genre(movie57326, adventure).
 has_genre(movie57326, fantasy).
+has_4_genre(movie57368).
 has_genre(movie57368, action).
 has_genre(movie57368, mystery).
 has_genre(movie57368, sci-fi).
 has_genre(movie57368, thriller).
+has_2_genre(movie57421).
 has_genre(movie57421, comedy).
 has_genre(movie57421, horror).
+has_4_genre(movie57499).
 has_genre(movie57499, action).
 has_genre(movie57499, adventure).
 has_genre(movie57499, drama).
 has_genre(movie57499, war).
+has_4_genre(movie57502).
 has_genre(movie57502, adventure).
 has_genre(movie57502, animation).
 has_genre(movie57502, drama).
 has_genre(movie57502, horror).
+has_5_genre(movie57504).
 has_genre(movie57504, animation).
 has_genre(movie57504, comedy).
 has_genre(movie57504, drama).
 has_genre(movie57504, romance).
 has_genre(movie57504, sci-fi).
+has_2_genre(movie57522).
 has_genre(movie57522, comedy).
 has_genre(movie57522, crime).
+has_2_genre(movie57526).
 has_genre(movie57526, crime).
 has_genre(movie57526, thriller).
+has_4_genre(movie57528).
 has_genre(movie57528, action).
 has_genre(movie57528, drama).
 has_genre(movie57528, thriller).
 has_genre(movie57528, war).
+has_1_genre(movie57532).
 has_genre(movie57532, comedy).
+has_1_genre(movie57536).
 has_genre(movie57536, comedy).
+has_3_genre(movie57637).
 has_genre(movie57637, horror).
 has_genre(movie57637, sci-fi).
 has_genre(movie57637, thriller).
+has_4_genre(movie57640).
 has_genre(movie57640, action).
 has_genre(movie57640, adventure).
 has_genre(movie57640, fantasy).
 has_genre(movie57640, sci-fi).
+has_4_genre(movie57669).
 has_genre(movie57669, comedy).
 has_genre(movie57669, crime).
 has_genre(movie57669, drama).
 has_genre(movie57669, thriller).
+has_2_genre(movie57772).
 has_genre(movie57772, crime).
 has_genre(movie57772, sci-fi).
+has_3_genre(movie57843).
 has_genre(movie57843, action).
 has_genre(movie57843, crime).
 has_genre(movie57843, drama).
+has_2_genre(movie57910).
 has_genre(movie57910, comedy).
 has_genre(movie57910, horror).
+has_4_genre(movie57951).
 has_genre(movie57951, action).
 has_genre(movie57951, adventure).
 has_genre(movie57951, comedy).
 has_genre(movie57951, romance).
+has_5_genre(movie58025).
 has_genre(movie58025, action).
 has_genre(movie58025, adventure).
 has_genre(movie58025, drama).
 has_genre(movie58025, sci-fi).
 has_genre(movie58025, thriller).
+has_3_genre(movie58047).
 has_genre(movie58047, comedy).
 has_genre(movie58047, drama).
 has_genre(movie58047, romance).
+has_4_genre(movie58078).
 has_genre(movie58078, crime).
 has_genre(movie58078, drama).
 has_genre(movie58078, romance).
 has_genre(movie58078, thriller).
+has_3_genre(movie58103).
 has_genre(movie58103, action).
 has_genre(movie58103, drama).
 has_genre(movie58103, thriller).
+has_5_genre(movie58105).
 has_genre(movie58105, adventure).
 has_genre(movie58105, children).
 has_genre(movie58105, drama).
 has_genre(movie58105, fantasy).
 has_genre(movie58105, imax).
+has_3_genre(movie58107).
 has_genre(movie58107, drama).
 has_genre(movie58107, musical).
 has_genre(movie58107, romance).
+has_2_genre(movie58154).
 has_genre(movie58154, drama).
 has_genre(movie58154, romance).
+has_1_genre(movie58156).
 has_genre(movie58156, comedy).
+has_2_genre(movie58162).
 has_genre(movie58162, comedy).
 has_genre(movie58162, romance).
+has_1_genre(movie58191).
 has_genre(movie58191, documentary).
+has_2_genre(movie58287).
 has_genre(movie58287, drama).
 has_genre(movie58287, thriller).
+has_1_genre(movie58291).
 has_genre(movie58291, comedy).
+has_3_genre(movie58293).
 has_genre(movie58293, adventure).
 has_genre(movie58293, romance).
 has_genre(movie58293, thriller).
+has_3_genre(movie58295).
 has_genre(movie58295, action).
 has_genre(movie58295, crime).
 has_genre(movie58295, thriller).
+has_4_genre(movie58297).
 has_genre(movie58297, action).
 has_genre(movie58297, drama).
 has_genre(movie58297, sci-fi).
 has_genre(movie58297, thriller).
+has_4_genre(movie58299).
 has_genre(movie58299, adventure).
 has_genre(movie58299, animation).
 has_genre(movie58299, children).
 has_genre(movie58299, comedy).
+has_2_genre(movie58301).
 has_genre(movie58301, drama).
 has_genre(movie58301, thriller).
+has_3_genre(movie58303).
 has_genre(movie58303, crime).
 has_genre(movie58303, drama).
 has_genre(movie58303, war).
+has_2_genre(movie58306).
 has_genre(movie58306, drama).
 has_genre(movie58306, war).
+has_1_genre(movie58309).
 has_genre(movie58309, documentary).
+has_1_genre(movie58315).
 has_genre(movie58315, comedy).
+has_2_genre(movie58332).
 has_genre(movie58332, horror).
 has_genre(movie58332, sci-fi).
+has_3_genre(movie58347).
 has_genre(movie58347, comedy).
 has_genre(movie58347, fantasy).
 has_genre(movie58347, romance).
+has_1_genre(movie58351).
 has_genre(movie58351, drama).
+has_2_genre(movie58376).
 has_genre(movie58376, documentary).
 has_genre(movie58376, war).
+has_5_genre(movie58404).
 has_genre(movie58404, action).
 has_genre(movie58404, adventure).
 has_genre(movie58404, animation).
 has_genre(movie58404, fantasy).
 has_genre(movie58404, sci-fi).
+has_1_genre(movie58425).
 has_genre(movie58425, documentary).
+has_1_genre(movie58492).
 has_genre(movie58492, drama).
+has_1_genre(movie58554).
 has_genre(movie58554, drama).
+has_4_genre(movie58559).
 has_genre(movie58559, action).
 has_genre(movie58559, crime).
 has_genre(movie58559, drama).
 has_genre(movie58559, imax).
+has_1_genre(movie58627).
 has_genre(movie58627, action).
+has_1_genre(movie58655).
 has_genre(movie58655, comedy).
+has_3_genre(movie58783).
 has_genre(movie58783, drama).
 has_genre(movie58783, romance).
 has_genre(movie58783, sci-fi).
+has_4_genre(movie58803).
 has_genre(movie58803, crime).
 has_genre(movie58803, drama).
 has_genre(movie58803, romance).
 has_genre(movie58803, thriller).
+has_3_genre(movie58806).
 has_genre(movie58806, comedy).
 has_genre(movie58806, drama).
 has_genre(movie58806, romance).
+has_3_genre(movie58826).
 has_genre(movie58826, action).
 has_genre(movie58826, crime).
 has_genre(movie58826, thriller).
+has_3_genre(movie58839).
 has_genre(movie58839, comedy).
 has_genre(movie58839, drama).
 has_genre(movie58839, romance).
+has_3_genre(movie58842).
 has_genre(movie58842, action).
 has_genre(movie58842, drama).
 has_genre(movie58842, war).
+has_1_genre(movie58870).
 has_genre(movie58870, comedy).
+has_2_genre(movie58876).
 has_genre(movie58876, drama).
 has_genre(movie58876, war).
+has_3_genre(movie58879).
 has_genre(movie58879, documentary).
 has_genre(movie58879, musical).
 has_genre(movie58879, imax).
+has_2_genre(movie58964).
 has_genre(movie58964, horror).
 has_genre(movie58964, thriller).
+has_3_genre(movie58972).
 has_genre(movie58972, adventure).
 has_genre(movie58972, comedy).
 has_genre(movie58972, fantasy).
+has_2_genre(movie58975).
 has_genre(movie58975, horror).
 has_genre(movie58975, thriller).
+has_2_genre(movie58998).
 has_genre(movie58998, comedy).
 has_genre(movie58998, romance).
+has_3_genre(movie59014).
 has_genre(movie59014, action).
 has_genre(movie59014, comedy).
 has_genre(movie59014, sci-fi).
+has_3_genre(movie59016).
 has_genre(movie59016, crime).
 has_genre(movie59016, drama).
 has_genre(movie59016, thriller).
+has_2_genre(movie59018).
 has_genre(movie59018, drama).
 has_genre(movie59018, romance).
+has_2_genre(movie59022).
 has_genre(movie59022, adventure).
 has_genre(movie59022, comedy).
+has_1_genre(movie59026).
 has_genre(movie59026, comedy).
+has_4_genre(movie59037).
 has_genre(movie59037, action).
 has_genre(movie59037, children).
 has_genre(movie59037, sci-fi).
 has_genre(movie59037, imax).
+has_4_genre(movie59103).
 has_genre(movie59103, action).
 has_genre(movie59103, adventure).
 has_genre(movie59103, comedy).
 has_genre(movie59103, fantasy).
+has_2_genre(movie59118).
 has_genre(movie59118, comedy).
 has_genre(movie59118, drama).
+has_2_genre(movie59126).
 has_genre(movie59126, comedy).
 has_genre(movie59126, documentary).
+has_2_genre(movie59129).
 has_genre(movie59129, action).
 has_genre(movie59129, horror).
+has_1_genre(movie59131).
 has_genre(movie59131, horror).
+has_3_genre(movie59141).
 has_genre(movie59141, children).
 has_genre(movie59141, comedy).
 has_genre(movie59141, drama).
+has_2_genre(movie59143).
 has_genre(movie59143, comedy).
 has_genre(movie59143, documentary).
+has_2_genre(movie59220).
 has_genre(movie59220, comedy).
 has_genre(movie59220, romance).
+has_1_genre(movie59258).
 has_genre(movie59258, comedy).
+has_1_genre(movie59295).
 has_genre(movie59295, documentary).
+has_3_genre(movie59306).
 has_genre(movie59306, horror).
 has_genre(movie59306, mystery).
 has_genre(movie59306, thriller).
+has_3_genre(movie59315).
 has_genre(movie59315, action).
 has_genre(movie59315, adventure).
 has_genre(movie59315, sci-fi).
+has_2_genre(movie59333).
 has_genre(movie59333, comedy).
 has_genre(movie59333, romance).
+has_2_genre(movie59336).
 has_genre(movie59336, action).
 has_genre(movie59336, drama).
+has_4_genre(movie59369).
 has_genre(movie59369, action).
 has_genre(movie59369, crime).
 has_genre(movie59369, drama).
 has_genre(movie59369, thriller).
+has_3_genre(movie59387).
 has_genre(movie59387, adventure).
 has_genre(movie59387, drama).
 has_genre(movie59387, fantasy).
+has_2_genre(movie59421).
 has_genre(movie59421, comedy).
 has_genre(movie59421, romance).
+has_1_genre(movie59429).
 has_genre(movie59429, comedy).
+has_2_genre(movie59440).
 has_genre(movie59440, drama).
 has_genre(movie59440, romance).
+has_3_genre(movie59501).
 has_genre(movie59501, adventure).
 has_genre(movie59501, children).
 has_genre(movie59501, fantasy).
+has_2_genre(movie59549).
 has_genre(movie59549, drama).
 has_genre(movie59549, romance).
+has_4_genre(movie59604).
 has_genre(movie59604, crime).
 has_genre(movie59604, drama).
 has_genre(movie59604, horror).
 has_genre(movie59604, thriller).
+has_4_genre(movie59615).
 has_genre(movie59615, action).
 has_genre(movie59615, adventure).
 has_genre(movie59615, comedy).
 has_genre(movie59615, sci-fi).
+has_1_genre(movie59667).
 has_genre(movie59667, comedy).
+has_2_genre(movie59725).
 has_genre(movie59725, comedy).
 has_genre(movie59725, romance).
+has_2_genre(movie59727).
 has_genre(movie59727, horror).
 has_genre(movie59727, thriller).
+has_1_genre(movie59731).
 has_genre(movie59731, documentary).
+has_3_genre(movie59738).
 has_genre(movie59738, horror).
 has_genre(movie59738, mystery).
 has_genre(movie59738, thriller).
+has_5_genre(movie59784).
 has_genre(movie59784, action).
 has_genre(movie59784, animation).
 has_genre(movie59784, children).
 has_genre(movie59784, comedy).
 has_genre(movie59784, imax).
+has_1_genre(movie59810).
 has_genre(movie59810, drama).
+has_4_genre(movie59814).
 has_genre(movie59814, comedy).
 has_genre(movie59814, crime).
 has_genre(movie59814, drama).
 has_genre(movie59814, horror).
+has_1_genre(movie59900).
 has_genre(movie59900, comedy).
+has_2_genre(movie59915).
 has_genre(movie59915, horror).
 has_genre(movie59915, thriller).
+has_4_genre(movie59947).
 has_genre(movie59947, action).
 has_genre(movie59947, comedy).
 has_genre(movie59947, drama).
 has_genre(movie59947, thriller).
+has_3_genre(movie59985).
 has_genre(movie59985, comedy).
 has_genre(movie59985, drama).
 has_genre(movie59985, romance).
+has_2_genre(movie59995).
 has_genre(movie59995, crime).
 has_genre(movie59995, drama).
+has_3_genre(movie60030).
 has_genre(movie60030, drama).
 has_genre(movie60030, horror).
 has_genre(movie60030, thriller).
+has_3_genre(movie60037).
 has_genre(movie60037, drama).
 has_genre(movie60037, sci-fi).
 has_genre(movie60037, thriller).
+has_2_genre(movie60040).
 has_genre(movie60040, action).
 has_genre(movie60040, sci-fi).
+has_2_genre(movie60046).
 has_genre(movie60046, drama).
 has_genre(movie60046, war).
+has_5_genre(movie60069).
 has_genre(movie60069, adventure).
 has_genre(movie60069, animation).
 has_genre(movie60069, children).
 has_genre(movie60069, romance).
 has_genre(movie60069, sci-fi).
+has_2_genre(movie60072).
 has_genre(movie60072, action).
 has_genre(movie60072, thriller).
+has_5_genre(movie60074).
 has_genre(movie60074, action).
 has_genre(movie60074, adventure).
 has_genre(movie60074, comedy).
 has_genre(movie60074, crime).
 has_genre(movie60074, fantasy).
+has_2_genre(movie60126).
 has_genre(movie60126, action).
 has_genre(movie60126, comedy).
+has_1_genre(movie60128).
 has_genre(movie60128, comedy).
+has_2_genre(movie60141).
 has_genre(movie60141, children).
 has_genre(movie60141, comedy).
+has_5_genre(movie60161).
 has_genre(movie60161, action).
 has_genre(movie60161, animation).
 has_genre(movie60161, comedy).
 has_genre(movie60161, romance).
 has_genre(movie60161, sci-fi).
+has_4_genre(movie60289).
 has_genre(movie60289, children).
 has_genre(movie60289, comedy).
 has_genre(movie60289, drama).
 has_genre(movie60289, mystery).
+has_1_genre(movie60291).
 has_genre(movie60291, documentary).
+has_3_genre(movie60293).
 has_genre(movie60293, comedy).
 has_genre(movie60293, drama).
 has_genre(movie60293, romance).
+has_3_genre(movie60303).
 has_genre(movie60303, horror).
 has_genre(movie60303, mystery).
 has_genre(movie60303, thriller).
+has_1_genre(movie60333).
 has_genre(movie60333, documentary).
+has_2_genre(movie60363).
 has_genre(movie60363, comedy).
 has_genre(movie60363, horror).
+has_5_genre(movie60365).
 has_genre(movie60365, animation).
 has_genre(movie60365, children).
 has_genre(movie60365, comedy).
 has_genre(movie60365, fantasy).
 has_genre(movie60365, musical).
+has_1_genre(movie60389).
 has_genre(movie60389, war).
+has_3_genre(movie60397).
 has_genre(movie60397, comedy).
 has_genre(movie60397, musical).
 has_genre(movie60397, romance).
+has_1_genre(movie60408).
 has_genre(movie60408, comedy).
+has_5_genre(movie60471).
 has_genre(movie60471, action).
 has_genre(movie60471, adventure).
 has_genre(movie60471, horror).
 has_genre(movie60471, sci-fi).
 has_genre(movie60471, thriller).
+has_3_genre(movie60487).
 has_genre(movie60487, animation).
 has_genre(movie60487, children).
 has_genre(movie60487, comedy).
+has_3_genre(movie60514).
 has_genre(movie60514, action).
 has_genre(movie60514, adventure).
 has_genre(movie60514, sci-fi).
+has_5_genre(movie60516).
 has_genre(movie60516, adventure).
 has_genre(movie60516, children).
 has_genre(movie60516, comedy).
 has_genre(movie60516, romance).
 has_genre(movie60516, sci-fi).
+has_5_genre(movie60522).
 has_genre(movie60522, action).
 has_genre(movie60522, comedy).
 has_genre(movie60522, fantasy).
 has_genre(movie60522, horror).
 has_genre(movie60522, thriller).
+has_2_genre(movie60538).
 has_genre(movie60538, horror).
 has_genre(movie60538, thriller).
+has_3_genre(movie60647).
 has_genre(movie60647, crime).
 has_genre(movie60647, drama).
 has_genre(movie60647, thriller).
+has_1_genre(movie60674).
 has_genre(movie60674, sci-fi).
+has_more_than_5_genre(movie60684).
 has_genre(movie60684, action).
 has_genre(movie60684, drama).
 has_genre(movie60684, mystery).
 has_genre(movie60684, sci-fi).
 has_genre(movie60684, thriller).
 has_genre(movie60684, imax).
+has_2_genre(movie60735).
 has_genre(movie60735, drama).
 has_genre(movie60735, thriller).
+has_2_genre(movie60737).
 has_genre(movie60737, comedy).
 has_genre(movie60737, romance).
+has_2_genre(movie60753).
 has_genre(movie60753, crime).
 has_genre(movie60753, drama).
+has_1_genre(movie60756).
 has_genre(movie60756, comedy).
+has_4_genre(movie60760).
 has_genre(movie60760, drama).
 has_genre(movie60760, mystery).
 has_genre(movie60760, sci-fi).
 has_genre(movie60760, thriller).
+has_1_genre(movie60766).
 has_genre(movie60766, documentary).
+has_3_genre(movie60803).
 has_genre(movie60803, animation).
 has_genre(movie60803, children).
 has_genre(movie60803, musical).
+has_3_genre(movie60818).
 has_genre(movie60818, adventure).
 has_genre(movie60818, fantasy).
 has_genre(movie60818, thriller).
+has_3_genre(movie60832).
 has_genre(movie60832, crime).
 has_genre(movie60832, horror).
 has_genre(movie60832, thriller).
+has_1_genre(movie60857).
 has_genre(movie60857, drama).
+has_2_genre(movie60885).
 has_genre(movie60885, drama).
 has_genre(movie60885, thriller).
+has_3_genre(movie60894).
 has_genre(movie60894, drama).
 has_genre(movie60894, romance).
 has_genre(movie60894, war).
+has_3_genre(movie60904).
 has_genre(movie60904, comedy).
 has_genre(movie60904, drama).
 has_genre(movie60904, sci-fi).
+has_4_genre(movie60937).
 has_genre(movie60937, action).
 has_genre(movie60937, adventure).
 has_genre(movie60937, fantasy).
 has_genre(movie60937, thriller).
+has_3_genre(movie60941).
 has_genre(movie60941, horror).
 has_genre(movie60941, mystery).
 has_genre(movie60941, thriller).
+has_1_genre(movie60943).
 has_genre(movie60943, drama).
+has_3_genre(movie60950).
 has_genre(movie60950, comedy).
 has_genre(movie60950, drama).
 has_genre(movie60950, romance).
+has_3_genre(movie60979).
 has_genre(movie60979, action).
 has_genre(movie60979, animation).
 has_genre(movie60979, crime).
+has_2_genre(movie61011).
 has_genre(movie61011, drama).
 has_genre(movie61011, mystery).
+has_3_genre(movie61024).
 has_genre(movie61024, action).
 has_genre(movie61024, comedy).
 has_genre(movie61024, crime).
+has_4_genre(movie61026).
 has_genre(movie61026, action).
 has_genre(movie61026, adventure).
 has_genre(movie61026, drama).
 has_genre(movie61026, war).
+has_4_genre(movie61071).
 has_genre(movie61071, adventure).
 has_genre(movie61071, comedy).
 has_genre(movie61071, drama).
 has_genre(movie61071, romance).
+has_3_genre(movie61073).
 has_genre(movie61073, action).
 has_genre(movie61073, drama).
 has_genre(movie61073, thriller).
+has_4_genre(movie61123).
 has_genre(movie61123, comedy).
 has_genre(movie61123, drama).
 has_genre(movie61123, musical).
 has_genre(movie61123, romance).
+has_4_genre(movie61132).
 has_genre(movie61132, action).
 has_genre(movie61132, adventure).
 has_genre(movie61132, comedy).
 has_genre(movie61132, war).
+has_4_genre(movie61160).
 has_genre(movie61160, action).
 has_genre(movie61160, adventure).
 has_genre(movie61160, animation).
 has_genre(movie61160, sci-fi).
+has_2_genre(movie61167).
 has_genre(movie61167, drama).
 has_genre(movie61167, mystery).
+has_3_genre(movie61210).
 has_genre(movie61210, action).
 has_genre(movie61210, adventure).
 has_genre(movie61210, sci-fi).
+has_4_genre(movie61236).
 has_genre(movie61236, animation).
 has_genre(movie61236, documentary).
 has_genre(movie61236, drama).
 has_genre(movie61236, war).
+has_4_genre(movie61240).
 has_genre(movie61240, drama).
 has_genre(movie61240, fantasy).
 has_genre(movie61240, horror).
 has_genre(movie61240, romance).
+has_1_genre(movie61246).
 has_genre(movie61246, comedy).
+has_4_genre(movie61248).
 has_genre(movie61248, action).
 has_genre(movie61248, adventure).
 has_genre(movie61248, sci-fi).
 has_genre(movie61248, thriller).
+has_1_genre(movie61250).
 has_genre(movie61250, comedy).
+has_1_genre(movie61255).
 has_genre(movie61255, comedy).
+has_1_genre(movie61257).
 has_genre(movie61257, documentary).
+has_3_genre(movie61262).
 has_genre(movie61262, horror).
 has_genre(movie61262, mystery).
 has_genre(movie61262, thriller).
+has_2_genre(movie61289).
 has_genre(movie61289, action).
 has_genre(movie61289, western).
+has_1_genre(movie61319).
 has_genre(movie61319, drama).
+has_3_genre(movie61323).
 has_genre(movie61323, comedy).
 has_genre(movie61323, crime).
 has_genre(movie61323, drama).
+has_1_genre(movie61348).
 has_genre(movie61348, comedy).
+has_4_genre(movie61350).
 has_genre(movie61350, action).
 has_genre(movie61350, adventure).
 has_genre(movie61350, sci-fi).
 has_genre(movie61350, thriller).
+has_3_genre(movie61352).
 has_genre(movie61352, crime).
 has_genre(movie61352, drama).
 has_genre(movie61352, thriller).
+has_1_genre(movie61394).
 has_genre(movie61394, comedy).
+has_4_genre(movie61401).
 has_genre(movie61401, action).
 has_genre(movie61401, comedy).
 has_genre(movie61401, fantasy).
 has_genre(movie61401, thriller).
+has_1_genre(movie61406).
 has_genre(movie61406, drama).
+has_3_genre(movie61465).
 has_genre(movie61465, action).
 has_genre(movie61465, crime).
 has_genre(movie61465, thriller).
+has_1_genre(movie61628).
 has_genre(movie61628, drama).
+has_3_genre(movie61692).
 has_genre(movie61692, horror).
 has_genre(movie61692, sci-fi).
 has_genre(movie61692, thriller).
+has_3_genre(movie61697).
 has_genre(movie61697, crime).
 has_genre(movie61697, mystery).
 has_genre(movie61697, thriller).
+has_2_genre(movie61705).
 has_genre(movie61705, drama).
 has_genre(movie61705, thriller).
+has_3_genre(movie61729).
 has_genre(movie61729, comedy).
 has_genre(movie61729, fantasy).
 has_genre(movie61729, romance).
+has_4_genre(movie61818).
 has_genre(movie61818, action).
 has_genre(movie61818, adventure).
 has_genre(movie61818, fantasy).
 has_genre(movie61818, thriller).
+has_1_genre(movie61986).
 has_genre(movie61986, western).
+has_4_genre(movie62008).
 has_genre(movie62008, action).
 has_genre(movie62008, animation).
 has_genre(movie62008, comedy).
 has_genre(movie62008, horror).
+has_4_genre(movie62081).
 has_genre(movie62081, action).
 has_genre(movie62081, crime).
 has_genre(movie62081, thriller).
 has_genre(movie62081, imax).
+has_1_genre(movie62113).
 has_genre(movie62113, comedy).
+has_3_genre(movie62155).
 has_genre(movie62155, comedy).
 has_genre(movie62155, drama).
 has_genre(movie62155, romance).
+has_1_genre(movie62208).
 has_genre(movie62208, drama).
+has_2_genre(movie62250).
 has_genre(movie62250, crime).
 has_genre(movie62250, drama).
+has_2_genre(movie62293).
 has_genre(movie62293, drama).
 has_genre(movie62293, romance).
+has_2_genre(movie62299).
 has_genre(movie62299, action).
 has_genre(movie62299, horror).
+has_4_genre(movie62336).
 has_genre(movie62336, animation).
 has_genre(movie62336, comedy).
 has_genre(movie62336, fantasy).
 has_genre(movie62336, sci-fi).
+has_2_genre(movie62344).
 has_genre(movie62344, drama).
 has_genre(movie62344, romance).
+has_3_genre(movie62374).
 has_genre(movie62374, action).
 has_genre(movie62374, drama).
 has_genre(movie62374, thriller).
+has_3_genre(movie62376).
 has_genre(movie62376, adventure).
 has_genre(movie62376, children).
 has_genre(movie62376, sci-fi).
+has_3_genre(movie62383).
 has_genre(movie62383, action).
 has_genre(movie62383, adventure).
 has_genre(movie62383, sci-fi).
+has_4_genre(movie62394).
 has_genre(movie62394, action).
 has_genre(movie62394, crime).
 has_genre(movie62394, drama).
 has_genre(movie62394, thriller).
+has_3_genre(movie62434).
 has_genre(movie62434, comedy).
 has_genre(movie62434, drama).
 has_genre(movie62434, romance).
+has_1_genre(movie62437).
 has_genre(movie62437, drama).
+has_2_genre(movie62439).
 has_genre(movie62439, comedy).
 has_genre(movie62439, romance).
+has_2_genre(movie62511).
 has_genre(movie62511, comedy).
 has_genre(movie62511, drama).
+has_1_genre(movie62553).
 has_genre(movie62553, drama).
+has_2_genre(movie62586).
 has_genre(movie62586, comedy).
 has_genre(movie62586, fantasy).
+has_1_genre(movie62644).
 has_genre(movie62644, drama).
+has_1_genre(movie62662).
 has_genre(movie62662, documentary).
+has_2_genre(movie62718).
 has_genre(movie62718, comedy).
 has_genre(movie62718, romance).
+has_2_genre(movie62792).
 has_genre(movie62792, crime).
 has_genre(movie62792, drama).
+has_1_genre(movie62799).
 has_genre(movie62799, drama).
+has_1_genre(movie62834).
 has_genre(movie62834, sci-fi).
+has_1_genre(movie62836).
 has_genre(movie62836, sci-fi).
+has_2_genre(movie62849).
 has_genre(movie62849, action).
 has_genre(movie62849, crime).
+has_more_than_5_genre(movie62956).
 has_genre(movie62956, action).
 has_genre(movie62956, adventure).
 has_genre(movie62956, animation).
 has_genre(movie62956, comedy).
 has_genre(movie62956, fantasy).
 has_genre(movie62956, sci-fi).
+has_3_genre(movie62970).
 has_genre(movie62970, adventure).
 has_genre(movie62970, fantasy).
 has_genre(movie62970, sci-fi).
+has_more_than_5_genre(movie62999).
 has_genre(movie62999, action).
 has_genre(movie62999, adventure).
 has_genre(movie62999, animation).
 has_genre(movie62999, children).
 has_genre(movie62999, comedy).
 has_genre(movie62999, imax).
+has_4_genre(movie63033).
 has_genre(movie63033, drama).
 has_genre(movie63033, mystery).
 has_genre(movie63033, romance).
 has_genre(movie63033, thriller).
+has_3_genre(movie63062).
 has_genre(movie63062, crime).
 has_genre(movie63062, drama).
 has_genre(movie63062, mystery).
+has_3_genre(movie63072).
 has_genre(movie63072, adventure).
 has_genre(movie63072, drama).
 has_genre(movie63072, thriller).
+has_3_genre(movie63082).
 has_genre(movie63082, crime).
 has_genre(movie63082, drama).
 has_genre(movie63082, romance).
+has_3_genre(movie63113).
 has_genre(movie63113, action).
 has_genre(movie63113, adventure).
 has_genre(movie63113, thriller).
+has_1_genre(movie63131).
 has_genre(movie63131, comedy).
+has_1_genre(movie63179).
 has_genre(movie63179, drama).
+has_3_genre(movie63222).
 has_genre(movie63222, action).
 has_genre(movie63222, drama).
 has_genre(movie63222, thriller).
+has_4_genre(movie63239).
 has_genre(movie63239, children).
 has_genre(movie63239, fantasy).
 has_genre(movie63239, musical).
 has_genre(movie63239, romance).
+has_1_genre(movie63276).
 has_genre(movie63276, action).
+has_2_genre(movie63312).
 has_genre(movie63312, drama).
 has_genre(movie63312, fantasy).
+has_3_genre(movie63393).
 has_genre(movie63393, comedy).
 has_genre(movie63393, musical).
 has_genre(movie63393, romance).
+has_3_genre(movie63433).
 has_genre(movie63433, action).
 has_genre(movie63433, adventure).
 has_genre(movie63433, sci-fi).
+has_3_genre(movie63436).
 has_genre(movie63436, crime).
 has_genre(movie63436, horror).
 has_genre(movie63436, thriller).
+has_1_genre(movie63479).
 has_genre(movie63479, comedy).
+has_2_genre(movie63515).
 has_genre(movie63515, drama).
 has_genre(movie63515, mystery).
+has_3_genre(movie63540).
 has_genre(movie63540, adventure).
 has_genre(movie63540, children).
 has_genre(movie63540, comedy).
+has_2_genre(movie63768).
 has_genre(movie63768, crime).
 has_genre(movie63768, drama).
+has_1_genre(movie63808).
 has_genre(movie63808, drama).
+has_3_genre(movie63826).
 has_genre(movie63826, action).
 has_genre(movie63826, horror).
 has_genre(movie63826, thriller).
+has_4_genre(movie63853).
 has_genre(movie63853, adventure).
 has_genre(movie63853, drama).
 has_genre(movie63853, war).
 has_genre(movie63853, western).
+has_5_genre(movie63859).
 has_genre(movie63859, action).
 has_genre(movie63859, adventure).
 has_genre(movie63859, animation).
 has_genre(movie63859, children).
 has_genre(movie63859, comedy).
+has_1_genre(movie63876).
 has_genre(movie63876, drama).
+has_4_genre(movie63992).
 has_genre(movie63992, drama).
 has_genre(movie63992, fantasy).
 has_genre(movie63992, romance).
 has_genre(movie63992, thriller).
+has_1_genre(movie64010).
 has_genre(movie64010, horror).
+has_4_genre(movie64030).
 has_genre(movie64030, action).
 has_genre(movie64030, adventure).
 has_genre(movie64030, crime).
 has_genre(movie64030, thriller).
+has_1_genre(movie64032).
 has_genre(movie64032, comedy).
+has_2_genre(movie64034).
 has_genre(movie64034, drama).
 has_genre(movie64034, war).
+has_2_genre(movie64114).
 has_genre(movie64114, drama).
 has_genre(movie64114, romance).
+has_2_genre(movie64116).
 has_genre(movie64116, animation).
 has_genre(movie64116, comedy).
+has_2_genre(movie64167).
 has_genre(movie64167, adventure).
 has_genre(movie64167, fantasy).
+has_1_genre(movie64197).
 has_genre(movie64197, drama).
+has_4_genre(movie64231).
 has_genre(movie64231, action).
 has_genre(movie64231, crime).
 has_genre(movie64231, drama).
 has_genre(movie64231, thriller).
+has_4_genre(movie64249).
 has_genre(movie64249, adventure).
 has_genre(movie64249, animation).
 has_genre(movie64249, comedy).
 has_genre(movie64249, fantasy).
+has_1_genre(movie64278).
 has_genre(movie64278, documentary).
+has_2_genre(movie64285).
 has_genre(movie64285, animation).
 has_genre(movie64285, comedy).
+has_4_genre(movie64497).
 has_genre(movie64497, drama).
 has_genre(movie64497, sci-fi).
 has_genre(movie64497, thriller).
 has_genre(movie64497, imax).
+has_2_genre(movie64499).
 has_genre(movie64499, drama).
 has_genre(movie64499, war).
+has_2_genre(movie64501).
 has_genre(movie64501, drama).
 has_genre(movie64501, war).
+has_2_genre(movie64575).
 has_genre(movie64575, drama).
 has_genre(movie64575, mystery).
+has_2_genre(movie64614).
 has_genre(movie64614, crime).
 has_genre(movie64614, drama).
+has_1_genre(movie64620).
 has_genre(movie64620, drama).
+has_2_genre(movie64622).
 has_genre(movie64622, drama).
 has_genre(movie64622, romance).
+has_3_genre(movie64695).
 has_genre(movie64695, action).
 has_genre(movie64695, adventure).
 has_genre(movie64695, animation).
+has_1_genre(movie64716).
 has_genre(movie64716, drama).
+has_1_genre(movie64839).
 has_genre(movie64839, drama).
+has_4_genre(movie64957).
 has_genre(movie64957, drama).
 has_genre(movie64957, fantasy).
 has_genre(movie64957, mystery).
 has_genre(movie64957, romance).
+has_1_genre(movie64969).
 has_genre(movie64969, comedy).
+has_3_genre(movie64983).
 has_genre(movie64983, drama).
 has_genre(movie64983, thriller).
 has_genre(movie64983, war).
+has_3_genre(movie64993).
 has_genre(movie64993, animation).
 has_genre(movie64993, drama).
 has_genre(movie64993, romance).
+has_2_genre(movie64997).
 has_genre(movie64997, action).
 has_genre(movie64997, sci-fi).
+has_1_genre(movie65037).
 has_genre(movie65037, drama).
+has_3_genre(movie65088).
 has_genre(movie65088, adventure).
 has_genre(movie65088, children).
 has_genre(movie65088, comedy).
+has_2_genre(movie65126).
 has_genre(movie65126, comedy).
 has_genre(movie65126, drama).
+has_2_genre(movie65130).
 has_genre(movie65130, drama).
 has_genre(movie65130, romance).
+has_1_genre(movie65133).
 has_genre(movie65133, comedy).
+has_1_genre(movie65135).
 has_genre(movie65135, comedy).
+has_1_genre(movie65188).
 has_genre(movie65188, documentary).
+has_2_genre(movie65193).
 has_genre(movie65193, drama).
 has_genre(movie65193, romance).
+has_3_genre(movie65216).
 has_genre(movie65216, drama).
 has_genre(movie65216, thriller).
 has_genre(movie65216, war).
+has_1_genre(movie65225).
 has_genre(movie65225, documentary).
+has_2_genre(movie65230).
 has_genre(movie65230, comedy).
 has_genre(movie65230, drama).
+has_4_genre(movie65261).
 has_genre(movie65261, adventure).
 has_genre(movie65261, animation).
 has_genre(movie65261, children).
 has_genre(movie65261, fantasy).
+has_3_genre(movie65350).
 has_genre(movie65350, adventure).
 has_genre(movie65350, crime).
 has_genre(movie65350, thriller).
+has_3_genre(movie65359).
 has_genre(movie65359, adventure).
 has_genre(movie65359, drama).
 has_genre(movie65359, fantasy).
+has_3_genre(movie65514).
 has_genre(movie65514, action).
 has_genre(movie65514, drama).
 has_genre(movie65514, war).
+has_5_genre(movie65577).
 has_genre(movie65577, adventure).
 has_genre(movie65577, animation).
 has_genre(movie65577, children).
 has_genre(movie65577, comedy).
 has_genre(movie65577, fantasy).
+has_2_genre(movie65585).
 has_genre(movie65585, comedy).
 has_genre(movie65585, romance).
+has_4_genre(movie65588).
 has_genre(movie65588, action).
 has_genre(movie65588, adventure).
 has_genre(movie65588, comedy).
 has_genre(movie65588, fantasy).
+has_4_genre(movie65596).
 has_genre(movie65596, action).
 has_genre(movie65596, crime).
 has_genre(movie65596, drama).
 has_genre(movie65596, thriller).
+has_2_genre(movie65601).
 has_genre(movie65601, horror).
 has_genre(movie65601, thriller).
+has_2_genre(movie65631).
 has_genre(movie65631, action).
 has_genre(movie65631, drama).
+has_2_genre(movie65642).
 has_genre(movie65642, sci-fi).
 has_genre(movie65642, thriller).
+has_2_genre(movie65651).
 has_genre(movie65651, adventure).
 has_genre(movie65651, fantasy).
+has_4_genre(movie65682).
 has_genre(movie65682, action).
 has_genre(movie65682, fantasy).
 has_genre(movie65682, horror).
 has_genre(movie65682, thriller).
+has_2_genre(movie65685).
 has_genre(movie65685, adventure).
 has_genre(movie65685, fantasy).
+has_1_genre(movie65738).
 has_genre(movie65738, comedy).
+has_2_genre(movie65740).
 has_genre(movie65740, comedy).
 has_genre(movie65740, romance).
+has_3_genre(movie65802).
 has_genre(movie65802, action).
 has_genre(movie65802, comedy).
 has_genre(movie65802, crime).
+has_2_genre(movie65810).
 has_genre(movie65810, drama).
 has_genre(movie65810, musical).
+has_4_genre(movie65882).
 has_genre(movie65882, drama).
 has_genre(movie65882, horror).
 has_genre(movie65882, mystery).
 has_genre(movie65882, thriller).
+has_3_genre(movie65982).
 has_genre(movie65982, action).
 has_genre(movie65982, adventure).
 has_genre(movie65982, sci-fi).
+has_2_genre(movie66090).
 has_genre(movie66090, horror).
 has_genre(movie66090, thriller).
+has_3_genre(movie66097).
 has_genre(movie66097, animation).
 has_genre(movie66097, fantasy).
 has_genre(movie66097, thriller).
+has_2_genre(movie66171).
 has_genre(movie66171, sci-fi).
 has_genre(movie66171, thriller).
+has_2_genre(movie66198).
 has_genre(movie66198, drama).
 has_genre(movie66198, thriller).
+has_3_genre(movie66203).
 has_genre(movie66203, comedy).
 has_genre(movie66203, drama).
 has_genre(movie66203, romance).
+has_2_genre(movie66240).
 has_genre(movie66240, comedy).
 has_genre(movie66240, fantasy).
+has_4_genre(movie66297).
 has_genre(movie66297, action).
 has_genre(movie66297, animation).
 has_genre(movie66297, comedy).
 has_genre(movie66297, sci-fi).
+has_3_genre(movie66310).
 has_genre(movie66310, drama).
 has_genre(movie66310, horror).
 has_genre(movie66310, thriller).
+has_1_genre(movie66320).
 has_genre(movie66320, documentary).
+has_1_genre(movie66335).
 has_genre(movie66335, animation).
+has_1_genre(movie66371).
 has_genre(movie66371, drama).
+has_2_genre(movie66427).
 has_genre(movie66427, comedy).
 has_genre(movie66427, horror).
+has_2_genre(movie66509).
 has_genre(movie66509, comedy).
 has_genre(movie66509, drama).
+has_2_genre(movie66511).
 has_genre(movie66511, comedy).
 has_genre(movie66511, drama).
+has_2_genre(movie66544).
 has_genre(movie66544, drama).
 has_genre(movie66544, war).
+has_3_genre(movie66665).
 has_genre(movie66665, comedy).
 has_genre(movie66665, drama).
 has_genre(movie66665, romance).
+has_1_genre(movie66744).
 has_genre(movie66744, drama).
+has_1_genre(movie66783).
 has_genre(movie66783, horror).
+has_4_genre(movie66785).
 has_genre(movie66785, action).
 has_genre(movie66785, adventure).
 has_genre(movie66785, comedy).
 has_genre(movie66785, western).
+has_3_genre(movie66798).
 has_genre(movie66798, adventure).
 has_genre(movie66798, comedy).
 has_genre(movie66798, mystery).
+has_4_genre(movie66915).
 has_genre(movie66915, adventure).
 has_genre(movie66915, animation).
 has_genre(movie66915, children).
 has_genre(movie66915, musical).
+has_4_genre(movie66934).
 has_genre(movie66934, comedy).
 has_genre(movie66934, drama).
 has_genre(movie66934, musical).
 has_genre(movie66934, sci-fi).
+has_4_genre(movie66943).
 has_genre(movie66943, comedy).
 has_genre(movie66943, crime).
 has_genre(movie66943, horror).
 has_genre(movie66943, thriller).
+has_1_genre(movie67087).
 has_genre(movie67087, comedy).
+has_3_genre(movie67168).
 has_genre(movie67168, adventure).
 has_genre(movie67168, comedy).
 has_genre(movie67168, horror).
+has_2_genre(movie67186).
 has_genre(movie67186, horror).
 has_genre(movie67186, thriller).
+has_3_genre(movie67193).
 has_genre(movie67193, crime).
 has_genre(movie67193, romance).
 has_genre(movie67193, thriller).
+has_5_genre(movie67197).
 has_genre(movie67197, action).
 has_genre(movie67197, drama).
 has_genre(movie67197, mystery).
 has_genre(movie67197, sci-fi).
 has_genre(movie67197, thriller).
+has_4_genre(movie67255).
 has_genre(movie67255, crime).
 has_genre(movie67255, drama).
 has_genre(movie67255, mystery).
 has_genre(movie67255, thriller).
+has_2_genre(movie67267).
 has_genre(movie67267, comedy).
 has_genre(movie67267, drama).
+has_4_genre(movie67295).
 has_genre(movie67295, action).
 has_genre(movie67295, animation).
 has_genre(movie67295, children).
 has_genre(movie67295, comedy).
+has_3_genre(movie67361).
 has_genre(movie67361, action).
 has_genre(movie67361, mystery).
 has_genre(movie67361, thriller).
+has_3_genre(movie67408).
 has_genre(movie67408, animation).
 has_genre(movie67408, sci-fi).
 has_genre(movie67408, imax).
+has_4_genre(movie67508).
 has_genre(movie67508, action).
 has_genre(movie67508, crime).
 has_genre(movie67508, drama).
 has_genre(movie67508, thriller).
+has_1_genre(movie67534).
 has_genre(movie67534, comedy).
+has_3_genre(movie67618).
 has_genre(movie67618, comedy).
 has_genre(movie67618, drama).
 has_genre(movie67618, romance).
+has_2_genre(movie67665).
 has_genre(movie67665, documentary).
 has_genre(movie67665, musical).
+has_2_genre(movie67695).
 has_genre(movie67695, action).
 has_genre(movie67695, comedy).
+has_2_genre(movie67734).
 has_genre(movie67734, comedy).
 has_genre(movie67734, drama).
+has_2_genre(movie67788).
 has_genre(movie67788, comedy).
 has_genre(movie67788, romance).
+has_4_genre(movie67799).
 has_genre(movie67799, drama).
 has_genre(movie67799, fantasy).
 has_genre(movie67799, sci-fi).
 has_genre(movie67799, thriller).
+has_1_genre(movie67888).
 has_genre(movie67888, comedy).
+has_4_genre(movie67923).
 has_genre(movie67923, action).
 has_genre(movie67923, crime).
 has_genre(movie67923, drama).
 has_genre(movie67923, thriller).
+has_1_genre(movie67997).
 has_genre(movie67997, comedy).
+has_2_genre(movie68073).
 has_genre(movie68073, comedy).
 has_genre(movie68073, drama).
+has_2_genre(movie68135).
 has_genre(movie68135, comedy).
 has_genre(movie68135, drama).
+has_3_genre(movie68157).
 has_genre(movie68157, action).
 has_genre(movie68157, drama).
 has_genre(movie68157, war).
+has_3_genre(movie68159).
 has_genre(movie68159, crime).
 has_genre(movie68159, drama).
 has_genre(movie68159, thriller).
+has_1_genre(movie68194).
 has_genre(movie68194, drama).
+has_3_genre(movie68205).
 has_genre(movie68205, action).
 has_genre(movie68205, comedy).
 has_genre(movie68205, crime).
+has_4_genre(movie68237).
 has_genre(movie68237, drama).
 has_genre(movie68237, mystery).
 has_genre(movie68237, sci-fi).
 has_genre(movie68237, thriller).
+has_2_genre(movie68269).
 has_genre(movie68269, drama).
 has_genre(movie68269, romance).
+has_3_genre(movie68319).
 has_genre(movie68319, action).
 has_genre(movie68319, sci-fi).
 has_genre(movie68319, thriller).
+has_3_genre(movie68347).
 has_genre(movie68347, crime).
 has_genre(movie68347, drama).
 has_genre(movie68347, thriller).
+has_4_genre(movie68358).
 has_genre(movie68358, action).
 has_genre(movie68358, adventure).
 has_genre(movie68358, sci-fi).
 has_genre(movie68358, imax).
+has_1_genre(movie68444).
 has_genre(movie68444, comedy).
+has_3_genre(movie68480).
 has_genre(movie68480, action).
 has_genre(movie68480, comedy).
 has_genre(movie68480, crime).
+has_3_genre(movie68486).
 has_genre(movie68486, action).
 has_genre(movie68486, drama).
 has_genre(movie68486, war).
+has_1_genre(movie68522).
 has_genre(movie68522, documentary).
+has_1_genre(movie68536).
 has_genre(movie68536, documentary).
+has_1_genre(movie68552).
 has_genre(movie68552, drama).
+has_4_genre(movie68554).
 has_genre(movie68554, crime).
 has_genre(movie68554, drama).
 has_genre(movie68554, mystery).
 has_genre(movie68554, thriller).
+has_3_genre(movie68597).
 has_genre(movie68597, action).
 has_genre(movie68597, drama).
 has_genre(movie68597, thriller).
+has_1_genre(movie68600).
 has_genre(movie68600, comedy).
+has_1_genre(movie68650).
 has_genre(movie68650, drama).
+has_3_genre(movie68659).
 has_genre(movie68659, adventure).
 has_genre(movie68659, comedy).
 has_genre(movie68659, drama).
+has_4_genre(movie68791).
 has_genre(movie68791, action).
 has_genre(movie68791, adventure).
 has_genre(movie68791, sci-fi).
 has_genre(movie68791, thriller).
+has_3_genre(movie68793).
 has_genre(movie68793, action).
 has_genre(movie68793, comedy).
 has_genre(movie68793, imax).
+has_4_genre(movie68835).
 has_genre(movie68835, adventure).
 has_genre(movie68835, fantasy).
 has_genre(movie68835, musical).
 has_genre(movie68835, romance).
+has_4_genre(movie68848).
 has_genre(movie68848, adventure).
 has_genre(movie68848, comedy).
 has_genre(movie68848, crime).
 has_genre(movie68848, romance).
+has_2_genre(movie68872).
 has_genre(movie68872, drama).
 has_genre(movie68872, war).
+has_2_genre(movie68886).
 has_genre(movie68886, comedy).
 has_genre(movie68886, romance).
+has_2_genre(movie68932).
 has_genre(movie68932, drama).
 has_genre(movie68932, musical).
+has_4_genre(movie68945).
 has_genre(movie68945, action).
 has_genre(movie68945, animation).
 has_genre(movie68945, mystery).
 has_genre(movie68945, sci-fi).
+has_2_genre(movie68952).
 has_genre(movie68952, comedy).
 has_genre(movie68952, horror).
+has_4_genre(movie68954).
 has_genre(movie68954, adventure).
 has_genre(movie68954, animation).
 has_genre(movie68954, children).
 has_genre(movie68954, drama).
+has_4_genre(movie68959).
 has_genre(movie68959, action).
 has_genre(movie68959, adventure).
 has_genre(movie68959, animation).
 has_genre(movie68959, drama).
+has_1_genre(movie69069).
 has_genre(movie69069, comedy).
+has_2_genre(movie69118).
 has_genre(movie69118, drama).
 has_genre(movie69118, mystery).
+has_2_genre(movie69122).
 has_genre(movie69122, comedy).
 has_genre(movie69122, crime).
+has_4_genre(movie69131).
 has_genre(movie69131, action).
 has_genre(movie69131, crime).
 has_genre(movie69131, drama).
 has_genre(movie69131, thriller).
+has_2_genre(movie69134).
 has_genre(movie69134, drama).
 has_genre(movie69134, fantasy).
+has_4_genre(movie69140).
 has_genre(movie69140, crime).
 has_genre(movie69140, drama).
 has_genre(movie69140, horror).
 has_genre(movie69140, thriller).
+has_2_genre(movie69211).
 has_genre(movie69211, comedy).
 has_genre(movie69211, horror).
+has_3_genre(movie69224).
 has_genre(movie69224, comedy).
 has_genre(movie69224, drama).
 has_genre(movie69224, romance).
+has_2_genre(movie69227).
 has_genre(movie69227, children).
 has_genre(movie69227, comedy).
+has_2_genre(movie69251).
 has_genre(movie69251, drama).
 has_genre(movie69251, fantasy).
+has_4_genre(movie69275).
 has_genre(movie69275, action).
 has_genre(movie69275, adventure).
 has_genre(movie69275, comedy).
 has_genre(movie69275, horror).
+has_4_genre(movie69278).
 has_genre(movie69278, action).
 has_genre(movie69278, adventure).
 has_genre(movie69278, comedy).
 has_genre(movie69278, sci-fi).
+has_3_genre(movie69304).
 has_genre(movie69304, comedy).
 has_genre(movie69304, drama).
 has_genre(movie69304, fantasy).
+has_3_genre(movie69306).
 has_genre(movie69306, crime).
 has_genre(movie69306, drama).
 has_genre(movie69306, thriller).
+has_2_genre(movie69394).
 has_genre(movie69394, crime).
 has_genre(movie69394, drama).
+has_2_genre(movie69406).
 has_genre(movie69406, comedy).
 has_genre(movie69406, romance).
+has_2_genre(movie69436).
 has_genre(movie69436, adventure).
 has_genre(movie69436, comedy).
+has_2_genre(movie69453).
 has_genre(movie69453, adventure).
 has_genre(movie69453, sci-fi).
+has_1_genre(movie69469).
 has_genre(movie69469, animation).
+has_4_genre(movie69481).
 has_genre(movie69481, action).
 has_genre(movie69481, drama).
 has_genre(movie69481, thriller).
 has_genre(movie69481, war).
+has_2_genre(movie69495).
 has_genre(movie69495, drama).
 has_genre(movie69495, romance).
+has_3_genre(movie69516).
 has_genre(movie69516, crime).
 has_genre(movie69516, drama).
 has_genre(movie69516, film-noir).
+has_3_genre(movie69524).
 has_genre(movie69524, action).
 has_genre(movie69524, adventure).
 has_genre(movie69524, thriller).
+has_4_genre(movie69526).
 has_genre(movie69526, action).
 has_genre(movie69526, adventure).
 has_genre(movie69526, sci-fi).
 has_genre(movie69526, imax).
+has_1_genre(movie69529).
 has_genre(movie69529, documentary).
+has_2_genre(movie69604).
 has_genre(movie69604, comedy).
 has_genre(movie69604, romance).
+has_3_genre(movie69606).
 has_genre(movie69606, comedy).
 has_genre(movie69606, fantasy).
 has_genre(movie69606, romance).
+has_3_genre(movie69640).
 has_genre(movie69640, crime).
 has_genre(movie69640, drama).
 has_genre(movie69640, thriller).
+has_more_than_5_genre(movie69644).
 has_genre(movie69644, action).
 has_genre(movie69644, adventure).
 has_genre(movie69644, animation).
 has_genre(movie69644, children).
 has_genre(movie69644, comedy).
 has_genre(movie69644, romance).
+has_3_genre(movie69654).
 has_genre(movie69654, action).
 has_genre(movie69654, drama).
 has_genre(movie69654, thriller).
+has_2_genre(movie69685).
 has_genre(movie69685, animation).
 has_genre(movie69685, comedy).
+has_1_genre(movie69712).
 has_genre(movie69712, drama).
+has_3_genre(movie69720).
 has_genre(movie69720, comedy).
 has_genre(movie69720, drama).
 has_genre(movie69720, horror).
+has_4_genre(movie69746).
 has_genre(movie69746, action).
 has_genre(movie69746, adventure).
 has_genre(movie69746, animation).
 has_genre(movie69746, horror).
+has_3_genre(movie69757).
 has_genre(movie69757, comedy).
 has_genre(movie69757, drama).
 has_genre(movie69757, romance).
+has_1_genre(movie69784).
 has_genre(movie69784, comedy).
+has_3_genre(movie69805).
 has_genre(movie69805, action).
 has_genre(movie69805, adventure).
 has_genre(movie69805, fantasy).
+has_5_genre(movie69844).
 has_genre(movie69844, adventure).
 has_genre(movie69844, fantasy).
 has_genre(movie69844, mystery).
 has_genre(movie69844, romance).
 has_genre(movie69844, imax).
+has_2_genre(movie69849).
 has_genre(movie69849, drama).
 has_genre(movie69849, war).
+has_2_genre(movie69860).
 has_genre(movie69860, drama).
 has_genre(movie69860, war).
+has_2_genre(movie69904).
 has_genre(movie69904, drama).
 has_genre(movie69904, thriller).
+has_2_genre(movie69951).
 has_genre(movie69951, drama).
 has_genre(movie69951, fantasy).
+has_1_genre(movie69953).
 has_genre(movie69953, documentary).
+has_1_genre(movie69988).
 has_genre(movie69988, comedy).
+has_2_genre(movie70015).
 has_genre(movie70015, crime).
 has_genre(movie70015, drama).
+has_4_genre(movie70159).
 has_genre(movie70159, drama).
 has_genre(movie70159, horror).
 has_genre(movie70159, mystery).
 has_genre(movie70159, thriller).
+has_3_genre(movie70183).
 has_genre(movie70183, comedy).
 has_genre(movie70183, drama).
 has_genre(movie70183, romance).
+has_3_genre(movie70206).
 has_genre(movie70206, crime).
 has_genre(movie70206, horror).
 has_genre(movie70206, thriller).
+has_2_genre(movie70208).
 has_genre(movie70208, horror).
 has_genre(movie70208, thriller).
+has_3_genre(movie70286).
 has_genre(movie70286, mystery).
 has_genre(movie70286, sci-fi).
 has_genre(movie70286, thriller).
+has_3_genre(movie70293).
 has_genre(movie70293, comedy).
 has_genre(movie70293, drama).
 has_genre(movie70293, romance).
+has_3_genre(movie70301).
 has_genre(movie70301, crime).
 has_genre(movie70301, drama).
 has_genre(movie70301, thriller).
+has_5_genre(movie70305).
 has_genre(movie70305, adventure).
 has_genre(movie70305, children).
 has_genre(movie70305, fantasy).
 has_genre(movie70305, sci-fi).
 has_genre(movie70305, thriller).
+has_4_genre(movie70334).
 has_genre(movie70334, comedy).
 has_genre(movie70334, drama).
 has_genre(movie70334, musical).
 has_genre(movie70334, romance).
+has_4_genre(movie70336).
 has_genre(movie70336, action).
 has_genre(movie70336, adventure).
 has_genre(movie70336, sci-fi).
 has_genre(movie70336, thriller).
+has_2_genre(movie70361).
 has_genre(movie70361, action).
 has_genre(movie70361, thriller).
+has_3_genre(movie70451).
 has_genre(movie70451, action).
 has_genre(movie70451, drama).
 has_genre(movie70451, war).
+has_1_genre(movie70492).
 has_genre(movie70492, western).
+has_4_genre(movie70521).
 has_genre(movie70521, drama).
 has_genre(movie70521, fantasy).
 has_genre(movie70521, romance).
 has_genre(movie70521, sci-fi).
+has_3_genre(movie70533).
 has_genre(movie70533, action).
 has_genre(movie70533, animation).
 has_genre(movie70533, sci-fi).
+has_1_genre(movie70545).
 has_genre(movie70545, comedy).
+has_1_genre(movie70565).
 has_genre(movie70565, comedy).
+has_3_genre(movie70599).
 has_genre(movie70599, drama).
 has_genre(movie70599, romance).
 has_genre(movie70599, sci-fi).
+has_2_genre(movie70637).
 has_genre(movie70637, drama).
 has_genre(movie70637, romance).
+has_1_genre(movie70641).
 has_genre(movie70641, comedy).
+has_2_genre(movie70663).
 has_genre(movie70663, comedy).
 has_genre(movie70663, romance).
+has_4_genre(movie70687).
 has_genre(movie70687, comedy).
 has_genre(movie70687, documentary).
 has_genre(movie70687, drama).
 has_genre(movie70687, romance).
+has_4_genre(movie70697).
 has_genre(movie70697, action).
 has_genre(movie70697, adventure).
 has_genre(movie70697, children).
 has_genre(movie70697, fantasy).
+has_1_genre(movie70703).
 has_genre(movie70703, adventure).
+has_2_genre(movie70708).
 has_genre(movie70708, drama).
 has_genre(movie70708, mystery).
+has_4_genre(movie70728).
 has_genre(movie70728, action).
 has_genre(movie70728, comedy).
 has_genre(movie70728, drama).
 has_genre(movie70728, thriller).
+has_1_genre(movie70862).
 has_genre(movie70862, documentary).
+has_1_genre(movie70932).
 has_genre(movie70932, comedy).
+has_2_genre(movie70946).
 has_genre(movie70946, fantasy).
 has_genre(movie70946, horror).
+has_1_genre(movie70984).
 has_genre(movie70984, comedy).
+has_1_genre(movie70990).
 has_genre(movie70990, drama).
+has_2_genre(movie70994).
 has_genre(movie70994, horror).
 has_genre(movie70994, thriller).
+has_5_genre(movie71033).
 has_genre(movie71033, crime).
 has_genre(movie71033, drama).
 has_genre(movie71033, mystery).
 has_genre(movie71033, romance).
 has_genre(movie71033, thriller).
+has_3_genre(movie71057).
 has_genre(movie71057, adventure).
 has_genre(movie71057, animation).
 has_genre(movie71057, sci-fi).
+has_2_genre(movie71106).
 has_genre(movie71106, comedy).
 has_genre(movie71106, sci-fi).
+has_2_genre(movie71108).
 has_genre(movie71108, drama).
 has_genre(movie71108, mystery).
+has_5_genre(movie71129).
 has_genre(movie71129, action).
 has_genre(movie71129, adventure).
 has_genre(movie71129, animation).
 has_genre(movie71129, fantasy).
 has_genre(movie71129, sci-fi).
+has_1_genre(movie71131).
 has_genre(movie71131, documentary).
+has_3_genre(movie71135).
 has_genre(movie71135, horror).
 has_genre(movie71135, sci-fi).
 has_genre(movie71135, thriller).
+has_1_genre(movie71147).
 has_genre(movie71147, drama).
+has_3_genre(movie71156).
 has_genre(movie71156, action).
 has_genre(movie71156, comedy).
 has_genre(movie71156, drama).
+has_3_genre(movie71160).
 has_genre(movie71160, action).
 has_genre(movie71160, adventure).
 has_genre(movie71160, fantasy).
+has_4_genre(movie71205).
 has_genre(movie71205, comedy).
 has_genre(movie71205, horror).
 has_genre(movie71205, sci-fi).
 has_genre(movie71205, thriller).
+has_4_genre(movie71211).
 has_genre(movie71211, comedy).
 has_genre(movie71211, crime).
 has_genre(movie71211, drama).
 has_genre(movie71211, thriller).
+has_1_genre(movie71248).
 has_genre(movie71248, comedy).
+has_2_genre(movie71252).
 has_genre(movie71252, horror).
 has_genre(movie71252, thriller).
+has_3_genre(movie71254).
 has_genre(movie71254, action).
 has_genre(movie71254, sci-fi).
 has_genre(movie71254, thriller).
+has_4_genre(movie71264).
 has_genre(movie71264, animation).
 has_genre(movie71264, children).
 has_genre(movie71264, fantasy).
 has_genre(movie71264, imax).
+has_2_genre(movie71268).
 has_genre(movie71268, comedy).
 has_genre(movie71268, drama).
+has_1_genre(movie71282).
 has_genre(movie71282, documentary).
+has_2_genre(movie71302).
 has_genre(movie71302, comedy).
 has_genre(movie71302, sci-fi).
+has_2_genre(movie71304).
 has_genre(movie71304, drama).
 has_genre(movie71304, horror).
+has_2_genre(movie71327).
 has_genre(movie71327, drama).
 has_genre(movie71327, romance).
+has_1_genre(movie71341).
 has_genre(movie71341, horror).
+has_2_genre(movie71379).
 has_genre(movie71379, horror).
 has_genre(movie71379, thriller).
+has_2_genre(movie71429).
 has_genre(movie71429, comedy).
 has_genre(movie71429, drama).
+has_1_genre(movie71438).
 has_genre(movie71438, drama).
+has_2_genre(movie71453).
 has_genre(movie71453, documentary).
 has_genre(movie71453, drama).
+has_1_genre(movie71462).
 has_genre(movie71462, documentary).
+has_2_genre(movie71464).
 has_genre(movie71464, comedy).
 has_genre(movie71464, drama).
+has_2_genre(movie71466).
 has_genre(movie71466, comedy).
 has_genre(movie71466, drama).
+has_3_genre(movie71468).
 has_genre(movie71468, action).
 has_genre(movie71468, fantasy).
 has_genre(movie71468, sci-fi).
+has_2_genre(movie71484).
 has_genre(movie71484, animation).
 has_genre(movie71484, sci-fi).
+has_5_genre(movie71494).
 has_genre(movie71494, action).
 has_genre(movie71494, animation).
 has_genre(movie71494, comedy).
 has_genre(movie71494, horror).
 has_genre(movie71494, thriller).
+has_3_genre(movie71500).
 has_genre(movie71500, comedy).
 has_genre(movie71500, horror).
 has_genre(movie71500, thriller).
+has_2_genre(movie71518).
 has_genre(movie71518, comedy).
 has_genre(movie71518, drama).
+has_1_genre(movie71520).
 has_genre(movie71520, comedy).
+has_3_genre(movie71530).
 has_genre(movie71530, action).
 has_genre(movie71530, sci-fi).
 has_genre(movie71530, thriller).
+has_3_genre(movie71535).
 has_genre(movie71535, action).
 has_genre(movie71535, comedy).
 has_genre(movie71535, horror).
+has_3_genre(movie71550).
 has_genre(movie71550, comedy).
 has_genre(movie71550, drama).
 has_genre(movie71550, mystery).
+has_2_genre(movie71579).
 has_genre(movie71579, drama).
 has_genre(movie71579, romance).
+has_1_genre(movie71619).
 has_genre(movie71619, drama).
+has_1_genre(movie71640).
 has_genre(movie71640, documentary).
+has_2_genre(movie71668).
 has_genre(movie71668, comedy).
 has_genre(movie71668, romance).
+has_2_genre(movie71732).
 has_genre(movie71732, comedy).
 has_genre(movie71732, horror).
+has_5_genre(movie71745).
 has_genre(movie71745, adventure).
 has_genre(movie71745, children).
 has_genre(movie71745, drama).
 has_genre(movie71745, fantasy).
 has_genre(movie71745, imax).
+has_4_genre(movie71810).
 has_genre(movie71810, action).
 has_genre(movie71810, adventure).
 has_genre(movie71810, drama).
 has_genre(movie71810, war).
+has_2_genre(movie71823).
 has_genre(movie71823, drama).
 has_genre(movie71823, romance).
+has_2_genre(movie71838).
 has_genre(movie71838, drama).
 has_genre(movie71838, thriller).
+has_1_genre(movie71867).
 has_genre(movie71867, drama).
+has_3_genre(movie71899).
 has_genre(movie71899, animation).
 has_genre(movie71899, comedy).
 has_genre(movie71899, drama).
+has_2_genre(movie71902).
 has_genre(movie71902, drama).
 has_genre(movie71902, romance).
+has_1_genre(movie71910).
 has_genre(movie71910, action).
+has_3_genre(movie71970).
 has_genre(movie71970, adventure).
 has_genre(movie71970, comedy).
 has_genre(movie71970, romance).
+has_more_than_5_genre(movie71999).
 has_genre(movie71999, action).
 has_genre(movie71999, adventure).
 has_genre(movie71999, drama).
@@ -20271,529 +27447,731 @@ has_genre(movie71999, fantasy).
 has_genre(movie71999, romance).
 has_genre(movie71999, sci-fi).
 has_genre(movie71999, thriller).
+has_2_genre(movie72011).
 has_genre(movie72011, drama).
 has_genre(movie72011, romance).
+has_5_genre(movie72104).
 has_genre(movie72104, animation).
 has_genre(movie72104, drama).
 has_genre(movie72104, mystery).
 has_genre(movie72104, sci-fi).
 has_genre(movie72104, thriller).
+has_4_genre(movie72129).
 has_genre(movie72129, crime).
 has_genre(movie72129, horror).
 has_genre(movie72129, mystery).
 has_genre(movie72129, thriller).
+has_4_genre(movie72142).
 has_genre(movie72142, action).
 has_genre(movie72142, comedy).
 has_genre(movie72142, drama).
 has_genre(movie72142, romance).
+has_more_than_5_genre(movie72165).
 has_genre(movie72165, action).
 has_genre(movie72165, adventure).
 has_genre(movie72165, comedy).
 has_genre(movie72165, fantasy).
 has_genre(movie72165, horror).
 has_genre(movie72165, thriller).
+has_4_genre(movie72167).
 has_genre(movie72167, action).
 has_genre(movie72167, crime).
 has_genre(movie72167, drama).
 has_genre(movie72167, thriller).
+has_2_genre(movie72171).
 has_genre(movie72171, action).
 has_genre(movie72171, comedy).
+has_3_genre(movie72178).
 has_genre(movie72178, comedy).
 has_genre(movie72178, drama).
 has_genre(movie72178, war).
+has_1_genre(movie72224).
 has_genre(movie72224, comedy).
+has_5_genre(movie72226).
 has_genre(movie72226, adventure).
 has_genre(movie72226, animation).
 has_genre(movie72226, children).
 has_genre(movie72226, comedy).
 has_genre(movie72226, crime).
+has_5_genre(movie72294).
 has_genre(movie72294, animation).
 has_genre(movie72294, children).
 has_genre(movie72294, drama).
 has_genre(movie72294, fantasy).
 has_genre(movie72294, imax).
+has_4_genre(movie72308).
 has_genre(movie72308, action).
 has_genre(movie72308, adventure).
 has_genre(movie72308, drama).
 has_genre(movie72308, sci-fi).
+has_1_genre(movie72330).
 has_genre(movie72330, drama).
+has_4_genre(movie72356).
 has_genre(movie72356, animation).
 has_genre(movie72356, children).
 has_genre(movie72356, comedy).
 has_genre(movie72356, fantasy).
+has_4_genre(movie72378).
 has_genre(movie72378, action).
 has_genre(movie72378, drama).
 has_genre(movie72378, sci-fi).
 has_genre(movie72378, thriller).
+has_1_genre(movie72395).
 has_genre(movie72395, drama).
+has_2_genre(movie72405).
 has_genre(movie72405, crime).
 has_genre(movie72405, drama).
+has_5_genre(movie72407).
 has_genre(movie72407, drama).
 has_genre(movie72407, fantasy).
 has_genre(movie72407, horror).
 has_genre(movie72407, romance).
 has_genre(movie72407, thriller).
+has_2_genre(movie72424).
 has_genre(movie72424, action).
 has_genre(movie72424, thriller).
+has_3_genre(movie72479).
 has_genre(movie72479, drama).
 has_genre(movie72479, romance).
 has_genre(movie72479, war).
+has_4_genre(movie72489).
 has_genre(movie72489, action).
 has_genre(movie72489, crime).
 has_genre(movie72489, drama).
 has_genre(movie72489, thriller).
+has_2_genre(movie72554).
 has_genre(movie72554, action).
 has_genre(movie72554, drama).
+has_2_genre(movie72591).
 has_genre(movie72591, action).
 has_genre(movie72591, thriller).
+has_5_genre(movie72601).
 has_genre(movie72601, action).
 has_genre(movie72601, adventure).
 has_genre(movie72601, animation).
 has_genre(movie72601, comedy).
 has_genre(movie72601, thriller).
+has_1_genre(movie72603).
 has_genre(movie72603, animation).
+has_3_genre(movie72605).
 has_genre(movie72605, drama).
 has_genre(movie72605, thriller).
 has_genre(movie72605, war).
+has_1_genre(movie72624).
 has_genre(movie72624, drama).
+has_1_genre(movie72641).
 has_genre(movie72641, drama).
+has_3_genre(movie72692).
 has_genre(movie72692, animation).
 has_genre(movie72692, comedy).
 has_genre(movie72692, fantasy).
+has_1_genre(movie72694).
 has_genre(movie72694, drama).
+has_1_genre(movie72696).
 has_genre(movie72696, comedy).
+has_5_genre(movie72701).
 has_genre(movie72701, adventure).
 has_genre(movie72701, animation).
 has_genre(movie72701, children).
 has_genre(movie72701, comedy).
 has_genre(movie72701, sci-fi).
+has_1_genre(movie72714).
 has_genre(movie72714, documentary).
+has_1_genre(movie72720).
 has_genre(movie72720, drama).
+has_5_genre(movie72731).
 has_genre(movie72731, crime).
 has_genre(movie72731, drama).
 has_genre(movie72731, fantasy).
 has_genre(movie72731, horror).
 has_genre(movie72731, thriller).
+has_1_genre(movie72733).
 has_genre(movie72733, drama).
+has_5_genre(movie72737).
 has_genre(movie72737, animation).
 has_genre(movie72737, children).
 has_genre(movie72737, fantasy).
 has_genre(movie72737, musical).
 has_genre(movie72737, romance).
+has_1_genre(movie72874).
 has_genre(movie72874, action).
+has_4_genre(movie72919).
 has_genre(movie72919, comedy).
 has_genre(movie72919, crime).
 has_genre(movie72919, drama).
 has_genre(movie72919, romance).
+has_2_genre(movie72921).
 has_genre(movie72921, fantasy).
 has_genre(movie72921, romance).
+has_3_genre(movie72982).
 has_genre(movie72982, action).
 has_genre(movie72982, adventure).
 has_genre(movie72982, fantasy).
+has_4_genre(movie72998).
 has_genre(movie72998, action).
 has_genre(movie72998, adventure).
 has_genre(movie72998, sci-fi).
 has_genre(movie72998, imax).
+has_2_genre(movie73015).
 has_genre(movie73015, comedy).
 has_genre(movie73015, romance).
+has_4_genre(movie73017).
 has_genre(movie73017, action).
 has_genre(movie73017, crime).
 has_genre(movie73017, mystery).
 has_genre(movie73017, thriller).
+has_2_genre(movie73023).
 has_genre(movie73023, drama).
 has_genre(movie73023, romance).
+has_4_genre(movie73042).
 has_genre(movie73042, animation).
 has_genre(movie73042, children).
 has_genre(movie73042, comedy).
 has_genre(movie73042, musical).
+has_1_genre(movie73106).
 has_genre(movie73106, comedy).
+has_2_genre(movie73160).
 has_genre(movie73160, comedy).
 has_genre(movie73160, horror).
+has_2_genre(movie73211).
 has_genre(movie73211, horror).
 has_genre(movie73211, thriller).
+has_3_genre(movie73266).
 has_genre(movie73266, comedy).
 has_genre(movie73266, drama).
 has_genre(movie73266, romance).
+has_4_genre(movie73268).
 has_genre(movie73268, action).
 has_genre(movie73268, drama).
 has_genre(movie73268, horror).
 has_genre(movie73268, thriller).
+has_1_genre(movie73290).
 has_genre(movie73290, drama).
+has_2_genre(movie73319).
 has_genre(movie73319, comedy).
 has_genre(movie73319, romance).
+has_3_genre(movie73321).
 has_genre(movie73321, action).
 has_genre(movie73321, adventure).
 has_genre(movie73321, drama).
+has_3_genre(movie73323).
 has_genre(movie73323, action).
 has_genre(movie73323, crime).
 has_genre(movie73323, mystery).
+has_2_genre(movie73344).
 has_genre(movie73344, crime).
 has_genre(movie73344, drama).
+has_2_genre(movie73386).
 has_genre(movie73386, crime).
 has_genre(movie73386, drama).
+has_2_genre(movie73431).
 has_genre(movie73431, comedy).
 has_genre(movie73431, crime).
+has_3_genre(movie73488).
 has_genre(movie73488, action).
 has_genre(movie73488, horror).
 has_genre(movie73488, thriller).
+has_2_genre(movie73499).
 has_genre(movie73499, action).
 has_genre(movie73499, adventure).
+has_1_genre(movie73501).
 has_genre(movie73501, comedy).
+has_2_genre(movie73515).
 has_genre(movie73515, comedy).
 has_genre(movie73515, romance).
+has_3_genre(movie73569).
 has_genre(movie73569, action).
 has_genre(movie73569, comedy).
 has_genre(movie73569, crime).
+has_3_genre(movie73676).
 has_genre(movie73676, action).
 has_genre(movie73676, comedy).
 has_genre(movie73676, drama).
+has_2_genre(movie73681).
 has_genre(movie73681, comedy).
 has_genre(movie73681, drama).
+has_4_genre(movie73741).
 has_genre(movie73741, action).
 has_genre(movie73741, crime).
 has_genre(movie73741, drama).
 has_genre(movie73741, thriller).
+has_4_genre(movie73804).
 has_genre(movie73804, adventure).
 has_genre(movie73804, children).
 has_genre(movie73804, comedy).
 has_genre(movie73804, fantasy).
+has_3_genre(movie73808).
 has_genre(movie73808, crime).
 has_genre(movie73808, drama).
 has_genre(movie73808, thriller).
+has_2_genre(movie73822).
 has_genre(movie73822, comedy).
 has_genre(movie73822, drama).
+has_5_genre(movie73854).
 has_genre(movie73854, adventure).
 has_genre(movie73854, animation).
 has_genre(movie73854, children).
 has_genre(movie73854, fantasy).
 has_genre(movie73854, musical).
+has_1_genre(movie73858).
 has_genre(movie73858, comedy).
+has_3_genre(movie73876).
 has_genre(movie73876, action).
 has_genre(movie73876, crime).
 has_genre(movie73876, drama).
+has_3_genre(movie73881).
 has_genre(movie73881, comedy).
 has_genre(movie73881, drama).
 has_genre(movie73881, romance).
+has_4_genre(movie73929).
 has_genre(movie73929, action).
 has_genre(movie73929, fantasy).
 has_genre(movie73929, horror).
 has_genre(movie73929, thriller).
+has_2_genre(movie74075).
 has_genre(movie74075, comedy).
 has_genre(movie74075, horror).
+has_3_genre(movie74089).
 has_genre(movie74089, children).
 has_genre(movie74089, fantasy).
 has_genre(movie74089, musical).
+has_4_genre(movie74095).
 has_genre(movie74095, animation).
 has_genre(movie74095, fantasy).
 has_genre(movie74095, horror).
 has_genre(movie74095, sci-fi).
+has_2_genre(movie74154).
 has_genre(movie74154, comedy).
 has_genre(movie74154, romance).
+has_2_genre(movie74226).
 has_genre(movie74226, documentary).
 has_genre(movie74226, drama).
+has_4_genre(movie74228).
 has_genre(movie74228, drama).
 has_genre(movie74228, horror).
 has_genre(movie74228, mystery).
 has_genre(movie74228, thriller).
+has_3_genre(movie74275).
 has_genre(movie74275, comedy).
 has_genre(movie74275, drama).
 has_genre(movie74275, romance).
+has_3_genre(movie74282).
 has_genre(movie74282, children).
 has_genre(movie74282, drama).
 has_genre(movie74282, romance).
+has_1_genre(movie74324).
 has_genre(movie74324, drama).
+has_3_genre(movie74342).
 has_genre(movie74342, comedy).
 has_genre(movie74342, drama).
 has_genre(movie74342, war).
+has_2_genre(movie74370).
 has_genre(movie74370, horror).
 has_genre(movie74370, thriller).
+has_2_genre(movie74450).
 has_genre(movie74450, comedy).
 has_genre(movie74450, romance).
+has_2_genre(movie74452).
 has_genre(movie74452, horror).
 has_genre(movie74452, thriller).
+has_3_genre(movie74458).
 has_genre(movie74458, drama).
 has_genre(movie74458, mystery).
 has_genre(movie74458, thriller).
+has_2_genre(movie74508).
 has_genre(movie74508, drama).
 has_genre(movie74508, romance).
+has_5_genre(movie74510).
 has_genre(movie74510, action).
 has_genre(movie74510, crime).
 has_genre(movie74510, drama).
 has_genre(movie74510, mystery).
 has_genre(movie74510, thriller).
+has_2_genre(movie74530).
 has_genre(movie74530, adventure).
 has_genre(movie74530, fantasy).
+has_3_genre(movie74532).
 has_genre(movie74532, action).
 has_genre(movie74532, comedy).
 has_genre(movie74532, crime).
+has_3_genre(movie74545).
 has_genre(movie74545, drama).
 has_genre(movie74545, mystery).
 has_genre(movie74545, thriller).
+has_2_genre(movie74553).
 has_genre(movie74553, animation).
 has_genre(movie74553, fantasy).
+has_3_genre(movie74580).
 has_genre(movie74580, action).
 has_genre(movie74580, children).
 has_genre(movie74580, comedy).
+has_3_genre(movie74624).
 has_genre(movie74624, adventure).
 has_genre(movie74624, drama).
 has_genre(movie74624, romance).
+has_1_genre(movie74647).
 has_genre(movie74647, comedy).
+has_2_genre(movie74668).
 has_genre(movie74668, action).
 has_genre(movie74668, sci-fi).
+has_1_genre(movie74677).
 has_genre(movie74677, documentary).
+has_1_genre(movie74683).
 has_genre(movie74683, comedy).
+has_5_genre(movie74685).
 has_genre(movie74685, action).
 has_genre(movie74685, drama).
 has_genre(movie74685, horror).
 has_genre(movie74685, sci-fi).
 has_genre(movie74685, thriller).
+has_3_genre(movie74688).
 has_genre(movie74688, drama).
 has_genre(movie74688, romance).
 has_genre(movie74688, war).
+has_2_genre(movie74696).
 has_genre(movie74696, documentary).
 has_genre(movie74696, drama).
+has_2_genre(movie74698).
 has_genre(movie74698, comedy).
 has_genre(movie74698, fantasy).
+has_4_genre(movie74727).
 has_genre(movie74727, comedy).
 has_genre(movie74727, crime).
 has_genre(movie74727, drama).
 has_genre(movie74727, mystery).
+has_2_genre(movie74750).
 has_genre(movie74750, horror).
 has_genre(movie74750, thriller).
+has_3_genre(movie74754).
 has_genre(movie74754, comedy).
 has_genre(movie74754, drama).
 has_genre(movie74754, romance).
+has_3_genre(movie74789).
 has_genre(movie74789, adventure).
 has_genre(movie74789, fantasy).
 has_genre(movie74789, imax).
+has_1_genre(movie74791).
 has_genre(movie74791, animation).
+has_4_genre(movie74795).
 has_genre(movie74795, action).
 has_genre(movie74795, drama).
 has_genre(movie74795, thriller).
 has_genre(movie74795, war).
+has_2_genre(movie74851).
 has_genre(movie74851, action).
 has_genre(movie74851, crime).
+has_3_genre(movie74868).
 has_genre(movie74868, drama).
 has_genre(movie74868, horror).
 has_genre(movie74868, sci-fi).
+has_2_genre(movie74916).
 has_genre(movie74916, comedy).
 has_genre(movie74916, drama).
+has_1_genre(movie74946).
 has_genre(movie74946, comedy).
+has_3_genre(movie74948).
 has_genre(movie74948, crime).
 has_genre(movie74948, drama).
 has_genre(movie74948, thriller).
+has_2_genre(movie75341).
 has_genre(movie75341, drama).
 has_genre(movie75341, romance).
+has_3_genre(movie75389).
 has_genre(movie75389, horror).
 has_genre(movie75389, thriller).
 has_genre(movie75389, western).
+has_3_genre(movie75395).
 has_genre(movie75395, drama).
 has_genre(movie75395, horror).
 has_genre(movie75395, thriller).
+has_3_genre(movie75416).
 has_genre(movie75416, action).
 has_genre(movie75416, adventure).
 has_genre(movie75416, sci-fi).
+has_1_genre(movie75446).
 has_genre(movie75446, drama).
+has_1_genre(movie75803).
 has_genre(movie75803, comedy).
+has_3_genre(movie75805).
 has_genre(movie75805, action).
 has_genre(movie75805, comedy).
 has_genre(movie75805, romance).
+has_4_genre(movie75813).
 has_genre(movie75813, comedy).
 has_genre(movie75813, crime).
 has_genre(movie75813, drama).
 has_genre(movie75813, thriller).
+has_1_genre(movie75816).
 has_genre(movie75816, comedy).
+has_1_genre(movie75947).
 has_genre(movie75947, documentary).
+has_3_genre(movie75985).
 has_genre(movie75985, action).
 has_genre(movie75985, sci-fi).
 has_genre(movie75985, thriller).
+has_2_genre(movie76030).
 has_genre(movie76030, horror).
 has_genre(movie76030, thriller).
+has_2_genre(movie76054).
 has_genre(movie76054, documentary).
 has_genre(movie76054, drama).
+has_1_genre(movie76060).
 has_genre(movie76060, comedy).
+has_2_genre(movie76077).
 has_genre(movie76077, comedy).
 has_genre(movie76077, sci-fi).
+has_4_genre(movie76091).
 has_genre(movie76091, crime).
 has_genre(movie76091, drama).
 has_genre(movie76091, mystery).
 has_genre(movie76091, thriller).
+has_5_genre(movie76093).
 has_genre(movie76093, adventure).
 has_genre(movie76093, animation).
 has_genre(movie76093, children).
 has_genre(movie76093, fantasy).
 has_genre(movie76093, imax).
+has_2_genre(movie76143).
 has_genre(movie76143, crime).
 has_genre(movie76143, thriller).
+has_2_genre(movie76173).
 has_genre(movie76173, comedy).
 has_genre(movie76173, crime).
+has_4_genre(movie76175).
 has_genre(movie76175, action).
 has_genre(movie76175, adventure).
 has_genre(movie76175, drama).
 has_genre(movie76175, fantasy).
+has_2_genre(movie76251).
 has_genre(movie76251, action).
 has_genre(movie76251, comedy).
+has_3_genre(movie76293).
 has_genre(movie76293, action).
 has_genre(movie76293, comedy).
 has_genre(movie76293, romance).
+has_4_genre(movie76301).
 has_genre(movie76301, animation).
 has_genre(movie76301, children).
 has_genre(movie76301, comedy).
 has_genre(movie76301, romance).
+has_1_genre(movie76738).
 has_genre(movie76738, documentary).
+has_3_genre(movie76743).
 has_genre(movie76743, action).
 has_genre(movie76743, adventure).
 has_genre(movie76743, comedy).
+has_2_genre(movie76751).
 has_genre(movie76751, crime).
 has_genre(movie76751, documentary).
+has_2_genre(movie76763).
 has_genre(movie76763, drama).
 has_genre(movie76763, musical).
+has_1_genre(movie77177).
 has_genre(movie77177, documentary).
+has_1_genre(movie77191).
 has_genre(movie77191, comedy).
+has_3_genre(movie77201).
 has_genre(movie77201, action).
 has_genre(movie77201, drama).
 has_genre(movie77201, war).
+has_2_genre(movie77206).
 has_genre(movie77206, children).
 has_genre(movie77206, comedy).
+has_2_genre(movie77233).
 has_genre(movie77233, comedy).
 has_genre(movie77233, documentary).
+has_1_genre(movie77266).
 has_genre(movie77266, drama).
+has_5_genre(movie77364).
 has_genre(movie77364, action).
 has_genre(movie77364, adventure).
 has_genre(movie77364, drama).
 has_genre(movie77364, mystery).
 has_genre(movie77364, thriller).
+has_2_genre(movie77414).
 has_genre(movie77414, drama).
 has_genre(movie77414, romance).
+has_3_genre(movie77421).
 has_genre(movie77421, comedy).
 has_genre(movie77421, drama).
 has_genre(movie77421, romance).
+has_1_genre(movie77427).
 has_genre(movie77427, horror).
+has_2_genre(movie77455).
 has_genre(movie77455, comedy).
 has_genre(movie77455, documentary).
+has_5_genre(movie77561).
 has_genre(movie77561, action).
 has_genre(movie77561, adventure).
 has_genre(movie77561, sci-fi).
 has_genre(movie77561, thriller).
 has_genre(movie77561, imax).
+has_2_genre(movie77667).
 has_genre(movie77667, action).
 has_genre(movie77667, comedy).
+has_1_genre(movie77688).
 has_genre(movie77688, comedy).
+has_3_genre(movie77709).
 has_genre(movie77709, adventure).
 has_genre(movie77709, animation).
 has_genre(movie77709, drama).
+has_1_genre(movie77795).
 has_genre(movie77795, sci-fi).
+has_3_genre(movie77798).
 has_genre(movie77798, fantasy).
 has_genre(movie77798, horror).
 has_genre(movie77798, thriller).
+has_2_genre(movie77800).
 has_genre(movie77800, comedy).
 has_genre(movie77800, drama).
+has_2_genre(movie77841).
 has_genre(movie77841, adventure).
 has_genre(movie77841, comedy).
+has_2_genre(movie77846).
 has_genre(movie77846, crime).
 has_genre(movie77846, drama).
+has_5_genre(movie77866).
 has_genre(movie77866, action).
 has_genre(movie77866, adventure).
 has_genre(movie77866, drama).
 has_genre(movie77866, romance).
 has_genre(movie77866, war).
+has_2_genre(movie77881).
 has_genre(movie77881, drama).
 has_genre(movie77881, romance).
+has_2_genre(movie77893).
 has_genre(movie77893, action).
 has_genre(movie77893, drama).
+has_4_genre(movie77931).
 has_genre(movie77931, comedy).
 has_genre(movie77931, musical).
 has_genre(movie77931, sci-fi).
 has_genre(movie77931, western).
+has_3_genre(movie78034).
 has_genre(movie78034, comedy).
 has_genre(movie78034, drama).
 has_genre(movie78034, romance).
+has_2_genre(movie78039).
 has_genre(movie78039, drama).
 has_genre(movie78039, romance).
+has_2_genre(movie78041).
 has_genre(movie78041, action).
 has_genre(movie78041, comedy).
+has_2_genre(movie78088).
 has_genre(movie78088, mystery).
 has_genre(movie78088, thriller).
+has_2_genre(movie78103).
 has_genre(movie78103, drama).
 has_genre(movie78103, war).
+has_5_genre(movie78105).
 has_genre(movie78105, action).
 has_genre(movie78105, adventure).
 has_genre(movie78105, fantasy).
 has_genre(movie78105, romance).
 has_genre(movie78105, imax).
+has_2_genre(movie78116).
 has_genre(movie78116, comedy).
 has_genre(movie78116, drama).
+has_3_genre(movie78142).
 has_genre(movie78142, comedy).
 has_genre(movie78142, drama).
 has_genre(movie78142, war).
+has_1_genre(movie78160).
 has_genre(movie78160, comedy).
+has_3_genre(movie78174).
 has_genre(movie78174, comedy).
 has_genre(movie78174, drama).
 has_genre(movie78174, romance).
+has_1_genre(movie78209).
 has_genre(movie78209, comedy).
+has_2_genre(movie78218).
 has_genre(movie78218, drama).
 has_genre(movie78218, thriller).
+has_2_genre(movie78264).
 has_genre(movie78264, comedy).
 has_genre(movie78264, romance).
+has_3_genre(movie78266).
 has_genre(movie78266, horror).
 has_genre(movie78266, sci-fi).
 has_genre(movie78266, thriller).
+has_2_genre(movie78316).
 has_genre(movie78316, drama).
 has_genre(movie78316, romance).
+has_2_genre(movie78349).
 has_genre(movie78349, mystery).
 has_genre(movie78349, thriller).
+has_4_genre(movie78467).
 has_genre(movie78467, action).
 has_genre(movie78467, drama).
 has_genre(movie78467, thriller).
 has_genre(movie78467, western).
+has_3_genre(movie78469).
 has_genre(movie78469, action).
 has_genre(movie78469, comedy).
 has_genre(movie78469, thriller).
+has_more_than_5_genre(movie78499).
 has_genre(movie78499, adventure).
 has_genre(movie78499, animation).
 has_genre(movie78499, children).
 has_genre(movie78499, comedy).
 has_genre(movie78499, fantasy).
 has_genre(movie78499, imax).
+has_1_genre(movie78544).
 has_genre(movie78544, comedy).
+has_2_genre(movie78574).
 has_genre(movie78574, drama).
 has_genre(movie78574, thriller).
+has_2_genre(movie78620).
 has_genre(movie78620, comedy).
 has_genre(movie78620, western).
+has_2_genre(movie78626).
 has_genre(movie78626, comedy).
 has_genre(movie78626, horror).
+has_more_than_5_genre(movie78637).
 has_genre(movie78637, adventure).
 has_genre(movie78637, animation).
 has_genre(movie78637, children).
 has_genre(movie78637, comedy).
 has_genre(movie78637, fantasy).
 has_genre(movie78637, imax).
+has_4_genre(movie78703).
 has_genre(movie78703, comedy).
 has_genre(movie78703, drama).
 has_genre(movie78703, fantasy).
 has_genre(movie78703, romance).
+has_1_genre(movie78746).
 has_genre(movie78746, documentary).
+has_4_genre(movie78772).
 has_genre(movie78772, fantasy).
 has_genre(movie78772, romance).
 has_genre(movie78772, thriller).
 has_genre(movie78772, imax).
+has_1_genre(movie78836).
 has_genre(movie78836, drama).
+has_3_genre(movie78893).
 has_genre(movie78893, action).
 has_genre(movie78893, adventure).
 has_genre(movie78893, fantasy).
+has_1_genre(movie78959).
 has_genre(movie78959, drama).
+has_1_genre(movie79006).
 has_genre(movie79006, documentary).
+has_3_genre(movie79008).
 has_genre(movie79008, animation).
 has_genre(movie79008, comedy).
 has_genre(movie79008, fantasy).
+has_3_genre(movie79057).
 has_genre(movie79057, action).
 has_genre(movie79057, sci-fi).
 has_genre(movie79057, thriller).
+has_1_genre(movie79073).
 has_genre(movie79073, documentary).
+has_4_genre(movie79091).
 has_genre(movie79091, animation).
 has_genre(movie79091, children).
 has_genre(movie79091, comedy).
 has_genre(movie79091, crime).
+has_more_than_5_genre(movie79132).
 has_genre(movie79132, action).
 has_genre(movie79132, crime).
 has_genre(movie79132, drama).
@@ -20801,171 +28179,240 @@ has_genre(movie79132, mystery).
 has_genre(movie79132, sci-fi).
 has_genre(movie79132, thriller).
 has_genre(movie79132, imax).
+has_1_genre(movie79134).
 has_genre(movie79134, comedy).
+has_5_genre(movie79139).
 has_genre(movie79139, action).
 has_genre(movie79139, adventure).
 has_genre(movie79139, children).
 has_genre(movie79139, comedy).
 has_genre(movie79139, fantasy).
+has_3_genre(movie79185).
 has_genre(movie79185, action).
 has_genre(movie79185, comedy).
 has_genre(movie79185, romance).
+has_3_genre(movie79224).
 has_genre(movie79224, action).
 has_genre(movie79224, children).
 has_genre(movie79224, drama).
+has_2_genre(movie79242).
 has_genre(movie79242, comedy).
 has_genre(movie79242, drama).
+has_2_genre(movie79251).
 has_genre(movie79251, horror).
 has_genre(movie79251, thriller).
+has_2_genre(movie79259).
 has_genre(movie79259, drama).
 has_genre(movie79259, thriller).
+has_2_genre(movie79274).
 has_genre(movie79274, action).
 has_genre(movie79274, animation).
+has_2_genre(movie79293).
 has_genre(movie79293, action).
 has_genre(movie79293, thriller).
+has_3_genre(movie79299).
 has_genre(movie79299, comedy).
 has_genre(movie79299, crime).
 has_genre(movie79299, mystery).
+has_3_genre(movie79333).
 has_genre(movie79333, comedy).
 has_genre(movie79333, crime).
 has_genre(movie79333, romance).
+has_4_genre(movie79357).
 has_genre(movie79357, drama).
 has_genre(movie79357, fantasy).
 has_genre(movie79357, romance).
 has_genre(movie79357, sci-fi).
+has_1_genre(movie79428).
 has_genre(movie79428, comedy).
+has_3_genre(movie79501).
 has_genre(movie79501, crime).
 has_genre(movie79501, drama).
 has_genre(movie79501, thriller).
+has_1_genre(movie79536).
 has_genre(movie79536, crime).
+has_1_genre(movie79553).
 has_genre(movie79553, action).
+has_2_genre(movie79572).
 has_genre(movie79572, children).
 has_genre(movie79572, comedy).
+has_2_genre(movie79590).
 has_genre(movie79590, comedy).
 has_genre(movie79590, romance).
+has_2_genre(movie79592).
 has_genre(movie79592, action).
 has_genre(movie79592, comedy).
+has_2_genre(movie79677).
 has_genre(movie79677, crime).
 has_genre(movie79677, documentary).
+has_2_genre(movie79684).
 has_genre(movie79684, comedy).
 has_genre(movie79684, drama).
+has_3_genre(movie79695).
 has_genre(movie79695, action).
 has_genre(movie79695, adventure).
 has_genre(movie79695, thriller).
+has_5_genre(movie79702).
 has_genre(movie79702, action).
 has_genre(movie79702, comedy).
 has_genre(movie79702, fantasy).
 has_genre(movie79702, musical).
 has_genre(movie79702, romance).
+has_1_genre(movie79798).
 has_genre(movie79798, drama).
+has_4_genre(movie79868).
 has_genre(movie79868, fantasy).
 has_genre(movie79868, horror).
 has_genre(movie79868, mystery).
 has_genre(movie79868, thriller).
+has_3_genre(movie79879).
 has_genre(movie79879, action).
 has_genre(movie79879, horror).
 has_genre(movie79879, thriller).
+has_4_genre(movie79895).
 has_genre(movie79895, action).
 has_genre(movie79895, adventure).
 has_genre(movie79895, fantasy).
 has_genre(movie79895, mystery).
+has_3_genre(movie79897).
 has_genre(movie79897, comedy).
 has_genre(movie79897, drama).
 has_genre(movie79897, mystery).
+has_2_genre(movie79946).
 has_genre(movie79946, comedy).
 has_genre(movie79946, drama).
+has_5_genre(movie80083).
 has_genre(movie80083, action).
 has_genre(movie80083, adventure).
 has_genre(movie80083, animation).
 has_genre(movie80083, fantasy).
 has_genre(movie80083, sci-fi).
+has_2_genre(movie80094).
 has_genre(movie80094, horror).
 has_genre(movie80094, thriller).
+has_3_genre(movie80124).
 has_genre(movie80124, action).
 has_genre(movie80124, crime).
 has_genre(movie80124, drama).
+has_2_genre(movie80126).
 has_genre(movie80126, drama).
 has_genre(movie80126, thriller).
+has_2_genre(movie80139).
 has_genre(movie80139, comedy).
 has_genre(movie80139, documentary).
+has_3_genre(movie80162).
 has_genre(movie80162, action).
 has_genre(movie80162, horror).
 has_genre(movie80162, thriller).
+has_2_genre(movie80166).
 has_genre(movie80166, comedy).
 has_genre(movie80166, romance).
+has_5_genre(movie80219).
 has_genre(movie80219, action).
 has_genre(movie80219, adventure).
 has_genre(movie80219, comedy).
 has_genre(movie80219, crime).
 has_genre(movie80219, thriller).
+has_2_genre(movie80241).
 has_genre(movie80241, comedy).
 has_genre(movie80241, romance).
+has_5_genre(movie80363).
 has_genre(movie80363, action).
 has_genre(movie80363, horror).
 has_genre(movie80363, sci-fi).
 has_genre(movie80363, thriller).
 has_genre(movie80363, imax).
+has_1_genre(movie80454).
 has_genre(movie80454, drama).
+has_1_genre(movie80463).
 has_genre(movie80463, drama).
+has_3_genre(movie80478).
 has_genre(movie80478, documentary).
 has_genre(movie80478, drama).
 has_genre(movie80478, mystery).
+has_3_genre(movie80489).
 has_genre(movie80489, crime).
 has_genre(movie80489, drama).
 has_genre(movie80489, thriller).
+has_2_genre(movie80549).
 has_genre(movie80549, comedy).
 has_genre(movie80549, romance).
+has_2_genre(movie80551).
 has_genre(movie80551, drama).
 has_genre(movie80551, romance).
+has_1_genre(movie80553).
 has_genre(movie80553, drama).
+has_2_genre(movie80572).
 has_genre(movie80572, comedy).
 has_genre(movie80572, drama).
+has_3_genre(movie80584).
 has_genre(movie80584, comedy).
 has_genre(movie80584, drama).
 has_genre(movie80584, romance).
+has_3_genre(movie80586).
 has_genre(movie80586, comedy).
 has_genre(movie80586, drama).
 has_genre(movie80586, romance).
+has_1_genre(movie80590).
 has_genre(movie80590, drama).
+has_4_genre(movie80615).
 has_genre(movie80615, adventure).
 has_genre(movie80615, animation).
 has_genre(movie80615, fantasy).
 has_genre(movie80615, imax).
+has_2_genre(movie80693).
 has_genre(movie80693, comedy).
 has_genre(movie80693, drama).
+has_3_genre(movie80727).
 has_genre(movie80727, comedy).
 has_genre(movie80727, crime).
 has_genre(movie80727, drama).
+has_3_genre(movie80748).
 has_genre(movie80748, adventure).
 has_genre(movie80748, children).
 has_genre(movie80748, fantasy).
+has_3_genre(movie80831).
 has_genre(movie80831, drama).
 has_genre(movie80831, horror).
 has_genre(movie80831, mystery).
+has_2_genre(movie80834).
 has_genre(movie80834, animation).
 has_genre(movie80834, fantasy).
+has_2_genre(movie80839).
 has_genre(movie80839, adventure).
 has_genre(movie80839, drama).
+has_3_genre(movie80846).
 has_genre(movie80846, horror).
 has_genre(movie80846, mystery).
 has_genre(movie80846, thriller).
+has_1_genre(movie80858).
 has_genre(movie80858, comedy).
+has_2_genre(movie80860).
 has_genre(movie80860, comedy).
 has_genre(movie80860, romance).
+has_2_genre(movie80862).
 has_genre(movie80862, documentary).
 has_genre(movie80862, mystery).
+has_2_genre(movie80864).
 has_genre(movie80864, comedy).
 has_genre(movie80864, romance).
+has_2_genre(movie80880).
 has_genre(movie80880, drama).
 has_genre(movie80880, thriller).
+has_1_genre(movie80906).
 has_genre(movie80906, documentary).
+has_2_genre(movie80917).
 has_genre(movie80917, drama).
 has_genre(movie80917, sci-fi).
+has_3_genre(movie80969).
 has_genre(movie80969, drama).
 has_genre(movie80969, romance).
 has_genre(movie80969, sci-fi).
+has_1_genre(movie81018).
 has_genre(movie81018, animation).
+has_1_genre(movie81087).
 has_genre(movie81087, drama).
+has_more_than_5_genre(movie81132).
 has_genre(movie81132, action).
 has_genre(movie81132, adventure).
 has_genre(movie81132, comedy).
@@ -20976,64 +28423,90 @@ has_genre(movie81132, horror).
 has_genre(movie81132, mystery).
 has_genre(movie81132, thriller).
 has_genre(movie81132, western).
+has_3_genre(movie81156).
 has_genre(movie81156, action).
 has_genre(movie81156, comedy).
 has_genre(movie81156, documentary).
+has_2_genre(movie81158).
 has_genre(movie81158, documentary).
 has_genre(movie81158, war).
+has_1_genre(movie81191).
 has_genre(movie81191, documentary).
+has_2_genre(movie81229).
 has_genre(movie81229, action).
 has_genre(movie81229, comedy).
+has_1_genre(movie81257).
 has_genre(movie81257, drama).
+has_2_genre(movie81383).
 has_genre(movie81383, comedy).
 has_genre(movie81383, romance).
+has_2_genre(movie81417).
 has_genre(movie81417, horror).
 has_genre(movie81417, imax).
+has_2_genre(movie81456).
 has_genre(movie81456, drama).
 has_genre(movie81456, romance).
+has_2_genre(movie81512).
 has_genre(movie81512, drama).
 has_genre(movie81512, fantasy).
+has_3_genre(movie81520).
 has_genre(movie81520, action).
 has_genre(movie81520, crime).
 has_genre(movie81520, drama).
+has_3_genre(movie81535).
 has_genre(movie81535, horror).
 has_genre(movie81535, mystery).
 has_genre(movie81535, thriller).
+has_1_genre(movie81537).
 has_genre(movie81537, comedy).
+has_3_genre(movie81562).
 has_genre(movie81562, adventure).
 has_genre(movie81562, drama).
 has_genre(movie81562, thriller).
+has_more_than_5_genre(movie81564).
 has_genre(movie81564, action).
 has_genre(movie81564, animation).
 has_genre(movie81564, children).
 has_genre(movie81564, comedy).
 has_genre(movie81564, sci-fi).
 has_genre(movie81564, imax).
+has_2_genre(movie81591).
 has_genre(movie81591, drama).
 has_genre(movie81591, thriller).
+has_3_genre(movie81681).
 has_genre(movie81681, drama).
 has_genre(movie81681, romance).
 has_genre(movie81681, western).
+has_3_genre(movie81782).
 has_genre(movie81782, action).
 has_genre(movie81782, drama).
 has_genre(movie81782, thriller).
+has_3_genre(movie81784).
 has_genre(movie81784, comedy).
 has_genre(movie81784, drama).
 has_genre(movie81784, romance).
+has_1_genre(movie81786).
 has_genre(movie81786, drama).
+has_4_genre(movie81788).
 has_genre(movie81788, crime).
 has_genre(movie81788, drama).
 has_genre(movie81788, romance).
 has_genre(movie81788, thriller).
+has_1_genre(movie81791).
 has_genre(movie81791, drama).
+has_1_genre(movie81819).
 has_genre(movie81819, drama).
+has_2_genre(movie81831).
 has_genre(movie81831, comedy).
 has_genre(movie81831, drama).
+has_4_genre(movie81834).
 has_genre(movie81834, action).
 has_genre(movie81834, adventure).
 has_genre(movie81834, fantasy).
 has_genre(movie81834, imax).
+has_1_genre(movie81845).
 has_genre(movie81845, drama).
+has_more_than_5_genre(movie81847).
 has_genre(movie81847, animation).
 has_genre(movie81847, children).
 has_genre(movie81847, comedy).
@@ -21041,204 +28514,287 @@ has_genre(movie81847, fantasy).
 has_genre(movie81847, musical).
 has_genre(movie81847, romance).
 has_genre(movie81847, imax).
+has_1_genre(movie81910).
 has_genre(movie81910, documentary).
+has_1_genre(movie81932).
 has_genre(movie81932, drama).
+has_3_genre(movie81949).
 has_genre(movie81949, comedy).
 has_genre(movie81949, drama).
 has_genre(movie81949, romance).
+has_1_genre(movie82041).
 has_genre(movie82041, horror).
+has_2_genre(movie82053).
 has_genre(movie82053, comedy).
 has_genre(movie82053, crime).
+has_1_genre(movie82088).
 has_genre(movie82088, drama).
+has_2_genre(movie82093).
 has_genre(movie82093, crime).
 has_genre(movie82093, romance).
+has_2_genre(movie82095).
 has_genre(movie82095, sci-fi).
 has_genre(movie82095, thriller).
+has_3_genre(movie82152).
 has_genre(movie82152, drama).
 has_genre(movie82152, fantasy).
 has_genre(movie82152, romance).
+has_3_genre(movie82167).
 has_genre(movie82167, comedy).
 has_genre(movie82167, drama).
 has_genre(movie82167, romance).
+has_3_genre(movie82169).
 has_genre(movie82169, adventure).
 has_genre(movie82169, children).
 has_genre(movie82169, fantasy).
+has_2_genre(movie82202).
 has_genre(movie82202, drama).
 has_genre(movie82202, thriller).
+has_2_genre(movie82242).
 has_genre(movie82242, action).
 has_genre(movie82242, comedy).
+has_3_genre(movie82366).
 has_genre(movie82366, comedy).
 has_genre(movie82366, horror).
 has_genre(movie82366, thriller).
+has_3_genre(movie82378).
 has_genre(movie82378, drama).
 has_genre(movie82378, mystery).
 has_genre(movie82378, thriller).
+has_1_genre(movie82459).
 has_genre(movie82459, western).
+has_4_genre(movie82461).
 has_genre(movie82461, action).
 has_genre(movie82461, adventure).
 has_genre(movie82461, sci-fi).
 has_genre(movie82461, imax).
+has_3_genre(movie82499).
 has_genre(movie82499, comedy).
 has_genre(movie82499, drama).
 has_genre(movie82499, romance).
+has_1_genre(movie82527).
 has_genre(movie82527, drama).
+has_1_genre(movie82534).
 has_genre(movie82534, drama).
+has_2_genre(movie82641).
 has_genre(movie82641, action).
 has_genre(movie82641, drama).
+has_2_genre(movie82667).
 has_genre(movie82667, crime).
 has_genre(movie82667, thriller).
+has_1_genre(movie82684).
 has_genre(movie82684, drama).
+has_3_genre(movie82744).
 has_genre(movie82744, action).
 has_genre(movie82744, crime).
 has_genre(movie82744, drama).
+has_5_genre(movie82765).
 has_genre(movie82765, action).
 has_genre(movie82765, adventure).
 has_genre(movie82765, comedy).
 has_genre(movie82765, drama).
 has_genre(movie82765, war).
+has_1_genre(movie82767).
 has_genre(movie82767, drama).
+has_1_genre(movie82848).
 has_genre(movie82848, comedy).
+has_1_genre(movie82852).
 has_genre(movie82852, comedy).
+has_3_genre(movie82854).
 has_genre(movie82854, adventure).
 has_genre(movie82854, comedy).
 has_genre(movie82854, fantasy).
+has_3_genre(movie82857).
 has_genre(movie82857, adventure).
 has_genre(movie82857, documentary).
 has_genre(movie82857, western).
+has_3_genre(movie83086).
 has_genre(movie83086, drama).
 has_genre(movie83086, musical).
 has_genre(movie83086, romance).
+has_3_genre(movie83132).
 has_genre(movie83132, animation).
 has_genre(movie83132, children).
 has_genre(movie83132, fantasy).
+has_2_genre(movie83134).
 has_genre(movie83134, comedy).
 has_genre(movie83134, horror).
+has_2_genre(movie83177).
 has_genre(movie83177, children).
 has_genre(movie83177, comedy).
+has_2_genre(movie83270).
 has_genre(movie83270, comedy).
 has_genre(movie83270, drama).
+has_more_than_5_genre(movie83349).
 has_genre(movie83349, action).
 has_genre(movie83349, comedy).
 has_genre(movie83349, crime).
 has_genre(movie83349, fantasy).
 has_genre(movie83349, thriller).
 has_genre(movie83349, imax).
+has_1_genre(movie83369).
 has_genre(movie83369, drama).
+has_3_genre(movie83374).
 has_genre(movie83374, action).
 has_genre(movie83374, fantasy).
 has_genre(movie83374, western).
+has_3_genre(movie83480).
 has_genre(movie83480, adventure).
 has_genre(movie83480, drama).
 has_genre(movie83480, fantasy).
+has_2_genre(movie83601).
 has_genre(movie83601, drama).
 has_genre(movie83601, horror).
+has_5_genre(movie83613).
 has_genre(movie83613, action).
 has_genre(movie83613, sci-fi).
 has_genre(movie83613, thriller).
 has_genre(movie83613, western).
 has_genre(movie83613, imax).
+has_3_genre(movie83796).
 has_genre(movie83796, crime).
 has_genre(movie83796, drama).
 has_genre(movie83796, thriller).
+has_2_genre(movie83803).
 has_genre(movie83803, animation).
 has_genre(movie83803, children).
+has_1_genre(movie83827).
 has_genre(movie83827, documentary).
+has_2_genre(movie83910).
 has_genre(movie83910, comedy).
 has_genre(movie83910, drama).
+has_3_genre(movie83969).
 has_genre(movie83969, comedy).
 has_genre(movie83969, drama).
 has_genre(movie83969, romance).
+has_2_genre(movie83976).
 has_genre(movie83976, comedy).
 has_genre(movie83976, drama).
+has_2_genre(movie84152).
 has_genre(movie84152, sci-fi).
 has_genre(movie84152, thriller).
+has_1_genre(movie84156).
 has_genre(movie84156, documentary).
+has_4_genre(movie84187).
 has_genre(movie84187, action).
 has_genre(movie84187, animation).
 has_genre(movie84187, drama).
 has_genre(movie84187, sci-fi).
+has_3_genre(movie84189).
 has_genre(movie84189, crime).
 has_genre(movie84189, horror).
 has_genre(movie84189, thriller).
+has_1_genre(movie84240).
 has_genre(movie84240, drama).
+has_2_genre(movie84246).
 has_genre(movie84246, comedy).
 has_genre(movie84246, romance).
+has_1_genre(movie84273).
 has_genre(movie84273, documentary).
+has_2_genre(movie84374).
 has_genre(movie84374, comedy).
 has_genre(movie84374, romance).
+has_3_genre(movie84392).
 has_genre(movie84392, crime).
 has_genre(movie84392, drama).
 has_genre(movie84392, thriller).
+has_4_genre(movie84414).
 has_genre(movie84414, action).
 has_genre(movie84414, adventure).
 has_genre(movie84414, animation).
 has_genre(movie84414, sci-fi).
+has_1_genre(movie84512).
 has_genre(movie84512, comedy).
+has_3_genre(movie84523).
 has_genre(movie84523, action).
 has_genre(movie84523, comedy).
 has_genre(movie84523, drama).
+has_1_genre(movie84553).
 has_genre(movie84553, comedy).
+has_3_genre(movie84601).
 has_genre(movie84601, drama).
 has_genre(movie84601, mystery).
 has_genre(movie84601, thriller).
+has_1_genre(movie84615).
 has_genre(movie84615, comedy).
+has_more_than_5_genre(movie84637).
 has_genre(movie84637, adventure).
 has_genre(movie84637, animation).
 has_genre(movie84637, children).
 has_genre(movie84637, comedy).
 has_genre(movie84637, fantasy).
 has_genre(movie84637, romance).
+has_2_genre(movie84696).
 has_genre(movie84696, comedy).
 has_genre(movie84696, thriller).
+has_3_genre(movie84716).
 has_genre(movie84716, comedy).
 has_genre(movie84716, drama).
 has_genre(movie84716, romance).
+has_3_genre(movie84772).
 has_genre(movie84772, adventure).
 has_genre(movie84772, comedy).
 has_genre(movie84772, sci-fi).
+has_2_genre(movie84799).
 has_genre(movie84799, horror).
 has_genre(movie84799, sci-fi).
+has_2_genre(movie84844).
 has_genre(movie84844, crime).
 has_genre(movie84844, drama).
+has_3_genre(movie84847).
 has_genre(movie84847, comedy).
 has_genre(movie84847, drama).
 has_genre(movie84847, romance).
+has_3_genre(movie84942).
 has_genre(movie84942, action).
 has_genre(movie84942, fantasy).
 has_genre(movie84942, thriller).
+has_more_than_5_genre(movie84944).
 has_genre(movie84944, action).
 has_genre(movie84944, adventure).
 has_genre(movie84944, animation).
 has_genre(movie84944, children).
 has_genre(movie84944, comedy).
 has_genre(movie84944, western).
+has_2_genre(movie84950).
 has_genre(movie84950, comedy).
 has_genre(movie84950, drama).
+has_2_genre(movie84952).
 has_genre(movie84952, drama).
 has_genre(movie84952, horror).
+has_3_genre(movie84954).
 has_genre(movie84954, romance).
 has_genre(movie84954, sci-fi).
 has_genre(movie84954, thriller).
+has_3_genre(movie85020).
 has_genre(movie85020, action).
 has_genre(movie85020, drama).
 has_genre(movie85020, thriller).
+has_1_genre(movie85022).
 has_genre(movie85022, comedy).
+has_2_genre(movie85025).
 has_genre(movie85025, adventure).
 has_genre(movie85025, drama).
+has_4_genre(movie85056).
 has_genre(movie85056, action).
 has_genre(movie85056, sci-fi).
 has_genre(movie85056, thriller).
 has_genre(movie85056, imax).
+has_3_genre(movie85131).
 has_genre(movie85131, action).
 has_genre(movie85131, sci-fi).
 has_genre(movie85131, war).
+has_4_genre(movie85179).
 has_genre(movie85179, adventure).
 has_genre(movie85179, animation).
 has_genre(movie85179, comedy).
 has_genre(movie85179, sci-fi).
+has_1_genre(movie85213).
 has_genre(movie85213, drama).
+has_2_genre(movie85259).
 has_genre(movie85259, animation).
 has_genre(movie85259, children).
+has_more_than_5_genre(movie85261).
 has_genre(movie85261, action).
 has_genre(movie85261, adventure).
 has_genre(movie85261, animation).
@@ -21246,4874 +28802,7065 @@ has_genre(movie85261, children).
 has_genre(movie85261, comedy).
 has_genre(movie85261, sci-fi).
 has_genre(movie85261, imax).
+has_4_genre(movie85295).
 has_genre(movie85295, adventure).
 has_genre(movie85295, children).
 has_genre(movie85295, comedy).
 has_genre(movie85295, mystery).
+has_2_genre(movie85316).
 has_genre(movie85316, animation).
 has_genre(movie85316, children).
+has_2_genre(movie85334).
 has_genre(movie85334, action).
 has_genre(movie85334, comedy).
+has_3_genre(movie85342).
 has_genre(movie85342, action).
 has_genre(movie85342, crime).
 has_genre(movie85342, drama).
+has_2_genre(movie85354).
 has_genre(movie85354, action).
 has_genre(movie85354, crime).
+has_2_genre(movie85367).
 has_genre(movie85367, comedy).
 has_genre(movie85367, romance).
+has_1_genre(movie85394).
 has_genre(movie85394, documentary).
+has_4_genre(movie85397).
 has_genre(movie85397, fantasy).
 has_genre(movie85397, horror).
 has_genre(movie85397, mystery).
 has_genre(movie85397, thriller).
+has_1_genre(movie85399).
 has_genre(movie85399, comedy).
+has_3_genre(movie85401).
 has_genre(movie85401, action).
 has_genre(movie85401, comedy).
 has_genre(movie85401, drama).
+has_2_genre(movie85412).
 has_genre(movie85412, fantasy).
 has_genre(movie85412, horror).
+has_5_genre(movie85414).
 has_genre(movie85414, action).
 has_genre(movie85414, drama).
 has_genre(movie85414, mystery).
 has_genre(movie85414, sci-fi).
 has_genre(movie85414, thriller).
+has_2_genre(movie85438).
 has_genre(movie85438, drama).
 has_genre(movie85438, romance).
+has_4_genre(movie85510).
 has_genre(movie85510, action).
 has_genre(movie85510, fantasy).
 has_genre(movie85510, thriller).
 has_genre(movie85510, imax).
+has_2_genre(movie85565).
 has_genre(movie85565, comedy).
 has_genre(movie85565, romance).
+has_4_genre(movie85736).
 has_genre(movie85736, adventure).
 has_genre(movie85736, animation).
 has_genre(movie85736, children).
 has_genre(movie85736, sci-fi).
+has_1_genre(movie85774).
 has_genre(movie85774, documentary).
+has_3_genre(movie85780).
 has_genre(movie85780, animation).
 has_genre(movie85780, comedy).
 has_genre(movie85780, sci-fi).
+has_3_genre(movie85788).
 has_genre(movie85788, fantasy).
 has_genre(movie85788, horror).
 has_genre(movie85788, thriller).
+has_4_genre(movie85796).
 has_genre(movie85796, action).
 has_genre(movie85796, adventure).
 has_genre(movie85796, crime).
 has_genre(movie85796, thriller).
+has_2_genre(movie85881).
 has_genre(movie85881, comedy).
 has_genre(movie85881, drama).
+has_2_genre(movie85885).
 has_genre(movie85885, drama).
 has_genre(movie85885, romance).
+has_2_genre(movie86000).
 has_genre(movie86000, comedy).
 has_genre(movie86000, drama).
+has_1_genre(movie86014).
 has_genre(movie86014, comedy).
+has_2_genre(movie86028).
 has_genre(movie86028, comedy).
 has_genre(movie86028, crime).
+has_3_genre(movie86059).
 has_genre(movie86059, animation).
 has_genre(movie86059, children).
 has_genre(movie86059, comedy).
+has_1_genre(movie86066).
 has_genre(movie86066, comedy).
+has_2_genre(movie86068).
 has_genre(movie86068, horror).
 has_genre(movie86068, thriller).
+has_1_genre(movie86142).
 has_genre(movie86142, action).
+has_4_genre(movie86190).
 has_genre(movie86190, action).
 has_genre(movie86190, adventure).
 has_genre(movie86190, mystery).
 has_genre(movie86190, thriller).
+has_1_genre(movie86237).
 has_genre(movie86237, documentary).
+has_1_genre(movie86279).
 has_genre(movie86279, documentary).
+has_4_genre(movie86286).
 has_genre(movie86286, animation).
 has_genre(movie86286, children).
 has_genre(movie86286, comedy).
 has_genre(movie86286, horror).
+has_2_genre(movie86290).
 has_genre(movie86290, comedy).
 has_genre(movie86290, documentary).
+has_1_genre(movie86293).
 has_genre(movie86293, comedy).
+has_4_genre(movie86295).
 has_genre(movie86295, comedy).
 has_genre(movie86295, horror).
 has_genre(movie86295, mystery).
 has_genre(movie86295, thriller).
+has_4_genre(movie86298).
 has_genre(movie86298, adventure).
 has_genre(movie86298, animation).
 has_genre(movie86298, children).
 has_genre(movie86298, comedy).
+has_2_genre(movie86320).
 has_genre(movie86320, drama).
 has_genre(movie86320, sci-fi).
+has_5_genre(movie86332).
 has_genre(movie86332, action).
 has_genre(movie86332, adventure).
 has_genre(movie86332, drama).
 has_genre(movie86332, fantasy).
 has_genre(movie86332, imax).
+has_1_genre(movie86345).
 has_genre(movie86345, comedy).
+has_1_genre(movie86347).
 has_genre(movie86347, comedy).
+has_3_genre(movie86355).
 has_genre(movie86355, drama).
 has_genre(movie86355, mystery).
 has_genre(movie86355, sci-fi).
+has_1_genre(movie86377).
 has_genre(movie86377, comedy).
+has_1_genre(movie86487).
 has_genre(movie86487, drama).
+has_1_genre(movie86504).
 has_genre(movie86504, documentary).
+has_2_genre(movie86548).
 has_genre(movie86548, drama).
 has_genre(movie86548, romance).
+has_2_genre(movie86593).
 has_genre(movie86593, adventure).
 has_genre(movie86593, documentary).
+has_2_genre(movie86628).
 has_genre(movie86628, action).
 has_genre(movie86628, crime).
+has_5_genre(movie86644).
 has_genre(movie86644, action).
 has_genre(movie86644, crime).
 has_genre(movie86644, drama).
 has_genre(movie86644, thriller).
 has_genre(movie86644, imax).
+has_1_genre(movie86668).
 has_genre(movie86668, documentary).
+has_3_genre(movie86721).
 has_genre(movie86721, animation).
 has_genre(movie86721, drama).
 has_genre(movie86721, fantasy).
+has_3_genre(movie86781).
 has_genre(movie86781, drama).
 has_genre(movie86781, mystery).
 has_genre(movie86781, war).
+has_2_genre(movie86815).
 has_genre(movie86815, action).
 has_genre(movie86815, drama).
+has_3_genre(movie86817).
 has_genre(movie86817, comedy).
 has_genre(movie86817, drama).
 has_genre(movie86817, romance).
+has_1_genre(movie86833).
 has_genre(movie86833, comedy).
+has_4_genre(movie86835).
 has_genre(movie86835, action).
 has_genre(movie86835, horror).
 has_genre(movie86835, sci-fi).
 has_genre(movie86835, thriller).
+has_3_genre(movie86864).
 has_genre(movie86864, adventure).
 has_genre(movie86864, fantasy).
 has_genre(movie86864, sci-fi).
+has_4_genre(movie86880).
 has_genre(movie86880, action).
 has_genre(movie86880, adventure).
 has_genre(movie86880, fantasy).
 has_genre(movie86880, imax).
+has_3_genre(movie86882).
 has_genre(movie86882, comedy).
 has_genre(movie86882, fantasy).
 has_genre(movie86882, romance).
+has_3_genre(movie86892).
 has_genre(movie86892, action).
 has_genre(movie86892, crime).
 has_genre(movie86892, thriller).
+has_1_genre(movie86898).
 has_genre(movie86898, drama).
+has_1_genre(movie86911).
 has_genre(movie86911, comedy).
+has_1_genre(movie86922).
 has_genre(movie86922, comedy).
+has_1_genre(movie86960).
 has_genre(movie86960, thriller).
+has_2_genre(movie87028).
 has_genre(movie87028, drama).
 has_genre(movie87028, thriller).
+has_3_genre(movie87192).
 has_genre(movie87192, action).
 has_genre(movie87192, comedy).
 has_genre(movie87192, sci-fi).
+has_3_genre(movie87194).
 has_genre(movie87194, adventure).
 has_genre(movie87194, comedy).
 has_genre(movie87194, drama).
+has_2_genre(movie87197).
 has_genre(movie87197, action).
 has_genre(movie87197, comedy).
+has_more_than_5_genre(movie87222).
 has_genre(movie87222, action).
 has_genre(movie87222, adventure).
 has_genre(movie87222, animation).
 has_genre(movie87222, children).
 has_genre(movie87222, comedy).
 has_genre(movie87222, imax).
+has_5_genre(movie87232).
 has_genre(movie87232, action).
 has_genre(movie87232, adventure).
 has_genre(movie87232, sci-fi).
 has_genre(movie87232, thriller).
 has_genre(movie87232, war).
+has_3_genre(movie87234).
 has_genre(movie87234, comedy).
 has_genre(movie87234, drama).
 has_genre(movie87234, romance).
+has_1_genre(movie87287).
 has_genre(movie87287, documentary).
+has_2_genre(movie87298).
 has_genre(movie87298, comedy).
 has_genre(movie87298, drama).
+has_1_genre(movie87304).
 has_genre(movie87304, drama).
+has_4_genre(movie87306).
 has_genre(movie87306, mystery).
 has_genre(movie87306, sci-fi).
 has_genre(movie87306, thriller).
 has_genre(movie87306, imax).
+has_2_genre(movie87413).
 has_genre(movie87413, comedy).
 has_genre(movie87413, drama).
+has_3_genre(movie87430).
 has_genre(movie87430, action).
 has_genre(movie87430, adventure).
 has_genre(movie87430, sci-fi).
+has_1_genre(movie87444).
 has_genre(movie87444, comedy).
+has_1_genre(movie87483).
 has_genre(movie87483, comedy).
+has_1_genre(movie87485).
 has_genre(movie87485, comedy).
+has_5_genre(movie87520).
 has_genre(movie87520, action).
 has_genre(movie87520, adventure).
 has_genre(movie87520, sci-fi).
 has_genre(movie87520, war).
 has_genre(movie87520, imax).
+has_3_genre(movie87522).
 has_genre(movie87522, comedy).
 has_genre(movie87522, drama).
 has_genre(movie87522, romance).
+has_4_genre(movie87529).
 has_genre(movie87529, action).
 has_genre(movie87529, adventure).
 has_genre(movie87529, comedy).
 has_genre(movie87529, fantasy).
+has_1_genre(movie87660).
 has_genre(movie87660, drama).
+has_3_genre(movie87785).
 has_genre(movie87785, action).
 has_genre(movie87785, crime).
 has_genre(movie87785, thriller).
+has_3_genre(movie87834).
 has_genre(movie87834, animation).
 has_genre(movie87834, comedy).
 has_genre(movie87834, drama).
+has_1_genre(movie87867).
 has_genre(movie87867, comedy).
+has_2_genre(movie87869).
 has_genre(movie87869, comedy).
 has_genre(movie87869, crime).
+has_5_genre(movie87876).
 has_genre(movie87876, adventure).
 has_genre(movie87876, animation).
 has_genre(movie87876, children).
 has_genre(movie87876, comedy).
 has_genre(movie87876, imax).
+has_1_genre(movie87960).
 has_genre(movie87960, documentary).
+has_2_genre(movie88069).
 has_genre(movie88069, comedy).
 has_genre(movie88069, crime).
+has_1_genre(movie88094).
 has_genre(movie88094, documentary).
+has_3_genre(movie88108).
 has_genre(movie88108, adventure).
 has_genre(movie88108, comedy).
 has_genre(movie88108, romance).
+has_more_than_5_genre(movie88125).
 has_genre(movie88125, action).
 has_genre(movie88125, adventure).
 has_genre(movie88125, drama).
 has_genre(movie88125, fantasy).
 has_genre(movie88125, mystery).
 has_genre(movie88125, imax).
+has_4_genre(movie88129).
 has_genre(movie88129, crime).
 has_genre(movie88129, drama).
 has_genre(movie88129, film-noir).
 has_genre(movie88129, thriller).
+has_5_genre(movie88140).
 has_genre(movie88140, action).
 has_genre(movie88140, adventure).
 has_genre(movie88140, sci-fi).
 has_genre(movie88140, thriller).
 has_genre(movie88140, war).
+has_3_genre(movie88163).
 has_genre(movie88163, comedy).
 has_genre(movie88163, drama).
 has_genre(movie88163, romance).
+has_2_genre(movie88179).
 has_genre(movie88179, drama).
 has_genre(movie88179, romance).
+has_2_genre(movie88235).
 has_genre(movie88235, comedy).
 has_genre(movie88235, crime).
+has_3_genre(movie88267).
 has_genre(movie88267, animation).
 has_genre(movie88267, children).
 has_genre(movie88267, comedy).
+has_1_genre(movie88272).
 has_genre(movie88272, horror).
+has_3_genre(movie88327).
 has_genre(movie88327, action).
 has_genre(movie88327, drama).
 has_genre(movie88327, war).
+has_2_genre(movie88345).
 has_genre(movie88345, animation).
 has_genre(movie88345, comedy).
+has_3_genre(movie88356).
 has_genre(movie88356, animation).
 has_genre(movie88356, children).
 has_genre(movie88356, comedy).
+has_2_genre(movie88405).
 has_genre(movie88405, comedy).
 has_genre(movie88405, romance).
+has_2_genre(movie88448).
 has_genre(movie88448, comedy).
 has_genre(movie88448, drama).
+has_3_genre(movie88515).
 has_genre(movie88515, action).
 has_genre(movie88515, crime).
 has_genre(movie88515, thriller).
+has_3_genre(movie88593).
 has_genre(movie88593, crime).
 has_genre(movie88593, drama).
 has_genre(movie88593, thriller).
+has_1_genre(movie88672).
 has_genre(movie88672, comedy).
+has_1_genre(movie88697).
 has_genre(movie88697, drama).
+has_3_genre(movie88699).
 has_genre(movie88699, action).
 has_genre(movie88699, sci-fi).
 has_genre(movie88699, thriller).
+has_4_genre(movie88744).
 has_genre(movie88744, action).
 has_genre(movie88744, drama).
 has_genre(movie88744, sci-fi).
 has_genre(movie88744, thriller).
+has_1_genre(movie88746).
 has_genre(movie88746, comedy).
+has_1_genre(movie88785).
 has_genre(movie88785, comedy).
+has_1_genre(movie88810).
 has_genre(movie88810, drama).
+has_3_genre(movie88812).
 has_genre(movie88812, action).
 has_genre(movie88812, comedy).
 has_genre(movie88812, crime).
+has_1_genre(movie88911).
 has_genre(movie88911, comedy).
+has_3_genre(movie88932).
 has_genre(movie88932, horror).
 has_genre(movie88932, thriller).
 has_genre(movie88932, imax).
+has_1_genre(movie88954).
 has_genre(movie88954, comedy).
+has_2_genre(movie89028).
 has_genre(movie89028, horror).
 has_genre(movie89028, thriller).
+has_2_genre(movie89030).
 has_genre(movie89030, comedy).
 has_genre(movie89030, horror).
+has_3_genre(movie89039).
 has_genre(movie89039, drama).
 has_genre(movie89039, romance).
 has_genre(movie89039, sci-fi).
+has_1_genre(movie89047).
 has_genre(movie89047, drama).
+has_1_genre(movie89072).
 has_genre(movie89072, horror).
+has_2_genre(movie89085).
 has_genre(movie89085, drama).
 has_genre(movie89085, thriller).
+has_4_genre(movie89087).
 has_genre(movie89087, action).
 has_genre(movie89087, adventure).
 has_genre(movie89087, drama).
 has_genre(movie89087, thriller).
+has_1_genre(movie89090).
 has_genre(movie89090, documentary).
+has_1_genre(movie89118).
 has_genre(movie89118, drama).
+has_3_genre(movie89190).
 has_genre(movie89190, action).
 has_genre(movie89190, adventure).
 has_genre(movie89190, fantasy).
+has_2_genre(movie89208).
 has_genre(movie89208, horror).
 has_genre(movie89208, thriller).
+has_2_genre(movie89281).
 has_genre(movie89281, romance).
 has_genre(movie89281, thriller).
+has_2_genre(movie89305).
 has_genre(movie89305, adventure).
 has_genre(movie89305, comedy).
+has_4_genre(movie89343).
 has_genre(movie89343, action).
 has_genre(movie89343, crime).
 has_genre(movie89343, horror).
 has_genre(movie89343, thriller).
+has_2_genre(movie89386).
 has_genre(movie89386, documentary).
 has_genre(movie89386, musical).
+has_1_genre(movie89388).
 has_genre(movie89388, comedy).
+has_2_genre(movie89427).
 has_genre(movie89427, horror).
 has_genre(movie89427, thriller).
+has_3_genre(movie89470).
 has_genre(movie89470, sci-fi).
 has_genre(movie89470, thriller).
 has_genre(movie89470, imax).
+has_1_genre(movie89492).
 has_genre(movie89492, drama).
+has_1_genre(movie89580).
 has_genre(movie89580, drama).
+has_2_genre(movie89582).
 has_genre(movie89582, drama).
 has_genre(movie89582, thriller).
+has_3_genre(movie89586).
 has_genre(movie89586, adventure).
 has_genre(movie89586, animation).
 has_genre(movie89586, children).
+has_2_genre(movie89678).
 has_genre(movie89678, drama).
 has_genre(movie89678, romance).
+has_4_genre(movie89745).
 has_genre(movie89745, action).
 has_genre(movie89745, adventure).
 has_genre(movie89745, sci-fi).
 has_genre(movie89745, imax).
+has_3_genre(movie89753).
 has_genre(movie89753, drama).
 has_genre(movie89753, film-noir).
 has_genre(movie89753, thriller).
+has_1_genre(movie89759).
 has_genre(movie89759, drama).
+has_2_genre(movie89761).
 has_genre(movie89761, drama).
 has_genre(movie89761, thriller).
+has_1_genre(movie89774).
 has_genre(movie89774, drama).
+has_1_genre(movie89804).
 has_genre(movie89804, drama).
+has_3_genre(movie89837).
 has_genre(movie89837, horror).
 has_genre(movie89837, mystery).
 has_genre(movie89837, thriller).
+has_2_genre(movie89840).
 has_genre(movie89840, action).
 has_genre(movie89840, thriller).
+has_3_genre(movie89862).
 has_genre(movie89862, action).
 has_genre(movie89862, drama).
 has_genre(movie89862, romance).
+has_2_genre(movie89864).
 has_genre(movie89864, comedy).
 has_genre(movie89864, drama).
+has_3_genre(movie89898).
 has_genre(movie89898, comedy).
 has_genre(movie89898, drama).
 has_genre(movie89898, sci-fi).
+has_3_genre(movie89904).
 has_genre(movie89904, comedy).
 has_genre(movie89904, drama).
 has_genre(movie89904, romance).
+has_1_genre(movie89939).
 has_genre(movie89939, comedy).
+has_2_genre(movie89945).
 has_genre(movie89945, horror).
 has_genre(movie89945, sci-fi).
+has_1_genre(movie90057).
 has_genre(movie90057, drama).
+has_2_genre(movie90243).
 has_genre(movie90243, action).
 has_genre(movie90243, drama).
+has_1_genre(movie90245).
 has_genre(movie90245, documentary).
+has_4_genre(movie90249).
 has_genre(movie90249, action).
 has_genre(movie90249, drama).
 has_genre(movie90249, sci-fi).
 has_genre(movie90249, imax).
+has_3_genre(movie90343).
 has_genre(movie90343, comedy).
 has_genre(movie90343, drama).
 has_genre(movie90343, musical).
+has_4_genre(movie90345).
 has_genre(movie90345, horror).
 has_genre(movie90345, mystery).
 has_genre(movie90345, sci-fi).
 has_genre(movie90345, thriller).
+has_1_genre(movie90353).
 has_genre(movie90353, drama).
+has_1_genre(movie90357).
 has_genre(movie90357, drama).
+has_2_genre(movie90374).
 has_genre(movie90374, drama).
 has_genre(movie90374, thriller).
+has_2_genre(movie90376).
 has_genre(movie90376, drama).
 has_genre(movie90376, thriller).
+has_3_genre(movie90384).
 has_genre(movie90384, action).
 has_genre(movie90384, thriller).
 has_genre(movie90384, war).
+has_2_genre(movie90403).
 has_genre(movie90403, action).
 has_genre(movie90403, adventure).
+has_3_genre(movie90405).
 has_genre(movie90405, crime).
 has_genre(movie90405, sci-fi).
 has_genre(movie90405, thriller).
+has_1_genre(movie90428).
 has_genre(movie90428, drama).
+has_2_genre(movie90430).
 has_genre(movie90430, comedy).
 has_genre(movie90430, drama).
+has_2_genre(movie90439).
 has_genre(movie90439, drama).
 has_genre(movie90439, thriller).
+has_1_genre(movie90469).
 has_genre(movie90469, horror).
+has_1_genre(movie90471).
 has_genre(movie90471, drama).
+has_3_genre(movie90522).
 has_genre(movie90522, adventure).
 has_genre(movie90522, comedy).
 has_genre(movie90522, thriller).
+has_4_genre(movie90524).
 has_genre(movie90524, action).
 has_genre(movie90524, drama).
 has_genre(movie90524, mystery).
 has_genre(movie90524, thriller).
+has_3_genre(movie90528).
 has_genre(movie90528, crime).
 has_genre(movie90528, drama).
 has_genre(movie90528, thriller).
+has_1_genre(movie90531).
 has_genre(movie90531, drama).
+has_2_genre(movie90576).
 has_genre(movie90576, comedy).
 has_genre(movie90576, romance).
+has_3_genre(movie90600).
 has_genre(movie90600, action).
 has_genre(movie90600, crime).
 has_genre(movie90600, thriller).
+has_3_genre(movie90603).
 has_genre(movie90603, action).
 has_genre(movie90603, animation).
 has_genre(movie90603, crime).
+has_1_genre(movie90630).
 has_genre(movie90630, documentary).
+has_5_genre(movie90647).
 has_genre(movie90647, adventure).
 has_genre(movie90647, animation).
 has_genre(movie90647, comedy).
 has_genre(movie90647, fantasy).
 has_genre(movie90647, imax).
+has_3_genre(movie90717).
 has_genre(movie90717, action).
 has_genre(movie90717, comedy).
 has_genre(movie90717, crime).
+has_1_genre(movie90719).
 has_genre(movie90719, drama).
+has_5_genre(movie90738).
 has_genre(movie90738, action).
 has_genre(movie90738, crime).
 has_genre(movie90738, drama).
 has_genre(movie90738, mystery).
 has_genre(movie90738, thriller).
+has_4_genre(movie90746).
 has_genre(movie90746, action).
 has_genre(movie90746, animation).
 has_genre(movie90746, mystery).
 has_genre(movie90746, imax).
+has_1_genre(movie90769).
 has_genre(movie90769, documentary).
+has_1_genre(movie90809).
 has_genre(movie90809, drama).
+has_1_genre(movie90863).
 has_genre(movie90863, documentary).
+has_3_genre(movie90866).
 has_genre(movie90866, children).
 has_genre(movie90866, drama).
 has_genre(movie90866, mystery).
+has_3_genre(movie90888).
 has_genre(movie90888, action).
 has_genre(movie90888, drama).
 has_genre(movie90888, fantasy).
+has_1_genre(movie90890).
 has_genre(movie90890, comedy).
+has_1_genre(movie90943).
 has_genre(movie90943, documentary).
+has_3_genre(movie90945).
 has_genre(movie90945, adventure).
 has_genre(movie90945, crime).
 has_genre(movie90945, drama).
+has_2_genre(movie91077).
 has_genre(movie91077, comedy).
 has_genre(movie91077, drama).
+has_2_genre(movie91079).
 has_genre(movie91079, drama).
 has_genre(movie91079, romance).
+has_3_genre(movie91094).
 has_genre(movie91094, children).
 has_genre(movie91094, comedy).
 has_genre(movie91094, musical).
+has_4_genre(movie91104).
 has_genre(movie91104, adventure).
 has_genre(movie91104, drama).
 has_genre(movie91104, fantasy).
 has_genre(movie91104, romance).
+has_2_genre(movie91126).
 has_genre(movie91126, drama).
 has_genre(movie91126, war).
+has_3_genre(movie91128).
 has_genre(movie91128, comedy).
 has_genre(movie91128, drama).
 has_genre(movie91128, thriller).
+has_3_genre(movie91233).
 has_genre(movie91233, animation).
 has_genre(movie91233, comedy).
 has_genre(movie91233, sci-fi).
+has_3_genre(movie91261).
 has_genre(movie91261, drama).
 has_genre(movie91261, musical).
 has_genre(movie91261, romance).
+has_4_genre(movie91266).
 has_genre(movie91266, children).
 has_genre(movie91266, comedy).
 has_genre(movie91266, musical).
 has_genre(movie91266, romance).
+has_3_genre(movie91273).
 has_genre(movie91273, action).
 has_genre(movie91273, drama).
 has_genre(movie91273, fantasy).
+has_1_genre(movie91323).
 has_genre(movie91323, comedy).
+has_1_genre(movie91325).
 has_genre(movie91325, drama).
+has_2_genre(movie91337).
 has_genre(movie91337, comedy).
 has_genre(movie91337, romance).
+has_4_genre(movie91353).
 has_genre(movie91353, adventure).
 has_genre(movie91353, animation).
 has_genre(movie91353, children).
 has_genre(movie91353, comedy).
+has_5_genre(movie91355).
 has_genre(movie91355, adventure).
 has_genre(movie91355, animation).
 has_genre(movie91355, children).
 has_genre(movie91355, comedy).
 has_genre(movie91355, fantasy).
+has_4_genre(movie91386).
 has_genre(movie91386, animation).
 has_genre(movie91386, children).
 has_genre(movie91386, comedy).
 has_genre(movie91386, imax).
+has_4_genre(movie91414).
 has_genre(movie91414, animation).
 has_genre(movie91414, children).
 has_genre(movie91414, comedy).
 has_genre(movie91414, drama).
+has_2_genre(movie91470).
 has_genre(movie91470, action).
 has_genre(movie91470, drama).
+has_3_genre(movie91483).
 has_genre(movie91483, action).
 has_genre(movie91483, crime).
 has_genre(movie91483, film-noir).
+has_2_genre(movie91485).
 has_genre(movie91485, action).
 has_genre(movie91485, adventure).
+has_3_genre(movie91488).
 has_genre(movie91488, animation).
 has_genre(movie91488, children).
 has_genre(movie91488, musical).
+has_5_genre(movie91500).
 has_genre(movie91500, action).
 has_genre(movie91500, adventure).
 has_genre(movie91500, drama).
 has_genre(movie91500, sci-fi).
 has_genre(movie91500, thriller).
+has_4_genre(movie91529).
 has_genre(movie91529, action).
 has_genre(movie91529, adventure).
 has_genre(movie91529, crime).
 has_genre(movie91529, imax).
+has_5_genre(movie91535).
 has_genre(movie91535, action).
 has_genre(movie91535, adventure).
 has_genre(movie91535, drama).
 has_genre(movie91535, thriller).
 has_genre(movie91535, imax).
+has_more_than_5_genre(movie91542).
 has_genre(movie91542, action).
 has_genre(movie91542, adventure).
 has_genre(movie91542, comedy).
 has_genre(movie91542, crime).
 has_genre(movie91542, mystery).
 has_genre(movie91542, thriller).
+has_2_genre(movie91571).
 has_genre(movie91571, drama).
 has_genre(movie91571, thriller).
+has_2_genre(movie91622).
 has_genre(movie91622, comedy).
 has_genre(movie91622, drama).
+has_2_genre(movie91628).
 has_genre(movie91628, comedy).
 has_genre(movie91628, romance).
+has_4_genre(movie91630).
 has_genre(movie91630, action).
 has_genre(movie91630, adventure).
 has_genre(movie91630, thriller).
 has_genre(movie91630, imax).
+has_2_genre(movie91653).
 has_genre(movie91653, comedy).
 has_genre(movie91653, drama).
+has_2_genre(movie91658).
 has_genre(movie91658, drama).
 has_genre(movie91658, thriller).
+has_4_genre(movie91660).
 has_genre(movie91660, action).
 has_genre(movie91660, horror).
 has_genre(movie91660, sci-fi).
 has_genre(movie91660, thriller).
+has_3_genre(movie91666).
 has_genre(movie91666, comedy).
 has_genre(movie91666, drama).
 has_genre(movie91666, romance).
+has_2_genre(movie91671).
 has_genre(movie91671, animation).
 has_genre(movie91671, comedy).
+has_2_genre(movie91688).
 has_genre(movie91688, comedy).
 has_genre(movie91688, thriller).
+has_1_genre(movie91690).
 has_genre(movie91690, comedy).
+has_3_genre(movie91784).
 has_genre(movie91784, comedy).
 has_genre(movie91784, drama).
 has_genre(movie91784, fantasy).
+has_4_genre(movie91842).
 has_genre(movie91842, action).
 has_genre(movie91842, crime).
 has_genre(movie91842, drama).
 has_genre(movie91842, thriller).
+has_1_genre(movie91860).
 has_genre(movie91860, documentary).
+has_1_genre(movie91869).
 has_genre(movie91869, documentary).
+has_2_genre(movie91873).
 has_genre(movie91873, comedy).
 has_genre(movie91873, musical).
+has_1_genre(movie91890).
 has_genre(movie91890, drama).
+has_1_genre(movie91935).
 has_genre(movie91935, drama).
+has_2_genre(movie91947).
 has_genre(movie91947, comedy).
 has_genre(movie91947, horror).
+has_4_genre(movie91974).
 has_genre(movie91974, action).
 has_genre(movie91974, fantasy).
 has_genre(movie91974, horror).
 has_genre(movie91974, imax).
+has_2_genre(movie91976).
 has_genre(movie91976, action).
 has_genre(movie91976, drama).
+has_2_genre(movie91978).
 has_genre(movie91978, crime).
 has_genre(movie91978, thriller).
+has_1_genre(movie91981).
 has_genre(movie91981, drama).
+has_2_genre(movie92008).
 has_genre(movie92008, action).
 has_genre(movie92008, thriller).
+has_1_genre(movie92046).
 has_genre(movie92046, comedy).
+has_2_genre(movie92048).
 has_genre(movie92048, drama).
 has_genre(movie92048, thriller).
+has_1_genre(movie92094).
 has_genre(movie92094, drama).
+has_3_genre(movie92192).
 has_genre(movie92192, horror).
 has_genre(movie92192, sci-fi).
 has_genre(movie92192, thriller).
+has_3_genre(movie92198).
 has_genre(movie92198, action).
 has_genre(movie92198, drama).
 has_genre(movie92198, thriller).
+has_4_genre(movie92234).
 has_genre(movie92234, action).
 has_genre(movie92234, adventure).
 has_genre(movie92234, drama).
 has_genre(movie92234, war).
+has_2_genre(movie92243).
 has_genre(movie92243, drama).
 has_genre(movie92243, war).
+has_2_genre(movie92259).
 has_genre(movie92259, comedy).
 has_genre(movie92259, drama).
+has_3_genre(movie92264).
 has_genre(movie92264, action).
 has_genre(movie92264, comedy).
 has_genre(movie92264, crime).
+has_2_genre(movie92309).
 has_genre(movie92309, horror).
 has_genre(movie92309, thriller).
+has_more_than_5_genre(movie92348).
 has_genre(movie92348, adventure).
 has_genre(movie92348, animation).
 has_genre(movie92348, children).
 has_genre(movie92348, comedy).
 has_genre(movie92348, fantasy).
 has_genre(movie92348, romance).
+has_1_genre(movie92391).
 has_genre(movie92391, horror).
+has_3_genre(movie92420).
 has_genre(movie92420, action).
 has_genre(movie92420, sci-fi).
 has_genre(movie92420, thriller).
+has_3_genre(movie92422).
 has_genre(movie92422, drama).
 has_genre(movie92422, horror).
 has_genre(movie92422, thriller).
+has_1_genre(movie92427).
 has_genre(movie92427, comedy).
+has_2_genre(movie92439).
 has_genre(movie92439, drama).
 has_genre(movie92439, romance).
+has_1_genre(movie92475).
 has_genre(movie92475, documentary).
+has_2_genre(movie92494).
 has_genre(movie92494, comedy).
 has_genre(movie92494, documentary).
+has_4_genre(movie92507).
 has_genre(movie92507, action).
 has_genre(movie92507, crime).
 has_genre(movie92507, mystery).
 has_genre(movie92507, thriller).
+has_2_genre(movie92509).
 has_genre(movie92509, drama).
 has_genre(movie92509, romance).
+has_1_genre(movie92535).
 has_genre(movie92535, comedy).
+has_3_genre(movie92637).
 has_genre(movie92637, crime).
 has_genre(movie92637, drama).
 has_genre(movie92637, fantasy).
+has_3_genre(movie92643).
 has_genre(movie92643, children).
 has_genre(movie92643, comedy).
 has_genre(movie92643, drama).
+has_3_genre(movie92665).
 has_genre(movie92665, comedy).
 has_genre(movie92665, drama).
 has_genre(movie92665, romance).
+has_2_genre(movie92674).
 has_genre(movie92674, drama).
 has_genre(movie92674, musical).
+has_5_genre(movie92681).
 has_genre(movie92681, action).
 has_genre(movie92681, adventure).
 has_genre(movie92681, comedy).
 has_genre(movie92681, sci-fi).
 has_genre(movie92681, imax).
+has_3_genre(movie92694).
 has_genre(movie92694, drama).
 has_genre(movie92694, romance).
 has_genre(movie92694, sci-fi).
+has_2_genre(movie92730).
 has_genre(movie92730, children).
 has_genre(movie92730, fantasy).
+has_2_genre(movie92760).
 has_genre(movie92760, horror).
 has_genre(movie92760, sci-fi).
+has_3_genre(movie92938).
 has_genre(movie92938, action).
 has_genre(movie92938, fantasy).
 has_genre(movie92938, thriller).
+has_1_genre(movie92954).
 has_genre(movie92954, drama).
+has_2_genre(movie93006).
 has_genre(movie93006, comedy).
 has_genre(movie93006, musical).
+has_2_genre(movie93008).
 has_genre(movie93008, comedy).
 has_genre(movie93008, musical).
+has_2_genre(movie93022).
 has_genre(movie93022, comedy).
 has_genre(movie93022, crime).
+has_2_genre(movie93040).
 has_genre(movie93040, documentary).
 has_genre(movie93040, war).
+has_2_genre(movie93114).
 has_genre(movie93114, comedy).
 has_genre(movie93114, drama).
+has_1_genre(movie93134).
 has_genre(movie93134, comedy).
+has_3_genre(movie93139).
 has_genre(movie93139, action).
 has_genre(movie93139, adventure).
 has_genre(movie93139, horror).
+has_3_genre(movie93193).
 has_genre(movie93193, crime).
 has_genre(movie93193, thriller).
 has_genre(movie93193, western).
+has_2_genre(movie93208).
 has_genre(movie93208, animation).
 has_genre(movie93208, children).
+has_2_genre(movie93242).
 has_genre(movie93242, drama).
 has_genre(movie93242, thriller).
+has_1_genre(movie93270).
 has_genre(movie93270, comedy).
+has_4_genre(movie93272).
 has_genre(movie93272, animation).
 has_genre(movie93272, fantasy).
 has_genre(movie93272, musical).
 has_genre(movie93272, imax).
+has_1_genre(movie93287).
 has_genre(movie93287, comedy).
+has_3_genre(movie93297).
 has_genre(movie93297, action).
 has_genre(movie93297, thriller).
 has_genre(movie93297, war).
+has_2_genre(movie93320).
 has_genre(movie93320, comedy).
 has_genre(movie93320, crime).
+has_3_genre(movie93326).
 has_genre(movie93326, action).
 has_genre(movie93326, comedy).
 has_genre(movie93326, romance).
+has_4_genre(movie93363).
 has_genre(movie93363, action).
 has_genre(movie93363, adventure).
 has_genre(movie93363, sci-fi).
 has_genre(movie93363, imax).
+has_2_genre(movie93443).
 has_genre(movie93443, comedy).
 has_genre(movie93443, drama).
+has_2_genre(movie93502).
 has_genre(movie93502, drama).
 has_genre(movie93502, thriller).
+has_3_genre(movie93510).
 has_genre(movie93510, action).
 has_genre(movie93510, comedy).
 has_genre(movie93510, crime).
+has_2_genre(movie93512).
 has_genre(movie93512, comedy).
 has_genre(movie93512, drama).
+has_3_genre(movie93563).
 has_genre(movie93563, action).
 has_genre(movie93563, sci-fi).
 has_genre(movie93563, thriller).
+has_3_genre(movie93598).
 has_genre(movie93598, crime).
 has_genre(movie93598, drama).
 has_genre(movie93598, thriller).
+has_3_genre(movie93610).
 has_genre(movie93610, action).
 has_genre(movie93610, adventure).
 has_genre(movie93610, drama).
+has_1_genre(movie93721).
 has_genre(movie93721, documentary).
+has_2_genre(movie93723).
 has_genre(movie93723, comedy).
 has_genre(movie93723, romance).
+has_3_genre(movie93740).
 has_genre(movie93740, comedy).
 has_genre(movie93740, drama).
 has_genre(movie93740, romance).
+has_4_genre(movie93766).
 has_genre(movie93766, action).
 has_genre(movie93766, adventure).
 has_genre(movie93766, fantasy).
 has_genre(movie93766, imax).
+has_1_genre(movie93790).
 has_genre(movie93790, drama).
+has_3_genre(movie93805).
 has_genre(movie93805, action).
 has_genre(movie93805, comedy).
 has_genre(movie93805, sci-fi).
+has_1_genre(movie93819).
 has_genre(movie93819, horror).
+has_1_genre(movie93831).
 has_genre(movie93831, comedy).
+has_2_genre(movie93838).
 has_genre(movie93838, action).
 has_genre(movie93838, crime).
+has_4_genre(movie93840).
 has_genre(movie93840, comedy).
 has_genre(movie93840, horror).
 has_genre(movie93840, sci-fi).
 has_genre(movie93840, thriller).
+has_2_genre(movie93855).
 has_genre(movie93855, comedy).
 has_genre(movie93855, drama).
+has_1_genre(movie93980).
 has_genre(movie93980, comedy).
+has_2_genre(movie93982).
 has_genre(movie93982, mystery).
 has_genre(movie93982, thriller).
+has_2_genre(movie93988).
 has_genre(movie93988, drama).
 has_genre(movie93988, romance).
+has_2_genre(movie94011).
 has_genre(movie94011, action).
 has_genre(movie94011, thriller).
+has_3_genre(movie94015).
 has_genre(movie94015, adventure).
 has_genre(movie94015, comedy).
 has_genre(movie94015, fantasy).
+has_4_genre(movie94018).
 has_genre(movie94018, action).
 has_genre(movie94018, sci-fi).
 has_genre(movie94018, thriller).
 has_genre(movie94018, imax).
+has_2_genre(movie94070).
 has_genre(movie94070, comedy).
 has_genre(movie94070, drama).
+has_1_genre(movie94122).
 has_genre(movie94122, documentary).
+has_1_genre(movie94130).
 has_genre(movie94130, documentary).
+has_2_genre(movie94150).
 has_genre(movie94150, comedy).
 has_genre(movie94150, romance).
+has_3_genre(movie94160).
 has_genre(movie94160, action).
 has_genre(movie94160, animation).
 has_genre(movie94160, fantasy).
+has_2_genre(movie94262).
 has_genre(movie94262, sci-fi).
 has_genre(movie94262, thriller).
+has_2_genre(movie94266).
 has_genre(movie94266, comedy).
 has_genre(movie94266, romance).
+has_1_genre(movie94323).
 has_genre(movie94323, comedy).
+has_1_genre(movie94325).
 has_genre(movie94325, drama).
+has_3_genre(movie94405).
 has_genre(movie94405, action).
 has_genre(movie94405, crime).
 has_genre(movie94405, thriller).
+has_3_genre(movie94478).
 has_genre(movie94478, comedy).
 has_genre(movie94478, horror).
 has_genre(movie94478, imax).
+has_2_genre(movie94494).
 has_genre(movie94494, drama).
 has_genre(movie94494, thriller).
+has_2_genre(movie94503).
 has_genre(movie94503, comedy).
 has_genre(movie94503, romance).
+has_2_genre(movie94661).
 has_genre(movie94661, comedy).
 has_genre(movie94661, drama).
+has_1_genre(movie94677).
 has_genre(movie94677, comedy).
+has_1_genre(movie94735).
 has_genre(movie94735, documentary).
+has_4_genre(movie94777).
 has_genre(movie94777, action).
 has_genre(movie94777, comedy).
 has_genre(movie94777, sci-fi).
 has_genre(movie94777, imax).
+has_3_genre(movie94780).
 has_genre(movie94780, action).
 has_genre(movie94780, adventure).
 has_genre(movie94780, drama).
+has_3_genre(movie94799).
 has_genre(movie94799, drama).
 has_genre(movie94799, mystery).
 has_genre(movie94799, sci-fi).
+has_3_genre(movie94810).
 has_genre(movie94810, drama).
 has_genre(movie94810, fantasy).
 has_genre(movie94810, sci-fi).
+has_4_genre(movie94833).
 has_genre(movie94833, adventure).
 has_genre(movie94833, animation).
 has_genre(movie94833, children).
 has_genre(movie94833, comedy).
+has_4_genre(movie94864).
 has_genre(movie94864, action).
 has_genre(movie94864, horror).
 has_genre(movie94864, sci-fi).
 has_genre(movie94864, imax).
+has_3_genre(movie94867).
 has_genre(movie94867, horror).
 has_genre(movie94867, mystery).
 has_genre(movie94867, thriller).
+has_3_genre(movie94896).
 has_genre(movie94896, comedy).
 has_genre(movie94896, crime).
 has_genre(movie94896, drama).
+has_2_genre(movie94919).
 has_genre(movie94919, drama).
 has_genre(movie94919, thriller).
+has_2_genre(movie94931).
 has_genre(movie94931, drama).
 has_genre(movie94931, romance).
+has_1_genre(movie94953).
 has_genre(movie94953, comedy).
+has_3_genre(movie94959).
 has_genre(movie94959, comedy).
 has_genre(movie94959, drama).
 has_genre(movie94959, romance).
+has_4_genre(movie94985).
 has_genre(movie94985, action).
 has_genre(movie94985, crime).
 has_genre(movie94985, drama).
 has_genre(movie94985, thriller).
+has_2_genre(movie95004).
 has_genre(movie95004, action).
 has_genre(movie95004, animation).
+has_2_genre(movie95067).
 has_genre(movie95067, comedy).
 has_genre(movie95067, drama).
+has_2_genre(movie95088).
 has_genre(movie95088, comedy).
 has_genre(movie95088, drama).
+has_5_genre(movie95105).
 has_genre(movie95105, adventure).
 has_genre(movie95105, animation).
 has_genre(movie95105, children).
 has_genre(movie95105, comedy).
 has_genre(movie95105, imax).
+has_2_genre(movie95135).
 has_genre(movie95135, comedy).
 has_genre(movie95135, drama).
+has_4_genre(movie95145).
 has_genre(movie95145, action).
 has_genre(movie95145, adventure).
 has_genre(movie95145, animation).
 has_genre(movie95145, children).
+has_4_genre(movie95147).
 has_genre(movie95147, action).
 has_genre(movie95147, adventure).
 has_genre(movie95147, animation).
 has_genre(movie95147, children).
+has_3_genre(movie95149).
 has_genre(movie95149, action).
 has_genre(movie95149, animation).
 has_genre(movie95149, fantasy).
+has_4_genre(movie95163).
 has_genre(movie95163, action).
 has_genre(movie95163, adventure).
 has_genre(movie95163, animation).
 has_genre(movie95163, children).
+has_5_genre(movie95165).
 has_genre(movie95165, action).
 has_genre(movie95165, adventure).
 has_genre(movie95165, animation).
 has_genre(movie95165, sci-fi).
 has_genre(movie95165, thriller).
+has_4_genre(movie95167).
 has_genre(movie95167, action).
 has_genre(movie95167, adventure).
 has_genre(movie95167, animation).
 has_genre(movie95167, children).
+has_4_genre(movie95170).
 has_genre(movie95170, animation).
 has_genre(movie95170, children).
 has_genre(movie95170, fantasy).
 has_genre(movie95170, musical).
+has_1_genre(movie95175).
 has_genre(movie95175, drama).
+has_4_genre(movie95182).
 has_genre(movie95182, action).
 has_genre(movie95182, adventure).
 has_genre(movie95182, animation).
 has_genre(movie95182, sci-fi).
+has_3_genre(movie95193).
 has_genre(movie95193, adventure).
 has_genre(movie95193, animation).
 has_genre(movie95193, children).
+has_3_genre(movie95199).
 has_genre(movie95199, comedy).
 has_genre(movie95199, drama).
 has_genre(movie95199, romance).
+has_1_genre(movie95201).
 has_genre(movie95201, comedy).
+has_4_genre(movie95207).
 has_genre(movie95207, action).
 has_genre(movie95207, fantasy).
 has_genre(movie95207, horror).
 has_genre(movie95207, thriller).
+has_1_genre(movie95218).
 has_genre(movie95218, documentary).
+has_4_genre(movie95307).
 has_genre(movie95307, comedy).
 has_genre(movie95307, drama).
 has_genre(movie95307, musical).
 has_genre(movie95307, imax).
+has_3_genre(movie95309).
 has_genre(movie95309, comedy).
 has_genre(movie95309, drama).
 has_genre(movie95309, romance).
+has_4_genre(movie95311).
 has_genre(movie95311, animation).
 has_genre(movie95311, children).
 has_genre(movie95311, comedy).
 has_genre(movie95311, fantasy).
+has_4_genre(movie95313).
 has_genre(movie95313, adventure).
 has_genre(movie95313, animation).
 has_genre(movie95313, children).
 has_genre(movie95313, comedy).
+has_3_genre(movie95377).
 has_genre(movie95377, animation).
 has_genre(movie95377, comedy).
 has_genre(movie95377, musical).
+has_2_genre(movie95441).
 has_genre(movie95441, comedy).
 has_genre(movie95441, fantasy).
+has_2_genre(movie95449).
 has_genre(movie95449, drama).
 has_genre(movie95449, romance).
+has_3_genre(movie95473).
 has_genre(movie95473, action).
 has_genre(movie95473, adventure).
 has_genre(movie95473, animation).
+has_3_genre(movie95475).
 has_genre(movie95475, action).
 has_genre(movie95475, adventure).
 has_genre(movie95475, animation).
+has_3_genre(movie95497).
 has_genre(movie95497, action).
 has_genre(movie95497, adventure).
 has_genre(movie95497, animation).
+has_3_genre(movie95499).
 has_genre(movie95499, action).
 has_genre(movie95499, adventure).
 has_genre(movie95499, animation).
+has_3_genre(movie95508).
 has_genre(movie95508, crime).
 has_genre(movie95508, drama).
 has_genre(movie95508, thriller).
+has_4_genre(movie95510).
 has_genre(movie95510, action).
 has_genre(movie95510, adventure).
 has_genre(movie95510, sci-fi).
 has_genre(movie95510, imax).
+has_4_genre(movie95519).
 has_genre(movie95519, action).
 has_genre(movie95519, adventure).
 has_genre(movie95519, animation).
 has_genre(movie95519, fantasy).
+has_3_genre(movie95543).
 has_genre(movie95543, adventure).
 has_genre(movie95543, animation).
 has_genre(movie95543, comedy).
+has_2_genre(movie95558).
 has_genre(movie95558, drama).
 has_genre(movie95558, fantasy).
+has_3_genre(movie95583).
 has_genre(movie95583, crime).
 has_genre(movie95583, drama).
 has_genre(movie95583, thriller).
+has_1_genre(movie95624).
 has_genre(movie95624, drama).
+has_1_genre(movie95633).
 has_genre(movie95633, horror).
+has_2_genre(movie95654).
 has_genre(movie95654, animation).
 has_genre(movie95654, children).
+has_2_genre(movie95690).
 has_genre(movie95690, comedy).
 has_genre(movie95690, thriller).
+has_1_genre(movie95717).
 has_genre(movie95717, adventure).
+has_2_genre(movie95720).
 has_genre(movie95720, comedy).
 has_genre(movie95720, sci-fi).
+has_3_genre(movie95738).
 has_genre(movie95738, children).
 has_genre(movie95738, musical).
 has_genre(movie95738, mystery).
+has_1_genre(movie95744).
 has_genre(movie95744, comedy).
+has_2_genre(movie95761).
 has_genre(movie95761, crime).
 has_genre(movie95761, thriller).
+has_3_genre(movie95771).
 has_genre(movie95771, action).
 has_genre(movie95771, adventure).
 has_genre(movie95771, animation).
+has_3_genre(movie95780).
 has_genre(movie95780, action).
 has_genre(movie95780, adventure).
 has_genre(movie95780, animation).
+has_4_genre(movie95796).
 has_genre(movie95796, action).
 has_genre(movie95796, horror).
 has_genre(movie95796, sci-fi).
 has_genre(movie95796, thriller).
+has_2_genre(movie95839).
 has_genre(movie95839, drama).
 has_genre(movie95839, fantasy).
+has_3_genre(movie95843).
 has_genre(movie95843, comedy).
 has_genre(movie95843, fantasy).
 has_genre(movie95843, romance).
+has_3_genre(movie95858).
 has_genre(movie95858, animation).
 has_genre(movie95858, children).
 has_genre(movie95858, comedy).
+has_3_genre(movie95873).
 has_genre(movie95873, comedy).
 has_genre(movie95873, fantasy).
 has_genre(movie95873, romance).
+has_3_genre(movie95875).
 has_genre(movie95875, action).
 has_genre(movie95875, sci-fi).
 has_genre(movie95875, thriller).
+has_2_genre(movie95939).
 has_genre(movie95939, comedy).
 has_genre(movie95939, drama).
+has_1_genre(movie95949).
 has_genre(movie95949, comedy).
+has_3_genre(movie95965).
 has_genre(movie95965, action).
 has_genre(movie95965, adventure).
 has_genre(movie95965, animation).
+has_3_genre(movie96004).
 has_genre(movie96004, action).
 has_genre(movie96004, adventure).
 has_genre(movie96004, animation).
+has_3_genre(movie96007).
 has_genre(movie96007, action).
 has_genre(movie96007, adventure).
 has_genre(movie96007, animation).
+has_1_genre(movie96020).
 has_genre(movie96020, drama).
+has_4_genre(movie96079).
 has_genre(movie96079, action).
 has_genre(movie96079, adventure).
 has_genre(movie96079, thriller).
 has_genre(movie96079, imax).
+has_1_genre(movie96084).
 has_genre(movie96084, drama).
+has_1_genre(movie96110).
 has_genre(movie96110, comedy).
+has_2_genre(movie96114).
 has_genre(movie96114, crime).
 has_genre(movie96114, thriller).
+has_2_genre(movie96121).
 has_genre(movie96121, comedy).
 has_genre(movie96121, drama).
+has_1_genre(movie96150).
 has_genre(movie96150, documentary).
+has_3_genre(movie96281).
 has_genre(movie96281, adventure).
 has_genre(movie96281, animation).
 has_genre(movie96281, comedy).
+has_2_genre(movie96283).
 has_genre(movie96283, children).
 has_genre(movie96283, comedy).
+has_1_genre(movie96373).
 has_genre(movie96373, drama).
+has_1_genre(movie96411).
 has_genre(movie96411, documentary).
+has_2_genre(movie96417).
 has_genre(movie96417, action).
 has_genre(movie96417, thriller).
+has_3_genre(movie96430).
 has_genre(movie96430, comedy).
 has_genre(movie96430, drama).
 has_genre(movie96430, fantasy).
+has_2_genre(movie96432).
 has_genre(movie96432, crime).
 has_genre(movie96432, drama).
+has_2_genre(movie96448).
 has_genre(movie96448, comedy).
 has_genre(movie96448, horror).
+has_3_genre(movie96471).
 has_genre(movie96471, crime).
 has_genre(movie96471, drama).
 has_genre(movie96471, mystery).
+has_1_genre(movie96488).
 has_genre(movie96488, documentary).
+has_2_genre(movie96518).
 has_genre(movie96518, drama).
 has_genre(movie96518, thriller).
+has_2_genre(movie96520).
 has_genre(movie96520, drama).
 has_genre(movie96520, mystery).
+has_2_genre(movie96530).
 has_genre(movie96530, comedy).
 has_genre(movie96530, romance).
+has_1_genre(movie96563).
 has_genre(movie96563, documentary).
+has_2_genre(movie96567).
 has_genre(movie96567, drama).
 has_genre(movie96567, romance).
+has_2_genre(movie96588).
 has_genre(movie96588, comedy).
 has_genre(movie96588, musical).
+has_1_genre(movie96606).
 has_genre(movie96606, documentary).
+has_3_genre(movie96608).
 has_genre(movie96608, animation).
 has_genre(movie96608, comedy).
 has_genre(movie96608, sci-fi).
+has_3_genre(movie96610).
 has_genre(movie96610, action).
 has_genre(movie96610, crime).
 has_genre(movie96610, sci-fi).
+has_1_genre(movie96616).
 has_genre(movie96616, comedy).
+has_3_genre(movie96655).
 has_genre(movie96655, comedy).
 has_genre(movie96655, drama).
 has_genre(movie96655, sci-fi).
+has_4_genre(movie96691).
 has_genre(movie96691, action).
 has_genre(movie96691, horror).
 has_genre(movie96691, sci-fi).
 has_genre(movie96691, imax).
+has_2_genre(movie96726).
 has_genre(movie96726, comedy).
 has_genre(movie96726, romance).
+has_1_genre(movie96728).
 has_genre(movie96728, drama).
+has_2_genre(movie96737).
 has_genre(movie96737, action).
 has_genre(movie96737, sci-fi).
+has_3_genre(movie96811).
 has_genre(movie96811, crime).
 has_genre(movie96811, drama).
 has_genre(movie96811, thriller).
+has_2_genre(movie96815).
 has_genre(movie96815, horror).
 has_genre(movie96815, thriller).
+has_2_genre(movie96821).
 has_genre(movie96821, drama).
 has_genre(movie96821, romance).
+has_1_genre(movie96829).
 has_genre(movie96829, drama).
+has_5_genre(movie96832).
 has_genre(movie96832, drama).
 has_genre(movie96832, fantasy).
 has_genre(movie96832, musical).
 has_genre(movie96832, mystery).
 has_genre(movie96832, sci-fi).
+has_4_genre(movie96861).
 has_genre(movie96861, action).
 has_genre(movie96861, crime).
 has_genre(movie96861, drama).
 has_genre(movie96861, thriller).
+has_2_genre(movie96917).
 has_genre(movie96917, horror).
 has_genre(movie96917, thriller).
+has_3_genre(movie96935).
 has_genre(movie96935, comedy).
 has_genre(movie96935, fantasy).
 has_genre(movie96935, romance).
+has_3_genre(movie96945).
 has_genre(movie96945, comedy).
 has_genre(movie96945, drama).
 has_genre(movie96945, romance).
+has_3_genre(movie96964).
 has_genre(movie96964, crime).
 has_genre(movie96964, drama).
 has_genre(movie96964, mystery).
+has_3_genre(movie96975).
 has_genre(movie96975, comedy).
 has_genre(movie96975, drama).
 has_genre(movie96975, romance).
+has_2_genre(movie97024).
 has_genre(movie97024, drama).
 has_genre(movie97024, romance).
+has_1_genre(movie97168).
 has_genre(movie97168, documentary).
+has_4_genre(movie97172).
 has_genre(movie97172, animation).
 has_genre(movie97172, comedy).
 has_genre(movie97172, horror).
 has_genre(movie97172, imax).
+has_2_genre(movie97188).
 has_genre(movie97188, horror).
 has_genre(movie97188, thriller).
+has_1_genre(movie97194).
 has_genre(movie97194, documentary).
+has_3_genre(movie97225).
 has_genre(movie97225, animation).
 has_genre(movie97225, children).
 has_genre(movie97225, comedy).
+has_1_genre(movie97230).
 has_genre(movie97230, documentary).
+has_3_genre(movie97285).
 has_genre(movie97285, action).
 has_genre(movie97285, crime).
 has_genre(movie97285, mystery).
+has_2_genre(movie97304).
 has_genre(movie97304, drama).
 has_genre(movie97304, thriller).
+has_2_genre(movie97306).
 has_genre(movie97306, comedy).
 has_genre(movie97306, crime).
+has_2_genre(movie97328).
 has_genre(movie97328, comedy).
 has_genre(movie97328, drama).
+has_3_genre(movie97470).
 has_genre(movie97470, action).
 has_genre(movie97470, drama).
 has_genre(movie97470, thriller).
+has_2_genre(movie97643).
 has_genre(movie97643, horror).
 has_genre(movie97643, thriller).
+has_2_genre(movie97665).
 has_genre(movie97665, adventure).
 has_genre(movie97665, comedy).
+has_2_genre(movie97701).
 has_genre(movie97701, horror).
 has_genre(movie97701, imax).
+has_4_genre(movie97742).
 has_genre(movie97742, action).
 has_genre(movie97742, crime).
 has_genre(movie97742, mystery).
 has_genre(movie97742, thriller).
+has_3_genre(movie97752).
 has_genre(movie97752, drama).
 has_genre(movie97752, sci-fi).
 has_genre(movie97752, imax).
+has_5_genre(movie97757).
 has_genre(movie97757, action).
 has_genre(movie97757, adventure).
 has_genre(movie97757, comedy).
 has_genre(movie97757, documentary).
 has_genre(movie97757, fantasy).
+has_3_genre(movie97785).
 has_genre(movie97785, horror).
 has_genre(movie97785, mystery).
 has_genre(movie97785, thriller).
+has_2_genre(movie97836).
 has_genre(movie97836, action).
 has_genre(movie97836, comedy).
+has_2_genre(movie97858).
 has_genre(movie97858, comedy).
 has_genre(movie97858, drama).
+has_3_genre(movie97860).
 has_genre(movie97860, crime).
 has_genre(movie97860, drama).
 has_genre(movie97860, thriller).
+has_1_genre(movie97866).
 has_genre(movie97866, documentary).
+has_1_genre(movie97870).
 has_genre(movie97870, drama).
+has_2_genre(movie97904).
 has_genre(movie97904, comedy).
 has_genre(movie97904, drama).
+has_2_genre(movie97913).
 has_genre(movie97913, animation).
 has_genre(movie97913, comedy).
+has_2_genre(movie97921).
 has_genre(movie97921, comedy).
 has_genre(movie97921, drama).
+has_1_genre(movie97923).
 has_genre(movie97923, drama).
+has_1_genre(movie97936).
 has_genre(movie97936, drama).
+has_3_genre(movie97938).
 has_genre(movie97938, adventure).
 has_genre(movie97938, drama).
 has_genre(movie97938, imax).
+has_3_genre(movie97950).
 has_genre(movie97950, action).
 has_genre(movie97950, adventure).
 has_genre(movie97950, crime).
+has_3_genre(movie97988).
 has_genre(movie97988, horror).
 has_genre(movie97988, sci-fi).
 has_genre(movie97988, thriller).
+has_3_genre(movie98061).
 has_genre(movie98061, children).
 has_genre(movie98061, crime).
 has_genre(movie98061, drama).
+has_2_genre(movie98083).
 has_genre(movie98083, comedy).
 has_genre(movie98083, documentary).
+has_1_genre(movie98122).
 has_genre(movie98122, documentary).
+has_3_genre(movie98124).
 has_genre(movie98124, action).
 has_genre(movie98124, animation).
 has_genre(movie98124, sci-fi).
+has_2_genre(movie98154).
 has_genre(movie98154, drama).
 has_genre(movie98154, war).
+has_1_genre(movie98160).
 has_genre(movie98160, comedy).
+has_3_genre(movie98175).
 has_genre(movie98175, comedy).
 has_genre(movie98175, horror).
 has_genre(movie98175, romance).
+has_5_genre(movie98203).
 has_genre(movie98203, adventure).
 has_genre(movie98203, drama).
 has_genre(movie98203, fantasy).
 has_genre(movie98203, romance).
 has_genre(movie98203, imax).
+has_3_genre(movie98230).
 has_genre(movie98230, comedy).
 has_genre(movie98230, drama).
 has_genre(movie98230, romance).
+has_2_genre(movie98239).
 has_genre(movie98239, action).
 has_genre(movie98239, war).
+has_5_genre(movie98243).
 has_genre(movie98243, adventure).
 has_genre(movie98243, animation).
 has_genre(movie98243, children).
 has_genre(movie98243, fantasy).
 has_genre(movie98243, imax).
+has_1_genre(movie98279).
 has_genre(movie98279, comedy).
+has_3_genre(movie98296).
 has_genre(movie98296, crime).
 has_genre(movie98296, drama).
 has_genre(movie98296, thriller).
+has_3_genre(movie98361).
 has_genre(movie98361, drama).
 has_genre(movie98361, fantasy).
 has_genre(movie98361, thriller).
+has_3_genre(movie98491).
 has_genre(movie98491, animation).
 has_genre(movie98491, comedy).
 has_genre(movie98491, romance).
+has_2_genre(movie98499).
 has_genre(movie98499, action).
 has_genre(movie98499, comedy).
+has_2_genre(movie98503).
 has_genre(movie98503, action).
 has_genre(movie98503, comedy).
+has_1_genre(movie98585).
 has_genre(movie98585, drama).
+has_3_genre(movie98604).
 has_genre(movie98604, animation).
 has_genre(movie98604, drama).
 has_genre(movie98604, romance).
+has_3_genre(movie98607).
 has_genre(movie98607, action).
 has_genre(movie98607, animation).
 has_genre(movie98607, sci-fi).
+has_3_genre(movie98623).
 has_genre(movie98623, action).
 has_genre(movie98623, comedy).
 has_genre(movie98623, crime).
+has_2_genre(movie98633).
 has_genre(movie98633, action).
 has_genre(movie98633, comedy).
+has_2_genre(movie98697).
 has_genre(movie98697, adventure).
 has_genre(movie98697, comedy).
+has_2_genre(movie98799).
 has_genre(movie98799, animation).
 has_genre(movie98799, comedy).
+has_3_genre(movie98809).
 has_genre(movie98809, adventure).
 has_genre(movie98809, fantasy).
 has_genre(movie98809, imax).
+has_2_genre(movie98836).
 has_genre(movie98836, comedy).
 has_genre(movie98836, drama).
+has_2_genre(movie98908).
 has_genre(movie98908, comedy).
 has_genre(movie98908, romance).
+has_3_genre(movie98961).
 has_genre(movie98961, action).
 has_genre(movie98961, drama).
 has_genre(movie98961, thriller).
+has_3_genre(movie99005).
 has_genre(movie99005, action).
 has_genre(movie99005, crime).
 has_genre(movie99005, drama).
+has_3_genre(movie99007).
 has_genre(movie99007, comedy).
 has_genre(movie99007, horror).
 has_genre(movie99007, romance).
+has_2_genre(movie99030).
 has_genre(movie99030, comedy).
 has_genre(movie99030, drama).
+has_2_genre(movie99087).
 has_genre(movie99087, comedy).
 has_genre(movie99087, romance).
+has_1_genre(movie99106).
 has_genre(movie99106, comedy).
+has_3_genre(movie99112).
 has_genre(movie99112, action).
 has_genre(movie99112, crime).
 has_genre(movie99112, thriller).
+has_3_genre(movie99114).
 has_genre(movie99114, action).
 has_genre(movie99114, drama).
 has_genre(movie99114, western).
+has_1_genre(movie99117).
 has_genre(movie99117, drama).
+has_2_genre(movie99122).
 has_genre(movie99122, comedy).
 has_genre(movie99122, horror).
+has_2_genre(movie99130).
 has_genre(movie99130, comedy).
 has_genre(movie99130, horror).
+has_2_genre(movie99145).
 has_genre(movie99145, drama).
 has_genre(movie99145, thriller).
+has_4_genre(movie99149).
 has_genre(movie99149, drama).
 has_genre(movie99149, musical).
 has_genre(movie99149, romance).
 has_genre(movie99149, imax).
+has_1_genre(movie99191).
 has_genre(movie99191, horror).
+has_1_genre(movie99415).
 has_genre(movie99415, comedy).
+has_3_genre(movie99437).
 has_genre(movie99437, comedy).
 has_genre(movie99437, fantasy).
 has_genre(movie99437, horror).
+has_2_genre(movie99532).
 has_genre(movie99532, drama).
 has_genre(movie99532, romance).
+has_1_genre(movie99574).
 has_genre(movie99574, drama).
+has_2_genre(movie99636).
 has_genre(movie99636, comedy).
 has_genre(movie99636, drama).
+has_1_genre(movie99638).
 has_genre(movie99638, comedy).
+has_3_genre(movie99721).
 has_genre(movie99721, horror).
 has_genre(movie99721, mystery).
 has_genre(movie99721, thriller).
+has_3_genre(movie99728).
 has_genre(movie99728, action).
 has_genre(movie99728, crime).
 has_genre(movie99728, drama).
+has_3_genre(movie99750).
 has_genre(movie99750, crime).
 has_genre(movie99750, drama).
 has_genre(movie99750, thriller).
+has_5_genre(movie99764).
 has_genre(movie99764, animation).
 has_genre(movie99764, comedy).
 has_genre(movie99764, drama).
 has_genre(movie99764, fantasy).
 has_genre(movie99764, sci-fi).
+has_2_genre(movie99813).
 has_genre(movie99813, action).
 has_genre(movie99813, animation).
+has_1_genre(movie99846).
 has_genre(movie99846, documentary).
+has_3_genre(movie99853).
 has_genre(movie99853, comedy).
 has_genre(movie99853, romance).
 has_genre(movie99853, sci-fi).
+has_3_genre(movie99910).
 has_genre(movie99910, action).
 has_genre(movie99910, crime).
 has_genre(movie99910, thriller).
+has_3_genre(movie99917).
 has_genre(movie99917, romance).
 has_genre(movie99917, sci-fi).
 has_genre(movie99917, thriller).
+has_3_genre(movie99992).
 has_genre(movie99992, crime).
 has_genre(movie99992, drama).
 has_genre(movie99992, thriller).
+has_1_genre(movie100044).
 has_genre(movie100044, documentary).
+has_1_genre(movie100068).
 has_genre(movie100068, comedy).
+has_1_genre(movie100083).
 has_genre(movie100083, comedy).
+has_1_genre(movie100106).
 has_genre(movie100106, documentary).
+has_1_genre(movie100159).
 has_genre(movie100159, comedy).
+has_4_genre(movie100163).
 has_genre(movie100163, action).
 has_genre(movie100163, fantasy).
 has_genre(movie100163, horror).
 has_genre(movie100163, imax).
+has_1_genre(movie100194).
 has_genre(movie100194, comedy).
+has_2_genre(movie100226).
 has_genre(movie100226, comedy).
 has_genre(movie100226, drama).
+has_2_genre(movie100277).
 has_genre(movie100277, drama).
 has_genre(movie100277, romance).
+has_3_genre(movie100302).
 has_genre(movie100302, drama).
 has_genre(movie100302, romance).
 has_genre(movie100302, sci-fi).
+has_2_genre(movie100304).
 has_genre(movie100304, action).
 has_genre(movie100304, thriller).
+has_2_genre(movie100306).
 has_genre(movie100306, drama).
 has_genre(movie100306, horror).
+has_2_genre(movie100326).
 has_genre(movie100326, comedy).
 has_genre(movie100326, crime).
+has_4_genre(movie100383).
 has_genre(movie100383, crime).
 has_genre(movie100383, drama).
 has_genre(movie100383, mystery).
 has_genre(movie100383, thriller).
+has_2_genre(movie100390).
 has_genre(movie100390, comedy).
 has_genre(movie100390, crime).
+has_1_genre(movie100397).
 has_genre(movie100397, horror).
+has_3_genre(movie100487).
 has_genre(movie100487, drama).
 has_genre(movie100487, fantasy).
 has_genre(movie100487, romance).
+has_4_genre(movie100498).
 has_genre(movie100498, action).
 has_genre(movie100498, crime).
 has_genre(movie100498, thriller).
 has_genre(movie100498, imax).
+has_1_genre(movie100507).
 has_genre(movie100507, comedy).
+has_3_genre(movie100527).
 has_genre(movie100527, drama).
 has_genre(movie100527, mystery).
 has_genre(movie100527, romance).
+has_1_genre(movie100553).
 has_genre(movie100553, documentary).
+has_1_genre(movie100556).
 has_genre(movie100556, documentary).
+has_3_genre(movie100579).
 has_genre(movie100579, action).
 has_genre(movie100579, sci-fi).
 has_genre(movie100579, thriller).
+has_4_genre(movie100611).
 has_genre(movie100611, adventure).
 has_genre(movie100611, animation).
 has_genre(movie100611, comedy).
 has_genre(movie100611, sci-fi).
+has_2_genre(movie100714).
 has_genre(movie100714, drama).
 has_genre(movie100714, romance).
+has_3_genre(movie100737).
 has_genre(movie100737, action).
 has_genre(movie100737, drama).
 has_genre(movie100737, thriller).
+has_3_genre(movie100810).
 has_genre(movie100810, horror).
 has_genre(movie100810, sci-fi).
 has_genre(movie100810, thriller).
+has_2_genre(movie100843).
 has_genre(movie100843, comedy).
 has_genre(movie100843, drama).
+has_5_genre(movie100882).
 has_genre(movie100882, adventure).
 has_genre(movie100882, comedy).
 has_genre(movie100882, fantasy).
 has_genre(movie100882, romance).
 has_genre(movie100882, imax).
+has_3_genre(movie100906).
 has_genre(movie100906, action).
 has_genre(movie100906, horror).
 has_genre(movie100906, thriller).
+has_3_genre(movie101025).
 has_genre(movie101025, adventure).
 has_genre(movie101025, fantasy).
 has_genre(movie101025, imax).
+has_1_genre(movie101070).
 has_genre(movie101070, drama).
+has_1_genre(movie101072).
 has_genre(movie101072, comedy).
+has_4_genre(movie101074).
 has_genre(movie101074, animation).
 has_genre(movie101074, comedy).
 has_genre(movie101074, horror).
 has_genre(movie101074, musical).
+has_5_genre(movie101076).
 has_genre(movie101076, action).
 has_genre(movie101076, adventure).
 has_genre(movie101076, sci-fi).
 has_genre(movie101076, thriller).
 has_genre(movie101076, imax).
+has_3_genre(movie101088).
 has_genre(movie101088, drama).
 has_genre(movie101088, mystery).
 has_genre(movie101088, thriller).
+has_4_genre(movie101112).
 has_genre(movie101112, action).
 has_genre(movie101112, adventure).
 has_genre(movie101112, fantasy).
 has_genre(movie101112, imax).
+has_3_genre(movie101142).
 has_genre(movie101142, adventure).
 has_genre(movie101142, animation).
 has_genre(movie101142, comedy).
+has_1_genre(movie101283).
 has_genre(movie101283, comedy).
+has_2_genre(movie101360).
 has_genre(movie101360, drama).
 has_genre(movie101360, thriller).
+has_2_genre(movie101362).
 has_genre(movie101362, action).
 has_genre(movie101362, thriller).
+has_3_genre(movie101415).
 has_genre(movie101415, comedy).
 has_genre(movie101415, drama).
 has_genre(movie101415, romance).
+has_3_genre(movie101423).
 has_genre(movie101423, action).
 has_genre(movie101423, animation).
 has_genre(movie101423, comedy).
+has_2_genre(movie101525).
 has_genre(movie101525, crime).
 has_genre(movie101525, drama).
+has_3_genre(movie101529).
 has_genre(movie101529, comedy).
 has_genre(movie101529, fantasy).
 has_genre(movie101529, thriller).
+has_1_genre(movie101531).
 has_genre(movie101531, drama).
+has_3_genre(movie101577).
 has_genre(movie101577, action).
 has_genre(movie101577, adventure).
 has_genre(movie101577, romance).
+has_2_genre(movie101612).
 has_genre(movie101612, comedy).
 has_genre(movie101612, romance).
+has_1_genre(movie101739).
 has_genre(movie101739, horror).
+has_2_genre(movie101741).
 has_genre(movie101741, crime).
 has_genre(movie101741, thriller).
+has_3_genre(movie101765).
 has_genre(movie101765, adventure).
 has_genre(movie101765, comedy).
 has_genre(movie101765, romance).
+has_4_genre(movie101864).
 has_genre(movie101864, action).
 has_genre(movie101864, adventure).
 has_genre(movie101864, sci-fi).
 has_genre(movie101864, imax).
+has_3_genre(movie101884).
 has_genre(movie101884, adventure).
 has_genre(movie101884, drama).
 has_genre(movie101884, thriller).
+has_1_genre(movie101895).
 has_genre(movie101895, drama).
+has_2_genre(movie101962).
 has_genre(movie101962, animation).
 has_genre(movie101962, fantasy).
+has_2_genre(movie101973).
 has_genre(movie101973, drama).
 has_genre(movie101973, thriller).
+has_1_genre(movie102007).
 has_genre(movie102007, animation).
+has_3_genre(movie102025).
 has_genre(movie102025, children).
 has_genre(movie102025, horror).
 has_genre(movie102025, sci-fi).
+has_3_genre(movie102033).
 has_genre(movie102033, action).
 has_genre(movie102033, comedy).
 has_genre(movie102033, crime).
+has_1_genre(movie102058).
 has_genre(movie102058, animation).
+has_2_genre(movie102066).
 has_genre(movie102066, horror).
 has_genre(movie102066, thriller).
+has_3_genre(movie102070).
 has_genre(movie102070, comedy).
 has_genre(movie102070, horror).
 has_genre(movie102070, sci-fi).
+has_3_genre(movie102084).
 has_genre(movie102084, action).
 has_genre(movie102084, animation).
 has_genre(movie102084, fantasy).
+has_3_genre(movie102088).
 has_genre(movie102088, action).
 has_genre(movie102088, drama).
 has_genre(movie102088, imax).
+has_2_genre(movie102123).
 has_genre(movie102123, action).
 has_genre(movie102123, comedy).
+has_4_genre(movie102125).
 has_genre(movie102125, action).
 has_genre(movie102125, sci-fi).
 has_genre(movie102125, thriller).
 has_genre(movie102125, imax).
+has_2_genre(movie102165).
 has_genre(movie102165, comedy).
 has_genre(movie102165, drama).
+has_3_genre(movie102194).
 has_genre(movie102194, adventure).
 has_genre(movie102194, crime).
 has_genre(movie102194, drama).
+has_1_genre(movie102217).
 has_genre(movie102217, comedy).
+has_2_genre(movie102278).
 has_genre(movie102278, crime).
 has_genre(movie102278, thriller).
+has_3_genre(movie102338).
 has_genre(movie102338, action).
 has_genre(movie102338, adventure).
 has_genre(movie102338, drama).
+has_2_genre(movie102378).
 has_genre(movie102378, comedy).
 has_genre(movie102378, drama).
+has_1_genre(movie102407).
 has_genre(movie102407, drama).
+has_4_genre(movie102445).
 has_genre(movie102445, action).
 has_genre(movie102445, adventure).
 has_genre(movie102445, sci-fi).
 has_genre(movie102445, imax).
+has_1_genre(movie102481).
 has_genre(movie102481, comedy).
+has_2_genre(movie102590).
 has_genre(movie102590, documentary).
 has_genre(movie102590, fantasy).
+has_1_genre(movie102602).
 has_genre(movie102602, comedy).
+has_2_genre(movie102666).
 has_genre(movie102666, adventure).
 has_genre(movie102666, comedy).
+has_2_genre(movie102684).
 has_genre(movie102684, drama).
 has_genre(movie102684, thriller).
+has_1_genre(movie102686).
 has_genre(movie102686, comedy).
+has_4_genre(movie102716).
 has_genre(movie102716, action).
 has_genre(movie102716, crime).
 has_genre(movie102716, thriller).
 has_genre(movie102716, imax).
+has_3_genre(movie102720).
 has_genre(movie102720, adventure).
 has_genre(movie102720, animation).
 has_genre(movie102720, fantasy).
+has_2_genre(movie102735).
 has_genre(movie102735, action).
 has_genre(movie102735, drama).
+has_1_genre(movie102742).
 has_genre(movie102742, documentary).
+has_1_genre(movie102747).
 has_genre(movie102747, comedy).
+has_2_genre(movie102749).
 has_genre(movie102749, action).
 has_genre(movie102749, crime).
+has_3_genre(movie102760).
 has_genre(movie102760, comedy).
 has_genre(movie102760, crime).
 has_genre(movie102760, drama).
+has_2_genre(movie102800).
 has_genre(movie102800, comedy).
 has_genre(movie102800, drama).
+has_2_genre(movie102802).
 has_genre(movie102802, horror).
 has_genre(movie102802, thriller).
+has_1_genre(movie102819).
 has_genre(movie102819, drama).
+has_1_genre(movie102823).
 has_genre(movie102823, documentary).
+has_1_genre(movie102852).
 has_genre(movie102852, documentary).
+has_4_genre(movie102880).
 has_genre(movie102880, action).
 has_genre(movie102880, adventure).
 has_genre(movie102880, sci-fi).
 has_genre(movie102880, imax).
+has_3_genre(movie102903).
 has_genre(movie102903, crime).
 has_genre(movie102903, mystery).
 has_genre(movie102903, thriller).
+has_2_genre(movie102984).
 has_genre(movie102984, horror).
 has_genre(movie102984, thriller).
+has_2_genre(movie102993).
 has_genre(movie102993, comedy).
 has_genre(movie102993, drama).
+has_3_genre(movie103027).
 has_genre(movie103027, comedy).
 has_genre(movie103027, drama).
 has_genre(movie103027, romance).
+has_5_genre(movie103042).
 has_genre(movie103042, action).
 has_genre(movie103042, adventure).
 has_genre(movie103042, fantasy).
 has_genre(movie103042, sci-fi).
 has_genre(movie103042, imax).
+has_1_genre(movie103048).
 has_genre(movie103048, comedy).
+has_3_genre(movie103075).
 has_genre(movie103075, crime).
 has_genre(movie103075, horror).
 has_genre(movie103075, thriller).
+has_2_genre(movie103085).
 has_genre(movie103085, comedy).
 has_genre(movie103085, fantasy).
+has_1_genre(movie103107).
 has_genre(movie103107, documentary).
+has_2_genre(movie103137).
 has_genre(movie103137, crime).
 has_genre(movie103137, drama).
+has_3_genre(movie103141).
 has_genre(movie103141, adventure).
 has_genre(movie103141, animation).
 has_genre(movie103141, comedy).
+has_1_genre(movie103171).
 has_genre(movie103171, comedy).
+has_3_genre(movie103210).
 has_genre(movie103210, action).
 has_genre(movie103210, adventure).
 has_genre(movie103210, animation).
+has_2_genre(movie103219).
 has_genre(movie103219, horror).
 has_genre(movie103219, thriller).
+has_2_genre(movie103221).
 has_genre(movie103221, comedy).
 has_genre(movie103221, romance).
+has_4_genre(movie103228).
 has_genre(movie103228, action).
 has_genre(movie103228, adventure).
 has_genre(movie103228, sci-fi).
 has_genre(movie103228, imax).
+has_3_genre(movie103233).
 has_genre(movie103233, action).
 has_genre(movie103233, adventure).
 has_genre(movie103233, animation).
+has_1_genre(movie103235).
 has_genre(movie103235, thriller).
+has_3_genre(movie103245).
 has_genre(movie103245, comedy).
 has_genre(movie103245, drama).
 has_genre(movie103245, romance).
+has_4_genre(movie103249).
 has_genre(movie103249, action).
 has_genre(movie103249, drama).
 has_genre(movie103249, horror).
 has_genre(movie103249, imax).
+has_4_genre(movie103253).
 has_genre(movie103253, action).
 has_genre(movie103253, drama).
 has_genre(movie103253, sci-fi).
 has_genre(movie103253, imax).
+has_4_genre(movie103335).
 has_genre(movie103335, animation).
 has_genre(movie103335, children).
 has_genre(movie103335, comedy).
 has_genre(movie103335, imax).
+has_4_genre(movie103339).
 has_genre(movie103339, action).
 has_genre(movie103339, drama).
 has_genre(movie103339, thriller).
 has_genre(movie103339, imax).
+has_3_genre(movie103341).
 has_genre(movie103341, action).
 has_genre(movie103341, comedy).
 has_genre(movie103341, sci-fi).
+has_3_genre(movie103366).
 has_genre(movie103366, action).
 has_genre(movie103366, crime).
 has_genre(movie103366, thriller).
+has_3_genre(movie103372).
 has_genre(movie103372, action).
 has_genre(movie103372, comedy).
 has_genre(movie103372, crime).
+has_4_genre(movie103384).
 has_genre(movie103384, action).
 has_genre(movie103384, adventure).
 has_genre(movie103384, western).
 has_genre(movie103384, imax).
+has_4_genre(movie103449).
 has_genre(movie103449, crime).
 has_genre(movie103449, drama).
 has_genre(movie103449, mystery).
 has_genre(movie103449, thriller).
+has_2_genre(movie103483).
 has_genre(movie103483, horror).
 has_genre(movie103483, thriller).
+has_2_genre(movie103502).
 has_genre(movie103502, comedy).
 has_genre(movie103502, romance).
+has_3_genre(movie103539).
 has_genre(movie103539, comedy).
 has_genre(movie103539, drama).
 has_genre(movie103539, romance).
+has_2_genre(movie103543).
 has_genre(movie103543, comedy).
 has_genre(movie103543, drama).
+has_1_genre(movie103596).
 has_genre(movie103596, sci-fi).
+has_2_genre(movie103602).
 has_genre(movie103602, comedy).
 has_genre(movie103602, documentary).
+has_3_genre(movie103606).
 has_genre(movie103606, comedy).
 has_genre(movie103606, drama).
 has_genre(movie103606, romance).
+has_1_genre(movie103609).
 has_genre(movie103609, comedy).
+has_1_genre(movie103624).
 has_genre(movie103624, drama).
+has_3_genre(movie103655).
 has_genre(movie103655, action).
 has_genre(movie103655, comedy).
 has_genre(movie103655, fantasy).
+has_4_genre(movie103685).
 has_genre(movie103685, drama).
 has_genre(movie103685, fantasy).
 has_genre(movie103685, thriller).
 has_genre(movie103685, war).
+has_2_genre(movie103688).
 has_genre(movie103688, horror).
 has_genre(movie103688, thriller).
+has_5_genre(movie103755).
 has_genre(movie103755, adventure).
 has_genre(movie103755, animation).
 has_genre(movie103755, children).
 has_genre(movie103755, comedy).
 has_genre(movie103755, fantasy).
+has_4_genre(movie103772).
 has_genre(movie103772, action).
 has_genre(movie103772, adventure).
 has_genre(movie103772, fantasy).
 has_genre(movie103772, sci-fi).
+has_3_genre(movie103801).
 has_genre(movie103801, comedy).
 has_genre(movie103801, drama).
 has_genre(movie103801, romance).
+has_4_genre(movie103810).
 has_genre(movie103810, action).
 has_genre(movie103810, comedy).
 has_genre(movie103810, crime).
 has_genre(movie103810, thriller).
+has_1_genre(movie103819).
 has_genre(movie103819, comedy).
+has_2_genre(movie103865).
 has_genre(movie103865, comedy).
 has_genre(movie103865, drama).
+has_3_genre(movie103883).
 has_genre(movie103883, action).
 has_genre(movie103883, comedy).
 has_genre(movie103883, crime).
+has_1_genre(movie103980).
 has_genre(movie103980, drama).
+has_2_genre(movie103984).
 has_genre(movie103984, comedy).
 has_genre(movie103984, drama).
+has_3_genre(movie104017).
 has_genre(movie104017, action).
 has_genre(movie104017, adventure).
 has_genre(movie104017, sci-fi).
+has_1_genre(movie104069).
 has_genre(movie104069, comedy).
+has_3_genre(movie104074).
 has_genre(movie104074, adventure).
 has_genre(movie104074, children).
 has_genre(movie104074, fantasy).
+has_3_genre(movie104076).
 has_genre(movie104076, animation).
 has_genre(movie104076, children).
 has_genre(movie104076, comedy).
+has_1_genre(movie104078).
 has_genre(movie104078, comedy).
+has_2_genre(movie104129).
 has_genre(movie104129, action).
 has_genre(movie104129, imax).
+has_4_genre(movie104141).
 has_genre(movie104141, action).
 has_genre(movie104141, animation).
 has_genre(movie104141, children).
 has_genre(movie104141, crime).
+has_2_genre(movie104211).
 has_genre(movie104211, comedy).
 has_genre(movie104211, crime).
+has_1_genre(movie104218).
 has_genre(movie104218, comedy).
+has_3_genre(movie104241).
 has_genre(movie104241, action).
 has_genre(movie104241, comedy).
 has_genre(movie104241, crime).
+has_4_genre(movie104243).
 has_genre(movie104243, action).
 has_genre(movie104243, sci-fi).
 has_genre(movie104243, thriller).
 has_genre(movie104243, imax).
+has_3_genre(movie104245).
 has_genre(movie104245, adventure).
 has_genre(movie104245, animation).
 has_genre(movie104245, comedy).
+has_1_genre(movie104272).
 has_genre(movie104272, documentary).
+has_3_genre(movie104283).
 has_genre(movie104283, animation).
 has_genre(movie104283, drama).
 has_genre(movie104283, romance).
+has_1_genre(movie104303).
 has_genre(movie104303, drama).
+has_1_genre(movie104337).
 has_genre(movie104337, drama).
+has_1_genre(movie104339).
 has_genre(movie104339, comedy).
+has_3_genre(movie104374).
 has_genre(movie104374, drama).
 has_genre(movie104374, fantasy).
 has_genre(movie104374, romance).
+has_3_genre(movie104419).
 has_genre(movie104419, action).
 has_genre(movie104419, animation).
 has_genre(movie104419, sci-fi).
+has_2_genre(movie104457).
 has_genre(movie104457, horror).
 has_genre(movie104457, thriller).
+has_1_genre(movie104644).
 has_genre(movie104644, comedy).
+has_2_genre(movie104760).
 has_genre(movie104760, action).
 has_genre(movie104760, crime).
+has_3_genre(movie104780).
 has_genre(movie104780, adventure).
 has_genre(movie104780, animation).
 has_genre(movie104780, sci-fi).
+has_2_genre(movie104837).
 has_genre(movie104837, action).
 has_genre(movie104837, crime).
+has_3_genre(movie104841).
 has_genre(movie104841, action).
 has_genre(movie104841, sci-fi).
 has_genre(movie104841, imax).
+has_3_genre(movie104863).
 has_genre(movie104863, comedy).
 has_genre(movie104863, drama).
 has_genre(movie104863, romance).
+has_4_genre(movie104875).
 has_genre(movie104875, adventure).
 has_genre(movie104875, comedy).
 has_genre(movie104875, musical).
 has_genre(movie104875, sci-fi).
+has_3_genre(movie104879).
 has_genre(movie104879, drama).
 has_genre(movie104879, mystery).
 has_genre(movie104879, thriller).
+has_2_genre(movie104906).
 has_genre(movie104906, comedy).
 has_genre(movie104906, romance).
+has_2_genre(movie104908).
 has_genre(movie104908, horror).
 has_genre(movie104908, thriller).
+has_2_genre(movie104913).
 has_genre(movie104913, action).
 has_genre(movie104913, drama).
+has_3_genre(movie104925).
 has_genre(movie104925, action).
 has_genre(movie104925, comedy).
 has_genre(movie104925, crime).
+has_1_genre(movie104944).
 has_genre(movie104944, drama).
+has_3_genre(movie105020).
 has_genre(movie105020, action).
 has_genre(movie105020, comedy).
 has_genre(movie105020, thriller).
+has_1_genre(movie105037).
 has_genre(movie105037, comedy).
+has_3_genre(movie105121).
 has_genre(movie105121, action).
 has_genre(movie105121, drama).
 has_genre(movie105121, war).
+has_2_genre(movie105197).
 has_genre(movie105197, adventure).
 has_genre(movie105197, drama).
+has_3_genre(movie105211).
 has_genre(movie105211, comedy).
 has_genre(movie105211, drama).
 has_genre(movie105211, romance).
+has_3_genre(movie105213).
 has_genre(movie105213, comedy).
 has_genre(movie105213, drama).
 has_genre(movie105213, romance).
+has_2_genre(movie105246).
 has_genre(movie105246, drama).
 has_genre(movie105246, fantasy).
+has_1_genre(movie105250).
 has_genre(movie105250, documentary).
+has_2_genre(movie105254).
 has_genre(movie105254, adventure).
 has_genre(movie105254, comedy).
+has_2_genre(movie105325).
 has_genre(movie105325, comedy).
 has_genre(movie105325, horror).
+has_3_genre(movie105351).
 has_genre(movie105351, crime).
 has_genre(movie105351, drama).
 has_genre(movie105351, thriller).
+has_2_genre(movie105355).
 has_genre(movie105355, drama).
 has_genre(movie105355, romance).
+has_4_genre(movie105468).
 has_genre(movie105468, animation).
 has_genre(movie105468, children).
 has_genre(movie105468, comedy).
 has_genre(movie105468, fantasy).
+has_4_genre(movie105504).
 has_genre(movie105504, adventure).
 has_genre(movie105504, drama).
 has_genre(movie105504, thriller).
 has_genre(movie105504, imax).
+has_4_genre(movie105540).
 has_genre(movie105540, animation).
 has_genre(movie105540, children).
 has_genre(movie105540, comedy).
 has_genre(movie105540, musical).
+has_3_genre(movie105585).
 has_genre(movie105585, action).
 has_genre(movie105585, crime).
 has_genre(movie105585, thriller).
+has_3_genre(movie105593).
 has_genre(movie105593, comedy).
 has_genre(movie105593, crime).
 has_genre(movie105593, drama).
+has_3_genre(movie105653).
 has_genre(movie105653, action).
 has_genre(movie105653, mystery).
 has_genre(movie105653, thriller).
+has_3_genre(movie105720).
 has_genre(movie105720, comedy).
 has_genre(movie105720, crime).
 has_genre(movie105720, drama).
+has_2_genre(movie105731).
 has_genre(movie105731, drama).
 has_genre(movie105731, horror).
+has_1_genre(movie105746).
 has_genre(movie105746, documentary).
+has_3_genre(movie105755).
 has_genre(movie105755, crime).
 has_genre(movie105755, drama).
 has_genre(movie105755, thriller).
+has_3_genre(movie105801).
 has_genre(movie105801, drama).
 has_genre(movie105801, fantasy).
 has_genre(movie105801, horror).
+has_3_genre(movie105835).
 has_genre(movie105835, comedy).
 has_genre(movie105835, drama).
 has_genre(movie105835, thriller).
+has_1_genre(movie105844).
 has_genre(movie105844, drama).
+has_3_genre(movie105954).
 has_genre(movie105954, action).
 has_genre(movie105954, adventure).
 has_genre(movie105954, drama).
+has_4_genre(movie106002).
 has_genre(movie106002, action).
 has_genre(movie106002, adventure).
 has_genre(movie106002, sci-fi).
 has_genre(movie106002, imax).
+has_1_genre(movie106062).
 has_genre(movie106062, comedy).
+has_4_genre(movie106072).
 has_genre(movie106072, action).
 has_genre(movie106072, adventure).
 has_genre(movie106072, fantasy).
 has_genre(movie106072, imax).
+has_1_genre(movie106100).
 has_genre(movie106100, drama).
+has_1_genre(movie106144).
 has_genre(movie106144, drama).
+has_3_genre(movie106330).
 has_genre(movie106330, comedy).
 has_genre(movie106330, drama).
 has_genre(movie106330, romance).
+has_2_genre(movie106438).
 has_genre(movie106438, comedy).
 has_genre(movie106438, drama).
+has_3_genre(movie106441).
 has_genre(movie106441, children).
 has_genre(movie106441, drama).
 has_genre(movie106441, war).
+has_4_genre(movie106487).
 has_genre(movie106487, action).
 has_genre(movie106487, adventure).
 has_genre(movie106487, sci-fi).
 has_genre(movie106487, imax).
+has_3_genre(movie106489).
 has_genre(movie106489, adventure).
 has_genre(movie106489, fantasy).
 has_genre(movie106489, imax).
+has_3_genre(movie106491).
 has_genre(movie106491, action).
 has_genre(movie106491, adventure).
 has_genre(movie106491, fantasy).
+has_1_genre(movie106540).
 has_genre(movie106540, comedy).
+has_3_genre(movie106542).
 has_genre(movie106542, action).
 has_genre(movie106542, comedy).
 has_genre(movie106542, romance).
+has_3_genre(movie106594).
 has_genre(movie106594, comedy).
 has_genre(movie106594, drama).
 has_genre(movie106594, romance).
+has_3_genre(movie106642).
 has_genre(movie106642, adventure).
 has_genre(movie106642, drama).
 has_genre(movie106642, sci-fi).
+has_3_genre(movie106648).
 has_genre(movie106648, crime).
 has_genre(movie106648, drama).
 has_genre(movie106648, horror).
+has_more_than_5_genre(movie106696).
 has_genre(movie106696, adventure).
 has_genre(movie106696, animation).
 has_genre(movie106696, comedy).
 has_genre(movie106696, fantasy).
 has_genre(movie106696, musical).
 has_genre(movie106696, romance).
+has_1_genre(movie106766).
 has_genre(movie106766, drama).
+has_3_genre(movie106782).
 has_genre(movie106782, comedy).
 has_genre(movie106782, crime).
 has_genre(movie106782, drama).
+has_3_genre(movie106785).
 has_genre(movie106785, action).
 has_genre(movie106785, crime).
 has_genre(movie106785, thriller).
+has_1_genre(movie106839).
 has_genre(movie106839, drama).
+has_3_genre(movie106873).
 has_genre(movie106873, action).
 has_genre(movie106873, animation).
 has_genre(movie106873, drama).
+has_2_genre(movie106883).
 has_genre(movie106883, comedy).
 has_genre(movie106883, drama).
+has_1_genre(movie106889).
 has_genre(movie106889, documentary).
+has_2_genre(movie106916).
 has_genre(movie106916, crime).
 has_genre(movie106916, drama).
+has_3_genre(movie106918).
 has_genre(movie106918, adventure).
 has_genre(movie106918, comedy).
 has_genre(movie106918, drama).
+has_3_genre(movie106920).
 has_genre(movie106920, drama).
 has_genre(movie106920, romance).
 has_genre(movie106920, sci-fi).
+has_3_genre(movie106927).
 has_genre(movie106927, action).
 has_genre(movie106927, comedy).
 has_genre(movie106927, sci-fi).
+has_2_genre(movie107013).
 has_genre(movie107013, drama).
 has_genre(movie107013, fantasy).
+has_4_genre(movie107069).
 has_genre(movie107069, action).
 has_genre(movie107069, drama).
 has_genre(movie107069, thriller).
 has_genre(movie107069, war).
+has_2_genre(movie107141).
 has_genre(movie107141, comedy).
 has_genre(movie107141, drama).
+has_2_genre(movie107159).
 has_genre(movie107159, action).
 has_genre(movie107159, drama).
+has_3_genre(movie107314).
 has_genre(movie107314, action).
 has_genre(movie107314, drama).
 has_genre(movie107314, mystery).
+has_2_genre(movie107338).
 has_genre(movie107338, comedy).
 has_genre(movie107338, crime).
+has_1_genre(movie107348).
 has_genre(movie107348, comedy).
+has_3_genre(movie107406).
 has_genre(movie107406, action).
 has_genre(movie107406, drama).
 has_genre(movie107406, sci-fi).
+has_3_genre(movie107408).
 has_genre(movie107408, comedy).
 has_genre(movie107408, drama).
 has_genre(movie107408, war).
+has_3_genre(movie107410).
 has_genre(movie107410, adventure).
 has_genre(movie107410, drama).
 has_genre(movie107410, sci-fi).
+has_2_genre(movie107412).
 has_genre(movie107412, comedy).
 has_genre(movie107412, romance).
+has_3_genre(movie107436).
 has_genre(movie107436, horror).
 has_genre(movie107436, mystery).
 has_genre(movie107436, thriller).
+has_2_genre(movie107447).
 has_genre(movie107447, comedy).
 has_genre(movie107447, crime).
+has_2_genre(movie107449).
 has_genre(movie107449, children).
 has_genre(movie107449, comedy).
+has_3_genre(movie107462).
 has_genre(movie107462, action).
 has_genre(movie107462, crime).
 has_genre(movie107462, thriller).
+has_1_genre(movie107565).
 has_genre(movie107565, comedy).
+has_1_genre(movie107630).
 has_genre(movie107630, comedy).
+has_1_genre(movie107702).
 has_genre(movie107702, comedy).
+has_3_genre(movie107723).
 has_genre(movie107723, action).
 has_genre(movie107723, adventure).
 has_genre(movie107723, fantasy).
+has_3_genre(movie107771).
 has_genre(movie107771, drama).
 has_genre(movie107771, horror).
 has_genre(movie107771, romance).
+has_1_genre(movie107780).
 has_genre(movie107780, musical).
+has_2_genre(movie107846).
 has_genre(movie107846, action).
 has_genre(movie107846, adventure).
+has_1_genre(movie107945).
 has_genre(movie107945, thriller).
+has_2_genre(movie107951).
 has_genre(movie107951, comedy).
 has_genre(movie107951, crime).
+has_4_genre(movie107953).
 has_genre(movie107953, action).
 has_genre(movie107953, animation).
 has_genre(movie107953, fantasy).
 has_genre(movie107953, imax).
+has_2_genre(movie107962).
 has_genre(movie107962, action).
 has_genre(movie107962, thriller).
+has_4_genre(movie107997).
 has_genre(movie107997, drama).
 has_genre(movie107997, horror).
 has_genre(movie107997, mystery).
 has_genre(movie107997, thriller).
+has_2_genre(movie107999).
 has_genre(movie107999, animation).
 has_genre(movie107999, children).
+has_2_genre(movie108078).
 has_genre(movie108078, comedy).
 has_genre(movie108078, romance).
+has_4_genre(movie108090).
 has_genre(movie108090, action).
 has_genre(movie108090, adventure).
 has_genre(movie108090, animation).
 has_genre(movie108090, children).
+has_2_genre(movie108156).
 has_genre(movie108156, action).
 has_genre(movie108156, comedy).
+has_4_genre(movie108188).
 has_genre(movie108188, action).
 has_genre(movie108188, drama).
 has_genre(movie108188, thriller).
 has_genre(movie108188, imax).
+has_4_genre(movie108190).
 has_genre(movie108190, adventure).
 has_genre(movie108190, romance).
 has_genre(movie108190, sci-fi).
 has_genre(movie108190, imax).
+has_1_genre(movie108192).
 has_genre(movie108192, drama).
+has_more_than_5_genre(movie108540).
 has_genre(movie108540, adventure).
 has_genre(movie108540, animation).
 has_genre(movie108540, children).
 has_genre(movie108540, comedy).
 has_genre(movie108540, drama).
 has_genre(movie108540, romance).
+has_1_genre(movie108601).
 has_genre(movie108601, drama).
+has_4_genre(movie108689).
 has_genre(movie108689, action).
 has_genre(movie108689, fantasy).
 has_genre(movie108689, sci-fi).
 has_genre(movie108689, imax).
+has_2_genre(movie108715).
 has_genre(movie108715, comedy).
 has_genre(movie108715, drama).
+has_1_genre(movie108727).
 has_genre(movie108727, drama).
+has_2_genre(movie108729).
 has_genre(movie108729, mystery).
 has_genre(movie108729, thriller).
+has_4_genre(movie108795).
 has_genre(movie108795, action).
 has_genre(movie108795, adventure).
 has_genre(movie108795, animation).
 has_genre(movie108795, fantasy).
+has_3_genre(movie108928).
 has_genre(movie108928, action).
 has_genre(movie108928, drama).
 has_genre(movie108928, war).
+has_more_than_5_genre(movie108932).
 has_genre(movie108932, action).
 has_genre(movie108932, adventure).
 has_genre(movie108932, animation).
 has_genre(movie108932, children).
 has_genre(movie108932, comedy).
 has_genre(movie108932, fantasy).
+has_4_genre(movie108945).
 has_genre(movie108945, action).
 has_genre(movie108945, crime).
 has_genre(movie108945, sci-fi).
 has_genre(movie108945, imax).
+has_1_genre(movie108949).
 has_genre(movie108949, crime).
+has_2_genre(movie108981).
 has_genre(movie108981, drama).
 has_genre(movie108981, mystery).
+has_3_genre(movie109042).
 has_genre(movie109042, adventure).
 has_genre(movie109042, comedy).
 has_genre(movie109042, fantasy).
+has_1_genre(movie109161).
 has_genre(movie109161, drama).
+has_1_genre(movie109183).
 has_genre(movie109183, comedy).
+has_3_genre(movie109187).
 has_genre(movie109187, drama).
 has_genre(movie109187, fantasy).
 has_genre(movie109187, sci-fi).
+has_3_genre(movie109191).
 has_genre(movie109191, drama).
 has_genre(movie109191, fantasy).
 has_genre(movie109191, mystery).
+has_3_genre(movie109241).
 has_genre(movie109241, action).
 has_genre(movie109241, comedy).
 has_genre(movie109241, crime).
+has_1_genre(movie109282).
 has_genre(movie109282, documentary).
+has_3_genre(movie109295).
 has_genre(movie109295, crime).
 has_genre(movie109295, drama).
 has_genre(movie109295, thriller).
+has_1_genre(movie109313).
 has_genre(movie109313, comedy).
+has_1_genre(movie109317).
 has_genre(movie109317, comedy).
+has_2_genre(movie109372).
 has_genre(movie109372, comedy).
 has_genre(movie109372, romance).
+has_2_genre(movie109374).
 has_genre(movie109374, comedy).
 has_genre(movie109374, drama).
+has_4_genre(movie109383).
 has_genre(movie109383, animation).
 has_genre(movie109383, comedy).
 has_genre(movie109383, drama).
 has_genre(movie109383, romance).
+has_1_genre(movie109416).
 has_genre(movie109416, comedy).
+has_2_genre(movie109483).
 has_genre(movie109483, comedy).
 has_genre(movie109483, romance).
+has_2_genre(movie109487).
 has_genre(movie109487, sci-fi).
 has_genre(movie109487, imax).
+has_3_genre(movie109569).
 has_genre(movie109569, action).
 has_genre(movie109569, crime).
 has_genre(movie109569, drama).
+has_1_genre(movie109576).
 has_genre(movie109576, comedy).
+has_3_genre(movie109578).
 has_genre(movie109578, action).
 has_genre(movie109578, mystery).
 has_genre(movie109578, thriller).
+has_2_genre(movie109596).
 has_genre(movie109596, animation).
 has_genre(movie109596, drama).
+has_2_genre(movie109633).
 has_genre(movie109633, animation).
 has_genre(movie109633, romance).
+has_4_genre(movie109673).
 has_genre(movie109673, action).
 has_genre(movie109673, drama).
 has_genre(movie109673, war).
 has_genre(movie109673, imax).
+has_1_genre(movie109687).
 has_genre(movie109687, documentary).
+has_3_genre(movie109723).
 has_genre(movie109723, crime).
 has_genre(movie109723, drama).
 has_genre(movie109723, thriller).
+has_3_genre(movie109846).
 has_genre(movie109846, adventure).
 has_genre(movie109846, animation).
 has_genre(movie109846, comedy).
+has_3_genre(movie109848).
 has_genre(movie109848, horror).
 has_genre(movie109848, sci-fi).
 has_genre(movie109848, thriller).
+has_4_genre(movie109850).
 has_genre(movie109850, action).
 has_genre(movie109850, crime).
 has_genre(movie109850, drama).
 has_genre(movie109850, imax).
+has_3_genre(movie109853).
 has_genre(movie109853, comedy).
 has_genre(movie109853, drama).
 has_genre(movie109853, romance).
+has_3_genre(movie109864).
 has_genre(movie109864, comedy).
 has_genre(movie109864, crime).
 has_genre(movie109864, drama).
+has_1_genre(movie109895).
 has_genre(movie109895, comedy).
+has_1_genre(movie109897).
 has_genre(movie109897, drama).
+has_2_genre(movie109941).
 has_genre(movie109941, animation).
 has_genre(movie109941, comedy).
+has_2_genre(movie109968).
 has_genre(movie109968, action).
 has_genre(movie109968, drama).
+has_1_genre(movie109971).
 has_genre(movie109971, comedy).
+has_4_genre(movie110102).
 has_genre(movie110102, action).
 has_genre(movie110102, adventure).
 has_genre(movie110102, sci-fi).
 has_genre(movie110102, imax).
+has_3_genre(movie110127).
 has_genre(movie110127, adventure).
 has_genre(movie110127, drama).
 has_genre(movie110127, imax).
+has_4_genre(movie110130).
 has_genre(movie110130, adventure).
 has_genre(movie110130, animation).
 has_genre(movie110130, children).
 has_genre(movie110130, comedy).
+has_3_genre(movie110281).
 has_genre(movie110281, comedy).
 has_genre(movie110281, drama).
 has_genre(movie110281, romance).
+has_2_genre(movie110286).
 has_genre(movie110286, horror).
 has_genre(movie110286, thriller).
+has_3_genre(movie110297).
 has_genre(movie110297, adventure).
 has_genre(movie110297, comedy).
 has_genre(movie110297, crime).
+has_1_genre(movie110330).
 has_genre(movie110330, drama).
+has_1_genre(movie110350).
 has_genre(movie110350, documentary).
+has_1_genre(movie110387).
 has_genre(movie110387, documentary).
+has_3_genre(movie110501).
 has_genre(movie110501, action).
 has_genre(movie110501, crime).
 has_genre(movie110501, thriller).
+has_2_genre(movie110541).
 has_genre(movie110541, action).
 has_genre(movie110541, comedy).
+has_3_genre(movie110553).
 has_genre(movie110553, action).
 has_genre(movie110553, sci-fi).
 has_genre(movie110553, imax).
+has_2_genre(movie110586).
 has_genre(movie110586, comedy).
 has_genre(movie110586, drama).
+has_1_genre(movie110591).
 has_genre(movie110591, horror).
+has_1_genre(movie110603).
 has_genre(movie110603, drama).
+has_2_genre(movie110611).
 has_genre(movie110611, drama).
 has_genre(movie110611, thriller).
+has_4_genre(movie110655).
 has_genre(movie110655, adventure).
 has_genre(movie110655, animation).
 has_genre(movie110655, children).
 has_genre(movie110655, comedy).
+has_2_genre(movie110669).
 has_genre(movie110669, comedy).
 has_genre(movie110669, documentary).
+has_1_genre(movie110718).
 has_genre(movie110718, comedy).
+has_3_genre(movie110730).
 has_genre(movie110730, drama).
 has_genre(movie110730, sci-fi).
 has_genre(movie110730, imax).
+has_2_genre(movie110746).
 has_genre(movie110746, comedy).
 has_genre(movie110746, horror).
+has_2_genre(movie110771).
 has_genre(movie110771, comedy).
 has_genre(movie110771, romance).
+has_2_genre(movie110773).
 has_genre(movie110773, comedy).
 has_genre(movie110773, horror).
+has_5_genre(movie110781).
 has_genre(movie110781, action).
 has_genre(movie110781, animation).
 has_genre(movie110781, children).
 has_genre(movie110781, comedy).
 has_genre(movie110781, musical).
+has_3_genre(movie110826).
 has_genre(movie110826, action).
 has_genre(movie110826, crime).
 has_genre(movie110826, drama).
+has_1_genre(movie110882).
 has_genre(movie110882, drama).
+has_1_genre(movie111113).
 has_genre(movie111113, comedy).
+has_5_genre(movie111146).
 has_genre(movie111146, action).
 has_genre(movie111146, adventure).
 has_genre(movie111146, animation).
 has_genre(movie111146, children).
 has_genre(movie111146, comedy).
+has_1_genre(movie111320).
 has_genre(movie111320, comedy).
+has_2_genre(movie111360).
 has_genre(movie111360, action).
 has_genre(movie111360, sci-fi).
+has_3_genre(movie111362).
 has_genre(movie111362, action).
 has_genre(movie111362, adventure).
 has_genre(movie111362, sci-fi).
+has_4_genre(movie111364).
 has_genre(movie111364, action).
 has_genre(movie111364, adventure).
 has_genre(movie111364, sci-fi).
 has_genre(movie111364, imax).
+has_1_genre(movie111375).
 has_genre(movie111375, comedy).
+has_1_genre(movie111384).
 has_genre(movie111384, thriller).
+has_1_genre(movie111443).
 has_genre(movie111443, comedy).
+has_3_genre(movie111551).
 has_genre(movie111551, horror).
 has_genre(movie111551, sci-fi).
 has_genre(movie111551, thriller).
+has_1_genre(movie111617).
 has_genre(movie111617, comedy).
+has_2_genre(movie111622).
 has_genre(movie111622, comedy).
 has_genre(movie111622, romance).
+has_4_genre(movie111659).
 has_genre(movie111659, action).
 has_genre(movie111659, adventure).
 has_genre(movie111659, children).
 has_genre(movie111659, imax).
+has_3_genre(movie111663).
 has_genre(movie111663, action).
 has_genre(movie111663, comedy).
 has_genre(movie111663, horror).
+has_2_genre(movie111680).
 has_genre(movie111680, comedy).
 has_genre(movie111680, romance).
+has_2_genre(movie111732).
 has_genre(movie111732, drama).
 has_genre(movie111732, fantasy).
+has_2_genre(movie111743).
 has_genre(movie111743, comedy).
 has_genre(movie111743, western).
+has_3_genre(movie111759).
 has_genre(movie111759, action).
 has_genre(movie111759, sci-fi).
 has_genre(movie111759, imax).
+has_3_genre(movie111781).
 has_genre(movie111781, action).
 has_genre(movie111781, adventure).
 has_genre(movie111781, thriller).
+has_3_genre(movie111785).
 has_genre(movie111785, action).
 has_genre(movie111785, adventure).
 has_genre(movie111785, fantasy).
+has_2_genre(movie111795).
 has_genre(movie111795, comedy).
 has_genre(movie111795, drama).
+has_1_genre(movie111800).
 has_genre(movie111800, comedy).
+has_1_genre(movie111817).
 has_genre(movie111817, drama).
+has_2_genre(movie111844).
 has_genre(movie111844, action).
 has_genre(movie111844, drama).
+has_1_genre(movie111913).
 has_genre(movie111913, drama).
+has_2_genre(movie111921).
 has_genre(movie111921, drama).
 has_genre(movie111921, romance).
+has_3_genre(movie112006).
 has_genre(movie112006, action).
 has_genre(movie112006, animation).
 has_genre(movie112006, children).
+has_1_genre(movie112070).
 has_genre(movie112070, drama).
+has_3_genre(movie112138).
 has_genre(movie112138, action).
 has_genre(movie112138, comedy).
 has_genre(movie112138, crime).
+has_3_genre(movie112171).
 has_genre(movie112171, action).
 has_genre(movie112171, crime).
 has_genre(movie112171, thriller).
+has_3_genre(movie112175).
 has_genre(movie112175, action).
 has_genre(movie112175, adventure).
 has_genre(movie112175, animation).
+has_2_genre(movie112183).
 has_genre(movie112183, comedy).
 has_genre(movie112183, drama).
+has_1_genre(movie112290).
 has_genre(movie112290, drama).
+has_2_genre(movie112303).
 has_genre(movie112303, comedy).
 has_genre(movie112303, romance).
+has_2_genre(movie112316).
 has_genre(movie112316, drama).
 has_genre(movie112316, musical).
+has_2_genre(movie112326).
 has_genre(movie112326, action).
 has_genre(movie112326, sci-fi).
+has_1_genre(movie112334).
 has_genre(movie112334, documentary).
+has_3_genre(movie112370).
 has_genre(movie112370, action).
 has_genre(movie112370, adventure).
 has_genre(movie112370, sci-fi).
+has_3_genre(movie112421).
 has_genre(movie112421, comedy).
 has_genre(movie112421, drama).
 has_genre(movie112421, mystery).
+has_2_genre(movie112450).
 has_genre(movie112450, comedy).
 has_genre(movie112450, romance).
+has_1_genre(movie112454).
 has_genre(movie112454, drama).
+has_3_genre(movie112460).
 has_genre(movie112460, adventure).
 has_genre(movie112460, animation).
 has_genre(movie112460, comedy).
+has_1_genre(movie112497).
 has_genre(movie112497, comedy).
+has_4_genre(movie112512).
 has_genre(movie112512, animation).
 has_genre(movie112512, drama).
 has_genre(movie112512, fantasy).
 has_genre(movie112512, mystery).
+has_3_genre(movie112515).
 has_genre(movie112515, drama).
 has_genre(movie112515, horror).
 has_genre(movie112515, thriller).
+has_1_genre(movie112552).
 has_genre(movie112552, drama).
+has_2_genre(movie112556).
 has_genre(movie112556, drama).
 has_genre(movie112556, thriller).
+has_2_genre(movie112580).
 has_genre(movie112580, comedy).
 has_genre(movie112580, drama).
+has_1_genre(movie112623).
 has_genre(movie112623, sci-fi).
+has_3_genre(movie112727).
 has_genre(movie112727, crime).
 has_genre(movie112727, horror).
 has_genre(movie112727, thriller).
+has_3_genre(movie112749).
 has_genre(movie112749, comedy).
 has_genre(movie112749, drama).
 has_genre(movie112749, romance).
+has_1_genre(movie112788).
 has_genre(movie112788, comedy).
+has_2_genre(movie112804).
 has_genre(movie112804, drama).
 has_genre(movie112804, sci-fi).
+has_3_genre(movie112818).
 has_genre(movie112818, action).
 has_genre(movie112818, horror).
 has_genre(movie112818, thriller).
+has_3_genre(movie112852).
 has_genre(movie112852, action).
 has_genre(movie112852, adventure).
 has_genre(movie112852, sci-fi).
+has_2_genre(movie112868).
 has_genre(movie112868, sci-fi).
 has_genre(movie112868, thriller).
+has_2_genre(movie112897).
 has_genre(movie112897, action).
 has_genre(movie112897, adventure).
+has_2_genre(movie112911).
 has_genre(movie112911, action).
 has_genre(movie112911, adventure).
+has_1_genre(movie112940).
 has_genre(movie112940, thriller).
+has_3_genre(movie113159).
 has_genre(movie113159, comedy).
 has_genre(movie113159, horror).
 has_genre(movie113159, romance).
+has_1_genre(movie113186).
 has_genre(movie113186, thriller).
+has_2_genre(movie113207).
 has_genre(movie113207, drama).
 has_genre(movie113207, musical).
+has_3_genre(movie113225).
 has_genre(movie113225, comedy).
 has_genre(movie113225, drama).
 has_genre(movie113225, romance).
+has_3_genre(movie113252).
 has_genre(movie113252, comedy).
 has_genre(movie113252, horror).
 has_genre(movie113252, thriller).
+has_2_genre(movie113275).
 has_genre(movie113275, comedy).
 has_genre(movie113275, drama).
+has_4_genre(movie113278).
 has_genre(movie113278, action).
 has_genre(movie113278, animation).
 has_genre(movie113278, crime).
 has_genre(movie113278, thriller).
+has_1_genre(movie113280).
 has_genre(movie113280, drama).
+has_2_genre(movie113313).
 has_genre(movie113313, horror).
 has_genre(movie113313, thriller).
+has_3_genre(movie113345).
 has_genre(movie113345, action).
 has_genre(movie113345, adventure).
 has_genre(movie113345, sci-fi).
+has_3_genre(movie113348).
 has_genre(movie113348, action).
 has_genre(movie113348, adventure).
 has_genre(movie113348, comedy).
+has_3_genre(movie113350).
 has_genre(movie113350, drama).
 has_genre(movie113350, mystery).
 has_genre(movie113350, sci-fi).
+has_2_genre(movie113374).
 has_genre(movie113374, animation).
 has_genre(movie113374, comedy).
+has_2_genre(movie113378).
 has_genre(movie113378, drama).
 has_genre(movie113378, sci-fi).
+has_2_genre(movie113394).
 has_genre(movie113394, comedy).
 has_genre(movie113394, drama).
+has_3_genre(movie113416).
 has_genre(movie113416, action).
 has_genre(movie113416, crime).
 has_genre(movie113416, drama).
+has_2_genre(movie113453).
 has_genre(movie113453, comedy).
 has_genre(movie113453, crime).
+has_1_genre(movie113532).
 has_genre(movie113532, comedy).
+has_2_genre(movie113565).
 has_genre(movie113565, horror).
 has_genre(movie113565, thriller).
+has_3_genre(movie113573).
 has_genre(movie113573, action).
 has_genre(movie113573, crime).
 has_genre(movie113573, thriller).
+has_1_genre(movie113604).
 has_genre(movie113604, drama).
+has_1_genre(movie113705).
 has_genre(movie113705, drama).
+has_4_genre(movie113741).
 has_genre(movie113741, drama).
 has_genre(movie113741, mystery).
 has_genre(movie113741, sci-fi).
 has_genre(movie113741, thriller).
+has_2_genre(movie113780).
 has_genre(movie113780, horror).
 has_genre(movie113780, thriller).
+has_3_genre(movie113829).
 has_genre(movie113829, comedy).
 has_genre(movie113829, drama).
 has_genre(movie113829, romance).
+has_3_genre(movie113849).
 has_genre(movie113849, crime).
 has_genre(movie113849, drama).
 has_genre(movie113849, thriller).
+has_1_genre(movie113862).
 has_genre(movie113862, thriller).
+has_2_genre(movie114028).
 has_genre(movie114028, comedy).
 has_genre(movie114028, drama).
+has_1_genre(movie114044).
 has_genre(movie114044, horror).
+has_3_genre(movie114060).
 has_genre(movie114060, crime).
 has_genre(movie114060, drama).
 has_genre(movie114060, thriller).
+has_3_genre(movie114066).
 has_genre(movie114066, documentary).
 has_genre(movie114066, drama).
 has_genre(movie114066, musical).
+has_1_genre(movie114074).
 has_genre(movie114074, drama).
+has_1_genre(movie114126).
 has_genre(movie114126, documentary).
+has_3_genre(movie114180).
 has_genre(movie114180, action).
 has_genre(movie114180, mystery).
 has_genre(movie114180, sci-fi).
+has_1_genre(movie114184).
 has_genre(movie114184, drama).
+has_4_genre(movie114246).
 has_genre(movie114246, action).
 has_genre(movie114246, crime).
 has_genre(movie114246, mystery).
 has_genre(movie114246, thriller).
+has_2_genre(movie114265).
 has_genre(movie114265, comedy).
 has_genre(movie114265, romance).
+has_1_genre(movie114335).
+has_1_genre(movie114396).
 has_genre(movie114396, drama).
+has_1_genre(movie114494).
 has_genre(movie114494, thriller).
+has_3_genre(movie114554).
 has_genre(movie114554, animation).
 has_genre(movie114554, drama).
 has_genre(movie114554, fantasy).
+has_2_genre(movie114601).
 has_genre(movie114601, comedy).
 has_genre(movie114601, drama).
+has_3_genre(movie114627).
 has_genre(movie114627, animation).
 has_genre(movie114627, drama).
 has_genre(movie114627, fantasy).
+has_2_genre(movie114662).
 has_genre(movie114662, action).
 has_genre(movie114662, war).
+has_3_genre(movie114670).
 has_genre(movie114670, comedy).
 has_genre(movie114670, drama).
 has_genre(movie114670, horror).
+has_3_genre(movie114678).
 has_genre(movie114678, adventure).
 has_genre(movie114678, comedy).
 has_genre(movie114678, drama).
+has_2_genre(movie114707).
 has_genre(movie114707, horror).
 has_genre(movie114707, mystery).
+has_1_genre(movie114713).
 has_genre(movie114713, horror).
+has_2_genre(movie114762).
 has_genre(movie114762, comedy).
 has_genre(movie114762, romance).
+has_3_genre(movie114795).
 has_genre(movie114795, action).
 has_genre(movie114795, drama).
 has_genre(movie114795, fantasy).
+has_3_genre(movie114818).
 has_genre(movie114818, action).
 has_genre(movie114818, comedy).
 has_genre(movie114818, crime).
+has_2_genre(movie114847).
 has_genre(movie114847, sci-fi).
 has_genre(movie114847, thriller).
+has_3_genre(movie114925).
 has_genre(movie114925, crime).
 has_genre(movie114925, drama).
 has_genre(movie114925, thriller).
+has_4_genre(movie114935).
 has_genre(movie114935, action).
 has_genre(movie114935, mystery).
 has_genre(movie114935, sci-fi).
 has_genre(movie114935, thriller).
+has_2_genre(movie115065).
 has_genre(movie115065, adventure).
 has_genre(movie115065, animation).
+has_4_genre(movie115111).
 has_genre(movie115111, action).
 has_genre(movie115111, animation).
 has_genre(movie115111, comedy).
 has_genre(movie115111, horror).
+has_2_genre(movie115122).
 has_genre(movie115122, comedy).
 has_genre(movie115122, horror).
+has_2_genre(movie115149).
 has_genre(movie115149, action).
 has_genre(movie115149, thriller).
+has_2_genre(movie115151).
 has_genre(movie115151, action).
 has_genre(movie115151, crime).
+has_1_genre(movie115170).
 has_genre(movie115170, drama).
+has_1_genre(movie115203).
 has_genre(movie115203, documentary).
+has_3_genre(movie115210).
 has_genre(movie115210, action).
 has_genre(movie115210, drama).
 has_genre(movie115210, war).
+has_2_genre(movie115216).
 has_genre(movie115216, drama).
 has_genre(movie115216, western).
+has_1_genre(movie115231).
 has_genre(movie115231, comedy).
+has_2_genre(movie115502).
 has_genre(movie115502, comedy).
 has_genre(movie115502, romance).
+has_3_genre(movie115569).
 has_genre(movie115569, crime).
 has_genre(movie115569, drama).
 has_genre(movie115569, thriller).
+has_3_genre(movie115617).
 has_genre(movie115617, action).
 has_genre(movie115617, animation).
 has_genre(movie115617, comedy).
+has_3_genre(movie115664).
 has_genre(movie115664, adventure).
 has_genre(movie115664, animation).
 has_genre(movie115664, romance).
+has_2_genre(movie115667).
 has_genre(movie115667, comedy).
 has_genre(movie115667, romance).
+has_4_genre(movie115680).
 has_genre(movie115680, crime).
 has_genre(movie115680, drama).
 has_genre(movie115680, sci-fi).
 has_genre(movie115680, thriller).
+has_3_genre(movie115713).
 has_genre(movie115713, drama).
 has_genre(movie115713, sci-fi).
 has_genre(movie115713, thriller).
+has_2_genre(movie115727).
 has_genre(movie115727, action).
 has_genre(movie115727, adventure).
+has_2_genre(movie115819).
 has_genre(movie115819, animation).
 has_genre(movie115819, comedy).
+has_3_genre(movie115828).
 has_genre(movie115828, adventure).
 has_genre(movie115828, drama).
 has_genre(movie115828, romance).
+has_2_genre(movie115877).
 has_genre(movie115877, animation).
 has_genre(movie115877, comedy).
+has_2_genre(movie115969).
 has_genre(movie115969, drama).
 has_genre(movie115969, war).
+has_2_genre(movie116044).
 has_genre(movie116044, comedy).
 has_genre(movie116044, romance).
+has_1_genre(movie116138).
 has_genre(movie116138, drama).
+has_1_genre(movie116169).
 has_genre(movie116169, action).
+has_3_genre(movie116207).
 has_genre(movie116207, crime).
 has_genre(movie116207, drama).
 has_genre(movie116207, thriller).
+has_1_genre(movie116411).
 has_genre(movie116411, drama).
+has_2_genre(movie116413).
 has_genre(movie116413, comedy).
 has_genre(movie116413, romance).
+has_3_genre(movie116419).
 has_genre(movie116419, action).
 has_genre(movie116419, comedy).
 has_genre(movie116419, crime).
+has_2_genre(movie116505).
 has_genre(movie116505, action).
 has_genre(movie116505, comedy).
+has_4_genre(movie116529).
 has_genre(movie116529, action).
 has_genre(movie116529, drama).
 has_genre(movie116529, war).
 has_genre(movie116529, imax).
+has_3_genre(movie116668).
 has_genre(movie116668, action).
 has_genre(movie116668, comedy).
 has_genre(movie116668, horror).
+has_2_genre(movie116718).
 has_genre(movie116718, comedy).
 has_genre(movie116718, musical).
+has_3_genre(movie116724).
 has_genre(movie116724, comedy).
 has_genre(movie116724, drama).
 has_genre(movie116724, romance).
+has_3_genre(movie116738).
 has_genre(movie116738, adventure).
 has_genre(movie116738, comedy).
 has_genre(movie116738, horror).
+has_3_genre(movie116797).
 has_genre(movie116797, drama).
 has_genre(movie116797, thriller).
 has_genre(movie116797, war).
+has_5_genre(movie116799).
 has_genre(movie116799, comedy).
 has_genre(movie116799, crime).
 has_genre(movie116799, drama).
 has_genre(movie116799, mystery).
 has_genre(movie116799, romance).
+has_2_genre(movie116817).
 has_genre(movie116817, comedy).
 has_genre(movie116817, drama).
+has_3_genre(movie116823).
 has_genre(movie116823, adventure).
 has_genre(movie116823, sci-fi).
 has_genre(movie116823, thriller).
+has_2_genre(movie116849).
 has_genre(movie116849, comedy).
 has_genre(movie116849, romance).
+has_3_genre(movie116887).
 has_genre(movie116887, action).
 has_genre(movie116887, adventure).
 has_genre(movie116887, drama).
+has_3_genre(movie116897).
 has_genre(movie116897, comedy).
 has_genre(movie116897, drama).
 has_genre(movie116897, thriller).
+has_5_genre(movie116941).
 has_genre(movie116941, animation).
 has_genre(movie116941, children).
 has_genre(movie116941, comedy).
 has_genre(movie116941, musical).
 has_genre(movie116941, sci-fi).
+has_1_genre(movie116963).
 has_genre(movie116963, comedy).
+has_1_genre(movie116977).
 has_genre(movie116977, comedy).
+has_2_genre(movie116985).
 has_genre(movie116985, comedy).
 has_genre(movie116985, drama).
+has_1_genre(movie117107).
 has_genre(movie117107, drama).
+has_1_genre(movie117109).
 has_genre(movie117109, comedy).
+has_3_genre(movie117133).
 has_genre(movie117133, action).
 has_genre(movie117133, drama).
 has_genre(movie117133, thriller).
+has_2_genre(movie117176).
 has_genre(movie117176, drama).
 has_genre(movie117176, romance).
+has_2_genre(movie117192).
 has_genre(movie117192, adventure).
 has_genre(movie117192, drama).
+has_2_genre(movie117364).
 has_genre(movie117364, documentary).
 has_genre(movie117364, war).
+has_2_genre(movie117368).
 has_genre(movie117368, animation).
 has_genre(movie117368, comedy).
+has_3_genre(movie117444).
 has_genre(movie117444, animation).
 has_genre(movie117444, children).
 has_genre(movie117444, fantasy).
+has_3_genre(movie117466).
 has_genre(movie117466, action).
 has_genre(movie117466, adventure).
 has_genre(movie117466, drama).
+has_1_genre(movie117511).
 has_genre(movie117511, comedy).
+has_5_genre(movie117529).
 has_genre(movie117529, action).
 has_genre(movie117529, adventure).
 has_genre(movie117529, drama).
 has_genre(movie117529, sci-fi).
 has_genre(movie117529, thriller).
+has_1_genre(movie117531).
 has_genre(movie117531, documentary).
+has_1_genre(movie117533).
 has_genre(movie117533, documentary).
+has_1_genre(movie117545).
 has_genre(movie117545, animation).
+has_3_genre(movie117572).
 has_genre(movie117572, comedy).
 has_genre(movie117572, crime).
 has_genre(movie117572, romance).
+has_2_genre(movie117590).
 has_genre(movie117590, comedy).
 has_genre(movie117590, crime).
+has_4_genre(movie117630).
 has_genre(movie117630, action).
 has_genre(movie117630, comedy).
 has_genre(movie117630, crime).
 has_genre(movie117630, romance).
+has_more_than_5_genre(movie117646).
 has_genre(movie117646, action).
 has_genre(movie117646, adventure).
 has_genre(movie117646, comedy).
 has_genre(movie117646, drama).
 has_genre(movie117646, fantasy).
 has_genre(movie117646, thriller).
+has_1_genre(movie117849).
 has_genre(movie117849, comedy).
+has_4_genre(movie117851).
 has_genre(movie117851, adventure).
 has_genre(movie117851, animation).
 has_genre(movie117851, children).
 has_genre(movie117851, comedy).
+has_4_genre(movie117867).
 has_genre(movie117867, action).
 has_genre(movie117867, drama).
 has_genre(movie117867, thriller).
 has_genre(movie117867, war).
+has_2_genre(movie117877).
 has_genre(movie117877, adventure).
 has_genre(movie117877, animation).
+has_1_genre(movie117881).
 has_genre(movie117881, drama).
+has_2_genre(movie117887).
 has_genre(movie117887, children).
 has_genre(movie117887, comedy).
+has_2_genre(movie117895).
 has_genre(movie117895, action).
 has_genre(movie117895, thriller).
+has_3_genre(movie117922).
 has_genre(movie117922, adventure).
 has_genre(movie117922, animation).
 has_genre(movie117922, children).
+has_3_genre(movie118082).
 has_genre(movie118082, comedy).
 has_genre(movie118082, crime).
 has_genre(movie118082, thriller).
+has_3_genre(movie118166).
 has_genre(movie118166, comedy).
 has_genre(movie118166, drama).
 has_genre(movie118166, romance).
+has_3_genre(movie118198).
 has_genre(movie118198, documentary).
 has_genre(movie118198, drama).
 has_genre(movie118198, thriller).
+has_2_genre(movie118248).
 has_genre(movie118248, drama).
 has_genre(movie118248, thriller).
+has_3_genre(movie118270).
 has_genre(movie118270, comedy).
 has_genre(movie118270, horror).
 has_genre(movie118270, thriller).
+has_1_genre(movie118290).
 has_genre(movie118290, sci-fi).
+has_3_genre(movie118326).
 has_genre(movie118326, crime).
 has_genre(movie118326, drama).
 has_genre(movie118326, thriller).
+has_4_genre(movie118354).
 has_genre(movie118354, crime).
 has_genre(movie118354, drama).
 has_genre(movie118354, mystery).
 has_genre(movie118354, thriller).
+has_1_genre(movie118512).
 has_genre(movie118512, comedy).
+has_1_genre(movie118530).
 has_genre(movie118530, comedy).
+has_3_genre(movie118572).
 has_genre(movie118572, comedy).
 has_genre(movie118572, crime).
 has_genre(movie118572, drama).
+has_2_genre(movie118696).
 has_genre(movie118696, adventure).
 has_genre(movie118696, fantasy).
+has_1_genre(movie118700).
 has_genre(movie118700, drama).
+has_2_genre(movie118702).
 has_genre(movie118702, drama).
 has_genre(movie118702, war).
+has_3_genre(movie118706).
 has_genre(movie118706, adventure).
 has_genre(movie118706, mystery).
 has_genre(movie118706, thriller).
+has_1_genre(movie118784).
 has_genre(movie118784, documentary).
+has_2_genre(movie118814).
 has_genre(movie118814, comedy).
 has_genre(movie118814, romance).
+has_1_genre(movie118834).
 has_genre(movie118834, comedy).
+has_2_genre(movie118862).
 has_genre(movie118862, comedy).
 has_genre(movie118862, drama).
+has_3_genre(movie118880).
 has_genre(movie118880, horror).
 has_genre(movie118880, romance).
 has_genre(movie118880, thriller).
+has_1_genre(movie118888).
 has_genre(movie118888, comedy).
+has_3_genre(movie118894).
 has_genre(movie118894, animation).
 has_genre(movie118894, children).
 has_genre(movie118894, mystery).
+has_1_genre(movie118896).
 has_genre(movie118896, drama).
+has_1_genre(movie118900).
 has_genre(movie118900, drama).
+has_1_genre(movie118924).
 has_genre(movie118924, comedy).
+has_1_genre(movie118930).
 has_genre(movie118930, comedy).
+has_1_genre(movie118985).
 has_genre(movie118985, drama).
+has_4_genre(movie118997).
 has_genre(movie118997, children).
 has_genre(movie118997, comedy).
 has_genre(movie118997, fantasy).
 has_genre(movie118997, musical).
+has_2_genre(movie119068).
 has_genre(movie119068, comedy).
 has_genre(movie119068, drama).
+has_2_genre(movie119141).
 has_genre(movie119141, action).
 has_genre(movie119141, comedy).
+has_4_genre(movie119145).
 has_genre(movie119145, action).
 has_genre(movie119145, adventure).
 has_genre(movie119145, comedy).
 has_genre(movie119145, crime).
+has_1_genre(movie119153).
 has_genre(movie119153, comedy).
+has_4_genre(movie119155).
 has_genre(movie119155, adventure).
 has_genre(movie119155, children).
 has_genre(movie119155, comedy).
 has_genre(movie119155, fantasy).
+has_2_genre(movie119167).
 has_genre(movie119167, sci-fi).
 has_genre(movie119167, thriller).
+has_3_genre(movie119218).
 has_genre(movie119218, action).
 has_genre(movie119218, crime).
 has_genre(movie119218, drama).
+has_3_genre(movie119655).
 has_genre(movie119655, adventure).
 has_genre(movie119655, children).
 has_genre(movie119655, fantasy).
+has_1_genre(movie119714).
 has_genre(movie119714, comedy).
+has_4_genre(movie119828).
 has_genre(movie119828, action).
 has_genre(movie119828, drama).
 has_genre(movie119828, thriller).
 has_genre(movie119828, western).
+has_1_genre(movie119964).
 has_genre(movie119964, comedy).
+has_3_genre(movie120130).
 has_genre(movie120130, animation).
 has_genre(movie120130, drama).
 has_genre(movie120130, fantasy).
+has_5_genre(movie120138).
 has_genre(movie120138, comedy).
 has_genre(movie120138, drama).
 has_genre(movie120138, fantasy).
 has_genre(movie120138, mystery).
 has_genre(movie120138, romance).
+has_2_genre(movie120466).
 has_genre(movie120466, action).
 has_genre(movie120466, thriller).
+has_1_genre(movie120478).
 has_genre(movie120478, documentary).
+has_1_genre(movie120625).
 has_genre(movie120625, drama).
+has_3_genre(movie120635).
 has_genre(movie120635, action).
 has_genre(movie120635, crime).
 has_genre(movie120635, thriller).
+has_5_genre(movie120637).
 has_genre(movie120637, action).
 has_genre(movie120637, crime).
 has_genre(movie120637, drama).
 has_genre(movie120637, mystery).
 has_genre(movie120637, thriller).
+has_1_genre(movie120761).
 has_genre(movie120761, drama).
+has_3_genre(movie120783).
 has_genre(movie120783, action).
 has_genre(movie120783, crime).
 has_genre(movie120783, drama).
+has_4_genre(movie120799).
 has_genre(movie120799, action).
 has_genre(movie120799, adventure).
 has_genre(movie120799, sci-fi).
 has_genre(movie120799, thriller).
+has_1_genre(movie120807).
 has_genre(movie120807, comedy).
+has_1_genre(movie120813).
 has_genre(movie120813, comedy).
+has_4_genre(movie120827).
 has_genre(movie120827, crime).
 has_genre(movie120827, drama).
 has_genre(movie120827, horror).
 has_genre(movie120827, mystery).
+has_2_genre(movie120919).
 has_genre(movie120919, action).
 has_genre(movie120919, comedy).
+has_4_genre(movie121007).
 has_genre(movie121007, adventure).
 has_genre(movie121007, children).
 has_genre(movie121007, fantasy).
 has_genre(movie121007, sci-fi).
+has_1_genre(movie121035).
 has_genre(movie121035, drama).
+has_3_genre(movie121097).
 has_genre(movie121097, adventure).
 has_genre(movie121097, children).
 has_genre(movie121097, comedy).
+has_2_genre(movie121099).
 has_genre(movie121099, animation).
 has_genre(movie121099, children).
+has_1_genre(movie121129).
 has_genre(movie121129, comedy).
+has_1_genre(movie121169).
 has_genre(movie121169, drama).
+has_1_genre(movie121171).
 has_genre(movie121171, documentary).
+has_1_genre(movie121231).
 has_genre(movie121231, horror).
+has_2_genre(movie121253).
 has_genre(movie121253, horror).
 has_genre(movie121253, thriller).
+has_3_genre(movie121338).
 has_genre(movie121338, adventure).
 has_genre(movie121338, comedy).
 has_genre(movie121338, romance).
+has_2_genre(movie121342).
 has_genre(movie121342, comedy).
 has_genre(movie121342, romance).
+has_1_genre(movie121372).
 has_genre(movie121372, comedy).
+has_1_genre(movie121374).
 has_genre(movie121374, comedy).
+has_4_genre(movie121469).
 has_genre(movie121469, comedy).
 has_genre(movie121469, horror).
 has_genre(movie121469, mystery).
 has_genre(movie121469, thriller).
+has_1_genre(movie121715).
 has_genre(movie121715, comedy).
+has_4_genre(movie121781).
 has_genre(movie121781, animation).
 has_genre(movie121781, children).
 has_genre(movie121781, comedy).
 has_genre(movie121781, fantasy).
+has_2_genre(movie122092).
 has_genre(movie122092, comedy).
 has_genre(movie122092, war).
+has_2_genre(movie122246).
 has_genre(movie122246, children).
 has_genre(movie122246, comedy).
+has_2_genre(movie122260).
 has_genre(movie122260, drama).
 has_genre(movie122260, war).
+has_3_genre(movie122433).
 has_genre(movie122433, horror).
 has_genre(movie122433, mystery).
 has_genre(movie122433, thriller).
+has_3_genre(movie122490).
 has_genre(movie122490, action).
 has_genre(movie122490, drama).
 has_genre(movie122490, thriller).
+has_1_genre(movie122627).
 has_genre(movie122627, sci-fi).
+has_4_genre(movie122882).
 has_genre(movie122882, action).
 has_genre(movie122882, adventure).
 has_genre(movie122882, sci-fi).
 has_genre(movie122882, thriller).
+has_3_genre(movie122884).
 has_genre(movie122884, fantasy).
 has_genre(movie122884, horror).
 has_genre(movie122884, thriller).
+has_5_genre(movie122886).
 has_genre(movie122886, action).
 has_genre(movie122886, adventure).
 has_genre(movie122886, fantasy).
 has_genre(movie122886, sci-fi).
 has_genre(movie122886, imax).
+has_1_genre(movie122888).
+has_3_genre(movie122890).
 has_genre(movie122890, action).
 has_genre(movie122890, adventure).
 has_genre(movie122890, fantasy).
+has_3_genre(movie122892).
 has_genre(movie122892, action).
 has_genre(movie122892, adventure).
 has_genre(movie122892, sci-fi).
+has_1_genre(movie122896).
+has_3_genre(movie122898).
 has_genre(movie122898, action).
 has_genre(movie122898, adventure).
 has_genre(movie122898, sci-fi).
+has_3_genre(movie122900).
 has_genre(movie122900, action).
 has_genre(movie122900, adventure).
 has_genre(movie122900, sci-fi).
+has_4_genre(movie122902).
 has_genre(movie122902, action).
 has_genre(movie122902, adventure).
 has_genre(movie122902, fantasy).
 has_genre(movie122902, sci-fi).
+has_4_genre(movie122904).
 has_genre(movie122904, action).
 has_genre(movie122904, adventure).
 has_genre(movie122904, comedy).
 has_genre(movie122904, sci-fi).
+has_3_genre(movie122906).
 has_genre(movie122906, action).
 has_genre(movie122906, adventure).
 has_genre(movie122906, sci-fi).
+has_3_genre(movie122912).
 has_genre(movie122912, action).
 has_genre(movie122912, adventure).
 has_genre(movie122912, sci-fi).
+has_3_genre(movie122916).
 has_genre(movie122916, action).
 has_genre(movie122916, adventure).
 has_genre(movie122916, sci-fi).
+has_3_genre(movie122918).
 has_genre(movie122918, action).
 has_genre(movie122918, adventure).
 has_genre(movie122918, sci-fi).
+has_3_genre(movie122920).
 has_genre(movie122920, action).
 has_genre(movie122920, sci-fi).
 has_genre(movie122920, thriller).
+has_3_genre(movie122922).
 has_genre(movie122922, action).
 has_genre(movie122922, adventure).
 has_genre(movie122922, sci-fi).
+has_4_genre(movie122924).
 has_genre(movie122924, action).
 has_genre(movie122924, adventure).
 has_genre(movie122924, fantasy).
 has_genre(movie122924, sci-fi).
+has_3_genre(movie122926).
 has_genre(movie122926, action).
 has_genre(movie122926, adventure).
 has_genre(movie122926, fantasy).
+has_3_genre(movie122932).
 has_genre(movie122932, children).
 has_genre(movie122932, comedy).
 has_genre(movie122932, romance).
+has_1_genre(movie123200).
 has_genre(movie123200, comedy).
+has_1_genre(movie123310).
 has_genre(movie123310, action).
+has_2_genre(movie123545).
 has_genre(movie123545, drama).
 has_genre(movie123545, romance).
+has_4_genre(movie123553).
 has_genre(movie123553, action).
 has_genre(movie123553, adventure).
 has_genre(movie123553, drama).
 has_genre(movie123553, fantasy).
+has_1_genre(movie123947).
 has_genre(movie123947, drama).
+has_1_genre(movie124273).
 has_genre(movie124273, comedy).
+has_4_genre(movie124404).
 has_genre(movie124404, adventure).
 has_genre(movie124404, animation).
 has_genre(movie124404, children).
 has_genre(movie124404, comedy).
+has_2_genre(movie124484).
 has_genre(movie124484, comedy).
 has_genre(movie124484, drama).
+has_3_genre(movie124851).
 has_genre(movie124851, adventure).
 has_genre(movie124851, romance).
 has_genre(movie124851, sci-fi).
+has_2_genre(movie124853).
 has_genre(movie124853, animation).
 has_genre(movie124853, documentary).
+has_3_genre(movie124859).
 has_genre(movie124859, crime).
 has_genre(movie124859, drama).
 has_genre(movie124859, thriller).
+has_3_genre(movie125221).
 has_genre(movie125221, horror).
 has_genre(movie125221, sci-fi).
 has_genre(movie125221, western).
+has_4_genre(movie125914).
 has_genre(movie125914, adventure).
 has_genre(movie125914, comedy).
 has_genre(movie125914, mystery).
 has_genre(movie125914, romance).
+has_2_genre(movie125916).
 has_genre(movie125916, drama).
 has_genre(movie125916, romance).
+has_4_genre(movie125970).
 has_genre(movie125970, adventure).
 has_genre(movie125970, children).
 has_genre(movie125970, comedy).
 has_genre(movie125970, fantasy).
+has_4_genre(movie125974).
 has_genre(movie125974, adventure).
 has_genre(movie125974, children).
 has_genre(movie125974, comedy).
 has_genre(movie125974, fantasy).
+has_3_genre(movie126088).
 has_genre(movie126088, animation).
 has_genre(movie126088, children).
 has_genre(movie126088, comedy).
+has_1_genre(movie126090).
 has_genre(movie126090, animation).
+has_3_genre(movie126142).
 has_genre(movie126142, adventure).
 has_genre(movie126142, children).
 has_genre(movie126142, fantasy).
+has_1_genre(movie126420).
 has_genre(movie126420, action).
+has_2_genre(movie126426).
 has_genre(movie126426, drama).
 has_genre(movie126426, sci-fi).
+has_4_genre(movie126430).
 has_genre(movie126430, action).
 has_genre(movie126430, adventure).
 has_genre(movie126430, drama).
 has_genre(movie126430, war).
+has_4_genre(movie126482).
 has_genre(movie126482, animation).
 has_genre(movie126482, children).
 has_genre(movie126482, fantasy).
 has_genre(movie126482, musical).
+has_1_genre(movie126548).
 has_genre(movie126548, comedy).
+has_3_genre(movie126577).
 has_genre(movie126577, animation).
 has_genre(movie126577, comedy).
 has_genre(movie126577, fantasy).
+has_4_genre(movie126921).
 has_genre(movie126921, adventure).
 has_genre(movie126921, animation).
 has_genre(movie126921, children).
 has_genre(movie126921, comedy).
+has_3_genre(movie127052).
 has_genre(movie127052, comedy).
 has_genre(movie127052, crime).
 has_genre(movie127052, romance).
+has_2_genre(movie127096).
 has_genre(movie127096, sci-fi).
 has_genre(movie127096, thriller).
+has_1_genre(movie127098).
 has_genre(movie127098, comedy).
+has_2_genre(movie127108).
 has_genre(movie127108, drama).
 has_genre(movie127108, romance).
+has_1_genre(movie127114).
 has_genre(movie127114, drama).
+has_1_genre(movie127116).
 has_genre(movie127116, drama).
+has_1_genre(movie127130).
 has_genre(movie127130, comedy).
+has_2_genre(movie127132).
 has_genre(movie127132, drama).
 has_genre(movie127132, thriller).
+has_3_genre(movie127134).
 has_genre(movie127134, adventure).
 has_genre(movie127134, comedy).
 has_genre(movie127134, drama).
+has_3_genre(movie127136).
 has_genre(movie127136, drama).
 has_genre(movie127136, mystery).
 has_genre(movie127136, thriller).
+has_1_genre(movie127146).
 has_genre(movie127146, documentary).
+has_1_genre(movie127152).
 has_genre(movie127152, documentary).
+has_1_genre(movie127164).
 has_genre(movie127164, documentary).
+has_1_genre(movie127172).
 has_genre(movie127172, documentary).
+has_1_genre(movie127180).
 has_genre(movie127180, documentary).
+has_1_genre(movie127184).
 has_genre(movie127184, drama).
+has_1_genre(movie127194).
 has_genre(movie127194, comedy).
+has_2_genre(movie127198).
 has_genre(movie127198, comedy).
 has_genre(movie127198, drama).
+has_1_genre(movie127202).
 has_genre(movie127202, drama).
+has_1_genre(movie127204).
 has_genre(movie127204, comedy).
+has_2_genre(movie127212).
 has_genre(movie127212, drama).
 has_genre(movie127212, thriller).
+has_2_genre(movie127298).
 has_genre(movie127298, comedy).
 has_genre(movie127298, drama).
+has_1_genre(movie127319).
 has_genre(movie127319, thriller).
+has_4_genre(movie127323).
 has_genre(movie127323, action).
 has_genre(movie127323, adventure).
 has_genre(movie127323, sci-fi).
 has_genre(movie127323, thriller).
+has_2_genre(movie127390).
 has_genre(movie127390, animation).
 has_genre(movie127390, comedy).
+has_2_genre(movie128087).
 has_genre(movie128087, comedy).
 has_genre(movie128087, western).
+has_1_genre(movie128089).
 has_genre(movie128089, comedy).
+has_1_genre(movie128097).
 has_genre(movie128097, comedy).
+has_1_genre(movie128099).
 has_genre(movie128099, comedy).
+has_2_genre(movie128197).
 has_genre(movie128197, comedy).
 has_genre(movie128197, romance).
+has_1_genre(movie128360).
 has_genre(movie128360, western).
+has_1_genre(movie128366).
 has_genre(movie128366, comedy).
+has_4_genre(movie128488).
 has_genre(movie128488, action).
 has_genre(movie128488, crime).
 has_genre(movie128488, drama).
 has_genre(movie128488, thriller).
+has_3_genre(movie128512).
 has_genre(movie128512, drama).
 has_genre(movie128512, mystery).
 has_genre(movie128512, romance).
+has_1_genre(movie128520).
 has_genre(movie128520, comedy).
+has_3_genre(movie128542).
 has_genre(movie128542, action).
 has_genre(movie128542, horror).
 has_genre(movie128542, sci-fi).
+has_2_genre(movie128592).
 has_genre(movie128592, mystery).
 has_genre(movie128592, thriller).
+has_3_genre(movie128594).
 has_genre(movie128594, comedy).
 has_genre(movie128594, drama).
 has_genre(movie128594, romance).
+has_3_genre(movie128620).
 has_genre(movie128620, crime).
 has_genre(movie128620, drama).
 has_genre(movie128620, romance).
+has_1_genre(movie128695).
 has_genre(movie128695, western).
+has_1_genre(movie128736).
 has_genre(movie128736, drama).
+has_4_genre(movie128832).
 has_genre(movie128832, comedy).
 has_genre(movie128832, drama).
 has_genre(movie128832, musical).
 has_genre(movie128832, romance).
+has_1_genre(movie128838).
 has_genre(movie128838, horror).
+has_3_genre(movie128842).
 has_genre(movie128842, action).
 has_genre(movie128842, adventure).
 has_genre(movie128842, fantasy).
+has_1_genre(movie128852).
 has_genre(movie128852, comedy).
+has_1_genre(movie128900).
 has_genre(movie128900, documentary).
+has_1_genre(movie128902).
 has_genre(movie128902, documentary).
+has_3_genre(movie128908).
 has_genre(movie128908, adventure).
 has_genre(movie128908, comedy).
 has_genre(movie128908, drama).
+has_1_genre(movie128914).
 has_genre(movie128914, comedy).
+has_5_genre(movie128944).
 has_genre(movie128944, action).
 has_genre(movie128944, adventure).
 has_genre(movie128944, children).
 has_genre(movie128944, comedy).
 has_genre(movie128944, sci-fi).
+has_3_genre(movie128968).
 has_genre(movie128968, animation).
 has_genre(movie128968, children).
 has_genre(movie128968, comedy).
+has_2_genre(movie128975).
 has_genre(movie128975, comedy).
 has_genre(movie128975, sci-fi).
+has_3_genre(movie128991).
 has_genre(movie128991, animation).
 has_genre(movie128991, comedy).
 has_genre(movie128991, sci-fi).
+has_1_genre(movie129011).
 has_genre(movie129011, comedy).
+has_2_genre(movie129229).
 has_genre(movie129229, action).
 has_genre(movie129229, adventure).
+has_1_genre(movie129250).
+has_1_genre(movie129313).
 has_genre(movie129313, comedy).
+has_2_genre(movie129333).
 has_genre(movie129333, horror).
 has_genre(movie129333, thriller).
+has_4_genre(movie129354).
 has_genre(movie129354, comedy).
 has_genre(movie129354, crime).
 has_genre(movie129354, drama).
 has_genre(movie129354, romance).
+has_3_genre(movie129397).
 has_genre(movie129397, action).
 has_genre(movie129397, fantasy).
 has_genre(movie129397, sci-fi).
+has_2_genre(movie129428).
 has_genre(movie129428, comedy).
 has_genre(movie129428, drama).
+has_1_genre(movie129514).
 has_genre(movie129514, comedy).
+has_1_genre(movie129657).
 has_genre(movie129657, action).
+has_1_genre(movie129659).
 has_genre(movie129659, drama).
+has_1_genre(movie129737).
 has_genre(movie129737, comedy).
+has_3_genre(movie129779).
 has_genre(movie129779, action).
 has_genre(movie129779, animation).
 has_genre(movie129779, sci-fi).
+has_4_genre(movie129937).
 has_genre(movie129937, action).
 has_genre(movie129937, crime).
 has_genre(movie129937, drama).
 has_genre(movie129937, thriller).
+has_5_genre(movie130050).
 has_genre(movie130050, drama).
 has_genre(movie130050, fantasy).
 has_genre(movie130050, horror).
 has_genre(movie130050, mystery).
 has_genre(movie130050, thriller).
+has_2_genre(movie130052).
 has_genre(movie130052, drama).
 has_genre(movie130052, horror).
+has_4_genre(movie130073).
 has_genre(movie130073, children).
 has_genre(movie130073, drama).
 has_genre(movie130073, fantasy).
 has_genre(movie130073, romance).
+has_4_genre(movie130083).
 has_genre(movie130083, action).
 has_genre(movie130083, crime).
 has_genre(movie130083, drama).
 has_genre(movie130083, thriller).
+has_3_genre(movie130087).
 has_genre(movie130087, comedy).
 has_genre(movie130087, drama).
 has_genre(movie130087, fantasy).
+has_4_genre(movie130444).
 has_genre(movie130444, adventure).
 has_genre(movie130444, children).
 has_genre(movie130444, fantasy).
 has_genre(movie130444, sci-fi).
+has_3_genre(movie130450).
 has_genre(movie130450, adventure).
 has_genre(movie130450, children).
 has_genre(movie130450, fantasy).
+has_2_genre(movie130452).
 has_genre(movie130452, comedy).
 has_genre(movie130452, drama).
+has_5_genre(movie130482).
 has_genre(movie130482, crime).
 has_genre(movie130482, drama).
 has_genre(movie130482, film-noir).
 has_genre(movie130482, mystery).
 has_genre(movie130482, thriller).
+has_3_genre(movie130490).
 has_genre(movie130490, action).
 has_genre(movie130490, sci-fi).
 has_genre(movie130490, thriller).
+has_1_genre(movie130498).
 has_genre(movie130498, comedy).
+has_5_genre(movie130518).
 has_genre(movie130518, action).
 has_genre(movie130518, adventure).
 has_genre(movie130518, animation).
 has_genre(movie130518, comedy).
 has_genre(movie130518, sci-fi).
+has_more_than_5_genre(movie130520).
 has_genre(movie130520, adventure).
 has_genre(movie130520, animation).
 has_genre(movie130520, children).
 has_genre(movie130520, comedy).
 has_genre(movie130520, fantasy).
 has_genre(movie130520, sci-fi).
+has_2_genre(movie130576).
 has_genre(movie130576, drama).
 has_genre(movie130576, sci-fi).
+has_2_genre(movie130578).
 has_genre(movie130578, action).
 has_genre(movie130578, thriller).
+has_3_genre(movie130634).
 has_genre(movie130634, action).
 has_genre(movie130634, crime).
 has_genre(movie130634, thriller).
+has_2_genre(movie130686).
 has_genre(movie130686, comedy).
 has_genre(movie130686, horror).
+has_3_genre(movie130840).
 has_genre(movie130840, horror).
 has_genre(movie130840, romance).
 has_genre(movie130840, sci-fi).
+has_3_genre(movie130842).
 has_genre(movie130842, action).
 has_genre(movie130842, adventure).
 has_genre(movie130842, sci-fi).
+has_1_genre(movie130970).
 has_genre(movie130970, comedy).
+has_1_genre(movie130976).
 has_genre(movie130976, drama).
+has_2_genre(movie130978).
 has_genre(movie130978, comedy).
 has_genre(movie130978, romance).
+has_2_genre(movie131013).
 has_genre(movie131013, comedy).
 has_genre(movie131013, crime).
+has_1_genre(movie131023).
 has_genre(movie131023, documentary).
+has_3_genre(movie131098).
 has_genre(movie131098, animation).
 has_genre(movie131098, children).
 has_genre(movie131098, comedy).
+has_2_genre(movie131104).
 has_genre(movie131104, comedy).
 has_genre(movie131104, crime).
+has_2_genre(movie131130).
 has_genre(movie131130, animation).
 has_genre(movie131130, comedy).
+has_1_genre(movie131237).
 has_genre(movie131237, comedy).
+has_1_genre(movie131439).
 has_genre(movie131439, thriller).
+has_3_genre(movie131480).
 has_genre(movie131480, action).
 has_genre(movie131480, crime).
 has_genre(movie131480, thriller).
+has_1_genre(movie131578).
 has_genre(movie131578, comedy).
+has_2_genre(movie131610).
 has_genre(movie131610, comedy).
 has_genre(movie131610, fantasy).
+has_4_genre(movie131656).
 has_genre(movie131656, adventure).
 has_genre(movie131656, animation).
 has_genre(movie131656, children).
 has_genre(movie131656, comedy).
+has_2_genre(movie131714).
 has_genre(movie131714, action).
 has_genre(movie131714, adventure).
+has_1_genre(movie131724).
 has_genre(movie131724, documentary).
+has_3_genre(movie131739).
 has_genre(movie131739, action).
 has_genre(movie131739, adventure).
 has_genre(movie131739, animation).
+has_1_genre(movie131749).
 has_genre(movie131749, comedy).
+has_1_genre(movie131796).
 has_genre(movie131796, drama).
+has_1_genre(movie131826).
 has_genre(movie131826, comedy).
+has_2_genre(movie131920).
 has_genre(movie131920, comedy).
 has_genre(movie131920, drama).
+has_1_genre(movie131934).
 has_genre(movie131934, comedy).
+has_5_genre(movie132046).
 has_genre(movie132046, action).
 has_genre(movie132046, adventure).
 has_genre(movie132046, children).
 has_genre(movie132046, mystery).
 has_genre(movie132046, sci-fi).
+has_1_genre(movie132084).
+has_3_genre(movie132153).
 has_genre(movie132153, comedy).
 has_genre(movie132153, drama).
 has_genre(movie132153, horror).
+has_3_genre(movie132157).
 has_genre(movie132157, action).
 has_genre(movie132157, comedy).
 has_genre(movie132157, crime).
+has_2_genre(movie132333).
 has_genre(movie132333, documentary).
 has_genre(movie132333, drama).
+has_1_genre(movie132335).
 has_genre(movie132335, drama).
+has_3_genre(movie132362).
 has_genre(movie132362, action).
 has_genre(movie132362, animation).
 has_genre(movie132362, sci-fi).
+has_3_genre(movie132422).
 has_genre(movie132422, comedy).
 has_genre(movie132422, romance).
 has_genre(movie132422, thriller).
+has_2_genre(movie132424).
 has_genre(movie132424, drama).
 has_genre(movie132424, romance).
+has_3_genre(movie132454).
 has_genre(movie132454, comedy).
 has_genre(movie132454, crime).
 has_genre(movie132454, drama).
+has_3_genre(movie132462).
 has_genre(movie132462, action).
 has_genre(movie132462, adventure).
 has_genre(movie132462, drama).
+has_2_genre(movie132488).
 has_genre(movie132488, comedy).
 has_genre(movie132488, romance).
+has_2_genre(movie132496).
 has_genre(movie132496, comedy).
 has_genre(movie132496, drama).
+has_2_genre(movie132584).
 has_genre(movie132584, children).
 has_genre(movie132584, comedy).
+has_5_genre(movie132618).
 has_genre(movie132618, action).
 has_genre(movie132618, crime).
 has_genre(movie132618, drama).
 has_genre(movie132618, mystery).
 has_genre(movie132618, thriller).
+has_2_genre(movie132660).
 has_genre(movie132660, comedy).
 has_genre(movie132660, romance).
+has_3_genre(movie132796).
 has_genre(movie132796, action).
 has_genre(movie132796, drama).
 has_genre(movie132796, thriller).
+has_2_genre(movie132800).
 has_genre(movie132800, comedy).
 has_genre(movie132800, drama).
+has_1_genre(movie132888).
 has_genre(movie132888, comedy).
+has_1_genre(movie133115).
 has_genre(movie133115, documentary).
+has_3_genre(movie133195).
 has_genre(movie133195, action).
 has_genre(movie133195, crime).
 has_genre(movie133195, thriller).
+has_3_genre(movie133217).
 has_genre(movie133217, comedy).
 has_genre(movie133217, crime).
 has_genre(movie133217, sci-fi).
+has_2_genre(movie133281).
 has_genre(movie133281, comedy).
 has_genre(movie133281, drama).
+has_2_genre(movie133365).
 has_genre(movie133365, drama).
 has_genre(movie133365, thriller).
+has_3_genre(movie133377).
 has_genre(movie133377, horror).
 has_genre(movie133377, sci-fi).
 has_genre(movie133377, thriller).
+has_1_genre(movie133419).
 has_genre(movie133419, comedy).
+has_2_genre(movie133545).
 has_genre(movie133545, comedy).
 has_genre(movie133545, drama).
+has_2_genre(movie133645).
 has_genre(movie133645, drama).
 has_genre(movie133645, romance).
+has_2_genre(movie133712).
 has_genre(movie133712, comedy).
 has_genre(movie133712, romance).
+has_2_genre(movie133716).
 has_genre(movie133716, comedy).
 has_genre(movie133716, crime).
+has_3_genre(movie133771).
 has_genre(movie133771, comedy).
 has_genre(movie133771, romance).
 has_genre(movie133771, sci-fi).
+has_2_genre(movie133780).
 has_genre(movie133780, comedy).
 has_genre(movie133780, drama).
+has_3_genre(movie133782).
 has_genre(movie133782, drama).
 has_genre(movie133782, horror).
 has_genre(movie133782, thriller).
+has_2_genre(movie133798).
 has_genre(movie133798, action).
 has_genre(movie133798, comedy).
+has_3_genre(movie133802).
 has_genre(movie133802, action).
 has_genre(movie133802, thriller).
 has_genre(movie133802, western).
+has_2_genre(movie133832).
 has_genre(movie133832, horror).
 has_genre(movie133832, thriller).
+has_3_genre(movie133867).
 has_genre(movie133867, action).
 has_genre(movie133867, adventure).
 has_genre(movie133867, comedy).
+has_1_genre(movie133879).
 has_genre(movie133879, comedy).
+has_2_genre(movie134004).
 has_genre(movie134004, comedy).
 has_genre(movie134004, romance).
+has_1_genre(movie134019).
 has_genre(movie134019, animation).
+has_3_genre(movie134021).
 has_genre(movie134021, comedy).
 has_genre(movie134021, drama).
 has_genre(movie134021, romance).
+has_3_genre(movie134041).
 has_genre(movie134041, comedy).
 has_genre(movie134041, drama).
 has_genre(movie134041, romance).
+has_2_genre(movie134095).
 has_genre(movie134095, animation).
 has_genre(movie134095, drama).
+has_1_genre(movie134109).
 has_genre(movie134109, comedy).
+has_3_genre(movie134130).
 has_genre(movie134130, adventure).
 has_genre(movie134130, drama).
 has_genre(movie134130, sci-fi).
+has_1_genre(movie134158).
 has_genre(movie134158, thriller).
+has_4_genre(movie134170).
 has_genre(movie134170, action).
 has_genre(movie134170, comedy).
 has_genre(movie134170, fantasy).
 has_genre(movie134170, sci-fi).
+has_1_genre(movie134184).
 has_genre(movie134184, comedy).
+has_1_genre(movie134214).
 has_genre(movie134214, drama).
+has_2_genre(movie134246).
 has_genre(movie134246, action).
 has_genre(movie134246, thriller).
+has_1_genre(movie134248).
 has_genre(movie134248, documentary).
+has_3_genre(movie134252).
 has_genre(movie134252, comedy).
 has_genre(movie134252, drama).
 has_genre(movie134252, fantasy).
+has_1_genre(movie134326).
 has_genre(movie134326, comedy).
+has_1_genre(movie134334).
 has_genre(movie134334, comedy).
+has_3_genre(movie134368).
 has_genre(movie134368, action).
 has_genre(movie134368, comedy).
 has_genre(movie134368, crime).
+has_2_genre(movie134393).
 has_genre(movie134393, comedy).
 has_genre(movie134393, romance).
+has_3_genre(movie134515).
 has_genre(movie134515, adventure).
 has_genre(movie134515, crime).
 has_genre(movie134515, drama).
+has_1_genre(movie134524).
 has_genre(movie134524, documentary).
+has_3_genre(movie134528).
 has_genre(movie134528, comedy).
 has_genre(movie134528, drama).
 has_genre(movie134528, romance).
+has_3_genre(movie134775).
 has_genre(movie134775, action).
 has_genre(movie134775, adventure).
 has_genre(movie134775, drama).
+has_1_genre(movie134783).
 has_genre(movie134783, comedy).
+has_1_genre(movie134796).
 has_genre(movie134796, documentary).
+has_1_genre(movie134808).
 has_genre(movie134808, comedy).
+has_1_genre(movie134847).
 has_genre(movie134847, comedy).
+has_3_genre(movie134849).
 has_genre(movie134849, animation).
 has_genre(movie134849, children).
 has_genre(movie134849, comedy).
+has_more_than_5_genre(movie134853).
 has_genre(movie134853, adventure).
 has_genre(movie134853, animation).
 has_genre(movie134853, children).
 has_genre(movie134853, comedy).
 has_genre(movie134853, drama).
 has_genre(movie134853, fantasy).
+has_1_genre(movie134859).
 has_genre(movie134859, documentary).
+has_1_genre(movie134861).
+has_1_genre(movie134881).
 has_genre(movie134881, drama).
+has_2_genre(movie135133).
 has_genre(movie135133, adventure).
 has_genre(movie135133, sci-fi).
+has_3_genre(movie135137).
 has_genre(movie135137, action).
 has_genre(movie135137, comedy).
 has_genre(movie135137, sci-fi).
+has_1_genre(movie135143).
 has_genre(movie135143, fantasy).
+has_2_genre(movie135198).
 has_genre(movie135198, comedy).
 has_genre(movie135198, drama).
+has_4_genre(movie135216).
 has_genre(movie135216, adventure).
 has_genre(movie135216, children).
 has_genre(movie135216, comedy).
 has_genre(movie135216, sci-fi).
+has_2_genre(movie135288).
 has_genre(movie135288, drama).
 has_genre(movie135288, mystery).
+has_2_genre(movie135436).
 has_genre(movie135436, animation).
 has_genre(movie135436, comedy).
+has_4_genre(movie135456).
 has_genre(movie135456, action).
 has_genre(movie135456, animation).
 has_genre(movie135456, crime).
 has_genre(movie135456, sci-fi).
+has_4_genre(movie135518).
 has_genre(movie135518, action).
 has_genre(movie135518, mystery).
 has_genre(movie135518, sci-fi).
 has_genre(movie135518, thriller).
+has_3_genre(movie135532).
 has_genre(movie135532, action).
 has_genre(movie135532, adventure).
 has_genre(movie135532, fantasy).
+has_3_genre(movie135534).
 has_genre(movie135534, comedy).
 has_genre(movie135534, fantasy).
 has_genre(movie135534, horror).
+has_3_genre(movie135536).
 has_genre(movie135536, action).
 has_genre(movie135536, crime).
 has_genre(movie135536, sci-fi).
+has_3_genre(movie135567).
 has_genre(movie135567, action).
 has_genre(movie135567, adventure).
 has_genre(movie135567, sci-fi).
+has_3_genre(movie135569).
 has_genre(movie135569, action).
 has_genre(movie135569, adventure).
 has_genre(movie135569, sci-fi).
+has_2_genre(movie135777).
 has_genre(movie135777, children).
 has_genre(movie135777, comedy).
+has_1_genre(movie135787).
 has_genre(movie135787, documentary).
+has_1_genre(movie135803).
 has_genre(movie135803, action).
+has_2_genre(movie135815).
 has_genre(movie135815, action).
 has_genre(movie135815, drama).
+has_1_genre(movie135861).
 has_genre(movie135861, comedy).
+has_2_genre(movie135885).
 has_genre(movie135885, comedy).
 has_genre(movie135885, sci-fi).
+has_4_genre(movie135887).
 has_genre(movie135887, adventure).
 has_genre(movie135887, animation).
 has_genre(movie135887, children).
 has_genre(movie135887, comedy).
+has_2_genre(movie135937).
 has_genre(movie135937, comedy).
 has_genre(movie135937, thriller).
+has_2_genre(movie136012).
 has_genre(movie136012, action).
 has_genre(movie136012, thriller).
+has_5_genre(movie136016).
 has_genre(movie136016, adventure).
 has_genre(movie136016, animation).
 has_genre(movie136016, children).
 has_genre(movie136016, comedy).
 has_genre(movie136016, fantasy).
+has_2_genre(movie136018).
 has_genre(movie136018, crime).
 has_genre(movie136018, drama).
+has_3_genre(movie136020).
 has_genre(movie136020, action).
 has_genre(movie136020, adventure).
 has_genre(movie136020, crime).
+has_3_genre(movie136024).
 has_genre(movie136024, action).
 has_genre(movie136024, animation).
 has_genre(movie136024, crime).
+has_2_genre(movie136297).
 has_genre(movie136297, action).
 has_genre(movie136297, animation).
+has_2_genre(movie136305).
 has_genre(movie136305, horror).
 has_genre(movie136305, sci-fi).
+has_3_genre(movie136341).
 has_genre(movie136341, animation).
 has_genre(movie136341, children).
 has_genre(movie136341, comedy).
+has_3_genre(movie136353).
 has_genre(movie136353, animation).
 has_genre(movie136353, children).
 has_genre(movie136353, comedy).
+has_3_genre(movie136355).
 has_genre(movie136355, animation).
 has_genre(movie136355, children).
 has_genre(movie136355, comedy).
+has_3_genre(movie136359).
 has_genre(movie136359, animation).
 has_genre(movie136359, children).
 has_genre(movie136359, comedy).
+has_1_genre(movie136443).
 has_genre(movie136443, comedy).
+has_1_genre(movie136445).
 has_genre(movie136445, comedy).
+has_1_genre(movie136447).
 has_genre(movie136447, comedy).
+has_3_genre(movie136449).
 has_genre(movie136449, action).
 has_genre(movie136449, animation).
 has_genre(movie136449, sci-fi).
+has_1_genre(movie136469).
 has_genre(movie136469, comedy).
+has_2_genre(movie136471).
 has_genre(movie136471, comedy).
 has_genre(movie136471, documentary).
+has_3_genre(movie136503).
 has_genre(movie136503, animation).
 has_genre(movie136503, children).
 has_genre(movie136503, comedy).
+has_1_genre(movie136511).
 has_genre(movie136511, comedy).
+has_1_genre(movie136540).
 has_genre(movie136540, comedy).
+has_2_genre(movie136556).
 has_genre(movie136556, animation).
 has_genre(movie136556, children).
+has_1_genre(movie136562).
 has_genre(movie136562, drama).
+has_1_genre(movie136564).
 has_genre(movie136564, drama).
+has_2_genre(movie136598).
 has_genre(movie136598, adventure).
 has_genre(movie136598, comedy).
+has_2_genre(movie136602).
 has_genre(movie136602, horror).
 has_genre(movie136602, thriller).
+has_1_genre(movie136654).
 has_genre(movie136654, drama).
+has_2_genre(movie136664).
 has_genre(movie136664, crime).
 has_genre(movie136664, drama).
+has_1_genre(movie136666).
 has_genre(movie136666, comedy).
+has_2_genre(movie136778).
 has_genre(movie136778, comedy).
 has_genre(movie136778, drama).
+has_1_genre(movie136786).
 has_genre(movie136786, thriller).
+has_3_genre(movie136800).
 has_genre(movie136800, action).
 has_genre(movie136800, adventure).
 has_genre(movie136800, sci-fi).
+has_2_genre(movie136816).
 has_genre(movie136816, action).
 has_genre(movie136816, comedy).
+has_1_genre(movie136834).
 has_genre(movie136834, horror).
+has_2_genre(movie136838).
 has_genre(movie136838, comedy).
 has_genre(movie136838, romance).
+has_3_genre(movie136840).
 has_genre(movie136840, comedy).
 has_genre(movie136840, drama).
 has_genre(movie136840, romance).
+has_3_genre(movie136850).
 has_genre(movie136850, crime).
 has_genre(movie136850, drama).
 has_genre(movie136850, thriller).
+has_4_genre(movie136859).
 has_genre(movie136859, action).
 has_genre(movie136859, adventure).
 has_genre(movie136859, romance).
 has_genre(movie136859, sci-fi).
+has_4_genre(movie136864).
 has_genre(movie136864, action).
 has_genre(movie136864, adventure).
 has_genre(movie136864, fantasy).
 has_genre(movie136864, sci-fi).
+has_1_genre(movie136912).
 has_genre(movie136912, adventure).
+has_1_genre(movie136958).
 has_genre(movie136958, horror).
+has_1_genre(movie137218).
 has_genre(movie137218, drama).
+has_1_genre(movie137337).
 has_genre(movie137337, documentary).
+has_2_genre(movie137345).
 has_genre(movie137345, crime).
 has_genre(movie137345, thriller).
+has_2_genre(movie137517).
 has_genre(movie137517, drama).
 has_genre(movie137517, fantasy).
+has_2_genre(movie137595).
 has_genre(movie137595, comedy).
 has_genre(movie137595, drama).
+has_3_genre(movie137857).
 has_genre(movie137857, adventure).
 has_genre(movie137857, drama).
 has_genre(movie137857, fantasy).
+has_3_genre(movie137859).
 has_genre(movie137859, action).
 has_genre(movie137859, adventure).
 has_genre(movie137859, animation).
+has_4_genre(movie137863).
 has_genre(movie137863, action).
 has_genre(movie137863, adventure).
 has_genre(movie137863, animation).
 has_genre(movie137863, fantasy).
+has_3_genre(movie138036).
 has_genre(movie138036, action).
 has_genre(movie138036, adventure).
 has_genre(movie138036, comedy).
+has_3_genre(movie138186).
 has_genre(movie138186, crime).
 has_genre(movie138186, drama).
 has_genre(movie138186, horror).
+has_1_genre(movie138204).
 has_genre(movie138204, comedy).
+has_3_genre(movie138208).
 has_genre(movie138208, adventure).
 has_genre(movie138208, drama).
 has_genre(movie138208, thriller).
+has_1_genre(movie138210).
 has_genre(movie138210, drama).
+has_2_genre(movie138396).
 has_genre(movie138396, comedy).
 has_genre(movie138396, drama).
+has_1_genre(movie138546).
 has_genre(movie138546, comedy).
+has_2_genre(movie138610).
 has_genre(movie138610, horror).
 has_genre(movie138610, thriller).
+has_4_genre(movie138632).
 has_genre(movie138632, action).
 has_genre(movie138632, crime).
 has_genre(movie138632, drama).
 has_genre(movie138632, sci-fi).
+has_5_genre(movie138702).
 has_genre(movie138702, animation).
 has_genre(movie138702, children).
 has_genre(movie138702, comedy).
 has_genre(movie138702, drama).
 has_genre(movie138702, romance).
+has_1_genre(movie138798).
 has_genre(movie138798, comedy).
+has_3_genre(movie138835).
 has_genre(movie138835, adventure).
 has_genre(movie138835, animation).
 has_genre(movie138835, comedy).
+has_1_genre(movie138966).
 has_genre(movie138966, animation).
+has_3_genre(movie139052).
 has_genre(movie139052, drama).
 has_genre(movie139052, mystery).
 has_genre(movie139052, thriller).
+has_5_genre(movie139130).
 has_genre(movie139130, action).
 has_genre(movie139130, adventure).
 has_genre(movie139130, animation).
 has_genre(movie139130, drama).
 has_genre(movie139130, fantasy).
+has_3_genre(movie139157).
 has_genre(movie139157, comedy).
 has_genre(movie139157, horror).
 has_genre(movie139157, thriller).
+has_2_genre(movie139385).
 has_genre(movie139385, adventure).
 has_genre(movie139385, drama).
+has_2_genre(movie139415).
 has_genre(movie139415, crime).
 has_genre(movie139415, drama).
+has_1_genre(movie139511).
 has_genre(movie139511, horror).
+has_1_genre(movie139640).
 has_genre(movie139640, animation).
+has_2_genre(movie139642).
 has_genre(movie139642, action).
 has_genre(movie139642, drama).
+has_3_genre(movie139644).
 has_genre(movie139644, crime).
 has_genre(movie139644, drama).
 has_genre(movie139644, mystery).
+has_4_genre(movie139655).
 has_genre(movie139655, drama).
 has_genre(movie139655, fantasy).
 has_genre(movie139655, horror).
 has_genre(movie139655, thriller).
+has_2_genre(movie139717).
 has_genre(movie139717, crime).
 has_genre(movie139717, thriller).
+has_1_genre(movie139747).
 has_genre(movie139747, romance).
+has_3_genre(movie139855).
 has_genre(movie139855, animation).
 has_genre(movie139855, comedy).
 has_genre(movie139855, fantasy).
+has_1_genre(movie139857).
 has_genre(movie139857, thriller).
+has_4_genre(movie139859).
 has_genre(movie139859, action).
 has_genre(movie139859, animation).
 has_genre(movie139859, sci-fi).
 has_genre(movie139859, thriller).
+has_2_genre(movie139915).
 has_genre(movie139915, comedy).
 has_genre(movie139915, romance).
+has_2_genre(movie139994).
 has_genre(movie139994, comedy).
 has_genre(movie139994, horror).
+has_1_genre(movie140016).
 has_genre(movie140016, horror).
+has_1_genre(movie140038).
 has_genre(movie140038, comedy).
+has_1_genre(movie140110).
 has_genre(movie140110, comedy).
+has_2_genre(movie140133).
 has_genre(movie140133, comedy).
 has_genre(movie140133, horror).
+has_2_genre(movie140162).
 has_genre(movie140162, drama).
 has_genre(movie140162, romance).
+has_1_genre(movie140174).
 has_genre(movie140174, drama).
+has_1_genre(movie140237).
 has_genre(movie140237, drama).
+has_2_genre(movie140247).
 has_genre(movie140247, drama).
 has_genre(movie140247, horror).
+has_1_genre(movie140265).
 has_genre(movie140265, comedy).
+has_1_genre(movie140267).
 has_genre(movie140267, horror).
+has_2_genre(movie140289).
 has_genre(movie140289, comedy).
 has_genre(movie140289, drama).
+has_2_genre(movie140301).
 has_genre(movie140301, comedy).
 has_genre(movie140301, romance).
+has_3_genre(movie140359).
 has_genre(movie140359, adventure).
 has_genre(movie140359, children).
 has_genre(movie140359, sci-fi).
+has_3_genre(movie140481).
 has_genre(movie140481, animation).
 has_genre(movie140481, comedy).
 has_genre(movie140481, sci-fi).
+has_2_genre(movie140523).
 has_genre(movie140523, comedy).
 has_genre(movie140523, horror).
+has_3_genre(movie140525).
 has_genre(movie140525, crime).
 has_genre(movie140525, drama).
 has_genre(movie140525, mystery).
+has_3_genre(movie140541).
 has_genre(movie140541, animation).
 has_genre(movie140541, comedy).
 has_genre(movie140541, sci-fi).
+has_2_genre(movie140561).
 has_genre(movie140561, comedy).
 has_genre(movie140561, documentary).
+has_3_genre(movie140627).
 has_genre(movie140627, drama).
 has_genre(movie140627, romance).
 has_genre(movie140627, war).
+has_4_genre(movie140711).
 has_genre(movie140711, action).
 has_genre(movie140711, comedy).
 has_genre(movie140711, sci-fi).
 has_genre(movie140711, thriller).
+has_1_genre(movie140715).
 has_genre(movie140715, drama).
+has_2_genre(movie140725).
 has_genre(movie140725, crime).
 has_genre(movie140725, thriller).
+has_3_genre(movie140737).
 has_genre(movie140737, action).
 has_genre(movie140737, fantasy).
 has_genre(movie140737, mystery).
+has_2_genre(movie140816).
 has_genre(movie140816, comedy).
 has_genre(movie140816, drama).
+has_4_genre(movie140850).
 has_genre(movie140850, crime).
 has_genre(movie140850, drama).
 has_genre(movie140850, mystery).
 has_genre(movie140850, thriller).
+has_2_genre(movie140852).
 has_genre(movie140852, horror).
 has_genre(movie140852, sci-fi).
+has_2_genre(movie140928).
 has_genre(movie140928, comedy).
 has_genre(movie140928, drama).
+has_3_genre(movie140956).
 has_genre(movie140956, action).
 has_genre(movie140956, sci-fi).
 has_genre(movie140956, thriller).
+has_3_genre(movie141004).
 has_genre(movie141004, drama).
 has_genre(movie141004, horror).
 has_genre(movie141004, sci-fi).
+has_1_genre(movie141131).
+has_1_genre(movie141400).
 has_genre(movie141400, action).
+has_3_genre(movie141408).
 has_genre(movie141408, action).
 has_genre(movie141408, comedy).
 has_genre(movie141408, horror).
+has_1_genre(movie141422).
 has_genre(movie141422, drama).
+has_1_genre(movie141513).
 has_genre(movie141513, comedy).
+has_3_genre(movie141544).
 has_genre(movie141544, action).
 has_genre(movie141544, adventure).
 has_genre(movie141544, sci-fi).
+has_2_genre(movie141646).
 has_genre(movie141646, comedy).
 has_genre(movie141646, drama).
+has_1_genre(movie141668).
 has_genre(movie141668, drama).
+has_2_genre(movie141688).
 has_genre(movie141688, crime).
 has_genre(movie141688, thriller).
+has_2_genre(movie141718).
 has_genre(movie141718, comedy).
 has_genre(movie141718, horror).
+has_1_genre(movie141749).
 has_genre(movie141749, drama).
+has_2_genre(movie141799).
 has_genre(movie141799, comedy).
 has_genre(movie141799, horror).
+has_2_genre(movie141810).
 has_genre(movie141810, comedy).
 has_genre(movie141810, drama).
+has_2_genre(movie141816).
 has_genre(movie141816, adventure).
 has_genre(movie141816, comedy).
+has_4_genre(movie141818).
 has_genre(movie141818, comedy).
 has_genre(movie141818, drama).
 has_genre(movie141818, fantasy).
 has_genre(movie141818, romance).
+has_1_genre(movie141820).
 has_genre(movie141820, comedy).
+has_2_genre(movie141830).
 has_genre(movie141830, adventure).
 has_genre(movie141830, comedy).
+has_1_genre(movie141836).
 has_genre(movie141836, comedy).
+has_2_genre(movie141844).
 has_genre(movie141844, adventure).
 has_genre(movie141844, comedy).
+has_1_genre(movie141846).
 has_genre(movie141846, documentary).
+has_1_genre(movie141866).
+has_2_genre(movie141890).
 has_genre(movie141890, drama).
 has_genre(movie141890, war).
+has_2_genre(movie141928).
 has_genre(movie141928, comedy).
 has_genre(movie141928, horror).
+has_2_genre(movie141994).
 has_genre(movie141994, children).
 has_genre(movie141994, comedy).
+has_1_genre(movie142020).
 has_genre(movie142020, comedy).
+has_3_genre(movie142056).
 has_genre(movie142056, action).
 has_genre(movie142056, adventure).
 has_genre(movie142056, animation).
+has_3_genre(movie142074).
 has_genre(movie142074, crime).
 has_genre(movie142074, horror).
 has_genre(movie142074, thriller).
+has_1_genre(movie142115).
 has_genre(movie142115, documentary).
+has_2_genre(movie142196).
 has_genre(movie142196, comedy).
 has_genre(movie142196, horror).
+has_1_genre(movie142222).
 has_genre(movie142222, drama).
+has_2_genre(movie142366).
 has_genre(movie142366, horror).
 has_genre(movie142366, thriller).
+has_2_genre(movie142372).
 has_genre(movie142372, comedy).
 has_genre(movie142372, drama).
+has_3_genre(movie142420).
 has_genre(movie142420, action).
 has_genre(movie142420, drama).
 has_genre(movie142420, sci-fi).
+has_1_genre(movie142422).
 has_genre(movie142422, comedy).
+has_2_genre(movie142424).
 has_genre(movie142424, drama).
 has_genre(movie142424, sci-fi).
+has_3_genre(movie142444).
 has_genre(movie142444, comedy).
 has_genre(movie142444, horror).
 has_genre(movie142444, mystery).
+has_3_genre(movie142448).
 has_genre(movie142448, adventure).
 has_genre(movie142448, drama).
 has_genre(movie142448, thriller).
+has_1_genre(movie142456).
+has_1_genre(movie142488).
 has_genre(movie142488, thriller).
+has_1_genre(movie142507).
 has_genre(movie142507, drama).
+has_3_genre(movie142509).
 has_genre(movie142509, action).
 has_genre(movie142509, adventure).
 has_genre(movie142509, sci-fi).
+has_1_genre(movie142536).
 has_genre(movie142536, drama).
+has_2_genre(movie142550).
 has_genre(movie142550, action).
 has_genre(movie142550, comedy).
+has_1_genre(movie142558).
 has_genre(movie142558, comedy).
+has_1_genre(movie142598).
 has_genre(movie142598, horror).
+has_1_genre(movie142602).
 has_genre(movie142602, comedy).
+has_1_genre(movie142831).
 has_genre(movie142831, comedy).
+has_3_genre(movie142961).
 has_genre(movie142961, comedy).
 has_genre(movie142961, crime).
 has_genre(movie142961, thriller).
+has_2_genre(movie142997).
 has_genre(movie142997, animation).
 has_genre(movie142997, comedy).
+has_1_genre(movie143001).
 has_genre(movie143001, crime).
+has_3_genre(movie143031).
 has_genre(movie143031, comedy).
 has_genre(movie143031, drama).
 has_genre(movie143031, romance).
+has_2_genre(movie143245).
 has_genre(movie143245, animation).
 has_genre(movie143245, fantasy).
+has_3_genre(movie143255).
 has_genre(movie143255, mystery).
 has_genre(movie143255, sci-fi).
 has_genre(movie143255, thriller).
+has_2_genre(movie143257).
 has_genre(movie143257, comedy).
 has_genre(movie143257, drama).
+has_3_genre(movie143355).
 has_genre(movie143355, action).
 has_genre(movie143355, adventure).
 has_genre(movie143355, fantasy).
+has_3_genre(movie143365).
 has_genre(movie143365, drama).
 has_genre(movie143365, sci-fi).
 has_genre(movie143365, thriller).
+has_2_genre(movie143367).
 has_genre(movie143367, drama).
 has_genre(movie143367, thriller).
+has_2_genre(movie143385).
 has_genre(movie143385, drama).
 has_genre(movie143385, thriller).
+has_1_genre(movie143410).
+has_3_genre(movie143458).
 has_genre(movie143458, drama).
 has_genre(movie143458, mystery).
 has_genre(movie143458, thriller).
+has_3_genre(movie143472).
 has_genre(movie143472, action).
 has_genre(movie143472, horror).
 has_genre(movie143472, thriller).
+has_1_genre(movie143511).
 has_genre(movie143511, documentary).
+has_2_genre(movie143525).
 has_genre(movie143525, comedy).
 has_genre(movie143525, drama).
+has_3_genre(movie143559).
 has_genre(movie143559, comedy).
 has_genre(movie143559, crime).
 has_genre(movie143559, fantasy).
+has_1_genre(movie143859).
 has_genre(movie143859, comedy).
+has_1_genre(movie143896).
 has_genre(movie143896, documentary).
+has_1_genre(movie143969).
 has_genre(movie143969, comedy).
+has_1_genre(movie144210).
 has_genre(movie144210, documentary).
+has_1_genre(movie144222).
 has_genre(movie144222, comedy).
+has_2_genre(movie144262).
 has_genre(movie144262, comedy).
 has_genre(movie144262, romance).
+has_3_genre(movie144352).
 has_genre(movie144352, action).
 has_genre(movie144352, crime).
 has_genre(movie144352, drama).
+has_2_genre(movie144478).
 has_genre(movie144478, comedy).
 has_genre(movie144478, drama).
+has_3_genre(movie144522).
 has_genre(movie144522, action).
 has_genre(movie144522, horror).
 has_genre(movie144522, thriller).
+has_5_genre(movie144606).
 has_genre(movie144606, comedy).
 has_genre(movie144606, crime).
 has_genre(movie144606, drama).
 has_genre(movie144606, romance).
 has_genre(movie144606, thriller).
+has_3_genre(movie144620).
 has_genre(movie144620, adventure).
 has_genre(movie144620, comedy).
 has_genre(movie144620, horror).
+has_2_genre(movie144714).
 has_genre(movie144714, drama).
 has_genre(movie144714, thriller).
+has_1_genre(movie144716).
 has_genre(movie144716, comedy).
+has_3_genre(movie144734).
 has_genre(movie144734, comedy).
 has_genre(movie144734, horror).
 has_genre(movie144734, sci-fi).
+has_2_genre(movie144976).
 has_genre(movie144976, horror).
 has_genre(movie144976, western).
+has_3_genre(movie145080).
 has_genre(movie145080, animation).
 has_genre(movie145080, horror).
 has_genre(movie145080, mystery).
+has_3_genre(movie145150).
 has_genre(movie145150, comedy).
 has_genre(movie145150, drama).
 has_genre(movie145150, thriller).
+has_1_genre(movie145283).
 has_genre(movie145283, documentary).
+has_1_genre(movie145418).
 has_genre(movie145418, drama).
+has_3_genre(movie145491).
 has_genre(movie145491, children).
 has_genre(movie145491, comedy).
 has_genre(movie145491, drama).
+has_1_genre(movie145724).
 has_genre(movie145724, sci-fi).
+has_2_genre(movie145745).
 has_genre(movie145745, crime).
 has_genre(movie145745, drama).
+has_1_genre(movie145839).
 has_genre(movie145839, drama).
+has_4_genre(movie145935).
 has_genre(movie145935, adventure).
 has_genre(movie145935, animation).
 has_genre(movie145935, children).
 has_genre(movie145935, comedy).
+has_2_genre(movie145951).
 has_genre(movie145951, action).
 has_genre(movie145951, thriller).
+has_1_genre(movie145994).
 has_genre(movie145994, comedy).
+has_3_genre(movie146024).
 has_genre(movie146024, comedy).
 has_genre(movie146024, romance).
 has_genre(movie146024, western).
+has_2_genre(movie146028).
 has_genre(movie146028, crime).
 has_genre(movie146028, mystery).
+has_1_genre(movie146210).
 has_genre(movie146210, comedy).
+has_3_genre(movie146244).
 has_genre(movie146244, comedy).
 has_genre(movie146244, drama).
 has_genre(movie146244, romance).
+has_3_genre(movie146309).
 has_genre(movie146309, action).
 has_genre(movie146309, adventure).
 has_genre(movie146309, animation).
+has_1_genre(movie146656).
 has_genre(movie146656, drama).
+has_3_genre(movie146662).
 has_genre(movie146662, adventure).
 has_genre(movie146662, animation).
 has_genre(movie146662, comedy).
+has_1_genre(movie146682).
 has_genre(movie146682, documentary).
+has_3_genre(movie146684).
 has_genre(movie146684, animation).
 has_genre(movie146684, children).
 has_genre(movie146684, comedy).
+has_3_genre(movie146688).
 has_genre(movie146688, fantasy).
 has_genre(movie146688, mystery).
 has_genre(movie146688, thriller).
+has_3_genre(movie146730).
 has_genre(movie146730, action).
 has_genre(movie146730, drama).
 has_genre(movie146730, thriller).
+has_1_genre(movie146986).
 has_genre(movie146986, comedy).
+has_2_genre(movie147002).
 has_genre(movie147002, drama).
 has_genre(movie147002, romance).
+has_2_genre(movie147142).
 has_genre(movie147142, children).
 has_genre(movie147142, comedy).
+has_2_genre(movie147196).
 has_genre(movie147196, comedy).
 has_genre(movie147196, romance).
+has_1_genre(movie147250).
+has_1_genre(movie147282).
 has_genre(movie147282, comedy).
+has_2_genre(movie147286).
 has_genre(movie147286, crime).
 has_genre(movie147286, mystery).
+has_2_genre(movie147300).
 has_genre(movie147300, crime).
 has_genre(movie147300, mystery).
+has_2_genre(movie147326).
 has_genre(movie147326, crime).
 has_genre(movie147326, mystery).
+has_1_genre(movie147328).
 has_genre(movie147328, crime).
+has_1_genre(movie147330).
 has_genre(movie147330, crime).
+has_4_genre(movie147372).
 has_genre(movie147372, adventure).
 has_genre(movie147372, drama).
 has_genre(movie147372, fantasy).
 has_genre(movie147372, sci-fi).
+has_2_genre(movie147374).
 has_genre(movie147374, adventure).
 has_genre(movie147374, drama).
+has_1_genre(movie147376).
 has_genre(movie147376, sci-fi).
+has_4_genre(movie147378).
 has_genre(movie147378, adventure).
 has_genre(movie147378, children).
 has_genre(movie147378, drama).
 has_genre(movie147378, sci-fi).
+has_4_genre(movie147380).
 has_genre(movie147380, adventure).
 has_genre(movie147380, children).
 has_genre(movie147380, drama).
 has_genre(movie147380, sci-fi).
+has_2_genre(movie147382).
 has_genre(movie147382, action).
 has_genre(movie147382, sci-fi).
+has_1_genre(movie147384).
 has_genre(movie147384, sci-fi).
+has_2_genre(movie147410).
 has_genre(movie147410, comedy).
 has_genre(movie147410, drama).
+has_1_genre(movie147657).
 has_genre(movie147657, action).
+has_2_genre(movie147662).
 has_genre(movie147662, action).
 has_genre(movie147662, adventure).
+has_2_genre(movie147936).
 has_genre(movie147936, comedy).
 has_genre(movie147936, drama).
+has_1_genre(movie148166).
 has_genre(movie148166, documentary).
+has_3_genre(movie148172).
 has_genre(movie148172, adventure).
 has_genre(movie148172, sci-fi).
 has_genre(movie148172, thriller).
+has_1_genre(movie148238).
 has_genre(movie148238, comedy).
+has_2_genre(movie148424).
 has_genre(movie148424, comedy).
 has_genre(movie148424, drama).
+has_1_genre(movie148482).
 has_genre(movie148482, drama).
+has_1_genre(movie148592).
 has_genre(movie148592, comedy).
+has_1_genre(movie148626).
 has_genre(movie148626, drama).
+has_1_genre(movie148632).
 has_genre(movie148632, comedy).
+has_2_genre(movie148652).
 has_genre(movie148652, comedy).
 has_genre(movie148652, western).
+has_1_genre(movie148667).
 has_genre(movie148667, comedy).
+has_2_genre(movie148671).
 has_genre(movie148671, crime).
 has_genre(movie148671, horror).
+has_2_genre(movie148675).
 has_genre(movie148675, children).
 has_genre(movie148675, fantasy).
+has_1_genre(movie148709).
 has_genre(movie148709, thriller).
+has_more_than_5_genre(movie148775).
 has_genre(movie148775, adventure).
 has_genre(movie148775, children).
 has_genre(movie148775, comedy).
 has_genre(movie148775, drama).
 has_genre(movie148775, fantasy).
 has_genre(movie148775, sci-fi).
+has_2_genre(movie148881).
 has_genre(movie148881, animation).
 has_genre(movie148881, comedy).
+has_1_genre(movie148888).
 has_genre(movie148888, comedy).
+has_2_genre(movie148956).
 has_genre(movie148956, comedy).
 has_genre(movie148956, romance).
+has_4_genre(movie148978).
 has_genre(movie148978, animation).
 has_genre(movie148978, fantasy).
 has_genre(movie148978, horror).
 has_genre(movie148978, mystery).
+has_1_genre(movie148982).
 has_genre(movie148982, horror).
+has_3_genre(movie149011).
 has_genre(movie149011, comedy).
 has_genre(movie149011, drama).
 has_genre(movie149011, horror).
+has_2_genre(movie149144).
 has_genre(movie149144, horror).
 has_genre(movie149144, sci-fi).
+has_2_genre(movie149146).
 has_genre(movie149146, horror).
 has_genre(movie149146, sci-fi).
+has_1_genre(movie149330).
+has_2_genre(movie149334).
 has_genre(movie149334, drama).
 has_genre(movie149334, thriller).
+has_2_genre(movie149350).
 has_genre(movie149350, comedy).
 has_genre(movie149350, horror).
+has_1_genre(movie149352).
 has_genre(movie149352, comedy).
+has_2_genre(movie149354).
 has_genre(movie149354, children).
 has_genre(movie149354, comedy).
+has_1_genre(movie149380).
 has_genre(movie149380, romance).
+has_3_genre(movie149406).
 has_genre(movie149406, action).
 has_genre(movie149406, adventure).
 has_genre(movie149406, animation).
+has_2_genre(movie149508).
 has_genre(movie149508, comedy).
 has_genre(movie149508, romance).
+has_2_genre(movie149566).
 has_genre(movie149566, comedy).
 has_genre(movie149566, romance).
+has_1_genre(movie149590).
 has_genre(movie149590, thriller).
+has_3_genre(movie149612).
 has_genre(movie149612, action).
 has_genre(movie149612, drama).
 has_genre(movie149612, thriller).
+has_4_genre(movie149830).
 has_genre(movie149830, comedy).
 has_genre(movie149830, horror).
 has_genre(movie149830, romance).
 has_genre(movie149830, thriller).
+has_3_genre(movie149902).
 has_genre(movie149902, action).
 has_genre(movie149902, sci-fi).
 has_genre(movie149902, thriller).
+has_1_genre(movie150254).
 has_genre(movie150254, horror).
+has_2_genre(movie150401).
 has_genre(movie150401, action).
 has_genre(movie150401, crime).
+has_5_genre(movie150548).
 has_genre(movie150548, action).
 has_genre(movie150548, crime).
 has_genre(movie150548, drama).
 has_genre(movie150548, mystery).
 has_genre(movie150548, thriller).
+has_4_genre(movie150554).
 has_genre(movie150554, adventure).
 has_genre(movie150554, children).
 has_genre(movie150554, comedy).
 has_genre(movie150554, fantasy).
+has_3_genre(movie150596).
 has_genre(movie150596, comedy).
 has_genre(movie150596, drama).
 has_genre(movie150596, sci-fi).
+has_1_genre(movie150604).
 has_genre(movie150604, comedy).
+has_1_genre(movie150696).
 has_genre(movie150696, documentary).
+has_2_genre(movie150993).
 has_genre(movie150993, action).
 has_genre(movie150993, comedy).
+has_1_genre(movie151311).
 has_genre(movie151311, comedy).
+has_2_genre(movie151315).
 has_genre(movie151315, action).
 has_genre(movie151315, comedy).
+has_1_genre(movie151317).
 has_genre(movie151317, comedy).
+has_1_genre(movie151455).
 has_genre(movie151455, comedy).
+has_3_genre(movie151479).
 has_genre(movie151479, action).
 has_genre(movie151479, fantasy).
 has_genre(movie151479, sci-fi).
+has_1_genre(movie151501).
 has_genre(movie151501, drama).
+has_1_genre(movie151557).
 has_genre(movie151557, drama).
+has_2_genre(movie151559).
 has_genre(movie151559, horror).
 has_genre(movie151559, thriller).
+has_3_genre(movie151653).
 has_genre(movie151653, comedy).
 has_genre(movie151653, drama).
 has_genre(movie151653, fantasy).
+has_2_genre(movie151687).
 has_genre(movie151687, children).
 has_genre(movie151687, drama).
+has_3_genre(movie151695).
 has_genre(movie151695, drama).
 has_genre(movie151695, sci-fi).
 has_genre(movie151695, thriller).
+has_1_genre(movie151739).
 has_genre(movie151739, comedy).
+has_2_genre(movie151745).
 has_genre(movie151745, horror).
 has_genre(movie151745, sci-fi).
+has_1_genre(movie151759).
 has_genre(movie151759, documentary).
+has_1_genre(movie151763).
 has_genre(movie151763, mystery).
+has_1_genre(movie151769).
 has_genre(movie151769, animation).
+has_2_genre(movie151777).
 has_genre(movie151777, drama).
 has_genre(movie151777, thriller).
+has_5_genre(movie151781).
 has_genre(movie151781, action).
 has_genre(movie151781, animation).
 has_genre(movie151781, crime).
 has_genre(movie151781, sci-fi).
 has_genre(movie151781, thriller).
+has_1_genre(movie152037).
+has_2_genre(movie152063).
 has_genre(movie152063, adventure).
 has_genre(movie152063, fantasy).
+has_2_genre(movie152065).
 has_genre(movie152065, adventure).
 has_genre(movie152065, drama).
+has_1_genre(movie152071).
 has_genre(movie152071, drama).
+has_1_genre(movie152077).
 has_genre(movie152077, thriller).
+has_3_genre(movie152079).
 has_genre(movie152079, action).
 has_genre(movie152079, crime).
 has_genre(movie152079, thriller).
+has_5_genre(movie152081).
 has_genre(movie152081, action).
 has_genre(movie152081, adventure).
 has_genre(movie152081, animation).
 has_genre(movie152081, children).
 has_genre(movie152081, comedy).
+has_2_genre(movie152083).
 has_genre(movie152083, comedy).
 has_genre(movie152083, war).
+has_1_genre(movie152085).
 has_genre(movie152085, drama).
+has_1_genre(movie152091).
 has_genre(movie152091, comedy).
+has_1_genre(movie152105).
 has_genre(movie152105, comedy).
+has_1_genre(movie152173).
 has_genre(movie152173, horror).
+has_1_genre(movie152270).
 has_genre(movie152270, drama).
+has_2_genre(movie152284).
 has_genre(movie152284, drama).
 has_genre(movie152284, romance).
+has_1_genre(movie152372).
 has_genre(movie152372, horror).
+has_1_genre(movie152591).
 has_genre(movie152591, action).
+has_1_genre(movie152658).
 has_genre(movie152658, children).
+has_1_genre(movie152711).
 has_genre(movie152711, documentary).
+has_2_genre(movie152970).
 has_genre(movie152970, adventure).
 has_genre(movie152970, comedy).
+has_3_genre(movie153070).
 has_genre(movie153070, comedy).
 has_genre(movie153070, drama).
 has_genre(movie153070, fantasy).
+has_1_genre(movie153236).
 has_genre(movie153236, animation).
+has_3_genre(movie153386).
 has_genre(movie153386, children).
 has_genre(movie153386, comedy).
 has_genre(movie153386, fantasy).
+has_3_genre(movie153408).
 has_genre(movie153408, comedy).
 has_genre(movie153408, drama).
 has_genre(movie153408, fantasy).
+has_1_genre(movie154065).
 has_genre(movie154065, comedy).
+has_1_genre(movie154358).
 has_genre(movie154358, documentary).
+has_2_genre(movie154975).
 has_genre(movie154975, comedy).
 has_genre(movie154975, documentary).
+has_3_genre(movie155064).
 has_genre(movie155064, drama).
 has_genre(movie155064, horror).
 has_genre(movie155064, mystery).
+has_1_genre(movie155168).
 has_genre(movie155168, comedy).
+has_3_genre(movie155288).
 has_genre(movie155288, drama).
 has_genre(movie155288, thriller).
 has_genre(movie155288, war).
+has_3_genre(movie155358).
 has_genre(movie155358, action).
 has_genre(movie155358, adventure).
 has_genre(movie155358, thriller).
+has_3_genre(movie155509).
 has_genre(movie155509, action).
 has_genre(movie155509, comedy).
 has_genre(movie155509, romance).
+has_1_genre(movie155589).
+has_2_genre(movie155659).
 has_genre(movie155659, comedy).
 has_genre(movie155659, drama).
+has_1_genre(movie155743).
 has_genre(movie155743, comedy).
+has_1_genre(movie155774).
 has_genre(movie155774, adventure).
+has_1_genre(movie155812).
 has_genre(movie155812, comedy).
+has_1_genre(movie155820).
 has_genre(movie155820, comedy).
+has_1_genre(movie155892).
 has_genre(movie155892, comedy).
+has_4_genre(movie156025).
 has_genre(movie156025, adventure).
 has_genre(movie156025, animation).
 has_genre(movie156025, children).
 has_genre(movie156025, comedy).
+has_1_genre(movie156371).
 has_genre(movie156371, comedy).
+has_1_genre(movie156387).
 has_genre(movie156387, drama).
+has_3_genre(movie156553).
 has_genre(movie156553, animation).
 has_genre(movie156553, comedy).
 has_genre(movie156553, drama).
+has_1_genre(movie156605).
+has_4_genre(movie156607).
 has_genre(movie156607, action).
 has_genre(movie156607, adventure).
 has_genre(movie156607, drama).
 has_genre(movie156607, fantasy).
+has_1_genre(movie156609).
 has_genre(movie156609, comedy).
+has_2_genre(movie156675).
 has_genre(movie156675, mystery).
 has_genre(movie156675, sci-fi).
+has_2_genre(movie156706).
 has_genre(movie156706, crime).
 has_genre(movie156706, thriller).
+has_1_genre(movie156726).
 has_genre(movie156726, thriller).
+has_1_genre(movie156781).
 has_genre(movie156781, comedy).
+has_1_genre(movie156783).
 has_genre(movie156783, comedy).
+has_2_genre(movie157108).
 has_genre(movie157108, comedy).
 has_genre(movie157108, western).
+has_2_genre(movie157110).
 has_genre(movie157110, comedy).
 has_genre(movie157110, crime).
+has_1_genre(movie157122).
 has_genre(movie157122, drama).
+has_3_genre(movie157130).
 has_genre(movie157130, drama).
 has_genre(movie157130, romance).
 has_genre(movie157130, thriller).
+has_2_genre(movie157172).
 has_genre(movie157172, action).
 has_genre(movie157172, fantasy).
+has_2_genre(movie157200).
 has_genre(movie157200, drama).
 has_genre(movie157200, thriller).
+has_1_genre(movie157270).
 has_genre(movie157270, comedy).
+has_3_genre(movie157296).
 has_genre(movie157296, adventure).
 has_genre(movie157296, animation).
 has_genre(movie157296, comedy).
+has_1_genre(movie157312).
 has_genre(movie157312, comedy).
+has_2_genre(movie157340).
 has_genre(movie157340, animation).
 has_genre(movie157340, comedy).
+has_2_genre(movie157369).
 has_genre(movie157369, comedy).
 has_genre(movie157369, drama).
+has_4_genre(movie157407).
 has_genre(movie157407, action).
 has_genre(movie157407, crime).
 has_genre(movie157407, drama).
 has_genre(movie157407, thriller).
+has_2_genre(movie157432).
 has_genre(movie157432, action).
 has_genre(movie157432, crime).
+has_2_genre(movie157699).
 has_genre(movie157699, drama).
 has_genre(movie157699, thriller).
+has_2_genre(movie157775).
 has_genre(movie157775, animation).
 has_genre(movie157775, comedy).
+has_more_than_5_genre(movie157865).
 has_genre(movie157865, action).
 has_genre(movie157865, adventure).
 has_genre(movie157865, animation).
 has_genre(movie157865, children).
 has_genre(movie157865, comedy).
 has_genre(movie157865, sci-fi).
+has_1_genre(movie158022).
 has_genre(movie158022, comedy).
+has_2_genre(movie158027).
 has_genre(movie158027, drama).
 has_genre(movie158027, sci-fi).
+has_3_genre(movie158035).
 has_genre(movie158035, action).
 has_genre(movie158035, animation).
 has_genre(movie158035, comedy).
+has_3_genre(movie158238).
 has_genre(movie158238, crime).
 has_genre(movie158238, mystery).
 has_genre(movie158238, thriller).
+has_2_genre(movie158254).
 has_genre(movie158254, action).
 has_genre(movie158254, comedy).
+has_1_genre(movie158388).
 has_genre(movie158388, sci-fi).
+has_1_genre(movie158398).
 has_genre(movie158398, comedy).
+has_1_genre(movie158402).
 has_genre(movie158402, action).
+has_2_genre(movie158528).
 has_genre(movie158528, drama).
 has_genre(movie158528, thriller).
+has_3_genre(movie158721).
 has_genre(movie158721, action).
 has_genre(movie158721, comedy).
 has_genre(movie158721, thriller).
+has_3_genre(movie158783).
 has_genre(movie158783, drama).
 has_genre(movie158783, romance).
 has_genre(movie158783, thriller).
+has_3_genre(movie158813).
 has_genre(movie158813, adventure).
 has_genre(movie158813, children).
 has_genre(movie158813, fantasy).
+has_2_genre(movie158830).
 has_genre(movie158830, children).
 has_genre(movie158830, fantasy).
+has_1_genre(movie158842).
 has_genre(movie158842, documentary).
+has_2_genre(movie158872).
 has_genre(movie158872, animation).
 has_genre(movie158872, comedy).
+has_2_genre(movie158874).
 has_genre(movie158874, action).
 has_genre(movie158874, drama).
+has_3_genre(movie158882).
 has_genre(movie158882, comedy).
 has_genre(movie158882, drama).
 has_genre(movie158882, romance).
+has_3_genre(movie158956).
 has_genre(movie158956, action).
 has_genre(movie158956, horror).
 has_genre(movie158956, sci-fi).
+has_1_genre(movie158966).
 has_genre(movie158966, drama).
+has_1_genre(movie158972).
 has_genre(movie158972, drama).
+has_2_genre(movie159061).
 has_genre(movie159061, mystery).
 has_genre(movie159061, thriller).
+has_1_genre(movie159069).
 has_genre(movie159069, comedy).
+has_2_genre(movie159077).
 has_genre(movie159077, comedy).
 has_genre(movie159077, drama).
+has_3_genre(movie159093).
 has_genre(movie159093, action).
 has_genre(movie159093, comedy).
 has_genre(movie159093, thriller).
+has_1_genre(movie159161).
+has_3_genre(movie159193).
 has_genre(movie159193, comedy).
 has_genre(movie159193, drama).
 has_genre(movie159193, romance).
+has_5_genre(movie159403).
 has_genre(movie159403, adventure).
 has_genre(movie159403, animation).
 has_genre(movie159403, fantasy).
 has_genre(movie159403, horror).
 has_genre(movie159403, sci-fi).
+has_3_genre(movie159415).
 has_genre(movie159415, comedy).
 has_genre(movie159415, drama).
 has_genre(movie159415, romance).
+has_1_genre(movie159441).
 has_genre(movie159441, comedy).
+has_1_genre(movie159510).
 has_genre(movie159510, horror).
+has_3_genre(movie159690).
 has_genre(movie159690, action).
 has_genre(movie159690, adventure).
 has_genre(movie159690, comedy).
+has_1_genre(movie159717).
 has_genre(movie159717, drama).
+has_1_genre(movie159755).
 has_genre(movie159755, comedy).
+has_1_genre(movie159779).
+has_3_genre(movie159811).
 has_genre(movie159811, animation).
 has_genre(movie159811, drama).
 has_genre(movie159811, fantasy).
+has_1_genre(movie159817).
 has_genre(movie159817, documentary).
+has_1_genre(movie159849).
 has_genre(movie159849, comedy).
+has_1_genre(movie159858).
 has_genre(movie159858, horror).
+has_1_genre(movie159976).
 has_genre(movie159976, drama).
+has_4_genre(movie160080).
 has_genre(movie160080, action).
 has_genre(movie160080, comedy).
 has_genre(movie160080, horror).
 has_genre(movie160080, sci-fi).
+has_2_genre(movie160271).
 has_genre(movie160271, action).
 has_genre(movie160271, comedy).
+has_1_genre(movie160289).
 has_genre(movie160289, documentary).
+has_2_genre(movie160341).
 has_genre(movie160341, action).
 has_genre(movie160341, thriller).
+has_1_genre(movie160400).
 has_genre(movie160400, drama).
+has_2_genre(movie160422).
 has_genre(movie160422, drama).
 has_genre(movie160422, war).
+has_1_genre(movie160438).
 has_genre(movie160438, action).
+has_1_genre(movie160440).
 has_genre(movie160440, thriller).
+has_3_genre(movie160527).
 has_genre(movie160527, action).
 has_genre(movie160527, crime).
 has_genre(movie160527, drama).
+has_2_genre(movie160563).
 has_genre(movie160563, action).
 has_genre(movie160563, adventure).
+has_3_genre(movie160565).
 has_genre(movie160565, action).
 has_genre(movie160565, horror).
 has_genre(movie160565, sci-fi).
+has_1_genre(movie160567).
 has_genre(movie160567, comedy).
+has_4_genre(movie160569).
 has_genre(movie160569, adventure).
 has_genre(movie160569, animation).
 has_genre(movie160569, children).
 has_genre(movie160569, comedy).
+has_1_genre(movie160571).
 has_genre(movie160571, horror).
+has_3_genre(movie160573).
 has_genre(movie160573, adventure).
 has_genre(movie160573, children).
 has_genre(movie160573, fantasy).
+has_1_genre(movie160644).
 has_genre(movie160644, drama).
+has_1_genre(movie160646).
 has_genre(movie160646, drama).
+has_1_genre(movie160684).
 has_genre(movie160684, action).
+has_1_genre(movie160718).
 has_genre(movie160718, animation).
+has_3_genre(movie160730).
 has_genre(movie160730, action).
 has_genre(movie160730, drama).
 has_genre(movie160730, thriller).
+has_3_genre(movie160836).
 has_genre(movie160836, action).
 has_genre(movie160836, drama).
 has_genre(movie160836, thriller).
+has_1_genre(movie160848).
 has_genre(movie160848, animation).
+has_1_genre(movie160872).
 has_genre(movie160872, horror).
+has_2_genre(movie160954).
 has_genre(movie160954, drama).
 has_genre(movie160954, thriller).
+has_2_genre(movie160978).
 has_genre(movie160978, horror).
 has_genre(movie160978, sci-fi).
+has_1_genre(movie160980).
 has_genre(movie160980, drama).
+has_1_genre(movie161008).
+has_1_genre(movie161024).
 has_genre(movie161024, comedy).
+has_2_genre(movie161032).
 has_genre(movie161032, action).
 has_genre(movie161032, drama).
+has_1_genre(movie161044).
 has_genre(movie161044, sci-fi).
+has_2_genre(movie161127).
 has_genre(movie161127, crime).
 has_genre(movie161127, drama).
+has_1_genre(movie161131).
 has_genre(movie161131, comedy).
+has_1_genre(movie161290).
 has_genre(movie161290, action).
+has_4_genre(movie161354).
 has_genre(movie161354, action).
 has_genre(movie161354, animation).
 has_genre(movie161354, crime).
 has_genre(movie161354, drama).
+has_1_genre(movie161580).
 has_genre(movie161580, comedy).
+has_2_genre(movie161582).
 has_genre(movie161582, crime).
 has_genre(movie161582, drama).
+has_more_than_5_genre(movie161594).
 has_genre(movie161594, action).
 has_genre(movie161594, adventure).
 has_genre(movie161594, animation).
 has_genre(movie161594, drama).
 has_genre(movie161594, fantasy).
 has_genre(movie161594, sci-fi).
+has_1_genre(movie161634).
 has_genre(movie161634, thriller).
+has_3_genre(movie161830).
 has_genre(movie161830, drama).
 has_genre(movie161830, horror).
 has_genre(movie161830, thriller).
+has_4_genre(movie161918).
 has_genre(movie161918, action).
 has_genre(movie161918, adventure).
 has_genre(movie161918, horror).
 has_genre(movie161918, sci-fi).
+has_1_genre(movie161922).
 has_genre(movie161922, comedy).
+has_1_genre(movie161966).
 has_genre(movie161966, thriller).
+has_2_genre(movie162082).
 has_genre(movie162082, action).
 has_genre(movie162082, thriller).
+has_1_genre(movie162344).
 has_genre(movie162344, comedy).
+has_2_genre(movie162350).
 has_genre(movie162350, action).
 has_genre(movie162350, western).
+has_1_genre(movie162414).
 has_genre(movie162414, drama).
+has_3_genre(movie162478).
 has_genre(movie162478, action).
 has_genre(movie162478, comedy).
 has_genre(movie162478, crime).
+has_4_genre(movie162578).
 has_genre(movie162578, adventure).
 has_genre(movie162578, animation).
 has_genre(movie162578, children).
 has_genre(movie162578, fantasy).
+has_2_genre(movie162590).
 has_genre(movie162590, comedy).
 has_genre(movie162590, romance).
+has_1_genre(movie162598).
 has_genre(movie162598, drama).
+has_1_genre(movie162600).
 has_genre(movie162600, fantasy).
+has_1_genre(movie162602).
 has_genre(movie162602, thriller).
+has_3_genre(movie162606).
 has_genre(movie162606, crime).
 has_genre(movie162606, drama).
 has_genre(movie162606, thriller).
+has_3_genre(movie162828).
 has_genre(movie162828, crime).
 has_genre(movie162828, drama).
 has_genre(movie162828, thriller).
+has_3_genre(movie162968).
 has_genre(movie162968, action).
 has_genre(movie162968, animation).
 has_genre(movie162968, mystery).
+has_3_genre(movie162982).
 has_genre(movie162982, animation).
 has_genre(movie162982, drama).
 has_genre(movie162982, sci-fi).
+has_4_genre(movie163056).
 has_genre(movie163056, action).
 has_genre(movie163056, adventure).
 has_genre(movie163056, fantasy).
 has_genre(movie163056, sci-fi).
+has_2_genre(movie163072).
 has_genre(movie163072, animation).
 has_genre(movie163072, children).
+has_1_genre(movie163112).
 has_genre(movie163112, animation).
+has_4_genre(movie163134).
 has_genre(movie163134, animation).
 has_genre(movie163134, drama).
 has_genre(movie163134, fantasy).
 has_genre(movie163134, romance).
+has_1_genre(movie163386).
 has_genre(movie163386, animation).
+has_1_genre(movie163527).
 has_genre(movie163527, comedy).
+has_1_genre(movie163639).
 has_genre(movie163639, animation).
+has_2_genre(movie163645).
 has_genre(movie163645, drama).
 has_genre(movie163645, war).
+has_1_genre(movie163653).
 has_genre(movie163653, comedy).
+has_3_genre(movie163809).
 has_genre(movie163809, adventure).
 has_genre(movie163809, animation).
 has_genre(movie163809, drama).
+has_2_genre(movie163925).
 has_genre(movie163925, animation).
 has_genre(movie163925, comedy).
+has_2_genre(movie163937).
 has_genre(movie163937, horror).
 has_genre(movie163937, thriller).
+has_1_genre(movie163981).
 has_genre(movie163981, horror).
+has_2_genre(movie163985).
 has_genre(movie163985, sci-fi).
 has_genre(movie163985, thriller).
+has_1_genre(movie164179).
 has_genre(movie164179, sci-fi).
+has_3_genre(movie164200).
 has_genre(movie164200, animation).
 has_genre(movie164200, children).
 has_genre(movie164200, comedy).
+has_more_than_5_genre(movie164226).
 has_genre(movie164226, action).
 has_genre(movie164226, adventure).
 has_genre(movie164226, comedy).
 has_genre(movie164226, fantasy).
 has_genre(movie164226, sci-fi).
 has_genre(movie164226, thriller).
+has_2_genre(movie164280).
 has_genre(movie164280, drama).
 has_genre(movie164280, fantasy).
+has_4_genre(movie164367).
 has_genre(movie164367, drama).
 has_genre(movie164367, horror).
 has_genre(movie164367, sci-fi).
 has_genre(movie164367, thriller).
+has_1_genre(movie164375).
 has_genre(movie164375, comedy).
+has_1_genre(movie164540).
 has_genre(movie164540, documentary).
+has_2_genre(movie164647).
 has_genre(movie164647, comedy).
 has_genre(movie164647, romance).
+has_1_genre(movie164655).
 has_genre(movie164655, documentary).
+has_3_genre(movie164707).
 has_genre(movie164707, children).
 has_genre(movie164707, comedy).
 has_genre(movie164707, drama).
+has_1_genre(movie164753).
 has_genre(movie164753, romance).
+has_2_genre(movie164881).
 has_genre(movie164881, action).
 has_genre(movie164881, sci-fi).
+has_3_genre(movie164909).
 has_genre(movie164909, comedy).
 has_genre(movie164909, drama).
 has_genre(movie164909, romance).
+has_1_genre(movie164917).
 has_genre(movie164917, documentary).
+has_1_genre(movie165075).
 has_genre(movie165075, drama).
+has_2_genre(movie165101).
 has_genre(movie165101, mystery).
 has_genre(movie165101, thriller).
+has_1_genre(movie165103).
 has_genre(movie165103, comedy).
+has_1_genre(movie165139).
 has_genre(movie165139, comedy).
+has_4_genre(movie165343).
 has_genre(movie165343, comedy).
 has_genre(movie165343, horror).
 has_genre(movie165343, sci-fi).
 has_genre(movie165343, thriller).
+has_5_genre(movie165347).
 has_genre(movie165347, action).
 has_genre(movie165347, crime).
 has_genre(movie165347, drama).
 has_genre(movie165347, mystery).
 has_genre(movie165347, thriller).
+has_1_genre(movie165483).
 has_genre(movie165483, comedy).
+has_1_genre(movie165489).
+has_1_genre(movie165529).
 has_genre(movie165529, drama).
+has_1_genre(movie165549).
 has_genre(movie165549, drama).
+has_1_genre(movie165551).
 has_genre(movie165551, drama).
+has_1_genre(movie165635).
 has_genre(movie165635, thriller).
+has_3_genre(movie165639).
 has_genre(movie165639, comedy).
 has_genre(movie165639, fantasy).
 has_genre(movie165639, sci-fi).
+has_1_genre(movie165645).
 has_genre(movie165645, comedy).
+has_1_genre(movie165671).
 has_genre(movie165671, documentary).
+has_1_genre(movie165843).
 has_genre(movie165843, documentary).
+has_2_genre(movie165947).
 has_genre(movie165947, action).
 has_genre(movie165947, comedy).
+has_3_genre(movie165959).
 has_genre(movie165959, animation).
 has_genre(movie165959, comedy).
 has_genre(movie165959, drama).
+has_1_genre(movie165969).
 has_genre(movie165969, documentary).
+has_2_genre(movie166015).
 has_genre(movie166015, comedy).
 has_genre(movie166015, drama).
+has_1_genre(movie166024).
+has_3_genre(movie166183).
 has_genre(movie166183, adventure).
 has_genre(movie166183, animation).
 has_genre(movie166183, children).
+has_4_genre(movie166203).
 has_genre(movie166203, adventure).
 has_genre(movie166203, children).
 has_genre(movie166203, fantasy).
 has_genre(movie166203, sci-fi).
+has_3_genre(movie166291).
 has_genre(movie166291, animation).
 has_genre(movie166291, drama).
 has_genre(movie166291, romance).
+has_5_genre(movie166461).
 has_genre(movie166461, adventure).
 has_genre(movie166461, animation).
 has_genre(movie166461, children).
 has_genre(movie166461, comedy).
 has_genre(movie166461, fantasy).
+has_1_genre(movie166492).
 has_genre(movie166492, comedy).
+has_2_genre(movie166526).
 has_genre(movie166526, adventure).
 has_genre(movie166526, sci-fi).
+has_4_genre(movie166528).
 has_genre(movie166528, action).
 has_genre(movie166528, adventure).
 has_genre(movie166528, fantasy).
 has_genre(movie166528, sci-fi).
+has_3_genre(movie166534).
 has_genre(movie166534, drama).
 has_genre(movie166534, horror).
 has_genre(movie166534, thriller).
+has_2_genre(movie166558).
 has_genre(movie166558, action).
 has_genre(movie166558, horror).
+has_1_genre(movie166568).
 has_genre(movie166568, thriller).
+has_4_genre(movie166635).
 has_genre(movie166635, adventure).
 has_genre(movie166635, drama).
 has_genre(movie166635, romance).
 has_genre(movie166635, sci-fi).
+has_1_genre(movie166643).
 has_genre(movie166643, drama).
+has_1_genre(movie166705).
 has_genre(movie166705, drama).
+has_1_genre(movie166946).
 has_genre(movie166946, drama).
+has_1_genre(movie167018).
 has_genre(movie167018, comedy).
+has_3_genre(movie167036).
 has_genre(movie167036, animation).
 has_genre(movie167036, children).
 has_genre(movie167036, comedy).
+has_1_genre(movie167064).
 has_genre(movie167064, documentary).
+has_1_genre(movie167296).
 has_genre(movie167296, drama).
+has_3_genre(movie167370).
 has_genre(movie167370, action).
 has_genre(movie167370, adventure).
 has_genre(movie167370, sci-fi).
+has_2_genre(movie167380).
 has_genre(movie167380, comedy).
 has_genre(movie167380, drama).
+has_1_genre(movie167538).
 has_genre(movie167538, horror).
+has_1_genre(movie167570).
+has_1_genre(movie167634).
 has_genre(movie167634, comedy).
+has_1_genre(movie167706).
 has_genre(movie167706, documentary).
+has_2_genre(movie167732).
 has_genre(movie167732, comedy).
 has_genre(movie167732, drama).
+has_3_genre(movie167746).
 has_genre(movie167746, action).
 has_genre(movie167746, animation).
 has_genre(movie167746, comedy).
+has_2_genre(movie167772).
 has_genre(movie167772, animation).
 has_genre(movie167772, comedy).
+has_3_genre(movie167790).
 has_genre(movie167790, children).
 has_genre(movie167790, comedy).
 has_genre(movie167790, drama).
+has_1_genre(movie167854).
 has_genre(movie167854, comedy).
+has_4_genre(movie168026).
 has_genre(movie168026, action).
 has_genre(movie168026, adventure).
 has_genre(movie168026, fantasy).
 has_genre(movie168026, sci-fi).
+has_3_genre(movie168090).
 has_genre(movie168090, animation).
 has_genre(movie168090, fantasy).
 has_genre(movie168090, mystery).
+has_1_genre(movie168144).
 has_genre(movie168144, comedy).
+has_1_genre(movie168174).
 has_genre(movie168174, comedy).
+has_3_genre(movie168218).
 has_genre(movie168218, animation).
 has_genre(movie168218, fantasy).
 has_genre(movie168218, mystery).
+has_3_genre(movie168248).
 has_genre(movie168248, action).
 has_genre(movie168248, crime).
 has_genre(movie168248, thriller).
+has_1_genre(movie168250).
 has_genre(movie168250, horror).
+has_2_genre(movie168252).
 has_genre(movie168252, action).
 has_genre(movie168252, sci-fi).
+has_3_genre(movie168254).
 has_genre(movie168254, action).
 has_genre(movie168254, adventure).
 has_genre(movie168254, fantasy).
+has_2_genre(movie168266).
 has_genre(movie168266, crime).
 has_genre(movie168266, drama).
+has_2_genre(movie168326).
 has_genre(movie168326, comedy).
 has_genre(movie168326, romance).
+has_1_genre(movie168350).
 has_genre(movie168350, drama).
+has_2_genre(movie168358).
 has_genre(movie168358, sci-fi).
 has_genre(movie168358, thriller).
+has_2_genre(movie168366).
 has_genre(movie168366, fantasy).
 has_genre(movie168366, romance).
+has_3_genre(movie168418).
 has_genre(movie168418, animation).
 has_genre(movie168418, children).
 has_genre(movie168418, comedy).
+has_3_genre(movie168456).
 has_genre(movie168456, action).
 has_genre(movie168456, adventure).
 has_genre(movie168456, drama).
+has_2_genre(movie168492).
 has_genre(movie168492, drama).
 has_genre(movie168492, romance).
+has_1_genre(movie168608).
 has_genre(movie168608, drama).
+has_3_genre(movie168612).
 has_genre(movie168612, action).
 has_genre(movie168612, drama).
 has_genre(movie168612, sci-fi).
+has_1_genre(movie168632).
 has_genre(movie168632, comedy).
+has_2_genre(movie168712).
 has_genre(movie168712, drama).
 has_genre(movie168712, romance).
+has_1_genre(movie168846).
 has_genre(movie168846, comedy).
+has_1_genre(movie169034).
+has_1_genre(movie169180).
 has_genre(movie169180, thriller).
+has_1_genre(movie169670).
 has_genre(movie169670, horror).
+has_1_genre(movie169904).
 has_genre(movie169904, sci-fi).
+has_1_genre(movie169912).
 has_genre(movie169912, comedy).
+has_2_genre(movie169958).
 has_genre(movie169958, drama).
 has_genre(movie169958, mystery).
+has_3_genre(movie169982).
 has_genre(movie169982, action).
 has_genre(movie169982, adventure).
 has_genre(movie169982, sci-fi).
+has_4_genre(movie169984).
 has_genre(movie169984, action).
 has_genre(movie169984, horror).
 has_genre(movie169984, sci-fi).
 has_genre(movie169984, thriller).
+has_3_genre(movie169992).
 has_genre(movie169992, action).
 has_genre(movie169992, crime).
 has_genre(movie169992, drama).
+has_3_genre(movie170289).
 has_genre(movie170289, action).
 has_genre(movie170289, horror).
 has_genre(movie170289, sci-fi).
+has_3_genre(movie170297).
 has_genre(movie170297, action).
 has_genre(movie170297, animation).
 has_genre(movie170297, sci-fi).
+has_3_genre(movie170355).
 has_genre(movie170355, drama).
 has_genre(movie170355, mystery).
 has_genre(movie170355, romance).
+has_1_genre(movie170357).
 has_genre(movie170357, comedy).
+has_3_genre(movie170399).
 has_genre(movie170399, action).
 has_genre(movie170399, comedy).
 has_genre(movie170399, drama).
+has_2_genre(movie170401).
 has_genre(movie170401, comedy).
 has_genre(movie170401, drama).
+has_1_genre(movie170411).
 has_genre(movie170411, comedy).
+has_1_genre(movie170551).
 has_genre(movie170551, comedy).
+has_1_genre(movie170597).
 has_genre(movie170597, animation).
+has_1_genre(movie170697).
 has_genre(movie170697, drama).
+has_3_genre(movie170705).
 has_genre(movie170705, action).
 has_genre(movie170705, drama).
 has_genre(movie170705, war).
+has_3_genre(movie170777).
 has_genre(movie170777, animation).
 has_genre(movie170777, children).
 has_genre(movie170777, comedy).
+has_2_genre(movie170813).
 has_genre(movie170813, action).
 has_genre(movie170813, comedy).
+has_2_genre(movie170817).
 has_genre(movie170817, action).
 has_genre(movie170817, comedy).
+has_5_genre(movie170827).
 has_genre(movie170827, action).
 has_genre(movie170827, adventure).
 has_genre(movie170827, fantasy).
 has_genre(movie170827, horror).
 has_genre(movie170827, thriller).
+has_3_genre(movie170837).
 has_genre(movie170837, children).
 has_genre(movie170837, comedy).
 has_genre(movie170837, fantasy).
+has_4_genre(movie170875).
 has_genre(movie170875, action).
 has_genre(movie170875, crime).
 has_genre(movie170875, drama).
 has_genre(movie170875, thriller).
+has_1_genre(movie170897).
 has_genre(movie170897, comedy).
+has_1_genre(movie170907).
 has_genre(movie170907, documentary).
+has_1_genre(movie170937).
 has_genre(movie170937, comedy).
+has_4_genre(movie170939).
 has_genre(movie170939, action).
 has_genre(movie170939, animation).
 has_genre(movie170939, children).
 has_genre(movie170939, comedy).
+has_3_genre(movie170945).
 has_genre(movie170945, horror).
 has_genre(movie170945, mystery).
 has_genre(movie170945, thriller).
+has_3_genre(movie170957).
 has_genre(movie170957, adventure).
 has_genre(movie170957, animation).
 has_genre(movie170957, comedy).
+has_3_genre(movie170993).
 has_genre(movie170993, comedy).
 has_genre(movie170993, crime).
 has_genre(movie170993, drama).
+has_1_genre(movie171011).
 has_genre(movie171011, documentary).
+has_1_genre(movie171023).
 has_genre(movie171023, drama).
+has_1_genre(movie171251).
 has_genre(movie171251, documentary).
+has_1_genre(movie171495).
+has_1_genre(movie171631).
+has_1_genre(movie171695).
 has_genre(movie171695, comedy).
+has_1_genre(movie171701).
 has_genre(movie171701, drama).
+has_1_genre(movie171749).
+has_1_genre(movie171751).
 has_genre(movie171751, comedy).
+has_3_genre(movie171759).
 has_genre(movie171759, drama).
 has_genre(movie171759, thriller).
 has_genre(movie171759, western).
+has_3_genre(movie171763).
 has_genre(movie171763, action).
 has_genre(movie171763, crime).
 has_genre(movie171763, thriller).
+has_4_genre(movie171765).
 has_genre(movie171765, action).
 has_genre(movie171765, adventure).
 has_genre(movie171765, drama).
 has_genre(movie171765, sci-fi).
+has_3_genre(movie171811).
 has_genre(movie171811, comedy).
 has_genre(movie171811, sci-fi).
 has_genre(movie171811, war).
+has_2_genre(movie171867).
 has_genre(movie171867, comedy).
 has_genre(movie171867, drama).
+has_1_genre(movie171891).
+has_3_genre(movie171917).
 has_genre(movie171917, drama).
 has_genre(movie171917, mystery).
 has_genre(movie171917, thriller).
+has_1_genre(movie172013).
 has_genre(movie172013, drama).
+has_1_genre(movie172215).
 has_genre(movie172215, comedy).
+has_4_genre(movie172229).
 has_genre(movie172229, comedy).
 has_genre(movie172229, mystery).
 has_genre(movie172229, romance).
 has_genre(movie172229, thriller).
+has_2_genre(movie172233).
 has_genre(movie172233, drama).
 has_genre(movie172233, romance).
+has_1_genre(movie172253).
 has_genre(movie172253, comedy).
+has_1_genre(movie172321).
 has_genre(movie172321, comedy).
+has_1_genre(movie172461).
 has_genre(movie172461, documentary).
+has_1_genre(movie172497).
+has_4_genre(movie172547).
 has_genre(movie172547, adventure).
 has_genre(movie172547, animation).
 has_genre(movie172547, children).
 has_genre(movie172547, comedy).
+has_4_genre(movie172577).
 has_genre(movie172577, animation).
 has_genre(movie172577, children).
 has_genre(movie172577, comedy).
 has_genre(movie172577, fantasy).
+has_1_genre(movie172583).
 has_genre(movie172583, animation).
+has_3_genre(movie172585).
 has_genre(movie172585, adventure).
 has_genre(movie172585, animation).
 has_genre(movie172585, children).
+has_1_genre(movie172587).
 has_genre(movie172587, animation).
+has_1_genre(movie172589).
 has_genre(movie172589, animation).
+has_1_genre(movie172591).
+has_4_genre(movie172637).
 has_genre(movie172637, action).
 has_genre(movie172637, adventure).
 has_genre(movie172637, animation).
 has_genre(movie172637, comedy).
+has_1_genre(movie172705).
 has_genre(movie172705, documentary).
+has_4_genre(movie172793).
 has_genre(movie172793, adventure).
 has_genre(movie172793, animation).
 has_genre(movie172793, children).
 has_genre(movie172793, fantasy).
+has_3_genre(movie172825).
 has_genre(movie172825, adventure).
 has_genre(movie172825, animation).
 has_genre(movie172825, children).
+has_2_genre(movie172875).
 has_genre(movie172875, animation).
 has_genre(movie172875, sci-fi).
+has_3_genre(movie172881).
 has_genre(movie172881, action).
 has_genre(movie172881, animation).
 has_genre(movie172881, sci-fi).
+has_2_genre(movie172887).
 has_genre(movie172887, animation).
 has_genre(movie172887, sci-fi).
+has_1_genre(movie172909).
 has_genre(movie172909, animation).
+has_4_genre(movie173145).
 has_genre(movie173145, action).
 has_genre(movie173145, adventure).
 has_genre(movie173145, drama).
 has_genre(movie173145, sci-fi).
+has_1_genre(movie173197).
 has_genre(movie173197, drama).
+has_1_genre(movie173205).
 has_genre(movie173205, comedy).
+has_3_genre(movie173209).
 has_genre(movie173209, comedy).
 has_genre(movie173209, drama).
 has_genre(movie173209, war).
+has_1_genre(movie173235).
 has_genre(movie173235, documentary).
+has_1_genre(movie173253).
 has_genre(movie173253, comedy).
+has_1_genre(movie173255).
 has_genre(movie173255, comedy).
+has_3_genre(movie173291).
 has_genre(movie173291, action).
 has_genre(movie173291, adventure).
 has_genre(movie173291, sci-fi).
+has_3_genre(movie173307).
 has_genre(movie173307, action).
 has_genre(movie173307, horror).
 has_genre(movie173307, sci-fi).
+has_1_genre(movie173317).
 has_genre(movie173317, documentary).
+has_4_genre(movie173351).
 has_genre(movie173351, animation).
 has_genre(movie173351, children).
 has_genre(movie173351, comedy).
 has_genre(movie173351, fantasy).
+has_1_genre(movie173355).
 has_genre(movie173355, animation).
+has_1_genre(movie173535).
+has_2_genre(movie173619).
 has_genre(movie173619, comedy).
 has_genre(movie173619, crime).
+has_1_genre(movie173751).
 has_genre(movie173751, thriller).
+has_3_genre(movie173873).
 has_genre(movie173873, adventure).
 has_genre(movie173873, children).
 has_genre(movie173873, fantasy).
+has_2_genre(movie173925).
 has_genre(movie173925, sci-fi).
 has_genre(movie173925, thriller).
+has_1_genre(movie173941).
 has_genre(movie173941, thriller).
+has_1_genre(movie173963).
 has_genre(movie173963, comedy).
+has_1_genre(movie174045).
 has_genre(movie174045, comedy).
+has_5_genre(movie174053).
 has_genre(movie174053, drama).
 has_genre(movie174053, horror).
 has_genre(movie174053, mystery).
 has_genre(movie174053, sci-fi).
 has_genre(movie174053, thriller).
+has_4_genre(movie174055).
 has_genre(movie174055, action).
 has_genre(movie174055, drama).
 has_genre(movie174055, thriller).
 has_genre(movie174055, war).
+has_3_genre(movie174141).
 has_genre(movie174141, animation).
 has_genre(movie174141, drama).
 has_genre(movie174141, fantasy).
+has_1_genre(movie174403).
+has_2_genre(movie174479).
 has_genre(movie174479, horror).
 has_genre(movie174479, thriller).
+has_1_genre(movie174551).
 has_genre(movie174551, comedy).
+has_1_genre(movie174681).
 has_genre(movie174681, comedy).
+has_2_genre(movie174727).
 has_genre(movie174727, crime).
 has_genre(movie174727, drama).
+has_1_genre(movie174737).
 has_genre(movie174737, comedy).
+has_1_genre(movie174815).
 has_genre(movie174815, comedy).
+has_1_genre(movie174909).
 has_genre(movie174909, comedy).
+has_4_genre(movie175197).
 has_genre(movie175197, fantasy).
 has_genre(movie175197, horror).
 has_genre(movie175197, sci-fi).
 has_genre(movie175197, western).
+has_1_genre(movie175199).
 has_genre(movie175199, horror).
+has_2_genre(movie175293).
 has_genre(movie175293, animation).
 has_genre(movie175293, children).
+has_1_genre(movie175303).
 has_genre(movie175303, horror).
+has_3_genre(movie175387).
 has_genre(movie175387, adventure).
 has_genre(movie175387, animation).
 has_genre(movie175387, children).
+has_3_genre(movie175397).
 has_genre(movie175397, animation).
 has_genre(movie175397, children).
 has_genre(movie175397, fantasy).
+has_1_genre(movie175401).
 has_genre(movie175401, animation).
+has_2_genre(movie175431).
 has_genre(movie175431, animation).
 has_genre(movie175431, comedy).
+has_2_genre(movie175435).
 has_genre(movie175435, animation).
 has_genre(movie175435, fantasy).
+has_3_genre(movie175475).
 has_genre(movie175475, animation).
 has_genre(movie175475, children).
 has_genre(movie175475, comedy).
+has_2_genre(movie175485).
 has_genre(movie175485, horror).
 has_genre(movie175485, thriller).
+has_4_genre(movie175569).
 has_genre(movie175569, action).
 has_genre(movie175569, crime).
 has_genre(movie175569, mystery).
 has_genre(movie175569, thriller).
+has_1_genre(movie175577).
 has_genre(movie175577, comedy).
+has_4_genre(movie175585).
 has_genre(movie175585, action).
 has_genre(movie175585, crime).
 has_genre(movie175585, drama).
 has_genre(movie175585, thriller).
+has_2_genre(movie175661).
 has_genre(movie175661, action).
 has_genre(movie175661, comedy).
+has_2_genre(movie175693).
 has_genre(movie175693, comedy).
 has_genre(movie175693, crime).
+has_2_genre(movie175705).
 has_genre(movie175705, comedy).
 has_genre(movie175705, horror).
+has_1_genre(movie175707).
 has_genre(movie175707, documentary).
+has_1_genre(movie175743).
 has_genre(movie175743, comedy).
+has_1_genre(movie175781).
 has_genre(movie175781, comedy).
+has_1_genre(movie176051).
 has_genre(movie176051, animation).
+has_3_genre(movie176101).
 has_genre(movie176101, action).
 has_genre(movie176101, adventure).
 has_genre(movie176101, comedy).
+has_1_genre(movie176329).
 has_genre(movie176329, comedy).
+has_1_genre(movie176371).
 has_genre(movie176371, sci-fi).
+has_4_genre(movie176389).
 has_genre(movie176389, adventure).
 has_genre(movie176389, animation).
 has_genre(movie176389, children).
 has_genre(movie176389, comedy).
+has_1_genre(movie176413).
 has_genre(movie176413, drama).
+has_2_genre(movie176415).
 has_genre(movie176415, comedy).
 has_genre(movie176415, drama).
+has_4_genre(movie176419).
 has_genre(movie176419, drama).
 has_genre(movie176419, horror).
 has_genre(movie176419, mystery).
 has_genre(movie176419, thriller).
+has_1_genre(movie176423).
 has_genre(movie176423, documentary).
+has_3_genre(movie176579).
 has_genre(movie176579, drama).
 has_genre(movie176579, horror).
 has_genre(movie176579, thriller).
+has_1_genre(movie176601).
+has_4_genre(movie176621).
 has_genre(movie176621, animation).
 has_genre(movie176621, children).
 has_genre(movie176621, comedy).
 has_genre(movie176621, romance).
+has_2_genre(movie176751).
 has_genre(movie176751, crime).
 has_genre(movie176751, thriller).
+has_2_genre(movie176805).
 has_genre(movie176805, comedy).
 has_genre(movie176805, drama).
+has_1_genre(movie176935).
 has_genre(movie176935, action).
+has_1_genre(movie177185).
 has_genre(movie177185, comedy).
+has_5_genre(movie177285).
 has_genre(movie177285, action).
 has_genre(movie177285, adventure).
 has_genre(movie177285, animation).
 has_genre(movie177285, fantasy).
 has_genre(movie177285, sci-fi).
+has_2_genre(movie177593).
 has_genre(movie177593, crime).
 has_genre(movie177593, drama).
+has_1_genre(movie177615).
 has_genre(movie177615, comedy).
+has_3_genre(movie177763).
 has_genre(movie177763, crime).
 has_genre(movie177763, drama).
 has_genre(movie177763, mystery).
+has_3_genre(movie177765).
 has_genre(movie177765, adventure).
 has_genre(movie177765, animation).
 has_genre(movie177765, children).
+has_2_genre(movie177939).
 has_genre(movie177939, animation).
 has_genre(movie177939, romance).
+has_1_genre(movie178061).
 has_genre(movie178061, drama).
+has_1_genre(movie178111).
 has_genre(movie178111, animation).
+has_1_genre(movie178129).
 has_genre(movie178129, documentary).
+has_1_genre(movie178323).
 has_genre(movie178323, documentary).
+has_1_genre(movie178613).
 has_genre(movie178613, comedy).
+has_3_genre(movie178615).
 has_genre(movie178615, comedy).
 has_genre(movie178615, drama).
 has_genre(movie178615, romance).
+has_4_genre(movie178827).
 has_genre(movie178827, adventure).
 has_genre(movie178827, animation).
 has_genre(movie178827, children).
 has_genre(movie178827, comedy).
+has_2_genre(movie179053).
 has_genre(movie179053, sci-fi).
 has_genre(movie179053, thriller).
+has_1_genre(movie179073).
 has_genre(movie179073, comedy).
+has_1_genre(movie179119).
 has_genre(movie179119, comedy).
+has_3_genre(movie179133).
 has_genre(movie179133, animation).
 has_genre(movie179133, crime).
 has_genre(movie179133, drama).
+has_1_genre(movie179135).
 has_genre(movie179135, documentary).
+has_1_genre(movie179211).
 has_genre(movie179211, comedy).
+has_3_genre(movie179401).
 has_genre(movie179401, action).
 has_genre(movie179401, adventure).
 has_genre(movie179401, children).
+has_1_genre(movie179427).
 has_genre(movie179427, comedy).
+has_2_genre(movie179491).
 has_genre(movie179491, action).
 has_genre(movie179491, horror).
+has_4_genre(movie179511).
 has_genre(movie179511, adventure).
 has_genre(movie179511, drama).
 has_genre(movie179511, fantasy).
 has_genre(movie179511, romance).
+has_1_genre(movie179709).
 has_genre(movie179709, drama).
+has_2_genre(movie179749).
 has_genre(movie179749, comedy).
 has_genre(movie179749, horror).
+has_1_genre(movie179813).
 has_genre(movie179813, drama).
+has_2_genre(movie179815).
 has_genre(movie179815, drama).
 has_genre(movie179815, thriller).
+has_2_genre(movie179817).
 has_genre(movie179817, drama).
 has_genre(movie179817, war).
+has_4_genre(movie179819).
 has_genre(movie179819, action).
 has_genre(movie179819, adventure).
 has_genre(movie179819, fantasy).
 has_genre(movie179819, sci-fi).
+has_1_genre(movie179953).
 has_genre(movie179953, comedy).
+has_3_genre(movie180031).
 has_genre(movie180031, adventure).
 has_genre(movie180031, drama).
 has_genre(movie180031, fantasy).
+has_1_genre(movie180045).
 has_genre(movie180045, drama).
+has_1_genre(movie180095).
 has_genre(movie180095, drama).
+has_2_genre(movie180231).
 has_genre(movie180231, comedy).
 has_genre(movie180231, drama).
+has_3_genre(movie180263).
 has_genre(movie180263, drama).
 has_genre(movie180263, horror).
 has_genre(movie180263, thriller).
+has_1_genre(movie180265).
 has_genre(movie180265, documentary).
+has_2_genre(movie180297).
 has_genre(movie180297, comedy).
 has_genre(movie180297, drama).
+has_2_genre(movie180497).
 has_genre(movie180497, drama).
 has_genre(movie180497, thriller).
+has_1_genre(movie180777).
 has_genre(movie180777, documentary).
+has_1_genre(movie180985).
 has_genre(movie180985, drama).
+has_3_genre(movie180987).
 has_genre(movie180987, animation).
 has_genre(movie180987, children).
 has_genre(movie180987, comedy).
+has_1_genre(movie181065).
 has_genre(movie181065, comedy).
+has_1_genre(movie181139).
 has_genre(movie181139, comedy).
+has_2_genre(movie181315).
 has_genre(movie181315, drama).
 has_genre(movie181315, romance).
+has_1_genre(movie181413).
+has_1_genre(movie181659).
 has_genre(movie181659, comedy).
+has_1_genre(movie181719).
+has_3_genre(movie182293).
 has_genre(movie182293, animation).
 has_genre(movie182293, children).
 has_genre(movie182293, comedy).
+has_3_genre(movie182297).
 has_genre(movie182297, animation).
 has_genre(movie182297, comedy).
 has_genre(movie182297, fantasy).
+has_3_genre(movie182299).
 has_genre(movie182299, animation).
 has_genre(movie182299, children).
 has_genre(movie182299, comedy).
+has_2_genre(movie182639).
 has_genre(movie182639, animation).
 has_genre(movie182639, sci-fi).
+has_4_genre(movie182715).
 has_genre(movie182715, adventure).
 has_genre(movie182715, mystery).
 has_genre(movie182715, sci-fi).
 has_genre(movie182715, thriller).
+has_1_genre(movie182727).
+has_3_genre(movie182731).
 has_genre(movie182731, children).
 has_genre(movie182731, comedy).
 has_genre(movie182731, sci-fi).
+has_1_genre(movie182749).
 has_genre(movie182749, comedy).
+has_1_genre(movie182793).
 has_genre(movie182793, drama).
+has_3_genre(movie182823).
 has_genre(movie182823, action).
 has_genre(movie182823, crime).
 has_genre(movie182823, fantasy).
+has_4_genre(movie183011).
 has_genre(movie183011, crime).
 has_genre(movie183011, drama).
 has_genre(movie183011, mystery).
 has_genre(movie183011, thriller).
+has_1_genre(movie183197).
 has_genre(movie183197, comedy).
+has_1_genre(movie183199).
 has_genre(movie183199, documentary).
+has_1_genre(movie183227).
 has_genre(movie183227, comedy).
+has_3_genre(movie183295).
 has_genre(movie183295, horror).
 has_genre(movie183295, mystery).
 has_genre(movie183295, thriller).
+has_1_genre(movie183301).
 has_genre(movie183301, children).
+has_2_genre(movie183317).
 has_genre(movie183317, comedy).
 has_genre(movie183317, drama).
+has_4_genre(movie183611).
 has_genre(movie183611, action).
 has_genre(movie183611, comedy).
 has_genre(movie183611, crime).
 has_genre(movie183611, horror).
+has_4_genre(movie183635).
 has_genre(movie183635, action).
 has_genre(movie183635, mystery).
 has_genre(movie183635, sci-fi).
 has_genre(movie183635, thriller).
+has_2_genre(movie183897).
 has_genre(movie183897, animation).
 has_genre(movie183897, comedy).
+has_1_genre(movie183911).
 has_genre(movie183911, comedy).
+has_1_genre(movie183959).
 has_genre(movie183959, comedy).
+has_1_genre(movie184015).
 has_genre(movie184015, comedy).
+has_2_genre(movie184053).
 has_genre(movie184053, action).
 has_genre(movie184053, sci-fi).
+has_1_genre(movie184245).
 has_genre(movie184245, documentary).
+has_4_genre(movie184253).
 has_genre(movie184253, horror).
 has_genre(movie184253, mystery).
 has_genre(movie184253, sci-fi).
 has_genre(movie184253, thriller).
+has_2_genre(movie184257).
 has_genre(movie184257, crime).
 has_genre(movie184257, documentary).
+has_3_genre(movie184349).
 has_genre(movie184349, comedy).
 has_genre(movie184349, drama).
 has_genre(movie184349, romance).
+has_3_genre(movie184471).
 has_genre(movie184471, action).
 has_genre(movie184471, adventure).
 has_genre(movie184471, fantasy).
+has_3_genre(movie184641).
 has_genre(movie184641, action).
 has_genre(movie184641, adventure).
 has_genre(movie184641, fantasy).
+has_2_genre(movie184721).
 has_genre(movie184721, drama).
 has_genre(movie184721, thriller).
+has_1_genre(movie184791).
 has_genre(movie184791, comedy).
+has_4_genre(movie184931).
 has_genre(movie184931, action).
 has_genre(movie184931, crime).
 has_genre(movie184931, drama).
 has_genre(movie184931, thriller).
+has_4_genre(movie184987).
 has_genre(movie184987, adventure).
 has_genre(movie184987, children).
 has_genre(movie184987, fantasy).
 has_genre(movie184987, sci-fi).
+has_2_genre(movie184997).
 has_genre(movie184997, comedy).
 has_genre(movie184997, drama).
+has_3_genre(movie185029).
 has_genre(movie185029, drama).
 has_genre(movie185029, horror).
 has_genre(movie185029, thriller).
+has_2_genre(movie185031).
 has_genre(movie185031, adventure).
 has_genre(movie185031, thriller).
+has_3_genre(movie185033).
 has_genre(movie185033, drama).
 has_genre(movie185033, fantasy).
 has_genre(movie185033, thriller).
+has_1_genre(movie185135).
 has_genre(movie185135, crime).
+has_2_genre(movie185435).
 has_genre(movie185435, action).
 has_genre(movie185435, comedy).
+has_1_genre(movie185473).
 has_genre(movie185473, comedy).
+has_3_genre(movie185585).
 has_genre(movie185585, action).
 has_genre(movie185585, fantasy).
 has_genre(movie185585, sci-fi).
+has_3_genre(movie186587).
 has_genre(movie186587, action).
 has_genre(movie186587, adventure).
 has_genre(movie186587, sci-fi).
+has_5_genre(movie187031).
 has_genre(movie187031, action).
 has_genre(movie187031, adventure).
 has_genre(movie187031, drama).
 has_genre(movie187031, sci-fi).
 has_genre(movie187031, thriller).
+has_4_genre(movie187541).
 has_genre(movie187541, action).
 has_genre(movie187541, adventure).
 has_genre(movie187541, animation).
 has_genre(movie187541, children).
+has_3_genre(movie187593).
 has_genre(movie187593, action).
 has_genre(movie187593, comedy).
 has_genre(movie187593, sci-fi).
+has_4_genre(movie187595).
 has_genre(movie187595, action).
 has_genre(movie187595, adventure).
 has_genre(movie187595, children).
 has_genre(movie187595, sci-fi).
+has_1_genre(movie187717).
 has_genre(movie187717, documentary).
+has_3_genre(movie188189).
 has_genre(movie188189, comedy).
 has_genre(movie188189, fantasy).
 has_genre(movie188189, sci-fi).
+has_5_genre(movie188301).
 has_genre(movie188301, action).
 has_genre(movie188301, adventure).
 has_genre(movie188301, comedy).
 has_genre(movie188301, fantasy).
 has_genre(movie188301, sci-fi).
+has_2_genre(movie188675).
 has_genre(movie188675, crime).
 has_genre(movie188675, drama).
+has_2_genre(movie188751).
 has_genre(movie188751, comedy).
 has_genre(movie188751, romance).
+has_1_genre(movie188797).
 has_genre(movie188797, comedy).
+has_3_genre(movie188833).
 has_genre(movie188833, adventure).
 has_genre(movie188833, comedy).
 has_genre(movie188833, fantasy).
+has_2_genre(movie189043).
 has_genre(movie189043, comedy).
 has_genre(movie189043, drama).
+has_1_genre(movie189111).
 has_genre(movie189111, documentary).
+has_3_genre(movie189333).
 has_genre(movie189333, action).
 has_genre(movie189333, adventure).
 has_genre(movie189333, thriller).
+has_3_genre(movie189381).
 has_genre(movie189381, action).
 has_genre(movie189381, crime).
 has_genre(movie189381, thriller).
+has_2_genre(movie189547).
 has_genre(movie189547, action).
 has_genre(movie189547, sci-fi).
+has_3_genre(movie189713).
 has_genre(movie189713, comedy).
 has_genre(movie189713, crime).
 has_genre(movie189713, drama).
+has_2_genre(movie190183).
 has_genre(movie190183, sci-fi).
 has_genre(movie190183, thriller).
+has_2_genre(movie190207).
 has_genre(movie190207, drama).
 has_genre(movie190207, romance).
+has_1_genre(movie190209).
 has_genre(movie190209, comedy).
+has_1_genre(movie190213).
 has_genre(movie190213, drama).
+has_1_genre(movie190215).
 has_genre(movie190215, drama).
+has_1_genre(movie190219).
 has_genre(movie190219, animation).
+has_1_genre(movie190221).
 has_genre(movie190221, documentary).
+has_4_genre(movie191005).
 has_genre(movie191005, action).
 has_genre(movie191005, adventure).
 has_genre(movie191005, comedy).
 has_genre(movie191005, sci-fi).
+has_4_genre(movie193565).
 has_genre(movie193565, action).
 has_genre(movie193565, animation).
 has_genre(movie193565, comedy).
 has_genre(movie193565, sci-fi).
+has_2_genre(movie193567).
 has_genre(movie193567, animation).
 has_genre(movie193567, drama).
+has_2_genre(movie193571).
 has_genre(movie193571, comedy).
 has_genre(movie193571, drama).
+has_1_genre(movie193573).
 has_genre(movie193573, animation).
+has_1_genre(movie193579).
 has_genre(movie193579, documentary).
+has_4_genre(movie193581).
 has_genre(movie193581, action).
 has_genre(movie193581, animation).
 has_genre(movie193581, comedy).
 has_genre(movie193581, fantasy).
+has_3_genre(movie193583).
 has_genre(movie193583, animation).
 has_genre(movie193583, comedy).
 has_genre(movie193583, fantasy).
+has_1_genre(movie193585).
 has_genre(movie193585, drama).
+has_2_genre(movie193587).
 has_genre(movie193587, action).
 has_genre(movie193587, animation).
+has_1_genre(movie193609).
 has_genre(movie193609, comedy).

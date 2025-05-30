@@ -34,12 +34,12 @@ MovieLens offers datasets of various sizes. For faster iteration during developm
 
 The following table summarizes the performance (on the test set) of different recommendation models evaluated in this project:
 
-| Model                                      | RMSE   | MAE    |
+| Model                                     | RMSE   | MAE    |
 |-------------------------------------------|--------|--------|
 | Probabilistic Matrix Factorization (PMF)  | 0.9043 | 0.6915 |
 | Bayesian PMF                              | 0.8642 | 0.6551 |
 | SPN (Sum-Product Network)                 | 1.3454 | 0.9134 |
-| Frequent Pattern Mining + MLN             | 1.3301 | 1.0390 |
+| Frequent Pattern Mining + MLN             | 1.2094 | 0.8935 |
 
 > Note: Lower RMSE and MAE indicate better predictive accuracy.
 
