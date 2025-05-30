@@ -1,3 +1,8 @@
 # Large files, download them from website
-data/ml-32m.zip
+data/*.zip
 data/ml-32m/ml-32m/
+data/ml-100k/
+
+# PMF model
+model/pmf_model_10.npz
+model/pmf_model.npz
