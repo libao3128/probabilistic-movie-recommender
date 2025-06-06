@@ -30,10 +30,27 @@ MovieLens offers datasets of various sizes. For faster iteration during developm
 1. Download the MovieLens "latest small" dataset from the [GroupLens website](https://grouplens.org/datasets/movielens/).
 2. Extract it to `data/ml-latest-small` in your project directory.
 
+## 📊 Benchmark Results
+
+The following table summarizes the performance (on the test set) of different recommendation models evaluated in this project:
+
+| Model                                     | RMSE   | MAE    |
+|-------------------------------------------|--------|--------|
+| Probabilistic Matrix Factorization (PMF)  | 0.9043 | 0.6915 |
+| Bayesian PMF                              | 0.8642 | 0.6551 |
+| SPN (Sum-Product Network)                 | 1.3454 | 0.9134 |
+| Frequent Pattern Mining + MLN             | 1.2094 | 0.8935 |
+
+> Note: Lower RMSE and MAE indicate better predictive accuracy.
+
+
 ## 📝 Tasks
 
 - [x] Set up the pipeline for training and evaluating different models **[Leo]**
 - [x] Implement Probabilistic Matrix Factorization **[Leo]**
-- [ ] Develop Sum-Product Networks (SPN) **[Angela]**
-- [ ] Explore Probabilistic Programming approaches **[SSC]**
-- [ ] 5/27 Project Check-in **[ALL]**
+- [x] Develop Sum-Product Networks (SPN) **[Angela]**
+- [x] Explore Probabilistic Programming approaches **[SSC]**
+- [x] 5/27 Project Check-in **[ALL]**
+- [ ] Hierarchical Bayesian Model **[Leo]**
+    - Fail to train.  
+- [x] Frequent Pattern Mining + Markov Logic Network **[Leo]**
