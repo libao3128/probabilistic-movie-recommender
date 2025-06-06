@@ -70,16 +70,18 @@ class HierarchicalBayesianRecommender:
         movie_ratings = self.ratings_df[self.ratings_df['midx'] == m_idx]
         return movie_ratings
     
-    def fit(self, n_iter=100, n_samples=100):
+    def fit(self, n_samples=1000, tune=1000):
         """
-        Fit the hierarchical Bayesian model
+        Fit the hierarchical Bayesian model using MCMC (NUTS)
         
         Parameters:
         -----------
-        n_iter : int
-            Number of iterations for ADVI
+        n_samples : int
+            Number of posterior samples to draw
+        tune : int
+            Number of tuning steps
         """
-        print("Fitting model...")
+        print("Fitting model with MCMC...")
         with pm.Model() as self.model:
             # Level 3: Hyperpriors
             sigma_alpha = pm.HalfNormal('sigma_alpha', sigma=10)
@@ -97,15 +99,15 @@ class HierarchicalBayesianRecommender:
                      sigma=sigma,
                      observed=self.ratings_df['rating'].values)
             
-            # Use ADVI for faster inference
-            self.approx = pm.fit(
-                method='advi',
-                n=n_iter,
-                progressbar=False
+            # Use MCMC (NUTS) for inference
+            self.trace = pm.sample(
+                draws=n_samples,
+                tune=tune,
+                chains=3,
+                target_accept=0.9,
+                progressbar=True,
+                return_inferencedata=True
             )
-            
-            # Sample from posterior
-            self.trace = self.approx.sample(n_samples)
         print("Model fitting completed.")
     
     def predict(self, user_id, movie_id):
@@ -126,7 +128,7 @@ class HierarchicalBayesianRecommender:
         float
             Predicted rating
         """
-        if self.model is None or self.approx is None:
+        if not self.is_fitted:
             raise ValueError("Model must be fitted before making predictions")
             
         if user_id not in self.user_map or movie_id not in self.movie_map:
@@ -167,7 +169,7 @@ class HierarchicalBayesianRecommender:
         list
             List of (movie_id, score) tuples
         """
-        if self.model is None or self.approx is None:
+        if not self.is_fitted:
             raise ValueError("Model must be fitted before making recommendations")
             
         if user_id not in self.user_map:
@@ -190,3 +192,7 @@ class HierarchicalBayesianRecommender:
         # Sort and return top-N
         predictions.sort(key=lambda x: x[1], reverse=True)
         return predictions[:n_recommendations]
+    
+    @property
+    def is_fitted(self):
+        return self.model is not None and self.trace is not None

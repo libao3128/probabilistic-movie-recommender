@@ -88,7 +88,7 @@ def main():
     
     # Fit model
     print("\nFitting model...")
-    model.fit(n_iter=100)
+    model.fit()
     
     # Evaluate model
     print("\nEvaluating model...")
