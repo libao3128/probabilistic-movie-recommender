@@ -36,8 +36,9 @@ The following table summarizes the performance (on the test set) of different re
 
 | Model                                     | RMSE   | MAE    |
 |-------------------------------------------|--------|--------|
-| Probabilistic Matrix Factorization (PMF)  | 0.9043 | 0.6915 |
 | Bayesian PMF                              | 0.8642 | 0.6551 |
+| Probabilistic Matrix Factorization (PMF)  | 0.9043 | 0.6915 |
+| HBM (Hierarchical Bayesian Model)         | 0.9380 | 0.7406 |
 | SPN (Sum-Product Network)                 | 1.3454 | 0.9134 |
 | Frequent Pattern Mining + MLN             | 1.2094 | 0.8935 |
 
@@ -51,6 +52,5 @@ The following table summarizes the performance (on the test set) of different re
 - [x] Develop Sum-Product Networks (SPN) **[Angela]**
 - [x] Explore Probabilistic Programming approaches **[SSC]**
 - [x] 5/27 Project Check-in **[ALL]**
-- [ ] Hierarchical Bayesian Model **[Leo]**
-    - Fail to train.  
+- [x] Hierarchical Bayesian Model **[Leo]**
 - [x] Frequent Pattern Mining + Markov Logic Network **[Leo]**
