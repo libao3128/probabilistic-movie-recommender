@@ -11,3 +11,6 @@ a.out
 *.pyc
 resulttable
 explain.txt
+.DS_Store
+
+local_files/
