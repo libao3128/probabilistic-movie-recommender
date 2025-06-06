@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import matplotlib.pyplot as plt
 import seaborn as sns
-from hbm import HierarchicalBayesianRecommender
+from hbm.hbm import HierarchicalBayesianRecommender
 from tqdm import tqdm
 import time
 import warnings
