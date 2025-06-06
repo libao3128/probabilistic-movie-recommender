@@ -6,3 +6,8 @@ data/ml-100k/
 # PMF model
 model/pmf_model_10.npz
 model/pmf_model.npz
+a.out
+
+*.pyc
+resulttable
+explain.txt
