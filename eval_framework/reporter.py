@@ -23,7 +23,9 @@ class BaseRecommenderReporter:
 
     def evaluate_model(self, model, test_ratings):
         """Evaluate model predictions"""
-        print("\\nEvaluating predictions...")
+        self.model = model
+        
+        print("\nEvaluating predictions...")
         predictions = []
         actuals = []
         
@@ -32,21 +34,21 @@ class BaseRecommenderReporter:
             predictions.append(pred)
             actuals.append(row['rating'])
         
+        return self._calculate_metrics(predictions, actuals)
+
+    def _calculate_metrics(self, predictions, actuals):
         # Calculate metrics
         mse = mean_squared_error(actuals, predictions)
         rmse = np.sqrt(mse)
         mae = mean_absolute_error(actuals, predictions)
-        results = {
+        self.results = {
             'mse': mse,
             'rmse': rmse,
             'mae': mae,
             'predictions': predictions,
             'actuals': actuals
         }
-        self.results = results
-        self.model = model
-
-        return results
+        return self.results
     
     def plot_all(self, save_path='recommender_results.png'):
         """Plot evaluation results (universal for all models)."""
@@ -92,8 +94,6 @@ class BaseRecommenderReporter:
             print(f"RMSE: {self.results['rmse']:.4f}")
         if 'mae' in self.results:
             print(f"MAE: {self.results['mae']:.4f}")
-
-
 
 class HBMRecommenderReporter(BaseRecommenderReporter):
     """
@@ -154,3 +154,21 @@ class HBMRecommenderReporter(BaseRecommenderReporter):
             print(movie_bias.sort_values('bias', ascending=False).head().to_string())
             print("\nTop 5 Movies by Negative Bias:")
             print(movie_bias.sort_values('bias').head().to_string()) 
+            
+class MLNRecommenderReporter(BaseRecommenderReporter):
+    """
+    Reporter for MLN models, adds parameter distribution plots and statistics.
+    Usage:
+        reporter = MLNRecommenderReporter(model, movies, results)
+        reporter.plot_all()
+        reporter.print_stats()
+    """
+    def __init__(self):
+        super().__init__()
+
+    def evaluate_model(self, model, test_ratings, batch_size=1000, n_jobs=-1):
+        self.model = model
+        predictions = model.predict(test_ratings, batch_size=batch_size, n_jobs=n_jobs)
+        return self._calculate_metrics(predictions['rating'], test_ratings['rating'])
+        
+        
