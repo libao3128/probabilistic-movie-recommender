@@ -148,18 +148,18 @@ Adventure	Drama	IMAX	Comedy	Fantasy	Action:9
 IMAX	Comedy	Fantasy	Adventure:11
 IMAX	Comedy	Fantasy	Drama:11
 Adventure	IMAX	Comedy	Fantasy	Drama:11
-IMAX	Comedy	Sci-Fi:13
-IMAX	Comedy	Sci-Fi	Drama:12
-Adventure	IMAX	Comedy	Sci-Fi	Drama:12
-IMAX	Comedy	Sci-Fi	Action:12
-IMAX	Comedy	Sci-Fi	Action	Drama:11
-Adventure	IMAX	Comedy	Sci-Fi	Action	Drama:11
-IMAX	Comedy	Sci-Fi	Action	Adventure:12
-IMAX	Comedy	Sci-Fi	Adventure:13
 IMAX	Comedy	Action:13
 IMAX	Comedy	Action	Drama:12
 Adventure	IMAX	Comedy	Action	Drama:12
 IMAX	Comedy	Action	Adventure:13
+IMAX	Comedy	Sci-Fi:13
+IMAX	Comedy	Sci-Fi	Action:12
+IMAX	Comedy	Sci-Fi	Action	Drama:11
+Adventure	IMAX	Comedy	Sci-Fi	Action	Drama:11
+IMAX	Comedy	Sci-Fi	Action	Adventure:12
+IMAX	Comedy	Sci-Fi	Drama:12
+Adventure	IMAX	Comedy	Sci-Fi	Drama:12
+IMAX	Comedy	Sci-Fi	Adventure:13
 IMAX	Comedy	Drama:14
 Adventure	IMAX	Comedy	Drama:14
 IMAX	Comedy	Adventure:15
@@ -181,18 +181,18 @@ Adventure	IMAX	Fantasy	Drama:15
 IMAX	Fantasy	Adventure:16
 IMAX	Sci-Fi:20
 IMAX	Sci-Fi	Adventure:19
-IMAX	Sci-Fi	Drama:19
-IMAX	Sci-Fi	Drama	Adventure:18
 IMAX	Sci-Fi	Action:19
 IMAX	Sci-Fi	Action	Drama:18
 IMAX	Sci-Fi	Action	Drama	Adventure:17
 IMAX	Sci-Fi	Action	Adventure:18
+IMAX	Sci-Fi	Drama:19
+IMAX	Sci-Fi	Drama	Adventure:18
+IMAX	Drama:21
+IMAX	Drama	Adventure:20
 IMAX	Action:21
 IMAX	Action	Drama:19
 IMAX	Action	Drama	Adventure:18
 IMAX	Action	Adventure:20
-IMAX	Drama:21
-IMAX	Drama	Adventure:20
 IMAX	Adventure:22
 Documentary:37
 Documentary	War:7
@@ -212,19 +212,35 @@ Documentary	Sci-Fi	Thriller	Action:7
 Comedy	Documentary	Sci-Fi	Thriller	Action:7
 Drama	Documentary	Sci-Fi	Thriller	Action:7
 Comedy	Drama	Documentary	Sci-Fi	Thriller	Action:7
-Documentary	Sci-Fi	Action:8
-Documentary	Sci-Fi	Action	Drama:7
-Comedy	Documentary	Sci-Fi	Action	Drama:7
-Documentary	Sci-Fi	Action	Comedy:8
 Documentary	Sci-Fi	Adventure:8
 Documentary	Sci-Fi	Adventure	Drama:7
 Comedy	Documentary	Sci-Fi	Adventure	Drama:7
 Documentary	Sci-Fi	Adventure	Action:7
 Documentary	Sci-Fi	Adventure	Action	Comedy:7
 Documentary	Sci-Fi	Adventure	Comedy:8
+Documentary	Sci-Fi	Action:8
+Documentary	Sci-Fi	Action	Drama:7
+Comedy	Documentary	Sci-Fi	Action	Drama:7
+Documentary	Sci-Fi	Action	Comedy:8
 Documentary	Sci-Fi	Drama:10
 Comedy	Documentary	Sci-Fi	Drama:10
 Documentary	Sci-Fi	Comedy:11
+Documentary	Romance:18
+Documentary	Romance	Adventure:8
+Documentary	Romance	Adventure	Comedy:8
+Documentary	Romance	Adventure	Drama:8
+Comedy	Documentary	Romance	Adventure	Drama:8
+Documentary	Romance	Crime:9
+Documentary	Romance	Crime	Comedy:9
+Documentary	Romance	Crime	Drama:9
+Comedy	Documentary	Romance	Crime	Drama:9
+Documentary	Romance	Thriller:10
+Comedy	Documentary	Romance	Thriller:10
+Drama	Documentary	Romance	Thriller:10
+Comedy	Drama	Documentary	Romance	Thriller:10
+Documentary	Romance	Comedy:18
+Documentary	Romance	Drama:18
+Comedy	Documentary	Romance	Drama:18
 Documentary	Adventure:18
 Documentary	Adventure	Crime:8
 Documentary	Adventure	Crime	Comedy:8
@@ -245,22 +261,6 @@ Documentary	Adventure	Action	Comedy:12
 Documentary	Adventure	Drama:16
 Comedy	Documentary	Adventure	Drama:16
 Documentary	Adventure	Comedy:18
-Documentary	Romance:18
-Documentary	Romance	Adventure:8
-Documentary	Romance	Adventure	Comedy:8
-Documentary	Romance	Adventure	Drama:8
-Comedy	Documentary	Romance	Adventure	Drama:8
-Documentary	Romance	Crime:9
-Documentary	Romance	Crime	Comedy:9
-Documentary	Romance	Crime	Drama:9
-Comedy	Documentary	Romance	Crime	Drama:9
-Documentary	Romance	Thriller:10
-Comedy	Documentary	Romance	Thriller:10
-Drama	Documentary	Romance	Thriller:10
-Comedy	Drama	Documentary	Romance	Thriller:10
-Documentary	Romance	Comedy:18
-Documentary	Romance	Drama:18
-Comedy	Documentary	Romance	Drama:18
 Documentary	Action:21
 Documentary	Action	Crime:15
 Documentary	Action	Crime	Comedy:14
@@ -270,13 +270,13 @@ Drama	Thriller	Documentary	Action	Crime	Comedy:14
 Documentary	Action	Crime	Drama:15
 Documentary	Action	Crime	Thriller:15
 Drama	Documentary	Action	Crime	Thriller:15
-Documentary	Action	Comedy:20
 Documentary	Action	Drama:20
 Documentary	Action	Drama	Comedy:19
 Documentary	Action	Thriller:20
 Documentary	Action	Thriller	Comedy:19
 Drama	Documentary	Action	Thriller	Comedy:19
 Documentary	Action	Thriller	Drama:20
+Documentary	Action	Comedy:20
 Documentary	Crime:23
 Documentary	Crime	Thriller:19
 Documentary	Crime	Thriller	Comedy:18
@@ -378,12 +378,12 @@ Drama	Animation	Sci-Fi	Children	Fantasy	Action	Comedy:7
 Animation	Sci-Fi	Children	Fantasy	Action	Adventure:7
 Animation	Sci-Fi	Children	Fantasy	Action	Adventure	Drama:7
 Animation	Sci-Fi	Children	Fantasy	Action	Drama:8
+Animation	Sci-Fi	Children	Fantasy	Comedy:9
+Drama	Animation	Sci-Fi	Children	Fantasy	Comedy:9
 Animation	Sci-Fi	Children	Fantasy	Adventure:9
 Animation	Sci-Fi	Children	Fantasy	Adventure	Comedy:8
 Drama	Animation	Sci-Fi	Children	Fantasy	Adventure	Comedy:8
 Animation	Sci-Fi	Children	Fantasy	Adventure	Drama:9
-Animation	Sci-Fi	Children	Fantasy	Comedy:9
-Drama	Animation	Sci-Fi	Children	Fantasy	Comedy:9
 Animation	Sci-Fi	Children	Fantasy	Drama:10
 Animation	Sci-Fi	Children	Action:11
 Animation	Sci-Fi	Children	Action	Adventure:9
@@ -401,10 +401,6 @@ Animation	Sci-Fi	Children	Comedy:13
 Drama	Animation	Sci-Fi	Children	Comedy:13
 Animation	Sci-Fi	Children	Drama:14
 Animation	Sci-Fi	Fantasy:15
-Animation	Sci-Fi	Fantasy	Comedy:13
-Animation	Sci-Fi	Fantasy	Comedy	Adventure:12
-Drama	Animation	Sci-Fi	Fantasy	Comedy	Adventure:12
-Animation	Sci-Fi	Fantasy	Comedy	Drama:13
 Animation	Sci-Fi	Fantasy	Action:13
 Animation	Sci-Fi	Fantasy	Action	Comedy:11
 Animation	Sci-Fi	Fantasy	Action	Comedy	Adventure:10
@@ -413,6 +409,10 @@ Animation	Sci-Fi	Fantasy	Action	Comedy	Drama:11
 Animation	Sci-Fi	Fantasy	Action	Adventure:12
 Drama	Animation	Sci-Fi	Fantasy	Action	Adventure:12
 Animation	Sci-Fi	Fantasy	Action	Drama:13
+Animation	Sci-Fi	Fantasy	Comedy:13
+Animation	Sci-Fi	Fantasy	Comedy	Adventure:12
+Drama	Animation	Sci-Fi	Fantasy	Comedy	Adventure:12
+Animation	Sci-Fi	Fantasy	Comedy	Drama:13
 Animation	Sci-Fi	Fantasy	Adventure:14
 Drama	Animation	Sci-Fi	Fantasy	Adventure:14
 Animation	Sci-Fi	Fantasy	Drama:15
@@ -458,12 +458,12 @@ Animation	Fantasy	Romance	Drama:13
 Adventure	Animation	Fantasy	Romance	Drama:13
 Animation	Fantasy	Action:17
 Animation	Fantasy	Action	Children:11
-Animation	Fantasy	Action	Children	Adventure:10
-Drama	Animation	Fantasy	Action	Children	Adventure:10
 Animation	Fantasy	Action	Children	Comedy:10
 Animation	Fantasy	Action	Children	Comedy	Adventure:9
 Drama	Animation	Fantasy	Action	Children	Comedy	Adventure:9
 Animation	Fantasy	Action	Children	Comedy	Drama:10
+Animation	Fantasy	Action	Children	Adventure:10
+Drama	Animation	Fantasy	Action	Children	Adventure:10
 Animation	Fantasy	Action	Children	Drama:11
 Animation	Fantasy	Action	Comedy:15
 Animation	Fantasy	Action	Comedy	Adventure:14
@@ -556,13 +556,13 @@ Horror	War	Thriller:7
 Drama	Horror	War	Thriller:7
 Horror	War	Drama:8
 Horror	Fantasy:9
-Horror	Fantasy	Thriller:7
-Horror	Fantasy	Thriller	Sci-Fi:7
 Horror	Fantasy	Comedy:7
 Horror	Fantasy	Comedy	Drama:7
+Horror	Fantasy	Adventure:7
+Horror	Fantasy	Thriller:7
+Horror	Fantasy	Thriller	Sci-Fi:7
 Horror	Fantasy	Action:7
 Horror	Fantasy	Action	Sci-Fi:7
-Horror	Fantasy	Adventure:7
 Horror	Fantasy	Drama:8
 Horror	Fantasy	Sci-Fi:8
 Horror	Fantasy	Sci-Fi	Drama:7
@@ -594,14 +594,14 @@ Horror	Romance	Crime	Thriller:7
 Horror	Romance	Crime	Thriller	Drama:7
 Horror	Romance	Crime	Drama:8
 Horror	Romance	Action:8
-Horror	Romance	Action	Thriller:7
-Drama	Horror	Romance	Action	Thriller:7
 Horror	Romance	Action	Adventure:7
 Horror	Romance	Action	Adventure	Drama:7
 Horror	Romance	Action	Sci-Fi:7
 Horror	Romance	Action	Sci-Fi	Drama:7
 Horror	Romance	Action	Sci-Fi	Adventure:7
 Drama	Horror	Romance	Action	Sci-Fi	Adventure:7
+Horror	Romance	Action	Thriller:7
+Drama	Horror	Romance	Action	Thriller:7
 Horror	Romance	Action	Drama:8
 Horror	Romance	Sci-Fi:9
 Horror	Romance	Sci-Fi	Comedy:7
@@ -690,6 +690,22 @@ Horror	Crime	Comedy	Drama:29
 Horror	Crime	Thriller:34
 Drama	Horror	Crime	Thriller:34
 Horror	Crime	Drama:37
+Horror	Adventure:41
+Horror	Adventure	Comedy:30
+Horror	Adventure	Comedy	Thriller:25
+Horror	Adventure	Comedy	Thriller	Drama:24
+Horror	Adventure	Comedy	Action:25
+Horror	Adventure	Comedy	Action	Thriller:22
+Horror	Adventure	Comedy	Action	Thriller	Drama:21
+Horror	Adventure	Comedy	Action	Drama:23
+Horror	Adventure	Comedy	Drama:28
+Horror	Adventure	Action:35
+Horror	Adventure	Action	Thriller:31
+Horror	Adventure	Action	Thriller	Drama:29
+Horror	Adventure	Action	Drama:32
+Horror	Adventure	Thriller:35
+Horror	Adventure	Thriller	Drama:33
+Horror	Adventure	Drama:38
 Horror	Sci-Fi:41
 Horror	Sci-Fi	Comedy:30
 Horror	Sci-Fi	Comedy	Adventure:23
@@ -722,22 +738,6 @@ Horror	Sci-Fi	Action	Drama:32
 Horror	Sci-Fi	Thriller:37
 Horror	Sci-Fi	Thriller	Drama:35
 Horror	Sci-Fi	Drama:38
-Horror	Adventure:41
-Horror	Adventure	Comedy:30
-Horror	Adventure	Comedy	Thriller:25
-Horror	Adventure	Comedy	Thriller	Drama:24
-Horror	Adventure	Comedy	Action:25
-Horror	Adventure	Comedy	Action	Thriller:22
-Horror	Adventure	Comedy	Action	Thriller	Drama:21
-Horror	Adventure	Comedy	Action	Drama:23
-Horror	Adventure	Comedy	Drama:28
-Horror	Adventure	Thriller:35
-Horror	Adventure	Thriller	Drama:33
-Horror	Adventure	Action:35
-Horror	Adventure	Action	Thriller:31
-Horror	Adventure	Action	Thriller	Drama:29
-Horror	Adventure	Action	Drama:32
-Horror	Adventure	Drama:38
 Horror	Action:45
 Horror	Action	Comedy:34
 Horror	Action	Comedy	Thriller:31
@@ -772,12 +772,12 @@ Drama	Adventure	Children	Crime	Sci-Fi	Action:7
 Comedy	Adventure	Children	Crime	Sci-Fi	Action:7
 Drama	Comedy	Adventure	Children	Crime	Sci-Fi	Action:7
 Children	Crime	Romance:9
-Children	Crime	Romance	Comedy:8
-Drama	Children	Crime	Romance	Comedy:8
 Children	Crime	Romance	Adventure:8
 Children	Crime	Romance	Adventure	Comedy:7
 Drama	Children	Crime	Romance	Adventure	Comedy:7
 Children	Crime	Romance	Adventure	Drama:8
+Children	Crime	Romance	Comedy:8
+Drama	Children	Crime	Romance	Comedy:8
 Children	Crime	Romance	Drama:9
 Children	Crime	Action:13
 Children	Crime	Action	Adventure:10
@@ -860,12 +860,12 @@ Children	Sci-Fi	Fantasy	Adventure:13
 Drama	Children	Sci-Fi	Fantasy	Adventure:13
 Children	Sci-Fi	Fantasy	Drama:14
 Children	Sci-Fi	Action:22
+Children	Sci-Fi	Action	Comedy:20
+Drama	Children	Sci-Fi	Action	Comedy:20
 Children	Sci-Fi	Action	Adventure:20
 Children	Sci-Fi	Action	Adventure	Comedy:18
 Drama	Children	Sci-Fi	Action	Adventure	Comedy:18
 Children	Sci-Fi	Action	Adventure	Drama:20
-Children	Sci-Fi	Action	Comedy:20
-Drama	Children	Sci-Fi	Action	Comedy:20
 Children	Sci-Fi	Action	Drama:22
 Children	Sci-Fi	Adventure:23
 Children	Sci-Fi	Adventure	Comedy:21
@@ -900,12 +900,12 @@ Children	Fantasy	Action	Adventure:16
 Drama	Children	Fantasy	Action	Adventure:16
 Children	Fantasy	Action	Drama:17
 Children	Fantasy	Drama:26
+Children	Fantasy	Comedy:26
+Children	Fantasy	Comedy	Drama:24
 Children	Fantasy	Adventure:26
 Children	Fantasy	Adventure	Comedy:24
 Children	Fantasy	Adventure	Comedy	Drama:22
 Children	Fantasy	Adventure	Drama:24
-Children	Fantasy	Comedy:26
-Children	Fantasy	Comedy	Drama:24
 Children	Thriller:32
 Children	Thriller	Romance:17
 Children	Thriller	Romance	Action:13
@@ -998,14 +998,6 @@ Drama	Mystery	War	Thriller:9
 Mystery	War	Drama:10
 Mystery	Adventure:29
 Mystery	Adventure	Romance:15
-Mystery	Adventure	Romance	Action:11
-Mystery	Adventure	Romance	Action	Comedy:10
-Drama	Mystery	Adventure	Romance	Action	Comedy:10
-Thriller	Mystery	Adventure	Romance	Action	Comedy:10
-Drama	Thriller	Mystery	Adventure	Romance	Action	Comedy:10
-Mystery	Adventure	Romance	Action	Drama:11
-Mystery	Adventure	Romance	Action	Thriller:11
-Drama	Mystery	Adventure	Romance	Action	Thriller:11
 Mystery	Adventure	Romance	Crime:11
 Mystery	Adventure	Romance	Crime	Action:9
 Drama	Mystery	Adventure	Romance	Crime	Action:9
@@ -1022,6 +1014,14 @@ Mystery	Adventure	Romance	Crime	Comedy	Thriller:9
 Drama	Mystery	Adventure	Romance	Crime	Comedy	Thriller:9
 Mystery	Adventure	Romance	Crime	Comedy	Drama:10
 Mystery	Adventure	Romance	Crime	Drama:11
+Mystery	Adventure	Romance	Action:11
+Mystery	Adventure	Romance	Action	Comedy:10
+Drama	Mystery	Adventure	Romance	Action	Comedy:10
+Thriller	Mystery	Adventure	Romance	Action	Comedy:10
+Drama	Thriller	Mystery	Adventure	Romance	Action	Comedy:10
+Mystery	Adventure	Romance	Action	Drama:11
+Mystery	Adventure	Romance	Action	Thriller:11
+Drama	Mystery	Adventure	Romance	Action	Thriller:11
 Mystery	Adventure	Romance	Comedy:12
 Mystery	Adventure	Romance	Comedy	Thriller:11
 Drama	Mystery	Adventure	Romance	Comedy	Thriller:11
@@ -1061,14 +1061,6 @@ Mystery	Adventure	Sci-Fi	Action:16
 Mystery	Adventure	Sci-Fi	Action	Drama:15
 Mystery	Adventure	Sci-Fi	Action	Thriller:15
 Mystery	Adventure	Sci-Fi	Action	Thriller	Drama:14
-Mystery	Adventure	Crime:20
-Mystery	Adventure	Crime	Action:18
-Drama	Mystery	Adventure	Crime	Action:18
-Thriller	Mystery	Adventure	Crime	Action:18
-Drama	Thriller	Mystery	Adventure	Crime	Action:18
-Mystery	Adventure	Crime	Thriller:19
-Drama	Mystery	Adventure	Crime	Thriller:19
-Mystery	Adventure	Crime	Drama:20
 Mystery	Adventure	Comedy:20
 Mystery	Adventure	Comedy	Crime:15
 Mystery	Adventure	Comedy	Crime	Thriller:14
@@ -1078,13 +1070,21 @@ Drama	Mystery	Adventure	Comedy	Crime	Action:14
 Thriller	Mystery	Adventure	Comedy	Crime	Action:14
 Drama	Thriller	Mystery	Adventure	Comedy	Crime	Action:14
 Mystery	Adventure	Comedy	Crime	Drama:15
+Mystery	Adventure	Comedy	Thriller:18
+Mystery	Adventure	Comedy	Thriller	Drama:17
 Mystery	Adventure	Comedy	Action:18
 Mystery	Adventure	Comedy	Action	Drama:17
 Mystery	Adventure	Comedy	Action	Thriller:17
 Mystery	Adventure	Comedy	Action	Thriller	Drama:16
-Mystery	Adventure	Comedy	Thriller:18
-Mystery	Adventure	Comedy	Thriller	Drama:17
 Mystery	Adventure	Comedy	Drama:19
+Mystery	Adventure	Crime:20
+Mystery	Adventure	Crime	Action:18
+Drama	Mystery	Adventure	Crime	Action:18
+Thriller	Mystery	Adventure	Crime	Action:18
+Drama	Thriller	Mystery	Adventure	Crime	Action:18
+Mystery	Adventure	Crime	Thriller:19
+Drama	Mystery	Adventure	Crime	Thriller:19
+Mystery	Adventure	Crime	Drama:20
 Mystery	Adventure	Action:25
 Mystery	Adventure	Action	Thriller:24
 Mystery	Adventure	Action	Thriller	Drama:23
@@ -1119,9 +1119,9 @@ Mystery	Sci-Fi	Crime	Thriller:19
 Drama	Mystery	Sci-Fi	Crime	Thriller:19
 Mystery	Sci-Fi	Comedy:21
 Mystery	Sci-Fi	Comedy	Action:17
+Mystery	Sci-Fi	Comedy	Action	Drama:16
 Mystery	Sci-Fi	Comedy	Action	Thriller:16
 Mystery	Sci-Fi	Comedy	Action	Thriller	Drama:15
-Mystery	Sci-Fi	Comedy	Action	Drama:16
 Mystery	Sci-Fi	Comedy	Thriller:19
 Mystery	Sci-Fi	Comedy	Thriller	Drama:18
 Mystery	Sci-Fi	Comedy	Drama:20
@@ -1298,6 +1298,38 @@ War	Sci-Fi	Adventure	Drama:26
 War	Sci-Fi	Action:30
 War	Sci-Fi	Action	Drama:29
 War	Sci-Fi	Drama:31
+War	Adventure:45
+War	Adventure	Comedy:29
+War	Adventure	Comedy	Crime:20
+War	Adventure	Comedy	Crime	Action:19
+Drama	War	Adventure	Comedy	Crime	Action:19
+War	Adventure	Comedy	Crime	Thriller:19
+War	Adventure	Comedy	Crime	Thriller	Action:18
+Drama	War	Adventure	Comedy	Crime	Thriller	Action:18
+War	Adventure	Comedy	Crime	Thriller	Drama:19
+War	Adventure	Comedy	Crime	Drama:20
+War	Adventure	Comedy	Thriller:24
+War	Adventure	Comedy	Thriller	Action:23
+Drama	War	Adventure	Comedy	Thriller	Action:23
+War	Adventure	Comedy	Thriller	Drama:24
+War	Adventure	Comedy	Action:26
+Drama	War	Adventure	Comedy	Action:26
+War	Adventure	Comedy	Drama:29
+War	Adventure	Crime:30
+War	Adventure	Crime	Action:27
+War	Adventure	Crime	Action	Thriller:25
+Drama	War	Adventure	Crime	Action	Thriller:25
+War	Adventure	Crime	Action	Drama:27
+War	Adventure	Crime	Thriller:28
+Drama	War	Adventure	Crime	Thriller:28
+War	Adventure	Crime	Drama:30
+War	Adventure	Thriller:37
+War	Adventure	Thriller	Action:34
+Drama	War	Adventure	Thriller	Action:34
+War	Adventure	Thriller	Drama:37
+War	Adventure	Action:39
+Drama	War	Adventure	Action:39
+War	Adventure	Drama:45
 War	Romance:45
 War	Romance	Adventure:21
 War	Romance	Adventure	Crime:12
@@ -1362,38 +1394,6 @@ War	Romance	Thriller	Drama:35
 War	Romance	Comedy:38
 Drama	War	Romance	Comedy:38
 War	Romance	Drama:45
-War	Adventure:45
-War	Adventure	Comedy:29
-War	Adventure	Comedy	Crime:20
-War	Adventure	Comedy	Crime	Action:19
-Drama	War	Adventure	Comedy	Crime	Action:19
-War	Adventure	Comedy	Crime	Thriller:19
-War	Adventure	Comedy	Crime	Thriller	Action:18
-Drama	War	Adventure	Comedy	Crime	Thriller	Action:18
-War	Adventure	Comedy	Crime	Thriller	Drama:19
-War	Adventure	Comedy	Crime	Drama:20
-War	Adventure	Comedy	Thriller:24
-War	Adventure	Comedy	Thriller	Action:23
-Drama	War	Adventure	Comedy	Thriller	Action:23
-War	Adventure	Comedy	Thriller	Drama:24
-War	Adventure	Comedy	Action:26
-Drama	War	Adventure	Comedy	Action:26
-War	Adventure	Comedy	Drama:29
-War	Adventure	Crime:30
-War	Adventure	Crime	Action:27
-War	Adventure	Crime	Action	Thriller:25
-Drama	War	Adventure	Crime	Action	Thriller:25
-War	Adventure	Crime	Action	Drama:27
-War	Adventure	Crime	Thriller:28
-Drama	War	Adventure	Crime	Thriller:28
-War	Adventure	Crime	Drama:30
-War	Adventure	Thriller:37
-War	Adventure	Thriller	Action:34
-Drama	War	Adventure	Thriller	Action:34
-War	Adventure	Thriller	Drama:37
-War	Adventure	Action:39
-Drama	War	Adventure	Action:39
-War	Adventure	Drama:45
 War	Crime:56
 War	Crime	Comedy:42
 War	Crime	Comedy	Action:36
@@ -1411,12 +1411,12 @@ War	Crime	Thriller:52
 Drama	War	Crime	Thriller:52
 War	Crime	Drama:56
 War	Comedy:63
-War	Comedy	Thriller:50
-Drama	War	Comedy	Thriller:50
 War	Comedy	Action:50
 War	Comedy	Action	Thriller:43
 Drama	War	Comedy	Action	Thriller:43
 War	Comedy	Action	Drama:49
+War	Comedy	Thriller:50
+Drama	War	Comedy	Thriller:50
 War	Comedy	Drama:62
 War	Thriller:67
 Drama	War	Thriller:67
@@ -1429,22 +1429,22 @@ Fantasy:121
 Fantasy	Crime:53
 Fantasy	Crime	Romance:23
 Fantasy	Crime	Romance	Sci-Fi:8
-Fantasy	Crime	Romance	Sci-Fi	Drama:7
 Fantasy	Crime	Romance	Sci-Fi	Comedy:7
 Fantasy	Crime	Romance	Sci-Fi	Thriller:7
+Fantasy	Crime	Romance	Sci-Fi	Drama:7
 Fantasy	Crime	Romance	Thriller:16
-Fantasy	Crime	Romance	Thriller	Adventure:14
-Fantasy	Crime	Romance	Thriller	Adventure	Drama:13
-Fantasy	Crime	Romance	Thriller	Adventure	Comedy:13
-Fantasy	Crime	Romance	Thriller	Adventure	Comedy	Drama:12
 Fantasy	Crime	Romance	Thriller	Action:14
 Fantasy	Crime	Romance	Thriller	Action	Comedy:13
 Fantasy	Crime	Romance	Thriller	Action	Comedy	Drama:12
 Fantasy	Crime	Romance	Thriller	Action	Adventure:13
-Fantasy	Crime	Romance	Thriller	Action	Adventure	Drama:12
 Fantasy	Crime	Romance	Thriller	Action	Adventure	Comedy:12
 Fantasy	Crime	Romance	Thriller	Action	Adventure	Comedy	Drama:11
+Fantasy	Crime	Romance	Thriller	Action	Adventure	Drama:12
 Fantasy	Crime	Romance	Thriller	Action	Drama:13
+Fantasy	Crime	Romance	Thriller	Adventure:14
+Fantasy	Crime	Romance	Thriller	Adventure	Drama:13
+Fantasy	Crime	Romance	Thriller	Adventure	Comedy:13
+Fantasy	Crime	Romance	Thriller	Adventure	Comedy	Drama:12
 Fantasy	Crime	Romance	Thriller	Drama:15
 Fantasy	Crime	Romance	Thriller	Comedy:15
 Fantasy	Crime	Romance	Thriller	Comedy	Drama:14
@@ -1453,9 +1453,9 @@ Fantasy	Crime	Romance	Action	Comedy:15
 Fantasy	Crime	Romance	Action	Comedy	Drama:14
 Fantasy	Crime	Romance	Action	Comedy	Adventure:14
 Fantasy	Crime	Romance	Action	Comedy	Adventure	Drama:13
+Fantasy	Crime	Romance	Action	Drama:16
 Fantasy	Crime	Romance	Action	Adventure:16
 Fantasy	Crime	Romance	Action	Adventure	Drama:15
-Fantasy	Crime	Romance	Action	Drama:16
 Fantasy	Crime	Romance	Adventure:20
 Fantasy	Crime	Romance	Adventure	Comedy:18
 Fantasy	Crime	Romance	Adventure	Comedy	Drama:17
@@ -1474,9 +1474,9 @@ Fantasy	Crime	Sci-Fi	Thriller	Comedy	Action	Adventure:16
 Fantasy	Crime	Sci-Fi	Thriller	Comedy	Action	Adventure	Drama:15
 Fantasy	Crime	Sci-Fi	Thriller	Comedy	Drama:18
 Fantasy	Crime	Sci-Fi	Thriller	Action:20
+Fantasy	Crime	Sci-Fi	Thriller	Action	Drama:19
 Fantasy	Crime	Sci-Fi	Thriller	Action	Adventure:19
 Fantasy	Crime	Sci-Fi	Thriller	Action	Adventure	Drama:18
-Fantasy	Crime	Sci-Fi	Thriller	Action	Drama:19
 Fantasy	Crime	Sci-Fi	Thriller	Adventure:21
 Fantasy	Crime	Sci-Fi	Thriller	Adventure	Drama:20
 Fantasy	Crime	Sci-Fi	Thriller	Drama:22
@@ -1486,12 +1486,12 @@ Fantasy	Crime	Sci-Fi	Comedy	Adventure	Drama:20
 Fantasy	Crime	Sci-Fi	Comedy	Drama:23
 Fantasy	Crime	Sci-Fi	Action:24
 Fantasy	Crime	Sci-Fi	Action	Comedy:21
+Fantasy	Crime	Sci-Fi	Action	Comedy	Drama:20
 Fantasy	Crime	Sci-Fi	Action	Comedy	Adventure:20
 Fantasy	Crime	Sci-Fi	Action	Comedy	Adventure	Drama:19
-Fantasy	Crime	Sci-Fi	Action	Comedy	Drama:20
-Fantasy	Crime	Sci-Fi	Action	Drama:23
 Fantasy	Crime	Sci-Fi	Action	Adventure:23
 Fantasy	Crime	Sci-Fi	Action	Adventure	Drama:22
+Fantasy	Crime	Sci-Fi	Action	Drama:23
 Fantasy	Crime	Sci-Fi	Adventure:25
 Fantasy	Crime	Sci-Fi	Adventure	Drama:24
 Fantasy	Crime	Sci-Fi	Drama:27
@@ -1530,12 +1530,12 @@ Fantasy	Romance:59
 Fantasy	Romance	Sci-Fi:26
 Fantasy	Romance	Sci-Fi	Thriller:17
 Fantasy	Romance	Sci-Fi	Thriller	Action:14
+Fantasy	Romance	Sci-Fi	Thriller	Action	Drama:13
+Adventure	Fantasy	Romance	Sci-Fi	Thriller	Action	Drama:13
 Fantasy	Romance	Sci-Fi	Thriller	Action	Comedy:13
 Fantasy	Romance	Sci-Fi	Thriller	Action	Comedy	Drama:12
 Adventure	Fantasy	Romance	Sci-Fi	Thriller	Action	Comedy	Drama:12
 Fantasy	Romance	Sci-Fi	Thriller	Action	Comedy	Adventure:13
-Fantasy	Romance	Sci-Fi	Thriller	Action	Drama:13
-Adventure	Fantasy	Romance	Sci-Fi	Thriller	Action	Drama:13
 Fantasy	Romance	Sci-Fi	Thriller	Action	Adventure:14
 Fantasy	Romance	Sci-Fi	Thriller	Adventure:15
 Fantasy	Romance	Sci-Fi	Thriller	Adventure	Comedy:14
@@ -1560,29 +1560,29 @@ Fantasy	Romance	Sci-Fi	Comedy:24
 Fantasy	Romance	Sci-Fi	Comedy	Drama:23
 Fantasy	Romance	Sci-Fi	Drama:25
 Fantasy	Romance	Thriller:29
+Fantasy	Romance	Thriller	Adventure:26
+Fantasy	Romance	Thriller	Adventure	Comedy:25
+Fantasy	Romance	Thriller	Adventure	Comedy	Drama:24
+Fantasy	Romance	Thriller	Adventure	Drama:25
 Fantasy	Romance	Thriller	Action:26
-Fantasy	Romance	Thriller	Action	Drama:25
+Fantasy	Romance	Thriller	Action	Comedy:25
+Fantasy	Romance	Thriller	Action	Comedy	Drama:24
 Fantasy	Romance	Thriller	Action	Adventure:25
 Fantasy	Romance	Thriller	Action	Adventure	Drama:24
 Fantasy	Romance	Thriller	Action	Adventure	Comedy:24
 Fantasy	Romance	Thriller	Action	Adventure	Comedy	Drama:23
-Fantasy	Romance	Thriller	Action	Comedy:25
-Fantasy	Romance	Thriller	Action	Comedy	Drama:24
-Fantasy	Romance	Thriller	Adventure:26
-Fantasy	Romance	Thriller	Adventure	Drama:25
-Fantasy	Romance	Thriller	Adventure	Comedy:25
-Fantasy	Romance	Thriller	Adventure	Comedy	Drama:24
+Fantasy	Romance	Thriller	Action	Drama:25
 Fantasy	Romance	Thriller	Drama:28
 Fantasy	Romance	Thriller	Comedy:28
 Fantasy	Romance	Thriller	Comedy	Drama:27
 Fantasy	Romance	Action:36
 Fantasy	Romance	Action	Comedy:34
+Fantasy	Romance	Action	Comedy	Drama:33
 Fantasy	Romance	Action	Comedy	Adventure:33
 Fantasy	Romance	Action	Comedy	Adventure	Drama:32
-Fantasy	Romance	Action	Comedy	Drama:33
-Fantasy	Romance	Action	Drama:35
 Fantasy	Romance	Action	Adventure:35
 Fantasy	Romance	Action	Adventure	Drama:34
+Fantasy	Romance	Action	Drama:35
 Fantasy	Romance	Adventure:50
 Fantasy	Romance	Adventure	Comedy:47
 Fantasy	Romance	Adventure	Comedy	Drama:46
@@ -1590,22 +1590,6 @@ Fantasy	Romance	Adventure	Drama:49
 Fantasy	Romance	Comedy:55
 Fantasy	Romance	Comedy	Drama:54
 Fantasy	Romance	Drama:58
-Fantasy	Thriller:70
-Fantasy	Thriller	Adventure:62
-Fantasy	Thriller	Adventure	Comedy:55
-Fantasy	Thriller	Adventure	Comedy	Drama:53
-Fantasy	Thriller	Adventure	Comedy	Action:53
-Fantasy	Thriller	Adventure	Comedy	Action	Drama:51
-Fantasy	Thriller	Adventure	Action:59
-Fantasy	Thriller	Adventure	Action	Drama:56
-Fantasy	Thriller	Adventure	Drama:59
-Fantasy	Thriller	Comedy:63
-Fantasy	Thriller	Comedy	Drama:61
-Fantasy	Thriller	Action:63
-Fantasy	Thriller	Action	Comedy:57
-Fantasy	Thriller	Action	Comedy	Drama:55
-Fantasy	Thriller	Action	Drama:60
-Fantasy	Thriller	Drama:67
 Fantasy	Sci-Fi:70
 Fantasy	Sci-Fi	Thriller:47
 Fantasy	Sci-Fi	Thriller	Comedy:41
@@ -1638,14 +1622,30 @@ Fantasy	Sci-Fi	Action	Adventure:59
 Fantasy	Sci-Fi	Adventure:64
 Fantasy	Sci-Fi	Adventure	Drama:61
 Fantasy	Sci-Fi	Drama:67
+Fantasy	Thriller:70
+Fantasy	Thriller	Adventure:62
+Fantasy	Thriller	Adventure	Comedy:55
+Fantasy	Thriller	Adventure	Comedy	Action:53
+Fantasy	Thriller	Adventure	Comedy	Action	Drama:51
+Fantasy	Thriller	Adventure	Comedy	Drama:53
+Fantasy	Thriller	Adventure	Action:59
+Fantasy	Thriller	Adventure	Action	Drama:56
+Fantasy	Thriller	Adventure	Drama:59
+Fantasy	Thriller	Comedy:63
+Fantasy	Thriller	Comedy	Drama:61
+Fantasy	Thriller	Action:63
+Fantasy	Thriller	Action	Comedy:57
+Fantasy	Thriller	Action	Comedy	Drama:55
+Fantasy	Thriller	Action	Drama:60
+Fantasy	Thriller	Drama:67
 Fantasy	Action:90
 Fantasy	Action	Comedy:77
 Fantasy	Action	Comedy	Adventure:73
 Fantasy	Action	Comedy	Adventure	Drama:71
 Fantasy	Action	Comedy	Drama:75
-Fantasy	Action	Drama:86
 Fantasy	Action	Adventure:86
 Fantasy	Action	Adventure	Drama:82
+Fantasy	Action	Drama:86
 Fantasy	Comedy:105
 Fantasy	Comedy	Adventure:92
 Fantasy	Comedy	Adventure	Drama:88
@@ -1687,22 +1687,6 @@ Sci-Fi	Romance	Crime	Thriller	Drama:54
 Sci-Fi	Romance	Crime	Action:56
 Sci-Fi	Romance	Crime	Action	Drama:54
 Sci-Fi	Romance	Crime	Drama:59
-Sci-Fi	Romance	Thriller:97
-Sci-Fi	Romance	Thriller	Adventure:86
-Sci-Fi	Romance	Thriller	Adventure	Comedy:77
-Sci-Fi	Romance	Thriller	Adventure	Comedy	Drama:75
-Sci-Fi	Romance	Thriller	Adventure	Drama:84
-Sci-Fi	Romance	Thriller	Action:86
-Sci-Fi	Romance	Thriller	Action	Comedy:78
-Sci-Fi	Romance	Thriller	Action	Comedy	Adventure:73
-Sci-Fi	Romance	Thriller	Action	Comedy	Adventure	Drama:71
-Sci-Fi	Romance	Thriller	Action	Comedy	Drama:76
-Sci-Fi	Romance	Thriller	Action	Adventure:81
-Sci-Fi	Romance	Thriller	Action	Adventure	Drama:79
-Sci-Fi	Romance	Thriller	Action	Drama:84
-Sci-Fi	Romance	Thriller	Comedy:88
-Sci-Fi	Romance	Thriller	Comedy	Drama:86
-Sci-Fi	Romance	Thriller	Drama:95
 Sci-Fi	Romance	Action:97
 Sci-Fi	Romance	Action	Comedy:89
 Sci-Fi	Romance	Action	Comedy	Adventure:83
@@ -1711,6 +1695,22 @@ Sci-Fi	Romance	Action	Comedy	Drama:86
 Sci-Fi	Romance	Action	Adventure:91
 Sci-Fi	Romance	Action	Adventure	Drama:88
 Sci-Fi	Romance	Action	Drama:94
+Sci-Fi	Romance	Thriller:97
+Sci-Fi	Romance	Thriller	Action:86
+Sci-Fi	Romance	Thriller	Action	Comedy:78
+Sci-Fi	Romance	Thriller	Action	Comedy	Adventure:73
+Sci-Fi	Romance	Thriller	Action	Comedy	Adventure	Drama:71
+Sci-Fi	Romance	Thriller	Action	Comedy	Drama:76
+Sci-Fi	Romance	Thriller	Action	Adventure:81
+Sci-Fi	Romance	Thriller	Action	Adventure	Drama:79
+Sci-Fi	Romance	Thriller	Action	Drama:84
+Sci-Fi	Romance	Thriller	Adventure:86
+Sci-Fi	Romance	Thriller	Adventure	Comedy:77
+Sci-Fi	Romance	Thriller	Adventure	Comedy	Drama:75
+Sci-Fi	Romance	Thriller	Adventure	Drama:84
+Sci-Fi	Romance	Thriller	Comedy:88
+Sci-Fi	Romance	Thriller	Comedy	Drama:86
+Sci-Fi	Romance	Thriller	Drama:95
 Sci-Fi	Romance	Adventure:100
 Sci-Fi	Romance	Adventure	Comedy:90
 Sci-Fi	Romance	Adventure	Comedy	Drama:87
@@ -1894,12 +1894,12 @@ Adventure	Comedy:359
 Adventure	Comedy	Drama:348
 Adventure	Drama:397
 Action:461
+Action	Comedy:402
+Action	Comedy	Drama:392
 Action	Thriller:402
 Action	Thriller	Comedy:351
 Action	Thriller	Comedy	Drama:344
 Action	Thriller	Drama:394
-Action	Comedy:402
-Action	Comedy	Drama:392
 Action	Drama:449
 Thriller:482
 Thriller	Comedy:425
