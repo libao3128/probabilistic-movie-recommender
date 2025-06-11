@@ -10,9 +10,11 @@ a.out
 # HBM model
 hbm/model/  
 
-*.pyc
 resulttable
 explain.txt
+
 .DS_Store
+*.pyc
+*.pdf
 
 local_files/
