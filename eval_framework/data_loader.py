@@ -8,7 +8,6 @@ warnings.filterwarnings('ignore')
 def load_data(sample_size=None):
     """Load MovieLens dataset"""
     print("Loading data...")
-    print("Loading MovieLens 100K dataset...")
     
     # Load ratings
     ratings = pd.read_csv(r'..\\data\ml-latest-small\ml-latest-small\ratings.csv', header=0)
