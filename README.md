@@ -32,17 +32,29 @@ MovieLens offers datasets of various sizes. For faster iteration during developm
 
 ## 📊 Benchmark Results
 
-The following table summarizes the performance (on the test set) of different recommendation models evaluated in this project:
+The following table summarizes the performance based on "latest small" of different recommendation models evaluated in this project:
 
-| Model                                     | RMSE   | MAE    |
-|-------------------------------------------|--------|--------|
-| Probabilistic Matrix Factorization (PMF)  | 0.9043 | 0.6915 |
-| Bayesian PMF                              | 0.8642 | 0.6551 |
-| SPN (Sum-Product Network)                 | 1.3454 | 0.9134 |
-| Frequent Pattern Mining + MLN             | 1.2094 | 0.8935 |
+### Performance
+
+| Model                                     | RMSE   | MAE    | Use Genre?  |
+|-------------------------------------------|--------|--------|-------------|
+| Bayesian PMF                              | 0.8642 | 0.6551 |             |
+| Probabilistic Matrix Factorization (PMF)  | 0.9043 | 0.6915 |             |
+| HBM (Hierarchical Bayesian Model)         | 0.8745 | 0.6683 | X           |
+| SPN (Sum-Product Network)                 | 1.3454 | 0.9134 |             |
+| Frequent Pattern Mining + MLN             | 1.2094 | 0.8935 |             |
 
 > Note: Lower RMSE and MAE indicate better predictive accuracy.
 
+### Cost
+
+| Model                                     | Training Time (s)| Inference Time (ms/user)| Memory Usage (MB)|
+|-------------------------------------------|------------------|-------------------------|------------------|
+| Bayesian PMF                              |                  |                         |                  |
+| Probabilistic Matrix Factorization (PMF)  |                  |                         |                  |
+| HBM (Hierarchical Bayesian Model)         | 713              | $\leq$ 1                |                  |
+| SPN (Sum-Product Network)                 |                  |                         |                  |
+| Frequent Pattern Mining + MLN             |                  |                         |                  |
 
 ## 📝 Tasks
 
@@ -51,6 +63,5 @@ The following table summarizes the performance (on the test set) of different re
 - [x] Develop Sum-Product Networks (SPN) **[Angela]**
 - [x] Explore Probabilistic Programming approaches **[SSC]**
 - [x] 5/27 Project Check-in **[ALL]**
-- [ ] Hierarchical Bayesian Model **[Leo]**
-    - Fail to train.  
+- [x] Hierarchical Bayesian Model **[Leo]**
 - [x] Frequent Pattern Mining + Markov Logic Network **[Leo]**
