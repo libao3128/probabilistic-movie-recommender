@@ -4,9 +4,11 @@ data/ml-32m/ml-32m/
 data/ml-100k/
 
 # PMF model
-model/pmf_model_10.npz
-model/pmf_model.npz
+pmf/model/
 a.out
+
+# HBM model
+hbm/model/  
 
 *.pyc
 resulttable
