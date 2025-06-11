@@ -54,8 +54,8 @@ The following table summarizes the performance based on "latest small" of differ
 | Bayesian PMF                              |                  |                         |                  |
 | Probabilistic Matrix Factorization (PMF)  |                  |                         |                  |
 | HBM (Hierarchical Bayesian Model)         | 713              | $\leq$ 1                |                  |
-| SPN (Sum-Product Network) (Classifier)    | 183              | 1.36                    |                  |
-| SPN (Sum-Product Network) (Regression)    | 212              | 2.21                    |                  |
+| SPN (Sum-Product Network) (Classifier)    | 183              | 2.3026                  |                  |
+| SPN (Sum-Product Network) (Regression)    | 212              | 3.834                   |                  |
 | Frequent Pattern Mining + MLN             |                  |                         |                  |
 
 ## 📝 Tasks
