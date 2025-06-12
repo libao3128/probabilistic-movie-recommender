@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import time
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from tqdm import tqdm
 
@@ -28,15 +29,18 @@ class BaseRecommenderReporter:
         print("\nEvaluating predictions...")
         predictions = []
         actuals = []
+        start_time = time.time()
         
         for _, row in tqdm(test_ratings.iterrows(), total=len(test_ratings), desc="Evaluating ratings"):
             pred = model.predict(row['userId'], row['movieId'])
             predictions.append(pred)
             actuals.append(row['rating'])
-        
-        return self._calculate_metrics(predictions, actuals)
 
-    def _calculate_metrics(self, predictions, actuals):
+        end_time = time.time()
+        
+        return self._calculate_metrics(predictions, actuals, start_time-end_time)
+
+    def _calculate_metrics(self, predictions, actuals, inference_times=None):
         # Calculate metrics
         mse = mean_squared_error(actuals, predictions)
         rmse = np.sqrt(mse)
@@ -48,13 +52,26 @@ class BaseRecommenderReporter:
             'predictions': predictions,
             'actuals': actuals
         }
+        
+        # Add inference time metrics if provided
+        if inference_times is not None:
+            self.results.update({
+                'inference_times': inference_times,
+                'inference_time_per_prediction': inference_times/len(predictions)
+            })
+        
         return self.results
     
     def plot_all(self, save_path='recommender_results.png'):
         """Plot evaluation results (universal for all models)."""
         print("\nGenerating universal plots...")
-        fig = plt.figure(figsize=(15, 5))
-        gs = fig.add_gridspec(1, 3)
+        
+        # Determine number of plots based on available data
+        n_plots = 3
+
+            
+        fig = plt.figure(figsize=(20, 5) if n_plots == 4 else (15, 5))
+        gs = fig.add_gridspec(1, n_plots)
 
         # Plot 1: Actual vs Predicted
         ax1 = fig.add_subplot(gs[0, 0])
@@ -94,6 +111,8 @@ class BaseRecommenderReporter:
             print(f"RMSE: {self.results['rmse']:.4f}")
         if 'mae' in self.results:
             print(f"MAE: {self.results['mae']:.4f}")
+        if 'inference_time_per_prediction' in self.results:
+            print(f"Inference Time per Prediction: {self.results['inference_time_per_prediction']:.4f} seconds")
 
 class HBMRecommenderReporter(BaseRecommenderReporter):
     """
@@ -168,7 +187,53 @@ class MLNRecommenderReporter(BaseRecommenderReporter):
 
     def evaluate_model(self, model, test_ratings, batch_size=1000, n_jobs=-1):
         self.model = model
+        
+        print("\nEvaluating predictions...")
+        start_time = time.time()
         predictions = model.predict(test_ratings, batch_size=batch_size, n_jobs=n_jobs)
-        return self._calculate_metrics(predictions['rating'], test_ratings['rating'])
+        end_time = time.time()
         
+        return self._calculate_metrics(predictions['rating'], test_ratings['rating'], start_time-end_time)
         
+class PMFRecommenderReporter(BaseRecommenderReporter):
+    """
+    Reporter for PMF models, adds parameter distribution plots and statistics.
+    Usage:
+        reporter = PMFRecommenderReporter(model, movies, results)
+        reporter.plot_all()
+        reporter.print_stats()
+    """
+    def __init__(self):
+        super().__init__()
+        
+    def evaluate_model(self, model, test_ratings, batch_size=1000, n_jobs=-1):
+        self.model = model
+        
+        print("\nEvaluating predictions...")
+        start_time = time.time()
+        predictions = pd.DataFrame(columns=['userId', 'movieId', 'rating'])
+        pred_cache = {}
+        for i, row in tqdm(test_ratings.iterrows(), total=len(test_ratings), desc="Evaluating ratings"):
+            if row['userId'] not in pred_cache:
+                pred_cache[row['userId']] = model.predict(row['userId'])
+            predictions.loc[i] = {
+                'userId': row['userId'], 'movieId': row['movieId'], 'rating': pred_cache[row['userId']][int(row['movieId'])]}
+        end_time = time.time()
+        
+        return self._calculate_metrics(predictions['rating'], test_ratings['rating'], start_time-end_time)
+        
+    def plot_all(self, save_path='pmf_results.png'):
+        """Plot universal and PMF-specific results."""
+        # First plot universal
+        super().plot_all(save_path=save_path)
+
+        # Check performance by plotting train and test errors
+        plt.plot(range(self.model.epoch), self.model.rmse_train, marker='o', label='Training Data')
+        plt.plot(range(self.model.epoch), self.model.rmse_test, marker='v', label='Test Data')
+        plt.title('The MovieLens Dataset Learning Curve')
+        plt.xlabel('Number of Epochs')
+        plt.ylabel('RMSE')
+        plt.legend()
+        plt.grid()
+        plt.show()
+        plt.close()
