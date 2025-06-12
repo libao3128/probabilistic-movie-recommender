@@ -49,14 +49,14 @@ The following table summarizes the performance based on "latest small" of differ
 
 ### Cost
 
-| Model                                     | Training Time (s)| Inference Time (s)| Memory Usage (MB)|
+| Model                                     | Training Time (s)| Inference Time (sec per 1000 predictions)| Memory Usage (MB)|
 |-------------------------------------------|------------------|-------------------------|------------------|
 | Bayesian PMF                              |                  |                         |                  |
-| Probabilistic Matrix Factorization (PMF)  | 491              |  32                     |                  |
-| HBM (Hierarchical Bayesian Model)         | 713              | $\leq$ 1                |                  |
-| SPN (Sum-Product Network) (Classifier)    | 183              | 2.3026                  |                  |
-| SPN (Sum-Product Network) (Regression)    | 212              | 3.834                   |                  |
-| Frequent Pattern Mining + MLN             | 6.5              |    243                  |                  |
+| Probabilistic Matrix Factorization (PMF)  | 491              | 1.5866                  |                  |
+| HBM (Hierarchical Bayesian Model)         | 713              | 0.0445                  |                  |
+| SPN (Sum-Product Network) (Classifier)    | 183              | 0.1141                  |                  |
+| SPN (Sum-Product Network) (Regression)    | 212              | 0.1901                  |                  |
+| Frequent Pattern Mining + MLN             | 6.5              | 12.0487                 |                  |
 
 ## 📝 Tasks
 
