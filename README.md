@@ -41,8 +41,7 @@ The following table summarizes the performance based on "latest small" of differ
 | Bayesian PMF                              |        |        |             |
 | Probabilistic Matrix Factorization (PMF)  | 0.9089 | 0.6950 | X           |
 | HBM (Hierarchical Bayesian Model)         | 0.8745 | 0.6683 | X           |
-| SPN (Sum-Product Network)                 | 0.5780 | 0.3341 | v           |
-| SPN (Sum-Product Network) (Regression)    | 1.0706 | 1.1463 | v           |
+| SPN (Sum-Product Network)                 | 1.2404 | 0.8812 | v           |
 | Frequent Pattern Mining + MLN             | 1.2627 | 0.9455 | v           |
 
 > Note: Lower RMSE and MAE indicate better predictive accuracy.
@@ -54,8 +53,7 @@ The following table summarizes the performance based on "latest small" of differ
 | Bayesian PMF                              |                  |                         |                  |
 | Probabilistic Matrix Factorization (PMF)  | 491              | 1.5866                  |                  |
 | HBM (Hierarchical Bayesian Model)         | 713              | 0.0445                  |                  |
-| SPN (Sum-Product Network) (Classifier)    | 183              | 0.1141                  |                  |
-| SPN (Sum-Product Network) (Regression)    | 212              | 0.1901                  |                  |
+| SPN (Sum-Product Network)                 | 212              | 0.1901                  |                  |
 | Frequent Pattern Mining + MLN             | 6.5              | 12.0487                 |                  |
 
 ## 📝 Tasks
