@@ -17,4 +17,4 @@ explain.txt
 *.pyc
 *.pdf
 
-local_files/
+local_files/.venv/
