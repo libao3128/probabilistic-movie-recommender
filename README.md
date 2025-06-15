@@ -43,6 +43,8 @@ The following table summarizes the performance based on "latest small" of differ
 | HBM (Hierarchical Bayesian Model)         | 0.8745 | 0.6683 | X           |
 | SPN (Sum-Product Network)                 | 1.2404 | 0.8812 | v           |
 | Frequent Pattern Mining + MLN             | 1.2627 | 0.9455 | v           |
+| KNN-user                                 | 2.7536 | 2.4982 | X           |
+| KNN-item                                 | 2.9454 | 2.6990 | X           |
 
 > Note: Lower RMSE and MAE indicate better predictive accuracy.
 
@@ -55,6 +57,8 @@ The following table summarizes the performance based on "latest small" of differ
 | HBM (Hierarchical Bayesian Model)         | 713              | 0.0445                  |                  |
 | SPN (Sum-Product Network)                 | 212              | 0.1901                  |                  |
 | Frequent Pattern Mining + MLN             | 6.5              | 12.0487                 |                  |
+| KNN-user                                 | 0.09             | 0.67                    | 94.28            |
+| KNN-item                                 | 0.34             | 0.76                    | 699.48           |
 
 ## 📝 Tasks
 
