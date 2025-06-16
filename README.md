@@ -38,7 +38,7 @@ The following table summarizes the performance based on "latest small" of differ
 
 | Model                                     | RMSE   | MAE    | Use Genre?  |
 |-------------------------------------------|--------|--------|-------------|
-| Bayesian PMF                              |        |        |             |
+| Bayesian PMF                              | 0.8531 | 0.6555 | X           |
 | Probabilistic Matrix Factorization (PMF)  | 0.9089 | 0.6950 | X           |
 | HBM (Hierarchical Bayesian Model)         | 0.8745 | 0.6683 | X           |
 | SPN (Sum-Product Network)                 | 1.2404 | 0.8812 | v           |
@@ -52,7 +52,7 @@ The following table summarizes the performance based on "latest small" of differ
 
 | Model                                     | Training Time (s)| Inference Time (sec per 1000 predictions)| Memory Usage (MB)|
 |-------------------------------------------|------------------|-------------------------|------------------|
-| Bayesian PMF                              |                  |                         |                  |
+| Bayesian PMF                              | 3422             | 8.7762                  |                  |
 | Probabilistic Matrix Factorization (PMF)  | 491              | 1.5866                  |                  |
 | HBM (Hierarchical Bayesian Model)         | 713              | 0.0445                  |                  |
 | SPN (Sum-Product Network)                 | 212              | 0.1901                  |                  |
