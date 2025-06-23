@@ -2,15 +2,17 @@
 
 ## 📘 Overview
 
-This project implements a movie recommendation system using the MovieLens dataset, focusing on **probabilistic modeling** techniques. We aim to explore various approaches such as:
+This project implements a movie recommendation system using the MovieLens dataset, focusing on **probabilistic modeling** techniques. We explore and compare the following models:
 
+- K-Nearest Neighbors (User-based and Item-based)
 - Probabilistic Matrix Factorization (PMF)
-- Collaborative Filtering (User- and Item-based KNN)
-- Content-Based Filtering using genre metadata
-- Hybrid models (linear combination and deep hybrid)
-- Potential extensions: Bayesian modeling, neural-symbolic reasoning
+- Bayesian Probabilistic Matrix Factorization
+- Hierarchical Bayesian Model (HBM)
+- Frequent Pattern Mining + Markov Logic Network (FP + MLN)
+- Sum-Product Network (SPN)
 
-Evaluation is conducted using both **rating prediction** (RMSE, MAE) and **top-K recommendation** metrics (Precision@K, Recall@K, NDCG@K).
+Models are evaluated on both **rating prediction accuracy** (RMSE, MAE), **computational efficiency** (training/inference time), and **interpretability**.  
+The goal is to provide insights into the trade-offs between performance, scalability, and explainability for probabilistic recommenders in real-world applications.
 
 ---
 
@@ -34,28 +36,31 @@ MovieLens offers datasets of various sizes. For faster iteration during developm
 
 The following table summarizes the performance based on "latest small" of different recommendation models evaluated in this project:
 
-### Performance
+### 📊 Performance
 
-| Model                                     | RMSE   | MAE    | Use Genre?  |
-|-------------------------------------------|--------|--------|-------------|
-| Bayesian PMF                              | 0.8531 | 0.6555 | X           |
-| Probabilistic Matrix Factorization (PMF)  | 0.9089 | 0.6950 | X           |
-| HBM (Hierarchical Bayesian Model)         | 0.8745 | 0.6683 | X           |
-| SPN (Sum-Product Network)                 | 1.2404 | 0.8812 | v           |
-| Frequent Pattern Mining + MLN             | 1.2627 | 0.9455 | v           |
-| KNN-user                                 | 2.7536 | 2.4982 | X           |
-| KNN-item                                 | 2.9454 | 2.6990 | X           |
+| Model      | RMSE   | MAE    | Uses Genre? |
+|------------|--------|--------|-------------|
+| KNN (user) | 2.7536 | 2.4982 | No          |
+| KNN (item) | 2.9454 | 2.6990 | No          |
+| PMF        | 0.9089 | 0.6950 | No          |
+| BPMF       | 0.8531 | 0.6555 | No          |
+| HBM        | 0.8745 | 0.6683 | No          |
+| SPN        | 1.2404 | 0.8812 | Yes         |
+| FPMLN      | 1.2627 | 0.9455 | Yes         |
 
 > Note: Lower RMSE and MAE indicate better predictive accuracy.
 
-### Cost
+---
 
-| Model                                     | Training Time (s)| Inference Time (sec per 1000 predictions)|
-|-------------------------------------------|------------------|-------------------------|
-| Bayesian PMF                              | 3422             | 8.7762                  |
-| Probabilistic Matrix Factorization (PMF)  | 491              | 1.5866                  |
-| HBM (Hierarchical Bayesian Model)         | 713              | 0.0445                  |
-| SPN (Sum-Product Network)                 | 212              | 0.1901                  |
-| Frequent Pattern Mining + MLN             | 6.5              | 12.0487                 |
-| KNN-user                                 | 0.09             | 0.67                     |
-| KNN-item                                 | 0.34             | 0.76                     |
+### ⏳ Cost
+
+| Model      | Training Time (s) | Inference Time (sec per 1000 predictions) |
+|------------|-------------------|------------------------------------------|
+| KNN (user) | 0.09              | 0.67                                     |
+| KNN (item) | 0.34              | 0.76                                     |
+| PMF        | 491               | 1.5866                                   |
+| BPMF       | 3422              | 8.7762                                   |
+| HBM        | 713               | 0.0445                                   |
+| SPN        | 212               | 0.1901                                   |
+| FPMLN      | 6.5               | 12.0487                                  |
+
