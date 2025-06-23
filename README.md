@@ -50,22 +50,12 @@ The following table summarizes the performance based on "latest small" of differ
 
 ### Cost
 
-| Model                                     | Training Time (s)| Inference Time (sec per 1000 predictions)| Memory Usage (MB)|
-|-------------------------------------------|------------------|-------------------------|------------------|
-| Bayesian PMF                              | 3422             | 8.7762                  |                  |
-| Probabilistic Matrix Factorization (PMF)  | 491              | 1.5866                  |                  |
-| HBM (Hierarchical Bayesian Model)         | 713              | 0.0445                  |                  |
-| SPN (Sum-Product Network)                 | 212              | 0.1901                  |                  |
-| Frequent Pattern Mining + MLN             | 6.5              | 12.0487                 |                  |
-| KNN-user                                 | 0.09             | 0.67                    | 94.28            |
-| KNN-item                                 | 0.34             | 0.76                    | 699.48           |
-
-## 📝 Tasks
-
-- [x] Set up the pipeline for training and evaluating different models **[Leo]**
-- [x] Implement Probabilistic Matrix Factorization **[Leo]**
-- [x] Develop Sum-Product Networks (SPN) **[Angela]**
-- [x] Explore Probabilistic Programming approaches **[SSC]**
-- [x] 5/27 Project Check-in **[ALL]**
-- [x] Hierarchical Bayesian Model **[Leo]**
-- [x] Frequent Pattern Mining + Markov Logic Network **[Leo]**
+| Model                                     | Training Time (s)| Inference Time (sec per 1000 predictions)|
+|-------------------------------------------|------------------|-------------------------|
+| Bayesian PMF                              | 3422             | 8.7762                  |
+| Probabilistic Matrix Factorization (PMF)  | 491              | 1.5866                  |
+| HBM (Hierarchical Bayesian Model)         | 713              | 0.0445                  |
+| SPN (Sum-Product Network)                 | 212              | 0.1901                  |
+| Frequent Pattern Mining + MLN             | 6.5              | 12.0487                 |
+| KNN-user                                 | 0.09             | 0.67                     |
+| KNN-item                                 | 0.34             | 0.76                     |
